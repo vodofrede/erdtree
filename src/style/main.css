@@ -193,6 +193,12 @@ tbody:first-child {
 }
 
 /* buttons & input */
+button {
+    /* border: var(--border);
+    border-radius: 3px;*/
+    padding: 3px;
+    color: black;
+}
 
 /* cards */
 .cards {
