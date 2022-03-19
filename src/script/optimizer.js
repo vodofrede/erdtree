@@ -3,6 +3,11 @@ const CLASSES = fetch("/data/classes.json")
     .then(data => data.classes)
     .catch(error => console.log(error));
 
+const TALISMANS = fetch("/data/talismans.json")
+    .then(response => response.json())
+    .then(data => data.talismans)
+    .catch(error => console.log(error));
+
 async function update() {
     // get inputted stats
     let desired = [...document.getElementsByName("desired-stat")].map(
@@ -12,7 +17,7 @@ async function update() {
         }
     )
 
-    let virtual = virtualStats();
+    let items = itemStats(await TALISMANS);
 
     // calculate best class
     let sorted = sortClasses(await CLASSES, desired);
@@ -33,14 +38,14 @@ async function update() {
     document.getElementsByName("class-stat").forEach((elem, i) => elem.value = best.stats[i]);
 
     document.getElementsByName("virtual-stat").forEach((elem, i) => {
-        elem.value = ((desired[i] > best.stats[i] ? desired[i] : best.stats[i]) + virtual[i]);
+        elem.value = ((desired[i] > best.stats[i] ? desired[i] : best.stats[i]) + items[i]);
         // elem.style.color = IS_RADAGON[i] && virtual[i] ? "firebrick" : !IS_RADAGON[i] && virtual[i] ? "royalblue" : "unset";
     });
 }
 
 function statDelta(classStats, desiredStats) {
     return classStats
-        .map((e, i) => { return e < desiredStats[i] ? desiredStats[i] - e : 0 })
+        .map((e, i) => e < desiredStats[i] ? desiredStats[i] - e : 0)
         .reduce((total, n) => total + n);
 }
 
@@ -49,43 +54,33 @@ function sortClasses(classes, desiredStats) {
         c.total = c.level + statDelta(c.stats, desiredStats);
         return c;
     });
-    deltas.sort((a, b) => { return a.total - b.total; });
+    deltas.sort((a, b) => a.total - b.total);
     return deltas;
 }
 
-function virtualStats() {
-    let [
-        radagon, marika, dexterityTalisman, intelligenceTalisman, strengthTalisman, faithTalisman, millicent
-    ] = [...document.getElementsByName("talisman")].map(elem => { return elem.checked });
+function itemStats(relevantItems) {
+    let ids = [...document.getElementsByName("equipment")]
+        .filter(elem => elem.checked)
+        .map(elem => elem.id);
+    let relevant = relevantItems.filter(item => ids.includes(item.id));
 
-    return [
-        radagon ? 5 : 0,
-        marika ? 5 : 0,
-        radagon ? 5 : 0,
-        (radagon ? 5 : 0) + (strengthTalisman ? 5 : 0),
-        (radagon ? 5 : 0) + (dexterityTalisman ? 5 : 0) + (millicent ? 5 : 0),
-        (marika ? 5 : 0) + (intelligenceTalisman ? 5 : 0),
-        (marika ? 5 : 0) + (faithTalisman ? 5 : 0),
-        marika ? 5 : 0,
-    ]
+    return relevant.reduce((total, item) => total.map((stat, i) => stat += item.stats[i]), [0, 0, 0, 0, 0, 0, 0, 0]);
 }
 
 function talisman() {
-    console.log("talisman()");
+    let talismans = [...document.getElementsByClassName("talisman")]
 
-    let talismans = [...document.getElementsByName("talisman")]
-
-    if (talismans.filter(checkbox => { return checkbox.checked }).length >= 4) {
-        talismans.forEach(checkbox => { checkbox.disabled = !checkbox.checked });
+    if (talismans.filter(checkbox => checkbox.checked).length >= 4) {
+        talismans.forEach(checkbox => checkbox.disabled = !checkbox.checked);
     } else {
-        talismans.forEach(checkbox => { checkbox.disabled = false });
+        talismans.forEach(checkbox => checkbox.disabled = false);
     }
 
     update();
 }
 
-function clearDesired() {
+function clearAll() {
     document.getElementsByName("desired-stat").forEach(elem => { elem.value = null });
-    document.getElementsByName("talisman").forEach(elem => { elem.checked = false });
+    [...document.getElementsByClassName("talisman")].forEach(elem => { elem.checked = false });
     update();
 }

@@ -1,0 +1,113 @@
+{
+    "talismans": [
+        {
+            "id": "radagons-soreseal",
+            "name": "Radagon's Soreseal",
+            "weight": 0.8,
+            "stats": [
+                5,
+                0,
+                5,
+                5,
+                5,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": "marikas-soreseal",
+            "name": "Marika's Soreseal",
+            "weight": 0.8,
+            "stats": [
+                0,
+                5,
+                0,
+                0,
+                0,
+                5,
+                5,
+                5
+            ]
+        },
+        {
+            "id": "prosthesis-wearer-heirloom",
+            "name": "Prosthesis-Wearer Heirloom",
+            "weight": 0.8,
+            "stats": [
+                0,
+                0,
+                0,
+                0,
+                5,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": "stargazer-heirloom",
+            "name": "Stargazer Heirloom",
+            "weight": 0.8,
+            "stats": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                5,
+                0,
+                0
+            ]
+        },
+        {
+            "id": "starscourge-heirloom",
+            "name": "Starscourge Heirloom",
+            "weight": 0.8,
+            "stats": [
+                0,
+                0,
+                0,
+                5,
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": "two-fingers-heirloom",
+            "name": "Two Fingers Heirloom",
+            "weight": 0.8,
+            "stats": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                5,
+                0
+            ]
+        },
+        {
+            "id": "millicents-prosthesis",
+            "name": "Millicent's Prosthesis",
+            "weight": 0.8,
+            "stats": [
+                0,
+                0,
+                0,
+                0,
+                5,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "name": "Arrow's Reach Talisman",
+            "weight": 0.7
+        }
+    ]
+}

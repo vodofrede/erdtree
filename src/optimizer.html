@@ -11,6 +11,7 @@
     <title>Erdtree - Class Optimizer</title>
     <meta name="description" content="">
 
+    <script src="/script/common.js"></script>
     <script src="/script/optimizer.js"></script>
 </head>
 
@@ -189,7 +190,7 @@
                         </div>
                     </li>
                     <li>
-                        <button onclick="clearDesired()">Clear All</button>
+                        <button onclick="clearAll()">Clear All</button>
                     </li>
                 </ul>
             </article>
@@ -205,44 +206,51 @@
 
                     <li>
                         <div>
-                            <input type="checkbox" id="radagon-soreseal" oninput="talisman()" name="talisman">
-                            <label for="radagon-soreseal">Radagon's Soreseal</label>
+                            <input class="talisman" type="checkbox" id="radagons-soreseal" oninput="talisman()"
+                                name="equipment">
+                            <label for="radagons-soreseal">Radagon's Soreseal</label>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <input type="checkbox" id="marika-soreseal" oninput="talisman()" name="talisman">
-                            <label for="marika-soreseal">Marika's Soreseal</label>
+                            <input class="talisman" type="checkbox" id="marikas-soreseal" oninput="talisman()"
+                                name="equipment">
+                            <label for="marikas-soreseal">Marika's Soreseal</label>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <input type="checkbox" id="dexterity-talisman" oninput="talisman()" name="talisman">
-                            <label for="dexterity-talisman">Prosthesis-Wearer Heirloom</label>
+                            <input class="talisman" type="checkbox" id="prosthesis-wearer-heirloom" oninput="talisman()"
+                                name="equipment">
+                            <label for="prosthesis-wearer-heirloom">Prosthesis-Wearer Heirloom</label>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <input type="checkbox" id="intelligence-talisman" oninput="talisman()" name="talisman">
-                            <label for="intelligence-talisman">Stargazer Heirloom</label>
+                            <input class="talisman" type="checkbox" id="stargazer-heirloom" oninput="talisman()"
+                                name="equipment">
+                            <label for="stargazer-heirloom">Stargazer Heirloom</label>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <input type="checkbox" id="strength-talisman" oninput="talisman()" name="talisman">
-                            <label for="strength-talisman">Starscourge Heirloom</label>
+                            <input class="talisman" type="checkbox" id="starscourge-heirloom" oninput="talisman()"
+                                name="equipment">
+                            <label for="starscourge-heirloom">Starscourge Heirloom</label>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <input type="checkbox" id="faith-talisman" oninput="talisman()" name="talisman">
-                            <label for="faith-talisman">Two Fingers Heirloom</label>
+                            <input class="talisman" type="checkbox" id="two-fingers-heirloom" oninput="talisman()"
+                                name="equipment">
+                            <label for="two-fingers-heirloom">Two Fingers Heirloom</label>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <input type="checkbox" id="millicent" oninput="talisman()" name="talisman">
-                            <label for="millicent">Millicent's Prosthesis</label>
+                            <input class="talisman" type="checkbox" id="millicents-prosthesis" oninput="talisman()"
+                                name="equipment">
+                            <label for="millicents-prosthesis">Millicent's Prosthesis</label>
                         </div>
                     </li>
                 </ul>
@@ -250,93 +258,151 @@
 
             <!-- equipment -->
             <article>
-                <li>
-                    <b>Equipment</b>
-                </li>
+                <ul>
+                    <li>
+                        <b>Equipment (not currently functional)</b>
+                    </li>
 
-                <hr>
+                    <hr>
 
-                <details>
-                    <summary>Helms</summary>
+                    <!-- helms -->
                     <li>
-                        <div>
-                            <input type="radio" id="albinauric" oninput="update()" name="helm">
-                            <label for="albinauric">Albinauric Mask</label>
-                        </div>
+                        <details>
+                            <summary>Helms</summary>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <input type="radio" id="none" oninput="update()" name="helm">
+                                        <label for="none">None</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="radio" id="albinauric" oninput="update()" name="helm">
+                                        <label for="albinauric">Albinauric Mask</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="radio" id="crimson" oninput="update()" name="helm">
+                                        <label for="crimson">Crimson Hood</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="radio" id="navy" oninput="update()" name="helm">
+                                        <label for="navy">Navy Hood</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="radio" id="haligtree-helm" oninput="update()" name="helm">
+                                        <label for="haligtree-helm">Haligtree Helm</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="radio" id="mask-of-confidence" oninput="update()" name="helm">
+                                        <label for="mask-of-confidence">Mask of Confidence</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="radio" id="queen" oninput="update()" name="helm">
+                                        <label for="queen">Queen's Crescent Crown</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="radio" id="silver-tear" oninput="update()" name="helm">
+                                        <label for="silver-tear">Silver Tear Mask</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="radio" id="twinsage-crown" oninput="update()" name="helm">
+                                        <label for="twinsage-crown">Twinsage Glintstone Crown</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="radio" id="okina-mask" oninput="update()" name="helm">
+                                        <label for="okina-mask">Okina Mask</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="radio" id="haima" oninput="update()" name="helm">
+                                        <label for="haima">Haima Glintstone Crown</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="radio" id="haligtree-knight-helm" oninput="update()" name="helm">
+                                        <label for="haligtree-knight-helm">Haligtree Knight Helm</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="radio" id="imp-cat" oninput="update()" name="helm">
+                                        <label for="imp-cat">Imp Head (Cat)</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="radio" id="imp-corpse" oninput="update()" name="helm">
+                                        <label for="imp-corpse">Imp Head (Corpse)</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="radio" id="imp-elder" oninput="update()" name="helm">
+                                        <label for="imp-elder">Imp Head (Elder)</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="radio" id="imp-fanged" oninput="update()" name="helm">
+                                        <label for="imp-fanged">Imp Head (Fanged)</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="radio" id="imp-long-tongued" oninput="update()" name="helm">
+                                        <label for="imp-long-tongued">Imp Head (Long-Tongued)</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="radio" id="imp-wolf" oninput="update()" name="helm">
+                                        <label for="imp-wolf">Imp Head (Wolf)</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </details>
                     </li>
-                    <li>
-                        <div>
-                            <input type="radio" id="crimson" oninput="update()" name="helm">
-                            <label for="crimson">Crimson Hood</label>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <input type="radio" id="navy" oninput="update()" name="helm">
-                            <label for="navy">Navy Hood</label>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <input type="radio" id="haligtree" oninput="update()" name="helm">
-                            <label for="haligtree">Haligtree Helm</label>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <input type="radio" id="mask-of-confidence" oninput="update()" name="helm">
-                            <label for="mask-of-confidence">Mask of Confidence</label>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <input type="radio" id="imp-cat" oninput="update()" name="helm">
-                            <label for="imp-cat">Imp Head (Cat)</label>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <input type="radio" id="imp-corpse" oninput="update()" name="helm">
-                            <label for="imp-corpse">Imp Head (Corpse)</label>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <input type="radio" id="imp-elder" oninput="update()" name="helm">
-                            <label for="imp-elder">Imp Head (Elder)</label>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <input type="radio" id="imp-fanged" oninput="update()" name="helm">
-                            <label for="imp-fanged">Imp Head (Fanged)</label>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <input type="radio" id="imp-long-tongued" oninput="update()" name="helm">
-                            <label for="imp-long-tongued">Imp Head (Long-Tongued)</label>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <input type="radio" id="imp-wolf" oninput="update()" name="helm">
-                            <label for="imp-wolf">Imp Head (Wolf)</label>
-                        </div>
-                    </li>
-                </details>
 
-                <details>
-                    <summary>Chest Armor</summary>
-                </details>
+                    <!-- chest armor-->
+                    <li>
+                        <details>
+                            <summary>Chest Armor</summary>
+                        </details>
+                    </li>
 
-                <details>
-                    <summary>Gauntlets</summary>
-                </details>
+                    <!-- gauntlets-->
+                    <li>
+                        <details>
+                            <summary>Gauntlets</summary>
+                        </details>
+                    </li>
 
-                <details>
-                    <summary>Leg Armor</summary>
-                </details>
+                    <!-- leg armor -->
+                    <li>
+                        <details>
+                            <summary>Leg Armor</summary>
+                        </details>
+                    </li>
+                </ul>
             </article>
         </div>
 
@@ -346,8 +412,8 @@
                 <tr>
                     <td>Skill</td>
                     <td>Stat</td>
-                    <td>Softcap</td>
-                    <td>Note</td>
+                    <td>Softcaps</td>
+                    <td>Notes</td>
                 </tr>
             </thead>
             <tbody>
@@ -360,7 +426,7 @@
                 <tr>
                     <td>Endurance</td>
                     <td>Stamina</td>
-                    <td>30 (125 stamina)<br>50 (155 stamina)</td>
+                    <td>30 (125stm.)<br>50 (155stm.)</td>
                     <td></td>
                 </tr>
                 <tr>

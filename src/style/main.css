@@ -1,5 +1,30 @@
-:root {
-    --offwhite: #f8f8ff;
+/* colors */
+@media (prefers-color-scheme: light) {
+    :root {
+        --primary: white;
+        --secondary: #f8f8ff;
+        --border: grey;
+        --font-color: black;
+        --link-color: #1d7484;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary: #2b2a33;
+        --secondary: #1c1b22;
+        --border: black;
+        --font-color: white;
+        --link-color: tomato;
+    }
+}
+
+html {
+    background-color: var(--primary);
+}
+
+html * {
+    color: var(--font-color);
 }
 
 /* fonts */
@@ -59,8 +84,8 @@ footer {
 
     margin-top: auto;
 
-    outline: 1px solid grey;
-    background-color: #f8f8ff;
+    outline: 1px solid var(--border);
+    background-color: var(--secondary);
 }
 
 /* nav */
@@ -71,8 +96,8 @@ nav {
     align-items: center;
 
     /* look */
-    background-color: #f8f8ff;
-    outline: 1px solid grey;
+    background-color: var(--secondary);
+    outline: 1px solid var(--border);
 }
 
 nav ul {
@@ -118,15 +143,15 @@ p {
 /* links */
 a {
     text-decoration: none;
-    color: #1d7484;
+    color: var(--link-color);
 }
 a:hover {
-    color: #144f5a;
+    color: var(--link-color);
 }
 a:visited {
     /* color: #982c61; */
-    color: #1d7484;
-    border-bottom: 2px solid #4a4a4a;
+    color: var(--link-color);
+    border-bottom: 2px solid var(--link-color);
 }
 
 /* lists & tables */
@@ -144,15 +169,17 @@ table {
     text-align: justify;
     width: 100%;
 
-    border: 1px solid grey;
     border-radius: 5px;
     margin-bottom: 10px;
+
+    border: 1px solid var(--border);
+    background-color: var(--secondary);
 }
 
 td,
 th {
     padding: 0.5em;
-    border-bottom: 1px solid #f1f1f1;
+    border-bottom: 1px solid var(--primary);
 }
 
 thead {
@@ -174,21 +201,19 @@ tbody:first-child {
 }
 
 .cards article {
-    /* flex-grow: 0.45; */
-    /* flex-basis: 0px; */
     text-align: center;
 
     flex-grow: 1;
     min-width: 200px;
 
-    border: 1px solid grey;
+    border: 1px solid var(--outline);
     border-radius: 5px;
 
     /* look */
-    background-color: #f8f8ff;
+    background-color: var(--secondary);
 }
 
-.card article * {
+.cards article * {
     display: inline-block;
     text-align: center;
 }
@@ -200,20 +225,21 @@ tbody:first-child {
     justify-content: center;
 
     padding: 15px;
-    border: 1px solid grey;
+    border: 1px solid var(--border);
     border-radius: 5px;
     min-width: 320px;
 
-    background-color: #f8f8ff;
+    background-color: var(--secondary);
 }
 
 .app article {
-    border: 1px solid grey;
+    border: 1px solid var(--border);
     border-radius: 5px;
     margin: 10px;
     padding: 10px;
 
-    min-width: 220px;
+    flex-grow: 1;
+    flex-basis: 300px;
 
     display: flex;
     flex-direction: column;
@@ -222,22 +248,36 @@ tbody:first-child {
 }
 
 .app ul {
-    padding: 0;
+    padding-left: 0;
+    padding-top: 5px;
+    margin: 0;
 }
 
 .app li {
     display: flex;
     justify-content: space-between;
-    text-align: right;
-
     width: 100%;
+
     list-style: none;
 }
 
 .app .stat {
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
     margin-left: 10px;
     max-width: 40px;
     align-self: flex-end;
+}
+
+.app input:is([disabled]) {
+    text-align: center;
+    background-color: var(--primary);
+    border: 1px solid var(--border);
+}
+
+.app .stat:not([disabled]) {
+    color: var(--primary);
 }
 
 .app hr {
