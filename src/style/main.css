@@ -44,6 +44,10 @@ body {
     height: 100vh;
 }
 
+header {
+    text-align: center;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -117,7 +121,8 @@ a:hover {
     color: #144f5a;
 }
 a:visited {
-    color: #982c61;
+    /* color: #982c61; */
+    color: #1d7484;
     border-bottom: 2px solid #4a4a4a;
 }
 
@@ -165,31 +170,47 @@ li {
 /* apps */
 .app {
     display: flex;
-    flex-direction: row;
-    justify-content: stretch;
+    flex-flow: row wrap;
+    justify-content: center;
 
     padding: 15px;
     border: 1px solid grey;
     border-radius: 5px;
+    min-width: 320px;
 
     background-color: #f8f8ff;
 }
 
 .app ul {
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+
+    min-width: 220px;
+
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-
-.app ul li * {
-    width: 200px;
+    justify-content: top;
+    align-items: stretch;
 }
 
 .app li {
-    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+
+    width: 100%;
     list-style: none;
 }
 
-.app ul input {
-    width: 40px;
+.app ul .stat {
+    margin-left: 10px;
+    max-width: 40px;
+    align-self: flex-end;
+}
+
+.app hr {
+    margin-top: 2px;
+    margin-bottom: 4px;
 }

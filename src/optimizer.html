@@ -8,11 +8,13 @@
 
     <link rel="stylesheet" href="style/main.css">
 
-    <title></title>
+    <title>Erdtree - Class Optimizer</title>
     <meta name="description" content="">
+
+    <script src="/script/optimizer.js"></script>
 </head>
 
-<body>
+<body onload="update();">
     <nav>
         <h1><a href="/index.html">Elden Ring Build Planner</a></h1>
         <ul>
@@ -27,68 +29,290 @@
 
     <main>
         <div class="app">
-            <script src="script/"></script>
-            <!-- input fields -->
-            <ul>
-                <!-- <li>
-                    <pre>Base</pre>
-                    <pre>Total</pre>
-                </li> -->
+            <ul id="class-options">
                 <li>
-                    <label><b>Level</b></label>
-                    <input type="number" disabled>
-                    <input type="number" name="total-level" disabled>
+                    <label><b>Class</b></label>
+                    <input id="best-class" type="text" disabled>
                 </li>
+
+                <hr>
+
+                <li><b>Options</b></li>
+
+                <li name="option">
+                    <div></div>
+                    <div></div>
+                </li>
+                <li name="option">
+                    <div></div>
+                    <div></div>
+                </li>
+                <li name="option">
+                    <div></div>
+                    <div></div>
+                </li>
+                <li name="option">
+                    <div></div>
+                    <div></div>
+                </li>
+                <li name="option">
+                    <div></div>
+                    <div></div>
+                </li>
+                <li name="option">
+                    <div></div>
+                    <div></div>
+                </li>
+                <li name="option">
+                    <div></div>
+                    <div></div>
+                </li>
+                <li name="option">
+                    <div></div>
+                    <div></div>
+                </li>
+                <li name="option">
+                    <div></div>
+                    <div></div>
+                </li>
+                <li name="option">
+                    <div></div>
+                    <div></div>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <label>
+                        <b>Level</b>
+                    </label>
+                    <div>
+                        <input class="stat" type="text" id="class-level" oninput="update()" disabled>
+                        <input class="stat" type="text" id="total-level" oninput="update()" disabled>
+                        <input class="stat" type="text" id="virtual-level" oninput="update()" disabled>
+                    </div>
+                </li>
+
+                <hr>
+
                 <li>
                     <label>Vigor</label>
-                    <input type="number" disabled>
-                    <input type="number" name="vigor" min=0 max=99>
+                    <div>
+                        <input name="class-stat" class="stat" type="text" id="class-vigor" oninput="update()" disabled>
+                        <input name="desired-stat" class="stat" type="number" id="vigor" oninput="update()" min=0 max=99
+                            maxLength=2>
+                        <input name="virtual-stat" class="stat" type="text" id="virtual-vigor" oninput="update()"
+                            disabled>
+                    </div>
                 </li>
                 <li>
                     <label>Mind</label>
-                    <input type="number" disabled>
+                    <div>
+                        <input name="class-stat" class="stat" type="text" id="class-mind" oninput="update()" disabled>
+                        <input name="desired-stat" class="stat" type="number" id="mind" oninput="update()" min=0 max=99>
+                        <input name="virtual-stat" class="stat" type="text" id="virtual-mind" oninput="update()"
+                            disabled>
+                    </div>
                 </li>
                 <li>
                     <label>Endurance</label>
-                    <input type="number" disabled>
+                    <div>
+                        <input name="class-stat" class="stat" type="text" id="class-endurance" oninput="update()"
+                            disabled>
+                        <input name="desired-stat" class="stat" type="number" id="endurance" oninput="update()" min=0
+                            max=99>
+                        <input name="virtual-stat" class="stat" type="text" id="virtal-endurance" oninput="update()"
+                            disabled>
+                    </div>
                 </li>
                 <li>
                     <label>Strength</label>
-                    <input type="number" disabled>
+                    <div>
+                        <input name="class-stat" class="stat" type="text" id="class-strength" oninput="update()"
+                            disabled>
+                        <input name="desired-stat" class="stat" type="number" id="strength" oninput="update()" min=0
+                            max=99>
+                        <input name="virtual-stat" class="stat" type="text" id="virtual-strength" oninput="update()"
+                            disabled>
+                    </div>
                 </li>
                 <li>
                     <label>Dexterity</label>
-                    <input type="number" disabled>
+                    <div>
+                        <input name="class-stat" class="stat" type="text" id="class-dexterity" oninput="update()"
+                            disabled>
+                        <input name="desired-stat" class="stat" type="number" id="dexterity" oninput="update()" min=0
+                            max=99>
+                        <input name="virtual-stat" class="stat" type="text" id="virtual-dexterity" oninput="update()"
+                            disabled>
+                    </div>
                 </li>
                 <li>
                     <label>Intelligence</label>
-                    <input type="number" disabled>
+                    <div>
+                        <input name="class-stat" class="stat" type="text" id="class-intelligence" oninput="update()"
+                            disabled>
+                        <input name="desired-stat" class="stat" type="number" id="intelligence" oninput="update()" min=0
+                            max=99>
+                        <input name="virtual-stat" class="stat" type="text" id="virtual-intelligence" oninput="update()"
+                            disabled>
+                    </div>
                 </li>
                 <li>
                     <label>Faith</label>
-                    <input type="number" disabled>
+                    <div>
+                        <input name="class-stat" class="stat" type="text" id="class-faith" oninput="update()" disabled>
+                        <input name="desired-stat" class="stat" type="number" id="faith" oninput="update()" min=0
+                            max=99>
+                        <input name="virtual-stat" class="stat" type="text" id="virtual-faith" oninput="update()"
+                            disabled>
+                    </div>
                 </li>
                 <li>
                     <label>Arcane</label>
-                    <input type="number" disabled>
+                    <div>
+                        <input name="class-stat" class="stat" type="text" id="class-arcane" oninput="update()" disabled>
+                        <input name="desired-stat" class="stat" type="number" id="arcane" oninput="update()" min=0
+                            max=99>
+                        <input name="virtual-stat" class="stat" type="text" id="virtual-arcane" oninput="update()"
+                            disabled>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="clearDesired()">Clear All</button>
                 </li>
             </ul>
+
             <ul>
-                <li></li>
-                <li></li>
-                <li><input type="number" name="mind" min=0 max=99></li>
-                <li><input type="number" name="endurance" min=0 max=99></li>
-                <li><input type="number" name="strength" min=0 max=99></li>
-                <li><input type="number" name="dexterity" min=0 max=99></li>
-                <li><input type="number" name="intelligence" min=0 max=99></li>
-                <li><input type="number" name="faith" min=0 max=99></li>
-                <li><input type="number" name="arcane" min=0 max=99></li>
+                <li>
+                    <b>Talismans</b>
+                </li>
+
+                <hr>
+
+                <li>
+                    <div>
+                        <input type="checkbox" id="radagon-soreseal" oninput="talisman()" name="talisman">
+                        <label for="radagon-soreseal">Radagon's Soreseal</label>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="checkbox" id="marika-soreseal" oninput="talisman()" name="talisman">
+                        <label for="marika-soreseal">Marika's Soreseal</label>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="checkbox" id="dexterity-talisman" oninput="talisman()" name="talisman">
+                        <label for="dexterity-talisman">Prosthesis-Wearer Heirloom</label>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="checkbox" id="intelligence-talisman" oninput="talisman()" name="talisman">
+                        <label for="intelligence-talisman">Stargazer Heirloom</label>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="checkbox" id="strength-talisman" oninput="talisman()" name="talisman">
+                        <label for="strength-talisman">Starscourge Heirloom</label>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="checkbox" id="faith-talisman" oninput="talisman()" name="talisman">
+                        <label for="faith-talisman">Two Fingers Heirloom</label>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="checkbox" id="millicent" oninput="talisman()" name="talisman">
+                        <label for="millicent">Millicent's Prosthesis</label>
+                    </div>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <b>Helms</b>
+                </li>
+
+                <hr>
+
+                <li>
+                    <div>
+                        <input type="radio" id="albinauric" oninput="update()" name="helm">
+                        <label for="albinauric">Albinauric Mask</label>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="radio" id="crimson" oninput="update()" name="helm">
+                        <label for="crimson">Crimson Hood</label>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="radio" id="navy" oninput="update()" name="helm">
+                        <label for="navy">Navy Hood</label>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="radio" id="haligtree" oninput="update()" name="helm">
+                        <label for="haligtree">Haligtree Helm</label>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="radio" id="mask-of-confidence" oninput="update()" name="helm">
+                        <label for="mask-of-confidence">Mask of Confidence</label>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="radio" id="imp-cat" oninput="update()" name="helm">
+                        <label for="imp-cat">Imp Head (Cat)</label>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="radio" id="imp-corpse" oninput="update()" name="helm">
+                        <label for="imp-corpse">Imp Head (Corpse)</label>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="radio" id="imp-elder" oninput="update()" name="helm">
+                        <label for="imp-elder">Imp Head (Elder)</label>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="radio" id="imp-fanged" oninput="update()" name="helm">
+                        <label for="imp-fanged">Imp Head (Fanged)</label>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="radio" id="imp-long-tongued" oninput="update()" name="helm">
+                        <label for="imp-long-tongued">Imp Head (Long-Tongued)</label>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="radio" id="imp-wolf" oninput="update()" name="helm">
+                        <label for="imp-wolf">Imp Head (Wolf)</label>
+                    </div>
+                </li>
             </ul>
         </div>
     </main>
 
     <footer>
-
+        <h5>Erdtree Planner (available under BSD-3-Clause license)</h5>
     </footer>
 </body>
 
