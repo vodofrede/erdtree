@@ -173,7 +173,7 @@ tbody:first-child {
     gap: 10px;
 }
 
-.card {
+.cards article {
     /* flex-grow: 0.45; */
     /* flex-basis: 0px; */
     text-align: center;
@@ -188,7 +188,7 @@ tbody:first-child {
     background-color: #f8f8ff;
 }
 
-.card * {
+.card article * {
     display: inline-block;
     text-align: center;
 }
@@ -207,7 +207,7 @@ tbody:first-child {
     background-color: #f8f8ff;
 }
 
-.app ul {
+.app article {
     border: 1px solid grey;
     border-radius: 5px;
     margin: 10px;
@@ -221,6 +221,10 @@ tbody:first-child {
     align-items: stretch;
 }
 
+.app ul {
+    padding: 0;
+}
+
 .app li {
     display: flex;
     justify-content: space-between;
@@ -230,7 +234,7 @@ tbody:first-child {
     list-style: none;
 }
 
-.app ul .stat {
+.app .stat {
     margin-left: 10px;
     max-width: 40px;
     align-self: flex-end;
