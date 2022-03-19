@@ -1,0 +1,195 @@
+:root {
+    --offwhite: #f8f8ff;
+}
+
+/* fonts */
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 0.8rem;
+    }
+}
+
+/* fix sizing and remove margins and padding */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body > * {
+    padding: 0 2%;
+}
+
+@media (min-width: 900px) {
+    body > * {
+        padding: 0 10%;
+    }
+}
+
+/* scaffolding */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+
+    outline: 1px solid grey;
+    background-color: #f8f8ff;
+}
+
+/* nav */
+nav {
+    /* position */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* look */
+    background-color: #f8f8ff;
+    outline: 1px solid grey;
+}
+
+nav ul {
+    display: flex;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+
+    margin: 0px;
+}
+
+nav a {
+    padding: 0px 10px 0px 0px;
+}
+
+/* headers & paragraphs */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+p {
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+}
+
+/* links */
+a {
+    text-decoration: none;
+    color: #1d7484;
+}
+a:hover {
+    color: #144f5a;
+}
+a:visited {
+    color: #982c61;
+    border-bottom: 2px solid #4a4a4a;
+}
+
+/* lists & tables */
+ul {
+    padding-left: 1.4em;
+    margin-top: 0px;
+    margin-bottom: 2.5rem;
+}
+
+li {
+    margin-bottom: 0.4em;
+}
+
+/* buttons & input */
+
+/* cards */
+.cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card {
+    /* flex-grow: 0.45; */
+    /* flex-basis: 0px; */
+    text-align: center;
+
+    flex-grow: 1;
+    min-width: 200px;
+
+    border: 1px solid grey;
+    border-radius: 5px;
+
+    /* look */
+    background-color: #f8f8ff;
+}
+
+.card * {
+    display: inline-block;
+    text-align: center;
+}
+
+/* apps */
+.app {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+
+    background-color: #f8f8ff;
+}
+
+.app ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.app ul li * {
+    width: 200px;
+}
+
+.app li {
+    height: 20px;
+    list-style: none;
+}
+
+.app ul input {
+    width: 40px;
+}
