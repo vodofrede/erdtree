@@ -54,6 +54,9 @@ main {
 }
 
 footer {
+    display: flex;
+    justify-content: space-between;
+
     margin-top: auto;
 
     outline: 1px solid grey;
@@ -135,6 +138,29 @@ ul {
 
 li {
     margin-bottom: 0.4em;
+}
+
+table {
+    text-align: justify;
+    width: 100%;
+
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+td,
+th {
+    padding: 0.5em;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+thead {
+    font-weight: bold;
+}
+
+tbody:first-child {
+    font-weight: bold;
 }
 
 /* buttons & input */
