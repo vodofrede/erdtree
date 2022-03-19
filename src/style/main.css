@@ -5,6 +5,7 @@
         --secondary: #f8f8ff;
         --border: grey;
         --font-color: black;
+        --font-inverted: white;
         --link-color: #1d7484;
     }
 }
@@ -15,6 +16,7 @@
         --secondary: #1c1b22;
         --border: black;
         --font-color: white;
+        --font-inverted: black;
         --link-color: tomato;
     }
 }
@@ -277,7 +279,7 @@ tbody:first-child {
 }
 
 .app .stat:not([disabled]) {
-    color: var(--primary);
+    color: black;
 }
 
 .app hr {
