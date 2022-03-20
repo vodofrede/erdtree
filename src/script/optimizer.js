@@ -2,12 +2,10 @@ const CLASSES = fetch("/data/classes.json")
     .then(response => response.json())
     .then(data => data.classes)
     .catch(error => console.log(error));
-
 const TALISMANS = fetch("/data/talismans.json")
     .then(response => response.json())
     .then(data => data.talismans)
     .catch(error => console.log(error));
-
 const HELMS = fetch("data/equipment.json")
     .then(response => response.json())
     .then(data => data.helms)
@@ -79,7 +77,7 @@ async function update() {
 
     document.getElementsByName("virtual-stat").forEach((elem, i) => {
         elem.value = ((desired[i] > best.stats[i] ? desired[i] : best.stats[i]) + items[i]);
-        // elem.style.color = IS_RADAGON[i] && virtual[i] ? "firebrick" : !IS_RADAGON[i] && virtual[i] ? "royalblue" : "unset";
+        elem.value > desired[i] && elem.value > best.stats[i] ? (elem.style.color = "tomato", elem.style.fontWeight = "bold") : (elem.style.color = "unset", elem.style.fontWeight = "unset");
     });
 
     // update talismans
