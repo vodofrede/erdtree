@@ -1,0 +1,136 @@
+{
+    "helms": [
+        {
+            "id": "albinauric-mask",
+            "name": "Albinauric Mask",
+            "weight": 3.8,
+            "stats": [0, 0, 0, 0, 0, 0, 0, 4]
+        },
+        {
+            "id": "crimson-hood",
+            "name": "Crimson Hood",
+            "weight": 1.7,
+            "stats": [1, 0, 0, 0, 0, 0, 0, 0]
+        },
+        {
+            "id": "navy-hood",
+            "name": "Navy Hood",
+            "weight": 1.7,
+            "stats": [0, 1, 0, 0, 0, 0, 0, 0]
+        },
+        {
+            "id": "haligtree-helm",
+            "name": "Haligtree Helm",
+            "weight": 4.0,
+            "stats": [0, 0, 0, 0, 0, 0, 1, 0]
+        },
+        {
+            "id": "haligtree-knight-helm",
+            "name": "Haligtree Knight Helm",
+            "weight": 5.1,
+            "stats": [0, 0, 0, 0, 0, 0, 2, 0]
+        },
+        {
+            "id": "hierodas-glintstone-crown",
+            "name": "Hierodas Glintstone Crown",
+            "weight": 3,
+            "stats": [0, 0, 2, 0, 0, 2, 0, 0]
+        },
+        {
+            "id": "mask-of-confidence",
+            "name": "Mask of Confidence",
+            "weight": 3.6,
+            "stats": [0, 0, 0, 0, 0, 0, 0, 3]
+        },
+        {
+            "id": "queens-crescent-crown",
+            "name": "Queen's Crescent Crown",
+            "weight": 2.2,
+            "stats": [0, 0, 0, 0, 0, 3, 0, 0]
+        },
+        {
+            "id": "karolos-glintstone-crown",
+            "name": "Karolos Glintstone Crown",
+            "weight": 5.1,
+            "stats": [0, 0, 0, 0, 0, 3, 0, 0]
+        },
+        {
+            "id": "olivinus-glintstone-crown",
+            "name": "Olivinus Glintstone Crown",
+            "weight": 5.1,
+            "stats": [0, 0, 0, 0, 0, 3, 0, 0]
+        },
+        {
+            "id": "twinsage-glintstone-crown",
+            "name": "Twinsage Glintstone Crown",
+            "weight": 5.1,
+            "stats": [0, 0, 0, 0, 0, 6, 0, 0]
+        },
+        {
+            "id": "witchs-glintstone-crown",
+            "name": "Witch's Glintstone Crown",
+            "weight": 5.1,
+            "stats": [0, 0, 0, 0, 0, 3, 0, 3]
+        },
+        {
+            "id": "haima-glintstone-crown",
+            "name": "Haima Glintstone Crown",
+            "weight": 2.7,
+            "stats": [0, 0, 0, 2, 0, 2, 0, 0]
+        },
+        {
+            "id": "omensmirk-mask",
+            "name": "Omensmirk Mask",
+            "weight": 3,
+            "stats": [0, 0, 0, 2, 0, 0, 0, 0]
+        },
+        {
+            "id": "silver-tear-mask",
+            "name": "Silver Tear Mask",
+            "weight": 4.6,
+            "stats": [0, 0, 0, 0, 0, 0, 0, 8]
+        },
+        {
+            "id": "imp-head-cat",
+            "name": "Imp Head (Cat)",
+            "weight": 8.1,
+            "stats": [0, 0, 0, 0, 0, 2, 0, 0]
+        },
+        {
+            "id": "imp-head-corpse",
+            "name": "Imp Head (Corpse)",
+            "weight": 8.1,
+            "stats": [0, 0, 0, 0, 0, 0, 2, 0]
+        },
+        {
+            "id": "imp-head-elder",
+            "name": "Imp Head (Elder)",
+            "weight": 8.1,
+            "stats": [0, 0, 0, 0, 0, 0, 0, 2]
+        },
+        {
+            "id": "imp-head-fanged",
+            "name": "Imp Head (Fanged)",
+            "weight": 8.1,
+            "stats": [0, 0, 0, 2, 0, 0, 0, 0]
+        },
+        {
+            "id": "imp-head-long-tongued",
+            "name": "Imp Head (Long-Tongued)",
+            "weight": 8.1,
+            "stats": [0, 0, 0, 0, 2, 0, 0, 0]
+        },
+        {
+            "id": "imp-head-wolf",
+            "name": "Imp Head (Wolf)",
+            "weight": 8.1,
+            "stats": [0, 0, 2, 0, 0, 0, 0, 0]
+        },
+        {
+            "id": "okina-mask",
+            "name": "Okina Mask",
+            "weight": 3.6,
+            "stats": [0, 0, 0, 0, 3, 0, 0, 0]
+        }
+    ]
+}

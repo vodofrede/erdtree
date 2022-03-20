@@ -8,6 +8,46 @@ const TALISMANS = fetch("/data/talismans.json")
     .then(data => data.talismans)
     .catch(error => console.log(error));
 
+const HELMS = fetch("data/equipment.json")
+    .then(response => response.json())
+    .then(data => data.helms)
+    .catch(error => console.log(error));
+
+const STAT_SHORT_NAMES = [
+    "vig.",
+    "mnd.",
+    "end.",
+    "str.",
+    "dex.",
+    "int.",
+    "fth.",
+    "arc."
+]
+
+async function init() {
+    // load and show helms
+    let helms = await HELMS;
+    helms = helms.filter(helm => helm.stats != null && helm.stats != undefined);
+
+    let helmTemplate = document.getElementById("helm");
+    let helmList = document.getElementById("helms");
+    helms.forEach(helm => {
+        cloneTemplate(helmTemplate, helmList, helm);
+    });
+
+    // load and show talismans
+    let talismans = await TALISMANS;
+    talismans = talismans.filter(talisman => talisman.stats != null && talisman.stats != undefined);
+
+    let talismanTemplate = document.getElementById("talisman");
+    let talismanList = document.getElementById("talismans");
+    talismans.forEach(talisman => {
+        cloneTemplate(talismanTemplate, talismanList, talisman);
+    });
+
+    update();
+}
+
 async function update() {
     // get inputted stats
     let desired = [...document.getElementsByName("desired-stat")].map(
@@ -17,7 +57,7 @@ async function update() {
         }
     )
 
-    let items = itemStats(await TALISMANS);
+    let items = itemStats((await TALISMANS).concat(await HELMS));
 
     // calculate best class
     let sorted = sortClasses(await CLASSES, desired);
@@ -41,6 +81,15 @@ async function update() {
         elem.value = ((desired[i] > best.stats[i] ? desired[i] : best.stats[i]) + items[i]);
         // elem.style.color = IS_RADAGON[i] && virtual[i] ? "firebrick" : !IS_RADAGON[i] && virtual[i] ? "royalblue" : "unset";
     });
+
+    // update talismans
+    let talismans = [...document.getElementsByClassName("talisman")]
+
+    if (talismans.filter(checkbox => checkbox.checked).length >= 4) {
+        talismans.forEach(checkbox => checkbox.disabled = !checkbox.checked);
+    } else {
+        talismans.forEach(checkbox => checkbox.disabled = false);
+    }
 }
 
 function statDelta(classStats, desiredStats) {
@@ -67,20 +116,34 @@ function itemStats(relevantItems) {
     return relevant.reduce((total, item) => total.map((stat, i) => stat += item.stats[i]), [0, 0, 0, 0, 0, 0, 0, 0]);
 }
 
-function talisman() {
-    let talismans = [...document.getElementsByClassName("talisman")]
-
-    if (talismans.filter(checkbox => checkbox.checked).length >= 4) {
-        talismans.forEach(checkbox => checkbox.disabled = !checkbox.checked);
-    } else {
-        talismans.forEach(checkbox => checkbox.disabled = false);
-    }
+function clearAll() {
+    document.getElementsByName("desired-stat").forEach(elem => { elem.value = null });
+    [...document.getElementsByName("equipment")].forEach(elem => { elem.checked = false });
+    document.getElementById("helmNone").checked = true;
 
     update();
 }
 
-function clearAll() {
-    document.getElementsByName("desired-stat").forEach(elem => { elem.value = null });
-    [...document.getElementsByClassName("talisman")].forEach(elem => { elem.checked = false });
-    update();
+function statsDescription(stats) {
+    return stats.reduce((total, stat, i) => {
+        return stat ? (total + " +" + stat + " " + STAT_SHORT_NAMES[i]) : total;
+    }, "");
+}
+
+function cloneTemplate(template, destination, item) {
+    let clone = template.content.cloneNode(true);
+
+    let li = clone.children[0]
+    let div = li.children[0];
+    let inputElement = div.children[0];
+    let labelElement = div.children[1]
+
+    inputElement.id = item.id;
+    labelElement.for = item.id;
+    labelElement.innerHTML = item.name;
+
+    let aside = li.children[1];
+    aside.innerHTML = statsDescription(item.stats);
+
+    destination.appendChild(clone);
 }

@@ -269,6 +269,10 @@ button {
     list-style: none;
 }
 
+.app li * {
+    flex-grow: 50%;
+}
+
 .app .stat {
     text-align: center;
     -webkit-appearance: none;
