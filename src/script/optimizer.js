@@ -6,7 +6,7 @@ const TALISMANS = fetch("/data/talismans.json")
     .then(response => response.json())
     .then(data => data.talismans)
     .catch(error => console.log(error));
-const HELMS = fetch("data/equipment.json")
+const HELMS = fetch("data/armor.json")
     .then(response => response.json())
     .then(data => data.helms)
     .catch(error => console.log(error));
@@ -47,19 +47,20 @@ async function init() {
 }
 
 async function update() {
-    // get inputted stats
+    // get inputted stats, clamp value to 0..99
     let desired = [...document.getElementsByName("desired-stat")].map(
         elem => {
             elem.value = Math.min(Math.max(elem.value, 0), 99) || null;
-            return parseInt(elem.value) || 0;
+            return parseInt(elem.value);
         }
     )
-
-    let items = itemStats((await TALISMANS).concat(await HELMS));
 
     // calculate best class
     let sorted = sortClasses(await CLASSES, desired);
     let best = sorted[0];
+
+    // get added stats from items
+    let items = itemStats((await TALISMANS).concat(await HELMS));
 
     // update document
     document.getElementsByName("option").forEach((elem, i) => {
@@ -115,8 +116,8 @@ function itemStats(relevantItems) {
 }
 
 function clearAll() {
-    document.getElementsByName("desired-stat").forEach(elem => { elem.value = null });
-    [...document.getElementsByName("equipment")].forEach(elem => { elem.checked = false });
+    document.getElementsByName("desired-stat").forEach(elem => elem.value = null);
+    [...document.getElementsByName("equipment")].forEach(elem => elem.checked = false);
     document.getElementById("helmNone").checked = true;
 
     update();
