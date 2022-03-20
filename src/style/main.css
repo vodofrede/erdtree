@@ -299,5 +299,8 @@ button {
 }
 
 .app select {
+    background-color: var(--secondary);
     width: 100%;
+    color: var(--font-color);
+    border: 1px solid var(--border);
 }

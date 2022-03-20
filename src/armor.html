@@ -179,7 +179,7 @@
                     <hr>
                     <li>
                         <b>Locked Equipment</b>
-                        <button id="clear-equipment" onclick="update()">Clear Locked Equipment</button>
+                        <button id="clear-equipment" onclick="clearEquipment()">Clear Locked Equipment</button>
                     </li>
                     <li>
                         <table>
@@ -193,28 +193,31 @@
                             </thead>
                             <tbody>
                                 <tr>
+                                    <template id="locked-option">
+                                        <option value="">Placeholder</option>
+                                    </template>
                                     <td>
-                                        <select type="text" id="select-head" name="locked-equipment"
+                                        <select type="text" id="select-helmet" name="locked-equipment"
                                             onchange="update()">
-                                            <option>None</option>
+                                            <option value="none">None</option>
                                         </select>
                                     </td>
                                     <td>
-                                        <select type="text" id="select-chest" name="locked-equipment"
+                                        <select type="text" id="select-chestpiece" name="locked-equipment"
                                             onchange="update()">
-                                            <option>None</option>
+                                            <option value="none">None</option>
                                         </select>
                                     </td>
                                     <td>
-                                        <select type=" text" id="select-hands" name="locked-equipment"
+                                        <select type=" text" id="select-gauntlets" name="locked-equipment"
                                             onchange="update()">
-                                            <option>None</option>
+                                            <option value="none">None</option>
                                         </select>
                                     </td>
                                     <td>
-                                        <select type="text" id="select-legs" name="locked-equipment"
+                                        <select type="text" id="select-leggings" name="locked-equipment"
                                             onchange="update()">
-                                            <option>None</option>
+                                            <option value="none">None</option>
                                         </select>
                                     </td>
                                 </tr>
