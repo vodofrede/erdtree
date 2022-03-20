@@ -10,7 +10,7 @@
             "weight": 1.7
         },
         {
-            "id": "alberichs-pointed-hat-(altered)",
+            "id": "alberichs-pointed-hat-altered",
             "name": "Alberich's Pointed Hat (Altered)",
             "defenses": [0.9, 0.2, 0.9, 0.9, 4.4, 3.8, 4, 4.4],
             "immunities": [12, 7, 23, 24],
@@ -90,7 +90,7 @@
             "weight": 7.5
         },
         {
-            "id": "banished-knight-helm-(altered)",
+            "id": "banished-knight-helm-altered",
             "name": "Banished Knight Helm (Altered)",
             "defenses": [6.7, 5.2, 6.8, 6.1, 4.7, 4.7, 4.6, 4.6],
             "immunities": [21, 30, 13, 14],
@@ -250,7 +250,7 @@
             "weight": 6.4
         },
         {
-            "id": "cleanrot-helm-(altered)",
+            "id": "cleanrot-helm-altered",
             "name": "Cleanrot Helm (Altered)",
             "defenses": [4.6, 4.2, 5, 5.5, 4, 4.2, 3.4, 4.6],
             "immunities": [21, 21, 9, 10],
@@ -266,7 +266,7 @@
             "weight": 1.4
         },
         {
-            "id": "commoners-headband-(altered)",
+            "id": "commoners-headband-altered",
             "name": "Commoner's Headband (Altered)",
             "defenses": [0.1, 1.1, 1.1, 0.6, 3.9, 3.5, 3.7, 3.9],
             "immunities": [12, 8, 23, 24],
@@ -282,7 +282,7 @@
             "weight": 3.3
         },
         {
-            "id": "confessor-hood-(altered)",
+            "id": "confessor-hood-altered",
             "name": "Confessor Hood (Altered)",
             "defenses": [2.3, 3.1, 2.3, 2.5, 3.4, 3.4, 3.8, 2.8],
             "immunities": [21, 14, 14, 16],
@@ -363,7 +363,7 @@
             "weight": 4
         },
         {
-            "id": "drake-knight-helm-(altered)",
+            "id": "drake-knight-helm-altered",
             "name": "Drake Knight Helm (Altered)",
             "defenses": [3.6, 2.9, 3.8, 3.6, 3.2, 3.6, 2.6, 3.2],
             "immunities": [9, 16, 7, 7],
@@ -387,7 +387,7 @@
             "weight": 4
         },
         {
-            "id": "eccentrics-hood-(altered)",
+            "id": "eccentrics-hood-altered",
             "name": "Eccentric's Hood (Altered)",
             "defenses": [4.4, 3.4, 4.2, 4.4, 3.4, 3.6, 2.3, 3.1],
             "immunities": [12, 21, 8, 7],
@@ -427,7 +427,7 @@
             "weight": 1.7
         },
         {
-            "id": "festive-hood-(altered)",
+            "id": "festive-hood-altered",
             "name": "Festive Hood (Altered)",
             "defenses": [0.2, 0.9, 1.4, 0.9, 4.2, 3.8, 4, 4.5],
             "immunities": [13, 4, 23, 23],
@@ -655,7 +655,7 @@
             "weight": 7.5
         },
         {
-            "id": "imp-head-(cat)",
+            "id": "imp-head-cat",
             "name": "Imp Head (Cat)",
             "stats": [0, 0, 0, 0, 0, 2, 0, 0],
             "defenses": [5.8, 5.2, 5.8, 6.1, 5, 5.8, 4.8, 5],
@@ -664,7 +664,7 @@
             "weight": 8.1
         },
         {
-            "id": "imp-head-(corpse)",
+            "id": "imp-head-corpse",
             "name": "Imp Head (Corpse)",
             "stats": [0, 0, 0, 0, 0, 0, 2, 0],
             "defenses": [5.8, 5.2, 5.8, 6.1, 5, 5.8, 4.8, 5],
@@ -673,7 +673,7 @@
             "weight": 8.1
         },
         {
-            "id": "imp-head-(elder)",
+            "id": "imp-head-elder",
             "name": "Imp Head (Elder)",
             "stats": [0, 0, 0, 0, 0, 0, 0, 2],
             "defenses": [5.8, 5.2, 5.8, 6.1, 5, 5.8, 4.8, 5],
@@ -682,7 +682,7 @@
             "weight": 8.1
         },
         {
-            "id": "imp-head-(long-tongued)",
+            "id": "imp-head-long-tongued",
             "name": "Imp Head (Long-Tongued)",
             "stats": [0, 0, 0, 0, 2, 0, 0, 0],
             "defenses": [5.8, 5.2, 5.8, 6.1, 5, 5.8, 4.8, 5],
@@ -691,7 +691,7 @@
             "weight": 8.1
         },
         {
-            "id": "imp-head-(wolf)",
+            "id": "imp-head-wolf",
             "name": "Imp Head (Wolf)",
             "stats": [0, 0, 2, 0, 0, 0, 0, 0],
             "defenses": [5.8, 5.2, 5.8, 6.1, 5, 5.8, 4.8, 5],
@@ -920,7 +920,7 @@
             "weight": 5.5
         },
         {
-            "id": "nights-cavalry-helm-(altered)",
+            "id": "nights-cavalry-helm-altered",
             "name": "Night's Cavalry Helm (Altered)",
             "defenses": [5, 4.6, 5, 4.8, 3.8, 4.5, 3.8, 4.5],
             "immunities": [14, 21, 9, 9],
@@ -952,7 +952,7 @@
             "weight": 3
         },
         {
-            "id": "nox-monk-hood-(altered)",
+            "id": "nox-monk-hood-altered",
             "name": "Nox Monk Hood (Altered)",
             "defenses": [2.5, 2.8, 2.5, 2.3, 3.8, 3.6, 3.6, 2.8],
             "immunities": [21, 12, 14, 14],
@@ -968,7 +968,7 @@
             "weight": 3.3
         },
         {
-            "id": "nox-swordstress-crown-(altered)",
+            "id": "nox-swordstress-crown-altered",
             "name": "Nox Swordstress Crown (Altered)",
             "defenses": [2.5, 2.8, 2.8, 2.5, 3.8, 2.8, 3.4, 3.1],
             "immunities": [21, 12, 14, 16],

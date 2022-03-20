@@ -1,0 +1,836 @@
+{
+    "leggings": [
+        {
+            "id": "alberichs-trousers",
+            "name": "Alberich's Trousers",
+            "defenses": [3, 2.3, 3, 3, 7.3, 6.8, 7.2, 7.3],
+            "immunities": [26, 14, 41, 44],
+            "poise": 1,
+            "weight": 2.5
+        },
+        {
+            "id": "all-knowing-greaves",
+            "name": "All-Knowing Greaves",
+            "defenses": [7.4, 6.8, 7.7, 6.8, 7.1, 5.4, 5.8, 5.4],
+            "immunities": [17, 29, 13, 13],
+            "poise": 10,
+            "weight": 6.6
+        },
+        {
+            "id": "aristocrat-boots",
+            "name": "Aristocrat Boots",
+            "defenses": [4.3, 4.8, 4.3, 4.3, 3.6, 3.8, 4.3, 3.6],
+            "immunities": [29, 21, 23, 19],
+            "poise": 1,
+            "weight": 2.9
+        },
+        {
+            "id": "astrologer-trousers",
+            "name": "Astrologer Trousers",
+            "defenses": [3.8, 3.4, 3.4, 3.4, 7.7, 7.4, 7.6, 7.4],
+            "immunities": [31, 15, 56, 47],
+            "poise": 3,
+            "weight": 3.9
+        },
+        {
+            "id": "bandit-boots",
+            "name": "Bandit Boots",
+            "defenses": [4, 4.5, 5, 5.4, 5.4, 5.4, 5.8, 5],
+            "immunities": [34, 20, 35, 35],
+            "poise": 2,
+            "weight": 4.4
+        },
+        {
+            "id": "banished-knight-greaves",
+            "name": "Banished Knight Greaves",
+            "defenses": [10.8, 8.6, 11.1, 10.1, 7.7, 7.7, 7.4, 7.6],
+            "immunities": [37, 51, 24, 26],
+            "poise": 17,
+            "weight": 10.8
+        },
+        {
+            "id": "battlemage-legwraps",
+            "name": "Battlemage Legwraps",
+            "defenses": [3, 3.4, 2.3, 3, 7.4, 6.8, 7.1, 7.2],
+            "immunities": [26, 14, 39, 44],
+            "poise": 1,
+            "weight": 2.5
+        },
+        {
+            "id": "beast-champion-greaves",
+            "name": "Beast Champion Greaves",
+            "defenses": [10.1, 9.4, 10.8, 10.6, 7.4, 7.9, 7.3, 7.7],
+            "immunities": [35, 56, 26, 24],
+            "poise": 17,
+            "weight": 10.8
+        },
+        {
+            "id": "black-knife-greaves",
+            "name": "Black Knife Greaves",
+            "defenses": [6.5, 6.2, 7.1, 7.1, 5, 5.4, 3.8, 6.5],
+            "immunities": [17, 29, 14, 14],
+            "poise": 8,
+            "weight": 5.7
+        },
+        {
+            "id": "blackflame-monk-greaves",
+            "name": "Blackflame Monk Greaves",
+            "defenses": [7.7, 6.5, 8.4, 7.4, 5.8, 7.4, 4.5, 5.8],
+            "immunities": [20, 34, 13, 20],
+            "poise": 11,
+            "weight": 7.3
+        },
+        {
+            "id": "blaidds-greaves",
+            "name": "Blaidd's Greaves",
+            "defenses": [8.4, 7.3, 8.4, 8.8, 6.5, 7.3, 6.2, 6.8],
+            "immunities": [24, 39, 16, 16],
+            "poise": 14,
+            "weight": 8.5
+        },
+        {
+            "id": "bloodhound-knight-greaves",
+            "name": "Bloodhound Knight Greaves",
+            "defenses": [7.1, 6.5, 8, 7.7, 5.4, 5.8, 4, 5.8],
+            "immunities": [20, 31, 14, 14],
+            "poise": 8,
+            "weight": 6.6
+        },
+        {
+            "id": "blue-silver-mail-skirt",
+            "name": "Blue Silver Mail Skirt",
+            "defenses": [6.8, 5, 7.1, 6.2, 5.8, 5.4, 4, 4],
+            "immunities": [15, 35, 7, 7],
+            "poise": 7,
+            "weight": 5.5
+        },
+        {
+            "id": "briar-greaves",
+            "name": "Briar Greaves",
+            "defenses": [7.4, 6.5, 7.7, 7.2, 6.2, 7.1, 7.1, 6.2],
+            "immunities": [22, 44, 15, 15],
+            "poise": 9,
+            "weight": 7.3
+        },
+        {
+            "id": "bull-goat-greaves",
+            "name": "Bull-Goat Greaves",
+            "defenses": [11.9, 11.8, 10.6, 10.6, 7.6, 7.7, 8.5, 7.3],
+            "immunities": [44, 51, 29, 34],
+            "poise": 28,
+            "weight": 16.4
+        },
+        {
+            "id": "carian-knight-greaves",
+            "name": "Carian Knight Greaves",
+            "defenses": [6.8, 6.2, 7.1, 6.8, 7.1, 6.8, 5.4, 6.8],
+            "immunities": [17, 29, 13, 14],
+            "poise": 7,
+            "weight": 6.6
+        },
+        {
+            "id": "chain-leggings",
+            "name": "Chain Leggings",
+            "defenses": [6.8, 5, 7.4, 6.8, 4, 6.2, 3.4, 4.5],
+            "immunities": [16, 26, 7, 11],
+            "poise": 7,
+            "weight": 5.5
+        },
+        {
+            "id": "champion-gaiters",
+            "name": "Champion Gaiters",
+            "defenses": [3.8, 5, 4, 4.5, 4.5, 5.4, 5.8, 5.4],
+            "immunities": [31, 20, 26, 24],
+            "poise": 3,
+            "weight": 3.9
+        },
+        {
+            "id": "cleanrot-greaves",
+            "name": "Cleanrot Greaves",
+            "defenses": [8.4, 7.6, 9.2, 10.1, 7.2, 7.3, 6.5, 7.7],
+            "immunities": [39, 41, 17, 20],
+            "poise": 13,
+            "weight": 9.3
+        },
+        {
+            "id": "cloth-trousers",
+            "name": "Cloth Trousers",
+            "defenses": [3, 2.3, 1.5, 2.3, 7.3, 7.1, 6.8, 7.1],
+            "immunities": [26, 14, 37, 37],
+            "poise": 1,
+            "weight": 2
+        },
+        {
+            "id": "commoners-shoes",
+            "name": "Commoner's Shoes",
+            "defenses": [1.5, 3, 3, 2.3, 7.1, 6.5, 6.8, 7.1],
+            "immunities": [22, 14, 39, 41],
+            "poise": 1,
+            "weight": 2
+        },
+        {
+            "id": "confessor-boots",
+            "name": "Confessor Boots",
+            "defenses": [4.5, 5.8, 4.5, 5, 6.2, 6.2, 6.8, 5.4],
+            "immunities": [37, 29, 29, 31],
+            "poise": 3,
+            "weight": 4.8
+        },
+        {
+            "id": "consorts-trousers",
+            "name": "Consort's Trousers",
+            "defenses": [3, 2.3, 2.3, 3, 7.4, 7.1, 7.1, 7.3],
+            "immunities": [29, 15, 41, 39],
+            "poise": 1,
+            "weight": 2.5
+        },
+        {
+            "id": "crucible-greaves",
+            "name": "Crucible Greaves",
+            "defenses": [10.1, 8, 9.6, 9.6, 7.4, 7.3, 6.5, 7.7],
+            "immunities": [31, 44, 22, 22],
+            "poise": 16,
+            "weight": 9.6
+        },
+        {
+            "id": "cuckoo-knight-greaves",
+            "name": "Cuckoo Knight Greaves",
+            "defenses": [3.3, 3.6, 2.8, 3.3, 3.1, 2.9, 2.1, 2.5],
+            "immunities": [11, 19, 8, 8],
+            "poise": 4,
+            "weight": 3.9
+        },
+        {
+            "id": "depraved-perfumer-trousers",
+            "name": "Depraved Perfumer Trousers",
+            "defenses": [3.9, 3.9, 3.7, 3.3, 7.8, 7.5, 7.3, 7.5],
+            "immunities": [46, 15, 40, 58],
+            "poise": 2,
+            "weight": 4.3
+        },
+        {
+            "id": "drake-knight-greaves",
+            "name": "Drake Knight Greaves",
+            "defenses": [6.5, 5.4, 6.8, 6.5, 5.8, 6.5, 5, 5.8],
+            "immunities": [16, 29, 13, 13],
+            "poise": 8,
+            "weight": 5.7
+        },
+        {
+            "id": "duelist-greaves",
+            "name": "Duelist Greaves",
+            "defenses": [8, 7.1, 8, 7.4, 5.8, 6.8, 5.4, 6.2],
+            "immunities": [29, 31, 15, 15],
+            "poise": 11,
+            "weight": 7.3
+        },
+        {
+            "id": "eccentrics-breeches",
+            "name": "Eccentric's Breeches",
+            "defenses": [6.5, 4.5, 6.2, 6.5, 4.5, 5, 3, 4],
+            "immunities": [15, 31, 7, 7],
+            "poise": 6,
+            "weight": 5.1
+        },
+        {
+            "id": "elden-lord-greaves",
+            "name": "Elden Lord Greaves",
+            "defenses": [6.5, 5.8, 6.2, 6.8, 4.5, 6.2, 3.8, 4],
+            "immunities": [16, 31, 7, 11],
+            "poise": 7,
+            "weight": 5.5
+        },
+        {
+            "id": "errant-sorcerer-boots",
+            "name": "Errant Sorcerer Boots",
+            "defenses": [3, 3, 3.8, 3, 7.6, 7.3, 7.2, 7.6],
+            "immunities": [24, 15, 47, 51],
+            "poise": 1,
+            "weight": 3.1
+        },
+        {
+            "id": "exile-greaves",
+            "name": "Exile Greaves",
+            "defenses": [7.1, 5.4, 7.4, 7.1, 4.5, 6.2, 3.8, 5.4],
+            "immunities": [17, 34, 13, 11],
+            "poise": 8,
+            "weight": 5.7
+        },
+        {
+            "id": "finger-maiden-shoes",
+            "name": "Finger Maiden Shoes",
+            "defenses": [3, 2.3, 2.3, 1.5, 7.6, 7.2, 7.3, 7.6],
+            "immunities": [24, 13, 39, 39],
+            "poise": 1,
+            "weight": 2.5
+        },
+        {
+            "id": "fingerprint-greaves",
+            "name": "Fingerprint Greaves",
+            "defenses": [7.7, 6.8, 6.8, 6.8, 5.4, 7.2, 3.8, 5.4],
+            "immunities": [20, 37, 7, 14],
+            "poise": 11,
+            "weight": 6.6
+        },
+        {
+            "id": "fire-monk-greaves",
+            "name": "Fire Monk Greaves",
+            "defenses": [8, 7.1, 7.7, 7.1, 6.2, 7.6, 5.4, 5.4],
+            "immunities": [20, 34, 15, 15],
+            "poise": 10,
+            "weight": 7.3
+        },
+        {
+            "id": "fire-prelate-greaves",
+            "name": "Fire Prelate Greaves",
+            "defenses": [11.1, 9.8, 10.6, 10.6, 7.7, 11.5, 7.4, 7.6],
+            "immunities": [41, 39, 56, 31],
+            "poise": 24,
+            "weight": 15.3
+        },
+        {
+            "id": "foot-soldier-greaves",
+            "name": "Foot Soldier Greaves",
+            "defenses": [5.4, 5.8, 5.4, 5.4, 6.2, 6.5, 6.8, 6.2],
+            "immunities": [39, 26, 34, 34],
+            "poise": 4,
+            "weight": 5.1
+        },
+        {
+            "id": "fur-leggings",
+            "name": "Fur Leggings",
+            "defenses": [3.4, 3.8, 3.4, 3.4, 3.8, 4, 5, 4],
+            "immunities": [39, 26, 34, 24],
+            "poise": 1,
+            "weight": 3.1
+        },
+        {
+            "id": "gelmir-knight-greaves",
+            "name": "Gelmir Knight Greaves",
+            "defenses": [7.7, 6.5, 8, 7.7, 6.2, 7.1, 5.8, 6.2],
+            "immunities": [22, 34, 15, 14],
+            "poise": 11,
+            "weight": 7.3
+        },
+        {
+            "id": "godrick-knight-greaves",
+            "name": "Godrick Knight Greaves",
+            "defenses": [7.7, 6.8, 8, 7.4, 6.2, 6.8, 5.4, 6.2],
+            "immunities": [22, 35, 15, 15],
+            "poise": 11,
+            "weight": 7.3
+        },
+        {
+            "id": "godrick-soldier-greaves",
+            "name": "Godrick Soldier Greaves",
+            "defenses": [7.4, 6.5, 7.4, 7.1, 5.8, 6.2, 4.5, 5.4],
+            "immunities": [20, 34, 14, 14],
+            "poise": 10,
+            "weight": 6.6
+        },
+        {
+            "id": "godskin-apostle-trousers",
+            "name": "Godskin Apostle Trousers",
+            "defenses": [3.4, 3, 3, 1.5, 7.2, 6.8, 7.1, 7.9],
+            "immunities": [26, 13, 41, 39],
+            "poise": 1,
+            "weight": 2.5
+        },
+        {
+            "id": "godskin-noble-trousers",
+            "name": "Godskin Noble Trousers",
+            "defenses": [2.3, 4.5, 3, 2.3, 7.2, 6.5, 6.8, 7.7],
+            "immunities": [24, 14, 39, 41],
+            "poise": 1,
+            "weight": 2.5
+        },
+        {
+            "id": "gold-waistwrap",
+            "name": "Gold Waistwrap",
+            "defenses": [4, 3.8, 3.8, 3, 7.6, 7.4, 7.6, 8.1],
+            "immunities": [35, 15, 56, 56],
+            "poise": 3,
+            "weight": 4.4
+        },
+        {
+            "id": "guardian-greaves",
+            "name": "Guardian Greaves",
+            "defenses": [6.2, 5.8, 5.8, 5.4, 6.8, 6.5, 6.8, 6.8],
+            "immunities": [47, 31, 37, 35],
+            "poise": 3,
+            "weight": 5.5
+        },
+        {
+            "id": "haligtree-greaves",
+            "name": "Haligtree Greaves",
+            "defenses": [7.4, 6.8, 7.1, 7.4, 5.4, 5.8, 4.5, 5.8],
+            "immunities": [20, 34, 14, 15],
+            "poise": 9,
+            "weight": 6.6
+        },
+        {
+            "id": "haligtree-knight-greaves",
+            "name": "Haligtree Knight Greaves",
+            "defenses": [7.7, 7.1, 7.7, 7.7, 5.8, 6.5, 5.4, 6.5],
+            "immunities": [22, 35, 15, 15],
+            "poise": 10,
+            "weight": 7.3
+        },
+        {
+            "id": "hoslows-greaves",
+            "name": "Hoslow's Greaves",
+            "defenses": [8, 6.8, 7.7, 7.1, 6.2, 6.8, 5.8, 5.8],
+            "immunities": [24, 37, 15, 15],
+            "poise": 10,
+            "weight": 7.3
+        },
+        {
+            "id": "kaiden-trousers",
+            "name": "Kaiden Trousers",
+            "defenses": [6.5, 4.6, 6.5, 6.5, 4, 4.5, 3.8, 4],
+            "immunities": [15, 26, 7, 7],
+            "poise": 7,
+            "weight": 5.1
+        },
+        {
+            "id": "knight-greaves",
+            "name": "Knight Greaves",
+            "defenses": [7.1, 6.8, 7.7, 7.7, 6.2, 6.2, 5.4, 5],
+            "immunities": [17, 31, 11, 11],
+            "poise": 11,
+            "weight": 6.6
+        },
+        {
+            "id": "land-of-reeds-greaves",
+            "name": "Land of Reeds Greaves",
+            "defenses": [5, 5.4, 6.8, 5.4, 5.8, 6.5, 6.8, 6.2],
+            "immunities": [37, 31, 31, 34],
+            "poise": 4,
+            "weight": 5.1
+        },
+        {
+            "id": "leather-boots",
+            "name": "Leather Boots",
+            "defenses": [4.5, 5.4, 4.5, 5, 5.4, 5.4, 5.8, 5.8],
+            "immunities": [37, 22, 26, 31],
+            "poise": 1,
+            "weight": 4.4
+        },
+        {
+            "id": "leather-trousers",
+            "name": "Leather Trousers",
+            "defenses": [6.5, 5.4, 6.8, 6.8, 5, 5.4, 3.4, 4.5],
+            "immunities": [16, 29, 11, 7],
+            "poise": 8,
+            "weight": 5.5
+        },
+        {
+            "id": "leyndell-knight-greaves",
+            "name": "Leyndell Knight Greaves",
+            "defenses": [7.7, 7.1, 7.7, 7.7, 5.8, 6.5, 5.8, 6.2],
+            "immunities": [22, 35, 15, 15],
+            "poise": 11,
+            "weight": 7.3
+        },
+        {
+            "id": "leyndell-soldier-greaves",
+            "name": "Leyndell Soldier Greaves",
+            "defenses": [7.4, 6.8, 7.1, 7.4, 5.4, 5.8, 5, 5.4],
+            "immunities": [20, 34, 14, 14],
+            "poise": 10,
+            "weight": 6.6
+        },
+        {
+            "id": "lionels-greaves",
+            "name": "Lionel's Greaves",
+            "defenses": [10.1, 9.4, 11.1, 11.4, 7.7, 8.5, 7.4, 7.7],
+            "immunities": [39, 61, 26, 31],
+            "poise": 22,
+            "weight": 13.1
+        },
+        {
+            "id": "malenias-greaves",
+            "name": "Malenia's Greaves",
+            "defenses": [7.1, 5.4, 7.4, 6.5, 4.5, 5.4, 3.8, 6.2],
+            "immunities": [31, 26, 11, 11],
+            "poise": 8,
+            "weight": 5.7
+        },
+        {
+            "id": "malformed-dragon-greaves",
+            "name": "Malformed Dragon Greaves",
+            "defenses": [9.6, 8.6, 10.1, 9.6, 7.4, 7.4, 7.9, 7.4],
+            "immunities": [35, 47, 24, 24],
+            "poise": 16,
+            "weight": 9.9
+        },
+        {
+            "id": "malikeths-greaves",
+            "name": "Maliketh's Greaves",
+            "defenses": [7.7, 6.8, 8, 7.7, 6.2, 6.5, 5.4, 7.3],
+            "immunities": [22, 35, 15, 31],
+            "poise": 11,
+            "weight": 7.9
+        },
+        {
+            "id": "mausoleum-greaves",
+            "name": "Mausoleum Greaves",
+            "defenses": [7.4, 6.2, 7.7, 7.1, 5.8, 5.8, 5, 5.8],
+            "immunities": [20, 31, 14, 13],
+            "poise": 11,
+            "weight": 6.6
+        },
+        {
+            "id": "mausoleum-knight-greaves",
+            "name": "Mausoleum Knight Greaves",
+            "defenses": [7.7, 6.5, 8.4, 7.4, 6.2, 6.5, 5.8, 6.5],
+            "immunities": [22, 34, 15, 14],
+            "poise": 12,
+            "weight": 7.3
+        },
+        {
+            "id": "mushroom-legs",
+            "name": "Mushroom Legs",
+            "defenses": [3.4, 4, 1.5, 3, 7.6, 3, 7.4, 7.4],
+            "immunities": [63, 15, 56, 47],
+            "poise": 1,
+            "weight": 3.1
+        },
+        {
+            "id": "nights-cavalry-greaves",
+            "name": "Night's Cavalry Greaves",
+            "defenses": [8, 7.3, 8, 7.7, 6.2, 7.2, 6.2, 7.2],
+            "immunities": [24, 35, 15, 15],
+            "poise": 12,
+            "weight": 7.9
+        },
+        {
+            "id": "nobles-trousers",
+            "name": "Noble's Trousers",
+            "defenses": [3.4, 3.8, 3.4, 3.8, 7.6, 7.7, 7.4, 7.6],
+            "immunities": [29, 15, 47, 51],
+            "poise": 1,
+            "weight": 3.9
+        },
+        {
+            "id": "nomadic-merchants-trousers",
+            "name": "Nomadic Merchant's Trousers",
+            "defenses": [4.5, 5, 4, 3.8, 5.4, 5.4, 5.4, 5],
+            "immunities": [35, 20, 44, 29],
+            "poise": 2,
+            "weight": 4.4
+        },
+        {
+            "id": "nox-monk-greaves",
+            "name": "Nox Monk Greaves",
+            "defenses": [5.4, 5.8, 5.4, 5, 7.1, 6.8, 6.8, 5.8],
+            "immunities": [39, 26, 31, 31],
+            "poise": 4,
+            "weight": 5.1
+        },
+        {
+            "id": "old-aristocrat-shoes",
+            "name": "Old Aristocrat Shoes",
+            "defenses": [3.4, 3.4, 3, 3.4, 4.5, 5, 4.5, 3.4],
+            "immunities": [22, 15, 17, 20],
+            "poise": 1,
+            "weight": 2
+        },
+        {
+            "id": "old-sorcerers-legwraps",
+            "name": "Old Sorcerer's Legwraps",
+            "defenses": [3.4, 1.5, 3.4, 1.5, 8.1, 6.8, 7.2, 7.3],
+            "immunities": [24, 13, 39, 44],
+            "poise": 1,
+            "weight": 2.5
+        },
+        {
+            "id": "omen-greaves",
+            "name": "Omen Greaves",
+            "defenses": [10.6, 8.6, 10.8, 10.8, 7.4, 8.3, 8.5, 7.9],
+            "immunities": [41, 39, 35, 47],
+            "poise": 24,
+            "weight": 14.3
+        },
+        {
+            "id": "omenkiller-boots",
+            "name": "Omenkiller Boots",
+            "defenses": [5, 4.5, 4, 4, 4, 5.4, 6.5, 5.8],
+            "immunities": [41, 17, 29, 29],
+            "poise": 4,
+            "weight": 4.4
+        },
+        {
+            "id": "page-trousers",
+            "name": "Page Trousers",
+            "defenses": [3.4, 3, 2.3, 2.3, 7.2, 7.1, 7.3, 7.3],
+            "immunities": [24, 13, 44, 44],
+            "poise": 1,
+            "weight": 2.5
+        },
+        {
+            "id": "perfumer-sarong",
+            "name": "Perfumer Sarong",
+            "defenses": [2.3, 3.4, 3, 2.3, 7.3, 6.8, 7.1, 7.3],
+            "immunities": [37, 11, 39, 41],
+            "poise": 1,
+            "weight": 2.5
+        },
+        {
+            "id": "preceptors-trousers",
+            "name": "Preceptor's Trousers",
+            "defenses": [3.4, 3.8, 3.4, 3.4, 8.3, 7.6, 7.3, 7.3],
+            "immunities": [31, 15, 51, 47],
+            "poise": 2,
+            "weight": 3.9
+        },
+        {
+            "id": "prisoner-trousers",
+            "name": "Prisoner Trousers",
+            "defenses": [2.3, 3, 3, 2.3, 6.8, 6.5, 6.5, 7.2],
+            "immunities": [26, 14, 39, 39],
+            "poise": 1,
+            "weight": 2
+        },
+        {
+            "id": "prophet-trousers",
+            "name": "Prophet Trousers",
+            "defenses": [3, 3.4, 3.4, 3, 7.6, 7.3, 7.2, 7.6],
+            "immunities": [26, 14, 47, 51],
+            "poise": 1,
+            "weight": 3.1
+        },
+        {
+            "id": "queens-leggings",
+            "name": "Queen's Leggings",
+            "defenses": [2.3, 1.5, 1.5, 0.3, 7.6, 6.8, 7.1, 7.3],
+            "immunities": [22, 14, 37, 41],
+            "poise": 1,
+            "weight": 2
+        },
+        {
+            "id": "radahn-soldier-greaves",
+            "name": "Radahn Soldier Greaves",
+            "defenses": [7.7, 6.2, 7.1, 6.8, 5.8, 6.5, 4.5, 5.4],
+            "immunities": [20, 31, 14, 15],
+            "poise": 10,
+            "weight": 6.6
+        },
+        {
+            "id": "radahns-greaves",
+            "name": "Radahn's Greaves",
+            "defenses": [10.8, 8.6, 10.6, 10.1, 7.7, 8.1, 7.2, 7.7],
+            "immunities": [37, 61, 26, 24],
+            "poise": 17,
+            "weight": 10.8
+        },
+        {
+            "id": "raging-wolf-greaves",
+            "name": "Raging Wolf Greaves",
+            "defenses": [7.7, 6.8, 7.7, 7.4, 5.8, 6.5, 4, 5.4],
+            "immunities": [20, 35, 11, 11],
+            "poise": 9,
+            "weight": 6.6
+        },
+        {
+            "id": "raya-lucarian-greaves",
+            "name": "Raya Lucarian Greaves",
+            "defenses": [7.4, 6.2, 7.7, 7.4, 6.2, 6.2, 4, 5],
+            "immunities": [20, 34, 14, 14],
+            "poise": 10,
+            "weight": 6.6
+        },
+        {
+            "id": "redmane-knight-greaves",
+            "name": "Redmane Knight Greaves",
+            "defenses": [7.7, 6.5, 7.7, 7.1, 6.2, 7.3, 5.4, 6.2],
+            "immunities": [22, 34, 15, 15],
+            "poise": 11,
+            "weight": 7.3
+        },
+        {
+            "id": "ronins-greaves",
+            "name": "Ronin's Greaves",
+            "defenses": [6.2, 6.2, 6.5, 6.2, 6.8, 7.1, 7.3, 6.8],
+            "immunities": [46, 35, 36, 38],
+            "poise": 5,
+            "weight": 5.7
+        },
+        {
+            "id": "rotten-duelist-greaves",
+            "name": "Rotten Duelist Greaves",
+            "defenses": [7.4, 6.2, 7.7, 7.1, 6.2, 6.5, 5.8, 6.2],
+            "immunities": [35, 35, 15, 15],
+            "poise": 10,
+            "weight": 7.3
+        },
+        {
+            "id": "royal-knight-greaves",
+            "name": "Royal Knight Greaves",
+            "defenses": [9.2, 8.3, 10.1, 9.6, 8.1, 7.6, 7.1, 7.4],
+            "immunities": [31, 41, 22, 22],
+            "poise": 14,
+            "weight": 9.6
+        },
+        {
+            "id": "royal-remains-greaves",
+            "name": "Royal Remains Greaves",
+            "defenses": [6.8, 6.5, 7.4, 6.8, 5.4, 5.8, 4.5, 5],
+            "immunities": [22, 35, 15, 7],
+            "poise": 9,
+            "weight": 6.6
+        },
+        {
+            "id": "sage-trousers",
+            "name": "Sage Trousers",
+            "defenses": [3.4, 3, 3, 1.5, 7.6, 7.1, 7.3, 7.6],
+            "immunities": [22, 13, 39, 41],
+            "poise": 1,
+            "weight": 2.5
+        },
+        {
+            "id": "sanguine-noble-waistcloth",
+            "name": "Sanguine Noble Waistcloth",
+            "defenses": [3, 2.3, 2.3, 2.3, 7.4, 6.5, 7.3, 7.6],
+            "immunities": [29, 11, 44, 41],
+            "poise": 1,
+            "weight": 2.5
+        },
+        {
+            "id": "scaled-greaves",
+            "name": "Scaled Greaves",
+            "defenses": [9.6, 8.3, 10.1, 9.6, 7.6, 7.9, 7.3, 7.6],
+            "immunities": [35, 51, 24, 24],
+            "poise": 16,
+            "weight": 16
+        },
+        {
+            "id": "shaman-leggings",
+            "name": "Shaman Leggings",
+            "defenses": [3, 3.4, 3, 4.5, 4.5, 4, 4.5, 3.8],
+            "immunities": [39, 26, 34, 22],
+            "poise": 1,
+            "weight": 3.1
+        },
+        {
+            "id": "snow-witch-skirt",
+            "name": "Snow Witch Skirt",
+            "defenses": [3, 3.4, 3.4, 2.3, 7.4, 7.4, 7.3, 7.4],
+            "immunities": [24, 20, 44, 44],
+            "poise": 1,
+            "weight": 3.1
+        },
+        {
+            "id": "sorcerer-leggings",
+            "name": "Sorcerer Leggings",
+            "defenses": [2.3, 3, 3, 0.3, 7.3, 7.1, 6.8, 7.2],
+            "immunities": [24, 7, 39, 37],
+            "poise": 1,
+            "weight": 2
+        },
+        {
+            "id": "spellblades-trousers",
+            "name": "Spellblade's Trousers",
+            "defenses": [2.9, 2.2, 2.9, 2.9, 7.3, 6.7, 7, 7.3],
+            "immunities": [25, 13, 38, 41],
+            "poise": 1,
+            "weight": 2.6
+        },
+        {
+            "id": "travelers-boots",
+            "name": "Traveler's Boots",
+            "defenses": [3.8, 3.4, 3, 2.3, 7.7, 7.3, 7.4, 7.2],
+            "immunities": [24, 15, 47, 47],
+            "poise": 1,
+            "weight": 3.1
+        },
+        {
+            "id": "travelers-slops",
+            "name": "Traveler's Slops",
+            "defenses": [3, 3, 2.3, 1.5, 7.3, 7.3, 7.1, 7.3],
+            "immunities": [34, 13, 41, 39],
+            "poise": 1,
+            "weight": 2.5
+        },
+        {
+            "id": "traveling-maiden-boots",
+            "name": "Traveling Maiden Boots",
+            "defenses": [3, 3.4, 3.4, 2.3, 7.6, 7.3, 7.4, 7.6],
+            "immunities": [29, 15, 47, 51],
+            "poise": 1,
+            "weight": 3.1
+        },
+        {
+            "id": "tree-sentinel-greaves",
+            "name": "Tree Sentinel Greaves",
+            "defenses": [10.8, 8.6, 10.8, 10.1, 7.4, 9.9, 7.2, 8.1],
+            "immunities": [41, 56, 26, 29],
+            "poise": 17,
+            "weight": 11.7
+        },
+        {
+            "id": "twinned-greaves",
+            "name": "Twinned Greaves",
+            "defenses": [7.7, 7.1, 8.4, 6.8, 6.5, 6.5, 5, 5.8],
+            "immunities": [20, 34, 13, 34],
+            "poise": 10,
+            "weight": 7.3
+        },
+        {
+            "id": "vagabond-knight-greaves",
+            "name": "Vagabond Knight Greaves",
+            "defenses": [7.4, 5.8, 6.8, 6.5, 5, 5.8, 4.5, 4.5],
+            "immunities": [20, 34, 13, 13],
+            "poise": 8,
+            "weight": 5.7
+        },
+        {
+            "id": "veterans-greaves",
+            "name": "Veteran's Greaves",
+            "defenses": [10.8, 9.8, 10.8, 10.1, 7.7, 8.1, 7.3, 7.6],
+            "immunities": [39, 56, 29, 29],
+            "poise": 22,
+            "weight": 11.7
+        },
+        {
+            "id": "vulgar-militia-greaves",
+            "name": "Vulgar Militia Greaves",
+            "defenses": [5.4, 6.2, 5.8, 5, 6.2, 6.2, 6.5, 6.2],
+            "immunities": [44, 24, 34, 34],
+            "poise": 4,
+            "weight": 5.1
+        },
+        {
+            "id": "war-surgeon-trousers",
+            "name": "War Surgeon Trousers",
+            "defenses": [3.9, 4.4, 4.9, 3.9, 5.3, 5.7, 6.1, 5.7],
+            "immunities": [33, 23, 28, 31],
+            "poise": 3,
+            "weight": 4.2
+        },
+        {
+            "id": "warrior-greaves",
+            "name": "Warrior Greaves",
+            "defenses": [5.4, 5.4, 4.5, 4.5, 5.8, 6.2, 6.8, 5.4],
+            "immunities": [39, 26, 31, 31],
+            "poise": 4,
+            "weight": 4.8
+        },
+        {
+            "id": "white-reed-greaves",
+            "name": "White Reed Greaves",
+            "defenses": [5.4, 5.4, 6.5, 5, 6.2, 6.2, 6.8, 5.8],
+            "immunities": [41, 26, 34, 31],
+            "poise": 4,
+            "weight": 5.1
+        },
+        {
+            "id": "zamor-legwraps",
+            "name": "Zamor Legwraps",
+            "defenses": [6.5, 5, 6.8, 5.8, 4.5, 4.5, 3, 4],
+            "immunities": [11, 37, 0, 7],
+            "poise": 7,
+            "weight": 5.1
+        }
+    ]
+}
