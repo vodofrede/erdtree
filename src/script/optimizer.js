@@ -51,7 +51,7 @@ async function update() {
     let desired = [...document.getElementsByName("desired-stat")].map(
         elem => {
             elem.value = Math.min(Math.max(elem.value, 0), 99) || null;
-            return parseInt(elem.value);
+            return parseInt(elem.value) || 0;
         }
     )
 
