@@ -36,9 +36,14 @@
                     <hr>
 
                     <li>
-                        <label for="equip-load"><b>Max. Equip Load</b></label>
-                        <input style="max-width: 50px" class="stat" id="equip-load" type="number" onchange="update()"
-                            min=0 step=0.1 value="30">
+                        <label for="max-equip-load"><b>Max. Equip Load</b></label>
+                        <input style="max-width: 50px" class="stat" id="max-equip-load" type="number"
+                            onchange="update()" min=0 step=0.1 value=30>
+                    </li>
+                    <li>
+                        <label for="current-equip-load"><b>Current Equip Load</b></label>
+                        <input style="max-width: 50px" class="stat" id="current-equip-load" type="number"
+                            onchange="update()" min=0 step=0.1 value=0>
                     </li>
 
                     <hr>
@@ -71,7 +76,14 @@
                     <hr>
 
                     <li>
-                        <b>Sorting</b>
+                        <b>Sort by</b>
+                    </li>
+
+                    <li>
+                        <div>
+                            <input type="radio" id="greatest-average" name="sorting-order" onclick="update()">
+                            <label for="greatest-average">Greatest Average Defense</label>
+                        </div>
                     </li>
 
                     <li>
@@ -92,13 +104,6 @@
                         <div>
                             <input type="radio" id="greatest-immunities" name="sorting-order" onclick="update()">
                             <label for="avg-immunities">Greatest Immunities</label>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div>
-                            <input type="radio" id="greatest-average" name="sorting-order" onclick="update()">
-                            <label for="greatest-average">Greatest Weighted Average Defense</label>
                         </div>
                     </li>
 

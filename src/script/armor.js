@@ -15,25 +15,42 @@ const LEGGINGS = fetch("/data/armor.json")
     .then(data => data.leggings)
     .catch(error => console.log(error));
 
-async function init() {
+let sortedHelmets;
+let sortedChestplates;
+let sortedGauntlets;
+let sortedLeggings;
 
+const SortingMethod = {
+    AVERAGE,
+    PHYSICAL,
+    ELEMENTAL,
+    IMMUNITIES,
+};
+
+async function init() {
+    // precompute and sort list of armor pieces
 }
 
 async function update() {
-    let sorted = sortedCandidates();
+    let sorted = sortedCombinations();
 }
 
-function sortedCandidates() {
-    // determine how to sort
-
-    // get most likely candidates
-    let candidates = findCandidates();
-
-    // sort candidates
-
-    return candidates;
+function updateSortingMethod() {
+    update();
 }
 
-function findCandidates() {
-    return [];
+function fitness(item, order) {
+    // return fitness of item based on given order
+    switch (order) {
+        case SortingMethod.AVERAGE:
+            return item.defenses.reduce((total, value) => total + value, 0) / item.defenses.length;
+        case SortingMethod.PHYSICAL:
+            break;
+        case SortingMethod.ELEMENTAL:
+            break;
+        case SortingMethod.IMMUNITIES:
+            break;
+        default:
+            console.log("error pls fix");
+    }
 }
