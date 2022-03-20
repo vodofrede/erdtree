@@ -6,9 +6,9 @@ const TALISMANS = fetch("/data/talismans.json")
     .then(response => response.json())
     .then(data => data.talismans)
     .catch(error => console.log(error));
-const HELMS = fetch("data/armor.json")
+const HELMETS = fetch("/data/helmets.json")
     .then(response => response.json())
-    .then(data => data.helms)
+    .then(data => data.helmets)
     .catch(error => console.log(error));
 
 const STAT_SHORT_NAMES = [
@@ -23,17 +23,17 @@ const STAT_SHORT_NAMES = [
 ]
 
 async function init() {
-    // load and show helms
-    let helms = await HELMS;
-    helms = helms.filter(helm => helm.stats != null && helm.stats != undefined);
+    // populate helmet list
+    let helmets = await HELMETS;
+    helmets = helmets.filter(helmet => helmet.stats != null && helmet.stats != undefined);
 
-    let helmTemplate = document.getElementById("helm");
-    let helmList = document.getElementById("helms");
-    helms.forEach(helm => {
-        cloneTemplate(helmTemplate, helmList, helm);
+    let helmetTemplate = document.getElementById("helm");
+    let helmetList = document.getElementById("helmets");
+    helmets.forEach(helmet => {
+        cloneTemplate(helmetTemplate, helmetList, helmet);
     });
 
-    // load and show talismans
+    // populate talisman list
     let talismans = await TALISMANS;
     talismans = talismans.filter(talisman => talisman.stats != null && talisman.stats != undefined);
 
@@ -60,7 +60,7 @@ async function update() {
     let best = sorted[0];
 
     // get added stats from items
-    let items = itemStats((await TALISMANS).concat(await HELMS));
+    let items = itemStats((await TALISMANS).concat(await HELMETS));
 
     // update document
     document.getElementsByName("option").forEach((elem, i) => {
@@ -91,12 +91,6 @@ async function update() {
     }
 }
 
-function statDelta(classStats, desiredStats) {
-    return classStats
-        .map((e, i) => e < desiredStats[i] ? desiredStats[i] - e : 0)
-        .reduce((total, n) => total + n);
-}
-
 function sortClasses(classes, desiredStats) {
     let deltas = classes.map(c => {
         c.total = c.level + statDelta(c.stats, desiredStats);
@@ -104,6 +98,12 @@ function sortClasses(classes, desiredStats) {
     });
     deltas.sort((a, b) => a.total - b.total);
     return deltas;
+}
+
+function statDelta(classStats, desiredStats) {
+    return classStats
+        .map((e, i) => e < desiredStats[i] ? desiredStats[i] - e : 0)
+        .reduce((total, n) => total + n);
 }
 
 function itemStats(relevantItems) {
@@ -118,7 +118,7 @@ function itemStats(relevantItems) {
 function clearAll() {
     document.getElementsByName("desired-stat").forEach(elem => elem.value = null);
     [...document.getElementsByName("equipment")].forEach(elem => elem.checked = false);
-    document.getElementById("helmNone").checked = true;
+    document.getElementById("helm-none").checked = true;
 
     update();
 }

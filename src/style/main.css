@@ -175,21 +175,17 @@ table {
     margin-bottom: 10px;
 
     border: 1px solid var(--border);
-    background-color: var(--secondary);
+
+    background-color: var(--primary);
 }
 
 td,
 th {
     padding: 0.5em;
-    border-bottom: 1px solid var(--primary);
 }
 
-thead {
-    font-weight: bold;
-}
-
-tbody:first-child {
-    font-weight: bold;
+th {
+    border-bottom: 1px solid var(--border);
 }
 
 /* buttons & input */
@@ -212,6 +208,7 @@ button {
     text-align: center;
 
     flex-grow: 1;
+    flex-basis: 25%;
     min-width: 200px;
 
     border: 1px solid var(--outline);
@@ -273,19 +270,23 @@ button {
     flex-grow: 50%;
 }
 
-.app .stat {
+.app input {
     text-align: center;
-    -webkit-appearance: none;
-    -moz-appearance: textfield;
-    margin-left: 10px;
-    max-width: 40px;
-    align-self: flex-end;
+    border: 1px solid var(--border);
 }
 
 .app input:is([disabled]) {
-    text-align: center;
     background-color: var(--primary);
-    border: 1px solid var(--border);
+}
+
+.app .stat {
+    align-self: flex-end;
+    max-width: 40px;
+
+    margin-left: 10px;
+
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
 }
 
 .app .stat:not([disabled]) {
@@ -295,4 +296,8 @@ button {
 .app hr {
     margin-top: 2px;
     margin-bottom: 4px;
+}
+
+.app select {
+    width: 100%;
 }
