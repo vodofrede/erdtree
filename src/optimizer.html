@@ -114,7 +114,8 @@
                         <label>Mind</label>
                         <div>
                             <input name="class-stat" class="stat" type="text" id="class-mind" disabled>
-                            <input name="desired-stat" class="stat" type="number" id="mind" min=0 max=99>
+                            <input name="desired-stat" class="stat" type="number" id="mind" oninput="update()" min=0
+                                max=99>
                             <input name="subtractive-stat" class="stat" type="text" id="subtractive-mind" disabled>
                             <input name="additive-stat" class="stat" type="text" id="additive-mind" disabled>
                         </div>
@@ -241,20 +242,22 @@
             </article>
         </div>
 
-        <h3>Explanation & Usage</h3>
+        <h3>Explanation</h3>
         <p>The columns in the second box represent, in order:</p>
         <ol>
             <li>
-                The total level and stats of the optimal class.
+                The total level and stats of the lowest-level class with your desired statistics.
             </li>
             <li>
-                Desired stats (input what you want here)
+                Desired statistics. This is where you input the stats that you definitely want your build to have.
             </li>
             <li>
-                Calculated stats as they should be in your level-up menu in-game.
+                Calculated statistics for your build (as they should be in your level-up menu in-game).
             </li>
             <li>
-                Calculated final statistics as shown on the "Stats" screen in-game.
+                Calculated final statistics as shown on the "Stats" screen in-game.<br>
+                The level indicator at the top of this column indicates your "virtual" level, and is not reflected
+                in-game! This statistic includes stats from your talismans and helmet.
             </li>
         </ol>
 
@@ -276,6 +279,12 @@
                     <td>A +12 upgraded crimson flask heals for 810HP.</td>
                 </tr>
                 <tr>
+                    <td>Mind</td>
+                    <td>FP</td>
+                    <td>40 (220FP)</td>
+                    <td>A +12 upgraded cerulean flask gives 220FP.</td>
+                </tr>
+                <tr>
                     <td>Endurance</td>
                     <td>Stamina</td>
                     <td>30 (125stm.)<br>50 (155stm.)</td>
@@ -286,12 +295,6 @@
                     <td>Equip Load</td>
                     <td>25 (72 wgt.)<br>60 (120 wgt.)</td>
                     <td></td>
-                </tr>
-                <tr>
-                    <td>Mind</td>
-                    <td>FP</td>
-                    <td>40 (220FP)</td>
-                    <td>A +12 upgraded cerulean flask gives 220FP.</td>
                 </tr>
                 <tr>
                     <td>Strength</td>
