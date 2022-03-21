@@ -37,13 +37,13 @@
 
                     <li>
                         <label for="max-equip-load">Max. Equip Load</label>
-                        <input style="max-width: 50px" class="stat" id="max-equip-load" type="number"
-                            onchange="update()" min=0 step=0.1 value=30>
+                        <input style="max-width: 50px" class="stat" id="max-equip-load" type="number" oninput="update()"
+                            min=0 step=0.1 value=30 name="equip-load">
                     </li>
                     <li>
                         <label for="current-equip-load">Current Equip Load</label>
                         <input style="max-width: 50px" class="stat" id="current-equip-load" type="number"
-                            onchange="update()" min=0 step=0.1 value=0>
+                            oninput="update()" min=0 step=0.1 value=0 name="equip-load">
                     </li>
 
                     <hr>
@@ -168,6 +168,10 @@
                                     </tr>
                                     <tr>
                                         <td>Leggings</td>
+                                        <td>Stats</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total</td>
                                         <td>Stats</td>
                                     </tr>
                                 </tbody>

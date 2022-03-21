@@ -23,6 +23,23 @@ const POISE = fetch("/data/armor/combinations/poise.json")
     .then(response => response.json())
     .catch(error => console.log(error));
 
+const DEFENSE = [
+    "phys.",
+    "strike",
+    "slash",
+    "pierce",
+    "magic",
+    "fire",
+    "light.",
+    "holy",
+];
+const RESISTANCES = [
+    "immunity",
+    "robustness",
+    "focus",
+    "vitality",
+]
+
 async function init() {
     // populate filter selects
     populateSelect("locked-option", "select-helmet", await HELMETS);
@@ -34,6 +51,9 @@ async function init() {
 }
 
 async function update() {
+    // clamp equip load values to reasonable values
+    [...document.getElementsByName("equip-load")].forEach(el => el.value = Math.max(el.value, 0));
+
     // get budget and sorting order
     let budget = equipLoadBudget();
     let sortBy = currentSortBy();
@@ -65,7 +85,7 @@ function equipLoadBudget() {
             break;
     }
 
-    return (parseInt(document.getElementById("max-equip-load").value) - parseInt(document.getElementById("current-equip-load").value)) * rollModifier;
+    return (parseInt(document.getElementById("max-equip-load").value) || 0 - parseInt(document.getElementById("current-equip-load").value) || 0) * rollModifier;
 }
 
 function currentSortBy() {
@@ -120,11 +140,44 @@ async function populateResults(templateId, destinationId, sets) {
         let tbody = table.children[1];
         let rows = tbody.children;
 
-        rows[0].children[1].innerText = helmets.find(helmet => helmet.id == set.helmet).name;
-        rows[1].children[1].innerText = chestpieces.find(chest => chest.id == set.chestpiece).name;
-        rows[2].children[1].innerText = gauntlets.find(gauntlets => gauntlets.id == set.gauntlets).name
-        rows[3].children[1].innerText = leggings.find(leggings => leggings.id == set.leggings).name
+        let helmet = helmets.find(helmet => helmet.id == set.helmet);
+        let chestpiece = chestpieces.find(chest => chest.id == set.chestpiece);
+        let gauntlet = gauntlets.find(gauntlets => gauntlets.id == set.gauntlets);
+        let legging = leggings.find(leggings => leggings.id == set.leggings);
+
+        rows[0].children[0].innerText = helmet.name;
+        rows[1].children[0].innerText = chestpiece.name;
+        rows[2].children[0].innerText = gauntlet.name;
+        rows[3].children[0].innerText = legging.name;
+
+        rows[0].children[1].innerHTML = statString(helmet);
+        rows[1].children[1].innerHTML = statString(chestpiece);
+        rows[2].children[1].innerHTML = statString(gauntlet);
+        rows[3].children[1].innerHTML = statString(legging);
+
+        rows[4].children[1].innerHTML = totalStatsString(helmet, chestpiece, gauntlet, legging);
 
         destination.appendChild(clone);
     });
+}
+
+function statString(item) {
+    let weight = item.weight.toFixed(1) + " wgt., ";
+    let poise = item.poise + " poise, ";
+    let physical = item.defenses.slice(0, 4).reduce((total, defense, i) => total + defense.toFixed(1) + " " + DEFENSE[i] + ", ", "");
+    let elemental = item.defenses.slice(4, 8).reduce((total, defense, i) => total + defense.toFixed(1) + " " + DEFENSE[i + 4] + ", ", "");
+    let resistances = item.resistances.reduce((total, res, i) => total + res + " " + RESISTANCES[i] + ", ", "");
+
+    return weight + poise + physical + "<br>" + elemental + "<br>" + resistances;
+}
+
+function totalStatsString(helmet, chestpiece, gauntlets, leggings) {
+    let imaginary = {
+        weight: helmet.weight + chestpiece.weight + gauntlets.weight + leggings.weight,
+        poise: helmet.poise + chestpiece.poise + gauntlets.poise + leggings.poise,
+        defenses: helmet.defenses.map((stat, i) => stat + chestpiece.defenses[i] + gauntlets.defenses[i] + leggings.defenses[i]),
+        resistances: helmet.resistances.map((stat, i) => stat + chestpiece.resistances[i] + gauntlets.resistances[i] + leggings.resistances[i])
+    }
+
+    return statString(imaginary);
 }
