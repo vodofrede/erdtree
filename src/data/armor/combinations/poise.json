@@ -1,0 +1,443 @@
+[
+    {
+        "helmet": "bull-goat-helm",
+        "chestpiece": "bull-goat-armor",
+        "gauntlets": "bull-goat-gauntlets",
+        "leggings": "bull-goat-greaves",
+        "weight": 63.0,
+        "poise": 100.0,
+        "physical": 45.0
+    },
+    {
+        "helmet": "bull-goat-helm",
+        "chestpiece": "bull-goat-armor",
+        "gauntlets": "omen-gauntlets",
+        "leggings": "bull-goat-greaves",
+        "weight": 61.9,
+        "poise": 99.0,
+        "physical": 44.4
+    },
+    {
+        "helmet": "bull-goat-helm",
+        "chestpiece": "bull-goat-armor",
+        "gauntlets": "veterans-gauntlets",
+        "leggings": "bull-goat-greaves",
+        "weight": 60.5,
+        "poise": 98.0,
+        "physical": 44.5
+    },
+    {
+        "helmet": "veterans-helm",
+        "chestpiece": "bull-goat-armor",
+        "gauntlets": "bull-goat-gauntlets",
+        "leggings": "bull-goat-greaves",
+        "weight": 59.8,
+        "poise": 97.0,
+        "physical": 44.3
+    },
+    {
+        "helmet": "veterans-helm",
+        "chestpiece": "bull-goat-armor",
+        "gauntlets": "omen-gauntlets",
+        "leggings": "bull-goat-greaves",
+        "weight": 58.7,
+        "poise": 96.0,
+        "physical": 43.7
+    },
+    {
+        "helmet": "veterans-helm",
+        "chestpiece": "bull-goat-armor",
+        "gauntlets": "veterans-gauntlets",
+        "leggings": "bull-goat-greaves",
+        "weight": 57.3,
+        "poise": 95.0,
+        "physical": 43.8
+    },
+    {
+        "helmet": "veterans-helm",
+        "chestpiece": "bull-goat-armor",
+        "gauntlets": "banished-knight-gauntlets",
+        "leggings": "bull-goat-greaves",
+        "weight": 56.8,
+        "poise": 93.0,
+        "physical": 43.8
+    },
+    {
+        "helmet": "crucible-tree-helm",
+        "chestpiece": "bull-goat-armor",
+        "gauntlets": "lionels-gauntlets",
+        "leggings": "bull-goat-greaves",
+        "weight": 56.6,
+        "poise": 92.0,
+        "physical": 43.2
+    },
+    {
+        "helmet": "jar",
+        "chestpiece": "bull-goat-armor",
+        "gauntlets": "veterans-gauntlets",
+        "leggings": "bull-goat-greaves",
+        "weight": 56.0,
+        "poise": 91.0,
+        "physical": 43.8
+    },
+    {
+        "helmet": "crucible-tree-helm",
+        "chestpiece": "bull-goat-armor",
+        "gauntlets": "crucible-gauntlets",
+        "leggings": "bull-goat-greaves",
+        "weight": 54.7,
+        "poise": 90.0,
+        "physical": 43.2
+    },
+    {
+        "helmet": "bull-goat-helm",
+        "chestpiece": "veterans-armor",
+        "gauntlets": "omen-gauntlets",
+        "leggings": "bull-goat-greaves",
+        "weight": 54.3,
+        "poise": 89.0,
+        "physical": 42.7
+    },
+    {
+        "helmet": "jar",
+        "chestpiece": "bull-goat-armor",
+        "gauntlets": "bull-goat-gauntlets",
+        "leggings": "veterans-greaves",
+        "weight": 53.8,
+        "poise": 87.0,
+        "physical": 43.2
+    },
+    {
+        "helmet": "banished-knight-helm-altered",
+        "chestpiece": "bull-goat-armor",
+        "gauntlets": "fire-prelate-gauntlets",
+        "leggings": "veterans-greaves",
+        "weight": 53.5,
+        "poise": 86.0,
+        "physical": 42.8
+    },
+    {
+        "helmet": "veterans-helm",
+        "chestpiece": "bull-goat-armor",
+        "gauntlets": "veterans-gauntlets",
+        "leggings": "radahns-greaves",
+        "weight": 51.7,
+        "poise": 84.0,
+        "physical": 42.7
+    },
+    {
+        "helmet": "jar",
+        "chestpiece": "bull-goat-armor",
+        "gauntlets": "banished-knight-gauntlets",
+        "leggings": "veterans-greaves",
+        "weight": 50.8,
+        "poise": 83.0,
+        "physical": 42.7
+    },
+    {
+        "helmet": "radahns-redmane-helm",
+        "chestpiece": "veterans-armor",
+        "gauntlets": "banished-knight-gauntlets",
+        "leggings": "bull-goat-greaves",
+        "weight": 48.6,
+        "poise": 80.0,
+        "physical": 42.1
+    },
+    {
+        "helmet": "crucible-tree-helm",
+        "chestpiece": "banished-knight-armor",
+        "gauntlets": "banished-knight-gauntlets",
+        "leggings": "bull-goat-greaves",
+        "weight": 46.3,
+        "poise": 71.0,
+        "physical": 41.8
+    },
+    {
+        "helmet": "jar",
+        "chestpiece": "banished-knight-armor-altered",
+        "gauntlets": "veterans-gauntlets",
+        "leggings": "bull-goat-greaves",
+        "weight": 46.0,
+        "poise": 69.0,
+        "physical": 41.9
+    },
+    {
+        "helmet": "jar",
+        "chestpiece": "veterans-armor",
+        "gauntlets": "banished-knight-gauntlets",
+        "leggings": "radahns-greaves",
+        "weight": 42.3,
+        "poise": 68.0,
+        "physical": 41.0
+    },
+    {
+        "helmet": "veterans-helm",
+        "chestpiece": "radahns-lion-armor-altered",
+        "gauntlets": "banished-knight-gauntlets",
+        "leggings": "veterans-greaves",
+        "weight": 42.0,
+        "poise": 64.0,
+        "physical": 40.8
+    },
+    {
+        "helmet": "jar",
+        "chestpiece": "banished-knight-armor-altered",
+        "gauntlets": "tree-sentinel-gauntlets",
+        "leggings": "veterans-greaves",
+        "weight": 41.3,
+        "poise": 61.0,
+        "physical": 40.8
+    },
+    {
+        "helmet": "jar",
+        "chestpiece": "radahns-lion-armor",
+        "gauntlets": "radahns-gauntlets",
+        "leggings": "banished-knight-greaves",
+        "weight": 40.9,
+        "poise": 59.0,
+        "physical": 41.0
+    },
+    {
+        "helmet": "jar",
+        "chestpiece": "crucible-tree-armor",
+        "gauntlets": "radahns-gauntlets",
+        "leggings": "banished-knight-greaves",
+        "weight": 38.9,
+        "poise": 58.0,
+        "physical": 40.0
+    },
+    {
+        "helmet": "jar",
+        "chestpiece": "crucible-tree-armor",
+        "gauntlets": "radahns-gauntlets",
+        "leggings": "crucible-greaves",
+        "weight": 37.7,
+        "poise": 57.0,
+        "physical": 39.3
+    },
+    {
+        "helmet": "crucible-tree-helm",
+        "chestpiece": "crucible-tree-armor",
+        "gauntlets": "chain-gauntlets",
+        "leggings": "crucible-greaves",
+        "weight": 34.6,
+        "poise": 55.0,
+        "physical": 37.2
+    },
+    {
+        "helmet": "crucible-tree-helm",
+        "chestpiece": "crucible-tree-armor",
+        "gauntlets": "blue-silver-bracelets",
+        "leggings": "crucible-greaves",
+        "weight": 33.8,
+        "poise": 53.0,
+        "physical": 36.6
+    },
+    {
+        "helmet": "marionette-soldier-birdhelm",
+        "chestpiece": "banished-knight-armor-altered",
+        "gauntlets": "malenias-gauntlet",
+        "leggings": "crucible-greaves",
+        "weight": 33.0,
+        "poise": 49.0,
+        "physical": 36.1
+    },
+    {
+        "helmet": "crucible-tree-helm",
+        "chestpiece": "crucible-tree-armor",
+        "gauntlets": "zamor-bracelets",
+        "leggings": "vagabond-knight-greaves",
+        "weight": 30.6,
+        "poise": 47.0,
+        "physical": 34.4
+    },
+    {
+        "helmet": "crucible-tree-helm",
+        "chestpiece": "crucible-tree-armor",
+        "gauntlets": "blue-silver-bracelets",
+        "leggings": "vagabond-knight-greaves",
+        "weight": 29.9,
+        "poise": 45.0,
+        "physical": 33.9
+    },
+    {
+        "helmet": "marionette-soldier-birdhelm",
+        "chestpiece": "crucible-tree-armor",
+        "gauntlets": "zamor-bracelets",
+        "leggings": "vagabond-knight-greaves",
+        "weight": 27.8,
+        "poise": 43.0,
+        "physical": 32.3
+    },
+    {
+        "helmet": "marionette-soldier-helm",
+        "chestpiece": "crucible-tree-armor",
+        "gauntlets": "blue-silver-bracelets",
+        "leggings": "vagabond-knight-greaves",
+        "weight": 27.1,
+        "poise": 40.0,
+        "physical": 31.8
+    },
+    {
+        "helmet": "radahn-soldier-helm",
+        "chestpiece": "tree-surcoat",
+        "gauntlets": "malenias-gauntlet",
+        "leggings": "crucible-greaves",
+        "weight": 25.9,
+        "poise": 39.0,
+        "physical": 30.7
+    },
+    {
+        "helmet": "jar",
+        "chestpiece": "blue-silver-mail-armor-altered",
+        "gauntlets": "blue-silver-bracelets",
+        "leggings": "vagabond-knight-greaves",
+        "weight": 23.1,
+        "poise": 36.0,
+        "physical": 28.6
+    },
+    {
+        "helmet": "radahn-soldier-helm",
+        "chestpiece": "blue-silver-mail-armor-altered",
+        "gauntlets": "chain-gauntlets",
+        "leggings": "vagabond-knight-greaves",
+        "weight": 21.1,
+        "poise": 35.0,
+        "physical": 27.0
+    },
+    {
+        "helmet": "marionette-soldier-helm",
+        "chestpiece": "blue-silver-mail-armor-altered",
+        "gauntlets": "eccentrics-manchettes",
+        "leggings": "vagabond-knight-greaves",
+        "weight": 20.9,
+        "poise": 34.0,
+        "physical": 26.8
+    },
+    {
+        "helmet": "fire-monk-hood",
+        "chestpiece": "blue-silver-mail-armor-altered",
+        "gauntlets": "blue-silver-bracelets",
+        "leggings": "vagabond-knight-greaves",
+        "weight": 20.3,
+        "poise": 32.0,
+        "physical": 26.4
+    },
+    {
+        "helmet": "marionette-soldier-helm",
+        "chestpiece": "blue-silver-mail-armor-altered",
+        "gauntlets": "lusats-manchettes",
+        "leggings": "vagabond-knight-greaves",
+        "weight": 19.1,
+        "poise": 31.0,
+        "physical": 25.2
+    },
+    {
+        "helmet": "aristocrat-headband",
+        "chestpiece": "blue-silver-mail-armor-altered",
+        "gauntlets": "chain-gauntlets",
+        "leggings": "vagabond-knight-greaves",
+        "weight": 18.3,
+        "poise": 30.0,
+        "physical": 24.3
+    },
+    {
+        "helmet": "aristocrat-headband",
+        "chestpiece": "blue-silver-mail-armor-altered",
+        "gauntlets": "blue-silver-bracelets",
+        "leggings": "vagabond-knight-greaves",
+        "weight": 17.5,
+        "poise": 28.0,
+        "physical": 23.7
+    },
+    {
+        "helmet": "aristocrat-headband",
+        "chestpiece": "blue-silver-mail-armor-altered",
+        "gauntlets": "gold-bracelets",
+        "leggings": "vagabond-knight-greaves",
+        "weight": 16.2,
+        "poise": 27.0,
+        "physical": 22.4
+    },
+    {
+        "helmet": "aristocrat-headband",
+        "chestpiece": "blue-silver-mail-armor-altered",
+        "gauntlets": "blue-silver-bracelets",
+        "leggings": "old-aristocrat-shoes",
+        "weight": 13.8,
+        "poise": 21.0,
+        "physical": 19.7
+    },
+    {
+        "helmet": "no-helmet",
+        "chestpiece": "blue-silver-mail-armor-altered",
+        "gauntlets": "gold-bracelets",
+        "leggings": "old-aristocrat-shoes",
+        "weight": 11.3,
+        "poise": 20.0,
+        "physical": 16.5
+    },
+    {
+        "helmet": "aristocrat-headband",
+        "chestpiece": "malenias-armor",
+        "gauntlets": "no-gauntlets",
+        "leggings": "old-aristocrat-shoes",
+        "weight": 10.9,
+        "poise": 10.0,
+        "physical": 16.2
+    },
+    {
+        "helmet": "no-helmet",
+        "chestpiece": "aristocrat-garb-altered",
+        "gauntlets": "gold-bracelets",
+        "leggings": "vagabond-knight-greaves",
+        "weight": 10.6,
+        "poise": 9.0,
+        "physical": 15.5
+    },
+    {
+        "helmet": "no-helmet",
+        "chestpiece": "malenias-armor-altered",
+        "gauntlets": "no-gauntlets",
+        "leggings": "old-aristocrat-shoes",
+        "weight": 8.8,
+        "poise": 8.0,
+        "physical": 13.4
+    },
+    {
+        "helmet": "no-helmet",
+        "chestpiece": "aristocrat-garb",
+        "gauntlets": "gold-bracelets",
+        "leggings": "old-aristocrat-shoes",
+        "weight": 7.7,
+        "poise": 3.0,
+        "physical": 12.2
+    },
+    {
+        "helmet": "no-helmet",
+        "chestpiece": "goldmasks-rags",
+        "gauntlets": "no-gauntlets",
+        "leggings": "old-aristocrat-shoes",
+        "weight": 4.4,
+        "poise": 2.0,
+        "physical": 7.6
+    },
+    {
+        "helmet": "traveling-maiden-hood",
+        "chestpiece": "no-chestpiece",
+        "gauntlets": "no-gauntlets",
+        "leggings": "no-leggings",
+        "weight": 1.6,
+        "poise": 1.0,
+        "physical": 1.4
+    },
+    {
+        "helmet": "no-helmet",
+        "chestpiece": "no-chestpiece",
+        "gauntlets": "no-gauntlets",
+        "leggings": "no-leggings",
+        "weight": 0.0,
+        "poise": 0.0,
+        "physical": 0.0
+    }
+]
