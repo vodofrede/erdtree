@@ -83,12 +83,10 @@ async function update() {
 
     document.getElementsByName("subtractive-stat").forEach((elem, i) => {
         elem.value = ((desired[i] > best.stats[i] ? desired[i] : best.stats[i]));
-        elem.value > desired[i] && elem.value > best.stats[i] ? (elem.style.color = "tomato", elem.style.fontWeight = "bold") : (elem.style.color = "unset", elem.style.fontWeight = "unset");
     });
 
     document.getElementsByName("additive-stat").forEach((elem, i) => {
         elem.value = ((desired[i] > best.stats[i] ? desired[i] : best.stats[i]) + items[i]);
-        elem.value < desired[i] || elem.value < best.stats[i] ? (elem.style.color = "deepskyblue", elem.style.fontWeight = "bold") : (elem.style.color = "unset", elem.style.fontWeight = "unset");
     });
 
     // update talismans
@@ -156,4 +154,3 @@ function cloneTemplate(template, destination, item) {
 
     destination.appendChild(clone);
 }
-
