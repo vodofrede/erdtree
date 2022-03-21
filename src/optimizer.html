@@ -91,9 +91,10 @@
                             <b>Level</b>
                         </label>
                         <div>
-                            <input class="stat" type="text" id="class-level" oninput="update()" disabled>
-                            <input class="stat" type="text" id="total-level" oninput="update()" disabled>
-                            <input class="stat" type="text" id="virtual-level" oninput="update()" disabled>
+                            <input class="stat" type="text" id="class-level" disabled>
+                            <input class="stat" type="text" id="total-level" disabled style="visibility: hidden;">
+                            <input class="stat" type="text" id="subtractive-level" disabled>
+                            <input class="stat" type="text" id="additive-level" disabled>
                         </div>
                     </li>
 
@@ -102,89 +103,81 @@
                     <li>
                         <label>Vigor</label>
                         <div>
-                            <input name="class-stat" class="stat" type="text" id="class-vigor" oninput="update()"
-                                disabled>
+                            <input name="class-stat" class="stat" type="text" id="class-vigor" disabled>
                             <input name="desired-stat" class="stat" type="number" id="vigor" oninput="update()" min=0
                                 max=99 maxLength=2>
-                            <input name="virtual-stat" class="stat" type="text" id="virtual-vigor" oninput="update()"
-                                disabled>
+                            <input name="subtractive-stat" class="stat" type="text" id="subtractive-vigor" disabled>
+                            <input name="additive-stat" class="stat" type="text" id="additive-vigor" disabled>
                         </div>
                     </li>
                     <li>
                         <label>Mind</label>
                         <div>
-                            <input name="class-stat" class="stat" type="text" id="class-mind" oninput="update()"
-                                disabled>
-                            <input name="desired-stat" class="stat" type="number" id="mind" oninput="update()" min=0
-                                max=99>
-                            <input name="virtual-stat" class="stat" type="text" id="virtual-mind" oninput="update()"
-                                disabled>
+                            <input name="class-stat" class="stat" type="text" id="class-mind" disabled>
+                            <input name="desired-stat" class="stat" type="number" id="mind" min=0 max=99>
+                            <input name="subtractive-stat" class="stat" type="text" id="subtractive-mind" disabled>
+                            <input name="additive-stat" class="stat" type="text" id="additive-mind" disabled>
                         </div>
                     </li>
                     <li>
                         <label>Endurance</label>
                         <div>
-                            <input name="class-stat" class="stat" type="text" id="class-endurance" oninput="update()"
-                                disabled>
+                            <input name="class-stat" class="stat" type="text" id="class-endurance" disabled>
                             <input name="desired-stat" class="stat" type="number" id="endurance" oninput="update()"
                                 min=0 max=99>
-                            <input name="virtual-stat" class="stat" type="text" id="virtal-endurance" oninput="update()"
-                                disabled>
+                            <input name="subtractive-stat" class="stat" type="text" id="subtractive-endurance" disabled>
+                            <input name="additive-stat" class="stat" type="text" id="additive-endurance" disabled>
                         </div>
                     </li>
                     <li>
                         <label>Strength</label>
                         <div>
-                            <input name="class-stat" class="stat" type="text" id="class-strength" oninput="update()"
-                                disabled>
+                            <input name="class-stat" class="stat" type="text" id="class-strength" disabled>
                             <input name="desired-stat" class="stat" type="number" id="strength" oninput="update()" min=0
                                 max=99>
-                            <input name="virtual-stat" class="stat" type="text" id="virtual-strength" oninput="update()"
-                                disabled>
+                            <input name="subtractive-stat" class="stat" type="text" id="subtractive-strength" disabled>
+                            <input name="additive-stat" class="stat" type="text" id="additive-strength" disabled>
                         </div>
                     </li>
                     <li>
                         <label>Dexterity</label>
                         <div>
-                            <input name="class-stat" class="stat" type="text" id="class-dexterity" oninput="update()"
-                                disabled>
+                            <input name="class-stat" class="stat" type="text" id="class-dexterity" disabled>
                             <input name="desired-stat" class="stat" type="number" id="dexterity" oninput="update()"
                                 min=0 max=99>
-                            <input name="virtual-stat" class="stat" type="text" id="virtual-dexterity"
-                                oninput="update()" disabled>
+                            <input name="subtractive-stat" class="stat" type="text" id="subtractive-dexterity" disabled>
+                            <input name="additive-stat" class="stat" type="text" id="additive-dexterity" disabled>
                         </div>
                     </li>
                     <li>
                         <label>Intelligence</label>
                         <div>
-                            <input name="class-stat" class="stat" type="text" id="class-intelligence" oninput="update()"
-                                disabled>
+                            <input name="class-stat" class="stat" type="text" id="class-intelligence" disabled>
                             <input name="desired-stat" class="stat" type="number" id="intelligence" oninput="update()"
                                 min=0 max=99>
-                            <input name="virtual-stat" class="stat" type="text" id="virtual-intelligence"
-                                oninput="update()" disabled>
+                            <input name="subtractive-stat" class="stat" type="text" id="subtractive-intelligence"
+                                disabled>
+                            <input name="additive-stat" class="stat" type="text" id="additive-intelligence" disabled>
                         </div>
                     </li>
                     <li>
                         <label>Faith</label>
                         <div>
-                            <input name="class-stat" class="stat" type="text" id="class-faith" oninput="update()"
-                                disabled>
+                            <input name="class-stat" class="stat" type="text" id="class-faith" disabled>
                             <input name="desired-stat" class="stat" type="number" id="faith" oninput="update()" min=0
                                 max=99>
-                            <input name="virtual-stat" class="stat" type="text" id="virtual-faith" oninput="update()"
-                                disabled>
+                            <input name="subtractive-stat" class="stat" type="text" id="subtractive-faith" disabled>
+                            <input name="additive-stat" class="stat" type="text" id="additive-faith" disabled>
                         </div>
                     </li>
                     <li>
                         <label>Arcane</label>
                         <div>
-                            <input name="class-stat" class="stat" type="text" id="class-arcane" oninput="update()"
-                                disabled>
+                            <input name="class-stat" class="stat" type="text" id="class-arcane" disabled>
                             <input name="desired-stat" class="stat" type="number" id="arcane" oninput="update()" min=0
                                 max=99>
-                            <input name="virtual-stat" class="stat" type="text" id="virtual-arcane" oninput="update()"
-                                disabled>
+                            <input name="subtractive-stat" class="stat" type="text" id="subtractive-arcane" disabled>
+                            <input name="additive-stat" class="stat" type="text" id="additive-arcane" disabled>
                         </div>
                     </li>
                     <li>

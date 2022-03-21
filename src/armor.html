@@ -36,12 +36,12 @@
                     <hr>
 
                     <li>
-                        <label for="max-equip-load"><b>Max. Equip Load</b></label>
+                        <label for="max-equip-load">Max. Equip Load</label>
                         <input style="max-width: 50px" class="stat" id="max-equip-load" type="number"
                             onchange="update()" min=0 step=0.1 value=30>
                     </li>
                     <li>
-                        <label for="current-equip-load"><b>Current Equip Load</b></label>
+                        <label for="current-equip-load">Current Equip Load</label>
                         <input style="max-width: 50px" class="stat" id="current-equip-load" type="number"
                             onchange="update()" min=0 step=0.1 value=0>
                     </li>
@@ -182,47 +182,39 @@
                         <button id="clear-equipment" onclick="clearEquipment()">Clear Locked Equipment</button>
                     </li>
                     <li>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Headgear</th>
-                                    <th>Chestpiece</th>
-                                    <th>Gauntlets</th>
-                                    <th>Leggings</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <template id="locked-option">
-                                        <option value="">Placeholder</option>
-                                    </template>
-                                    <td>
-                                        <select type="text" id="select-helmet" name="locked-equipment"
-                                            onchange="update()">
-                                            <option value="none">None</option>
-                                        </select>
-                                    </td>
-                                    <td>
-                                        <select type="text" id="select-chestpiece" name="locked-equipment"
-                                            onchange="update()">
-                                            <option value="none">None</option>
-                                        </select>
-                                    </td>
-                                    <td>
-                                        <select type=" text" id="select-gauntlets" name="locked-equipment"
-                                            onchange="update()">
-                                            <option value="none">None</option>
-                                        </select>
-                                    </td>
-                                    <td>
-                                        <select type="text" id="select-leggings" name="locked-equipment"
-                                            onchange="update()">
-                                            <option value="none">None</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <template id="locked-option">
+                            <option value="">Placeholder</option>
+                        </template>
+
+                        <div class="select">
+                            <div>
+                                <label for="select-helmet">Helmet</label>
+                                <select type="text" id="select-helmet" name="locked-equipment" onchange="update()">
+                                    <option value="none">None</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="select-chestpiece">Chestpiece</label>
+                                <select type="text" id="select-chestpiece" name="locked-equipment" onchange="update()">
+                                    <option value="none">None</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="select-gauntlets">Gauntlets</label>
+                                <select type=" text" id="select-gauntlets" name="locked-equipment" onchange="update()">
+                                    <option value="none">None</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="select-leggings">Leggings</label>
+                                <select type="text" id="select-leggings" name="locked-equipment" onchange="update()">
+                                    <option value="none">None</option>
+                                </select>
+                            </div>
+                        </div>
                     </li>
 
                     <hr>

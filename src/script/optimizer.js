@@ -55,12 +55,14 @@ async function update() {
         }
     )
 
+    // get added stats from items
+    let items = itemStats((await TALISMANS).concat(await HELMETS));
+
+    desired = desired.map((stat, i) => stat - items[i]);
+
     // calculate best class
     let sorted = sortClasses(await CLASSES, desired);
     let best = sorted[0];
-
-    // get added stats from items
-    let items = itemStats((await TALISMANS).concat(await HELMETS));
 
     // update document
     document.getElementsByName("option").forEach((elem, i) => {
@@ -72,13 +74,21 @@ async function update() {
 
     document.getElementById("class-level").value = best.level;
     document.getElementById("total-level").value = best.total;
-    document.getElementById("virtual-level").value = best.total;
+    document.getElementById("subtractive-level").value = best.total;
+    document.getElementById("additive-level").value = [...document.getElementsByName("additive-stat")].reduce((total, elem, i) => {
+        return total + (desired[i] > best.stats[i] ? desired[i] : best.stats[i]) + items[i];
+    }, 0) - 79;
 
     document.getElementsByName("class-stat").forEach((elem, i) => elem.value = best.stats[i]);
 
-    document.getElementsByName("virtual-stat").forEach((elem, i) => {
-        elem.value = ((desired[i] > best.stats[i] ? desired[i] : best.stats[i]) + items[i]);
+    document.getElementsByName("subtractive-stat").forEach((elem, i) => {
+        elem.value = ((desired[i] > best.stats[i] ? desired[i] : best.stats[i]));
         elem.value > desired[i] && elem.value > best.stats[i] ? (elem.style.color = "tomato", elem.style.fontWeight = "bold") : (elem.style.color = "unset", elem.style.fontWeight = "unset");
+    });
+
+    document.getElementsByName("additive-stat").forEach((elem, i) => {
+        elem.value = ((desired[i] > best.stats[i] ? desired[i] : best.stats[i]) + items[i]);
+        elem.value < desired[i] || elem.value < best.stats[i] ? (elem.style.color = "deepskyblue", elem.style.fontWeight = "bold") : (elem.style.color = "unset", elem.style.fontWeight = "unset");
     });
 
     // update talismans
@@ -146,3 +156,4 @@ function cloneTemplate(template, destination, item) {
 
     destination.appendChild(clone);
 }
+
