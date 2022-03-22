@@ -1,14 +1,11 @@
 const CLASSES = fetch("/data/classes.json")
     .then(response => response.json())
-    .then(data => data.classes)
     .catch(error => console.log(error));
 const TALISMANS = fetch("/data/talismans.json")
     .then(response => response.json())
-    .then(data => data.talismans)
     .catch(error => console.log(error));
 const HELMETS = fetch("/data/armor/helmets.json")
     .then(response => response.json())
-    .then(data => data.helmets)
     .catch(error => console.log(error));
 
 const STAT_SHORT_NAMES = [

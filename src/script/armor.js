@@ -1,18 +1,14 @@
 const HELMETS = fetch("/data/armor/helmets.json")
     .then(response => response.json())
-    .then(data => data.helmets)
     .catch(error => console.log(error));
 const CHESTPIECES = fetch("/data/armor/chestpieces.json")
     .then(response => response.json())
-    .then(data => data.chestpieces)
     .catch(error => console.log(error));
 const GAUNTLETS = fetch("/data/armor/gauntlets.json")
     .then(response => response.json())
-    .then(data => data.gauntlets)
     .catch(error => console.log(error));
 const LEGGINGS = fetch("/data/armor/leggings.json")
     .then(response => response.json())
-    .then(data => data.leggings)
     .catch(error => console.log(error));
 
 // armor combination lists
@@ -52,7 +48,7 @@ async function init() {
 
 async function update() {
     // clamp equip load values to reasonable values
-    [...document.getElementsByName("equip-load")].forEach(el => el.value = Math.max(el.value, 0));
+    [...document.getElementsByName("equip-load")].forEach(el => el.value = Math.max(el.value, 0.0));
 
     // get budget and sorting order
     let budget = equipLoadBudget();
@@ -85,7 +81,12 @@ function equipLoadBudget() {
             break;
     }
 
-    return (parseInt(document.getElementById("max-equip-load").value) || 0 - parseInt(document.getElementById("current-equip-load").value) || 0) * rollModifier;
+    let max = document.getElementById("max-equip-load").value || 0;
+    let current = document.getElementById("current-equip-load").value || 0;
+    let budget = Math.max((max - current) * rollModifier, 0);
+
+    return budget;
+
 }
 
 function currentSortBy() {

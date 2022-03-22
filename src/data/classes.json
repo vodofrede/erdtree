@@ -1,54 +1,52 @@
-{
-    "classes": [
-        {
-            "name": "Vagabond",
-            "level": 9,
-            "stats": [15, 10, 11, 14, 13, 9, 9, 7]
-        },
-        {
-            "name": "Warrior",
-            "level": 8,
-            "stats": [11, 12, 11, 10, 16, 10, 8, 9]
-        },
-        {
-            "name": "Hero",
-            "level": 7,
-            "stats": [14, 9, 12, 16, 9, 7, 8, 11]
-        },
-        {
-            "name": "Bandit",
-            "level": 5,
-            "stats": [10, 11, 10, 9, 13, 9, 8, 14]
-        },
-        {
-            "name": "Astrologer",
-            "level": 6,
-            "stats": [9, 15, 9, 8, 12, 16, 7, 9]
-        },
-        {
-            "name": "Prophet",
-            "level": 7,
-            "stats": [10, 14, 8, 11, 10, 7, 16, 10]
-        },
-        {
-            "name": "Samurai",
-            "level": 9,
-            "stats": [12, 11, 13, 12, 15, 9, 8, 8]
-        },
-        {
-            "name": "Prisoner",
-            "level": 9,
-            "stats": [11, 12, 11, 11, 14, 14, 6, 9]
-        },
-        {
-            "name": "Confessor",
-            "level": 10,
-            "stats": [10, 13, 10, 12, 12, 9, 14, 9]
-        },
-        {
-            "name": "Wretch",
-            "level": 1,
-            "stats": [10, 10, 10, 10, 10, 10, 10, 10]
-        }
-    ]
-}
+[
+    {
+        "name": "Vagabond",
+        "level": 9,
+        "stats": [15, 10, 11, 14, 13, 9, 9, 7]
+    },
+    {
+        "name": "Warrior",
+        "level": 8,
+        "stats": [11, 12, 11, 10, 16, 10, 8, 9]
+    },
+    {
+        "name": "Hero",
+        "level": 7,
+        "stats": [14, 9, 12, 16, 9, 7, 8, 11]
+    },
+    {
+        "name": "Bandit",
+        "level": 5,
+        "stats": [10, 11, 10, 9, 13, 9, 8, 14]
+    },
+    {
+        "name": "Astrologer",
+        "level": 6,
+        "stats": [9, 15, 9, 8, 12, 16, 7, 9]
+    },
+    {
+        "name": "Prophet",
+        "level": 7,
+        "stats": [10, 14, 8, 11, 10, 7, 16, 10]
+    },
+    {
+        "name": "Samurai",
+        "level": 9,
+        "stats": [12, 11, 13, 12, 15, 9, 8, 8]
+    },
+    {
+        "name": "Prisoner",
+        "level": 9,
+        "stats": [11, 12, 11, 11, 14, 14, 6, 9]
+    },
+    {
+        "name": "Confessor",
+        "level": 10,
+        "stats": [10, 13, 10, 12, 12, 9, 14, 9]
+    },
+    {
+        "name": "Wretch",
+        "level": 1,
+        "stats": [10, 10, 10, 10, 10, 10, 10, 10]
+    }
+]

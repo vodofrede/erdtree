@@ -1,740 +1,738 @@
-{
-    "gauntlets": [
-        {
-            "id": "no-gauntlets",
-            "name": "No Item",
-            "defenses": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-            "resistances": [0.0, 0.0, 0.0, 0.0],
-            "poise": 0,
-            "weight": 0
-        },
-        {
-            "id": "all-knowing-gauntlets",
-            "name": "All-Knowing Gauntlets",
-            "defenses": [3.2, 2.9, 3.3, 2.9, 3.1, 2.3, 2.5, 2.1],
-            "resistances": [9.0, 15.0, 7.0, 7.0],
-            "poise": 4.0,
-            "weight": 3.5
-        },
-        {
-            "id": "alberichs-bracers",
-            "name": "Alberich's Bracers",
-            "defenses": [1.3, 1.0, 1.3, 1.3, 3.2, 2.9, 3.1, 3.2],
-            "resistances": [13.0, 8.0, 22.0, 24.0],
-            "poise": 0.0,
-            "weight": 1.4
-        },
-        {
-            "id": "astrologer-gloves",
-            "name": "Astrologer Gloves",
-            "defenses": [1.3, 1.0, 1.0, 1.0, 3.2, 3.1, 3.2, 3.1],
-            "resistances": [14.0, 7.0, 24.0, 21.0],
-            "poise": 1.0,
-            "weight": 1.4
-        },
-        {
-            "id": "azurs-manchettes",
-            "name": "Azur's Manchettes",
-            "defenses": [1.0, 0.1, 0.6, 0.6, 3.4, 2.8, 2.9, 3.2],
-            "resistances": [12.0, 8.0, 22.0, 20.0],
-            "poise": 0.0,
-            "weight": 1.1
-        },
-        {
-            "id": "bandit-manchettes",
-            "name": "Bandit Manchettes",
-            "defenses": [1.5, 1.6, 1.7, 1.7, 1.9, 1.9, 2.1, 1.7],
-            "resistances": [15.0, 8.0, 17.0, 17.0],
-            "poise": 0.0,
-            "weight": 1.7
-        },
-        {
-            "id": "beast-champion-gauntlets",
-            "name": "Beast Champion Gauntlets",
-            "defenses": [4.4, 4.1, 4.7, 4.6, 3.2, 3.4, 3.2, 3.3],
-            "resistances": [19.0, 30.0, 14.0, 13.0],
-            "poise": 6.0,
-            "weight": 5.8
-        },
-        {
-            "id": "black-knife-gauntlets",
-            "name": "Black Knife Gauntlets",
-            "defenses": [2.8, 2.7, 3.1, 3.1, 2.1, 2.3, 1.6, 2.8],
-            "resistances": [9.0, 15.0, 8.0, 8.0],
-            "poise": 3.0,
-            "weight": 3.1
-        },
-        {
-            "id": "blackflame-monk-gauntlets",
-            "name": "Blackflame Monk Gauntlets",
-            "defenses": [3.3, 2.8, 3.6, 3.2, 2.5, 3.2, 1.9, 2.5],
-            "resistances": [11.0, 18.0, 7.0, 11.0],
-            "poise": 4.0,
-            "weight": 3.9
-        },
-        {
-            "id": "bloodhound-knight-gauntlets",
-            "name": "Bloodhound Knight Gauntlets",
-            "defenses": [3.1, 2.8, 3.5, 3.3, 2.3, 2.5, 1.7, 2.5],
-            "resistances": [11.0, 17.0, 8.0, 8.0],
-            "poise": 3.0,
-            "weight": 3.5
-        },
-        {
-            "id": "bloodsoaked-manchettes",
-            "name": "Bloodsoaked Manchettes",
-            "defenses": [1.3, 1.5, 1.0, 0.6, 3.1, 3.1, 3.1, 3.1],
-            "resistances": [14.0, 9.0, 24.0, 22.0],
-            "poise": 0.0,
-            "weight": 1.4
-        },
-        {
-            "id": "briar-gauntlets",
-            "name": "Briar Gauntlets",
-            "defenses": [3.2, 2.8, 3.3, 3.1, 2.7, 3.1, 2.1, 2.7],
-            "resistances": [12.0, 24.0, 8.0, 8.0],
-            "poise": 3.0,
-            "weight": 3.9
-        },
-        {
-            "id": "bull-goat-gauntlets",
-            "name": "Bull-Goat Gauntlets",
-            "defenses": [5.2, 5.2, 4.6, 4.6, 3.3, 3.3, 3.7, 3.2],
-            "resistances": [24.0, 28.0, 15.0, 18.0],
-            "poise": 10.0,
-            "weight": 8.8
-        },
-        {
-            "id": "carian-knight-gauntlets",
-            "name": "Carian Knight Gauntlets",
-            "defenses": [2.9, 2.7, 3.1, 2.9, 3.1, 2.9, 2.3, 2.9],
-            "resistances": [9.0, 15.0, 7.0, 8.0],
-            "poise": 3.0,
-            "weight": 3.5
-        },
-        {
-            "id": "chain-gauntlets",
-            "name": "Chain Gauntlets",
-            "defenses": [2.9, 2.1, 3.2, 2.9, 1.7, 2.7, 1.5, 1.9],
-            "resistances": [8.0, 14.0, 4.0, 6.0],
-            "poise": 3.0,
-            "weight": 2.9
-        },
-        {
-            "id": "champion-bracers",
-            "name": "Champion Bracers",
-            "defenses": [1.6, 2.1, 1.7, 1.9, 1.9, 2.3, 2.5, 2.3],
-            "resistances": [17.0, 11.0, 14.0, 13.0],
-            "poise": 1.0,
-            "weight": 2.1
-        },
-        {
-            "id": "cleanrot-gauntlets",
-            "name": "Cleanrot Gauntlets",
-            "defenses": [3.6, 3.3, 4.0, 4.4, 3.1, 3.2, 2.8, 3.3],
-            "resistances": [21.0, 22.0, 9.0, 11.0],
-            "poise": 5.0,
-            "weight": 5.0
-        },
-        {
-            "id": "confessor-gloves",
-            "name": "Confessor Gloves",
-            "defenses": [2.1, 2.7, 2.1, 2.3, 2.8, 2.8, 3.1, 2.5],
-            "resistances": [21.0, 17.0, 17.0, 18.0],
-            "poise": 1.0,
-            "weight": 2.8
-        },
-        {
-            "id": "crucible-gauntlets",
-            "name": "Crucible Gauntlets",
-            "defenses": [4.4, 3.4, 4.2, 4.2, 3.2, 3.2, 2.8, 3.3],
-            "resistances": [17.0, 24.0, 12.0, 12.0],
-            "poise": 6.0,
-            "weight": 5.2
-        },
-        {
-            "id": "elden-lord-bracers",
-            "name": "Elden Lord Bracers",
-            "defenses": [2.9, 2.7, 2.8, 3.1, 2.1, 2.8, 1.7, 1.9],
-            "resistances": [11.0, 18.0, 6.0, 7.0],
-            "poise": 3.0,
-            "weight": 3.1
-        },
-        {
-            "id": "exile-gauntlets",
-            "name": "Exile Gauntlets",
-            "defenses": [2.9, 2.1, 3.1, 2.9, 1.7, 2.5, 1.5, 2.1],
-            "resistances": [8.0, 17.0, 6.0, 4.0],
-            "poise": 3.0,
-            "weight": 2.9
-        },
-        {
-            "id": "errant-sorcerer-manchettes",
-            "name": "Errant Sorcerer Manchettes",
-            "defenses": [0.6, 0.6, 1.3, 0.6, 3.2, 3.1, 2.9, 3.2],
-            "resistances": [11.0, 7.0, 21.0, 22.0],
-            "poise": 0.0,
-            "weight": 1.1
-        },
-        {
-            "id": "fire-monk-gauntlets",
-            "name": "Fire Monk Gauntlets",
-            "defenses": [3.5, 3.1, 3.3, 3.1, 2.7, 3.3, 2.3, 2.3],
-            "resistances": [11.0, 18.0, 8.0, 8.0],
-            "poise": 4.0,
-            "weight": 3.9
-        },
-        {
-            "id": "foot-soldier-gauntlets",
-            "name": "Foot Soldier Gauntlets",
-            "defenses": [2.1, 2.3, 2.1, 2.1, 2.5, 2.7, 2.8, 2.5],
-            "resistances": [20.0, 13.0, 17.0, 17.0],
-            "poise": 1.0,
-            "weight": 2.6
-        },
-        {
-            "id": "gelmir-knight-gauntlets",
-            "name": "Gelmir Knight Gauntlets",
-            "defenses": [3.3, 2.8, 3.5, 3.3, 2.7, 3.1, 2.5, 2.7],
-            "resistances": [12.0, 18.0, 8.0, 8.0],
-            "poise": 4.0,
-            "weight": 3.9
-        },
-        {
-            "id": "godrick-knight-gauntlets",
-            "name": "Godrick Knight Gauntlets",
-            "defenses": [3.3, 2.9, 3.5, 3.2, 2.7, 2.9, 2.3, 2.7],
-            "resistances": [12.0, 19.0, 8.0, 8.0],
-            "poise": 4.0,
-            "weight": 3.9
-        },
-        {
-            "id": "godskin-apostle-bracelets",
-            "name": "Godskin Apostle Bracelets",
-            "defenses": [1.7, 1.6, 1.6, 1.3, 3.2, 3.1, 3.2, 3.6],
-            "resistances": [17.0, 8.0, 28.0, 25.0],
-            "poise": 1.0,
-            "weight": 2.1
-        },
-        {
-            "id": "haligtree-gauntlets",
-            "name": "Haligtree Gauntlets",
-            "defenses": [3.2, 2.9, 3.1, 3.2, 2.3, 2.5, 1.9, 2.5],
-            "resistances": [11.0, 18.0, 8.0, 8.0],
-            "poise": 3.0,
-            "weight": 3.5
-        },
-        {
-            "id": "highwayman-gauntlets",
-            "name": "Highwayman Gauntlets",
-            "defenses": [1.9, 2.5, 1.9, 2.1, 2.7, 2.7, 2.8, 2.5],
-            "resistances": [19.0, 12.0, 17.0, 17.0],
-            "poise": 1.0,
-            "weight": 2.6
-        },
-        {
-            "id": "hoslows-gauntlets",
-            "name": "Hoslow's Gauntlets",
-            "defenses": [3.5, 2.9, 3.3, 3.1, 2.7, 2.9, 2.5, 2.5],
-            "resistances": [13.0, 20.0, 8.0, 8.0],
-            "poise": 4.0,
-            "weight": 3.9
-        },
-        {
-            "id": "kaiden-gauntlets",
-            "name": "Kaiden Gauntlets",
-            "defenses": [2.9, 2.1, 2.9, 2.9, 1.9, 2.1, 1.7, 1.9],
-            "resistances": [8.0, 15.0, 6.0, 6.0],
-            "poise": 3.0,
-            "weight": 2.9
-        },
-        {
-            "id": "knight-gauntlets",
-            "name": "Knight Gauntlets",
-            "defenses": [3.1, 2.9, 3.3, 3.3, 2.7, 2.7, 2.3, 2.1],
-            "resistances": [9.0, 17.0, 6.0, 6.0],
-            "poise": 4.0,
-            "weight": 3.5
-        },
-        {
-            "id": "land-of-reeds-gauntlets",
-            "name": "Land of Reeds Gauntlets",
-            "defenses": [2.1, 2.3, 2.9, 2.3, 2.5, 2.8, 2.9, 2.7],
-            "resistances": [20.0, 17.0, 17.0, 18.0],
-            "poise": 1.0,
-            "weight": 2.8
-        },
-        {
-            "id": "leyndell-knight-gauntlets",
-            "name": "Leyndell Knight Gauntlets",
-            "defenses": [3.3, 3.1, 3.3, 3.3, 2.5, 2.8, 2.5, 2.7],
-            "resistances": [12.0, 19.0, 8.0, 8.0],
-            "poise": 4.0,
-            "weight": 3.9
-        },
-        {
-            "id": "leyndell-soldier-gauntlets",
-            "name": "Leyndell Soldier Gauntlets",
-            "defenses": [3.2, 2.9, 3.1, 3.2, 2.3, 2.5, 2.1, 2.3],
-            "resistances": [11.0, 18.0, 8.0, 8.0],
-            "poise": 4.0,
-            "weight": 3.5
-        },
-        {
-            "id": "lionels-gauntlets",
-            "name": "Lionel's Gauntlets",
-            "defenses": [4.4, 4.1, 4.9, 5.0, 3.3, 3.7, 3.2, 3.3],
-            "resistances": [21.0, 33.0, 14.0, 17.0],
-            "poise": 8.0,
-            "weight": 7.1
-        },
-        {
-            "id": "malformed-dragon-gauntlets",
-            "name": "Malformed Dragon Gauntlets",
-            "defenses": [4.2, 3.7, 4.4, 4.2, 3.2, 3.2, 3.4, 3.2],
-            "resistances": [19.0, 25.0, 13.0, 13.0],
-            "poise": 6.0,
-            "weight": 5.3
-        },
-        {
-            "id": "malikeths-gauntlets",
-            "name": "Maliketh's Gauntlets",
-            "defenses": [3.3, 2.9, 3.5, 3.3, 2.7, 2.8, 2.3, 3.2],
-            "resistances": [12.0, 19.0, 8.0, 17.0],
-            "poise": 4.0,
-            "weight": 4.3
-        },
-        {
-            "id": "mushroom-arms",
-            "name": "Mushroom Arms",
-            "defenses": [1.5, 1.7, 0.6, 1.3, 3.3, 1.3, 3.2, 3.2],
-            "resistances": [34.0, 8.0, 30.0, 25.0],
-            "poise": 0.0,
-            "weight": 1.7
-        },
-        {
-            "id": "nobles-gloves",
-            "name": "Noble's Gloves",
-            "defenses": [1.5, 1.6, 1.5, 1.6, 3.3, 3.3, 3.2, 3.3],
-            "resistances": [15.0, 8.0, 25.0, 28.0],
-            "poise": 1.0,
-            "weight": 2.1
-        },
-        {
-            "id": "omenkiller-long-gloves",
-            "name": "Omenkiller Long Gloves",
-            "defenses": [2.1, 1.9, 1.7, 1.7, 2.1, 2.3, 2.8, 2.5],
-            "resistances": [22.0, 9.0, 15.0, 15.0],
-            "poise": 1.0,
-            "weight": 2.4
-        },
-        {
-            "id": "iron-gauntlets",
-            "name": "Iron Gauntlets",
-            "defenses": [2.8, 2.3, 2.9, 2.9, 2.1, 2.3, 1.5, 1.9],
-            "resistances": [8.0, 15.0, 6.0, 4.0],
-            "poise": 3.0,
-            "weight": 2.9
-        },
-        {
-            "id": "perfumer-gloves",
-            "name": "Perfumer Gloves",
-            "defenses": [1.0, 1.5, 1.3, 1.0, 3.2, 2.9, 3.1, 3.2],
-            "resistances": [20.0, 5.0, 21.0, 22.0],
-            "poise": 0.0,
-            "weight": 1.4
-        },
-        {
-            "id": "preceptors-gloves",
-            "name": "Preceptor's Gloves",
-            "defenses": [1.5, 1.6, 1.5, 1.5, 3.6, 3.3, 3.2, 3.2],
-            "resistances": [17.0, 8.0, 28.0, 25.0],
-            "poise": 1.0,
-            "weight": 2.1
-        },
-        {
-            "id": "queens-bracelets",
-            "name": "Queen's Bracelets",
-            "defenses": [1.5, 1.3, 1.3, 1.0, 3.4, 3.1, 3.2, 3.3],
-            "resistances": [14.0, 8.0, 24.0, 28.0],
-            "poise": 0.0,
-            "weight": 1.7
-        },
-        {
-            "id": "radahns-gauntlets",
-            "name": "Radahn's Gauntlets",
-            "defenses": [4.7, 3.7, 4.6, 4.4, 3.3, 3.5, 3.1, 3.3],
-            "resistances": [20.0, 33.0, 14.0, 13.0],
-            "poise": 6.0,
-            "weight": 5.8
-        },
-        {
-            "id": "raging-wolf-gauntlets",
-            "name": "Raging Wolf Gauntlets",
-            "defenses": [3.3, 2.9, 3.3, 3.2, 2.5, 2.8, 1.7, 2.3],
-            "resistances": [11.0, 19.0, 6.0, 6.0],
-            "poise": 3.0,
-            "weight": 3.5
-        },
-        {
-            "id": "raya-lucarian-gauntlets",
-            "name": "Raya Lucarian Gauntlets",
-            "defenses": [3.2, 2.7, 3.3, 3.2, 2.7, 2.7, 1.7, 2.1],
-            "resistances": [11.0, 18.0, 8.0, 8.0],
-            "poise": 4.0,
-            "weight": 3.5
-        },
-        {
-            "id": "scaled-gauntlets",
-            "name": "Scaled Gauntlets",
-            "defenses": [4.2, 3.6, 4.4, 4.2, 3.3, 3.4, 3.2, 3.3],
-            "resistances": [19.0, 28.0, 13.0, 13.0],
-            "poise": 6.0,
-            "weight": 5.3
-        },
-        {
-            "id": "sorcerer-manchettes",
-            "name": "Sorcerer Manchettes",
-            "defenses": [1.0, 1.3, 1.3, 0.1, 3.2, 3.1, 2.9, 3.1],
-            "resistances": [13.0, 4.0, 21.0, 20.0],
-            "poise": 0.0,
-            "weight": 1.1
-        },
-        {
-            "id": "traveling-maiden-gloves",
-            "name": "Traveling Maiden Gloves",
-            "defenses": [1.3, 1.5, 1.5, 1.0, 3.3, 3.2, 3.2, 3.3],
-            "resistances": [15.0, 8.0, 25.0, 28.0],
-            "poise": 1.0,
-            "weight": 1.7
-        },
-        {
-            "id": "twinned-gauntlets",
-            "name": "Twinned Gauntlets",
-            "defenses": [3.3, 3.1, 3.6, 2.9, 2.8, 2.8, 2.1, 2.5],
-            "resistances": [11.0, 18.0, 7.0, 18.0],
-            "poise": 4.0,
-            "weight": 3.9
-        },
-        {
-            "id": "warrior-gauntlets",
-            "name": "Warrior Gauntlets",
-            "defenses": [2.3, 2.3, 1.9, 1.9, 2.5, 2.7, 2.9, 2.3],
-            "resistances": [21.0, 14.0, 17.0, 17.0],
-            "poise": 1.0,
-            "weight": 2.6
-        },
-        {
-            "id": "vagabond-knight-gauntlets",
-            "name": "Vagabond Knight Gauntlets",
-            "defenses": [3.3, 2.8, 3.1, 2.9, 2.5, 2.7, 2.1, 2.1],
-            "resistances": [12.0, 19.0, 8.0, 8.0],
-            "poise": 3.0,
-            "weight": 3.5
-        },
-        {
-            "id": "veterans-gauntlets",
-            "name": "Veteran's Gauntlets",
-            "defenses": [4.7, 4.3, 4.7, 4.4, 3.3, 3.5, 3.2, 3.3],
-            "resistances": [21.0, 30.0, 15.0, 15.0],
-            "poise": 8.0,
-            "weight": 6.3
-        },
-        {
-            "id": "vulgar-militia-gauntlets",
-            "name": "Vulgar Militia Gauntlets",
-            "defenses": [1.7, 2.1, 1.9, 1.6, 2.1, 2.1, 2.3, 2.1],
-            "resistances": [20.0, 9.0, 14.0, 14.0],
-            "poise": 1.0,
-            "weight": 2.1
-        },
-        {
-            "id": "white-reed-gauntlets",
-            "name": "White Reed Gauntlets",
-            "defenses": [2.3, 2.5, 2.8, 2.1, 2.7, 2.7, 2.9, 2.5],
-            "resistances": [22.0, 14.0, 18.0, 17.0],
-            "poise": 2.0,
-            "weight": 2.8
-        },
-        {
-            "id": "zamor-bracelets",
-            "name": "Zamor Bracelets",
-            "defenses": [2.8, 2.1, 2.9, 2.5, 1.9, 1.9, 1.3, 1.7],
-            "resistances": [6.0, 20.0, 0.0, 4.0],
-            "poise": 3.0,
-            "weight": 2.8
-        },
-        {
-            "id": "banished-knight-gauntlets",
-            "name": "Banished Knight Gauntlets",
-            "defenses": [4.7, 3.7, 4.9, 4.4, 3.3, 3.3, 3.2, 3.3],
-            "resistances": [20.0, 28.0, 13.0, 14.0],
-            "poise": 6.0,
-            "weight": 5.8
-        },
-        {
-            "id": "battlemage-manchettes",
-            "name": "Battlemage Manchettes",
-            "defenses": [1.0, 1.3, 0.6, 1.0, 3.2, 2.8, 2.9, 3.1],
-            "resistances": [13.0, 7.0, 20.0, 22.0],
-            "poise": 0.0,
-            "weight": 1.1
-        },
-        {
-            "id": "blaidds-gauntlets",
-            "name": "Blaidd's Gauntlets",
-            "defenses": [3.6, 3.2, 3.6, 3.8, 2.8, 3.2, 2.7, 2.9],
-            "resistances": [13.0, 21.0, 8.0, 8.0],
-            "poise": 5.0,
-            "weight": 4.6
-        },
-        {
-            "id": "blue-silver-bracelets",
-            "name": "Blue Silver Bracelets",
-            "defenses": [2.3, 1.5, 2.5, 1.9, 1.9, 1.6, 1.0, 1.0],
-            "resistances": [4.0, 14.0, 4.0, 4.0],
-            "poise": 1.0,
-            "weight": 2.1
-        },
-        {
-            "id": "cuckoo-knight-gauntlets",
-            "name": "Cuckoo Knight Gauntlets",
-            "defenses": [3.3, 2.8, 3.6, 3.3, 3.1, 2.9, 2.1, 2.5],
-            "resistances": [11.0, 19.0, 8.0, 8.0],
-            "poise": 4.0,
-            "weight": 3.9
-        },
-        {
-            "id": "depraved-perfumer-gloves",
-            "name": "Depraved Perfumer Gloves",
-            "defenses": [1.5, 1.5, 1.4, 1.2, 3.2, 3.1, 3.1, 3.1],
-            "resistances": [23.0, 8.0, 20.0, 28.0],
-            "poise": 1.0,
-            "weight": 2.0
-        },
-        {
-            "id": "drake-knight-gauntlets",
-            "name": "Drake Knight Gauntlets",
-            "defenses": [2.8, 2.3, 2.9, 2.8, 2.5, 2.8, 2.1, 2.5],
-            "resistances": [8.0, 15.0, 7.0, 7.0],
-            "poise": 3.0,
-            "weight": 3.1
-        },
-        {
-            "id": "eccentrics-manchettes",
-            "name": "Eccentric's Manchettes",
-            "defenses": [2.9, 2.1, 2.8, 2.9, 2.1, 2.3, 1.5, 1.9],
-            "resistances": [8.0, 18.0, 6.0, 4.0],
-            "poise": 3.0,
-            "weight": 2.9
-        },
-        {
-            "id": "fingerprint-gauntlets",
-            "name": "Fingerprint Gauntlets",
-            "defenses": [3.3, 2.9, 2.9, 2.9, 2.3, 3.1, 1.6, 2.3],
-            "resistances": [11.0, 20.0, 4.0, 8.0],
-            "poise": 4.0,
-            "weight": 3.5
-        },
-        {
-            "id": "fire-prelate-gauntlets",
-            "name": "Fire Prelate Gauntlets",
-            "defenses": [4.9, 4.3, 4.6, 4.6, 3.3, 5.0, 3.2, 3.3],
-            "resistances": [22.0, 21.0, 30.0, 17.0],
-            "poise": 9.0,
-            "weight": 8.2
-        },
-        {
-            "id": "godrick-soldier-gauntlets",
-            "name": "Godrick Soldier Gauntlets",
-            "defenses": [3.2, 2.8, 3.2, 3.1, 2.5, 2.7, 1.9, 2.3],
-            "resistances": [11.0, 18.0, 8.0, 8.0],
-            "poise": 4.0,
-            "weight": 3.5
-        },
-        {
-            "id": "godskin-noble-bracelets",
-            "name": "Godskin Noble Bracelets",
-            "defenses": [1.3, 2.1, 1.5, 1.3, 3.2, 2.9, 3.1, 3.4],
-            "resistances": [14.0, 8.0, 24.0, 25.0],
-            "poise": 1.0,
-            "weight": 1.7
-        },
-        {
-            "id": "gold-bracelets",
-            "name": "Gold Bracelets",
-            "defenses": [1.0, 0.6, 0.6, 0.1, 2.9, 2.8, 2.9, 3.2],
-            "resistances": [13.0, 4.0, 20.0, 20.0],
-            "poise": 0.0,
-            "weight": 0.8
-        },
-        {
-            "id": "golden-prosthetic",
-            "name": "Golden Prosthetic",
-            "defenses": [1.5, 1.5, 1.5, 1.3, 3.2, 3.1, 3.2, 3.2],
-            "resistances": [15.0, 8.0, 25.0, 25.0],
-            "poise": 1.0,
-            "weight": 2.8
-        },
-        {
-            "id": "guardian-bracers",
-            "name": "Guardian Bracers",
-            "defenses": [2.7, 2.5, 2.5, 2.3, 2.9, 2.8, 2.9, 2.9],
-            "resistances": [25.0, 17.0, 20.0, 19.0],
-            "poise": 1.0,
-            "weight": 2.9
-        },
-        {
-            "id": "haligtree-knight-gauntlets",
-            "name": "Haligtree Knight Gauntlets",
-            "defenses": [3.3, 3.1, 3.3, 3.3, 2.5, 2.8, 2.3, 2.8],
-            "resistances": [12.0, 19.0, 8.0, 8.0],
-            "poise": 4.0,
-            "weight": 3.9
-        },
-        {
-            "id": "leather-gloves",
-            "name": "Leather Gloves",
-            "defenses": [1.9, 2.3, 1.9, 2.1, 2.3, 2.3, 2.5, 2.5],
-            "resistances": [20.0, 12.0, 14.0, 17.0],
-            "poise": 1.0,
-            "weight": 2.4
-        },
-        {
-            "id": "lusats-manchettes",
-            "name": "Lusat's Manchettes",
-            "defenses": [1.3, 0.1, 1.3, 0.1, 3.4, 2.8, 3.1, 3.1],
-            "resistances": [12.0, 6.0, 20.0, 22.0],
-            "poise": 0.0,
-            "weight": 1.1
-        },
-        {
-            "id": "malenias-gauntlet",
-            "name": "Malenia's Gauntlet",
-            "defenses": [3.1, 2.3, 3.2, 2.8, 1.9, 2.3, 1.6, 2.7],
-            "resistances": [17.0, 14.0, 6.0, 6.0],
-            "poise": 3.0,
-            "weight": 3.1
-        },
-        {
-            "id": "mausoleum-gauntlets",
-            "name": "Mausoleum Gauntlets",
-            "defenses": [3.2, 2.7, 3.3, 3.1, 2.5, 2.5, 2.1, 2.5],
-            "resistances": [11.0, 17.0, 8.0, 7.0],
-            "poise": 4.0,
-            "weight": 3.5
-        },
-        {
-            "id": "mausoleum-knight-gauntlets",
-            "name": "Mausoleum Knight Gauntlets",
-            "defenses": [3.3, 2.8, 3.6, 3.2, 2.7, 2.8, 2.5, 2.8],
-            "resistances": [12.0, 18.0, 8.0, 8.0],
-            "poise": 4.0,
-            "weight": 3.9
-        },
-        {
-            "id": "nights-cavalry-gauntlets",
-            "name": "Night's Cavalry Gauntlets",
-            "defenses": [3.5, 3.2, 3.5, 3.3, 2.7, 3.1, 2.7, 3.1],
-            "resistances": [13.0, 19.0, 8.0, 8.0],
-            "poise": 4.0,
-            "weight": 4.3
-        },
-        {
-            "id": "nox-monk-bracelets",
-            "name": "Nox Monk Bracelets",
-            "defenses": [2.1, 2.3, 2.1, 1.9, 2.9, 2.8, 2.8, 2.3],
-            "resistances": [20.0, 13.0, 15.0, 15.0],
-            "poise": 1.0,
-            "weight": 2.6
-        },
-        {
-            "id": "omen-gauntlets",
-            "name": "Omen Gauntlets",
-            "defenses": [4.6, 3.7, 4.7, 4.7, 3.2, 3.6, 3.7, 3.4],
-            "resistances": [22.0, 21.0, 19.0, 25.0],
-            "poise": 9.0,
-            "weight": 7.7
-        },
-        {
-            "id": "radahn-soldier-gauntlets",
-            "name": "Radahn Soldier Gauntlets",
-            "defenses": [3.3, 2.7, 3.1, 2.9, 2.5, 2.8, 1.9, 2.3],
-            "resistances": [11.0, 17.0, 8.0, 8.0],
-            "poise": 4.0,
-            "weight": 3.5
-        },
-        {
-            "id": "redmane-knight-gauntlets",
-            "name": "Redmane Knight Gauntlets",
-            "defenses": [3.5, 2.8, 3.3, 3.1, 2.7, 3.1, 2.3, 2.7],
-            "resistances": [12.0, 18.0, 8.0, 8.0],
-            "poise": 4.0,
-            "weight": 3.9
-        },
-        {
-            "id": "ronins-gauntlets",
-            "name": "Ronin's Gauntlets",
-            "defenses": [2.7, 2.7, 2.8, 2.7, 2.9, 3.1, 3.2, 2.9],
-            "resistances": [25.0, 19.0, 20.0, 21.0],
-            "poise": 2.0,
-            "weight": 3.1
-        },
-        {
-            "id": "royal-knight-gauntlets",
-            "name": "Royal Knight Gauntlets",
-            "defenses": [4.0, 3.6, 4.4, 4.2, 3.5, 3.3, 3.1, 3.2],
-            "resistances": [17.0, 22.0, 12.0, 12.0],
-            "poise": 5.0,
-            "weight": 5.2
-        },
-        {
-            "id": "royal-remains-gauntlets",
-            "name": "Royal Remains Gauntlets",
-            "defenses": [2.9, 2.8, 3.2, 2.9, 2.3, 2.5, 1.9, 2.1],
-            "resistances": [12.0, 19.0, 8.0, 4.0],
-            "poise": 3.0,
-            "weight": 3.5
-        },
-        {
-            "id": "spellblades-gloves",
-            "name": "Spellblade's Gloves",
-            "defenses": [0.9, 0.5, 0.9, 0.9, 3.1, 2.7, 2.8, 3.1],
-            "resistances": [11.0, 6.0, 19.0, 20.0],
-            "poise": 0.0,
-            "weight": 1.2
-        },
-        {
-            "id": "travelers-gloves",
-            "name": "Traveler's Gloves",
-            "defenses": [1.3, 1.3, 1.0, 0.6, 3.2, 3.2, 3.1, 3.2],
-            "resistances": [18.0, 7.0, 22.0, 21.0],
-            "poise": 0.0,
-            "weight": 1.4
-        },
-        {
-            "id": "travelers-manchettes",
-            "name": "Traveler's Manchettes",
-            "defenses": [1.6, 1.5, 1.3, 1.0, 3.3, 3.2, 3.2, 3.1],
-            "resistances": [13.0, 8.0, 25.0, 25.0],
-            "poise": 1.0,
-            "weight": 1.7
-        },
-        {
-            "id": "tree-sentinel-gauntlets",
-            "name": "Tree Sentinel Gauntlets",
-            "defenses": [4.7, 3.7, 4.7, 4.4, 3.2, 4.3, 3.1, 3.5],
-            "resistances": [22.0, 30.0, 14.0, 15.0],
-            "poise": 6.0,
-            "weight": 6.3
-        },
-        {
-            "id": "war-surgeon-gloves",
-            "name": "War Surgeon Gloves",
-            "defenses": [1.6, 1.8, 2.0, 1.6, 2.2, 2.4, 2.6, 2.4],
-            "resistances": [18.0, 13.0, 15.0, 17.0],
-            "poise": 1.0,
-            "weight": 2.3
-        }
-    ]
-}
+[
+    {
+        "id": "no-gauntlets",
+        "name": "No Item",
+        "defenses": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+        "resistances": [0.0, 0.0, 0.0, 0.0],
+        "poise": 0,
+        "weight": 0
+    },
+    {
+        "id": "all-knowing-gauntlets",
+        "name": "All-Knowing Gauntlets",
+        "defenses": [3.2, 2.9, 3.3, 2.9, 3.1, 2.3, 2.5, 2.1],
+        "resistances": [9.0, 15.0, 7.0, 7.0],
+        "poise": 4.0,
+        "weight": 3.5
+    },
+    {
+        "id": "alberichs-bracers",
+        "name": "Alberich's Bracers",
+        "defenses": [1.3, 1.0, 1.3, 1.3, 3.2, 2.9, 3.1, 3.2],
+        "resistances": [13.0, 8.0, 22.0, 24.0],
+        "poise": 0.0,
+        "weight": 1.4
+    },
+    {
+        "id": "astrologer-gloves",
+        "name": "Astrologer Gloves",
+        "defenses": [1.3, 1.0, 1.0, 1.0, 3.2, 3.1, 3.2, 3.1],
+        "resistances": [14.0, 7.0, 24.0, 21.0],
+        "poise": 1.0,
+        "weight": 1.4
+    },
+    {
+        "id": "azurs-manchettes",
+        "name": "Azur's Manchettes",
+        "defenses": [1.0, 0.1, 0.6, 0.6, 3.4, 2.8, 2.9, 3.2],
+        "resistances": [12.0, 8.0, 22.0, 20.0],
+        "poise": 0.0,
+        "weight": 1.1
+    },
+    {
+        "id": "bandit-manchettes",
+        "name": "Bandit Manchettes",
+        "defenses": [1.5, 1.6, 1.7, 1.7, 1.9, 1.9, 2.1, 1.7],
+        "resistances": [15.0, 8.0, 17.0, 17.0],
+        "poise": 0.0,
+        "weight": 1.7
+    },
+    {
+        "id": "beast-champion-gauntlets",
+        "name": "Beast Champion Gauntlets",
+        "defenses": [4.4, 4.1, 4.7, 4.6, 3.2, 3.4, 3.2, 3.3],
+        "resistances": [19.0, 30.0, 14.0, 13.0],
+        "poise": 6.0,
+        "weight": 5.8
+    },
+    {
+        "id": "black-knife-gauntlets",
+        "name": "Black Knife Gauntlets",
+        "defenses": [2.8, 2.7, 3.1, 3.1, 2.1, 2.3, 1.6, 2.8],
+        "resistances": [9.0, 15.0, 8.0, 8.0],
+        "poise": 3.0,
+        "weight": 3.1
+    },
+    {
+        "id": "blackflame-monk-gauntlets",
+        "name": "Blackflame Monk Gauntlets",
+        "defenses": [3.3, 2.8, 3.6, 3.2, 2.5, 3.2, 1.9, 2.5],
+        "resistances": [11.0, 18.0, 7.0, 11.0],
+        "poise": 4.0,
+        "weight": 3.9
+    },
+    {
+        "id": "bloodhound-knight-gauntlets",
+        "name": "Bloodhound Knight Gauntlets",
+        "defenses": [3.1, 2.8, 3.5, 3.3, 2.3, 2.5, 1.7, 2.5],
+        "resistances": [11.0, 17.0, 8.0, 8.0],
+        "poise": 3.0,
+        "weight": 3.5
+    },
+    {
+        "id": "bloodsoaked-manchettes",
+        "name": "Bloodsoaked Manchettes",
+        "defenses": [1.3, 1.5, 1.0, 0.6, 3.1, 3.1, 3.1, 3.1],
+        "resistances": [14.0, 9.0, 24.0, 22.0],
+        "poise": 0.0,
+        "weight": 1.4
+    },
+    {
+        "id": "briar-gauntlets",
+        "name": "Briar Gauntlets",
+        "defenses": [3.2, 2.8, 3.3, 3.1, 2.7, 3.1, 2.1, 2.7],
+        "resistances": [12.0, 24.0, 8.0, 8.0],
+        "poise": 3.0,
+        "weight": 3.9
+    },
+    {
+        "id": "bull-goat-gauntlets",
+        "name": "Bull-Goat Gauntlets",
+        "defenses": [5.2, 5.2, 4.6, 4.6, 3.3, 3.3, 3.7, 3.2],
+        "resistances": [24.0, 28.0, 15.0, 18.0],
+        "poise": 10.0,
+        "weight": 8.8
+    },
+    {
+        "id": "carian-knight-gauntlets",
+        "name": "Carian Knight Gauntlets",
+        "defenses": [2.9, 2.7, 3.1, 2.9, 3.1, 2.9, 2.3, 2.9],
+        "resistances": [9.0, 15.0, 7.0, 8.0],
+        "poise": 3.0,
+        "weight": 3.5
+    },
+    {
+        "id": "chain-gauntlets",
+        "name": "Chain Gauntlets",
+        "defenses": [2.9, 2.1, 3.2, 2.9, 1.7, 2.7, 1.5, 1.9],
+        "resistances": [8.0, 14.0, 4.0, 6.0],
+        "poise": 3.0,
+        "weight": 2.9
+    },
+    {
+        "id": "champion-bracers",
+        "name": "Champion Bracers",
+        "defenses": [1.6, 2.1, 1.7, 1.9, 1.9, 2.3, 2.5, 2.3],
+        "resistances": [17.0, 11.0, 14.0, 13.0],
+        "poise": 1.0,
+        "weight": 2.1
+    },
+    {
+        "id": "cleanrot-gauntlets",
+        "name": "Cleanrot Gauntlets",
+        "defenses": [3.6, 3.3, 4.0, 4.4, 3.1, 3.2, 2.8, 3.3],
+        "resistances": [21.0, 22.0, 9.0, 11.0],
+        "poise": 5.0,
+        "weight": 5.0
+    },
+    {
+        "id": "confessor-gloves",
+        "name": "Confessor Gloves",
+        "defenses": [2.1, 2.7, 2.1, 2.3, 2.8, 2.8, 3.1, 2.5],
+        "resistances": [21.0, 17.0, 17.0, 18.0],
+        "poise": 1.0,
+        "weight": 2.8
+    },
+    {
+        "id": "crucible-gauntlets",
+        "name": "Crucible Gauntlets",
+        "defenses": [4.4, 3.4, 4.2, 4.2, 3.2, 3.2, 2.8, 3.3],
+        "resistances": [17.0, 24.0, 12.0, 12.0],
+        "poise": 6.0,
+        "weight": 5.2
+    },
+    {
+        "id": "elden-lord-bracers",
+        "name": "Elden Lord Bracers",
+        "defenses": [2.9, 2.7, 2.8, 3.1, 2.1, 2.8, 1.7, 1.9],
+        "resistances": [11.0, 18.0, 6.0, 7.0],
+        "poise": 3.0,
+        "weight": 3.1
+    },
+    {
+        "id": "exile-gauntlets",
+        "name": "Exile Gauntlets",
+        "defenses": [2.9, 2.1, 3.1, 2.9, 1.7, 2.5, 1.5, 2.1],
+        "resistances": [8.0, 17.0, 6.0, 4.0],
+        "poise": 3.0,
+        "weight": 2.9
+    },
+    {
+        "id": "errant-sorcerer-manchettes",
+        "name": "Errant Sorcerer Manchettes",
+        "defenses": [0.6, 0.6, 1.3, 0.6, 3.2, 3.1, 2.9, 3.2],
+        "resistances": [11.0, 7.0, 21.0, 22.0],
+        "poise": 0.0,
+        "weight": 1.1
+    },
+    {
+        "id": "fire-monk-gauntlets",
+        "name": "Fire Monk Gauntlets",
+        "defenses": [3.5, 3.1, 3.3, 3.1, 2.7, 3.3, 2.3, 2.3],
+        "resistances": [11.0, 18.0, 8.0, 8.0],
+        "poise": 4.0,
+        "weight": 3.9
+    },
+    {
+        "id": "foot-soldier-gauntlets",
+        "name": "Foot Soldier Gauntlets",
+        "defenses": [2.1, 2.3, 2.1, 2.1, 2.5, 2.7, 2.8, 2.5],
+        "resistances": [20.0, 13.0, 17.0, 17.0],
+        "poise": 1.0,
+        "weight": 2.6
+    },
+    {
+        "id": "gelmir-knight-gauntlets",
+        "name": "Gelmir Knight Gauntlets",
+        "defenses": [3.3, 2.8, 3.5, 3.3, 2.7, 3.1, 2.5, 2.7],
+        "resistances": [12.0, 18.0, 8.0, 8.0],
+        "poise": 4.0,
+        "weight": 3.9
+    },
+    {
+        "id": "godrick-knight-gauntlets",
+        "name": "Godrick Knight Gauntlets",
+        "defenses": [3.3, 2.9, 3.5, 3.2, 2.7, 2.9, 2.3, 2.7],
+        "resistances": [12.0, 19.0, 8.0, 8.0],
+        "poise": 4.0,
+        "weight": 3.9
+    },
+    {
+        "id": "godskin-apostle-bracelets",
+        "name": "Godskin Apostle Bracelets",
+        "defenses": [1.7, 1.6, 1.6, 1.3, 3.2, 3.1, 3.2, 3.6],
+        "resistances": [17.0, 8.0, 28.0, 25.0],
+        "poise": 1.0,
+        "weight": 2.1
+    },
+    {
+        "id": "haligtree-gauntlets",
+        "name": "Haligtree Gauntlets",
+        "defenses": [3.2, 2.9, 3.1, 3.2, 2.3, 2.5, 1.9, 2.5],
+        "resistances": [11.0, 18.0, 8.0, 8.0],
+        "poise": 3.0,
+        "weight": 3.5
+    },
+    {
+        "id": "highwayman-gauntlets",
+        "name": "Highwayman Gauntlets",
+        "defenses": [1.9, 2.5, 1.9, 2.1, 2.7, 2.7, 2.8, 2.5],
+        "resistances": [19.0, 12.0, 17.0, 17.0],
+        "poise": 1.0,
+        "weight": 2.6
+    },
+    {
+        "id": "hoslows-gauntlets",
+        "name": "Hoslow's Gauntlets",
+        "defenses": [3.5, 2.9, 3.3, 3.1, 2.7, 2.9, 2.5, 2.5],
+        "resistances": [13.0, 20.0, 8.0, 8.0],
+        "poise": 4.0,
+        "weight": 3.9
+    },
+    {
+        "id": "kaiden-gauntlets",
+        "name": "Kaiden Gauntlets",
+        "defenses": [2.9, 2.1, 2.9, 2.9, 1.9, 2.1, 1.7, 1.9],
+        "resistances": [8.0, 15.0, 6.0, 6.0],
+        "poise": 3.0,
+        "weight": 2.9
+    },
+    {
+        "id": "knight-gauntlets",
+        "name": "Knight Gauntlets",
+        "defenses": [3.1, 2.9, 3.3, 3.3, 2.7, 2.7, 2.3, 2.1],
+        "resistances": [9.0, 17.0, 6.0, 6.0],
+        "poise": 4.0,
+        "weight": 3.5
+    },
+    {
+        "id": "land-of-reeds-gauntlets",
+        "name": "Land of Reeds Gauntlets",
+        "defenses": [2.1, 2.3, 2.9, 2.3, 2.5, 2.8, 2.9, 2.7],
+        "resistances": [20.0, 17.0, 17.0, 18.0],
+        "poise": 1.0,
+        "weight": 2.8
+    },
+    {
+        "id": "leyndell-knight-gauntlets",
+        "name": "Leyndell Knight Gauntlets",
+        "defenses": [3.3, 3.1, 3.3, 3.3, 2.5, 2.8, 2.5, 2.7],
+        "resistances": [12.0, 19.0, 8.0, 8.0],
+        "poise": 4.0,
+        "weight": 3.9
+    },
+    {
+        "id": "leyndell-soldier-gauntlets",
+        "name": "Leyndell Soldier Gauntlets",
+        "defenses": [3.2, 2.9, 3.1, 3.2, 2.3, 2.5, 2.1, 2.3],
+        "resistances": [11.0, 18.0, 8.0, 8.0],
+        "poise": 4.0,
+        "weight": 3.5
+    },
+    {
+        "id": "lionels-gauntlets",
+        "name": "Lionel's Gauntlets",
+        "defenses": [4.4, 4.1, 4.9, 5.0, 3.3, 3.7, 3.2, 3.3],
+        "resistances": [21.0, 33.0, 14.0, 17.0],
+        "poise": 8.0,
+        "weight": 7.1
+    },
+    {
+        "id": "malformed-dragon-gauntlets",
+        "name": "Malformed Dragon Gauntlets",
+        "defenses": [4.2, 3.7, 4.4, 4.2, 3.2, 3.2, 3.4, 3.2],
+        "resistances": [19.0, 25.0, 13.0, 13.0],
+        "poise": 6.0,
+        "weight": 5.3
+    },
+    {
+        "id": "malikeths-gauntlets",
+        "name": "Maliketh's Gauntlets",
+        "defenses": [3.3, 2.9, 3.5, 3.3, 2.7, 2.8, 2.3, 3.2],
+        "resistances": [12.0, 19.0, 8.0, 17.0],
+        "poise": 4.0,
+        "weight": 4.3
+    },
+    {
+        "id": "mushroom-arms",
+        "name": "Mushroom Arms",
+        "defenses": [1.5, 1.7, 0.6, 1.3, 3.3, 1.3, 3.2, 3.2],
+        "resistances": [34.0, 8.0, 30.0, 25.0],
+        "poise": 0.0,
+        "weight": 1.7
+    },
+    {
+        "id": "nobles-gloves",
+        "name": "Noble's Gloves",
+        "defenses": [1.5, 1.6, 1.5, 1.6, 3.3, 3.3, 3.2, 3.3],
+        "resistances": [15.0, 8.0, 25.0, 28.0],
+        "poise": 1.0,
+        "weight": 2.1
+    },
+    {
+        "id": "omenkiller-long-gloves",
+        "name": "Omenkiller Long Gloves",
+        "defenses": [2.1, 1.9, 1.7, 1.7, 2.1, 2.3, 2.8, 2.5],
+        "resistances": [22.0, 9.0, 15.0, 15.0],
+        "poise": 1.0,
+        "weight": 2.4
+    },
+    {
+        "id": "iron-gauntlets",
+        "name": "Iron Gauntlets",
+        "defenses": [2.8, 2.3, 2.9, 2.9, 2.1, 2.3, 1.5, 1.9],
+        "resistances": [8.0, 15.0, 6.0, 4.0],
+        "poise": 3.0,
+        "weight": 2.9
+    },
+    {
+        "id": "perfumer-gloves",
+        "name": "Perfumer Gloves",
+        "defenses": [1.0, 1.5, 1.3, 1.0, 3.2, 2.9, 3.1, 3.2],
+        "resistances": [20.0, 5.0, 21.0, 22.0],
+        "poise": 0.0,
+        "weight": 1.4
+    },
+    {
+        "id": "preceptors-gloves",
+        "name": "Preceptor's Gloves",
+        "defenses": [1.5, 1.6, 1.5, 1.5, 3.6, 3.3, 3.2, 3.2],
+        "resistances": [17.0, 8.0, 28.0, 25.0],
+        "poise": 1.0,
+        "weight": 2.1
+    },
+    {
+        "id": "queens-bracelets",
+        "name": "Queen's Bracelets",
+        "defenses": [1.5, 1.3, 1.3, 1.0, 3.4, 3.1, 3.2, 3.3],
+        "resistances": [14.0, 8.0, 24.0, 28.0],
+        "poise": 0.0,
+        "weight": 1.7
+    },
+    {
+        "id": "radahns-gauntlets",
+        "name": "Radahn's Gauntlets",
+        "defenses": [4.7, 3.7, 4.6, 4.4, 3.3, 3.5, 3.1, 3.3],
+        "resistances": [20.0, 33.0, 14.0, 13.0],
+        "poise": 6.0,
+        "weight": 5.8
+    },
+    {
+        "id": "raging-wolf-gauntlets",
+        "name": "Raging Wolf Gauntlets",
+        "defenses": [3.3, 2.9, 3.3, 3.2, 2.5, 2.8, 1.7, 2.3],
+        "resistances": [11.0, 19.0, 6.0, 6.0],
+        "poise": 3.0,
+        "weight": 3.5
+    },
+    {
+        "id": "raya-lucarian-gauntlets",
+        "name": "Raya Lucarian Gauntlets",
+        "defenses": [3.2, 2.7, 3.3, 3.2, 2.7, 2.7, 1.7, 2.1],
+        "resistances": [11.0, 18.0, 8.0, 8.0],
+        "poise": 4.0,
+        "weight": 3.5
+    },
+    {
+        "id": "scaled-gauntlets",
+        "name": "Scaled Gauntlets",
+        "defenses": [4.2, 3.6, 4.4, 4.2, 3.3, 3.4, 3.2, 3.3],
+        "resistances": [19.0, 28.0, 13.0, 13.0],
+        "poise": 6.0,
+        "weight": 5.3
+    },
+    {
+        "id": "sorcerer-manchettes",
+        "name": "Sorcerer Manchettes",
+        "defenses": [1.0, 1.3, 1.3, 0.1, 3.2, 3.1, 2.9, 3.1],
+        "resistances": [13.0, 4.0, 21.0, 20.0],
+        "poise": 0.0,
+        "weight": 1.1
+    },
+    {
+        "id": "traveling-maiden-gloves",
+        "name": "Traveling Maiden Gloves",
+        "defenses": [1.3, 1.5, 1.5, 1.0, 3.3, 3.2, 3.2, 3.3],
+        "resistances": [15.0, 8.0, 25.0, 28.0],
+        "poise": 1.0,
+        "weight": 1.7
+    },
+    {
+        "id": "twinned-gauntlets",
+        "name": "Twinned Gauntlets",
+        "defenses": [3.3, 3.1, 3.6, 2.9, 2.8, 2.8, 2.1, 2.5],
+        "resistances": [11.0, 18.0, 7.0, 18.0],
+        "poise": 4.0,
+        "weight": 3.9
+    },
+    {
+        "id": "warrior-gauntlets",
+        "name": "Warrior Gauntlets",
+        "defenses": [2.3, 2.3, 1.9, 1.9, 2.5, 2.7, 2.9, 2.3],
+        "resistances": [21.0, 14.0, 17.0, 17.0],
+        "poise": 1.0,
+        "weight": 2.6
+    },
+    {
+        "id": "vagabond-knight-gauntlets",
+        "name": "Vagabond Knight Gauntlets",
+        "defenses": [3.3, 2.8, 3.1, 2.9, 2.5, 2.7, 2.1, 2.1],
+        "resistances": [12.0, 19.0, 8.0, 8.0],
+        "poise": 3.0,
+        "weight": 3.5
+    },
+    {
+        "id": "veterans-gauntlets",
+        "name": "Veteran's Gauntlets",
+        "defenses": [4.7, 4.3, 4.7, 4.4, 3.3, 3.5, 3.2, 3.3],
+        "resistances": [21.0, 30.0, 15.0, 15.0],
+        "poise": 8.0,
+        "weight": 6.3
+    },
+    {
+        "id": "vulgar-militia-gauntlets",
+        "name": "Vulgar Militia Gauntlets",
+        "defenses": [1.7, 2.1, 1.9, 1.6, 2.1, 2.1, 2.3, 2.1],
+        "resistances": [20.0, 9.0, 14.0, 14.0],
+        "poise": 1.0,
+        "weight": 2.1
+    },
+    {
+        "id": "white-reed-gauntlets",
+        "name": "White Reed Gauntlets",
+        "defenses": [2.3, 2.5, 2.8, 2.1, 2.7, 2.7, 2.9, 2.5],
+        "resistances": [22.0, 14.0, 18.0, 17.0],
+        "poise": 2.0,
+        "weight": 2.8
+    },
+    {
+        "id": "zamor-bracelets",
+        "name": "Zamor Bracelets",
+        "defenses": [2.8, 2.1, 2.9, 2.5, 1.9, 1.9, 1.3, 1.7],
+        "resistances": [6.0, 20.0, 0.0, 4.0],
+        "poise": 3.0,
+        "weight": 2.8
+    },
+    {
+        "id": "banished-knight-gauntlets",
+        "name": "Banished Knight Gauntlets",
+        "defenses": [4.7, 3.7, 4.9, 4.4, 3.3, 3.3, 3.2, 3.3],
+        "resistances": [20.0, 28.0, 13.0, 14.0],
+        "poise": 6.0,
+        "weight": 5.8
+    },
+    {
+        "id": "battlemage-manchettes",
+        "name": "Battlemage Manchettes",
+        "defenses": [1.0, 1.3, 0.6, 1.0, 3.2, 2.8, 2.9, 3.1],
+        "resistances": [13.0, 7.0, 20.0, 22.0],
+        "poise": 0.0,
+        "weight": 1.1
+    },
+    {
+        "id": "blaidds-gauntlets",
+        "name": "Blaidd's Gauntlets",
+        "defenses": [3.6, 3.2, 3.6, 3.8, 2.8, 3.2, 2.7, 2.9],
+        "resistances": [13.0, 21.0, 8.0, 8.0],
+        "poise": 5.0,
+        "weight": 4.6
+    },
+    {
+        "id": "blue-silver-bracelets",
+        "name": "Blue Silver Bracelets",
+        "defenses": [2.3, 1.5, 2.5, 1.9, 1.9, 1.6, 1.0, 1.0],
+        "resistances": [4.0, 14.0, 4.0, 4.0],
+        "poise": 1.0,
+        "weight": 2.1
+    },
+    {
+        "id": "cuckoo-knight-gauntlets",
+        "name": "Cuckoo Knight Gauntlets",
+        "defenses": [3.3, 2.8, 3.6, 3.3, 3.1, 2.9, 2.1, 2.5],
+        "resistances": [11.0, 19.0, 8.0, 8.0],
+        "poise": 4.0,
+        "weight": 3.9
+    },
+    {
+        "id": "depraved-perfumer-gloves",
+        "name": "Depraved Perfumer Gloves",
+        "defenses": [1.5, 1.5, 1.4, 1.2, 3.2, 3.1, 3.1, 3.1],
+        "resistances": [23.0, 8.0, 20.0, 28.0],
+        "poise": 1.0,
+        "weight": 2.0
+    },
+    {
+        "id": "drake-knight-gauntlets",
+        "name": "Drake Knight Gauntlets",
+        "defenses": [2.8, 2.3, 2.9, 2.8, 2.5, 2.8, 2.1, 2.5],
+        "resistances": [8.0, 15.0, 7.0, 7.0],
+        "poise": 3.0,
+        "weight": 3.1
+    },
+    {
+        "id": "eccentrics-manchettes",
+        "name": "Eccentric's Manchettes",
+        "defenses": [2.9, 2.1, 2.8, 2.9, 2.1, 2.3, 1.5, 1.9],
+        "resistances": [8.0, 18.0, 6.0, 4.0],
+        "poise": 3.0,
+        "weight": 2.9
+    },
+    {
+        "id": "fingerprint-gauntlets",
+        "name": "Fingerprint Gauntlets",
+        "defenses": [3.3, 2.9, 2.9, 2.9, 2.3, 3.1, 1.6, 2.3],
+        "resistances": [11.0, 20.0, 4.0, 8.0],
+        "poise": 4.0,
+        "weight": 3.5
+    },
+    {
+        "id": "fire-prelate-gauntlets",
+        "name": "Fire Prelate Gauntlets",
+        "defenses": [4.9, 4.3, 4.6, 4.6, 3.3, 5.0, 3.2, 3.3],
+        "resistances": [22.0, 21.0, 30.0, 17.0],
+        "poise": 9.0,
+        "weight": 8.2
+    },
+    {
+        "id": "godrick-soldier-gauntlets",
+        "name": "Godrick Soldier Gauntlets",
+        "defenses": [3.2, 2.8, 3.2, 3.1, 2.5, 2.7, 1.9, 2.3],
+        "resistances": [11.0, 18.0, 8.0, 8.0],
+        "poise": 4.0,
+        "weight": 3.5
+    },
+    {
+        "id": "godskin-noble-bracelets",
+        "name": "Godskin Noble Bracelets",
+        "defenses": [1.3, 2.1, 1.5, 1.3, 3.2, 2.9, 3.1, 3.4],
+        "resistances": [14.0, 8.0, 24.0, 25.0],
+        "poise": 1.0,
+        "weight": 1.7
+    },
+    {
+        "id": "gold-bracelets",
+        "name": "Gold Bracelets",
+        "defenses": [1.0, 0.6, 0.6, 0.1, 2.9, 2.8, 2.9, 3.2],
+        "resistances": [13.0, 4.0, 20.0, 20.0],
+        "poise": 0.0,
+        "weight": 0.8
+    },
+    {
+        "id": "golden-prosthetic",
+        "name": "Golden Prosthetic",
+        "defenses": [1.5, 1.5, 1.5, 1.3, 3.2, 3.1, 3.2, 3.2],
+        "resistances": [15.0, 8.0, 25.0, 25.0],
+        "poise": 1.0,
+        "weight": 2.8
+    },
+    {
+        "id": "guardian-bracers",
+        "name": "Guardian Bracers",
+        "defenses": [2.7, 2.5, 2.5, 2.3, 2.9, 2.8, 2.9, 2.9],
+        "resistances": [25.0, 17.0, 20.0, 19.0],
+        "poise": 1.0,
+        "weight": 2.9
+    },
+    {
+        "id": "haligtree-knight-gauntlets",
+        "name": "Haligtree Knight Gauntlets",
+        "defenses": [3.3, 3.1, 3.3, 3.3, 2.5, 2.8, 2.3, 2.8],
+        "resistances": [12.0, 19.0, 8.0, 8.0],
+        "poise": 4.0,
+        "weight": 3.9
+    },
+    {
+        "id": "leather-gloves",
+        "name": "Leather Gloves",
+        "defenses": [1.9, 2.3, 1.9, 2.1, 2.3, 2.3, 2.5, 2.5],
+        "resistances": [20.0, 12.0, 14.0, 17.0],
+        "poise": 1.0,
+        "weight": 2.4
+    },
+    {
+        "id": "lusats-manchettes",
+        "name": "Lusat's Manchettes",
+        "defenses": [1.3, 0.1, 1.3, 0.1, 3.4, 2.8, 3.1, 3.1],
+        "resistances": [12.0, 6.0, 20.0, 22.0],
+        "poise": 0.0,
+        "weight": 1.1
+    },
+    {
+        "id": "malenias-gauntlet",
+        "name": "Malenia's Gauntlet",
+        "defenses": [3.1, 2.3, 3.2, 2.8, 1.9, 2.3, 1.6, 2.7],
+        "resistances": [17.0, 14.0, 6.0, 6.0],
+        "poise": 3.0,
+        "weight": 3.1
+    },
+    {
+        "id": "mausoleum-gauntlets",
+        "name": "Mausoleum Gauntlets",
+        "defenses": [3.2, 2.7, 3.3, 3.1, 2.5, 2.5, 2.1, 2.5],
+        "resistances": [11.0, 17.0, 8.0, 7.0],
+        "poise": 4.0,
+        "weight": 3.5
+    },
+    {
+        "id": "mausoleum-knight-gauntlets",
+        "name": "Mausoleum Knight Gauntlets",
+        "defenses": [3.3, 2.8, 3.6, 3.2, 2.7, 2.8, 2.5, 2.8],
+        "resistances": [12.0, 18.0, 8.0, 8.0],
+        "poise": 4.0,
+        "weight": 3.9
+    },
+    {
+        "id": "nights-cavalry-gauntlets",
+        "name": "Night's Cavalry Gauntlets",
+        "defenses": [3.5, 3.2, 3.5, 3.3, 2.7, 3.1, 2.7, 3.1],
+        "resistances": [13.0, 19.0, 8.0, 8.0],
+        "poise": 4.0,
+        "weight": 4.3
+    },
+    {
+        "id": "nox-monk-bracelets",
+        "name": "Nox Monk Bracelets",
+        "defenses": [2.1, 2.3, 2.1, 1.9, 2.9, 2.8, 2.8, 2.3],
+        "resistances": [20.0, 13.0, 15.0, 15.0],
+        "poise": 1.0,
+        "weight": 2.6
+    },
+    {
+        "id": "omen-gauntlets",
+        "name": "Omen Gauntlets",
+        "defenses": [4.6, 3.7, 4.7, 4.7, 3.2, 3.6, 3.7, 3.4],
+        "resistances": [22.0, 21.0, 19.0, 25.0],
+        "poise": 9.0,
+        "weight": 7.7
+    },
+    {
+        "id": "radahn-soldier-gauntlets",
+        "name": "Radahn Soldier Gauntlets",
+        "defenses": [3.3, 2.7, 3.1, 2.9, 2.5, 2.8, 1.9, 2.3],
+        "resistances": [11.0, 17.0, 8.0, 8.0],
+        "poise": 4.0,
+        "weight": 3.5
+    },
+    {
+        "id": "redmane-knight-gauntlets",
+        "name": "Redmane Knight Gauntlets",
+        "defenses": [3.5, 2.8, 3.3, 3.1, 2.7, 3.1, 2.3, 2.7],
+        "resistances": [12.0, 18.0, 8.0, 8.0],
+        "poise": 4.0,
+        "weight": 3.9
+    },
+    {
+        "id": "ronins-gauntlets",
+        "name": "Ronin's Gauntlets",
+        "defenses": [2.7, 2.7, 2.8, 2.7, 2.9, 3.1, 3.2, 2.9],
+        "resistances": [25.0, 19.0, 20.0, 21.0],
+        "poise": 2.0,
+        "weight": 3.1
+    },
+    {
+        "id": "royal-knight-gauntlets",
+        "name": "Royal Knight Gauntlets",
+        "defenses": [4.0, 3.6, 4.4, 4.2, 3.5, 3.3, 3.1, 3.2],
+        "resistances": [17.0, 22.0, 12.0, 12.0],
+        "poise": 5.0,
+        "weight": 5.2
+    },
+    {
+        "id": "royal-remains-gauntlets",
+        "name": "Royal Remains Gauntlets",
+        "defenses": [2.9, 2.8, 3.2, 2.9, 2.3, 2.5, 1.9, 2.1],
+        "resistances": [12.0, 19.0, 8.0, 4.0],
+        "poise": 3.0,
+        "weight": 3.5
+    },
+    {
+        "id": "spellblades-gloves",
+        "name": "Spellblade's Gloves",
+        "defenses": [0.9, 0.5, 0.9, 0.9, 3.1, 2.7, 2.8, 3.1],
+        "resistances": [11.0, 6.0, 19.0, 20.0],
+        "poise": 0.0,
+        "weight": 1.2
+    },
+    {
+        "id": "travelers-gloves",
+        "name": "Traveler's Gloves",
+        "defenses": [1.3, 1.3, 1.0, 0.6, 3.2, 3.2, 3.1, 3.2],
+        "resistances": [18.0, 7.0, 22.0, 21.0],
+        "poise": 0.0,
+        "weight": 1.4
+    },
+    {
+        "id": "travelers-manchettes",
+        "name": "Traveler's Manchettes",
+        "defenses": [1.6, 1.5, 1.3, 1.0, 3.3, 3.2, 3.2, 3.1],
+        "resistances": [13.0, 8.0, 25.0, 25.0],
+        "poise": 1.0,
+        "weight": 1.7
+    },
+    {
+        "id": "tree-sentinel-gauntlets",
+        "name": "Tree Sentinel Gauntlets",
+        "defenses": [4.7, 3.7, 4.7, 4.4, 3.2, 4.3, 3.1, 3.5],
+        "resistances": [22.0, 30.0, 14.0, 15.0],
+        "poise": 6.0,
+        "weight": 6.3
+    },
+    {
+        "id": "war-surgeon-gloves",
+        "name": "War Surgeon Gloves",
+        "defenses": [1.6, 1.8, 2.0, 1.6, 2.2, 2.4, 2.6, 2.4],
+        "resistances": [18.0, 13.0, 15.0, 17.0],
+        "poise": 1.0,
+        "weight": 2.3
+    }
+]
