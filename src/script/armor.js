@@ -15,7 +15,6 @@ var helmets;
 var chestpieces;
 var gauntlets;
 var leggings;
-var selection;
 
 async function init() {
     // populate filter selects
@@ -27,10 +26,16 @@ async function init() {
     update(true);
 }
 
-async function update(reselect) {
+async function update() {
+    // remove any previous results
+    Array.from(document.getElementsByClassName("sort-result")).forEach(elem => elem.parentNode.removeChild(elem));
+
     // clamp equip load values to reasonable values
     [...document.getElementsByName("equip-load")].forEach(el => el.value = Math.max(el.value, 0.0));
 
+    // update budget
+    let budget = equipLoadBudget();
+    document.getElementById("equip-load-budget").value = budget.toFixed(1);
     let sortBy = [...document.getElementsByName("sorting-order")].find(elem => elem.checked).id;
 
     // get locked items
@@ -42,25 +47,22 @@ async function update(reselect) {
                 .filter(item => !item.id.startsWith("no-"));
         });
 
-    // get budget and sorting order
-    let budget = equipLoadBudget();
-    document.getElementById("equip-load-budget").value = budget.toFixed(1);
+    console.log("locked items: " + lockedItems);
 
-    // if selection has changed, sort equipment again
-    if (reselect) {
-        // pre-sort and eliminate some equipment
-        helmets = eliminate(await HELMETS, sortBy, lockedItems);
-        chestpieces = eliminate(await CHESTPIECES, sortBy, lockedItems);
-        gauntlets = eliminate(await GAUNTLETS, sortBy, lockedItems);
-        leggings = eliminate(await LEGGINGS, sortBy, lockedItems);
-        selection = permutations(budget, lockedItems);
-    }
+    // pre-sort and eliminate some equipment
+    helmets = eliminate(await HELMETS, sortBy, lockedItems);
+    chestpieces = eliminate(await CHESTPIECES, sortBy, lockedItems);
+    gauntlets = eliminate(await GAUNTLETS, sortBy, lockedItems);
+    leggings = eliminate(await LEGGINGS, sortBy, lockedItems);
+    let selection = permutations(budget, lockedItems);
 
-    // find best set under budget
-    let best = knapSack(sortBy);
+    // find best sets to display
+    let best = knapSack(selection, sortBy);
+
+    console.log(best.weight);
+    console.log(best.fitness);
 
     // show best sets under budget
-    Array.from(document.getElementsByClassName("sort-result")).forEach(elem => elem.parentNode.removeChild(elem));
     populateResults("sort-result", "sort-results", best);
 }
 
@@ -78,7 +80,6 @@ function eliminate(list, sortBy, lockedItems) {
     sorted.sort((a, b) => a.weight - b.weight);
 
     let approved = []
-
     sorted.forEach(item => {
         if (!approved.some(other => fitness(item, sortBy) <= fitness(other, sortBy))) {
             approved.push(item)
@@ -101,47 +102,33 @@ function permutations(budget, lockedItems) {
     });
 }
 
-async function knapSack(sortBy) {
+function knapSack(selection, sortBy) {
     return selection.reduce((best, set) => {
         best.push(set);
         best.sort((a, b) => setFitness(b, sortBy) - setFitness(a, sortBy));
         best.pop();
         return best;
-    }, selection.slice(0, 3));
+    }, selection.slice(0, 3)).sort((a, b) => setFitness(b, sortBy) - setFitness(a, sortBy));
 }
-
-const average = (item) => item.defenses.reduce((total, n) => total + n, 0);
-const physical = (item) => item.defenses.slice(0, 4).reduce((total, n) => total + n, 0);
-const elemental = (item) => item.defenses.slice(4, 8).reduce((total, n) => total + n, 0);
-const resistances = (item) => item.resistances.reduce((total, n) => total + n, 0);
-const poise = (item) => item.poise;
 
 function fitness(item, sortBy) {
     switch (sortBy) {
         case "sort-average":
-            return average(item);
+            return item.average ??= item.defenses.reduce((total, n) => total + n, 0);
         case "sort-physical":
-            return physical(item);
+            return item.physical ??= item.defenses.slice(0, 4).reduce((total, n) => total + n, 0);
         case "sort-elemental":
-            return elemental(item);
+            return item.elemental ??= item.defenses.slice(4, 8).reduce((total, n) => total + n, 0);
         case "sort-resistances":
-            return resistances(item);
+            return item.resistances ??= item.resistances.reduce((total, n) => total + n, 0);
         case "sort-poise":
-            return poise(item);
+            return item.poise;
     }
 }
 
-function setWeight(set) {
-    return set.reduce((total, item) => total + item.weight, 0);
-}
-
-function setFitness(set, sortBy) {
-    return set.reduce((total, item) => total + fitness(item, sortBy), 0.0);
-}
-
-function isAllowedSet(set, lockedItems) {
-    return lockedItems.every(item => set.includes(item));
-}
+const setWeight = (set) => set.weight ??= set.reduce((total, item) => total + item.weight, 0);
+const setFitness = (set, sortBy) => set.fitness ??= set.reduce((total, item) => total + fitness(item, sortBy), 0.0);
+const isAllowedSet = (set, lockedItems) => lockedItems.every(item => set.includes(item));
 
 function equipLoadBudget() {
     let rollModifier = parseFloat([...document.getElementsByName("roll-type")].find(elem => elem.checked).value);

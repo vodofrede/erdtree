@@ -37,13 +37,13 @@
 
                     <li>
                         <label for="max-equip-load">Max. Equip Load</label>
-                        <input style="max-width: 50px" class="stat" id="max-equip-load" type="number"
-                            oninput="update(true)" min=0 step=0.1 value=30 name="equip-load" lang="en">
+                        <input style="max-width: 50px" class="stat" id="max-equip-load" type="number" oninput="update()"
+                            min=0 step=0.1 value=30 name="equip-load" lang="en">
                     </li>
                     <li>
                         <label for="current-equip-load">Current Equip Load</label>
                         <input style="max-width: 50px" class="stat" id="current-equip-load" type="number"
-                            oninput="update(true)" min=0 step=0.1 value=0 name="equip-load" lang="en">
+                            oninput="update()" min=0 step=0.1 value=0 name="equip-load" lang="en">
                     </li>
                     <li>
                         <label for="equip-load-budget">Equip Load Budget</label>
@@ -59,22 +59,21 @@
 
                     <li>
                         <div>
-                            <input type="radio" id="fast-roll" onclick="update(true)" name="roll-type" value=0.3>
+                            <input type="radio" id="fast-roll" onclick="update()" name="roll-type" value=0.3>
                             <label for="fast-roll">Fast Roll (up to 30% equip load)</label>
                         </div>
                     </li>
 
                     <li>
                         <div>
-                            <input type="radio" id="normal-roll" onclick="update(true)" name="roll-type" value=0.7
-                                checked>
+                            <input type="radio" id="normal-roll" onclick="update()" name="roll-type" value=0.7 checked>
                             <label for="normal-roll">Normal Roll (up to 70% equip load)</label>
                         </div>
                     </li>
 
                     <li>
                         <div>
-                            <input type="radio" id="fat-roll" onclick="update(true)" name="roll-type" value=1.0>
+                            <input type="radio" id="fat-roll" onclick="update()" name="roll-type" value=1.0>
                             <label for="fat-roll">Fat Roll (up to 100% equip load)</label>
                         </div>
                     </li>
@@ -87,35 +86,35 @@
 
                     <li>
                         <div>
-                            <input type="radio" id="sort-average" name="sorting-order" onclick="update(true)">
+                            <input type="radio" id="sort-average" name="sorting-order" onclick="update()">
                             <label for="sort-average">Greatest Average Negation</label>
                         </div>
                     </li>
 
                     <li>
                         <div>
-                            <input type="radio" id="sort-physical" name="sorting-order" onclick="update(true)">
+                            <input type="radio" id="sort-physical" name="sorting-order" onclick="update()">
                             <label for="sort-physical">Greatest Physical Negation</label>
                         </div>
                     </li>
 
                     <li>
                         <div>
-                            <input type="radio" id="sort-elemental" name="sorting-order" onclick="update(true)" checked>
+                            <input type="radio" id="sort-elemental" name="sorting-order" onclick="update()" checked>
                             <label for="sort-elemental">Greatest Elemental Negation</label>
                         </div>
                     </li>
 
                     <li>
                         <div>
-                            <input type="radio" id="sort-resistances" name="sorting-order" onclick="update(true)">
+                            <input type="radio" id="sort-resistances" name="sorting-order" onclick="update()">
                             <label for="sort-resistances">Greatest Resistances</label>
                         </div>
                     </li>
 
                     <li>
                         <div>
-                            <input type="radio" id="sort-poise" name="sorting-order" onclick="update(true)">
+                            <input type="radio" id="sort-poise" name="sorting-order" onclick="update()">
                             <label for="sort-poise">Greatest Poise</label>
                         </div>
                     </li>
@@ -128,13 +127,13 @@
 
                     <li>
                         <div>
-                            <input type="checkbox" id="winged-crystal-tear" onchange="update(false)" disabled>
+                            <input type="checkbox" id="winged-crystal-tear" onchange="update()" disabled>
                             <label for="winged-crystal-tear">Winged Crystal Tear (in mixed physick)</label>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <input type="checkbox" id="fashion" onchange="update(false)" disabled>
+                            <input type="checkbox" id="fashion" onchange="update()" disabled>
                             <label for="fashion">Fashion Mode</label>
                         </div>
                     </li>
@@ -153,7 +152,7 @@
                         <div class="select">
                             <div>
                                 <label for="select-helmet">Helmet</label>
-                                <select type="text" id="select-helmet" name="locked-items" onchange="update(true)">
+                                <select type="text" id="select-helmet" name="locked-items" onchange="update()">
                                 </select>
                             </div>
 
@@ -161,7 +160,7 @@
 
                             <div>
                                 <label for="select-chestpiece">Chestpiece</label>
-                                <select type="text" id="select-chestpiece" name="locked-items" onchange="update(true)">
+                                <select type="text" id="select-chestpiece" name="locked-items" onchange="update()">
                                 </select>
                             </div>
 
@@ -169,7 +168,7 @@
 
                             <div>
                                 <label for="select-gauntlets">Gauntlets</label>
-                                <select type=" text" id="select-gauntlets" name="locked-items" onchange="update(true)">
+                                <select type=" text" id="select-gauntlets" name="locked-items" onchange="update()">
                                 </select>
                             </div>
 
@@ -177,7 +176,7 @@
 
                             <div>
                                 <label for="select-leggings">Leggings</label>
-                                <select type="text" id="select-leggings" name="locked-items" onchange="update(true)">
+                                <select type="text" id="select-leggings" name="locked-items" onchange="update()">
                                 </select>
                             </div>
                         </div>
