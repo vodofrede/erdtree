@@ -15,6 +15,7 @@ var helmets;
 var chestpieces;
 var gauntlets;
 var leggings;
+var selection;
 
 async function init() {
     // populate filter selects
@@ -26,7 +27,7 @@ async function init() {
     update(true);
 }
 
-async function update(resort) {
+async function update(reselect) {
     // clamp equip load values to reasonable values
     [...document.getElementsByName("equip-load")].forEach(el => el.value = Math.max(el.value, 0.0));
 
@@ -41,21 +42,22 @@ async function update(resort) {
                 .filter(item => !item.id.startsWith("no-"));
         });
 
-    // if sort order has changed, sort equipment again
-    if (resort) {
+    // get budget and sorting order
+    let budget = equipLoadBudget();
+    document.getElementById("equip-load-budget").value = budget.toFixed(1);
+
+    // if selection has changed, sort equipment again
+    if (reselect) {
         // pre-sort and eliminate some equipment
         helmets = eliminate(await HELMETS, sortBy, lockedItems);
         chestpieces = eliminate(await CHESTPIECES, sortBy, lockedItems);
         gauntlets = eliminate(await GAUNTLETS, sortBy, lockedItems);
         leggings = eliminate(await LEGGINGS, sortBy, lockedItems);
+        selection = permutations(budget, lockedItems);
     }
 
-    // get budget and sorting order
-    let budget = equipLoadBudget();
-    document.getElementById("equip-load-budget").value = budget.toFixed(1);
-
     // find best set under budget
-    let best = knapSack(budget, sortBy, lockedItems);
+    let best = knapSack(sortBy);
 
     // show best sets under budget
     Array.from(document.getElementsByClassName("sort-result")).forEach(elem => elem.parentNode.removeChild(elem));
@@ -86,8 +88,8 @@ function eliminate(list, sortBy, lockedItems) {
     return approved;
 }
 
-async function knapSack(budget, sortBy, lockedItems) {
-    let permutations = helmets.flatMap(h => {
+function permutations(budget, lockedItems) {
+    return helmets.flatMap(h => {
         return chestpieces.flatMap(c => {
             return gauntlets.flatMap(g => {
                 return leggings
@@ -97,10 +99,15 @@ async function knapSack(budget, sortBy, lockedItems) {
             })
         })
     });
+}
 
-    permutations.sort((a, b) => setFitness(b, sortBy) - setFitness(a, sortBy));
-
-    return permutations.slice(0, 3);
+async function knapSack(sortBy) {
+    return selection.reduce((best, set) => {
+        best.push(set);
+        best.sort((a, b) => setFitness(b, sortBy) - setFitness(a, sortBy));
+        best.pop();
+        return best;
+    }, selection.slice(0, 3));
 }
 
 const average = (item) => item.defenses.reduce((total, n) => total + n, 0);
@@ -112,7 +119,7 @@ const poise = (item) => item.poise;
 function fitness(item, sortBy) {
     switch (sortBy) {
         case "sort-average":
-            break;
+            return average(item);
         case "sort-physical":
             return physical(item);
         case "sort-elemental":
@@ -188,13 +195,6 @@ async function populateResults(templateId, destinationId, sets) {
     });
 }
 
-const RESISTANCE_NAMES = [
-    "immunity",
-    "robustness",
-    "focus",
-    "vitality",
-]
-
 function itemStatsToString(item) {
     let weight = item.weight.toFixed(1) + " wgt., ";
     let poise = item.poise + " poise, ";
@@ -202,7 +202,7 @@ function itemStatsToString(item) {
     let elemental = item.defenses.slice(4, 8).reduce((total, defense) => total + defense, 0.0).toFixed(1) + " elem. ";
     // let physical = item.defenses.slice(0, 4).reduce((total, defense, i) => total + defense.toFixed(1) + " " + DEFENSE_NAMES[i] + ", ", 0.0);
     // let elemental = item.defenses.slice(4, 8).reduce((total, defense, i) => total + defense.toFixed(1) + " " + DEFENSE_NAMES[i + 4] + ", ", "");
-    let resistances = item.resistances.reduce((total, res, i) => total + res + " " + RESISTANCE_NAMES[i] + ", ", "");
+    let resistances = item.resistances.reduce((total, res, i) => total + res + " " + ["immunity", "robustness", "focus", "vitality"][i] + ", ", "");
 
     return weight + poise + physical + elemental + "<br>" + resistances;
 }
