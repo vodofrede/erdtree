@@ -47,8 +47,6 @@ async function update() {
                 .filter(item => !item.id.startsWith("no-"));
         });
 
-    console.log("locked items: " + lockedItems);
-
     // pre-sort and eliminate some equipment
     helmets = eliminate(await HELMETS, sortBy, lockedItems);
     chestpieces = eliminate(await CHESTPIECES, sortBy, lockedItems);
@@ -58,9 +56,6 @@ async function update() {
 
     // find best sets to display
     let best = knapSack(selection, sortBy);
-
-    console.log(best.weight);
-    console.log(best.fitness);
 
     // show best sets under budget
     populateResults("sort-result", "sort-results", best);
