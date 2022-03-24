@@ -11,30 +11,10 @@ const LEGGINGS = fetch("/data/armor/leggings.json")
     .then(response => response.json())
     .catch(error => console.log(error));
 
-// armor combination lists
-const PHYSICAL = fetch("/data/armor/combinations/physical.json")
-    .then(response => response.json())
-    .catch(error => console.log(error));
-const POISE = fetch("/data/armor/combinations/poise.json")
-    .then(response => response.json())
-    .catch(error => console.log(error));
-
-const DEFENSE = [
-    "phys.",
-    "strike",
-    "slash",
-    "pierce",
-    "magic",
-    "fire",
-    "light.",
-    "holy",
-];
-const RESISTANCES = [
-    "immunity",
-    "robustness",
-    "focus",
-    "vitality",
-]
+var helmets;
+var chestpieces;
+var gauntlets;
+var leggings;
 
 async function init() {
     // populate filter selects
@@ -43,73 +23,129 @@ async function init() {
     populateSelect("locked-option", "select-gauntlets", await GAUNTLETS);
     populateSelect("locked-option", "select-leggings", await LEGGINGS);
 
-    update();
+    update(true);
 }
 
-async function update() {
+async function update(resort) {
     // clamp equip load values to reasonable values
     [...document.getElementsByName("equip-load")].forEach(el => el.value = Math.max(el.value, 0.0));
 
+    let sortBy = [...document.getElementsByName("sorting-order")].find(elem => elem.checked).id;
+
+    // get locked items
+    let lockedItems = await Promise.all([HELMETS, CHESTPIECES, GAUNTLETS, LEGGINGS])
+        .then(allItems => {
+            return [...document.getElementsByName("locked-items")]
+                .map(select => select.selectedIndex)
+                .map((itemIndex, i) => allItems[i][itemIndex])
+                .filter(item => !item.id.startsWith("no-"));
+        });
+
+    // if sort order has changed, sort equipment again
+    if (resort) {
+        // pre-sort and eliminate some equipment
+        helmets = eliminate(await HELMETS, sortBy, lockedItems);
+        chestpieces = eliminate(await CHESTPIECES, sortBy, lockedItems);
+        gauntlets = eliminate(await GAUNTLETS, sortBy, lockedItems);
+        leggings = eliminate(await LEGGINGS, sortBy, lockedItems);
+    }
+
     // get budget and sorting order
     let budget = equipLoadBudget();
-    let sortBy = currentSortBy();
+    document.getElementById("equip-load-budget").value = budget.toFixed(1);
 
-    // find sets under budget
-    let best = await findUnderBudget(budget, sortBy, 3);
+    // find best set under budget
+    let best = knapSack(budget, sortBy, lockedItems);
 
     // show best sets under budget
     Array.from(document.getElementsByClassName("sort-result")).forEach(elem => elem.parentNode.removeChild(elem));
     populateResults("sort-result", "sort-results", best);
 }
 
-function clearEquipment() {
-    [...document.getElementsByName("locked-equipment")].forEach(select => select.selectedIndex = 0);
+function reset() {
+    [...document.getElementsByName("locked-items")].forEach(select => select.selectedIndex = 0);
+    update();
+}
+
+function eliminate(list, sortBy, lockedItems) {
+    if (lockedItems.some(item => list.includes(item))) {
+        return [list.find(item => lockedItems.includes(item))];
+    }
+
+    let sorted = [...list];
+    sorted.sort((a, b) => a.weight - b.weight);
+
+    let approved = []
+
+    sorted.forEach(item => {
+        if (!approved.some(other => fitness(item, sortBy) <= fitness(other, sortBy))) {
+            approved.push(item)
+        }
+    });
+
+    return approved;
+}
+
+async function knapSack(budget, sortBy, lockedItems) {
+    let permutations = helmets.flatMap(h => {
+        return chestpieces.flatMap(c => {
+            return gauntlets.flatMap(g => {
+                return leggings
+                    .filter(l => isAllowedSet([h, c, g, l], lockedItems))
+                    .filter(l => budget > setWeight([h, c, g, l]))
+                    .map(l => [h, c, g, l]);
+            })
+        })
+    });
+
+    permutations.sort((a, b) => setFitness(b, sortBy) - setFitness(a, sortBy));
+
+    return permutations.slice(0, 3);
+}
+
+const average = (item) => item.defenses.reduce((total, n) => total + n, 0);
+const physical = (item) => item.defenses.slice(0, 4).reduce((total, n) => total + n, 0);
+const elemental = (item) => item.defenses.slice(4, 8).reduce((total, n) => total + n, 0);
+const resistances = (item) => item.resistances.reduce((total, n) => total + n, 0);
+const poise = (item) => item.poise;
+
+function fitness(item, sortBy) {
+    switch (sortBy) {
+        case "sort-average":
+            break;
+        case "sort-physical":
+            return physical(item);
+        case "sort-elemental":
+            return elemental(item);
+        case "sort-resistances":
+            return resistances(item);
+        case "sort-poise":
+            return poise(item);
+    }
+}
+
+function setWeight(set) {
+    return set.reduce((total, item) => total + item.weight, 0);
+}
+
+function setFitness(set, sortBy) {
+    return set.reduce((total, item) => total + fitness(item, sortBy), 0.0);
+}
+
+function isAllowedSet(set, lockedItems) {
+    return lockedItems.every(item => set.includes(item));
 }
 
 function equipLoadBudget() {
-    let rollType = [...document.getElementsByName("roll-type")].find(elem => elem.checked).id;
-    let rollModifier;
-    switch (rollType) {
-        case "fast-roll":
-            rollModifier = 0.3;
-            break;
-        case "normal-roll":
-            rollModifier = 0.7;
-            break;
-        case "fat-roll":
-            rollModifier = 1.0;
-            break;
-    }
+    let rollModifier = parseFloat([...document.getElementsByName("roll-type")].find(elem => elem.checked).value);
 
     let max = document.getElementById("max-equip-load").value || 0;
     let current = document.getElementById("current-equip-load").value || 0;
-    let budget = Math.max((max - current) * rollModifier, 0);
 
-    return budget;
-
+    return parseFloat(Math.max((max - current) * rollModifier, 0.0));
 }
 
-function currentSortBy() {
-    return [...document.getElementsByName("sorting-order")].find(elem => elem.checked).id;
-}
-
-async function findUnderBudget(budget, sortBy, amount) {
-    let sets;
-
-    switch (sortBy) {
-        case "greatest-physical":
-            sets = (await PHYSICAL);
-            break;
-        case "greatest-poise":
-            sets = (await POISE);
-            break;
-    }
-
-    let first = sets.findIndex(set => set.weight <= budget);
-
-    return sets.slice(first, first + amount);
-}
-
+// site rendering functions
 function populateSelect(templateId, destinationId, items) {
     let template = document.getElementById(templateId);
     let destination = document.getElementById(destinationId);
@@ -125,15 +161,10 @@ function populateSelect(templateId, destinationId, items) {
 }
 
 async function populateResults(templateId, destinationId, sets) {
-    let helmets = await HELMETS;
-    let chestpieces = await CHESTPIECES;
-    let gauntlets = await GAUNTLETS;
-    let leggings = await LEGGINGS;
-
     let template = document.getElementById(templateId);
     let destination = document.getElementById(destinationId);
 
-    sets.forEach(set => {
+    (await sets).forEach(set => {
         let clone = template.content.cloneNode(true);
 
         let li = clone.children[0];
@@ -141,44 +172,48 @@ async function populateResults(templateId, destinationId, sets) {
         let tbody = table.children[1];
         let rows = tbody.children;
 
-        let helmet = helmets.find(helmet => helmet.id == set.helmet);
-        let chestpiece = chestpieces.find(chest => chest.id == set.chestpiece);
-        let gauntlet = gauntlets.find(gauntlets => gauntlets.id == set.gauntlets);
-        let legging = leggings.find(leggings => leggings.id == set.leggings);
+        rows[1].children[0].innerText = set[0].name;
+        rows[2].children[0].innerText = set[1].name;
+        rows[3].children[0].innerText = set[2].name;
+        rows[4].children[0].innerText = set[3].name;
 
-        rows[0].children[0].innerText = helmet.name;
-        rows[1].children[0].innerText = chestpiece.name;
-        rows[2].children[0].innerText = gauntlet.name;
-        rows[3].children[0].innerText = legging.name;
+        rows[1].children[1].innerHTML = itemStatsToString(set[0]);
+        rows[2].children[1].innerHTML = itemStatsToString(set[1]);
+        rows[3].children[1].innerHTML = itemStatsToString(set[2]);
+        rows[4].children[1].innerHTML = itemStatsToString(set[3]);
 
-        rows[0].children[1].innerHTML = statString(helmet);
-        rows[1].children[1].innerHTML = statString(chestpiece);
-        rows[2].children[1].innerHTML = statString(gauntlet);
-        rows[3].children[1].innerHTML = statString(legging);
-
-        rows[4].children[1].innerHTML = totalStatsString(helmet, chestpiece, gauntlet, legging);
+        rows[0].children[1].innerHTML = setStatsToString(set);
 
         destination.appendChild(clone);
     });
 }
 
-function statString(item) {
+const RESISTANCE_NAMES = [
+    "immunity",
+    "robustness",
+    "focus",
+    "vitality",
+]
+
+function itemStatsToString(item) {
     let weight = item.weight.toFixed(1) + " wgt., ";
     let poise = item.poise + " poise, ";
-    let physical = item.defenses.slice(0, 4).reduce((total, defense, i) => total + defense.toFixed(1) + " " + DEFENSE[i] + ", ", "");
-    let elemental = item.defenses.slice(4, 8).reduce((total, defense, i) => total + defense.toFixed(1) + " " + DEFENSE[i + 4] + ", ", "");
-    let resistances = item.resistances.reduce((total, res, i) => total + res + " " + RESISTANCES[i] + ", ", "");
+    let physical = item.defenses.slice(0, 4).reduce((total, defense) => total + defense, 0.0).toFixed(1) + " phys. ";
+    let elemental = item.defenses.slice(4, 8).reduce((total, defense) => total + defense, 0.0).toFixed(1) + " elem. ";
+    // let physical = item.defenses.slice(0, 4).reduce((total, defense, i) => total + defense.toFixed(1) + " " + DEFENSE_NAMES[i] + ", ", 0.0);
+    // let elemental = item.defenses.slice(4, 8).reduce((total, defense, i) => total + defense.toFixed(1) + " " + DEFENSE_NAMES[i + 4] + ", ", "");
+    let resistances = item.resistances.reduce((total, res, i) => total + res + " " + RESISTANCE_NAMES[i] + ", ", "");
 
-    return weight + poise + physical + "<br>" + elemental + "<br>" + resistances;
+    return weight + poise + physical + elemental + "<br>" + resistances;
 }
 
-function totalStatsString(helmet, chestpiece, gauntlets, leggings) {
+function setStatsToString(set) {
     let imaginary = {
-        weight: helmet.weight + chestpiece.weight + gauntlets.weight + leggings.weight,
-        poise: helmet.poise + chestpiece.poise + gauntlets.poise + leggings.poise,
-        defenses: helmet.defenses.map((stat, i) => stat + chestpiece.defenses[i] + gauntlets.defenses[i] + leggings.defenses[i]),
-        resistances: helmet.resistances.map((stat, i) => stat + chestpiece.resistances[i] + gauntlets.resistances[i] + leggings.resistances[i])
+        weight: set[0].weight + set[1].weight + set[2].weight + set[3].weight,
+        poise: set[0].poise + set[1].poise + set[2].poise + set[3].poise,
+        defenses: set[0].defenses.map((stat, i) => stat + set[1].defenses[i] + set[2].defenses[i] + set[3].defenses[i]),
+        resistances: set[0].resistances.map((stat, i) => stat + set[1].resistances[i] + set[2].resistances[i] + set[3].resistances[i])
     }
 
-    return statString(imaginary);
+    return itemStatsToString(imaginary);
 }
