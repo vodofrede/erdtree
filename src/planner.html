@@ -10,9 +10,11 @@
 
     <title>Erdtree - Build Planner</title>
     <meta name="description" content="">
+
+    <script src="script/planner.js"></script>
 </head>
 
-<body>
+<body onload="init()">
     <nav>
         <h1><a href="/">Elden Ring Build Planner</a></h1>
         <ul>
@@ -21,14 +23,101 @@
     </nav>
 
     <header>
+        <h1>Build Planner</h1>
     </header>
 
     <main>
+        <div class="app">
+            <!-- equipment -->
+            <article>
+                <ul>
+                    <li>
+                        <b>Equipment</b>
+                    </li>
 
+                    <hr>
+
+                    <li><b>Weapons</b></li>
+
+                    <hr>
+
+                    <li><b>Armor</b></li>
+
+                    <hr>
+
+                    <li><b>Talismans</b></li>
+
+                    <hr>
+
+                    <li><b>Spells</b></li>
+                </ul>
+            </article>
+
+            <!-- stats -->
+            <article>
+                <ul>
+                    <li><b>Statistics</b></li>
+
+                    <hr>
+
+                    <li>
+                        <label for="class"><b>Starting Class</b></label>
+                        <select id="class" onchange="update()"></select>
+                    </li>
+
+                    <li>
+                        <label for="level"><b>Level</b></label>
+                        <input type="text" id="level" class="stat" disabled>
+                    </li>
+
+                    <li><br></li>
+
+                    <li>
+                        <label for="vigor">Vigor</label>
+                        <input type="text" id="vigor" class="stat" name="stat">
+                    </li>
+                    <li>
+                        <label for="mind">Mind</label>
+                        <input type="text" id="mind" class="stat" name="stat">
+                    </li>
+                    <li>
+                        <label for="endurance">Endurance</label>
+                        <input type="text" id="endurance" class="stat" name="stat">
+                    </li>
+                    <li>
+                        <label for="strength">Strength</label>
+                        <input type="text" id="strength" class="stat" name="stat">
+                    </li>
+                    <li>
+                        <label for="dexterity">Dexterity</label>
+                        <input type="text" id="dexterity" class="stat" name="stat">
+                    </li>
+                    <li>
+                        <label for="intelligence">Intelligence</label>
+                        <input type="text" id="intelligence" class="stat" name="stat">
+                    </li>
+                    <li>
+                        <label for="faith">Faith</label>
+                        <input type="text" id="faith" class="stat" name="stat">
+                    </li>
+                    <li>
+                        <label for="arcane">Arcane</label>
+                        <input type="text" id="arcane" class="stat" name="stat">
+                    </li>
+                </ul>
+            </article>
+
+            <!-- misc. -->
+            <article>
+                <ul></ul>
+            </article>
+        </div>
     </main>
 
     <footer>
-
+        <h5>Erdtree Planner (<a href="https://git.palmoe.dk/vodofrede/erdtree">available under BSD-3-Clause license</a>)
+        </h5>
+        <h5>Copyright 2022 vodofrede</h5>
     </footer>
 </body>
 
