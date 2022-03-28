@@ -4,7 +4,7 @@ const CLASSES = fetch("/data/classes.json")
 const TALISMANS = fetch("/data/talismans.json")
     .then(response => response.json())
     .catch(error => console.log(error));
-const HELMETS = fetch("/data/armor/helmets.json")
+const HELMETS = fetch("/data/helmets.json")
     .then(response => response.json())
     .catch(error => console.log(error));
 
@@ -22,7 +22,8 @@ const STAT_SHORT_NAMES = [
 async function init() {
     // populate helmet list
     let helmets = await HELMETS;
-    helmets = helmets.filter(helmet => helmet.stats != null && helmet.stats != undefined);
+    helmets = Object.values(helmets).filter(helmet => helmet.stats != null && helmet.stats != undefined);
+    console.log(helmets)
 
     let helmetTemplate = document.getElementById("helm");
     let helmetList = document.getElementById("helmets");
@@ -32,7 +33,7 @@ async function init() {
 
     // populate talisman list
     let talismans = await TALISMANS;
-    talismans = talismans.filter(talisman => talisman.stats != null && talisman.stats != undefined);
+    talismans = Object.values(talismans).filter(talisman => talisman.stats != null && talisman.stats != undefined);
 
     let talismanTemplate = document.getElementById("talisman");
     let talismanList = document.getElementById("talismans");
@@ -53,7 +54,7 @@ async function update() {
     )
 
     // get added stats from items
-    let items = itemStats((await TALISMANS).concat(await HELMETS));
+    let items = itemStats(Object.values(await TALISMANS).concat(Object.values(await HELMETS)));
 
     desired = desired.map((stat, i) => stat - items[i]);
 
@@ -97,7 +98,7 @@ async function update() {
 }
 
 function sortClasses(classes, desiredStats) {
-    let deltas = classes.map(c => {
+    let deltas = Object.values(classes).map(c => {
         c.total = c.level + statDelta(c.stats, desiredStats);
         return c;
     });

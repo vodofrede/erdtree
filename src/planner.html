@@ -31,78 +31,140 @@
             <!-- equipment -->
             <article>
                 <ul>
+                    <li><b>Equipment</b></li>
+
+                    <hr>
+
                     <li>
-                        <b>Equipment</b>
+                        <b>Weapons</b>
+                        <a href="weapons.html">Optimize</a>
+                    </li>
+                    <li>
+                        <div class="select">
+                            <select id="left-hand-1" name="weapons" onchange="update()"></select>
+                            <select id="left-hand-2" name="weapons" onchange="update()"></select>
+                            <select id="left-hand-3" name="weapons" onchange="update()"></select>
+                        </div>
+                        <div class="select">
+                            <select id="right-hand-1" name="weapons" onchange="update()"></select>
+                            <select id="right-hand-2" name="weapons" onchange="update()"></select>
+                            <select id="right-hand-3" name="weapons" onchange="update()"></select>
+                        </div>
                     </li>
 
                     <hr>
 
-                    <li><b>Weapons</b></li>
+                    <li>
+                        <b>Armor</b>
+                        <a href="armor.html">Optimize</a>
+                    </li>
+                    <li class="select">
+                        <select id="helmet" name="helmets" onchange="update()"></select>
+                        <select id="chestpiece" name="chestpieces" onchange="update()"></select>
+                        <select id="gauntlets" name="gauntlets" onchange="update()"></select>
+                        <select id="leggings" name="leggings" onchange="update()"></select>
+                    </li>
 
-                    <hr>
-
-                    <li><b>Armor</b></li>
 
                     <hr>
 
                     <li><b>Talismans</b></li>
+                    <li class="select">
+                        <select id="talisman-1" name="talismans" onchange="update()"></select>
+                        <select id="talisman-2" name="talismans" onchange="update()"></select>
+                        <select id="talisman-3" name="talismans" onchange="update()"></select>
+                        <select id="talisman-4" name="talismans" onchange="update()"></select>
+                    </li>
 
                     <hr>
 
                     <li><b>Spells</b></li>
+
+                    <li>
+                        <details>
+                            <summary>Click to show slots</summary>
+                        </details>
+                    </li>
+
+                    <hr>
+                    <li>
+                        <div></div>
+                        <button onclick="reset('equipment')">Reset</button>
+                    </li>
                 </ul>
             </article>
 
             <!-- stats -->
             <article>
                 <ul>
-                    <li><b>Statistics</b></li>
+                    <li>
+                        <b>Statistics</b>
+                        <a href="optimizer.html">Optimize Class</a> <!-- TODO -->
+                    </li>
 
                     <hr>
 
                     <li>
                         <label for="class"><b>Starting Class</b></label>
-                        <select id="class" onchange="update()"></select>
+                        <div>
+
+                            <select id="class" onchange="update()">
+                                <option id="wretch" selected>Wretch</option>
+                                <option id="vagabond">Vagabond</option>
+                                <option id="warrior">Warrior</option>
+                                <option id="hero">Hero</option>
+                                <option id="bandit">Bandit</option>
+                                <option id="astrologer">Astrologer</option>
+                                <option id="prophet">Prophet</option>
+                                <option id="samurai">Samurai</option>
+                                <option id="prisoner">Prisoner</option>
+                                <option id="confessor">Confessor</option>
+                            </select>
+                        </div>
                     </li>
 
                     <li>
                         <label for="level"><b>Level</b></label>
-                        <input type="text" id="level" class="stat" disabled>
+                        <input type="number" id="level" class="stat" disabled>
                     </li>
 
                     <li><br></li>
 
                     <li>
                         <label for="vigor">Vigor</label>
-                        <input type="text" id="vigor" class="stat" name="stat">
+                        <input type="number" id="vigor" class="stat" name="stat">
                     </li>
                     <li>
                         <label for="mind">Mind</label>
-                        <input type="text" id="mind" class="stat" name="stat">
+                        <input type="number" id="mind" class="stat" name="stat">
                     </li>
                     <li>
                         <label for="endurance">Endurance</label>
-                        <input type="text" id="endurance" class="stat" name="stat">
+                        <input type="number" id="endurance" class="stat" name="stat">
                     </li>
                     <li>
                         <label for="strength">Strength</label>
-                        <input type="text" id="strength" class="stat" name="stat">
+                        <input type="number" id="strength" class="stat" name="stat">
                     </li>
                     <li>
                         <label for="dexterity">Dexterity</label>
-                        <input type="text" id="dexterity" class="stat" name="stat">
+                        <input type="number" id="dexterity" class="stat" name="stat">
                     </li>
                     <li>
                         <label for="intelligence">Intelligence</label>
-                        <input type="text" id="intelligence" class="stat" name="stat">
+                        <input type="number" id="intelligence" class="stat" name="stat">
                     </li>
                     <li>
                         <label for="faith">Faith</label>
-                        <input type="text" id="faith" class="stat" name="stat">
+                        <input type="number" id="faith" class="stat" name="stat">
                     </li>
                     <li>
                         <label for="arcane">Arcane</label>
-                        <input type="text" id="arcane" class="stat" name="stat">
+                        <input type="number" id="arcane" class="stat" name="stat">
+                    </li>
+                    <li>
+                        <div></div>
+                        <button onclick="reset('statistics')">Reset</button>
                     </li>
                 </ul>
             </article>

@@ -1,13 +1,13 @@
-const HELMETS = fetch("/data/armor/helmets.json")
+const HELMETS = fetch("/data/helmets.json")
     .then(response => response.json())
     .catch(error => console.log(error));
-const CHESTPIECES = fetch("/data/armor/chestpieces.json")
+const CHESTPIECES = fetch("/data/chestpieces.json")
     .then(response => response.json())
     .catch(error => console.log(error));
-const GAUNTLETS = fetch("/data/armor/gauntlets.json")
+const GAUNTLETS = fetch("/data/gauntlets.json")
     .then(response => response.json())
     .catch(error => console.log(error));
-const LEGGINGS = fetch("/data/armor/leggings.json")
+const LEGGINGS = fetch("/data/leggings.json")
     .then(response => response.json())
     .catch(error => console.log(error));
 
@@ -18,10 +18,10 @@ var leggings;
 
 async function init() {
     // populate filter selects
-    populateSelect("locked-option", "select-helmet", await HELMETS);
-    populateSelect("locked-option", "select-chestpiece", await CHESTPIECES);
-    populateSelect("locked-option", "select-gauntlets", await GAUNTLETS);
-    populateSelect("locked-option", "select-leggings", await LEGGINGS);
+    populateSelect("locked-option", "select-helmet", Object.values(await HELMETS));
+    populateSelect("locked-option", "select-chestpiece", Object.values(await CHESTPIECES));
+    populateSelect("locked-option", "select-gauntlets", Object.values(await GAUNTLETS));
+    populateSelect("locked-option", "select-leggings", Object.values(await LEGGINGS));
 
     update(true);
 }
@@ -31,7 +31,7 @@ async function update() {
     Array.from(document.getElementsByClassName("sort-result")).forEach(elem => elem.parentNode.removeChild(elem));
 
     // clamp equip load values to reasonable values
-    [...document.getElementsByName("equip-load")].forEach(el => el.value = Math.max(el.value, 0.0));
+    // [...document.getElementsByName("equip-load")].forEach(el => el.value = Math.max(el.value, 0.0));
 
     // update budget
     let budget = equipLoadBudget();
@@ -42,20 +42,20 @@ async function update() {
     let lockedItems = await Promise.all([HELMETS, CHESTPIECES, GAUNTLETS, LEGGINGS])
         .then(allItems => {
             return [...document.getElementsByName("locked-items")]
-                .map(select => select.selectedIndex)
-                .map((itemIndex, i) => allItems[i][itemIndex])
+                .map((select, i) => Object.values(allItems[i])[select.selectedIndex])
                 .filter(item => !item.id.startsWith("no-"));
         });
 
     // pre-sort and eliminate some equipment
-    helmets = eliminate(await HELMETS, sortBy, lockedItems);
-    chestpieces = eliminate(await CHESTPIECES, sortBy, lockedItems);
-    gauntlets = eliminate(await GAUNTLETS, sortBy, lockedItems);
-    leggings = eliminate(await LEGGINGS, sortBy, lockedItems);
+    helmets = eliminate(Object.values(await HELMETS), sortBy, lockedItems);
+    chestpieces = eliminate(Object.values(await CHESTPIECES), sortBy, lockedItems);
+    gauntlets = eliminate(Object.values(await GAUNTLETS), sortBy, lockedItems);
+    leggings = eliminate(Object.values(await LEGGINGS), sortBy, lockedItems);
     let selection = permutations(budget, lockedItems);
 
     // find best sets to display
     let best = knapSack(selection, sortBy);
+    console.log("time: " + (t2 - t1));
 
     // show best sets under budget
     populateResults("sort-result", "sort-results", best);
@@ -109,15 +109,15 @@ function knapSack(selection, sortBy) {
 function fitness(item, sortBy) {
     switch (sortBy) {
         case "sort-average":
-            return item.average ??= item.defenses.reduce((total, n) => total + n, 0);
+            return item.average ??= (item.defenses.reduce((total, n) => total + n, 0) ?? 0);
         case "sort-physical":
-            return item.physical ??= item.defenses.slice(0, 4).reduce((total, n) => total + n, 0);
+            return item.physical ??= (item.defenses.slice(0, 4).reduce((total, n) => total + n, 0) ?? 0);
         case "sort-elemental":
-            return item.elemental ??= item.defenses.slice(4, 8).reduce((total, n) => total + n, 0);
+            return item.elemental ??= (item.defenses.slice(4, 8).reduce((total, n) => total + n, 0) ?? 0);
         case "sort-resistances":
-            return item.resistances ??= item.resistances.reduce((total, n) => total + n, 0);
+            return item.resistances ??= (item.resistances.reduce((total, n) => total + n, 0) ?? 0);
         case "sort-poise":
-            return item.poise;
+            return item.poise ?? 0;
     }
 }
 

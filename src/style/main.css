@@ -209,11 +209,9 @@ button {
 .cards article {
     text-align: center;
 
-    flex-grow: 1;
-    flex-basis: 25%;
-    min-width: 200px;
+    width: 32%;
 
-    border: 1px solid var(--outline);
+    border: 1px solid var(--font-color);
     border-radius: 5px;
 
     /* look */
