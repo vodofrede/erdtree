@@ -55,7 +55,6 @@ async function update() {
 
     // find best sets to display
     let best = knapSack(selection, sortBy);
-    console.log("time: " + (t2 - t1));
 
     // show best sets under budget
     populateResults("sort-result", "sort-results", best);
