@@ -1,34 +1,80 @@
-const fs = require("fs");
+const WEAPONS = fetch("/data/weapons.json")
+    .then(response => response.json())
+    .catch(error => console.log(error));
+const INFUSIONS = fetch("/data/infusions.json")
+    .then(response => response.json())
+    .catch(error => console.log(error));
+const CORRECTIONS = fetch("/data/damage.json")
+    .then(response => response.json())
+    .catch(error => console.log(error));
+
+let weapons;
+let infusions;
+let corrections;
 
 const sum = (a, b) => a + b;
 
-let weapons = JSON.parse(fs.readFileSync("./output/weapons.json"));
-let corrections = JSON.parse(fs.readFileSync("./output/damage.json"));
-let infusions = JSON.parse(fs.readFileSync("./output/infusions.json"));
+async function init() {
+    weapons = await WEAPONS;
+    infusions = await INFUSIONS;
+    corrections = await CORRECTIONS;
 
-function damage(weaponId, infusionId, stats, upgradeLevel) {
-    let weapon = weapons.find(weapon => weapon.id = weapon);
-    let infusion = infusions.find(infusion => infusion.id = infusionId);
-
-    weapon = weapon.infusions[infusionId];
-
-    let bases = infusion.damage.map((amount, ty) => weapon.damage[ty] * (amount + infusion.upgrade[ty] * upgradeLevel));
-
-    let extras = bases.map((amount, ty) => {
-        let calc = corrections.find(c => c.id == weapon.corrections[ty]);
-        let correction = modifiers(calc, stats, weapon.masks[ty]);
-        console.log(correction);
-        let scalings = weapon.scaling.map(itemScaling => {
-            return (itemScaling * infusion.scaling[ty] + itemScaling * infusion.scaling[ty] * infusion.growth[ty] * upgradeLevel);
-        })
-        let extras = scalings.map((statScaling, j) => amount * statScaling * correction[j] / 100.0)
-        return extras.reduce(sum);
-    });
-
-    return Math.floor(bases.reduce(sum) + extras.reduce(sum));
+    update();
 }
 
-function modifiers(calc, stats, masks) {
+async function update() {
+    let infusionId = [...document.getElementsByName("infusion")].find(radio => radio.checked).id;
+    let upgradeLevel = 25;
+
+    let stats = [...document.getElementsByName("stat")].map(el => parseInt(el.value));
+
+    let sorted = sortWeapons(infusionId, upgradeLevel, stats);
+    console.log(sorted);
+
+    console.log(sorted.find(item => item.id == "royal-greatsword"))
+}
+
+function sortWeapons(infusionId, upgradeLevel, stats) {
+    return Object.values(weapons).sort((a, b) => damage(b, infusionId, upgradeLevel, stats) - damage(a, infusionId, upgradeLevel, stats));
+}
+
+function damage(weapon, infusionId, upgradeLevel, stats) {
+    if (weapon.total != undefined && weapon.total != null) {
+        return weapon.total;
+    }
+
+    let weaponInfusion = weapon.infusions[infusionId];
+    let infusion = infusions[infusionId];
+
+    let bases = infusion.damage.map((amount, ty) => weaponInfusion.damage[ty] * (amount + infusion.upgrade[ty] * upgradeLevel));
+
+    let extras;
+    if (stats.some((stat, i) => stat <= weapon.requirements[i])) {
+        extras = bases.map(dmg => dmg * -0.4);
+    } else {
+        extras = bases.map((amount, ty) => {
+            let calc = corrections[weaponInfusion.corrections[ty]];
+            let correction = typeCorrections(calc, stats, weaponInfusion.masks[ty]);
+            let scalings = weaponInfusion.scaling.map(itemScaling => {
+                return (itemScaling * infusion.scaling[ty] + itemScaling * infusion.scaling[ty] * infusion.growth[ty] * upgradeLevel);
+            })
+            let extras = scalings.map((statScaling, statIndex) => {
+                return amount * statScaling * correction[statIndex] / 100.0;
+            })
+            return extras.reduce(sum);
+        });
+    }
+
+    let total = Math.floor(bases.reduce(sum) + extras.reduce(sum));
+
+    weapon.bases = bases;
+    weapon.extras = extras;
+    weapon.total = total;
+
+    return total;
+}
+
+function typeCorrections(calc, stats, masks) {
     return stats.map((stat, ty) => {
         let mask = masks[ty];
         if (mask == 0) {

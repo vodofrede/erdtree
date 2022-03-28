@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- metadata -->
+    <meta charset="utf-8">
+    <meta name="language" content="english">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style/main.css">
+
+    <!-- title and description -->
+    <title>Erdtree - Weapon Finder</title>
+    <meta name="description" content="Erdtree - Elden Ring build planner, armor optimizer, weapon finder and more!">
+
+    <meta property="og:title" content="Erdtree Build Planner">
+    <meta property="og:description"
+        content="Erdtree - Elden Ring build planner, armor optimizer, weapon finder and more!">
+    <meta property="og:url" content="https://erdtree.palmoe.dk">
+
+    <!-- scripts -->
+    <script src="/script/weapons.js"></script>
+</head>
+
+<body onload="init();">
+    <nav>
+        <h1><a href="/">Elden Ring Build Planner</a></h1>
+        <ul>
+            <li><a href="/planner.html">Build Planner</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Weapon Finder<h1>
+    </header>
+
+    <main>
+        <div class="app">
+            <!-- parameters -->
+            <article style="flex-basis: 15%">
+                <ul>
+                    <li><b>Parameters</b></li>
+
+                    <hr>
+
+                    <li>
+                        <label for="strength">Strength</label>
+                        <input id="strength" type="number" class="stat" name="stat" value=10 min=0 max=99>
+                    </li>
+                    <li>
+                        <label for="dexterity">Dexterity</label>
+                        <input id="dexterity" type="number" class="stat" name="stat" value=10 min=0 max=99>
+                    </li>
+                    <li>
+                        <label for="intelligence">Intelligence</label>
+                        <input id="intelligence" type="number" class="stat" name="stat" value=10 min=0 max=99>
+                    </li>
+                    <li>
+                        <label for="faith">Faith</label>
+                        <input id="faith" type="number" class="stat" name="stat" value=10 min=0 max=99>
+                    </li>
+                    <li>
+                        <label for="arcane">Arcane</label>
+                        <input id="arcane" type="number" class="stat" name="stat" value=10 min=0 max=99>
+                    </li>
+
+                    <li>
+                        <div>
+                            <input id="2hand" type="checkbox">
+                            <label for="2hand">2-handing</label>
+                        </div>
+                    </li>
+
+                    <hr>
+
+                    <li><b>Damage Types</b></li>
+
+                    <li>
+                        <div>
+                            <input id="physical" type="checkbox" checked>
+                            <label for="physical">Physical Damage</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <input id="magic" type="checkbox" checked>
+                            <label for="magic">Magic Damage</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <input id="fire" type="checkbox" checked>
+                            <label for="fire">Fire Damage</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <input id="lightning" type="checkbox" checked>
+                            <label for="lightning">Lightning Damage</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <input id="Holy" type="checkbox" checked>
+                            <label for="Holy">Holy Damage</label>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+
+            <!-- results -->
+            <article style="flex-basis: 60%">
+
+            </article>
+
+            <!-- infusions -->
+            <article style="flex-basis: 15%">
+                <ul>
+                    <li><b>Infusions</b></li>
+
+                    <hr>
+
+                    <li>
+                        <div>
+                            <input id="standard" type="radio" name="infusion" checked>
+                            <label for="standard">Standard</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <input id="heavy" type="radio" name="infusion">
+                            <label for="heavy">Heavy</label>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <h5>Erdtree Planner (<a href="https://git.palmoe.dk/vodofrede/erdtree">available under BSD-3-Clause license</a>)
+        </h5>
+        <h5>Copyright 2022 vodofrede</h5>
+    </footer>
+</body>
+
+</html>

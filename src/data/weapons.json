@@ -1,5 +1,23 @@
 {
-    "no-weapon": { "id": "no-weapons", "name": "None" },
+    "no-weapon": {
+        "id": "no-weapons",
+        "name": "None",
+        "requirements": [0, 0, 0, 0, 0],
+        "infusions": {
+            "standard": {
+                "damage": [0, 0, 0, 0, 0],
+                "scaling": [0.0, 0.0, 0.0, 0.0, 0.0],
+                "masks": [
+                    [0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0],
+                    [0, 0, 0, 0, 0]
+                ],
+                "corrections": ["0", "0", "0", "0", "0"]
+            }
+        }
+    },
     "academy-glintstone-staff": {
         "id": "academy-glintstone-staff",
         "name": "Academy Glintstone Staff",
@@ -2954,6 +2972,25 @@
             }
         }
     },
+    "bloody-helice": {
+        "id": "bloody-helice",
+        "name": "Bloody Helice",
+        "requirements": [16, 19, 0, 0, 17],
+        "infusions": {
+            "standard": {
+                "damage": [121, 0, 0, 0, 0],
+                "scaling": [0.1, 0.35, 0.0, 0.0, 0.5],
+                "masks": [
+                    [1, 1, 0, 0, 1],
+                    [0, 0, 1, 0, 0],
+                    [0, 0, 0, 1, 0],
+                    [0, 1, 0, 0, 0],
+                    [0, 0, 0, 1, 0]
+                ],
+                "corrections": ["7", "0", "0", "0", "0"]
+            }
+        }
+    },
     "blue-crest-heater-shield": {
         "id": "blue-crest-heater-shield",
         "name": "Blue Crest Heater Shield",
@@ -5236,6 +5273,18 @@
                 ],
                 "corrections": ["0", "0", "4", "0", "0"]
             },
+            "flame-art": {
+                "damage": [114, 0, 114, 0, 0],
+                "upgrade": [0.09, 0.06, 0.0, 0.34, 0.0],
+                "masks": [
+                    [1, 1, 0, 0, 0],
+                    [0, 0, 1, 0, 0],
+                    [0, 0, 0, 1, 0],
+                    [0, 1, 0, 0, 0],
+                    [0, 0, 0, 1, 0]
+                ],
+                "corrections": ["0", "0", "4", "0", "0"]
+            },
             "lightning": {
                 "damage": [114, 0, 0, 114, 0],
                 "upgrade": [0.07, 0.3, 0.0, 0.0, 0.0],
@@ -5319,25 +5368,6 @@
                     [0, 0, 0, 1, 0]
                 ],
                 "corrections": ["7", "0", "0", "0", "0"]
-            }
-        }
-    },
-    "celebrants-cleaver-blades": {
-        "id": "celebrants-cleaver-blades",
-        "name": "Celebrant's Cleaver Blades",
-        "requirements": [12, 8, 0, 0, 0],
-        "infusions": {
-            "flame-art": {
-                "damage": [114, 0, 114, 0, 0],
-                "scaling": [0.09, 0.06, 0.0, 0.34, 0.0],
-                "masks": [
-                    [1, 1, 0, 0, 0],
-                    [0, 0, 1, 0, 0],
-                    [0, 0, 0, 1, 0],
-                    [0, 1, 0, 0, 0],
-                    [0, 0, 0, 1, 0]
-                ],
-                "corrections": ["0", "0", "4", "0", "0"]
             }
         }
     },
@@ -17117,25 +17147,6 @@
             }
         }
     },
-    "helice": {
-        "id": "helice",
-        "name": "Helice",
-        "requirements": [16, 19, 0, 0, 17],
-        "infusions": {
-            "blood": {
-                "damage": [121, 0, 0, 0, 0],
-                "scaling": [0.1, 0.35, 0.0, 0.0, 0.5],
-                "masks": [
-                    [1, 1, 0, 0, 1],
-                    [0, 0, 1, 0, 0],
-                    [0, 0, 0, 1, 0],
-                    [0, 1, 0, 0, 0],
-                    [0, 0, 0, 1, 0]
-                ],
-                "corrections": ["7", "0", "0", "0", "0"]
-            }
-        }
-    },
     "helphens-steeple": {
         "id": "helphens-steeple",
         "name": "Helphen's Steeple",
@@ -22829,12 +22840,12 @@
             }
         }
     },
-    "mohgwyns-spear": {
-        "id": "mohgwyns-spear",
-        "name": "Mohgwyn's Spear",
+    "mohgwyns-sacred-spear": {
+        "id": "mohgwyns-sacred-spear",
+        "name": "Mohgwyn's Sacred Spear",
         "requirements": [24, 14, 0, 0, 27],
         "infusions": {
-            "sacred": {
+            "standard": {
                 "damage": [96, 0, 62, 0, 0],
                 "scaling": [0.4, 0.15, 0.0, 0.0, 0.4],
                 "masks": [
@@ -26701,25 +26712,6 @@
             }
         }
     },
-    "relic-sword": {
-        "id": "relic-sword",
-        "name": "Relic Sword",
-        "requirements": [14, 24, 0, 22, 0],
-        "infusions": {
-            "sacred": {
-                "damage": [118, 0, 0, 0, 76],
-                "scaling": [0.15, 0.56, 0.0, 0.36, 0.0],
-                "masks": [
-                    [1, 1, 0, 0, 0],
-                    [0, 0, 1, 0, 0],
-                    [0, 0, 0, 1, 0],
-                    [0, 1, 0, 0, 0],
-                    [0, 0, 0, 1, 0]
-                ],
-                "corrections": ["0", "0", "0", "0", "4"]
-            }
-        }
-    },
     "rickety-shield": {
         "id": "rickety-shield",
         "name": "Rickety Shield",
@@ -28231,6 +28223,25 @@
                     [0, 0, 0, 1, 0]
                 ],
                 "corrections": ["7", "0", "0", "0", "0"]
+            }
+        }
+    },
+    "sacred-relic-sword": {
+        "id": "sacred-relic-sword",
+        "name": "Sacred Relic Sword",
+        "requirements": [14, 24, 0, 22, 0],
+        "infusions": {
+            "standard": {
+                "damage": [118, 0, 0, 0, 76],
+                "scaling": [0.15, 0.56, 0.0, 0.36, 0.0],
+                "masks": [
+                    [1, 1, 0, 0, 0],
+                    [0, 0, 1, 0, 0],
+                    [0, 0, 0, 1, 0],
+                    [0, 1, 0, 0, 0],
+                    [0, 0, 0, 1, 0]
+                ],
+                "corrections": ["0", "0", "0", "0", "4"]
             }
         }
     },

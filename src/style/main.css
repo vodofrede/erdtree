@@ -198,12 +198,16 @@ button {
     color: black;
 }
 
+label {
+    user-select: none;
+}
+
 /* cards */
 .cards {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: center;
+    gap: 15px;
 }
 
 .cards article {
