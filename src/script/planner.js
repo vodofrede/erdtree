@@ -64,6 +64,8 @@ function reset(area) {
             document.getElementById("class").selectedIndex = 0;
             [...document.getElementsByName("stat")].forEach(stat => stat.value = 10);
             break;
+        default:
+            break;
     }
     update();
 }

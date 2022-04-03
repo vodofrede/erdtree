@@ -2,8 +2,8 @@
 @media (prefers-color-scheme: light) {
     :root {
         --primary: white;
-        --secondary: #f8f8ff;
-        --tertiary: #f3f3f3;
+        --lighter: #f8f8ff;
+        --darker: #f3f3f3;
         --border: grey;
         --font-color: black;
         --font-inverted: white;
@@ -14,8 +14,8 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --primary: #2b2a33;
-        --secondary: #1c1b22;
-        --tertiary: #1c1b22;
+        --lighter: #373641;
+        --darker: #1f1e25;
         --border: black;
         --font-color: white;
         --font-inverted: black;
@@ -33,8 +33,7 @@ html * {
 
 /* fonts */
 html {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
 @media (max-width: 899px) {
@@ -89,7 +88,13 @@ footer {
     margin-top: auto;
 
     outline: 1px solid var(--border);
-    background-color: var(--secondary);
+    background-color: var(--lighter);
+}
+
+hr {
+    color: var(--border);
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
 }
 
 /* nav */
@@ -100,7 +105,7 @@ nav {
     align-items: center;
 
     /* look */
-    background-color: var(--secondary);
+    background-color: var(--darker);
     outline: 1px solid var(--border);
 }
 
@@ -173,12 +178,11 @@ table {
     text-align: center;
     width: 100%;
 
-    border-radius: 5px;
     margin-bottom: 10px;
-
     border: 1px solid var(--border);
+    border-radius: 5px;
 
-    background-color: var(--primary);
+    background-color: var(--lighter);
 }
 
 td,
@@ -194,12 +198,27 @@ th {
 button {
     /* border: var(--border);
     border-radius: 3px;*/
-    padding: 3px;
+    margin: 0rem 0rem 0.2rem 0rem;
+    padding: 0.1rem 0.3rem 0.2rem 0.3rem;
     color: black;
 }
 
 label {
     user-select: none;
+}
+
+input {
+    margin: 0rem 0rem 0.2rem 0rem;
+    color: black;
+}
+
+select {
+    margin: 0rem 0rem 0.2rem 0rem;
+    color: black;
+}
+
+select * {
+    color: black;
 }
 
 /* cards */
@@ -219,7 +238,7 @@ label {
     border-radius: 5px;
 
     /* look */
-    background-color: var(--secondary);
+    background-color: var(--lighter);
 }
 
 .cards article * {
@@ -231,96 +250,51 @@ label {
 .app {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-
-    padding: 15px;
-    border: 1px solid var(--border);
-    border-radius: 5px;
-    min-width: 320px;
-
-    background-color: var(--secondary);
+    gap: 30px;
 }
 
-.app > article {
+.app article {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-basis: 320px;
+    flex-grow: 1;
+
+    padding: 10px;
     border: 1px solid var(--border);
     border-radius: 5px;
-    margin: 10px;
-    padding: 10px;
+    background-color: var(--lighter);
+}
 
-    flex-grow: 1;
-    flex-basis: 320px;
-
+.app article > * {
     display: flex;
-    flex-direction: column;
-    justify-content: top;
-    align-items: stretch;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.app article input {
+    text-align: center;
+    -moz-appearance: textfield;
+}
+
+.app article select {
+    max-width: 200px;
+}
+
+.app article input[type="number"] {
+    width: 45px;
 }
 
 .app ul {
-    padding-left: 0;
-    padding-top: 5px;
+    width: 100%;
+    padding: 0;
     margin: 0;
+    list-style: none;
+    list-style-type: none;
 }
 
 .app li {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-
-    list-style: none;
-}
-
-.app li * {
-    flex-grow: 50%;
-}
-
-.app input {
-    text-align: center;
-    border: 1px solid var(--border);
-}
-
-.app input:is([disabled]) {
-    background-color: var(--tertiary);
-}
-
-.app .stat {
-    align-self: flex-end;
-    max-width: 40px;
-
-    margin-left: 10px;
-
-    -webkit-appearance: none;
-    -moz-appearance: textfield;
-}
-
-.app .stat:not([disabled]) {
-    color: black;
-}
-
-.app hr {
-    margin-top: 2px;
-    margin-bottom: 4px;
-}
-
-.select {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-
-    width: 100%;
-    gap: 10px;
-}
-
-.select * {
-    text-align: center;
-    display: flex;
-    flex-grow: 100%;
-    flex-flow: column nowrap;
-}
-
-.select select {
-    border: 1px solid var(--border);
-
-    background-color: var(--primary);
-    color: var(--font-color);
+    word-wrap: break-word;
 }

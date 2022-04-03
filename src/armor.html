@@ -1,196 +1,220 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <!-- metadata -->
+        <meta charset="utf-8" />
+        <meta name="language" content="english" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="utf-8">
-    <meta name="language" content="english">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/main.css" />
 
-    <link rel="stylesheet" href="style/main.css">
+        <!-- title and description -->
+        <title>Erdtree - Armor Optimizer</title>
+        <meta name="description" content="Elden Ring build planner, armor optimizer, weapon finder and more!" />
+        <meta property="og:title" content="Erdtree Build Planner" />
+        <meta
+            property="og:description"
+            content="Erdtree - Elden Ring build planner, armor optimizer, weapon finder and more!"
+        />
+        <meta property="og:url" content="https://erdtree.palmoe.dk" />
 
-    <!-- title and description -->
-    <title>Erdtree - Armor Optimizer</title>
-    <meta name="description" content="Elden Ring build planner, armor optimizer, weapon finder and more!">
-    <meta property="og:title" content="Erdtree Build Planner">
-    <meta property="og:description"
-        content="Erdtree - Elden Ring build planner, armor optimizer, weapon finder and more!">
-    <meta property="og:url" content="https://erdtree.palmoe.dk">
+        <!-- scripts -->
+        <script src="/script/armor.js"></script>
+    </head>
 
-    <!-- scripts -->
-    <script src="/script/armor.js"></script>
-</head>
+    <body onload="init();">
+        <nav>
+            <h1><a href="/">Elden Ring Build Planner</a></h1>
+            <ul>
+                <li><a href="/planner.html">Build Planner</a></li>
+            </ul>
+        </nav>
 
-<body onload="init();">
-    <nav>
-        <h1><a href="/">Elden Ring Build Planner</a></h1>
-        <ul>
-            <li><a href="/planner.html">Build Planner</a></li>
-        </ul>
-    </nav>
+        <header>
+            <h1>Armor Optimizer</h1>
+        </header>
 
-    <header>
-        <h1>Armor Optimizer</h1>
-    </header>
+        <main>
+            <div class="app">
+                <!-- settings -->
+                <article style="flex-basis: 25%">
+                    <b>Settings</b>
 
-    <main>
-        <div class="app">
-            <!-- settings -->
-            <article style="flex-basis: 30%">
-                <ul>
-                    <li><b>Settings</b></li>
+                    <hr />
 
-                    <hr>
-
-                    <li>
+                    <div>
                         <label for="max-equip-load">Max. Equip Load</label>
-                        <input style="max-width: 50px" class="stat" id="max-equip-load" type="number" oninput="update()"
-                            min=0 step=0.1 value=30 name="equip-load" lang="en">
-                    </li>
-                    <li>
+                        <input
+                            style="max-width: 50px"
+                            class="stat"
+                            id="max-equip-load"
+                            type="number"
+                            onchange="update()"
+                            min="0"
+                            step="0.1"
+                            value="30"
+                            name="equip-load"
+                            lang="en"
+                        />
+                    </div>
+                    <div>
                         <label for="current-equip-load">Current Equip Load</label>
-                        <input style="max-width: 50px" class="stat" id="current-equip-load" type="number"
-                            oninput="update()" min=0 step=0.1 value=0 name="equip-load" lang="en">
-                    </li>
-                    <li>
+                        <input
+                            style="max-width: 50px"
+                            class="stat"
+                            id="current-equip-load"
+                            type="number"
+                            onchange="update()"
+                            min="0"
+                            step="0.1"
+                            value="0"
+                            name="equip-load"
+                            lang="en"
+                        />
+                    </div>
+                    <div>
                         <label for="equip-load-budget">Equip Load Budget</label>
-                        <input style="max-width: 50px" class="stat" id="equip-load-budget" type="number" value=0
-                            name="equip-load" lang="en" disabled>
-                    </li>
+                        <input
+                            style="max-width: 50px"
+                            class="stat"
+                            id="equip-load-budget"
+                            type="number"
+                            value="0"
+                            name="equip-load"
+                            lang="en"
+                            disabled
+                        />
+                    </div>
 
-                    <hr>
+                    <hr />
 
-                    <li>
-                        <b>Breakpoints</b>
-                    </li>
+                    <b>Breakpoints</b>
 
-                    <li>
+                    <div>
                         <div>
-                            <input type="radio" id="fast-roll" onclick="update()" name="roll-type" value=0.3>
+                            <input type="radio" id="fast-roll" onclick="update()" name="roll-type" value="0.3" />
                             <label for="fast-roll">Fast Roll (up to 30% equip load)</label>
                         </div>
-                    </li>
+                    </div>
 
-                    <li>
+                    <div>
                         <div>
-                            <input type="radio" id="normal-roll" onclick="update()" name="roll-type" value=0.7 checked>
+                            <input
+                                type="radio"
+                                id="normal-roll"
+                                onclick="update()"
+                                name="roll-type"
+                                value="0.7"
+                                checked
+                            />
                             <label for="normal-roll">Normal Roll (up to 70% equip load)</label>
                         </div>
-                    </li>
+                    </div>
 
-                    <li>
+                    <div>
                         <div>
-                            <input type="radio" id="fat-roll" onclick="update()" name="roll-type" value=1.0>
+                            <input type="radio" id="fat-roll" onclick="update()" name="roll-type" value="1.0" />
                             <label for="fat-roll">Fat Roll (up to 100% equip load)</label>
                         </div>
-                    </li>
+                    </div>
 
-                    <hr>
+                    <hr />
 
-                    <li>
-                        <b>Sort by</b>
-                    </li>
+                    <b>Sort by</b>
 
-                    <li>
+                    <div>
                         <div>
-                            <input type="radio" id="sort-average" name="sorting-order" onclick="update()">
+                            <input type="radio" id="sort-average" name="sorting-order" onclick="update()" />
                             <label for="sort-average">Greatest Average Negation</label>
                         </div>
-                    </li>
+                    </div>
 
-                    <li>
+                    <div>
                         <div>
-                            <input type="radio" id="sort-physical" name="sorting-order" onclick="update()" checked>
+                            <input type="radio" id="sort-physical" name="sorting-order" onclick="update()" checked />
                             <label for="sort-physical">Greatest Physical Negation</label>
                         </div>
-                    </li>
+                    </div>
 
-                    <li>
+                    <div>
                         <div>
-                            <input type="radio" id="sort-elemental" name="sorting-order" onclick="update()">
+                            <input type="radio" id="sort-elemental" name="sorting-order" onclick="update()" />
                             <label for="sort-elemental">Greatest Elemental Negation</label>
                         </div>
-                    </li>
+                    </div>
 
-                    <li>
+                    <div>
                         <div>
-                            <input type="radio" id="sort-resistances" name="sorting-order" onclick="update()">
+                            <input type="radio" id="sort-resistances" name="sorting-order" onclick="update()" />
                             <label for="sort-resistances">Greatest Resistances</label>
                         </div>
-                    </li>
+                    </div>
 
-                    <li>
+                    <div>
                         <div>
-                            <input type="radio" id="sort-poise" name="sorting-order" onclick="update()">
+                            <input type="radio" id="sort-poise" name="sorting-order" onclick="update()" />
                             <label for="sort-poise">Greatest Poise</label>
                         </div>
-                    </li>
+                    </div>
 
-                    <hr>
+                    <hr />
 
-                    <li>
-                        <b>Extras</b>
-                    </li>
+                    <b>Extras</b>
 
-                    <li>
+                    <div>
                         <div>
-                            <input type="checkbox" id="winged-crystal-tear" onchange="update()" disabled>
+                            <input type="checkbox" id="winged-crystal-tear" onchange="update()" disabled />
                             <label for="winged-crystal-tear">Winged Crystal Tear (in mixed physick)</label>
                         </div>
-                    </li>
-                    <li>
+                    </div>
+
+                    <div>
                         <div>
-                            <input type="checkbox" id="fashion" onchange="update()" disabled>
+                            <input type="checkbox" id="fashion" onchange="update()" disabled />
                             <label for="fashion">Fashion Mode</label>
                         </div>
-                    </li>
+                    </div>
 
-                    <li><b>Filter</b></li>
-                    <hr>
-                    <li>
-                        <b>Locked Items</b>
-                        <button id="clear-equipment" onclick="reset()">Clear Locked Equipment</button>
-                    </li>
-                    <li>
-                        <template id="locked-option">
-                            <option value="">Placeholder</option>
-                        </template>
+                    <hr />
 
-                        <div class="select">
-                            <div>
-                                <label for="select-helmet">Helmet</label>
-                                <select type="text" id="select-helmet" name="locked-items" onchange="update()">
-                                </select>
-                            </div>
+                    <b>Locked Items</b>
+                    <template id="locked-option">
+                        <option value="">Placeholder</option>
+                    </template>
 
-                            <div>
-                                <label for="select-chestpiece">Chestpiece</label>
-                                <select type="text" id="select-chestpiece" name="locked-items" onchange="update()">
-                                </select>
-                            </div>
+                    <div>
+                        <label for="select-helmet">Helmet</label>
+                        <select type="text" id="select-helmet" name="locked-items" onchange="update()"></select>
+                    </div>
 
-                            <div>
-                                <label for="select-gauntlets">Gauntlets</label>
-                                <select type=" text" id="select-gauntlets" name="locked-items" onchange="update()">
-                                </select>
-                            </div>
+                    <div>
+                        <label for="select-chestpiece">Chestpiece</label>
+                        <select type="text" id="select-chestpiece" name="locked-items" onchange="update()"></select>
+                    </div>
 
-                            <div>
-                                <label for="select-leggings">Leggings</label>
-                                <select type="text" id="select-leggings" name="locked-items" onchange="update()">
-                                </select>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </article>
+                    <div>
+                        <label for="select-gauntlets">Gauntlets</label>
+                        <select type=" text" id="select-gauntlets" name="locked-items" onchange="update()"></select>
+                    </div>
 
-            <!-- sort -->
-            <article style="flex-basis: 60%; min-width: 300px">
-                <ul id="sort-results">
-                    <li><b>Sort</b></li>
+                    <div>
+                        <label for="select-leggings">Leggings</label>
+                        <select type="text" id="select-leggings" name="locked-items" onchange="update()"></select>
+                    </div>
 
-                    <hr>
+                    <div>
+                        <button id="clear-equipment" onclick="reset()">Reset All</button>
+                    </div>
+                </article>
+
+                <!-- sort -->
+                <article style="flex-basis: 60%; min-width: 320px">
+                    <b>Results</b>
+                    <hr />
+
+                    <div>
+                        <ul id="sort-results"></ul>
+                    </div>
 
                     <template id="sort-result">
                         <li class="sort-result">
@@ -226,25 +250,26 @@
                             </table>
                         </li>
                     </template>
-                </ul>
-            </article>
+                </article>
 
-            <!-- filter -->
-            <article>
-                <ul>
-                    <li>
-                        <b>Allowed Armor</b>
-                    </li>
-                </ul>
-            </article>
-        </div>
-    </main>
+                <!-- filter -->
+                <article>
+                    <ul>
+                        <li>
+                            <b>Allowed Armor</b>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </main>
 
-    <footer>
-        <h5>Erdtree Planner (<a href="https://git.palmoe.dk/vodofrede/erdtree">available under BSD-3-Clause license</a>)
-        </h5>
-        <h5>Copyright 2022 vodofrede</h5>
-    </footer>
-</body>
-
+        <footer>
+            <h5>
+                Erdtree Planner (<a href="https://git.palmoe.dk/vodofrede/erdtree"
+                    >available under BSD-3-Clause license</a
+                >)
+            </h5>
+            <h5>Copyright 2022 vodofrede</h5>
+        </footer>
+    </body>
 </html>

@@ -135,15 +135,8 @@ function equipLoadBudget() {
 
 // site rendering functions
 function populateSelect(templateId, destinationId, items) {
-    let template = document.getElementById(templateId);
     let destination = document.getElementById(destinationId);
-
     items.forEach(item => {
-        let clone = template.content.cloneNode(true);
-
-        clone.value = item.id;
-        clone.innerHTML = item.name;
-
         destination.options.add(new Option(item.name, item.id));
     });
 }
