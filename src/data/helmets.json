@@ -1,7 +1,7 @@
 {
     "no-helmet": {
         "id": "no-helmet",
-        "name": "None",
+        "name": "No helmet",
         "defenses": [0, 0, 0, 0, 0, 0, 0, 0],
         "resistances": [0, 0, 0, 0],
         "poise": 0,
@@ -343,22 +343,6 @@
         "resistances": [14, 24, 10, 10],
         "poise": 6,
         "weight": 5.1
-    },
-    "deathbed-dress": {
-        "id": "deathbed-dress",
-        "name": "Deathbed Dress",
-        "defenses": [0.6, 2.7, 0.6, 0.6, 11.9, 11.4, 11.9, 12.4],
-        "resistances": [38, 11, 63, 107],
-        "poise": 1,
-        "weight": 3.2
-    },
-    "deathbed-smalls": {
-        "id": "deathbed-smalls",
-        "name": "Deathbed Smalls",
-        "defenses": [1.5, 2.3, 1.5, 1.5, 6.8, 6.5, 6.8, 7.2],
-        "resistances": [24, 7, 39, 66],
-        "poise": 1,
-        "weight": 2.0
     },
     "depraved-perfumer-headscarf": {
         "id": "depraved-perfumer-headscarf",
@@ -1166,14 +1150,6 @@
         "resistances": [15, 23, 10, 11],
         "poise": 6,
         "weight": 5.1
-    },
-    "rotten-duelist-greaves": {
-        "id": "rotten-duelist-greaves",
-        "name": "Rotten Duelist Greaves",
-        "defenses": [7.4, 6.2, 7.7, 7.1, 6.2, 6.5, 5.8, 6.2],
-        "resistances": [35, 35, 15, 15],
-        "poise": 10,
-        "weight": 7.3
     },
     "rotten-duelist-helm": {
         "id": "rotten-duelist-helm",

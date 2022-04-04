@@ -1,7 +1,7 @@
 {
     "no-gauntlets": {
         "id": "no-gauntlets",
-        "name": "None",
+        "name": "No gauntlets",
         "defenses": [0, 0, 0, 0, 0, 0, 0, 0],
         "resistances": [0, 0, 0, 0],
         "poise": 0,

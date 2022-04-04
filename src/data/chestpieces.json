@@ -1,7 +1,7 @@
 {
     "no-chestpiece": {
         "id": "no-chestpieces",
-        "name": "None",
+        "name": "No chestpiece",
         "defenses": [0, 0, 0, 0, 0, 0, 0, 0],
         "resistances": [0, 0, 0, 0],
         "poise": 0,
@@ -438,6 +438,14 @@
         "resistances": [28, 55, 23, 23],
         "poise": 16,
         "weight": 10.6
+    },
+    "deathbed-dress": {
+        "id": "deathbed-dress",
+        "name": "Deathbed Dress",
+        "defenses": [0.6, 2.7, 0.6, 0.6, 11.9, 11.4, 11.9, 12.4],
+        "resistances": [38, 11, 63, 107],
+        "poise": 1,
+        "weight": 3.2
     },
     "depraved-perfumer-robe": {
         "id": "depraved-perfumer-robe",

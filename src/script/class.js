@@ -68,7 +68,7 @@ async function update() {
         elem.value = Math.max(total[i] - items[i], best.stats[i]);
     });
     document.getElementsByName("virtual").forEach((elem, i) => {
-        elem.value = Math.max(total[i], best.stats[i]);
+        elem.value = Math.max(total[i], best.stats[i] + items[i]);
     });
 
     document.getElementById("initial-level").value = best.stats.reduce((sum, n) => sum + n) - 79;

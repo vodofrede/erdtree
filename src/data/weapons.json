@@ -1,7 +1,7 @@
 {
     "no-weapon": {
         "id": "no-weapons",
-        "name": "None",
+        "name": "No weapon",
         "requirements": [0, 0, 0, 0, 0],
         "infusions": {
             "standard": {
