@@ -1,18 +1,19 @@
 {
-    "no-weapon": {
-        "id": "no-weapons",
-        "name": "No weapon",
+    "unarmed": {
+        "id": "unarmed",
+        "name": "Unarmed",
         "requirements": [0, 0, 0, 0, 0],
+        "unique": false,
         "infusions": {
             "standard": {
-                "damage": [0, 0, 0, 0, 0],
-                "scaling": [0.0, 0.0, 0.0, 0.0, 0.0],
+                "damage": [20, 0, 0, 0, 0],
+                "scaling": [0.5, 0.5, 0.0, 0.0, 0.0],
                 "masks": [
-                    [0, 0, 0, 0, 0],
-                    [0, 0, 0, 0, 0],
-                    [0, 0, 0, 0, 0],
-                    [0, 0, 0, 0, 0],
-                    [0, 0, 0, 0, 0]
+                    [1, 1, 0, 0, 0],
+                    [0, 0, 1, 0, 0],
+                    [0, 0, 0, 1, 0],
+                    [0, 1, 0, 0, 0],
+                    [0, 0, 0, 1, 0]
                 ],
                 "corrections": ["0", "0", "0", "0", "0"]
             }
@@ -22,7 +23,8 @@
         "id": "academy-glintstone-staff",
         "name": "Academy Glintstone Staff",
         "requirements": [6, 0, 28, 0, 0],
-        "sorcery-catalyst": true,
+        "category": "glintstone-staff",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [25, 0, 0, 0, 0],
@@ -42,6 +44,8 @@
         "id": "alabaster-lords-sword",
         "name": "Alabaster Lord's Sword",
         "requirements": [16, 12, 18, 0, 0],
+        "category": "greatsword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [128, 38, 0, 0, 0],
@@ -61,6 +65,8 @@
         "id": "albinauric-bow",
         "name": "Albinauric Bow",
         "requirements": [7, 18, 0, 0, 0],
+        "category": "bow",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [82, 0, 0, 0, 0],
@@ -80,6 +86,8 @@
         "id": "albinauric-shield",
         "name": "Albinauric Shield",
         "requirements": [11, 0, 0, 0, 0],
+        "category": "medium-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [78, 0, 0, 0, 0],
@@ -243,7 +251,8 @@
         "id": "albinauric-staff",
         "name": "Albinauric Staff",
         "requirements": [6, 0, 10, 0, 12],
-        "sorcery-catalyst": true,
+        "category": "glintstone-staff",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [17, 0, 0, 0, 0],
@@ -263,6 +272,8 @@
         "id": "ants-skull-plate",
         "name": "Ant's Skull Plate",
         "requirements": [28, 0, 0, 0, 0],
+        "category": "greatshield",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [114, 0, 0, 0, 0],
@@ -282,6 +293,8 @@
         "id": "antspur-rapier",
         "name": "Antspur Rapier",
         "requirements": [10, 20, 0, 0, 0],
+        "category": "thrusting-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [98, 0, 0, 0, 0],
@@ -445,6 +458,8 @@
         "id": "arbalest",
         "name": "Arbalest",
         "requirements": [18, 12, 0, 0, 0],
+        "category": "crossbow",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [77, 0, 0, 0, 0],
@@ -464,7 +479,8 @@
         "id": "astrologers-staff",
         "name": "Astrologer's Staff",
         "requirements": [7, 0, 16, 0, 0],
-        "sorcery-catalyst": true,
+        "category": "glintstone-staff",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [25, 0, 0, 0, 0],
@@ -484,6 +500,8 @@
         "id": "axe-of-godfrey",
         "name": "Axe of Godfrey",
         "requirements": [42, 14, 0, 0, 0],
+        "category": "colossal-weapon",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [165, 0, 0, 0, 0],
@@ -503,6 +521,8 @@
         "id": "axe-of-godrick",
         "name": "Axe of Godrick",
         "requirements": [34, 22, 0, 0, 0],
+        "category": "greataxe",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [142, 0, 0, 0, 0],
@@ -522,7 +542,8 @@
         "id": "azurs-glintstone-staff",
         "name": "Azur's Glintstone Staff",
         "requirements": [10, 0, 52, 0, 0],
-        "sorcery-catalyst": true,
+        "category": "glintstone-staff",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [24, 0, 0, 0, 0],
@@ -542,6 +563,8 @@
         "id": "bandits-curved-sword",
         "name": "Bandit's Curved Sword",
         "requirements": [11, 13, 0, 0, 0],
+        "category": "curved-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [118, 0, 0, 0, 0],
@@ -705,6 +728,8 @@
         "id": "banished-knights-greatsword",
         "name": "Banished Knight's Greatsword",
         "requirements": [17, 9, 0, 0, 0],
+        "category": "greatsword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [142, 0, 0, 0, 0],
@@ -868,6 +893,8 @@
         "id": "banished-knights-halberd",
         "name": "Banished Knight's Halberd",
         "requirements": [14, 12, 0, 0, 0],
+        "category": "halberd",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [125, 0, 0, 0, 0],
@@ -1031,6 +1058,8 @@
         "id": "banished-knights-shield",
         "name": "Banished Knight's Shield",
         "requirements": [14, 0, 0, 0, 0],
+        "category": "medium-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [81, 0, 0, 0, 0],
@@ -1194,6 +1223,8 @@
         "id": "bastard-sword",
         "name": "Bastard Sword",
         "requirements": [16, 10, 0, 0, 0],
+        "category": "greatsword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [138, 0, 0, 0, 0],
@@ -1357,6 +1388,8 @@
         "id": "bastards-stars",
         "name": "Bastard's Stars",
         "requirements": [8, 22, 22, 0, 0],
+        "category": "flail",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [65, 78, 0, 0, 0],
@@ -1376,6 +1409,8 @@
         "id": "battle-axe",
         "name": "Battle Axe",
         "requirements": [12, 8, 0, 0, 0],
+        "category": "axe",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [123, 0, 0, 0, 0],
@@ -1539,6 +1574,8 @@
         "id": "battle-hammer",
         "name": "Battle Hammer",
         "requirements": [26, 8, 0, 0, 0],
+        "category": "great-hammer",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [131, 0, 0, 0, 0],
@@ -1702,6 +1739,8 @@
         "id": "beast-crest-heater-shield",
         "name": "Beast Crest Heater Shield",
         "requirements": [10, 0, 0, 0, 0],
+        "category": "medium-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [77, 0, 0, 0, 0],
@@ -1865,6 +1904,8 @@
         "id": "beast-repellent-torch",
         "name": "Beast-Repellent Torch",
         "requirements": [12, 8, 0, 0, 0],
+        "category": "torch",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [58, 0, 104, 0, 0],
@@ -1884,6 +1925,8 @@
         "id": "beastclaw-greathammer",
         "name": "Beastclaw Greathammer",
         "requirements": [20, 10, 0, 18, 0],
+        "category": "great-hammer",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [116, 0, 0, 0, 75],
@@ -1903,6 +1946,8 @@
         "id": "beastmans-cleaver",
         "name": "Beastman's Cleaver",
         "requirements": [25, 14, 0, 0, 0],
+        "category": "curved-greatsword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [143, 0, 0, 0, 0],
@@ -2066,6 +2111,8 @@
         "id": "beastmans-curved-sword",
         "name": "Beastman's Curved Sword",
         "requirements": [13, 11, 0, 0, 0],
+        "category": "curved-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [113, 0, 0, 0, 0],
@@ -2229,6 +2276,8 @@
         "id": "beastmans-jar-shield",
         "name": "Beastman's Jar-Shield",
         "requirements": [10, 0, 0, 0, 0],
+        "category": "small-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [71, 0, 0, 0, 0],
@@ -2392,6 +2441,8 @@
         "id": "black-bow",
         "name": "Black Bow",
         "requirements": [9, 20, 0, 0, 0],
+        "category": "bow",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [70, 0, 0, 0, 0],
@@ -2411,6 +2462,8 @@
         "id": "black-knife",
         "name": "Black Knife",
         "requirements": [8, 12, 0, 18, 0],
+        "category": "dagger",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [66, 0, 0, 0, 65],
@@ -2430,6 +2483,8 @@
         "id": "black-leather-shield",
         "name": "Black Leather Shield",
         "requirements": [10, 0, 0, 0, 0],
+        "category": "medium-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [75, 0, 0, 0, 0],
@@ -2593,6 +2648,8 @@
         "id": "blade-of-calling",
         "name": "Blade of Calling",
         "requirements": [6, 13, 0, 15, 0],
+        "category": "dagger",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [71, 0, 0, 0, 43],
@@ -2612,6 +2669,8 @@
         "id": "blasphemous-blade",
         "name": "Blasphemous Blade",
         "requirements": [22, 15, 0, 21, 0],
+        "category": "greatsword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [121, 0, 78, 0, 0],
@@ -2631,6 +2690,8 @@
         "id": "bloodhound-claws",
         "name": "Bloodhound Claws",
         "requirements": [10, 15, 0, 0, 0],
+        "category": "claw",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [94, 0, 0, 0, 0],
@@ -2794,6 +2855,8 @@
         "id": "bloodhounds-fang",
         "name": "Bloodhound's Fang",
         "requirements": [18, 17, 0, 0, 0],
+        "category": "curved-greatsword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [141, 0, 0, 0, 0],
@@ -2813,6 +2876,8 @@
         "id": "bloodstained-dagger",
         "name": "Bloodstained Dagger",
         "requirements": [9, 12, 0, 0, 0],
+        "category": "dagger",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [81, 0, 0, 0, 0],
@@ -2976,6 +3041,8 @@
         "id": "bloody-helice",
         "name": "Bloody Helice",
         "requirements": [16, 19, 0, 0, 17],
+        "category": "heavy-thrusting-sword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [121, 0, 0, 0, 0],
@@ -2995,6 +3062,8 @@
         "id": "blue-crest-heater-shield",
         "name": "Blue Crest Heater Shield",
         "requirements": [10, 0, 0, 0, 0],
+        "category": "medium-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [77, 0, 0, 0, 0],
@@ -3158,6 +3227,8 @@
         "id": "blue-gold-kite-shield",
         "name": "Blue-Gold Kite Shield",
         "requirements": [12, 0, 0, 0, 0],
+        "category": "medium-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [80, 0, 0, 0, 0],
@@ -3321,6 +3392,8 @@
         "id": "blue-white-wooden-shield",
         "name": "Blue-White Wooden Shield",
         "requirements": [8, 0, 0, 0, 0],
+        "category": "small-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [72, 0, 0, 0, 0],
@@ -3484,6 +3557,8 @@
         "id": "bolt-of-gransax",
         "name": "Bolt of Gransax",
         "requirements": [20, 40, 0, 0, 0],
+        "category": "spear",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [98, 0, 0, 63, 0],
@@ -3503,6 +3578,8 @@
         "id": "brass-shield",
         "name": "Brass Shield",
         "requirements": [16, 0, 0, 0, 0],
+        "category": "medium-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [84, 0, 0, 0, 0],
@@ -3666,6 +3743,8 @@
         "id": "briar-greatshield",
         "name": "Briar Greatshield",
         "requirements": [21, 0, 0, 0, 0],
+        "category": "greatshield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [98, 0, 0, 0, 0],
@@ -3829,6 +3908,8 @@
         "id": "brick-hammer",
         "name": "Brick Hammer",
         "requirements": [31, 0, 0, 0, 0],
+        "category": "great-hammer",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [122, 0, 0, 0, 0],
@@ -3992,6 +4073,8 @@
         "id": "broadsword",
         "name": "Broadsword",
         "requirements": [10, 10, 0, 0, 0],
+        "category": "straight-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [117, 0, 0, 0, 0],
@@ -4155,6 +4238,8 @@
         "id": "buckler",
         "name": "Buckler",
         "requirements": [8, 13, 0, 0, 0],
+        "category": "small-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [68, 0, 0, 0, 0],
@@ -4318,6 +4403,8 @@
         "id": "butchering-knife",
         "name": "Butchering Knife",
         "requirements": [16, 20, 0, 0, 0],
+        "category": "greataxe",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [134, 0, 0, 0, 0],
@@ -4481,6 +4568,8 @@
         "id": "caestus",
         "name": "Caestus",
         "requirements": [8, 8, 0, 0, 0],
+        "category": "fist",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [90, 0, 0, 0, 0],
@@ -4644,6 +4733,8 @@
         "id": "candletree-wooden-shield",
         "name": "Candletree Wooden Shield",
         "requirements": [8, 0, 0, 0, 0],
+        "category": "medium-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [76, 0, 0, 0, 0],
@@ -4807,6 +4898,8 @@
         "id": "cane-sword",
         "name": "Cane Sword",
         "requirements": [8, 11, 0, 0, 0],
+        "category": "straight-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [96, 0, 0, 0, 0],
@@ -4970,7 +5063,8 @@
         "id": "carian-glintblade-staff",
         "name": "Carian Glintblade Staff",
         "requirements": [6, 12, 22, 0, 0],
-        "sorcery-catalyst": true,
+        "category": "glintstone-staff",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [22, 0, 0, 0, 0],
@@ -4990,7 +5084,8 @@
         "id": "carian-glintstone-staff",
         "name": "Carian Glintstone Staff",
         "requirements": [6, 8, 24, 0, 0],
-        "sorcery-catalyst": true,
+        "category": "glintstone-staff",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [25, 0, 0, 0, 0],
@@ -5010,6 +5105,8 @@
         "id": "carian-knights-shield",
         "name": "Carian Knight's Shield",
         "requirements": [10, 10, 15, 0, 0],
+        "category": "medium-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [63, 40, 0, 0, 0],
@@ -5173,6 +5270,8 @@
         "id": "carian-knights-sword",
         "name": "Carian Knight's Sword",
         "requirements": [10, 10, 18, 0, 0],
+        "category": "straight-sword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [88, 88, 0, 0, 0],
@@ -5192,7 +5291,8 @@
         "id": "carian-regal-scepter",
         "name": "Carian Regal Scepter",
         "requirements": [8, 10, 60, 0, 0],
-        "sorcery-catalyst": true,
+        "category": "glintstone-staff",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [24, 0, 0, 0, 0],
@@ -5212,6 +5312,8 @@
         "id": "celebrants-cleaver",
         "name": "Celebrant's Cleaver",
         "requirements": [12, 8, 0, 0, 0],
+        "category": "axe",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [119, 0, 0, 0, 0],
@@ -5375,6 +5477,8 @@
         "id": "celebrants-rib-rake",
         "name": "Celebrant's Rib-Rake",
         "requirements": [8, 14, 0, 0, 0],
+        "category": "spear",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [109, 0, 0, 0, 0],
@@ -5538,6 +5642,8 @@
         "id": "celebrants-sickle",
         "name": "Celebrant's Sickle",
         "requirements": [6, 11, 0, 0, 0],
+        "category": "dagger",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [79, 0, 0, 0, 0],
@@ -5701,6 +5807,8 @@
         "id": "celebrants-skull",
         "name": "Celebrant's Skull",
         "requirements": [18, 12, 0, 0, 0],
+        "category": "great-hammer",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [138, 0, 0, 0, 0],
@@ -5864,6 +5972,8 @@
         "id": "chainlink-flail",
         "name": "Chainlink Flail",
         "requirements": [18, 12, 0, 0, 0],
+        "category": "flail",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [109, 0, 0, 0, 0],
@@ -6027,6 +6137,8 @@
         "id": "cinquedea",
         "name": "Cinquedea",
         "requirements": [10, 10, 0, 0, 0],
+        "category": "dagger",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [98, 0, 0, 0, 0],
@@ -6046,6 +6158,8 @@
         "id": "cipher-pata",
         "name": "Cipher Pata",
         "requirements": [0, 0, 0, 30, 0],
+        "category": "fist",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [0, 0, 0, 0, 85],
@@ -6065,7 +6179,8 @@
         "id": "clawmark-seal",
         "name": "Clawmark Seal",
         "requirements": [4, 0, 0, 10, 0],
-        "incantation-catalyst": true,
+        "category": "sacred-seal",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [31, 0, 0, 0, 0],
@@ -6085,6 +6200,8 @@
         "id": "claymans-harpoon",
         "name": "Clayman's Harpoon",
         "requirements": [12, 10, 12, 0, 0],
+        "category": "spear",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [99, 64, 0, 0, 0],
@@ -6248,6 +6365,8 @@
         "id": "claymore",
         "name": "Claymore",
         "requirements": [16, 13, 0, 0, 0],
+        "category": "greatsword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [138, 0, 0, 0, 0],
@@ -6411,6 +6530,8 @@
         "id": "cleanrot-knights-sword",
         "name": "Cleanrot Knight's Sword",
         "requirements": [11, 13, 0, 0, 0],
+        "category": "thrusting-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [109, 0, 0, 0, 0],
@@ -6574,6 +6695,8 @@
         "id": "cleanrot-spear",
         "name": "Cleanrot Spear",
         "requirements": [16, 16, 0, 14, 0],
+        "category": "spear",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [102, 0, 0, 0, 66],
@@ -6593,6 +6716,8 @@
         "id": "clinging-bone",
         "name": "Clinging Bone",
         "requirements": [8, 22, 0, 0, 16],
+        "category": "fist",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [80, 24, 0, 0, 0],
@@ -6612,6 +6737,8 @@
         "id": "club",
         "name": "Club",
         "requirements": [10, 0, 0, 0, 0],
+        "category": "hammer",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [103, 0, 0, 0, 0],
@@ -6775,6 +6902,8 @@
         "id": "coded-sword",
         "name": "Coded Sword",
         "requirements": [0, 0, 0, 20, 0],
+        "category": "straight-sword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [0, 0, 0, 0, 85],
@@ -6794,6 +6923,8 @@
         "id": "coil-shield",
         "name": "Coil Shield",
         "requirements": [10, 10, 0, 0, 0],
+        "category": "small-shield",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [77, 0, 0, 0, 0],
@@ -6813,6 +6944,8 @@
         "id": "commanders-standard",
         "name": "Commander's Standard",
         "requirements": [24, 14, 0, 0, 0],
+        "category": "halberd",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [138, 0, 0, 0, 0],
@@ -6832,6 +6965,8 @@
         "id": "composite-bow",
         "name": "Composite Bow",
         "requirements": [15, 15, 0, 0, 0],
+        "category": "light-bow",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [65, 0, 0, 0, 0],
@@ -6851,6 +6986,8 @@
         "id": "cranial-vessel-candlestand",
         "name": "Cranial Vessel Candlestand",
         "requirements": [26, 8, 0, 22, 0],
+        "category": "great-hammer",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [98, 0, 98, 0, 0],
@@ -6870,6 +7007,8 @@
         "id": "crepuss-black-key-crossbow",
         "name": "Crepus's Black-Key Crossbow",
         "requirements": [14, 16, 0, 0, 0],
+        "category": "crossbow",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [68, 0, 0, 0, 0],
@@ -6889,6 +7028,8 @@
         "id": "crescent-moon-axe",
         "name": "Crescent Moon Axe",
         "requirements": [25, 15, 0, 0, 0],
+        "category": "greataxe",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [146, 0, 0, 0, 0],
@@ -7052,6 +7193,8 @@
         "id": "cross-naginata",
         "name": "Cross-Naginata",
         "requirements": [16, 20, 0, 0, 0],
+        "category": "spear",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [122, 0, 0, 0, 0],
@@ -7215,6 +7358,8 @@
         "id": "crossed-tree-towershield",
         "name": "Crossed-Tree Towershield",
         "requirements": [30, 0, 0, 0, 0],
+        "category": "greatshield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [111, 0, 0, 0, 0],
@@ -7378,6 +7523,8 @@
         "id": "crucible-hornshield",
         "name": "Crucible Hornshield",
         "requirements": [26, 0, 0, 0, 0],
+        "category": "greatshield",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [123, 0, 0, 0, 0],
@@ -7397,6 +7544,8 @@
         "id": "crystal-knife",
         "name": "Crystal Knife",
         "requirements": [8, 12, 9, 0, 0],
+        "category": "dagger",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [82, 53, 0, 0, 0],
@@ -7416,6 +7565,8 @@
         "id": "crystal-spear",
         "name": "Crystal Spear",
         "requirements": [10, 16, 16, 0, 0],
+        "category": "spear",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [110, 33, 0, 0, 0],
@@ -7435,7 +7586,8 @@
         "id": "crystal-staff",
         "name": "Crystal Staff",
         "requirements": [8, 0, 48, 0, 0],
-        "sorcery-catalyst": true,
+        "category": "glintstone-staff",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [31, 0, 0, 0, 0],
@@ -7455,6 +7607,8 @@
         "id": "crystal-sword",
         "name": "Crystal Sword",
         "requirements": [13, 10, 15, 0, 0],
+        "category": "straight-sword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [106, 68, 0, 0, 0],
@@ -7474,6 +7628,8 @@
         "id": "cuckoo-greatshield",
         "name": "Cuckoo Greatshield",
         "requirements": [32, 0, 0, 0, 0],
+        "category": "greatshield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [110, 0, 0, 0, 0],
@@ -7637,6 +7793,8 @@
         "id": "curved-club",
         "name": "Curved Club",
         "requirements": [11, 7, 0, 0, 0],
+        "category": "hammer",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [114, 0, 0, 0, 0],
@@ -7800,6 +7958,8 @@
         "id": "curved-great-club",
         "name": "Curved Great Club",
         "requirements": [24, 10, 0, 0, 0],
+        "category": "great-hammer",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [145, 0, 0, 0, 0],
@@ -7963,6 +8123,8 @@
         "id": "dagger",
         "name": "Dagger",
         "requirements": [5, 9, 0, 0, 0],
+        "category": "dagger",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [74, 0, 0, 0, 0],
@@ -8126,6 +8288,8 @@
         "id": "dark-moon-greatsword",
         "name": "Dark Moon Greatsword",
         "requirements": [16, 11, 38, 0, 0],
+        "category": "greatsword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [82, 98, 0, 0, 0],
@@ -8145,6 +8309,8 @@
         "id": "death-ritual-spear",
         "name": "Death Ritual Spear",
         "requirements": [14, 20, 18, 0, 0],
+        "category": "spear",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [99, 64, 0, 0, 0],
@@ -8164,6 +8330,8 @@
         "id": "deaths-poker",
         "name": "Death's Poker",
         "requirements": [15, 17, 11, 0, 0],
+        "category": "greatsword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [123, 36, 0, 0, 0],
@@ -8183,7 +8351,8 @@
         "id": "demi-human-queens-staff",
         "name": "Demi-Human Queen's Staff",
         "requirements": [6, 0, 10, 0, 0],
-        "sorcery-catalyst": true,
+        "category": "glintstone-staff",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [31, 0, 0, 0, 0],
@@ -8203,6 +8372,8 @@
         "id": "devourers-scepter",
         "name": "Devourer's Scepter",
         "requirements": [24, 20, 0, 25, 0],
+        "category": "great-hammer",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [107, 0, 69, 0, 0],
@@ -8222,7 +8393,8 @@
         "id": "diggers-staff",
         "name": "Digger's Staff",
         "requirements": [8, 0, 12, 0, 0],
-        "sorcery-catalyst": true,
+        "category": "glintstone-staff",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [38, 0, 0, 0, 0],
@@ -8242,6 +8414,8 @@
         "id": "dismounter",
         "name": "Dismounter",
         "requirements": [19, 16, 0, 0, 0],
+        "category": "curved-greatsword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [138, 0, 0, 0, 0],
@@ -8405,6 +8579,8 @@
         "id": "distinguished-greatshield",
         "name": "Distinguished Greatshield",
         "requirements": [32, 0, 0, 0, 0],
+        "category": "greatshield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [112, 0, 0, 0, 0],
@@ -8568,7 +8744,8 @@
         "id": "dragon-communion-seal",
         "name": "Dragon Communion Seal",
         "requirements": [0, 0, 0, 10, 10],
-        "incantation-catalyst": true,
+        "category": "sacred-seal",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [25, 0, 0, 0, 0],
@@ -8588,6 +8765,8 @@
         "id": "dragon-greatclaw",
         "name": "Dragon Greatclaw",
         "requirements": [30, 14, 0, 0, 0],
+        "category": "colossal-weapon",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [120, 0, 0, 78, 0],
@@ -8607,6 +8786,8 @@
         "id": "dragon-halberd",
         "name": "Dragon Halberd",
         "requirements": [22, 10, 0, 0, 0],
+        "category": "halberd",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [135, 0, 0, 0, 0],
@@ -8626,6 +8807,8 @@
         "id": "dragon-kings-cragblade",
         "name": "Dragon King's Cragblade",
         "requirements": [18, 37, 0, 0, 0],
+        "category": "heavy-thrusting-sword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [92, 0, 0, 59, 0],
@@ -8645,6 +8828,8 @@
         "id": "dragon-towershield",
         "name": "Dragon Towershield",
         "requirements": [30, 0, 0, 0, 0],
+        "category": "greatshield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [115, 0, 0, 0, 0],
@@ -8808,6 +8993,8 @@
         "id": "dragonclaw-shield",
         "name": "Dragonclaw Shield",
         "requirements": [28, 12, 0, 0, 0],
+        "category": "greatshield",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [99, 0, 0, 64, 0],
@@ -8827,6 +9014,8 @@
         "id": "dragonscale-blade",
         "name": "Dragonscale Blade",
         "requirements": [12, 20, 0, 0, 0],
+        "category": "katana",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [110, 0, 0, 0, 0],
@@ -8846,6 +9035,8 @@
         "id": "duelist-greataxe",
         "name": "Duelist Greataxe",
         "requirements": [30, 10, 0, 0, 0],
+        "category": "colossal-weapon",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [170, 0, 0, 0, 0],
@@ -9009,6 +9200,8 @@
         "id": "eclipse-crest-greatshield",
         "name": "Eclipse Crest Greatshield",
         "requirements": [32, 0, 0, 0, 0],
+        "category": "greatshield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [110, 0, 0, 0, 0],
@@ -9172,6 +9365,8 @@
         "id": "eclipse-crest-heater-shield",
         "name": "Eclipse Crest Heater Shield",
         "requirements": [10, 0, 0, 0, 0],
+        "category": "medium-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [77, 0, 0, 0, 0],
@@ -9335,6 +9530,8 @@
         "id": "eclipse-shotel",
         "name": "Eclipse Shotel",
         "requirements": [10, 25, 0, 30, 0],
+        "category": "curved-sword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [77, 0, 0, 0, 77],
@@ -9354,6 +9551,8 @@
         "id": "eleonoras-poleblade",
         "name": "Eleonora's Poleblade",
         "requirements": [12, 21, 0, 0, 19],
+        "category": "twinblade",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [72, 0, 72, 0, 0],
@@ -9373,6 +9572,8 @@
         "id": "envoys-greathorn",
         "name": "Envoy's Greathorn",
         "requirements": [28, 12, 0, 24, 0],
+        "category": "colossal-weapon",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [121, 0, 0, 0, 78],
@@ -9392,6 +9593,8 @@
         "id": "envoys-horn",
         "name": "Envoy's Horn",
         "requirements": [10, 12, 0, 16, 0],
+        "category": "hammer",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [96, 0, 0, 0, 62],
@@ -9411,6 +9614,8 @@
         "id": "envoys-long-horn",
         "name": "Envoy's Long Horn",
         "requirements": [23, 11, 0, 18, 0],
+        "category": "great-hammer",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [120, 0, 0, 0, 78],
@@ -9430,6 +9635,8 @@
         "id": "erdsteel-dagger",
         "name": "Erdsteel Dagger",
         "requirements": [7, 12, 0, 14, 0],
+        "category": "dagger",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [67, 0, 0, 0, 0],
@@ -9593,6 +9800,8 @@
         "id": "erdtree-bow",
         "name": "Erdtree Bow",
         "requirements": [8, 12, 0, 14, 0],
+        "category": "bow",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [40, 0, 0, 0, 50],
@@ -9612,6 +9821,8 @@
         "id": "erdtree-greatbow",
         "name": "Erdtree Greatbow",
         "requirements": [20, 14, 0, 14, 0],
+        "category": "greatbow",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [60, 0, 0, 0, 65],
@@ -9631,6 +9842,8 @@
         "id": "erdtree-greatshield",
         "name": "Erdtree Greatshield",
         "requirements": [30, 0, 0, 12, 0],
+        "category": "greatshield",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [100, 0, 0, 0, 65],
@@ -9650,7 +9863,8 @@
         "id": "erdtree-seal",
         "name": "Erdtree Seal",
         "requirements": [0, 0, 0, 40, 0],
-        "incantation-catalyst": true,
+        "category": "sacred-seal",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [25, 0, 0, 0, 15],
@@ -9670,6 +9884,8 @@
         "id": "estoc",
         "name": "Estoc",
         "requirements": [11, 13, 0, 0, 0],
+        "category": "thrusting-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [107, 0, 0, 0, 0],
@@ -9833,6 +10049,8 @@
         "id": "executioners-greataxe",
         "name": "Executioner's Greataxe",
         "requirements": [34, 8, 0, 0, 0],
+        "category": "greataxe",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [150, 0, 0, 0, 0],
@@ -9996,6 +10214,8 @@
         "id": "falchion",
         "name": "Falchion",
         "requirements": [9, 13, 0, 0, 0],
+        "category": "curved-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [109, 0, 0, 0, 0],
@@ -10159,6 +10379,8 @@
         "id": "fallingstar-beast-jaw",
         "name": "Fallingstar Beast Jaw",
         "requirements": [34, 12, 20, 0, 0],
+        "category": "colossal-weapon",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [131, 85, 0, 0, 0],
@@ -10178,6 +10400,8 @@
         "id": "family-heads",
         "name": "Family Heads",
         "requirements": [8, 18, 16, 0, 0],
+        "category": "flail",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [87, 56, 0, 0, 0],
@@ -10197,7 +10421,8 @@
         "id": "finger-seal",
         "name": "Finger Seal",
         "requirements": [4, 0, 0, 10, 0],
-        "incantation-catalyst": true,
+        "category": "sacred-seal",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [25, 0, 0, 0, 0],
@@ -10217,6 +10442,8 @@
         "id": "fingerprint-stone-shield",
         "name": "Fingerprint Stone Shield",
         "requirements": [48, 0, 0, 0, 0],
+        "category": "greatshield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [139, 0, 0, 0, 0],
@@ -10380,6 +10607,8 @@
         "id": "flail",
         "name": "Flail",
         "requirements": [10, 18, 0, 0, 0],
+        "category": "flail",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [109, 0, 0, 0, 0],
@@ -10543,6 +10772,8 @@
         "id": "flamberge",
         "name": "Flamberge",
         "requirements": [15, 14, 0, 0, 0],
+        "category": "greatsword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [129, 0, 0, 0, 0],
@@ -10706,6 +10937,8 @@
         "id": "flame-crest-wooden-shield",
         "name": "Flame Crest Wooden Shield",
         "requirements": [8, 0, 0, 0, 0],
+        "category": "medium-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [76, 0, 0, 0, 0],
@@ -10869,6 +11102,8 @@
         "id": "flowing-curved-sword",
         "name": "Flowing Curved Sword",
         "requirements": [9, 17, 0, 0, 0],
+        "category": "curved-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [109, 0, 0, 0, 0],
@@ -11032,6 +11267,8 @@
         "id": "forked-greatsword",
         "name": "Forked Greatsword",
         "requirements": [14, 16, 0, 0, 0],
+        "category": "greatsword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [124, 0, 0, 0, 0],
@@ -11195,6 +11432,8 @@
         "id": "forked-hatchet",
         "name": "Forked Hatchet",
         "requirements": [9, 14, 0, 0, 0],
+        "category": "axe",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [101, 0, 0, 0, 0],
@@ -11358,7 +11597,8 @@
         "id": "frenzied-flame-seal",
         "name": "Frenzied Flame Seal",
         "requirements": [0, 0, 0, 0, 0],
-        "incantation-catalyst": true,
+        "category": "sacred-seal",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [25, 0, 0, 0, 0],
@@ -11378,6 +11618,8 @@
         "id": "frozen-needle",
         "name": "Frozen Needle",
         "requirements": [11, 18, 0, 0, 0],
+        "category": "thrusting-sword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [99, 0, 0, 0, 0],
@@ -11397,6 +11639,8 @@
         "id": "full-moon-crossbow",
         "name": "Full Moon Crossbow",
         "requirements": [10, 10, 14, 0, 0],
+        "category": "crossbow",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [50, 50, 0, 0, 0],
@@ -11416,6 +11660,8 @@
         "id": "gargoyles-black-axe",
         "name": "Gargoyle's Black Axe",
         "requirements": [24, 8, 0, 22, 0],
+        "category": "greataxe",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [100, 0, 0, 0, 120],
@@ -11435,6 +11681,8 @@
         "id": "gargoyles-black-blades",
         "name": "Gargoyle's Black Blades",
         "requirements": [18, 15, 0, 22, 0],
+        "category": "twinblade",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [81, 0, 0, 0, 97],
@@ -11454,6 +11702,8 @@
         "id": "gargoyles-black-halberd",
         "name": "Gargoyle's Black Halberd",
         "requirements": [26, 10, 0, 22, 0],
+        "category": "halberd",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [103, 0, 0, 0, 123],
@@ -11473,6 +11723,8 @@
         "id": "gargoyles-blackblade",
         "name": "Gargoyle's Blackblade",
         "requirements": [18, 10, 0, 22, 0],
+        "category": "greatsword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [102, 0, 0, 0, 122],
@@ -11492,6 +11744,8 @@
         "id": "gargoyles-great-axe",
         "name": "Gargoyle's Great Axe",
         "requirements": [24, 8, 0, 0, 0],
+        "category": "greataxe",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [123, 0, 0, 0, 0],
@@ -11655,6 +11909,8 @@
         "id": "gargoyles-greatsword",
         "name": "Gargoyle's Greatsword",
         "requirements": [18, 10, 0, 0, 0],
+        "category": "greatsword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [133, 0, 0, 0, 0],
@@ -11818,6 +12074,8 @@
         "id": "gargoyles-halberd",
         "name": "Gargoyle's Halberd",
         "requirements": [26, 10, 0, 0, 0],
+        "category": "halberd",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [131, 0, 0, 0, 0],
@@ -11981,6 +12239,8 @@
         "id": "gargoyles-twinblade",
         "name": "Gargoyle's Twinblade",
         "requirements": [18, 15, 0, 0, 0],
+        "category": "twinblade",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [123, 0, 0, 0, 0],
@@ -12144,7 +12404,8 @@
         "id": "gelmir-glintstone-staff",
         "name": "Gelmir Glintstone Staff",
         "requirements": [6, 0, 14, 14, 0],
-        "sorcery-catalyst": true,
+        "category": "glintstone-staff",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [29, 0, 0, 0, 0],
@@ -12164,6 +12425,8 @@
         "id": "ghizas-wheel",
         "name": "Ghiza's Wheel",
         "requirements": [28, 18, 0, 0, 0],
+        "category": "colossal-weapon",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [156, 0, 0, 0, 0],
@@ -12183,6 +12446,8 @@
         "id": "ghostflame-torch",
         "name": "Ghostflame Torch",
         "requirements": [10, 10, 14, 0, 0],
+        "category": "torch",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [50, 90, 0, 0, 0],
@@ -12202,6 +12467,8 @@
         "id": "giant-crusher",
         "name": "Giant-Crusher",
         "requirements": [60, 0, 0, 0, 0],
+        "category": "colossal-weapon",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [155, 0, 0, 0, 0],
@@ -12365,6 +12632,8 @@
         "id": "giants-red-braid",
         "name": "Giant's Red Braid",
         "requirements": [18, 12, 0, 21, 0],
+        "category": "whip",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [82, 0, 53, 0, 0],
@@ -12384,7 +12653,8 @@
         "id": "giants-seal",
         "name": "Giant's Seal",
         "requirements": [4, 0, 0, 14, 0],
-        "incantation-catalyst": true,
+        "category": "sacred-seal",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [25, 0, 0, 0, 0],
@@ -12404,6 +12674,8 @@
         "id": "gilded-greatshield",
         "name": "Gilded Greatshield",
         "requirements": [36, 0, 0, 0, 0],
+        "category": "greatshield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [115, 0, 0, 0, 0],
@@ -12567,6 +12839,8 @@
         "id": "gilded-iron-shield",
         "name": "Gilded Iron Shield",
         "requirements": [8, 0, 0, 0, 0],
+        "category": "small-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [74, 0, 0, 0, 0],
@@ -12730,6 +13004,8 @@
         "id": "glaive",
         "name": "Glaive",
         "requirements": [18, 15, 0, 0, 0],
+        "category": "halberd",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [132, 0, 0, 0, 0],
@@ -12893,6 +13169,8 @@
         "id": "glintstone-kris",
         "name": "Glintstone Kris",
         "requirements": [5, 12, 16, 0, 0],
+        "category": "dagger",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [57, 68, 0, 0, 0],
@@ -12912,7 +13190,8 @@
         "id": "glintstone-staff",
         "name": "Glintstone Staff",
         "requirements": [6, 0, 10, 0, 0],
-        "sorcery-catalyst": true,
+        "category": "glintstone-staff",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [25, 0, 0, 0, 0],
@@ -12932,6 +13211,8 @@
         "id": "godskin-peeler",
         "name": "Godskin Peeler",
         "requirements": [17, 22, 0, 0, 0],
+        "category": "twinblade",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [121, 0, 0, 0, 0],
@@ -13095,6 +13376,8 @@
         "id": "godskin-stitcher",
         "name": "Godskin Stitcher",
         "requirements": [14, 17, 0, 0, 0],
+        "category": "heavy-thrusting-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [127, 0, 0, 0, 0],
@@ -13258,6 +13541,8 @@
         "id": "godslayers-greatsword",
         "name": "Godslayer's Greatsword",
         "requirements": [20, 22, 0, 20, 0],
+        "category": "colossal-sword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [119, 0, 77, 0, 0],
@@ -13277,7 +13562,8 @@
         "id": "godslayers-seal",
         "name": "Godslayer's Seal",
         "requirements": [4, 0, 0, 27, 0],
-        "incantation-catalyst": true,
+        "category": "sacred-seal",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [25, 0, 0, 0, 0],
@@ -13297,6 +13583,8 @@
         "id": "golden-beast-crest-shield",
         "name": "Golden Beast Crest Shield",
         "requirements": [24, 0, 0, 0, 0],
+        "category": "greatshield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [104, 0, 0, 0, 0],
@@ -13460,6 +13748,8 @@
         "id": "golden-epitaph",
         "name": "Golden Epitaph",
         "requirements": [12, 10, 0, 14, 0],
+        "category": "straight-sword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [85, 0, 0, 0, 85],
@@ -13479,6 +13769,8 @@
         "id": "golden-greatshield",
         "name": "Golden Greatshield",
         "requirements": [34, 0, 0, 0, 0],
+        "category": "greatshield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [113, 0, 0, 0, 0],
@@ -13642,6 +13934,8 @@
         "id": "golden-halberd",
         "name": "Golden Halberd",
         "requirements": [30, 14, 0, 12, 0],
+        "category": "halberd",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [134, 0, 0, 0, 87],
@@ -13661,6 +13955,8 @@
         "id": "golden-order-greatsword",
         "name": "Golden Order Greatsword",
         "requirements": [16, 21, 0, 28, 0],
+        "category": "greatsword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [86, 0, 0, 0, 103],
@@ -13680,7 +13976,8 @@
         "id": "golden-order-seal",
         "name": "Golden Order Seal",
         "requirements": [0, 0, 17, 17, 0],
-        "incantation-catalyst": true,
+        "category": "sacred-seal",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [24, 0, 0, 0, 0],
@@ -13700,6 +13997,8 @@
         "id": "golem-greatbow",
         "name": "Golem Greatbow",
         "requirements": [24, 18, 0, 0, 0],
+        "category": "greatbow",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [130, 0, 0, 0, 0],
@@ -13719,6 +14018,8 @@
         "id": "golems-halberd",
         "name": "Golem's Halberd",
         "requirements": [36, 14, 0, 0, 0],
+        "category": "colossal-weapon",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [158, 0, 0, 0, 0],
@@ -13882,6 +14183,8 @@
         "id": "grafted-blade-greatsword",
         "name": "Grafted Blade Greatsword",
         "requirements": [40, 14, 0, 0, 0],
+        "category": "colossal-sword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [157, 0, 0, 0, 0],
@@ -13901,6 +14204,8 @@
         "id": "grafted-dragon",
         "name": "Grafted Dragon",
         "requirements": [20, 14, 0, 16, 0],
+        "category": "fist",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [89, 0, 57, 0, 0],
@@ -13920,6 +14225,8 @@
         "id": "grave-scythe",
         "name": "Grave Scythe",
         "requirements": [17, 13, 0, 0, 0],
+        "category": "scythe",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [144, 0, 0, 0, 0],
@@ -14083,7 +14390,8 @@
         "id": "gravel-stone-seal",
         "name": "Gravel Stone Seal",
         "requirements": [4, 0, 0, 18, 0],
-        "incantation-catalyst": true,
+        "category": "sacred-seal",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [25, 0, 0, 0, 0],
@@ -14103,6 +14411,8 @@
         "id": "great-club",
         "name": "Great Club",
         "requirements": [35, 0, 0, 0, 0],
+        "category": "colossal-weapon",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [154, 0, 0, 0, 0],
@@ -14266,6 +14576,8 @@
         "id": "great-epee",
         "name": "Great epee",
         "requirements": [15, 16, 0, 0, 0],
+        "category": "heavy-thrusting-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [124, 0, 0, 0, 0],
@@ -14429,6 +14741,8 @@
         "id": "great-knife",
         "name": "Great Knife",
         "requirements": [6, 12, 0, 0, 0],
+        "category": "dagger",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [75, 0, 0, 0, 0],
@@ -14592,6 +14906,8 @@
         "id": "great-mace",
         "name": "Great Mace",
         "requirements": [28, 0, 0, 0, 0],
+        "category": "great-hammer",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [134, 0, 0, 0, 0],
@@ -14755,6 +15071,8 @@
         "id": "great-omenkiller-cleaver",
         "name": "Great Omenkiller Cleaver",
         "requirements": [23, 12, 0, 0, 0],
+        "category": "greataxe",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [142, 0, 0, 0, 0],
@@ -14918,6 +15236,8 @@
         "id": "great-stars",
         "name": "Great Stars",
         "requirements": [22, 12, 0, 0, 0],
+        "category": "great-hammer",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [135, 0, 0, 0, 0],
@@ -15081,6 +15401,8 @@
         "id": "great-turtle-shell",
         "name": "Great Turtle Shell",
         "requirements": [14, 0, 0, 0, 0],
+        "category": "medium-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [81, 0, 0, 0, 0],
@@ -15244,6 +15566,8 @@
         "id": "greataxe",
         "name": "Greataxe",
         "requirements": [30, 8, 0, 0, 0],
+        "category": "greataxe",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [151, 0, 0, 0, 0],
@@ -15407,6 +15731,8 @@
         "id": "greatbow",
         "name": "Greatbow",
         "requirements": [20, 20, 0, 0, 0],
+        "category": "greatbow",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [125, 0, 0, 0, 0],
@@ -15426,6 +15752,8 @@
         "id": "greathorn-hammer",
         "name": "Greathorn Hammer",
         "requirements": [22, 10, 0, 0, 0],
+        "category": "great-hammer",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [134, 0, 0, 0, 0],
@@ -15589,6 +15917,8 @@
         "id": "greatsword",
         "name": "Greatsword",
         "requirements": [31, 12, 0, 0, 0],
+        "category": "colossal-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [164, 0, 0, 0, 0],
@@ -15752,6 +16082,8 @@
         "id": "grossmesser",
         "name": "Grossmesser",
         "requirements": [14, 12, 0, 0, 0],
+        "category": "curved-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [115, 0, 0, 0, 0],
@@ -15915,6 +16247,8 @@
         "id": "guardians-swordspear",
         "name": "Guardian's Swordspear",
         "requirements": [17, 16, 0, 0, 0],
+        "category": "halberd",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [139, 0, 0, 0, 0],
@@ -16078,6 +16412,8 @@
         "id": "halberd",
         "name": "Halberd",
         "requirements": [14, 12, 0, 0, 0],
+        "category": "halberd",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [125, 0, 0, 0, 0],
@@ -16241,6 +16577,8 @@
         "id": "haligtree-crest-greatshield",
         "name": "Haligtree Crest Greatshield",
         "requirements": [36, 0, 0, 0, 0],
+        "category": "greatshield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [116, 0, 0, 0, 0],
@@ -16404,6 +16742,8 @@
         "id": "halo-scythe",
         "name": "Halo Scythe",
         "requirements": [13, 16, 0, 15, 0],
+        "category": "scythe",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [118, 0, 0, 0, 76],
@@ -16423,6 +16763,8 @@
         "id": "hammer",
         "name": "Hammer",
         "requirements": [14, 7, 0, 0, 0],
+        "category": "hammer",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [124, 0, 0, 0, 0],
@@ -16586,6 +16928,8 @@
         "id": "hand-axe",
         "name": "Hand Axe",
         "requirements": [9, 8, 0, 0, 0],
+        "category": "axe",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [113, 0, 0, 0, 0],
@@ -16749,6 +17093,8 @@
         "id": "hand-ballista",
         "name": "Hand Ballista",
         "requirements": [30, 14, 0, 0, 0],
+        "category": "ballista",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [150, 0, 0, 0, 0],
@@ -16768,6 +17114,8 @@
         "id": "hand-of-malenia",
         "name": "Hand of Malenia",
         "requirements": [16, 48, 0, 0, 0],
+        "category": "katana",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [117, 0, 0, 0, 0],
@@ -16787,6 +17135,8 @@
         "id": "harp-bow",
         "name": "Harp Bow",
         "requirements": [9, 9, 0, 0, 0],
+        "category": "light-bow",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [62, 0, 0, 0, 0],
@@ -16806,6 +17156,8 @@
         "id": "hawk-crest-wooden-shield",
         "name": "Hawk Crest Wooden Shield",
         "requirements": [8, 0, 0, 0, 0],
+        "category": "medium-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [76, 0, 0, 0, 0],
@@ -16969,6 +17321,8 @@
         "id": "heater-shield",
         "name": "Heater Shield",
         "requirements": [10, 0, 0, 0, 0],
+        "category": "medium-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [77, 0, 0, 0, 0],
@@ -17132,6 +17486,8 @@
         "id": "heavy-crossbow",
         "name": "Heavy Crossbow",
         "requirements": [14, 10, 0, 0, 0],
+        "category": "crossbow",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [72, 0, 0, 0, 0],
@@ -17151,6 +17507,8 @@
         "id": "helphens-steeple",
         "name": "Helphen's Steeple",
         "requirements": [19, 10, 22, 0, 0],
+        "category": "greatsword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [101, 101, 0, 0, 0],
@@ -17170,6 +17528,8 @@
         "id": "highland-axe",
         "name": "Highland Axe",
         "requirements": [12, 9, 0, 0, 0],
+        "category": "axe",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [123, 0, 0, 0, 0],
@@ -17333,6 +17693,8 @@
         "id": "hookclaws",
         "name": "Hookclaws",
         "requirements": [8, 14, 0, 0, 0],
+        "category": "claw",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [89, 0, 0, 0, 0],
@@ -17496,6 +17858,8 @@
         "id": "horn-bow",
         "name": "Horn Bow",
         "requirements": [10, 14, 12, 0, 0],
+        "category": "bow",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [65, 30, 0, 0, 0],
@@ -17515,6 +17879,8 @@
         "id": "horse-crest-wooden-shield",
         "name": "Horse Crest Wooden Shield",
         "requirements": [8, 0, 0, 0, 0],
+        "category": "medium-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [76, 0, 0, 0, 0],
@@ -17678,6 +18044,8 @@
         "id": "hoslows-petal-whip",
         "name": "Hoslow's Petal Whip",
         "requirements": [10, 20, 0, 0, 0],
+        "category": "whip",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [110, 0, 0, 0, 0],
@@ -17841,6 +18209,8 @@
         "id": "ice-crest-shield",
         "name": "Ice Crest Shield",
         "requirements": [9, 0, 0, 0, 0],
+        "category": "small-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [74, 0, 0, 0, 0],
@@ -18004,6 +18374,8 @@
         "id": "icerind-hatchet",
         "name": "Icerind Hatchet",
         "requirements": [11, 16, 0, 0, 0],
+        "category": "axe",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [111, 0, 0, 0, 0],
@@ -18023,6 +18395,8 @@
         "id": "icon-shield",
         "name": "Icon Shield",
         "requirements": [22, 0, 0, 0, 0],
+        "category": "greatshield",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [111, 0, 0, 0, 0],
@@ -18042,6 +18416,8 @@
         "id": "inquisitors-girandole",
         "name": "Inquisitor's Girandole",
         "requirements": [18, 15, 0, 16, 0],
+        "category": "spear",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [102, 0, 66, 0, 0],
@@ -18061,6 +18437,8 @@
         "id": "inseparable-sword",
         "name": "Inseparable Sword",
         "requirements": [18, 18, 0, 20, 0],
+        "category": "straight-sword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [98, 0, 0, 0, 98],
@@ -18080,6 +18458,8 @@
         "id": "inverted-hawk-heater-shield",
         "name": "Inverted Hawk Heater Shield",
         "requirements": [10, 0, 0, 0, 0],
+        "category": "medium-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [77, 0, 0, 0, 0],
@@ -18243,6 +18623,8 @@
         "id": "inverted-hawk-towershield",
         "name": "Inverted Hawk Towershield",
         "requirements": [30, 0, 0, 0, 0],
+        "category": "greatshield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [111, 0, 0, 0, 0],
@@ -18406,6 +18788,8 @@
         "id": "iron-ball",
         "name": "Iron Ball",
         "requirements": [11, 8, 0, 0, 0],
+        "category": "fist",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [101, 0, 0, 0, 0],
@@ -18569,6 +18953,8 @@
         "id": "iron-cleaver",
         "name": "Iron Cleaver",
         "requirements": [15, 7, 0, 0, 0],
+        "category": "axe",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [120, 0, 0, 0, 0],
@@ -18732,6 +19118,8 @@
         "id": "iron-greatsword",
         "name": "Iron Greatsword",
         "requirements": [18, 10, 0, 0, 0],
+        "category": "greatsword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [149, 0, 0, 0, 0],
@@ -18895,6 +19283,8 @@
         "id": "iron-roundshield",
         "name": "Iron Roundshield",
         "requirements": [8, 0, 0, 0, 0],
+        "category": "small-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [74, 0, 0, 0, 0],
@@ -19058,6 +19448,8 @@
         "id": "iron-spear",
         "name": "Iron Spear",
         "requirements": [13, 11, 0, 0, 0],
+        "category": "spear",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [114, 0, 0, 0, 0],
@@ -19221,6 +19613,8 @@
         "id": "ivory-sickle",
         "name": "Ivory Sickle",
         "requirements": [6, 11, 13, 0, 0],
+        "category": "dagger",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [60, 60, 0, 0, 0],
@@ -19240,6 +19634,8 @@
         "id": "jar-cannon",
         "name": "Jar Cannon",
         "requirements": [34, 12, 0, 0, 0],
+        "category": "ballista",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [192, 0, 0, 0, 0],
@@ -19259,6 +19655,8 @@
         "id": "jawbone-axe",
         "name": "Jawbone Axe",
         "requirements": [14, 8, 0, 0, 0],
+        "category": "axe",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [124, 0, 0, 0, 0],
@@ -19422,6 +19820,8 @@
         "id": "jellyfish-shield",
         "name": "Jellyfish Shield",
         "requirements": [20, 14, 0, 0, 0],
+        "category": "greatshield",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [103, 0, 0, 0, 0],
@@ -19441,6 +19841,8 @@
         "id": "katar",
         "name": "Katar",
         "requirements": [8, 10, 0, 0, 0],
+        "category": "fist",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [97, 0, 0, 0, 0],
@@ -19604,6 +20006,8 @@
         "id": "kite-shield",
         "name": "Kite Shield",
         "requirements": [12, 0, 0, 0, 0],
+        "category": "medium-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [78, 0, 0, 0, 0],
@@ -19767,6 +20171,8 @@
         "id": "knights-greatsword",
         "name": "Knight's Greatsword",
         "requirements": [16, 12, 0, 0, 0],
+        "category": "greatsword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [141, 0, 0, 0, 0],
@@ -19930,6 +20336,8 @@
         "id": "lance",
         "name": "Lance",
         "requirements": [20, 14, 0, 0, 0],
+        "category": "great-spear",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [123, 0, 0, 0, 0],
@@ -20093,6 +20501,8 @@
         "id": "large-club",
         "name": "Large Club",
         "requirements": [22, 0, 0, 0, 0],
+        "category": "great-hammer",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [131, 0, 0, 0, 0],
@@ -20256,6 +20666,8 @@
         "id": "large-leather-shield",
         "name": "Large Leather Shield",
         "requirements": [8, 0, 0, 0, 0],
+        "category": "medium-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [75, 0, 0, 0, 0],
@@ -20419,6 +20831,8 @@
         "id": "lazuli-glintstone-sword",
         "name": "Lazuli Glintstone Sword",
         "requirements": [8, 9, 13, 0, 0],
+        "category": "straight-sword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [79, 94, 0, 0, 0],
@@ -20438,6 +20852,8 @@
         "id": "light-crossbow",
         "name": "Light Crossbow",
         "requirements": [12, 8, 0, 0, 0],
+        "category": "crossbow",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [65, 0, 0, 0, 0],
@@ -20457,6 +20873,8 @@
         "id": "lion-greatbow",
         "name": "Lion Greatbow",
         "requirements": [22, 18, 0, 0, 0],
+        "category": "greatbow",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [120, 0, 0, 0, 0],
@@ -20476,6 +20894,8 @@
         "id": "longbow",
         "name": "Longbow",
         "requirements": [9, 14, 0, 0, 0],
+        "category": "bow",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [80, 0, 0, 0, 0],
@@ -20495,6 +20915,8 @@
         "id": "longhaft-axe",
         "name": "Longhaft Axe",
         "requirements": [24, 8, 0, 0, 0],
+        "category": "greataxe",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [146, 0, 0, 0, 0],
@@ -20658,6 +21080,8 @@
         "id": "longsword",
         "name": "Longsword",
         "requirements": [10, 10, 0, 0, 0],
+        "category": "straight-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [110, 0, 0, 0, 0],
@@ -20821,6 +21245,8 @@
         "id": "lordsworns-greatsword",
         "name": "Lordsworn's Greatsword",
         "requirements": [16, 10, 0, 0, 0],
+        "category": "greatsword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [136, 0, 0, 0, 0],
@@ -20984,6 +21410,8 @@
         "id": "lordsworns-shield",
         "name": "Lordsworn's Shield",
         "requirements": [16, 0, 0, 0, 0],
+        "category": "greatshield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [99, 0, 0, 0, 0],
@@ -21147,6 +21575,8 @@
         "id": "lordsworns-straight-sword",
         "name": "Lordsworn's Straight Sword",
         "requirements": [10, 10, 0, 0, 0],
+        "category": "straight-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [115, 0, 0, 0, 0],
@@ -21310,6 +21740,8 @@
         "id": "lorettas-war-sickle",
         "name": "Loretta's War Sickle",
         "requirements": [20, 15, 20, 0, 0],
+        "category": "halberd",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [110, 71, 0, 0, 0],
@@ -21329,6 +21761,8 @@
         "id": "lucerne",
         "name": "Lucerne",
         "requirements": [15, 12, 0, 0, 0],
+        "category": "halberd",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [121, 0, 0, 0, 0],
@@ -21492,7 +21926,8 @@
         "id": "lusats-glintstone-staff",
         "name": "Lusat's Glintstone Staff",
         "requirements": [10, 0, 52, 0, 0],
-        "sorcery-catalyst": true,
+        "category": "glintstone-staff",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [24, 0, 0, 0, 0],
@@ -21512,6 +21947,8 @@
         "id": "mace",
         "name": "Mace",
         "requirements": [12, 7, 0, 0, 0],
+        "category": "hammer",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [115, 0, 0, 0, 0],
@@ -21675,6 +22112,8 @@
         "id": "magma-blade",
         "name": "Magma Blade",
         "requirements": [9, 15, 0, 16, 0],
+        "category": "curved-sword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [96, 0, 62, 0, 0],
@@ -21694,6 +22133,8 @@
         "id": "magma-whip-candlestick",
         "name": "Magma Whip Candlestick",
         "requirements": [8, 16, 0, 18, 0],
+        "category": "whip",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [72, 0, 72, 0, 0],
@@ -21713,6 +22154,8 @@
         "id": "magma-wyrms-scalesword",
         "name": "Magma Wyrm's Scalesword",
         "requirements": [24, 15, 0, 18, 0],
+        "category": "curved-greatsword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [114, 0, 74, 0, 0],
@@ -21732,6 +22175,8 @@
         "id": "malikeths-black-blade",
         "name": "Maliketh's Black Blade",
         "requirements": [34, 12, 0, 20, 0],
+        "category": "colossal-sword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [127, 0, 0, 0, 82],
@@ -21751,6 +22196,8 @@
         "id": "man-serpents-shield",
         "name": "Man-Serpent's Shield",
         "requirements": [8, 0, 0, 0, 0],
+        "category": "small-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [70, 0, 0, 0, 0],
@@ -21914,6 +22361,8 @@
         "id": "manor-towershield",
         "name": "Manor Towershield",
         "requirements": [30, 0, 0, 0, 0],
+        "category": "greatshield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [111, 0, 0, 0, 0],
@@ -22077,6 +22526,8 @@
         "id": "mantis-blade",
         "name": "Mantis Blade",
         "requirements": [10, 12, 0, 0, 0],
+        "category": "curved-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [112, 0, 0, 0, 0],
@@ -22240,6 +22691,8 @@
         "id": "marais-executioners-sword",
         "name": "Marais Executioner's Sword",
         "requirements": [24, 14, 0, 0, 23],
+        "category": "greatsword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [94, 61, 0, 0, 0],
@@ -22259,6 +22712,8 @@
         "id": "marikas-hammer",
         "name": "Marika's Hammer",
         "requirements": [20, 12, 0, 19, 0],
+        "category": "hammer",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [101, 0, 0, 0, 65],
@@ -22278,6 +22733,8 @@
         "id": "marred-leather-shield",
         "name": "Marred Leather Shield",
         "requirements": [8, 0, 0, 0, 0],
+        "category": "medium-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [75, 0, 0, 0, 0],
@@ -22441,6 +22898,8 @@
         "id": "marred-wooden-shield",
         "name": "Marred Wooden Shield",
         "requirements": [8, 0, 0, 0, 0],
+        "category": "medium-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [76, 0, 0, 0, 0],
@@ -22604,6 +23063,8 @@
         "id": "meteoric-ore-blade",
         "name": "Meteoric Ore Blade",
         "requirements": [15, 14, 18, 0, 0],
+        "category": "katana",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [112, 72, 0, 0, 0],
@@ -22623,7 +23084,8 @@
         "id": "meteorite-staff",
         "name": "Meteorite Staff",
         "requirements": [6, 0, 18, 0, 0],
-        "sorcery-catalyst": true,
+        "category": "glintstone-staff",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [39, 0, 0, 0, 0],
@@ -22643,6 +23105,8 @@
         "id": "miquellan-knights-sword",
         "name": "Miquellan Knight's Sword",
         "requirements": [11, 11, 0, 16, 0],
+        "category": "straight-sword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [105, 0, 0, 0, 68],
@@ -22662,6 +23126,8 @@
         "id": "misbegotten-shortbow",
         "name": "Misbegotten Shortbow",
         "requirements": [16, 8, 0, 0, 0],
+        "category": "light-bow",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [68, 0, 0, 0, 0],
@@ -22681,6 +23147,8 @@
         "id": "misericorde",
         "name": "Misericorde",
         "requirements": [7, 12, 0, 0, 0],
+        "category": "dagger",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [92, 0, 0, 0, 0],
@@ -22844,6 +23312,8 @@
         "id": "mohgwyns-sacred-spear",
         "name": "Mohgwyn's Sacred Spear",
         "requirements": [24, 14, 0, 0, 27],
+        "category": "great-spear",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [96, 0, 62, 0, 0],
@@ -22863,6 +23333,8 @@
         "id": "monks-flameblade",
         "name": "Monk's Flameblade",
         "requirements": [18, 18, 0, 0, 0],
+        "category": "curved-greatsword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [134, 0, 0, 0, 0],
@@ -23026,6 +23498,8 @@
         "id": "monks-flamemace",
         "name": "Monk's Flamemace",
         "requirements": [13, 13, 0, 0, 0],
+        "category": "hammer",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [126, 0, 0, 0, 0],
@@ -23189,6 +23663,8 @@
         "id": "moonveil",
         "name": "Moonveil",
         "requirements": [12, 18, 23, 0, 0],
+        "category": "katana",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [73, 87, 0, 0, 0],
@@ -23208,6 +23684,8 @@
         "id": "morgotts-cursed-sword",
         "name": "Morgott's Cursed Sword",
         "requirements": [14, 35, 0, 0, 17],
+        "category": "curved-greatsword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [120, 0, 0, 0, 0],
@@ -23227,6 +23705,8 @@
         "id": "morning-star",
         "name": "Morning Star",
         "requirements": [12, 8, 0, 0, 0],
+        "category": "hammer",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [118, 0, 0, 0, 0],
@@ -23390,6 +23870,8 @@
         "id": "nagakiba",
         "name": "Nagakiba",
         "requirements": [18, 22, 0, 0, 0],
+        "category": "katana",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [115, 0, 0, 0, 0],
@@ -23553,6 +24035,8 @@
         "id": "nightrider-flail",
         "name": "Nightrider Flail",
         "requirements": [10, 24, 0, 0, 0],
+        "category": "flail",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [112, 0, 0, 0, 0],
@@ -23716,6 +24200,8 @@
         "id": "nightrider-glaive",
         "name": "Nightrider Glaive",
         "requirements": [26, 10, 0, 0, 0],
+        "category": "halberd",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [129, 0, 0, 0, 0],
@@ -23879,6 +24365,8 @@
         "id": "nobles-estoc",
         "name": "Noble's Estoc",
         "requirements": [9, 10, 0, 0, 0],
+        "category": "thrusting-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [104, 0, 0, 0, 0],
@@ -24042,6 +24530,8 @@
         "id": "nobles-slender-sword",
         "name": "Noble's Slender Sword",
         "requirements": [8, 11, 0, 0, 0],
+        "category": "straight-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [101, 0, 0, 0, 0],
@@ -24205,6 +24695,8 @@
         "id": "nox-flowing-hammer",
         "name": "Nox Flowing Hammer",
         "requirements": [17, 7, 0, 0, 0],
+        "category": "hammer",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [122, 0, 0, 0, 0],
@@ -24224,6 +24716,8 @@
         "id": "nox-flowing-sword",
         "name": "Nox Flowing Sword",
         "requirements": [8, 15, 0, 0, 0],
+        "category": "straight-sword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [112, 0, 0, 0, 0],
@@ -24243,6 +24737,8 @@
         "id": "omen-cleaver",
         "name": "Omen Cleaver",
         "requirements": [19, 16, 0, 0, 0],
+        "category": "curved-greatsword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [142, 0, 0, 0, 0],
@@ -24406,6 +24902,8 @@
         "id": "one-eyed-shield",
         "name": "One-Eyed Shield",
         "requirements": [36, 0, 0, 0, 0],
+        "category": "greatshield",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [146, 0, 0, 0, 0],
@@ -24425,6 +24923,8 @@
         "id": "onyx-lords-greatsword",
         "name": "Onyx Lord's Greatsword",
         "requirements": [20, 16, 16, 0, 0],
+        "category": "curved-greatsword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [118, 76, 0, 0, 0],
@@ -24444,6 +24944,8 @@
         "id": "ordoviss-greatsword",
         "name": "Ordovis's Greatsword",
         "requirements": [25, 13, 0, 15, 0],
+        "category": "greatsword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [107, 0, 0, 0, 69],
@@ -24463,6 +24965,8 @@
         "id": "ornamental-straight-sword",
         "name": "Ornamental Straight Sword",
         "requirements": [10, 14, 0, 0, 0],
+        "category": "straight-sword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [101, 0, 0, 0, 0],
@@ -24482,6 +24986,8 @@
         "id": "parrying-dagger",
         "name": "Parrying Dagger",
         "requirements": [5, 14, 0, 0, 0],
+        "category": "dagger",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [75, 0, 0, 0, 0],
@@ -24645,6 +25151,8 @@
         "id": "partisan",
         "name": "Partisan",
         "requirements": [15, 12, 0, 0, 0],
+        "category": "spear",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [123, 0, 0, 0, 0],
@@ -24808,6 +25316,8 @@
         "id": "perfumers-shield",
         "name": "Perfumer's Shield",
         "requirements": [8, 0, 0, 0, 0],
+        "category": "small-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [67, 0, 0, 0, 0],
@@ -24971,6 +25481,8 @@
         "id": "pests-glaive",
         "name": "Pest's Glaive",
         "requirements": [13, 13, 0, 0, 0],
+        "category": "halberd",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [120, 0, 0, 0, 0],
@@ -25134,6 +25646,8 @@
         "id": "pickaxe",
         "name": "Pickaxe",
         "requirements": [22, 10, 0, 0, 0],
+        "category": "great-hammer",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [144, 0, 0, 0, 0],
@@ -25297,6 +25811,8 @@
         "id": "pike",
         "name": "Pike",
         "requirements": [20, 14, 0, 0, 0],
+        "category": "spear",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [115, 0, 0, 0, 0],
@@ -25460,6 +25976,8 @@
         "id": "pillory-shield",
         "name": "Pillory Shield",
         "requirements": [10, 0, 0, 0, 0],
+        "category": "small-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [71, 0, 0, 0, 0],
@@ -25623,6 +26141,8 @@
         "id": "prelates-inferno-crozier",
         "name": "Prelate's Inferno Crozier",
         "requirements": [45, 8, 0, 0, 0],
+        "category": "colossal-weapon",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [156, 0, 0, 0, 0],
@@ -25786,7 +26306,8 @@
         "id": "prince-of-deaths-staff",
         "name": "Prince of Death's Staff",
         "requirements": [6, 0, 18, 18, 0],
-        "sorcery-catalyst": true,
+        "category": "glintstone-staff",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [25, 0, 0, 0, 0],
@@ -25806,6 +26327,8 @@
         "id": "pulley-bow",
         "name": "Pulley Bow",
         "requirements": [11, 11, 0, 0, 0],
+        "category": "bow",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [77, 0, 0, 0, 0],
@@ -25825,6 +26348,8 @@
         "id": "pulley-crossbow",
         "name": "Pulley Crossbow",
         "requirements": [16, 16, 0, 0, 0],
+        "category": "crossbow",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [65, 0, 0, 0, 0],
@@ -25844,6 +26369,8 @@
         "id": "rapier",
         "name": "Rapier",
         "requirements": [7, 12, 0, 0, 0],
+        "category": "thrusting-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [96, 0, 0, 0, 0],
@@ -26007,6 +26534,8 @@
         "id": "raptor-talons",
         "name": "Raptor Talons",
         "requirements": [6, 14, 0, 0, 0],
+        "category": "claw",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [83, 0, 0, 0, 0],
@@ -26170,6 +26699,8 @@
         "id": "red-branch-shortbow",
         "name": "Red Branch Shortbow",
         "requirements": [8, 16, 0, 0, 0],
+        "category": "light-bow",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [65, 0, 0, 0, 0],
@@ -26189,6 +26720,8 @@
         "id": "red-crest-heater-shield",
         "name": "Red Crest Heater Shield",
         "requirements": [10, 0, 0, 0, 0],
+        "category": "medium-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [77, 0, 0, 0, 0],
@@ -26352,6 +26885,8 @@
         "id": "red-thorn-roundshield",
         "name": "Red Thorn Roundshield",
         "requirements": [8, 0, 0, 0, 0],
+        "category": "small-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [70, 0, 0, 0, 0],
@@ -26515,6 +27050,8 @@
         "id": "redmane-greatshield",
         "name": "Redmane Greatshield",
         "requirements": [30, 0, 0, 0, 0],
+        "category": "greatshield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [108, 0, 0, 0, 0],
@@ -26678,6 +27215,8 @@
         "id": "reduvia",
         "name": "Reduvia",
         "requirements": [5, 13, 0, 0, 13],
+        "category": "dagger",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [79, 0, 0, 0, 0],
@@ -26697,6 +27236,8 @@
         "id": "regalia-of-eochaid",
         "name": "Regalia of Eochaid",
         "requirements": [12, 18, 0, 0, 15],
+        "category": "straight-sword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [89, 57, 0, 0, 0],
@@ -26716,6 +27257,8 @@
         "id": "rickety-shield",
         "name": "Rickety Shield",
         "requirements": [8, 0, 0, 0, 0],
+        "category": "small-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [70, 0, 0, 0, 0],
@@ -26879,6 +27422,8 @@
         "id": "rift-shield",
         "name": "Rift Shield",
         "requirements": [8, 0, 0, 0, 0],
+        "category": "small-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [70, 0, 0, 0, 0],
@@ -27042,6 +27587,8 @@
         "id": "ringed-finger",
         "name": "Ringed Finger",
         "requirements": [15, 9, 0, 0, 0],
+        "category": "hammer",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [121, 0, 0, 0, 0],
@@ -27061,6 +27608,8 @@
         "id": "ripple-blade",
         "name": "Ripple Blade",
         "requirements": [11, 11, 0, 0, 20],
+        "category": "axe",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [70, 0, 0, 0, 0],
@@ -27080,6 +27629,8 @@
         "id": "ripple-crescent-halberd",
         "name": "Ripple Crescent Halberd",
         "requirements": [12, 12, 0, 0, 20],
+        "category": "halberd",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [86, 0, 0, 0, 0],
@@ -27099,6 +27650,8 @@
         "id": "rivers-of-blood",
         "name": "Rivers of Blood",
         "requirements": [12, 18, 0, 0, 20],
+        "category": "katana",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [76, 0, 76, 0, 0],
@@ -27118,6 +27671,8 @@
         "id": "riveted-wooden-shield",
         "name": "Riveted Wooden Shield",
         "requirements": [8, 0, 0, 0, 0],
+        "category": "small-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [72, 0, 0, 0, 0],
@@ -27281,6 +27836,8 @@
         "id": "rogiers-rapier",
         "name": "Rogier's Rapier",
         "requirements": [8, 17, 0, 0, 0],
+        "category": "thrusting-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [93, 0, 0, 0, 0],
@@ -27444,6 +28001,8 @@
         "id": "rosus-axe",
         "name": "Rosus' Axe",
         "requirements": [18, 10, 18, 0, 0],
+        "category": "axe",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [106, 68, 0, 0, 0],
@@ -27463,6 +28022,8 @@
         "id": "rotten-battle-hammer",
         "name": "Rotten Battle Hammer",
         "requirements": [26, 8, 0, 0, 0],
+        "category": "great-hammer",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [126, 0, 0, 0, 0],
@@ -27626,6 +28187,8 @@
         "id": "rotten-crystal-spear",
         "name": "Rotten Crystal Spear",
         "requirements": [10, 16, 16, 0, 0],
+        "category": "spear",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [104, 31, 0, 0, 0],
@@ -27645,7 +28208,8 @@
         "id": "rotten-crystal-staff",
         "name": "Rotten Crystal Staff",
         "requirements": [8, 0, 48, 0, 0],
-        "sorcery-catalyst": true,
+        "category": "glintstone-staff",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [42, 0, 0, 0, 0],
@@ -27665,6 +28229,8 @@
         "id": "rotten-crystal-sword",
         "name": "Rotten Crystal Sword",
         "requirements": [13, 10, 15, 0, 0],
+        "category": "straight-sword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [102, 66, 0, 0, 0],
@@ -27684,6 +28250,8 @@
         "id": "rotten-greataxe",
         "name": "Rotten Greataxe",
         "requirements": [30, 10, 0, 0, 0],
+        "category": "colossal-weapon",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [162, 0, 0, 0, 0],
@@ -27847,6 +28415,8 @@
         "id": "rotten-staff",
         "name": "Rotten Staff",
         "requirements": [34, 8, 0, 0, 0],
+        "category": "colossal-weapon",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [165, 0, 0, 0, 0],
@@ -27866,6 +28436,8 @@
         "id": "round-shield",
         "name": "Round Shield",
         "requirements": [8, 0, 0, 0, 0],
+        "category": "medium-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [76, 0, 0, 0, 0],
@@ -28029,6 +28601,8 @@
         "id": "royal-greatsword",
         "name": "Royal Greatsword",
         "requirements": [26, 18, 22, 0, 0],
+        "category": "colossal-sword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [112, 134, 0, 0, 0],
@@ -28048,6 +28622,8 @@
         "id": "ruins-greatsword",
         "name": "Ruins Greatsword",
         "requirements": [50, 0, 16, 0, 0],
+        "category": "colossal-sword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [124, 37, 0, 0, 0],
@@ -28067,6 +28643,8 @@
         "id": "rusted-anchor",
         "name": "Rusted Anchor",
         "requirements": [26, 9, 0, 0, 0],
+        "category": "greataxe",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [147, 0, 0, 0, 0],
@@ -28230,6 +28808,8 @@
         "id": "sacred-relic-sword",
         "name": "Sacred Relic Sword",
         "requirements": [14, 24, 0, 22, 0],
+        "category": "greatsword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [118, 0, 0, 0, 76],
@@ -28249,6 +28829,8 @@
         "id": "sacrificial-axe",
         "name": "Sacrificial Axe",
         "requirements": [16, 10, 0, 0, 0],
+        "category": "axe",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [128, 0, 0, 0, 0],
@@ -28412,6 +28994,8 @@
         "id": "scavengers-curved-sword",
         "name": "Scavenger's Curved Sword",
         "requirements": [9, 14, 0, 0, 0],
+        "category": "curved-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [105, 0, 0, 0, 0],
@@ -28575,6 +29159,8 @@
         "id": "scepter-of-the-all-knowing",
         "name": "Scepter of the All-Knowing",
         "requirements": [12, 18, 21, 0, 0],
+        "category": "hammer",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [99, 64, 0, 0, 0],
@@ -28594,6 +29180,8 @@
         "id": "scimitar",
         "name": "Scimitar",
         "requirements": [7, 13, 0, 0, 0],
+        "category": "curved-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [106, 0, 0, 0, 0],
@@ -28757,6 +29345,8 @@
         "id": "scorpion-kite-shield",
         "name": "Scorpion Kite Shield",
         "requirements": [12, 0, 0, 0, 0],
+        "category": "medium-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [78, 0, 0, 0, 0],
@@ -28920,6 +29510,8 @@
         "id": "scorpions-stinger",
         "name": "Scorpion's Stinger",
         "requirements": [6, 12, 0, 0, 0],
+        "category": "dagger",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [79, 0, 0, 0, 0],
@@ -28939,6 +29531,8 @@
         "id": "scripture-wooden-shield",
         "name": "Scripture Wooden Shield",
         "requirements": [8, 0, 0, 0, 0],
+        "category": "small-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [70, 0, 0, 0, 0],
@@ -29102,6 +29696,8 @@
         "id": "scythe",
         "name": "Scythe",
         "requirements": [14, 14, 0, 0, 0],
+        "category": "scythe",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [125, 0, 0, 0, 0],
@@ -29265,6 +29861,8 @@
         "id": "sentrys-torch",
         "name": "Sentry's Torch",
         "requirements": [15, 8, 0, 15, 0],
+        "category": "torch",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [56, 0, 0, 0, 100],
@@ -29284,6 +29882,8 @@
         "id": "serpent-bow",
         "name": "Serpent Bow",
         "requirements": [8, 15, 0, 0, 11],
+        "category": "bow",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [75, 0, 0, 0, 0],
@@ -29303,6 +29903,8 @@
         "id": "serpent-gods-curved-sword",
         "name": "Serpent-God's Curved Sword",
         "requirements": [13, 9, 0, 0, 0],
+        "category": "curved-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [113, 0, 0, 0, 0],
@@ -29466,6 +30068,8 @@
         "id": "serpent-hunter",
         "name": "Serpent-Hunter",
         "requirements": [0, 0, 0, 0, 0],
+        "category": "great-spear",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [111, 0, 0, 0, 0],
@@ -29485,6 +30089,8 @@
         "id": "serpentbone-blade",
         "name": "Serpentbone Blade",
         "requirements": [11, 22, 0, 0, 0],
+        "category": "katana",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [120, 0, 0, 0, 0],
@@ -29648,6 +30254,8 @@
         "id": "shamshir",
         "name": "Shamshir",
         "requirements": [7, 13, 0, 0, 0],
+        "category": "curved-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [108, 0, 0, 0, 0],
@@ -29811,6 +30419,8 @@
         "id": "shield-of-the-guilty",
         "name": "Shield of the Guilty",
         "requirements": [8, 0, 0, 0, 0],
+        "category": "medium-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [75, 0, 0, 0, 0],
@@ -29974,6 +30584,8 @@
         "id": "short-spear",
         "name": "Short Spear",
         "requirements": [10, 10, 0, 0, 0],
+        "category": "spear",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [112, 0, 0, 0, 0],
@@ -30137,6 +30749,8 @@
         "id": "short-sword",
         "name": "Short Sword",
         "requirements": [8, 10, 0, 0, 0],
+        "category": "straight-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [102, 0, 0, 0, 0],
@@ -30300,6 +30914,8 @@
         "id": "shortbow",
         "name": "Shortbow",
         "requirements": [8, 10, 0, 0, 0],
+        "category": "light-bow",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [65, 0, 0, 0, 0],
@@ -30319,6 +30935,8 @@
         "id": "shotel",
         "name": "Shotel",
         "requirements": [9, 19, 0, 0, 0],
+        "category": "curved-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [96, 0, 0, 0, 0],
@@ -30482,6 +31100,8 @@
         "id": "silurias-tree",
         "name": "Siluria's Tree",
         "requirements": [27, 13, 0, 20, 0],
+        "category": "great-spear",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [90, 0, 0, 0, 90],
@@ -30501,6 +31121,8 @@
         "id": "silver-mirrorshield",
         "name": "Silver Mirrorshield",
         "requirements": [12, 10, 10, 0, 0],
+        "category": "medium-shield",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [59, 38, 0, 0, 0],
@@ -30520,6 +31142,8 @@
         "id": "smoldering-shield",
         "name": "Smoldering Shield",
         "requirements": [10, 9, 0, 12, 0],
+        "category": "small-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [58, 0, 37, 0, 0],
@@ -30539,6 +31163,8 @@
         "id": "soldiers-crossbow",
         "name": "Soldier's Crossbow",
         "requirements": [10, 8, 0, 0, 0],
+        "category": "crossbow",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [60, 0, 0, 0, 0],
@@ -30558,6 +31184,8 @@
         "id": "spear",
         "name": "Spear",
         "requirements": [12, 15, 0, 0, 0],
+        "category": "spear",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [114, 0, 0, 0, 0],
@@ -30721,6 +31349,8 @@
         "id": "spiked-caestus",
         "name": "Spiked Caestus",
         "requirements": [8, 10, 0, 0, 0],
+        "category": "fist",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [91, 0, 0, 0, 0],
@@ -30884,6 +31514,8 @@
         "id": "spiked-club",
         "name": "Spiked Club",
         "requirements": [12, 7, 0, 0, 0],
+        "category": "hammer",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [114, 0, 0, 0, 0],
@@ -31047,6 +31679,8 @@
         "id": "spiked-palisade-shield",
         "name": "Spiked Palisade Shield",
         "requirements": [20, 0, 0, 0, 0],
+        "category": "greatshield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [116, 0, 0, 0, 0],
@@ -31210,6 +31844,8 @@
         "id": "spiked-spear",
         "name": "Spiked Spear",
         "requirements": [14, 16, 0, 0, 0],
+        "category": "spear",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [120, 0, 0, 0, 0],
@@ -31373,6 +32009,8 @@
         "id": "spiralhorn-shield",
         "name": "Spiralhorn Shield",
         "requirements": [8, 10, 0, 0, 0],
+        "category": "small-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [75, 0, 0, 0, 0],
@@ -31536,6 +32174,8 @@
         "id": "st.-trinas-torch",
         "name": "St. Trina's Torch",
         "requirements": [10, 10, 0, 14, 0],
+        "category": "torch",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [51, 0, 91, 0, 0],
@@ -31555,7 +32195,8 @@
         "id": "staff-of-loss",
         "name": "Staff of Loss",
         "requirements": [6, 12, 14, 0, 0],
-        "sorcery-catalyst": true,
+        "category": "glintstone-staff",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [22, 0, 0, 0, 0],
@@ -31575,6 +32216,8 @@
         "id": "staff-of-the-avatar",
         "name": "Staff of the Avatar",
         "requirements": [34, 8, 0, 24, 0],
+        "category": "colossal-weapon",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [113, 0, 0, 0, 73],
@@ -31594,7 +32237,8 @@
         "id": "staff-of-the-guilty",
         "name": "Staff of the Guilty",
         "requirements": [8, 0, 0, 12, 0],
-        "sorcery-catalyst": true,
+        "category": "glintstone-staff",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [38, 0, 0, 0, 0],
@@ -31614,6 +32258,8 @@
         "id": "star-fist",
         "name": "Star Fist",
         "requirements": [12, 8, 0, 0, 0],
+        "category": "fist",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [105, 0, 0, 0, 0],
@@ -31777,6 +32423,8 @@
         "id": "starscourge-greatsword",
         "name": "Starscourge Greatsword",
         "requirements": [38, 12, 15, 0, 0],
+        "category": "colossal-sword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [129, 83, 0, 0, 0],
@@ -31796,6 +32444,8 @@
         "id": "steel-wire-torch",
         "name": "Steel-Wire Torch",
         "requirements": [10, 8, 0, 0, 0],
+        "category": "torch",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [61, 0, 109, 0, 0],
@@ -31815,6 +32465,8 @@
         "id": "stone-club",
         "name": "Stone Club",
         "requirements": [16, 8, 0, 0, 0],
+        "category": "hammer",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [122, 0, 0, 0, 0],
@@ -31978,6 +32630,8 @@
         "id": "stormhawk-axe",
         "name": "Stormhawk Axe",
         "requirements": [19, 15, 0, 0, 0],
+        "category": "axe",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [130, 0, 0, 0, 0],
@@ -31997,6 +32651,8 @@
         "id": "sun-realm-shield",
         "name": "Sun Realm Shield",
         "requirements": [8, 0, 0, 0, 0],
+        "category": "medium-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [74, 0, 0, 0, 0],
@@ -32160,6 +32816,8 @@
         "id": "sword-of-milos",
         "name": "Sword of Milos",
         "requirements": [15, 19, 0, 0, 0],
+        "category": "greatsword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [141, 0, 0, 0, 0],
@@ -32179,6 +32837,8 @@
         "id": "sword-of-night-and-flame",
         "name": "Sword of Night and Flame",
         "requirements": [12, 12, 24, 24, 0],
+        "category": "straight-sword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [87, 56, 56, 0, 0],
@@ -32198,6 +32858,8 @@
         "id": "sword-of-st.-trina",
         "name": "Sword of St. Trina",
         "requirements": [10, 12, 14, 0, 0],
+        "category": "straight-sword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [107, 32, 0, 0, 0],
@@ -32217,6 +32879,8 @@
         "id": "thorned-whip",
         "name": "Thorned Whip",
         "requirements": [8, 16, 0, 0, 0],
+        "category": "whip",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [102, 0, 0, 0, 0],
@@ -32380,6 +33044,8 @@
         "id": "torch",
         "name": "Torch",
         "requirements": [5, 5, 0, 0, 0],
+        "category": "torch",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [54, 0, 97, 0, 0],
@@ -32399,6 +33065,8 @@
         "id": "torchpole",
         "name": "Torchpole",
         "requirements": [14, 15, 0, 0, 0],
+        "category": "spear",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [104, 0, 31, 0, 0],
@@ -32418,6 +33086,8 @@
         "id": "treespear",
         "name": "Treespear",
         "requirements": [15, 22, 0, 18, 0],
+        "category": "great-spear",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [122, 0, 0, 0, 79],
@@ -32581,6 +33251,8 @@
         "id": "troll-knights-sword",
         "name": "Troll Knight's Sword",
         "requirements": [20, 14, 18, 0, 0],
+        "category": "colossal-sword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [124, 80, 0, 0, 0],
@@ -32600,6 +33272,8 @@
         "id": "trolls-golden-sword",
         "name": "Troll's Golden Sword",
         "requirements": [29, 10, 0, 0, 0],
+        "category": "colossal-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [155, 0, 0, 0, 0],
@@ -32763,6 +33437,8 @@
         "id": "trolls-hammer",
         "name": "Troll's Hammer",
         "requirements": [28, 8, 0, 10, 0],
+        "category": "colossal-weapon",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [153, 0, 45, 0, 0],
@@ -32926,6 +33602,8 @@
         "id": "twinbird-kite-shield",
         "name": "Twinbird Kite Shield",
         "requirements": [12, 0, 0, 0, 0],
+        "category": "medium-shield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [78, 0, 0, 0, 0],
@@ -33089,6 +33767,8 @@
         "id": "twinblade",
         "name": "Twinblade",
         "requirements": [10, 18, 0, 0, 0],
+        "category": "twinblade",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [119, 0, 0, 0, 0],
@@ -33252,6 +33932,8 @@
         "id": "twinned-knight-swords",
         "name": "Twinned Knight Swords",
         "requirements": [16, 18, 0, 0, 0],
+        "category": "twinblade",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [122, 0, 0, 0, 0],
@@ -33415,6 +34097,8 @@
         "id": "uchigatana",
         "name": "Uchigatana",
         "requirements": [11, 15, 0, 0, 0],
+        "category": "katana",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [115, 0, 0, 0, 0],
@@ -33578,6 +34262,8 @@
         "id": "urumi",
         "name": "Urumi",
         "requirements": [10, 19, 0, 0, 0],
+        "category": "whip",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [101, 0, 0, 0, 0],
@@ -33741,6 +34427,8 @@
         "id": "varres-bouquet",
         "name": "Varre's Bouquet",
         "requirements": [8, 16, 0, 0, 24],
+        "category": "hammer",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [46, 0, 0, 0, 0],
@@ -33760,6 +34448,8 @@
         "id": "venomous-fang",
         "name": "Venomous Fang",
         "requirements": [9, 9, 0, 0, 0],
+        "category": "claw",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [92, 0, 0, 0, 0],
@@ -33923,6 +34613,8 @@
         "id": "veterans-prosthesis",
         "name": "Veteran's Prosthesis",
         "requirements": [15, 12, 0, 0, 0],
+        "category": "fist",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [83, 0, 0, 53, 0],
@@ -33942,6 +34634,8 @@
         "id": "visage-shield",
         "name": "Visage Shield",
         "requirements": [44, 0, 0, 0, 0],
+        "category": "greatshield",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [155, 0, 0, 0, 0],
@@ -33961,6 +34655,8 @@
         "id": "vulgar-militia-saw",
         "name": "Vulgar Militia Saw",
         "requirements": [15, 13, 0, 0, 0],
+        "category": "halberd",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [126, 0, 0, 0, 0],
@@ -34124,6 +34820,8 @@
         "id": "vulgar-militia-shotel",
         "name": "Vulgar Militia Shotel",
         "requirements": [14, 16, 0, 0, 0],
+        "category": "halberd",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [121, 0, 0, 0, 0],
@@ -34287,6 +34985,8 @@
         "id": "vykes-war-spear",
         "name": "Vyke's War Spear",
         "requirements": [16, 20, 0, 18, 0],
+        "category": "great-spear",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [103, 0, 66, 0, 0],
@@ -34306,6 +35006,8 @@
         "id": "wakizashi",
         "name": "Wakizashi",
         "requirements": [9, 13, 0, 0, 0],
+        "category": "dagger",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [94, 0, 0, 0, 0],
@@ -34469,6 +35171,8 @@
         "id": "warhawks-talon",
         "name": "Warhawk's Talon",
         "requirements": [10, 16, 0, 0, 0],
+        "category": "straight-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [101, 0, 0, 0, 0],
@@ -34632,6 +35336,8 @@
         "id": "warped-axe",
         "name": "Warped Axe",
         "requirements": [24, 8, 0, 0, 0],
+        "category": "greataxe",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [118, 0, 0, 0, 0],
@@ -34795,6 +35501,8 @@
         "id": "warpick",
         "name": "Warpick",
         "requirements": [11, 9, 0, 0, 0],
+        "category": "hammer",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [108, 0, 0, 0, 0],
@@ -34958,6 +35666,8 @@
         "id": "watchdogs-greatsword",
         "name": "Watchdog's Greatsword",
         "requirements": [30, 10, 0, 0, 0],
+        "category": "colossal-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [142, 0, 0, 0, 0],
@@ -35121,6 +35831,8 @@
         "id": "watchdogs-staff",
         "name": "Watchdog's Staff",
         "requirements": [34, 10, 0, 0, 0],
+        "category": "colossal-weapon",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [165, 0, 0, 0, 0],
@@ -35140,6 +35852,8 @@
         "id": "weathered-straight-sword",
         "name": "Weathered Straight Sword",
         "requirements": [7, 10, 0, 0, 0],
+        "category": "straight-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [103, 0, 0, 0, 0],
@@ -35303,6 +36017,8 @@
         "id": "whip",
         "name": "Whip",
         "requirements": [8, 14, 0, 0, 0],
+        "category": "whip",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [100, 0, 0, 0, 0],
@@ -35466,6 +36182,8 @@
         "id": "wing-of-astel",
         "name": "Wing of Astel",
         "requirements": [7, 17, 20, 0, 0],
+        "category": "curved-sword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [65, 78, 0, 0, 0],
@@ -35485,6 +36203,8 @@
         "id": "winged-greathorn",
         "name": "Winged Greathorn",
         "requirements": [30, 20, 0, 0, 0],
+        "category": "greataxe",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [130, 0, 0, 0, 0],
@@ -35504,6 +36224,8 @@
         "id": "winged-scythe",
         "name": "Winged Scythe",
         "requirements": [16, 16, 0, 24, 0],
+        "category": "scythe",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [87, 0, 0, 0, 104],
@@ -35523,6 +36245,8 @@
         "id": "wooden-greatshield",
         "name": "Wooden Greatshield",
         "requirements": [14, 0, 0, 0, 0],
+        "category": "greatshield",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [95, 0, 0, 0, 0],
@@ -35686,6 +36410,8 @@
         "id": "zamor-curved-sword",
         "name": "Zamor Curved Sword",
         "requirements": [16, 18, 0, 0, 0],
+        "category": "curved-greatsword",
+        "unique": true,
         "infusions": {
             "standard": {
                 "damage": [125, 0, 0, 0, 0],
@@ -35705,6 +36431,8 @@
         "id": "zweihander",
         "name": "Zweihander",
         "requirements": [19, 11, 0, 0, 0],
+        "category": "colossal-sword",
+        "unique": false,
         "infusions": {
             "standard": {
                 "damage": [141, 0, 0, 0, 0],

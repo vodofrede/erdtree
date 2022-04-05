@@ -190,10 +190,6 @@ th {
     padding: 0.5em;
 }
 
-th {
-    border-bottom: 1px solid var(--border);
-}
-
 /* buttons & input */
 button {
     /* border: var(--border);
@@ -232,7 +228,8 @@ select * {
 .cards article {
     text-align: center;
 
-    width: 32%;
+    flex-basis: 40%;
+    margin: 0.2rem;
 
     border: 1px solid var(--font-color);
     border-radius: 5px;
@@ -263,6 +260,7 @@ select * {
     border: 1px solid var(--border);
     border-radius: 5px;
     background-color: var(--lighter);
+    min-width: 250px;
 }
 
 .app article > * {
