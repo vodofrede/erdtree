@@ -3,7 +3,7 @@
     :root {
         --primary: white;
         --lighter: #f8f8ff;
-        --darker: #f3f3f3;
+        --darker: #f8f8ff;
         --border: grey;
         --font-color: black;
         --font-inverted: white;
@@ -79,6 +79,7 @@ header {
 main {
     display: flex;
     flex-direction: column;
+    margin-bottom: 1rem;
 }
 
 footer {
@@ -177,25 +178,32 @@ li {
 table {
     text-align: center;
     width: 100%;
+    height: 100%;
+    border-collapse: collapse;
 
-    margin-bottom: 10px;
-    border: 1px solid var(--border);
-    border-radius: 5px;
+    outline: 1px solid var(--border);
+    border-radius: 2px;
 
-    background-color: var(--lighter);
+    background-color: var(--primary);
 }
 
 td,
 th {
-    padding: 0.5em;
+    padding: 0.4rem;
+}
+
+thead,
+tbody {
+    margin: 0;
+    padding: 0;
 }
 
 /* buttons & input */
 button {
     /* border: var(--border);
     border-radius: 3px;*/
-    margin: 0rem 0rem 0.2rem 0rem;
-    padding: 0.1rem 0.3rem 0.2rem 0.3rem;
+    margin: 0rem 0rem 0.3rem 0rem;
+    padding: 0rem 0.3rem 0.1rem 0.3rem;
     color: black;
 }
 
@@ -204,7 +212,7 @@ label {
 }
 
 input {
-    margin: 0rem 0rem 0.2rem 0rem;
+    margin: 0rem 0rem 0rem 0rem;
     color: black;
 }
 
@@ -255,6 +263,7 @@ select * {
     flex-flow: column nowrap;
     flex-basis: 320px;
     flex-grow: 1;
+    gap: 1px;
 
     padding: 10px;
     border: 1px solid var(--border);
