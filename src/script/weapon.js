@@ -2,7 +2,7 @@ let WEAPONS;
 let INFUSIONS;
 let CORRECTIONS;
 
-let sort = "max";
+let order = "max";
 let ascending = true;
 
 async function init() {
@@ -13,26 +13,39 @@ async function init() {
 }
 
 function update() {
-    // get all parameters
-    let categories = [...document.getElementsByName("category")].filter(el => el.checked).map(el => el.id);
-    let upgraded = document.getElementById("max-upgrade").checked;
+    // get parameters
     let requireStats = document.getElementById("requirements").checked;
-    let infIndex = Object.values(INFUSIONS).findIndex(inf => inf.id == sort);
+    let twoHanding = document.getElementById("2handing").checked;
     let allowedInfusions = [...document.getElementsByName("infusion")]
         .filter(elem => elem.checked)
         .map(elem => elem.value);
+    let categories = [...document.getElementsByName("category")].filter(el => el.checked).map(el => el.id);
+
+    // get upgrade level
+    let upgraded = document.getElementById("max-upgrade").checked;
+
+    // get current stats
     let stats = [...document.getElementsByName("stat")].map(el => parseInt(el.value));
-    let twoHanding = document.getElementById("2handing").checked;
     if (twoHanding) {
         stats[0] = Math.floor(stats[0] * 1.5);
     }
 
-    // fill table
+    let infIndex = Object.values(INFUSIONS).findIndex(inf => inf.id == order);
+
+    // update result table header to only include allowed infusions
+    [...document.getElementsByName("damage-result")].forEach(ty => {
+        ty.hidden = !allowedInfusions.includes(ty.id);
+    });
+
+    // clear table
     let destination = document.getElementById("weapons");
-    destination.innerHTML = ""; // clear table
+    destination.innerHTML = "";
+
+    // fill table
     let template = document.getElementById("weapon");
     Object.values(WEAPONS)
         .filter(weapon => {
+            // filter out weapons that don't fit the current parameters
             return (
                 (weapon.requirements.every((stat, i) => stat <= stats[i]) || !requireStats) &&
                 categories.includes(weapon.category) &&
@@ -40,16 +53,18 @@ function update() {
             );
         })
         .map(weapon => {
+            // calculate attack ratings for every allowed infusion as well as the maximum damage of any infusion
             let attackRatings = Object.values(INFUSIONS)
                 .filter(inf => allowedInfusions.includes(inf.id))
                 .map(inf => {
-                    return weapon.infusions[inf.id] != null ? damage(weapon, inf.id, upgraded, stats) : 0;
+                    return weapon.infusions[inf.id] != null ? damage(weapon, INFUSIONS[inf.id], upgraded, stats) : 0;
                 });
             let max = Math.max(0, ...attackRatings);
 
             return [weapon, attackRatings, max];
         })
         .sort(([_w1, ar1, m1], [_w2, ar2, m2]) => {
+            // sort based on current sort order
             if (infIndex == -1) {
                 // sort by max
                 return ascending ? m2 - m1 : m1 - m2;
@@ -58,10 +73,12 @@ function update() {
             }
         })
         .forEach(([weapon, attackRatings, max]) => {
+            // clone and append table row to results with correct values
             let clone = template.content.cloneNode(true);
             let tr = clone.children[0];
 
             tr.children[0].children[0].innerHTML = weapon.name;
+            // add a link to the fextralife wiki
             tr.children[0].children[0].href =
                 weapon.id != "unarmed"
                     ? "https://eldenring.wiki.fextralife.com/" + weapon.name.replaceAll(" ", "+")
@@ -69,36 +86,26 @@ function update() {
 
             tr.children[1].innerHTML = max || "-";
             attackRatings.forEach((ar, i) => {
-                tr.children[i + 2].innerHTML = attackRatings[i] || "-";
+                tr.children[i + 2].innerHTML = ar || "-";
             });
 
             destination.appendChild(clone);
         });
-
-    // update result table header to only include allowed infusions
-    [...document.getElementsByName("damage-result")].forEach(ty => {
-        ty.hidden = !allowedInfusions.includes(ty.id);
-    });
 }
 
-function filterWeapons(stats, requireStats, allowedInfusions, damageTypes) {
-    let weapons = Object.values(WEAPONS).filter(weapon => {
-        return allowedInfusions.some(inf => Object.values(weapon.infusions).includes(inf));
-    });
-    if (requireStats) {
-        weapons = weapons.filter(weapon => weapon.requirements.every((stat, i) => stat <= stats[i]));
-    }
-
-    return weapons;
+function setAll(name, state) {
+    [...document.getElementsByName(name), ...document.getElementsByClassName(name)].forEach(el => (el.checked = state));
+    update();
 }
 
-function sortWeapons(weapons, infusionId, upgraded, stats) {
-    return weapons.sort((a, b) => damage(b, infusionId, upgraded, stats) - damage(a, infusionId, upgraded, stats));
+function changeSort(newSort) {
+    ascending = order == newSort ? !ascending : true;
+    order = newSort;
+    update();
 }
 
-function damage(weapon, infusionId, upgraded, stats) {
-    let weaponInfusion = weapon.infusions[infusionId];
-    let infusion = INFUSIONS[infusionId];
+function damage(weapon, infusion, upgraded, stats) {
+    let weaponInfusion = weapon.infusions[infusion.id];
     let upgradeLevel = upgraded ? (weapon.unique ? 10 : 25) : 0;
 
     let base = infusion.damage.map(
@@ -107,22 +114,21 @@ function damage(weapon, infusionId, upgraded, stats) {
 
     let scaling = stats.some((stat, i) => stat < weapon.requirements[i])
         ? base.map(dmg => dmg * -0.4)
-        : base.map((amount, ty) => {
+        : base.map((baseAmount, i) => {
               let statCorrection = corrections(
-                  CORRECTIONS[weaponInfusion.corrections[ty]],
+                  CORRECTIONS[weaponInfusion.corrections[i]],
                   stats,
-                  weaponInfusion.masks[ty],
+                  weaponInfusion.masks[i],
               );
               let statScaling = weaponInfusion.scaling.map(itemScaling => {
                   return (
-                      itemScaling * infusion.scaling[ty] +
-                      itemScaling * infusion.scaling[ty] * infusion.growth[ty] * upgradeLevel
+                      itemScaling * infusion.scaling[i] +
+                      itemScaling * infusion.scaling[i] * infusion.growth[i] * upgradeLevel
                   );
               });
-              let scaling = statScaling.map((statScaling, statIndex) => {
-                  return (amount * statScaling * statCorrection[statIndex]) / 100.0;
-              });
-              return scaling.reduce((sum, n) => sum + n);
+              return statScaling
+                  .map((scaling, statIndex) => (baseAmount * scaling * statCorrection[statIndex]) / 100.0)
+                  .reduce((sum, n) => sum + n);
           });
 
     return Math.floor(base.reduce((sum, n) => sum + n) + scaling.reduce((sum, n) => sum + n));
@@ -130,7 +136,7 @@ function damage(weapon, infusionId, upgraded, stats) {
 
 function corrections(calc, stats, masks) {
     return stats.map((stat, ty) => {
-        if (masks[ty] == 0) {
+        if (!masks[ty]) {
             return 0.0;
         }
 
@@ -141,25 +147,8 @@ function corrections(calc, stats, masks) {
         let growthDelta = (calc.growth[ty][capIndex + 1] || growth) - growth;
         let adjust = calc.adjustments[ty][capIndex];
 
-        if (Math.sign(adjust) != -1) {
-            return growth + growthDelta * ((stat - cap) / capDelta) ** adjust;
-        } else {
-            return growth + growthDelta * (1 - (1 - (stat - cap) / capDelta) ** Math.abs(adjust));
-        }
+        return Math.sign(adjust) != -1
+            ? growth + growthDelta * ((stat - cap) / capDelta) ** adjust
+            : growth + growthDelta * (1 - (1 - (stat - cap) / capDelta) ** Math.abs(adjust));
     });
-}
-
-function setAll(name, state) {
-    [...document.getElementsByName(name), ...document.getElementsByClassName(name)].forEach(el => (el.checked = state));
-    update();
-}
-
-function changeSort(newSort) {
-    if (sort == newSort) {
-        ascending = !ascending;
-    } else {
-        ascending = true;
-    }
-    sort = newSort;
-    update();
 }
