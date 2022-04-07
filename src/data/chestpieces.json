@@ -1,6 +1,6 @@
 {
     "no-chestpiece": {
-        "id": "no-chestpieces",
+        "id": "no-chestpiece",
         "name": "No chestpiece",
         "defenses": [0, 0, 0, 0, 0, 0, 0, 0],
         "resistances": [0, 0, 0, 0],
