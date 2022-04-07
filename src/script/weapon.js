@@ -15,11 +15,13 @@ async function init() {
 function update() {
     // get parameters
     let requireStats = document.getElementById("requirements").checked;
-    let twoHanding = document.getElementById("2handing").checked;
+    let oneHandable = document.getElementById("2h-sometimes").checked;
+    let twoHanding = document.getElementById("2h-always").checked || oneHandable;
     let allowedInfusions = [...document.getElementsByName("infusion")]
         .filter(elem => elem.checked)
         .map(elem => elem.value);
     let categories = [...document.getElementsByName("category")].filter(el => el.checked).map(el => el.id);
+    let onlyBuffable = document.getElementById("buffable").checked;
 
     // get upgrade level
     let upgraded = document.getElementById("max-upgrade").checked;
@@ -48,8 +50,10 @@ function update() {
             // filter out weapons that don't fit the current parameters
             return (
                 (weapon.requirements.every((stat, i) => stat <= stats[i]) || !requireStats) &&
+                (weapon.requirements[0] <= Math.ceil(stats[0] / 1.5) || !oneHandable) &&
                 categories.includes(weapon.category) &&
-                allowedInfusions.some(id => weapon.infusions[id] != undefined)
+                allowedInfusions.some(id => weapon.infusions[id] != undefined) &&
+                (!onlyBuffable || Object.values(weapon.infusions).some(inf => inf.buffable))
             );
         })
         .map(weapon => {
@@ -57,7 +61,11 @@ function update() {
             let attackRatings = Object.values(INFUSIONS)
                 .filter(inf => allowedInfusions.includes(inf.id))
                 .map(inf => {
-                    return weapon.infusions[inf.id] != null ? damage(weapon, INFUSIONS[inf.id], upgraded, stats) : 0;
+                    return weapon.infusions[inf.id] != null
+                        ? !onlyBuffable || weapon.infusions[inf.id].buffable
+                            ? damage(weapon, INFUSIONS[inf.id], upgraded, stats)
+                            : 0
+                        : 0;
                 });
             let max = Math.max(0, ...attackRatings);
 

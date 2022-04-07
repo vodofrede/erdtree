@@ -85,16 +85,33 @@
                 </div>
                 <div>
                     <span>
-                        <input id="2handing" type="checkbox"
+                        <input type="checkbox" id="buffable"
                             onchange="update()" />
-                        <label for="2handing">2-handing (1.5x strength)</label>
+                        <label for="buffable">Buffable Only</label>
+                    </span>
+                </div>
+                <hr>
+                <b>Handedness</b>
+                <div>
+                    <span>
+                        <input type="radio" id="2h-never" name="handedness"
+                            onchange="update()" checked>
+                        <label for="2h-never">One-handing</label>
                     </span>
                 </div>
                 <div>
                     <span>
-                        <input type="checkbox" id="buffable"
+                        <input type="radio" id="2h-sometimes" name="handedness"
                             onchange="update()" />
-                        <label for="buffable">Only Buffable</label>
+                        <label for="2h-sometimes">Usable
+                            One-Handed</label>
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <input id="2h-always" type="radio" name="handedness"
+                            onchange="update()" name="two-handing" />
+                        <label for="2h-always">Two-handing</label>
                     </span>
                 </div>
                 <hr />
