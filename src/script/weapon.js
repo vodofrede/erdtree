@@ -13,6 +13,11 @@ async function init() {
 }
 
 function update() {
+    // clamp input stats
+    let stats = [...document.getElementsByName("stat")].map(el => {
+        return (el.value = Math.min(Math.max(parseInt(el.value), 0), 99));
+    });
+
     // get parameters
     let requireStats = document.getElementById("requirements").checked;
     let oneHandable = document.getElementById("2h-sometimes").checked;
@@ -27,7 +32,7 @@ function update() {
     let upgraded = document.getElementById("max-upgrade").checked;
 
     // get current stats
-    let stats = [...document.getElementsByName("stat")].map(el => parseInt(el.value));
+
     if (twoHanding) {
         stats[0] = Math.floor(stats[0] * 1.5);
     }
@@ -99,6 +104,17 @@ function update() {
 
             destination.appendChild(clone);
         });
+}
+
+function resetAll() {
+    [...document.getElementsByName("stat")].forEach(el => (el.value = 10));
+    document.getElementById("max-upgrade").click();
+    document.getElementById("requirements").checked = true;
+    document.getElementById("buffable").checked = false;
+    document.getElementById("2h-never").click();
+    setAll("infusion", true);
+    setAll("category", false);
+    setAll("weapon", true);
 }
 
 function setAll(name, state) {
