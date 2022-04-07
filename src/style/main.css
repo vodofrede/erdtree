@@ -179,12 +179,15 @@ table {
     text-align: center;
     width: 100%;
     height: 100%;
-    border-collapse: collapse;
-
-    outline: 1px solid var(--border);
-    border-radius: 2px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    border-spacing: 0px;
 
     background-color: var(--primary);
+}
+
+th {
+    border-bottom: 1px solid var(--border);
 }
 
 td,
