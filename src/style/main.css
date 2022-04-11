@@ -2,12 +2,12 @@
 @media (prefers-color-scheme: light) {
     :root {
         --primary: white;
-        --lighter: #f8f8ff;
-        --darker: #f8f8ff;
+        --lighter: ghostwhite;
+        --darker: ghostwhite;
         --border: grey;
         --font-color: black;
         --font-inverted: white;
-        --link-color: #1d7484;
+        --link-color: teal;
     }
 }
 
