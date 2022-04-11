@@ -23,13 +23,13 @@
 
 <body onload="init();">
     <nav>
-        <h1><a href="/">Elden Ring Build Planner</a></h1>
+        <h2><a href="/">Elden Ring Build Planner</a></h2>
         <ul>
             <a href="/planner.html">Build Planner</a>
         </ul>
     </nav>
     <header>
-        <h2>Class Optimizer</h2>
+        <h1>Class Optimizer</h1>
     </header>
     <main>
         <div class="app">
@@ -144,13 +144,14 @@
             </article>
             <article>
                 <div>
-                    <b>Helmet</b>
+                    <label>
+                        <b>Helmet</b>
+                    </label>
                     <select id="helmet" name="equipment" onchange="update()">
                         <option id="none" value="none">No Helmet</option>
                     </select>
                 </div>
                 <hr />
-                <b>Talismans</b>
                 <div>
                     <ul id="talismans">
                         <template id="talisman">
@@ -170,106 +171,134 @@
                 </div>
             </article>
         </div>
-        <h3 style="text-align: center">Softcaps</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Skill</th>
-                    <th>Stat</th>
-                    <th>Softcaps</th>
-                    <th>Notes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Vigor</td>
-                    <td>HP</td>
-                    <td>25 (800HP)<br />40 (1450HP)<br />60 (1900HP)</td>
-                    <td>A +12 upgraded crimson flask heals for 810HP.</td>
-                </tr>
-                <tr>
-                    <td>Mind</td>
-                    <td>FP</td>
-                    <td>40 (220FP)</td>
-                    <td>A +12 upgraded cerulean flask gives 220FP.</td>
-                </tr>
-                <tr>
-                    <td>Endurance</td>
-                    <td>Stamina</td>
-                    <td>30 (125stm.)<br />50 (155stm.)</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Equip Load</td>
-                    <td>25 (72 wgt.)<br />60 (120 wgt.)</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Strength</td>
-                    <td>AR</td>
-                    <td>37 ≃ 55 (2h)<br />54 ≃ 80 (2h)<br />66 ≃ 99 (2h)<br />80
-                    </td>
-                    <td>2-handing gives you 1.5x strength.</td>
-                </tr>
-                <tr>
-                    <td>Dexterity</td>
-                    <td>AR</td>
-                    <td>55, 80</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Intelligence</td>
-                    <td>AR</td>
-                    <td>55, 80</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Spell Buff</td>
-                    <td>60, 80</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Faith</td>
-                    <td>AR</td>
-                    <td>55, 80</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Spell Buff</td>
-                    <td>60, 80</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Arcane</td>
-                    <td>AR</td>
-                    <td>55, 80</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Status</td>
-                    <td>45, 60</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Spell Buff</td>
-                    <td>60, 80 (Pure catalyst)<br />30, 45 (Hybrid catalyst)
-                    </td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
+        <div>
+            <h2 style="text-align: center">Explanation & Usage</h2>
+            <p>
+                The four columns in the second box represent, in order:
+            </p>
+            <ol>
+                <li>
+                    Class base stats, e.g. the stats the class has at its base
+                    level.
+                </li>
+                <li>
+                    Desired stats. Here, you should input what the absolute
+                    minimum stats for your build should be. Leave the input
+                    fields blank for stats you don't care about.
+                </li>
+                <li>
+                    Final stats. These are your characters stats as they should
+                    appear on your level-up screen.
+                </li>
+                <li>
+                    Virtual stats. These are your characters stats after
+                    talismans and helmet stat buffs are applied.
+                </li>
+            </ol>
+        </div>
+        <div>
+            <h2 style="text-align: center">Softcaps</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Stat</th>
+                        <th>Softcaps</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vigor</td>
+                        <td>HP</td>
+                        <td>25 (800HP)<br />40 (1450HP)<br />60 (1900HP)</td>
+                        <td>A +12 upgraded crimson flask heals for 810HP.</td>
+                    </tr>
+                    <tr>
+                        <td>Mind</td>
+                        <td>FP</td>
+                        <td>40 (220FP)</td>
+                        <td>A +12 upgraded cerulean flask gives 220FP.</td>
+                    </tr>
+                    <tr>
+                        <td>Endurance</td>
+                        <td>Stamina</td>
+                        <td>30 (125stm.)<br />50 (155stm.)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Equip Load</td>
+                        <td>25 (72 wgt.)<br />60 (120 wgt.)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Strength</td>
+                        <td>AR</td>
+                        <td>37 ≃ 55 (2h)<br />54 ≃ 80 (2h)<br />66 ≃ 99
+                            (2h)<br />80
+                        </td>
+                        <td>2-handing gives you 1.5x strength.</td>
+                    </tr>
+                    <tr>
+                        <td>Dexterity</td>
+                        <td>AR</td>
+                        <td>55, 80</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Intelligence</td>
+                        <td>AR</td>
+                        <td>55, 80</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Spell Buff</td>
+                        <td>60, 80</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Faith</td>
+                        <td>AR</td>
+                        <td>55, 80</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Spell Buff</td>
+                        <td>60, 80</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Arcane</td>
+                        <td>AR</td>
+                        <td>55, 80</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Status</td>
+                        <td>45, 60</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Spell Buff</td>
+                        <td>60, 80 (Pure catalyst)<br />30, 45 (Hybrid catalyst)
+                        </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
     <footer>
-        <h5>
+        <h4>
             Erdtree Planner (<a
                 href="https://git.palmoe.dk/vodofrede/erdtree">available under
                 BSD-3-Clause license</a>)
-        </h5>
+        </h4>
         <h5>Copyright 2022 vodofrede</h5>
     </footer>
 </body>

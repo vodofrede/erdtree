@@ -94,7 +94,7 @@ footer {
 
 hr {
     color: var(--border);
-    margin-top: 0.3rem;
+    margin-top: 0.12rem;
     margin-bottom: 0.3rem;
 }
 
@@ -227,7 +227,9 @@ button {
 }
 
 label {
+    display: inline-block;
     user-select: none;
+    text-align: right;
 }
 
 input {
@@ -252,14 +254,18 @@ select option {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 1.5rem;
+}
+
+.cards * {
+    flex-basis: 40%;
 }
 
 .cards article {
     text-align: center;
 
     flex-basis: 40%;
-    margin: 0.2rem;
+    padding: 0.8rem 0rem 0.9rem 0rem;
 
     border: 1px solid var(--font-color);
     border-radius: 5px;
@@ -299,7 +305,8 @@ select option {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-content: flex-start;
+    align-content: center;
+    text-align: center;
 }
 
 .app article input {
