@@ -1,283 +1,250 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <!-- metadata -->
+        <meta charset="utf-8" />
+        <meta name="language" content="english" />
+        <meta http-equiv="content-language" content="en-us" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style/main.css" />
+        <!-- title and description -->
+        <title>Build Planner - Erdtree</title>
+        <link rel="icon" type="image/x-icon " href="/resource/favicon.ico" />
+        <meta name="description" content="Build Planner for Elden Ring - With import and export" />
+        <meta name="author" content="vodofrede" />
+        <meta property="og:title" content="Build Planner - Erdtree" />
+        <meta property="og:description" content="Build Planner for Elden Ring - With import and export" />
+        <meta property="og:url" content="https://erdtree.palmoe.dk/planner" />
+        <!-- scripts -->
+        <script src="script/planner.js"></script>
+    </head>
 
-<head>
-    <!-- metadata -->
-    <meta charset="utf-8" />
-    <meta name="language" content="english" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style/main.css" />
-    <!-- title and description -->
-    <title>Build Planner - Erdtree</title>
-    <link rel="icon" type="image/x-icon " href="/resource/favicon.ico">
-    <meta name="description"
-        content="Build Planner for Elden Ring - With import and export" />
-    <meta name="author" content="vodofrede">
-    <meta property="og:title" content="Build Planner - Erdtree" />
-    <meta property="og:description"
-        content="Build Planner for Elden Ring - With import and export" />
-    <meta property="og:url" content="https://erdtree.palmoe.dk/planner" />
-    <!-- scripts -->
-    <script src="script/planner.js"></script>
-</head>
-
-<body onload="init()">
-    <nav>
-        <h2><a href="/">Elden Ring Build Planner</a></h2>
-        <ul>
-            <li><a href="/planner.html">Build Planner</a></li>
-        </ul>
-    </nav>
-    <header>
-        <h1>Build Planner</h1>
-    </header>
-    <main>
-        <div class="app">
-            <!-- Class -->
-            <article style="flex-basis: 20%; max-width: 320px">
-                <div>
-                    <b>Character</b>
-                </div>
-                <hr />
-                <div>
-                    <b>Name</b>
-                    <input id="name" />
-                </div>
-                <div>
-                    <label for="class"><b>Starting Class</b></label>
+    <body onload="init()">
+        <nav>
+            <h2><a href="/">Elden Ring Build Planner</a></h2>
+            <ul>
+                <li><a href="/planner.html">Build Planner</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Build Planner</h1>
+        </header>
+        <main>
+            <div class="app">
+                <!-- Class -->
+                <article style="flex-basis: 20%; max-width: 320px">
                     <div>
-                        <select id="class" onchange="update()">
-                            <option id="wretch" selected>Wretch</option>
-                            <option id="vagabond">Vagabond</option>
-                            <option id="warrior">Warrior</option>
-                            <option id="hero">Hero</option>
-                            <option id="bandit">Bandit</option>
-                            <option id="astrologer">Astrologer</option>
-                            <option id="prophet">Prophet</option>
-                            <option id="samurai">Samurai</option>
-                            <option id="prisoner">Prisoner</option>
-                            <option id="confessor">Confessor</option>
-                        </select>
+                        <b>Character</b>
                     </div>
-                </div>
-                <div>
-                    <label><b>Level</b></label>
-                    <span>
-                        <input type="number" id="final-level" disabled />
-                    </span>
-                </div>
-                <div>
-                    <label for="vigor">Vigor</label>
-                    <span>
-                        <input type="number" id="vigor" name="final" min="0"
-                            max="99" onchange="update()" />
-                    </span>
-                </div>
-                <div>
-                    <label for="mind">Mind</label>
-                    <span>
-                        <input type="number" id="mind" name="final" min="0"
-                            max="99" onchange="update()" />
-                    </span>
-                </div>
-                <div>
-                    <label for="endurance">Endurance</label>
-                    <span>
-                        <input type="number" id="endurance" name="final" min="0"
-                            max="99" onchange="update()" />
-                    </span>
-                </div>
-                <div>
-                    <label for="strength">Strength</label>
-                    <span>
-                        <input type="number" id="strength" name="final" min="0"
-                            max="99" onchange="update()" />
-                    </span>
-                </div>
-                <div>
-                    <label for="dexterity">Dexterity</label>
-                    <span>
-                        <input type="number" id="dexterity" name="final" min="0"
-                            max="99" onchange="update()" />
-                    </span>
-                </div>
-                <div>
-                    <label for="intelligence">Intelligence</label>
-                    <span>
-                        <input type="number" id="intelligence" name="final"
-                            min="0" max="99" onchange="update()" />
-                    </span>
-                </div>
-                <div>
-                    <label for="faith">Faith</label>
-                    <span>
-                        <input type="number" id="faith" name="final" min="0"
-                            max="99" onchange="update()" />
-                    </span>
-                </div>
-                <div>
-                    <label for="arcane">Arcane</label>
-                    <span>
-                        <input type="number" id="arcane" name="final" min="0"
-                            max="99" onchange="update()" />
-                    </span>
-                </div>
-                <hr />
-                <b>Import</b>
-                <div>
-                    <input type="file" />
-                </div>
-                <hr />
-                <b>Export</b>
-                <div>
-                    <button>Export</button>
-                </div>
-            </article>
-            <!-- equipment -->
-            <article style="flex-basis: 20%; max-width: 450px">
-                <b>Equipment</b>
-                <hr />
-                <b>Weapons & Shields</b>
-                <template id="picker">
-                    <div class="popup">
-                        <input type="image" src="/resource/icon/standard.jpg"
-                            height="20px" />
-                    </div>
-                </template>
-                <div>
+                    <hr />
                     <div>
+                        <b>Name</b>
+                        <input id="name" />
+                    </div>
+                    <div>
+                        <label for="class"><b>Starting Class</b></label>
+                        <div>
+                            <select id="class" onchange="update()">
+                                <option id="wretch" selected>Wretch</option>
+                                <option id="vagabond">Vagabond</option>
+                                <option id="warrior">Warrior</option>
+                                <option id="hero">Hero</option>
+                                <option id="bandit">Bandit</option>
+                                <option id="astrologer">Astrologer</option>
+                                <option id="prophet">Prophet</option>
+                                <option id="samurai">Samurai</option>
+                                <option id="prisoner">Prisoner</option>
+                                <option id="confessor">Confessor</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label><b>Level</b></label>
                         <span>
-                            <select id="lh1" name="weapon"
-                                onchange="update()"></select>
-                        </span>
-                        <span>
-                            <img id="lh1-img" src="/resource/icon/standard.jpg"
-                                width="20px" />
-                            <select id="lh1-infusion" name="infusion"></select>
+                            <input type="number" id="final-level" disabled />
                         </span>
                     </div>
                     <div>
+                        <label for="vigor">Vigor</label>
                         <span>
-                            <select id="rh1" name="weapon"
-                                onchange="update()"></select>
-                        </span>
-                        <span>
-                            <select id="rh1-infusion" name="infusion"></select>
-                            <img id="rh1-img" src="/resource/icon/standard.jpg"
-                                width="20px" />
-                        </span>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <span>
-                            <select id="lh2" name="weapon"
-                                onchange="update()"></select>
-                        </span>
-                        <span>
-                            <img id="lh2-img" src="/resource/icon/standard.jpg"
-                                width="20px" />
-                            <select id="lh2-infusion" name="infusion"></select>
+                            <input type="number" id="vigor" name="final" min="0" max="99" onchange="update()" />
                         </span>
                     </div>
                     <div>
+                        <label for="mind">Mind</label>
                         <span>
-                            <select id="rh2" name="weapon"
-                                onchange="update()"></select>
-                        </span>
-                        <span>
-                            <select id="rh2-infusion" name="infusion"></select>
-                            <img id="rh2-img" src="/resource/icon/standard.jpg"
-                                width="20px" />
-                        </span>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <span>
-                            <select id="lh3" name="weapon"
-                                onchange="update()"></select>
-                        </span>
-                        <span>
-                            <img id="lh3-img" src="/resource/icon/standard.jpg"
-                                width="20px" />
-                            <select id="lh3-infusion" name="infusion"></select>
+                            <input type="number" id="mind" name="final" min="0" max="99" onchange="update()" />
                         </span>
                     </div>
                     <div>
+                        <label for="endurance">Endurance</label>
                         <span>
-                            <select id="rh3" name="weapon"
-                                onchange="update()"></select>
-                        </span>
-                        <span>
-                            <select id="rh3-infusion" name="infusion"></select>
-                            <img id="rh3-img" src="/resource/icon/standard.jpg"
-                                width="20px" />
+                            <input type="number" id="endurance" name="final" min="0" max="99" onchange="update()" />
                         </span>
                     </div>
-                </div>
-                <hr />
-                <b>Armor</b>
-                <div>
-                    <label>Helmet</label>
-                    <select id="helmet" name="armor"
-                        onchange="update()"></select>
-                </div>
-                <div>
-                    <label>Chestpiece</label>
-                    <select id="chestpiece" name="armor"
-                        onchange="update()"></select>
-                </div>
-                <div>
-                    <label>Gauntlets</label>
-                    <select id="gauntlets" name="armor"
-                        onchange="update()"></select>
-                </div>
-                <div>
-                    <label>Leggings</label>
-                    <select id="leggings" name="armor"
-                        onchange="update()"></select>
-                </div>
-                <hr />
-                <li><b>Talismans</b></li>
-                <div>
-                    <label>Talisman #1</label>
-                    <select id="talisman-1" name="talisman"
-                        onchange="update()"></select>
-                </div>
-                <div>
-                    <label>Talisman #2</label>
-                    <select id="talisman-2" name="talisman"
-                        onchange="update()"></select>
-                </div>
-                <div>
-                    <label>Talisman #3</label>
-                    <select id="talisman-3" name="talisman"
-                        onchange="update()"></select>
-                </div>
-                <div>
-                    <label>Talisman #4</label>
-                    <select id="talisman-4" name="talisman"
-                        onchange="update()"></select>
-                </div>
-                <hr />
-                <li><b>Spells</b></li>
-            </article>
-        </div>
-        <div>
-            <h2 style="text-align: center">Explanation & Usage</h2>
-            <p>This page is under development, don't expect everything to work
-                perfectly.</p>
-        </div>
-    </main>
-    <footer>
-        <h5>
-            Erdtree Planner (<a
-                href="https://git.palmoe.dk/vodofrede/erdtree">available under
-                BSD-3-Clause license</a>)
-        </h5>
-        <h5>Copyright 2022 vodofrede</h5>
-    </footer>
-</body>
-
+                    <div>
+                        <label for="strength">Strength</label>
+                        <span>
+                            <input type="number" id="strength" name="final" min="0" max="99" onchange="update()" />
+                        </span>
+                    </div>
+                    <div>
+                        <label for="dexterity">Dexterity</label>
+                        <span>
+                            <input type="number" id="dexterity" name="final" min="0" max="99" onchange="update()" />
+                        </span>
+                    </div>
+                    <div>
+                        <label for="intelligence">Intelligence</label>
+                        <span>
+                            <input type="number" id="intelligence" name="final" min="0" max="99" onchange="update()" />
+                        </span>
+                    </div>
+                    <div>
+                        <label for="faith">Faith</label>
+                        <span>
+                            <input type="number" id="faith" name="final" min="0" max="99" onchange="update()" />
+                        </span>
+                    </div>
+                    <div>
+                        <label for="arcane">Arcane</label>
+                        <span>
+                            <input type="number" id="arcane" name="final" min="0" max="99" onchange="update()" />
+                        </span>
+                    </div>
+                    <hr />
+                    <b>Import</b>
+                    <div>
+                        <input type="file" />
+                    </div>
+                    <hr />
+                    <b>Export</b>
+                    <div>
+                        <button>Export</button>
+                    </div>
+                </article>
+                <!-- equipment -->
+                <article style="flex-basis: 20%; max-width: 450px">
+                    <b>Equipment</b>
+                    <hr />
+                    <b>Weapons & Shields</b>
+                    <template id="picker">
+                        <div class="popup">
+                            <input type="image" src="/resource/icon/standard.jpg" height="20px" />
+                        </div>
+                    </template>
+                    <div>
+                        <div>
+                            <span>
+                                <select id="lh1" name="weapon" onchange="update()"></select>
+                            </span>
+                            <span>
+                                <img id="lh1-img" src="/resource/icon/standard.jpg" width="20px" />
+                                <select id="lh1-infusion" name="infusion"></select>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <select id="rh1" name="weapon" onchange="update()"></select>
+                            </span>
+                            <span>
+                                <select id="rh1-infusion" name="infusion"></select>
+                                <img id="rh1-img" src="/resource/icon/standard.jpg" width="20px" />
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <span>
+                                <select id="lh2" name="weapon" onchange="update()"></select>
+                            </span>
+                            <span>
+                                <img id="lh2-img" src="/resource/icon/standard.jpg" width="20px" />
+                                <select id="lh2-infusion" name="infusion"></select>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <select id="rh2" name="weapon" onchange="update()"></select>
+                            </span>
+                            <span>
+                                <select id="rh2-infusion" name="infusion"></select>
+                                <img id="rh2-img" src="/resource/icon/standard.jpg" width="20px" />
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <span>
+                                <select id="lh3" name="weapon" onchange="update()"></select>
+                            </span>
+                            <span>
+                                <img id="lh3-img" src="/resource/icon/standard.jpg" width="20px" />
+                                <select id="lh3-infusion" name="infusion"></select>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <select id="rh3" name="weapon" onchange="update()"></select>
+                            </span>
+                            <span>
+                                <select id="rh3-infusion" name="infusion"></select>
+                                <img id="rh3-img" src="/resource/icon/standard.jpg" width="20px" />
+                            </span>
+                        </div>
+                    </div>
+                    <hr />
+                    <b>Armor</b>
+                    <div>
+                        <label>Helmet</label>
+                        <select id="helmet" name="armor" onchange="update()"></select>
+                    </div>
+                    <div>
+                        <label>Chestpiece</label>
+                        <select id="chestpiece" name="armor" onchange="update()"></select>
+                    </div>
+                    <div>
+                        <label>Gauntlets</label>
+                        <select id="gauntlets" name="armor" onchange="update()"></select>
+                    </div>
+                    <div>
+                        <label>Leggings</label>
+                        <select id="leggings" name="armor" onchange="update()"></select>
+                    </div>
+                    <hr />
+                    <li><b>Talismans</b></li>
+                    <div>
+                        <label>Talisman #1</label>
+                        <select id="talisman-1" name="talisman" onchange="update()"></select>
+                    </div>
+                    <div>
+                        <label>Talisman #2</label>
+                        <select id="talisman-2" name="talisman" onchange="update()"></select>
+                    </div>
+                    <div>
+                        <label>Talisman #3</label>
+                        <select id="talisman-3" name="talisman" onchange="update()"></select>
+                    </div>
+                    <div>
+                        <label>Talisman #4</label>
+                        <select id="talisman-4" name="talisman" onchange="update()"></select>
+                    </div>
+                    <hr />
+                    <li><b>Spells</b></li>
+                </article>
+            </div>
+            <div>
+                <h2 style="text-align: center">Explanation & Usage</h2>
+                <p>This page is under development, don't expect everything to work perfectly.</p>
+            </div>
+        </main>
+        <footer>
+            <h5>
+                Erdtree Planner (<a href="https://git.palmoe.dk/vodofrede/erdtree"
+                    >available under BSD-3-Clause license</a
+                >)
+            </h5>
+            <h5>Copyright 2022 vodofrede</h5>
+        </footer>
+    </body>
 </html>
