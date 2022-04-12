@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="style/main.css" />
     <!-- title and description -->
     <title>Weapon Finder - Erdtree</title>
-    <link rel="icon" type="image/x-icon " href="/resource/favicon.ico">
+    <link rel="icon" type="image/x-icon " href="/resource/favicon.ico" />
     <meta name="description"
         content="Weapon Finder/Optimizer for Elden Ring - Search by weapon category, infusion and current stats" />
-    <meta name="author" content="vodofrede">
+    <meta name="author" content="vodofrede" />
     <meta property="og:title" content="Weapon Finder - Erdtree" />
     <meta property="og:description"
         content="Weapon Finder/Optimizer for Elden Ring - Search by weapon category, infusion and current stats" />
@@ -37,9 +37,8 @@
             <article style="flex-basis: 15%">
                 <div>
                     <b>Parameters</b>
-                    <button onclick="resetAll()" style="margin-bottom: 0px">
-                        Reset All
-                    </button>
+                    <button onclick="resetAll()"
+                        style="margin-bottom: 0px">Reset All</button>
                 </div>
                 <hr />
                 <div>
@@ -97,12 +96,12 @@
                         <label for="buffable">Buffable Only</label>
                     </span>
                 </div>
-                <hr>
+                <hr />
                 <b>Handedness</b>
                 <div>
                     <span>
                         <input type="radio" id="2h-never" name="handedness"
-                            onchange="update()" checked>
+                            onchange="update()" checked />
                         <label for="2h-never">One-handing</label>
                     </span>
                 </div>
@@ -110,8 +109,7 @@
                     <span>
                         <input type="radio" id="2h-sometimes" name="handedness"
                             onchange="update()" />
-                        <label for="2h-sometimes">Usable
-                            One-handed</label>
+                        <label for="2h-sometimes">Usable One-handed</label>
                     </span>
                 </div>
                 <div>
@@ -679,42 +677,42 @@
         <div>
             <h2 style="text-align: center">Notes</h2>
             <p>Click the headers in the table to sort the table based that
-                column.
-            </p>
-            <p>
-                You can choose between three modes of handedness:
+                column.</p>
+            <p>You can choose between three modes of handedness:</p>
             <ol>
                 <li>One-handed: Calculates damage and requirements based on
                     one-handed use</li>
                 <li>
                     Usable one-handed: Calculates damage based on two-handed
-                    use, but accounts for weapon being usable one-handed as
-                    well
+                    use, but accounts for weapon being
+                    usable one-handed as well
                 </li>
                 <li>Two-handed: Self-explanatory</li>
             </ol>
+            <p>
+                This calculator currently doesn't take auxiliary damage procs
+                (cold, bleed, scarlet rot and poison)
+                into account. Therefore, it won't be very useful for finding
+                weapons to use in a bleed build.
             </p>
-            <p>This calculator currently doesn't take auxiliary damage procs
-                (cold,
-                bleed, scarlet rot and poison) into account. Therefore, it won't
-                be very useful for finding weapons to use in a bleed build.
+            <p>
+                Catalysts (sacred seals and glintstone staffs) will show their
+                <em>attack rating</em>, not their
+                <em>spell scaling</em>.
             </p>
-            <p>Catalysts (sacred seals and glintstone staffs) will show their
-                <em>attack rating</em>, not their <em>spell scaling</em>.
-            </p>
-            <p>The same holds true for shields, which are also sorted based on
-                <em>attack
-                    rating</em>
+            <p>
+                The same holds true for shields, which are also sorted based on
+                <em>attack rating</em>
             </p>
         </div>
     </main>
     <footer>
-        <h4>
+        <h5>
             Erdtree Planner (
             <a href="https://git.palmoe.dk/vodofrede/erdtree">available under
                 BSD-3-Clause license</a>
             )
-        </h4>
+        </h5>
         <h5>Copyright 2022 vodofrede</h5>
     </footer>
 </body>

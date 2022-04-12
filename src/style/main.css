@@ -158,7 +158,7 @@ p {
 
 /* links */
 a {
-    text-decoration: none;
+    /* text-decoration: none; */
     color: var(--link-color);
 }
 a:hover {
@@ -262,6 +262,9 @@ select option {
 }
 
 .cards article {
+    display: flex;
+    flex-flow: column nowrap;
+
     text-align: center;
 
     flex-basis: 40%;
