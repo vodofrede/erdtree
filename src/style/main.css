@@ -2,8 +2,7 @@
 @media (prefers-color-scheme: light) {
     :root {
         --primary: white;
-        --lighter: ghostwhite;
-        --darker: ghostwhite;
+        --secondary: white;
         --border: grey;
         --font-color: black;
         --font-inverted: white;
@@ -14,9 +13,8 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --primary: #2b2a33;
-        --lighter: #373641;
-        --darker: #1f1e25;
-        --border: black;
+        --secondary: #373641;
+        --border: darkgrey;
         --font-color: white;
         --font-inverted: black;
         --link-color: tomato;
@@ -87,9 +85,6 @@ footer {
     justify-content: space-between;
 
     margin-top: auto;
-
-    outline: 1px solid var(--border);
-    background-color: var(--lighter);
 }
 
 hr {
@@ -108,12 +103,13 @@ span {
 nav {
     /* position */
     display: flex;
-    justify-content: space-between;
+    flex-flow: row nowrap;
+    justify-content: center;
     align-items: center;
 
     /* look */
-    background-color: var(--darker);
-    outline: 1px solid var(--border);
+    /* background-color: var(--darker);
+    outline: 1px solid var(--border); */
 }
 
 nav ul {
@@ -158,16 +154,15 @@ p {
 
 /* links */
 a {
-    /* text-decoration: none; */
-    color: var(--link-color);
+    text-decoration: none;
+    /* color: var(--link-color); */
 }
 a:hover {
     color: var(--link-color);
 }
-a:visited {
-    /* color: #982c61; */
-    color: var(--link-color);
-    border-bottom: 2px solid var(--link-color);
+a.current {
+    text-decoration: underline wavy var(--link-color) 0.08rem;
+    text-underline-offset: 0.2rem;
 }
 
 /* lists & tables */
@@ -186,8 +181,8 @@ table {
     text-align: center;
     width: 100%;
     height: 100%;
-    border: 1px solid var(--border);
-    border-radius: 5px;
+    border: 0.15rem solid var(--border);
+    border-radius: 0.5rem;
     border-spacing: 0px;
     overflow: scroll;
 
@@ -270,11 +265,11 @@ select option {
     flex-basis: 40%;
     padding: 0.8rem 0rem 0.9rem 0rem;
 
-    border: 1px solid var(--font-color);
-    border-radius: 5px;
+    border: 2px solid var(--font-color);
+    border-radius: 1rem;
 
     /* look */
-    background-color: var(--lighter);
+    background-color: var(--secondary);
 }
 
 .cards article * {
@@ -298,9 +293,9 @@ select option {
     gap: 1px;
 
     padding: 10px;
-    border: 1px solid var(--border);
-    border-radius: 5px;
-    background-color: var(--lighter);
+    border: 0.15rem solid var(--border);
+    border-radius: 0.5rem;
+    background-color: var(--secondary);
     min-width: 250px;
 }
 
