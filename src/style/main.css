@@ -164,6 +164,9 @@ a.current {
     text-decoration: underline wavy var(--link-color) 0.08rem;
     text-underline-offset: 0.2rem;
 }
+a.highlight {
+    color: var(--link-color);
+}
 
 /* lists & tables */
 ul {

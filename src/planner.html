@@ -22,10 +22,10 @@
     <body onload="init()">
         <nav>
             <h3><a href="/">Home</a></h3>
-            <h3><a href="/planner.html" class="current">Build Planner</a></h3>
+            <h3><a href="/class.html">Starting Class</a></h3>
             <h3><a href="/armor.html">Armor Optimizer</a></h3>
             <h3><a href="/weapon.html">Weapon Finder</a></h3>
-            <h3><a href="/class.html">Starting Class</a></h3>
+            <h3><a href="/planner.html" class="current">Build Planner</a></h3>
         </nav>
         <header>
             <h1>Build Planner</h1>
@@ -36,11 +36,12 @@
                 <article style="flex-basis: 20%; max-width: 320px">
                     <div>
                         <b>Character</b>
+                        <a href="/class.html">Optimize</a>
                     </div>
                     <hr />
                     <div>
                         <b>Name</b>
-                        <input id="name" />
+                        <input id="name" onchange="update()" />
                     </div>
                     <div>
                         <label for="class"><b>Starting Class</b></label>
@@ -114,13 +115,9 @@
                         </span>
                     </div>
                     <hr />
-                    <b>Import</b>
+                    <b>Import/Export</b>
                     <div>
-                        <input type="file" />
-                    </div>
-                    <hr />
-                    <b>Export</b>
-                    <div>
+                        <input type="file" id="import" />
                         <button>Export</button>
                     </div>
                 </article>
