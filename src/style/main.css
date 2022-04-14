@@ -77,7 +77,7 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
 }
 
 footer {
@@ -176,6 +176,7 @@ ul {
 }
 
 li {
+    white-space: nowrap;
     margin-bottom: 0.4em;
 }
 
