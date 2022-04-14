@@ -204,7 +204,7 @@ th {
 
 td,
 th {
-    overflow: scroll;
+    /* overflow: scroll; */
     text-overflow: ellipsis;
     padding: 0.4rem;
     font-size: 0.9rem;
