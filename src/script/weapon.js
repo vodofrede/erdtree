@@ -130,32 +130,32 @@ function changeSort(newSort) {
 
 function damage(weapon, infusion, upgraded, stats) {
     let weaponInfusion = weapon.infusions[infusion.id];
-    let upgradeLevel = upgraded ? (weapon.unique ? 10 : 25) : 0;
+    let upgLevel = upgraded ? (weapon.unique ? 10 : 25) : 0;
 
-    let base = infusion.damage.map(
-        (amount, ty) => weaponInfusion.damage[ty] * (amount + infusion.upgrade[ty] * upgradeLevel),
+    let baseDmg = infusion.damage.map(
+        (dmg, ty) => weaponInfusion.damage[ty] * (dmg + infusion.upgrade[ty] * upgLevel * (weapon.unique ? 2.5 : 1.0)),
     );
 
-    let scaling = stats.some((stat, i) => stat < weapon.requirements[i])
-        ? base.map(dmg => dmg * -0.4)
-        : base.map((baseAmount, i) => {
+    let scalingDmg = stats.some((stat, i) => stat < weapon.requirements[i])
+        ? baseDmg.map(dmg => dmg * -0.4)
+        : baseDmg.map((dmg, ty) => {
               let statCorrection = corrections(
-                  CORRECTIONS[weaponInfusion.corrections[i]],
+                  CORRECTIONS[weaponInfusion.corrections[ty]],
                   stats,
-                  weaponInfusion.masks[i],
+                  weaponInfusion.masks[ty],
               );
-              let statScaling = weaponInfusion.scaling.map(itemScaling => {
+              let statScaling = weaponInfusion.scaling.map(scaling => {
                   return (
-                      itemScaling * infusion.scaling[i] +
-                      itemScaling * infusion.scaling[i] * infusion.growth[i] * upgradeLevel
+                      infusion.scaling[ty] *
+                      (scaling + scaling * infusion.growth[ty] * upgLevel * (weapon.unique ? 4.0 : 1.0))
                   );
               });
               return statScaling
-                  .map((scaling, statIndex) => (baseAmount * scaling * statCorrection[statIndex]) / 100.0)
+                  .map((scaling, statIndex) => (dmg * scaling * statCorrection[statIndex]) / 100.0)
                   .reduce((sum, n) => sum + n);
           });
 
-    return Math.floor(base.reduce((sum, n) => sum + n) + scaling.reduce((sum, n) => sum + n));
+    return Math.floor(baseDmg.reduce((sum, n) => sum + n) + scalingDmg.reduce((sum, n) => sum + n));
 }
 
 function corrections(calc, stats, masks) {

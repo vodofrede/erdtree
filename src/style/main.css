@@ -161,6 +161,7 @@ a:hover {
     color: var(--link-color);
 }
 a.current {
+    color: var(--link-color);
     text-decoration: underline wavy var(--link-color) 0.08rem;
     text-underline-offset: 0.2rem;
 }
