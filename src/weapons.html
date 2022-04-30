@@ -30,7 +30,7 @@
             <h3><a href="/">Home</a></h3>
             <h3><a href="/class.html">Starting Class</a></h3>
             <h3><a href="/armor.html">Armor Optimizer</a></h3>
-            <h3><a href="/weapon.html" class="current">Weapon Finder</a></h3>
+            <h3><a href="/weapons.html" class="current">Weapon Finder</a></h3>
             <h3><a href="/planner.html">Build Planner</a></h3>
         </nav>
         <header>
@@ -245,6 +245,19 @@
                     <div>
                         <span>
                             <input
+                                id="occult-infusion"
+                                value="occult"
+                                type="checkbox"
+                                name="infusion"
+                                onchange="update()"
+                                checked
+                            />
+                            <label for="occult-infusion">Occult</label>
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                            <input
                                 id="cold-infusion"
                                 value="cold"
                                 type="checkbox"
@@ -279,19 +292,6 @@
                                 checked
                             />
                             <label for="blood-infusion">Blood</label>
-                        </span>
-                    </div>
-                    <div>
-                        <span>
-                            <input
-                                id="occult-infusion"
-                                value="occult"
-                                type="checkbox"
-                                name="infusion"
-                                onchange="update()"
-                                checked
-                            />
-                            <label for="occult-infusion">Occult</label>
                         </span>
                     </div>
                     <hr />
@@ -330,7 +330,7 @@
                 </article>
                 <!-- results -->
                 <article style="flex-basis: 55%">
-                    <b>Results</b>
+                    <b>Damage</b>
                     <template id="weapon">
                         <tr>
                             <td>

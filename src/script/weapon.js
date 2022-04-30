@@ -2,8 +2,8 @@ let WEAPONS;
 let INFUSIONS;
 let CORRECTIONS;
 
-let order = "max";
-let ascending = true;
+let dmgSortOrder = "max";
+let dmgSortAscending = true;
 
 async function init() {
     WEAPONS = await fetch("/data/weapons.json").then(response => response.json());
@@ -27,17 +27,10 @@ function update() {
         .map(elem => elem.value);
     let categories = [...document.getElementsByName("category")].filter(el => el.checked).map(el => el.id);
     let onlyBuffable = document.getElementById("buffable").checked;
-
-    // get upgrade level
-    let upgraded = document.getElementById("max-upgrade").checked;
-
-    // get current stats
-
     if (twoHanding) {
         stats[0] = Math.floor(stats[0] * 1.5);
     }
-
-    let infIndex = Object.values(INFUSIONS).findIndex(inf => inf.id == order);
+    let upgraded = document.getElementById("max-upgrade").checked;
 
     // update result table header to only include allowed infusions
     [...document.getElementsByName("damage-result")].forEach(ty => {
@@ -48,8 +41,9 @@ function update() {
     let destination = document.getElementById("weapons");
     destination.innerHTML = "";
 
-    // fill table
+    // fill damage table
     let template = document.getElementById("weapon");
+    let infIndex = Object.values(INFUSIONS).findIndex(inf => inf.id == dmgSortOrder);
     Object.values(WEAPONS)
         .filter(weapon => {
             // filter out weapons that don't fit the current parameters
@@ -80,9 +74,9 @@ function update() {
             // sort based on current sort order
             if (infIndex == -1) {
                 // sort by max
-                return ascending ? m2 - m1 : m1 - m2;
+                return dmgSortAscending ? m2 - m1 : m1 - m2;
             } else {
-                return ascending ? ar2[infIndex] - ar1[infIndex] : ar1[infIndex] - ar2[infIndex];
+                return dmgSortAscending ? ar2[infIndex] - ar1[infIndex] : ar1[infIndex] - ar2[infIndex];
             }
         })
         .forEach(([weapon, attackRatings, max]) => {
@@ -99,7 +93,11 @@ function update() {
 
             tr.children[1].innerHTML = max || "-";
             attackRatings.forEach((ar, i) => {
-                tr.children[i + 2].innerHTML = ar || "-";
+                let elem = tr.children[i + 2];
+                elem.innerHTML = ar || "-";
+                if (ar == max) {
+                    elem.style.fontWeight = "900";
+                }
             });
 
             destination.appendChild(clone);
@@ -123,8 +121,8 @@ function setAll(name, state) {
 }
 
 function changeSort(newSort) {
-    ascending = order == newSort ? !ascending : true;
-    order = newSort;
+    dmgSortAscending = dmgSortOrder == newSort ? !dmgSortAscending : true;
+    dmgSortOrder = newSort;
     update();
 }
 
@@ -139,23 +137,38 @@ function damage(weapon, infusion, upgraded, stats) {
     let scalingDmg = stats.some((stat, i) => stat < weapon.requirements[i])
         ? baseDmg.map(dmg => dmg * -0.4)
         : baseDmg.map((dmg, ty) => {
-              let statCorrection = corrections(
+              let calcCorrect = corrections(
                   CORRECTIONS[weaponInfusion.corrections[ty]],
                   stats,
                   weaponInfusion.masks[ty],
               );
-              let statScaling = weaponInfusion.scaling.map(scaling => {
-                  return (
+              let statScaling = weaponInfusion.scaling.map(
+                  scaling =>
                       infusion.scaling[ty] *
-                      (scaling + scaling * infusion.growth[ty] * upgLevel * (weapon.unique ? 4.0 : 1.0))
-                  );
-              });
+                      (scaling + scaling * infusion.growth[ty] * upgLevel * (weapon.unique ? 4.0 : 1.0)),
+              );
               return statScaling
-                  .map((scaling, statIndex) => (dmg * scaling * statCorrection[statIndex]) / 100.0)
+                  .map((scaling, statIndex) => (dmg * scaling * calcCorrect[statIndex]) / 100.0)
                   .reduce((sum, n) => sum + n);
           });
 
     return Math.floor(baseDmg.reduce((sum, n) => sum + n) + scalingDmg.reduce((sum, n) => sum + n));
+}
+
+function auxiliary(weapon, infusion, upgraded, stats) {
+    const weaponInfusion = weapon.infusions[infusion.id];
+    const upgLevel = upgraded ? (weapon.unique ? 10 : 25) : 0;
+
+    let baseAux = Object.entries(weaponInfusion.aux).map(([ty, [a, b]]) => [ty, Math.floor(a * upgLevel + b)]);
+
+    let calcCorrect = corrections(CORRECTIONS["6"], stats, [0, 0, 0, 0, 1])[4] / 100.0;
+    let statScaling =
+        weaponInfusion.scaling[4] +
+        weaponInfusion.scaling[4] * infusion.growth[4] * upgLevel * (weapon.unique ? 4.0 : 1.0);
+
+    let extraAux = stats[4] >= weapon.requirements[4] ? baseAux.map(([_, aux]) => aux * calcCorrect * statScaling) : 0;
+
+    return baseAux.map(([ty, aux], i) => [ty, aux + extraAux[i]]);
 }
 
 function corrections(calc, stats, masks) {
