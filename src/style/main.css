@@ -199,16 +199,17 @@ table thead {
     width: 100%;
 }
 
-th {
-    border-bottom: 1px solid var(--border);
-}
-
 td,
 th {
     /* overflow: scroll; */
+    border-bottom: 1px dotted var(--border);
     text-overflow: ellipsis;
     padding: 0.4rem;
     font-size: 0.9rem;
+}
+
+th {
+    border-bottom: 1px solid var(--border);
 }
 
 thead,
