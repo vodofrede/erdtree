@@ -1,4 +1,4 @@
 User-Agent: *
 Allow: / 
 
-Sitemap: https://erdtree.palmoe.dk/data/sitemap.xml
+Sitemap: https://erdtree.palmoe.dk/sitemap.xml
