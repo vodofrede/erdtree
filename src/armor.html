@@ -164,19 +164,27 @@
                     </template>
                     <div>
                         <label for="locked-helmet">Helmet</label>
-                        <select type="text" id="locked-helmet" name="locked-items" onchange="update()"></select>
+                        <select type="text" id="locked-helmet" name="locked-items" onchange="update()">
+                            <option value="none">None</option>
+                        </select>
                     </div>
                     <div>
                         <label for="locked-chestpiece">Chestpiece</label>
-                        <select type="text" id="locked-chestpiece" name="locked-items" onchange="update()"></select>
+                        <select type="text" id="locked-chestpiece" name="locked-items" onchange="update()">
+                            <option value="none">None</option>
+                        </select>
                     </div>
                     <div>
                         <label for="locked-gauntlets">Gauntlets</label>
-                        <select type=" text" id="locked-gauntlets" name="locked-items" onchange="update()"></select>
+                        <select type=" text" id="locked-gauntlets" name="locked-items" onchange="update()">
+                            <option value="none">None</option>
+                        </select>
                     </div>
                     <div>
                         <label for="locked-leggings">Leggings</label>
-                        <select type="text" id="locked-leggings" name="locked-items" onchange="update()"></select>
+                        <select type="text" id="locked-leggings" name="locked-items" onchange="update()">
+                            <option value="none">None</option>
+                        </select>
                     </div>
                     <div>
                         <button id="clear-equipment" onclick="resetAll()">Reset All</button>

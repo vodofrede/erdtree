@@ -33,9 +33,11 @@ function update() {
     let sortBy = [...document.getElementsByName("sorting-order")].find(elem => elem.checked).id;
 
     // get locked items
-    let lockedItems = [...document.getElementsByName("locked-items")]
-        .map((select, i) => Object.values(EQUIPMENT[i])[select.selectedIndex])
-        .filter(item => !item.id.startsWith("no-"));
+    let lockedItems = [...document.getElementsByName("locked-items")].map(
+        (select, i) => Object.values(EQUIPMENT[i])[select.selectedIndex - 1],
+    );
+    // .filter(item => !item);
+    console.log(lockedItems);
 
     // pre-sort and eliminate some equipment
     let helmets = dominated(Object.values(HELMETS), sortBy, lockedItems);
@@ -107,7 +109,7 @@ function permutations([helmets, chestpieces, gauntlets, leggings], budget, locke
             return gauntlets.flatMap(g => {
                 return leggings
                     .filter(l => isAllowedSet([h, c, g, l], lockedItems))
-                    .filter(l => budget > setWeight([h, c, g, l]))
+                    .filter(l => budget >= setWeight([h, c, g, l]))
                     .map(l => [h, c, g, l]);
             });
         });
@@ -142,7 +144,7 @@ function fitness(item, sortBy) {
 
 const setWeight = set => (set.weight ??= set.reduce((total, item) => total + item.weight, 0));
 const setFitness = (set, sortBy) => (set.fitness ??= set.reduce((total, item) => total + fitness(item, sortBy), 0.0));
-const isAllowedSet = (set, lockedItems) => lockedItems.every(item => set.includes(item));
+const isAllowedSet = (set, lockedItems) => lockedItems.every(item => item == undefined || set.includes(item));
 
 function equipLoadBudget() {
     let rollModifier = parseFloat([...document.getElementsByName("roll-type")].find(elem => elem.checked).value);
