@@ -57,7 +57,12 @@ function update() {
         let rows = tbody.children;
 
         [...rows].slice(1).forEach((row, i) => {
-            row.children[0].innerText = set[i].name;
+            let link = document.createElement("a");
+            link.href = "https://eldenring.wiki.fextralife.com/" + set[i].name.replaceAll(" ", "+");
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            link.innerText = set[i].name;
+            row.children[0].appendChild(link);
             row.children[1].innerHTML = itemStatsToString(set[i]);
         });
         rows[0].children[1].innerHTML = setStatsToString(set);
