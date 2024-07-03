@@ -94,13 +94,13 @@
         "id": "radagons-scarseal",
         "name": "Radagon's Scarseal",
         "weight": "0.8",
-        "stats": [0, 0, 3, 3, 3, 0, 0, 0]
+        "stats": [3, 0, 3, 3, 3, 0, 0, 0]
     },
     "radagons-soreseal": {
         "id": "radagons-soreseal",
         "name": "Radagon's Soreseal",
         "weight": "0.8",
-        "stats": [0, 0, 5, 5, 5, 0, 0, 0]
+        "stats": [5, 0, 5, 5, 5, 0, 0, 0]
     },
     "starscourge-heirloom": {
         "id": "starscourge-heirloom",
