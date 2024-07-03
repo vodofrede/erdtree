@@ -1,1 +1,46 @@
-{"no-chestpiece": {"id": "no-chestpiece", "name": "No chestpiece", "defenses": [0, 0, 0, 0, 0, 0, 0, 0], "resistances": [0, 0, 0, 0], "poise": 0, "weight": 0}, "deathbed-dress": {"id": "deathbed-dress", "name": "Deathbed Dress", "defenses": [0.6, 2.7, 0.6, 0.6, 11.9, 11.4, 11.9, 12.4], "resistances": [38, 11, 63, 107], "poise": 1, "weight": 3.2}, "fias-robe": {"name": "Fia's Robe", "defenses": [5.3, 6.1, 5.3, 5.3, 12.6, 12.4, 12.6, 13.0], "resistances": [46, 21, 76, 108], "poise": 2, "weight": 5.1}, "fias-robe-altered": {"name": "Fia's Robe (Altered)", "defenses": [2.7, 4.2, 2.7, 2.7, 11.9, 11.4, 11.9, 12.6], "resistances": [34, 10, 57, 93], "poise": 0, "weight": 3.2}, "godskin-noble-robe": {"name": "Godskin Noble Robe", "defenses": [6.1, 9.5, 6.7, 6.1, 13, 12.4, 12.6, 14.1], "resistances": [46, 25, 76, 83], "poise": 5, "weight": 6.3}, "sanguine-noble-robe": {"name": "Sanguine Noble Robe", "defenses": [6.1, 5.3, 5.3, 5.3, 13.3, 11.9, 13.0, 13.5], "resistances": [50, 21, 83, 76], "poise": 2, "weight": 5.1}}
+{
+    "no-chestpiece": {
+        "id": "no-chestpiece",
+        "name": "No chestpiece",
+        "defenses": [0, 0, 0, 0, 0, 0, 0, 0],
+        "resistances": [0, 0, 0, 0],
+        "poise": 0,
+        "weight": 0
+    },
+    "deathbed-dress": {
+        "id": "deathbed-dress",
+        "name": "Deathbed Dress",
+        "defenses": [0.6, 2.7, 0.6, 0.6, 11.9, 11.4, 11.9, 12.4],
+        "resistances": [38, 11, 63, 107],
+        "poise": 1,
+        "weight": 3.2
+    },
+    "fias-robe": {
+        "name": "Fia's Robe",
+        "defenses": [5.3, 6.1, 5.3, 5.3, 12.6, 12.4, 12.6, 13.0],
+        "resistances": [46, 21, 76, 108],
+        "poise": 2,
+        "weight": 5.1
+    },
+    "fias-robe-altered": {
+        "name": "Fia's Robe (Altered)",
+        "defenses": [2.7, 4.2, 2.7, 2.7, 11.9, 11.4, 11.9, 12.6],
+        "resistances": [34, 10, 57, 93],
+        "poise": 0,
+        "weight": 3.2
+    },
+    "godskin-noble-robe": {
+        "name": "Godskin Noble Robe",
+        "defenses": [6.1, 9.5, 6.7, 6.1, 13, 12.4, 12.6, 14.1],
+        "resistances": [46, 25, 76, 83],
+        "poise": 5,
+        "weight": 6.3
+    },
+    "sanguine-noble-robe": {
+        "name": "Sanguine Noble Robe",
+        "defenses": [6.1, 5.3, 5.3, 5.3, 13.3, 11.9, 13.0, 13.5],
+        "resistances": [50, 21, 83, 76],
+        "poise": 2,
+        "weight": 5.1
+    }
+}

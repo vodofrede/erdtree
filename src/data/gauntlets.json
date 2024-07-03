@@ -1,1 +1,17 @@
-{"no-gauntlets": {"id": "no-gauntlets", "name": "No gauntlets", "defenses": [0, 0, 0, 0, 0, 0, 0, 0], "resistances": [0, 0, 0, 0], "poise": 0, "weight": 0}, "godskin-noble-bracelets": {"name": "Godskin Noble Bracelets", "defenses": [1.3, 2.1, 1.5, 1.3, 3.2, 2.9, 3.1, 3.4], "resistances": [14, 8, 24, 25], "poise": 1, "weight": 1.7}}
+{
+    "no-gauntlets": {
+        "id": "no-gauntlets",
+        "name": "No gauntlets",
+        "defenses": [0, 0, 0, 0, 0, 0, 0, 0],
+        "resistances": [0, 0, 0, 0],
+        "poise": 0,
+        "weight": 0
+    },
+    "godskin-noble-bracelets": {
+        "name": "Godskin Noble Bracelets",
+        "defenses": [1.3, 2.1, 1.5, 1.3, 3.2, 2.9, 3.1, 3.4],
+        "resistances": [14, 8, 24, 25],
+        "poise": 1,
+        "weight": 1.7
+    }
+}
