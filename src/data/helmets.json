@@ -11,7 +11,7 @@
         "id": "alberichs-pointed-hat",
         "name": "Alberich's Pointed Hat",
         "stats": [0, 0, 0, 0, 0, 0, 0, 4],
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [1.8, 1.4, 1.8, 1.8, 4.6, 4.2, 4.4, 4.6],
         "resistances": [16, 10, 29, 31, 29, 16, 10],
         "poise": 2,
         "weight": 1.7
@@ -19,7 +19,7 @@
     "alberichs-pointed-hat-altered": {
         "id": "alberichs-pointed-hat-altered",
         "name": "Alberich's Pointed Hat (Altered)",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [0.9, 0.2, 0.9, 0.9, 4.4, 3.8, 4.0, 4.4],
         "resistances": [12, 7, 23, 24, 23, 12, 7],
         "poise": 1,
         "weight": 1.0
@@ -27,7 +27,7 @@
     "albinauric-mask": {
         "id": "albinauric-mask",
         "name": "Albinauric Mask",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.0, 3.1, 4.0, 3.8, 2.5, 3.1, 2.1, 2.5],
         "resistances": [12, 23, 10, 10, 10, 12, 23],
         "poise": 5,
         "weight": 3.8
@@ -35,7 +35,7 @@
     "all-knowing-helm": {
         "id": "all-knowing-helm",
         "name": "All-Knowing Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.6, 4.2, 4.8, 4.2, 4.4, 3.4, 3.6, 3.1],
         "resistances": [12, 20, 9, 9, 9, 12, 20],
         "poise": 7,
         "weight": 4.6
@@ -43,7 +43,7 @@
     "aristocrat-hat": {
         "id": "aristocrat-hat",
         "name": "Aristocrat Hat",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [3.1, 3.1, 2.8, 3.1, 3.8, 4.0, 3.8, 3.1],
         "resistances": [22, 14, 18, 20, 18, 22, 14],
         "poise": 4,
         "weight": 3.0
@@ -51,7 +51,7 @@
     "aristocrat-headband": {
         "id": "aristocrat-headband",
         "name": "Aristocrat Headband",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [1.9, 1.9, 1.9, 1.6, 4.0, 3.6, 3.8, 4.0],
         "resistances": [15, 10, 25, 22, 25, 15, 10],
         "poise": 2,
         "weight": 1.2
@@ -66,7 +66,7 @@
     "astrologer-hood": {
         "id": "astrologer-hood",
         "name": "Astrologer Hood",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [1.8, 1.4, 1.4, 1.4, 4.6, 4.5, 4.6, 4.5],
         "resistances": [18, 9, 31, 27, 31, 18, 9],
         "poise": 3,
         "weight": 1.7
@@ -74,7 +74,7 @@
     "azurs-glintstone-crown": {
         "id": "azurs-glintstone-crown",
         "name": "Azur's Glintstone Crown",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.8, 2.3, 2.5, 2.5, 5.8, 4.6, 4.7, 5.0],
         "resistances": [23, 14, 44, 39, 44, 23, 14],
         "poise": 4,
         "weight": 3.6
@@ -82,7 +82,7 @@
     "bandit-mask": {
         "id": "bandit-mask",
         "name": "Bandit Mask",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.8, 3.1, 3.1, 3.1, 3.1, 3.4, 3.6, 3.1],
         "resistances": [30, 14, 14, 16, 14, 30, 14],
         "poise": 4,
         "weight": 3.0
@@ -90,7 +90,7 @@
     "banished-knight-helm": {
         "id": "banished-knight-helm",
         "name": "Banished Knight Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [6.8, 5.4, 7.0, 6.3, 4.8, 4.8, 4.6, 4.7],
         "resistances": [26, 35, 16, 18, 16, 26, 35],
         "poise": 11,
         "weight": 7.5
@@ -98,7 +98,7 @@
     "banished-knight-helm-altered": {
         "id": "banished-knight-helm-altered",
         "name": "Banished Knight Helm (Altered)",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [6.7, 5.2, 6.8, 6.1, 4.7, 4.7, 4.6, 4.6],
         "resistances": [21, 30, 13, 14, 13, 21, 30],
         "poise": 11,
         "weight": 7.1
@@ -106,7 +106,7 @@
     "beast-champion-helm": {
         "id": "beast-champion-helm",
         "name": "Beast Champion Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [6.3, 5.9, 6.8, 6.7, 4.6, 4.9, 4.6, 4.8],
         "resistances": [24, 39, 18, 16, 18, 24, 39],
         "poise": 11,
         "weight": 7.5
@@ -114,7 +114,7 @@
     "black-dumpling": {
         "id": "black-dumpling",
         "name": "Black Dumpling",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.8, 3.1, 2.8, 2.8, 3.1, 3.4, 3.6, 3.1],
         "resistances": [24, 15, 0, 20, 0, 24, 15],
         "poise": 4,
         "weight": 2.7
@@ -122,7 +122,7 @@
     "black-hood": {
         "id": "black-hood",
         "name": "Black Hood",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.8, 3.1, 3.1, 3.1, 3.1, 3.4, 3.6, 3.1],
         "resistances": [33, 16, 16, 18, 16, 33, 16],
         "poise": 4,
         "weight": 3.0
@@ -130,7 +130,7 @@
     "black-knife-hood": {
         "id": "black-knife-hood",
         "name": "Black Knife Hood",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [3.8, 3.6, 4.2, 4.2, 2.8, 3.1, 2.1, 3.8],
         "resistances": [11, 18, 9, 9, 9, 11, 18],
         "poise": 6,
         "weight": 3.8
@@ -138,7 +138,7 @@
     "black-knight-helm": {
         "id": "black-knight-helm",
         "name": "Black Knight Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [5.2, 4.4, 5.2, 5.8, 4.4, 4.6, 3.8, 4.0],
         "resistances": [16, 26, 10, 9, 10, 16, 26],
         "poise": 9,
         "weight": 5.9
@@ -146,7 +146,7 @@
     "black-wolf-mask": {
         "id": "black-wolf-mask",
         "name": "Black Wolf Mask",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [5.2, 4.6, 5.2, 5.5, 4.0, 4.5, 3.6, 4.2],
         "resistances": [16, 33, 11, 11, 11, 16, 33],
         "poise": 9,
         "weight": 5.9
@@ -154,7 +154,7 @@
     "blackflame-monk-hood": {
         "id": "blackflame-monk-hood",
         "name": "Blackflame Monk Hood",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.4, 3.4, 4.6, 4.2, 2.8, 4.4, 2.1, 2.8],
         "resistances": [11, 20, 5, 11, 5, 11, 20],
         "poise": 7,
         "weight": 4.0
@@ -162,7 +162,7 @@
     "blackguards-iron-mask": {
         "id": "blackguards-iron-mask",
         "name": "Blackguard's Iron Mask",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [5.8, 4.4, 6.1, 5.5, 4.2, 4.4, 4.0, 4.5],
         "resistances": [22, 31, 12, 12, 12, 22, 31],
         "poise": 9,
         "weight": 6.2
@@ -170,7 +170,7 @@
     "bloodhound-knight-helm": {
         "id": "bloodhound-knight-helm",
         "name": "Bloodhound Knight Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.4, 4.0, 5.0, 4.8, 3.4, 3.6, 2.5, 3.6],
         "resistances": [14, 22, 10, 10, 10, 14, 22],
         "poise": 6,
         "weight": 4.6
@@ -178,7 +178,7 @@
     "bloodsoaked-mask": {
         "id": "bloodsoaked-mask",
         "name": "Bloodsoaked Mask",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [1.8, 1.8, 1.8, 2.1, 4.6, 4.4, 4.5, 4.6],
         "resistances": [18, 10, 30, 31, 30, 18, 10],
         "poise": 3,
         "weight": 2.2
@@ -186,7 +186,7 @@
     "blue-cloth-cowl": {
         "id": "blue-cloth-cowl",
         "name": "Blue Cloth Cowl",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.8, 2.8, 2.3, 2.3, 3.1, 3.4, 3.8, 2.8],
         "resistances": [24, 15, 18, 18, 18, 24, 15],
         "poise": 4,
         "weight": 2.7
@@ -194,7 +194,7 @@
     "blue-festive-hood": {
         "id": "blue-festive-hood",
         "name": "Blue Festive Hood",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [1.4, 1.4, 2.1, 1.8, 4.5, 4.0, 4.5, 4.9],
         "resistances": [20, 9, 31, 27, 31, 20, 9],
         "poise": 2,
         "weight": 1.7
@@ -202,7 +202,7 @@
     "blue-silver-mail-hood": {
         "id": "blue-silver-mail-hood",
         "name": "Blue Silver Mail Hood",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.2, 3.1, 4.4, 3.8, 3.6, 3.4, 2.5, 2.5],
         "resistances": [10, 24, 5, 5, 5, 10, 24],
         "poise": 6,
         "weight": 3.8
@@ -210,7 +210,7 @@
     "briar-helm": {
         "id": "briar-helm",
         "name": "Briar Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.6, 4.0, 4.8, 4.4, 3.8, 4.4, 3.1, 3.8],
         "resistances": [15, 31, 10, 10, 10, 15, 31],
         "poise": 9,
         "weight": 5.1
@@ -218,7 +218,7 @@
     "bull-goat-helm": {
         "id": "bull-goat-helm",
         "name": "Bull-Goat Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [7.5, 7.4, 6.7, 6.7, 4.7, 4.8, 5.3, 4.6],
         "resistances": [31, 35, 20, 23, 20, 31, 35],
         "poise": 15,
         "weight": 11.3
@@ -226,7 +226,7 @@
     "carian-knight-helm": {
         "id": "carian-knight-helm",
         "name": "Carian Knight Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.2, 3.8, 4.4, 4.2, 4.4, 4.2, 3.4, 4.2],
         "resistances": [12, 20, 9, 10, 9, 12, 20],
         "poise": 6,
         "weight": 4.6
@@ -234,7 +234,7 @@
     "caterpillar-mask": {
         "id": "caterpillar-mask",
         "name": "Caterpillar Mask",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [1.8, 1.4, 1.4, 0.9, 4.5, 3.8, 4.2, 4.6],
         "resistances": [16, 9, 45, 25, 45, 16, 9],
         "poise": 2,
         "weight": 1.4
@@ -242,7 +242,7 @@
     "cerulean-tear-scarab": {
         "id": "cerulean-tear-scarab",
         "name": "Cerulean Tear Scarab",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [3.8, 4.0, 3.8, 3.8, 4.6, 4.6, 4.6, 4.5],
         "resistances": [42, 22, 27, 26, 27, 42, 22],
         "poise": 6,
         "weight": 5.1
@@ -250,7 +250,7 @@
     "chain-coif": {
         "id": "chain-coif",
         "name": "Chain Coif",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.2, 3.1, 4.6, 4.2, 2.5, 3.8, 2.1, 2.8],
         "resistances": [11, 18, 5, 8, 5, 11, 18],
         "poise": 6,
         "weight": 3.8
@@ -258,7 +258,7 @@
     "champion-headband": {
         "id": "champion-headband",
         "name": "Champion Headband",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.3, 3.1, 2.5, 2.8, 2.8, 3.4, 3.6, 3.4],
         "resistances": [22, 14, 18, 16, 18, 22, 14],
         "poise": 5,
         "weight": 2.7
@@ -266,7 +266,7 @@
     "circlet-of-light": {
         "id": "circlet-of-light",
         "name": "Circlet of Light",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.8, 3.1, 2.5, 2.8, 2.8, 3.1, 3.4, 3.4],
         "resistances": [23, 14, 15, 20, 15, 23, 14],
         "poise": 5,
         "weight": 1.0
@@ -274,7 +274,7 @@
     "cleanrot-helm": {
         "id": "cleanrot-helm",
         "name": "Cleanrot Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [5.2, 4.8, 5.8, 6.3, 4.5, 4.6, 4.0, 4.8],
         "resistances": [27, 29, 12, 14, 12, 27, 29],
         "poise": 9,
         "weight": 6.4
@@ -282,7 +282,7 @@
     "cleanrot-helm-altered": {
         "id": "cleanrot-helm-altered",
         "name": "Cleanrot Helm (Altered)",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.6, 4.2, 5.0, 5.5, 4.0, 4.2, 3.4, 4.6],
         "resistances": [21, 21, 9, 10, 9, 21, 21],
         "poise": 7,
         "weight": 5.5
@@ -290,7 +290,7 @@
     "common-soldier-helm": {
         "id": "common-soldier-helm",
         "name": "Common Soldier Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.4, 3.4, 4.2, 4.2, 2.5, 3.1, 2.1, 2.8],
         "resistances": [11, 20, 8, 8, 8, 11, 20],
         "poise": 6,
         "weight": 3.8
@@ -298,7 +298,7 @@
     "commoners-headband": {
         "id": "commoners-headband",
         "name": "Commoner's Headband",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [0.9, 1.8, 1.8, 1.4, 4.4, 4.0, 4.2, 4.4],
         "resistances": [15, 10, 27, 29, 27, 15, 10],
         "poise": 2,
         "weight": 1.4
@@ -306,7 +306,7 @@
     "commoners-headband-altered": {
         "id": "commoners-headband-altered",
         "name": "Commoner's Headband (Altered)",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [0.1, 1.1, 1.1, 0.6, 3.9, 3.5, 3.7, 3.9],
         "resistances": [12, 8, 23, 24, 23, 12, 8],
         "poise": 1,
         "weight": 0.7
@@ -314,7 +314,7 @@
     "confessor-hood": {
         "id": "confessor-hood",
         "name": "Confessor Hood",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.8, 3.6, 2.8, 3.1, 3.8, 3.8, 4.2, 3.4],
         "resistances": [26, 20, 20, 22, 20, 26, 20],
         "poise": 5,
         "weight": 3.3
@@ -322,7 +322,7 @@
     "confessor-hood-altered": {
         "id": "confessor-hood-altered",
         "name": "Confessor Hood (Altered)",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.3, 3.1, 2.3, 2.5, 3.4, 3.4, 3.8, 2.8],
         "resistances": [21, 14, 14, 16, 14, 21, 14],
         "poise": 3,
         "weight": 2.7
@@ -330,7 +330,7 @@
     "consorts-mask": {
         "id": "consorts-mask",
         "name": "Consort's Mask",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.8, 2.8, 2.5, 2.5, 5.0, 4.8, 4.8, 5.0],
         "resistances": [24, 14, 39, 35, 39, 24, 14],
         "poise": 5,
         "weight": 3.6
@@ -339,7 +339,7 @@
         "id": "crimson-hood",
         "name": "Crimson Hood",
         "stats": [1, 0, 0, 0, 0, 0, 0, 0],
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [1.4, 1.8, 1.4, 1.8, 4.6, 4.6, 4.5, 4.6],
         "resistances": [16, 9, 27, 29, 27, 16, 9],
         "poise": 3,
         "weight": 1.7
@@ -347,7 +347,7 @@
     "crimson-tear-scarab": {
         "id": "crimson-tear-scarab",
         "name": "Crimson Tear Scarab",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [3.8, 4.0, 3.8, 3.8, 4.6, 4.6, 4.6, 4.5],
         "resistances": [42, 22, 27, 26, 27, 42, 22],
         "poise": 6,
         "weight": 5.1
@@ -355,7 +355,7 @@
     "crucible-axe-helm": {
         "id": "crucible-axe-helm",
         "name": "Crucible Axe Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [6.3, 5.0, 6.1, 6.1, 4.6, 4.6, 4.0, 4.8],
         "resistances": [22, 31, 15, 15, 15, 22, 31],
         "poise": 11,
         "weight": 6.6
@@ -363,7 +363,7 @@
     "crucible-hammer-helm": {
         "id": "crucible-hammer-helm",
         "name": "Crucible Hammer-Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [6.8, 6.1, 6.8, 6.7, 4.7, 4.9, 4.5, 4.6],
         "resistances": [26, 33, 18, 18, 18, 26, 33],
         "poise": 11,
         "weight": 7.5
@@ -371,7 +371,7 @@
     "crucible-tree-helm": {
         "id": "crucible-tree-helm",
         "name": "Crucible Tree Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [6.5, 5.0, 6.3, 5.6, 4.6, 4.2, 4.0, 5.2],
         "resistances": [22, 31, 15, 15, 15, 22, 31],
         "poise": 11,
         "weight": 6.6
@@ -379,7 +379,7 @@
     "cuckoo-knight-helm": {
         "id": "cuckoo-knight-helm",
         "name": "Cuckoo Knight Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.8, 4.0, 5.2, 4.8, 4.4, 4.2, 3.1, 3.6],
         "resistances": [14, 24, 10, 10, 10, 14, 24],
         "poise": 8,
         "weight": 5.1
@@ -387,7 +387,7 @@
     "curseblade-mask": {
         "id": "curseblade-mask",
         "name": "Curseblade Mask",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.5, 0.9, 2.3, 2.1, 4.6, 4.6, 4.6, 4.9],
         "resistances": [22, 11, 0, 33, 0, 22, 11],
         "poise": 4,
         "weight": 2.2
@@ -395,7 +395,7 @@
     "dancers-hood": {
         "id": "dancers-hood",
         "name": "Dancer's Hood",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [0.9, 0.2, 1.8, 0.2, 4.4, 4.4, 4.0, 4.2],
         "resistances": [15, 10, 24, 26, 24, 15, 10],
         "poise": 1,
         "weight": 1.0
@@ -403,7 +403,7 @@
     "danes-hat": {
         "id": "danes-hat",
         "name": "Dane's Hat",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [1.8, 2.3, 1.4, 1.4, 5.0, 4.2, 4.5, 5.0],
         "resistances": [16, 11, 33, 31, 33, 16, 11],
         "poise": 3,
         "weight": 2.2
@@ -411,7 +411,7 @@
     "death-knight-helm": {
         "id": "death-knight-helm",
         "name": "Death Knight Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.4, 3.8, 4.4, 4.4, 3.4, 3.4, 4.4, 2.8],
         "resistances": [12, 20, 8, 20, 8, 12, 20],
         "poise": 7,
         "weight": 4.6
@@ -419,7 +419,7 @@
     "death-mask-helm": {
         "id": "death-mask-helm",
         "name": "Death Mask Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.3, 3.3, 3.9, 3.5, 3.0, 3.9, 2.2, 2.7],
         "resistances": [10, 16, 7, 9, 7, 10, 16],
         "poise": 6,
         "weight": 3.4
@@ -427,7 +427,7 @@
     "depraved-perfumer-headscarf": {
         "id": "depraved-perfumer-headscarf",
         "name": "Depraved Perfumer Headscarf",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.0, 2.0, 1.7, 1.3, 4.6, 4.5, 4.4, 4.5],
         "resistances": [28, 10, 25, 34, 25, 28, 10],
         "poise": 3,
         "weight": 2.1
@@ -435,7 +435,7 @@
     "dialloss-mask": {
         "id": "dialloss-mask",
         "name": "Diallos's Mask",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.8, 3.8, 4.6, 4.4, 3.6, 3.6, 2.5, 3.4],
         "resistances": [15, 23, 10, 10, 10, 15, 23],
         "poise": 7,
         "weight": 4.6
@@ -443,7 +443,7 @@
     "divine-beast-head": {
         "id": "divine-beast-head",
         "name": "Divine Beast Head",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [7.0, 5.9, 6.7, 6.8, 4.9, 7.2, 4.6, 4.9],
         "resistances": [29, 26, 0, 24, 0, 29, 26],
         "poise": 13,
         "weight": 10.6
@@ -451,7 +451,7 @@
     "divine-beast-helm": {
         "id": "divine-beast-helm",
         "name": "Divine Beast Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.8, 4.4, 4.8, 4.4, 3.8, 4.0, 3.6, 3.8],
         "resistances": [14, 23, 0, 11, 0, 14, 23],
         "poise": 8,
         "weight": 5.1
@@ -459,7 +459,7 @@
     "divine-bird-helm": {
         "id": "divine-bird-helm",
         "name": "Divine Bird Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.8, 4.4, 4.4, 4.2, 3.8, 3.6, 2.8, 3.1],
         "resistances": [14, 22, 0, 9, 0, 14, 22],
         "poise": 8,
         "weight": 4.6
@@ -467,7 +467,7 @@
     "drake-knight-helm": {
         "id": "drake-knight-helm",
         "name": "Drake Knight Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.0, 3.4, 4.2, 4.0, 3.6, 4.0, 3.1, 3.6],
         "resistances": [11, 20, 9, 9, 9, 11, 20],
         "poise": 6,
         "weight": 4.0
@@ -475,7 +475,7 @@
     "drake-knight-helm-altered": {
         "id": "drake-knight-helm-altered",
         "name": "Drake Knight Helm (Altered)",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [3.6, 2.9, 3.8, 3.6, 3.2, 3.6, 2.6, 3.2],
         "resistances": [9, 16, 7, 7, 7, 9, 16],
         "poise": 6,
         "weight": 3.6
@@ -483,7 +483,7 @@
     "duelist-helm": {
         "id": "duelist-helm",
         "name": "Duelist Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [5.8, 5.2, 6.1, 6.1, 4.0, 4.5, 3.6, 4.2],
         "resistances": [24, 24, 11, 12, 11, 24, 24],
         "poise": 10,
         "weight": 6.2
@@ -491,7 +491,7 @@
     "eccentrics-hood": {
         "id": "eccentrics-hood",
         "name": "Eccentric's Hood",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.4, 3.4, 4.2, 4.4, 3.4, 3.6, 2.3, 3.1],
         "resistances": [14, 24, 9, 8, 9, 14, 24],
         "poise": 6,
         "weight": 4.0
@@ -499,7 +499,7 @@
     "eccentrics-hood-altered": {
         "id": "eccentrics-hood-altered",
         "name": "Eccentric's Hood (Altered)",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.4, 3.4, 4.2, 4.4, 3.4, 3.6, 2.3, 3.1],
         "resistances": [12, 21, 8, 7, 8, 12, 21],
         "poise": 6,
         "weight": 4.0
@@ -507,7 +507,7 @@
     "elden-lord-crown": {
         "id": "elden-lord-crown",
         "name": "Elden Lord Crown",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [3.8, 3.4, 3.6, 4.0, 2.5, 3.6, 2.1, 2.3],
         "resistances": [11, 20, 0, 5, 0, 11, 20],
         "poise": 5,
         "weight": 3.6
@@ -515,7 +515,7 @@
     "envoy-crown": {
         "id": "envoy-crown",
         "name": "Envoy Crown",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.8, 3.1, 3.1, 2.8, 5.3, 4.7, 4.9, 5.5],
         "resistances": [27, 15, 46, 46, 46, 27, 15],
         "poise": 4,
         "weight": 3.8
@@ -523,7 +523,7 @@
     "exile-hood": {
         "id": "exile-hood",
         "name": "Exile Hood",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.4, 3.4, 4.6, 4.4, 2.8, 3.8, 2.3, 3.4],
         "resistances": [12, 23, 9, 8, 9, 12, 23],
         "poise": 6,
         "weight": 4.0
@@ -531,7 +531,7 @@
     "fang-helm": {
         "id": "fang-helm",
         "name": "Fang Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.3, 2.5, 2.3, 2.3, 3.6, 3.4, 4.0, 3.4],
         "resistances": [23, 18, 16, 16, 16, 23, 18],
         "poise": 4,
         "weight": 2.7
@@ -539,7 +539,7 @@
     "festive-hood": {
         "id": "festive-hood",
         "name": "Festive Hood",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [1.4, 1.8, 2.1, 1.8, 4.5, 4.2, 4.4, 4.6],
         "resistances": [18, 9, 29, 29, 29, 18, 9],
         "poise": 2,
         "weight": 1.7
@@ -547,7 +547,7 @@
     "festive-hood-altered": {
         "id": "festive-hood-altered",
         "name": "Festive Hood (Altered)",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [0.2, 0.9, 1.4, 0.9, 4.2, 3.8, 4.0, 4.5],
         "resistances": [13, 4, 23, 23, 23, 13, 4],
         "poise": 1,
         "weight": 1.0
@@ -555,7 +555,7 @@
     "fias-hood": {
         "id": "fias-hood",
         "name": "Fia's Hood",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [1.4, 1.8, 1.4, 1.4, 4.4, 4.2, 4.4, 4.6],
         "resistances": [18, 8, 29, 45, 29, 18, 8],
         "poise": 2,
         "weight": 1.7
@@ -563,7 +563,7 @@
     "finger-maiden-fillet": {
         "id": "finger-maiden-fillet",
         "name": "Finger Maiden Fillet",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.1, 1.8, 1.8, 1.4, 4.8, 4.6, 4.6, 4.8],
         "resistances": [18, 10, 31, 31, 31, 18, 10],
         "poise": 4,
         "weight": 2.2
@@ -571,7 +571,7 @@
     "fingerprint-helm": {
         "id": "fingerprint-helm",
         "name": "Fingerprint Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.8, 4.2, 4.2, 4.2, 3.4, 4.5, 2.3, 3.4],
         "resistances": [14, 26, 5, 10, 5, 14, 26],
         "poise": 8,
         "weight": 4.6
@@ -579,7 +579,7 @@
     "fire-knight-helm": {
         "id": "fire-knight-helm",
         "name": "Fire Knight Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.6, 3.6, 4.2, 3.8, 3.4, 4.2, 2.5, 3.1],
         "resistances": [12, 20, 9, 10, 9, 12, 20],
         "poise": 6,
         "weight": 4.0
@@ -587,7 +587,7 @@
     "fire-monk-hood": {
         "id": "fire-monk-hood",
         "name": "Fire Monk Hood",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.6, 3.8, 4.2, 4.0, 3.1, 4.5, 2.5, 2.5],
         "resistances": [11, 20, 9, 9, 9, 11, 20],
         "poise": 6,
         "weight": 4.0
@@ -595,7 +595,7 @@
     "fire-prelate-helm": {
         "id": "fire-prelate-helm",
         "name": "Fire Prelate Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [7.0, 6.1, 6.7, 6.7, 4.8, 7.2, 4.6, 4.7],
         "resistances": [29, 27, 39, 22, 39, 29, 27],
         "poise": 14,
         "weight": 10.6
@@ -603,7 +603,7 @@
     "foot-soldier-cap": {
         "id": "foot-soldier-cap",
         "name": "Foot Soldier Cap",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [3.4, 3.6, 3.4, 3.4, 3.8, 4.0, 4.2, 3.8],
         "resistances": [27, 18, 23, 23, 23, 27, 18],
         "poise": 6,
         "weight": 3.6
@@ -611,7 +611,7 @@
     "foot-soldier-helm": {
         "id": "foot-soldier-helm",
         "name": "Foot Soldier Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [3.6, 3.4, 3.1, 3.1, 3.8, 4.2, 4.2, 3.8],
         "resistances": [27, 18, 23, 23, 23, 27, 18],
         "poise": 6,
         "weight": 3.6
@@ -619,7 +619,7 @@
     "foot-soldier-helmet": {
         "id": "foot-soldier-helmet",
         "name": "Foot Soldier Helmet",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [3.4, 3.4, 3.6, 3.6, 4.0, 4.0, 4.0, 3.6],
         "resistances": [27, 18, 23, 23, 23, 27, 18],
         "poise": 6,
         "weight": 3.6
@@ -627,7 +627,7 @@
     "freyjas-helm": {
         "id": "freyjas-helm",
         "name": "Freyja's Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [5.5, 4.2, 4.8, 4.8, 4.0, 4.2, 3.8, 4.2],
         "resistances": [13, 28, 9, 12, 9, 13, 28],
         "poise": 8,
         "weight": 5.8
@@ -635,7 +635,7 @@
     "gaiuss-helm": {
         "id": "gaiuss-helm",
         "name": "Gaius's Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [6.1, 5.6, 7.2, 7.0, 5.0, 4.9, 4.9, 4.9],
         "resistances": [29, 35, 23, 23, 23, 29, 35],
         "poise": 12,
         "weight": 8.6
@@ -643,7 +643,7 @@
     "gelmir-knight-helm": {
         "id": "gelmir-knight-helm",
         "name": "Gelmir Knight Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.8, 4.0, 5.0, 4.8, 3.8, 4.4, 3.6, 3.8],
         "resistances": [15, 23, 10, 10, 10, 15, 23],
         "poise": 8,
         "weight": 5.1
@@ -651,7 +651,7 @@
     "gilded-foot-soldier-cap": {
         "id": "gilded-foot-soldier-cap",
         "name": "Gilded Foot Soldier Cap",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [3.4, 3.8, 3.1, 3.6, 3.6, 3.8, 4.4, 3.8],
         "resistances": [27, 18, 23, 23, 23, 27, 18],
         "poise": 6,
         "weight": 3.6
@@ -659,7 +659,7 @@
     "glintstone-scarab": {
         "id": "glintstone-scarab",
         "name": "Glintstone Scarab",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [3.8, 4.0, 3.8, 3.8, 4.6, 4.6, 4.6, 4.5],
         "resistances": [42, 22, 27, 26, 27, 42, 22],
         "poise": 6,
         "weight": 5.1
@@ -667,7 +667,7 @@
     "godrick-knight-helm": {
         "id": "godrick-knight-helm",
         "name": "Godrick Knight Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.8, 4.2, 5.0, 4.6, 3.8, 4.2, 3.4, 3.8],
         "resistances": [15, 24, 10, 10, 10, 15, 24],
         "poise": 8,
         "weight": 5.1
@@ -675,7 +675,7 @@
     "godrick-soldier-helm": {
         "id": "godrick-soldier-helm",
         "name": "Godrick Soldier Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.4, 3.6, 4.4, 4.2, 3.1, 3.6, 2.5, 3.1],
         "resistances": [12, 22, 9, 9, 9, 12, 22],
         "poise": 7,
         "weight": 4.0
@@ -683,7 +683,7 @@
     "godskin-apostle-hood": {
         "id": "godskin-apostle-hood",
         "name": "Godskin Apostle Hood",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.3, 2.1, 2.1, 1.4, 4.6, 4.4, 4.5, 5.0],
         "resistances": [20, 10, 33, 31, 33, 20, 10],
         "poise": 3,
         "weight": 2.2
@@ -698,7 +698,7 @@
     "grass-hair-ornament": {
         "id": "grass-hair-ornament",
         "name": "Grass Hair Ornament",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [1.4, 1.4, 1.4, 0.9, 4.5, 4.2, 4.4, 4.5],
         "resistances": [16, 9, 27, 27, 27, 16, 9],
         "poise": 2,
         "weight": 1.4
@@ -706,7 +706,7 @@
     "gravebird-helm": {
         "id": "gravebird-helm",
         "name": "Gravebird Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [3.4, 3.6, 3.6, 3.1, 4.0, 3.8, 4.2, 4.2],
         "resistances": [24, 14, 21, 20, 21, 24, 14],
         "poise": 6,
         "weight": 3.6
@@ -714,7 +714,7 @@
     "great-horned-headband": {
         "id": "great-horned-headband",
         "name": "Great Horned Headband",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.8, 3.1, 2.8, 2.8, 3.1, 3.4, 3.8, 3.4],
         "resistances": [33, 23, 27, 22, 27, 33, 23],
         "poise": 4,
         "weight": 3.3
@@ -722,7 +722,7 @@
     "greathelm": {
         "id": "greathelm",
         "name": "Greathelm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [5.5, 4.2, 5.8, 5.2, 4.2, 4.6, 3.8, 4.2],
         "resistances": [16, 29, 11, 11, 11, 16, 29],
         "poise": 9,
         "weight": 5.9
@@ -730,7 +730,7 @@
     "greathood": {
         "id": "greathood",
         "name": "Greathood",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [3.8, 3.6, 3.8, 3.6, 5.5, 5.0, 5.5, 6.2],
         "resistances": [33, 20, 47, 47, 47, 33, 20],
         "poise": 5,
         "weight": 5.1
@@ -738,7 +738,7 @@
     "greatjar": {
         "id": "greatjar",
         "name": "Greatjar",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [8.0, 6.9, 7.7, 7.7, 5.3, 5.2, 5.5, 5.1],
         "resistances": [32, 34, 22, 21, 22, 32, 34],
         "poise": 14,
         "weight": 12.3
@@ -746,7 +746,7 @@
     "guardian-mask": {
         "id": "guardian-mask",
         "name": "Guardian Mask",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [3.8, 3.6, 3.6, 3.4, 4.2, 4.0, 4.2, 4.2],
         "resistances": [33, 22, 26, 24, 26, 33, 22],
         "poise": 5,
         "weight": 3.8
@@ -754,7 +754,7 @@
     "guilty-hood": {
         "id": "guilty-hood",
         "name": "Guilty Hood",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [0.9, 1.4, 1.8, 0.2, 4.4, 4.0, 4.5, 4.6],
         "resistances": [15, 9, 27, 31, 27, 15, 9],
         "poise": 2,
         "weight": 1.4
@@ -763,7 +763,7 @@
         "id": "haima-glintstone-crown",
         "name": "Haima Glintstone Crown",
         "stats": [0, 0, 0, 2, 0, 2, 0, 0],
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.3, 2.5, 2.1, 2.3, 4.8, 4.5, 4.6, 4.6],
         "resistances": [22, 11, 33, 39, 33, 22, 11],
         "poise": 4,
         "weight": 2.7
@@ -772,7 +772,7 @@
         "id": "haligtree-helm",
         "name": "Haligtree Helm",
         "stats": [0, 0, 0, 0, 0, 0, 1, 0],
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.4, 3.8, 4.2, 4.4, 2.8, 3.4, 2.5, 3.4],
         "resistances": [12, 22, 9, 10, 9, 12, 22],
         "poise": 6,
         "weight": 4.0
@@ -781,7 +781,7 @@
         "id": "haligtree-knight-helm",
         "name": "Haligtree Knight Helm",
         "stats": [0, 0, 0, 0, 0, 0, 2, 0],
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.8, 4.4, 4.8, 4.8, 3.6, 4.0, 3.4, 4.0],
         "resistances": [15, 24, 10, 11, 10, 15, 24],
         "poise": 7,
         "weight": 5.1
@@ -789,7 +789,7 @@
     "helm-of-night": {
         "id": "helm-of-night",
         "name": "Helm of Night",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.5, 2.5, 2.8, 2.8, 4.4, 3.4, 3.4, 4.5],
         "resistances": [23, 14, 20, 20, 20, 23, 14],
         "poise": 4,
         "weight": 3.0
@@ -797,7 +797,7 @@
     "helm-of-solitude": {
         "id": "helm-of-solitude",
         "name": "Helm of Solitude",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [6.8, 6.4, 6.7, 6.3, 4.7, 5.2, 4.8, 4.9],
         "resistances": [26, 27, 42, 22, 42, 26, 27],
         "poise": 14,
         "weight": 10.3
@@ -806,7 +806,7 @@
         "id": "hierodas-glintstone-crown",
         "name": "Hierodas Glintstone Crown",
         "stats": [0, 0, 2, 0, 0, 2, 0, 0],
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.3, 2.3, 2.8, 2.3, 4.9, 4.7, 4.6, 4.9],
         "resistances": [20, 11, 39, 42, 39, 20, 11],
         "poise": 4,
         "weight": 3.0
@@ -814,7 +814,7 @@
     "high-page-hood": {
         "id": "high-page-hood",
         "name": "High Page Hood",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [0.9, 1.8, 0.9, 0.9, 4.6, 4.2, 4.4, 4.5],
         "resistances": [15, 8, 27, 27, 27, 15, 8],
         "poise": 2,
         "weight": 1.4
@@ -822,7 +822,7 @@
     "high-priest-hat": {
         "id": "high-priest-hat",
         "name": "High Priest Hat",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [1.8, 2.1, 1.4, 0.9, 4.6, 4.5, 4.4, 4.5],
         "resistances": [18, 10, 27, 33, 27, 18, 10],
         "poise": 3,
         "weight": 1.7
@@ -830,7 +830,7 @@
     "highwayman-hood": {
         "id": "highwayman-hood",
         "name": "Highwayman Hood",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.8, 3.6, 2.8, 3.1, 3.8, 3.8, 4.0, 3.6],
         "resistances": [24, 15, 22, 22, 22, 24, 15],
         "poise": 4,
         "weight": 3.3
@@ -838,7 +838,7 @@
     "horned-warrior-helm": {
         "id": "horned-warrior-helm",
         "name": "Horned Warrior Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.8, 4.4, 4.6, 4.0, 3.6, 3.6, 3.1, 3.1],
         "resistances": [13, 25, 0, 9, 0, 13, 25],
         "poise": 7,
         "weight": 4.6
@@ -846,7 +846,7 @@
     "hoslows-helm": {
         "id": "hoslows-helm",
         "name": "Hoslow's Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [5.2, 4.4, 5.0, 4.8, 4.0, 4.4, 3.8, 3.8],
         "resistances": [18, 27, 11, 11, 11, 18, 27],
         "poise": 8,
         "weight": 5.5
@@ -854,7 +854,7 @@
     "igons-helm": {
         "id": "igons-helm",
         "name": "Igon's Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [3.1, 3.4, 3.1, 3.1, 3.6, 3.8, 4.0, 3.6],
         "resistances": [26, 16, 22, 22, 22, 26, 16],
         "poise": 5,
         "weight": 3.3
@@ -862,7 +862,7 @@
     "igons-helm-altered": {
         "id": "igons-helm-altered",
         "name": "Igon's Helm (Altered)",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.8, 3.1, 2.8, 2.8, 3.4, 3.6, 3.8, 3.4],
         "resistances": [24, 15, 20, 20, 20, 24, 15],
         "poise": 5,
         "weight": 3.0
@@ -870,7 +870,7 @@
     "ijis-mirrorhelm": {
         "id": "ijis-mirrorhelm",
         "name": "Iji's Mirrorhelm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [3.8, 3.8, 5.2, 5.2, 6.2, 4.6, 4.8, 5.8],
         "resistances": [22, 42, 26, 39, 26, 22, 42],
         "poise": 7,
         "weight": 7.5
@@ -879,7 +879,7 @@
         "id": "imp-head-cat",
         "name": "Imp Head (Cat)",
         "stats": [0, 0, 0, 0, 0, 2, 0, 0],
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [5.8, 5.2, 5.8, 6.1, 5.0, 5.8, 4.8, 5.0],
         "resistances": [35, 35, 20, 20, 20, 35, 35],
         "poise": 10,
         "weight": 8.1
@@ -888,7 +888,7 @@
         "id": "imp-head-corpse",
         "name": "Imp Head (Corpse)",
         "stats": [0, 0, 0, 0, 0, 0, 2, 0],
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [5.8, 5.2, 5.8, 6.1, 5.0, 5.8, 4.8, 5.0],
         "resistances": [35, 35, 20, 20, 20, 35, 35],
         "poise": 10,
         "weight": 8.1
@@ -897,7 +897,7 @@
         "id": "imp-head-elder",
         "name": "Imp Head (Elder)",
         "stats": [0, 0, 0, 0, 0, 0, 0, 2],
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [5.8, 5.2, 5.8, 6.1, 5.0, 5.8, 4.8, 5.0],
         "resistances": [35, 35, 20, 20, 20, 35, 35],
         "poise": 10,
         "weight": 8.1
@@ -906,7 +906,7 @@
         "id": "imp-head-fanged",
         "name": "Imp Head (Fanged)",
         "stats": [0, 0, 0, 2, 0, 0, 0, 0],
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [5.8, 5.2, 5.8, 6.1, 5.0, 5.8, 4.8, 5.0],
         "resistances": [35, 35, 20, 20, 20, 35, 35],
         "poise": 10,
         "weight": 8.1
@@ -914,7 +914,7 @@
     "imp-head-lion": {
         "id": "imp-head-lion",
         "name": "Imp Head (Lion)",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [7.0, 5.9, 7.0, 7.0, 4.6, 5.2, 4.6, 4.6],
         "resistances": [26, 44, 18, 18, 18, 26, 44],
         "poise": 13,
         "weight": 8.1
@@ -923,7 +923,7 @@
         "id": "imp-head-long-tongued",
         "name": "Imp Head (Long-Tongued)",
         "stats": [0, 0, 0, 0, 2, 0, 0, 0],
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [5.8, 5.2, 5.8, 6.1, 5.0, 5.8, 4.8, 5.0],
         "resistances": [35, 35, 20, 20, 20, 35, 35],
         "poise": 10,
         "weight": 8.1
@@ -932,7 +932,7 @@
         "id": "imp-head-wolf",
         "name": "Imp Head (Wolf)",
         "stats": [0, 0, 2, 0, 0, 0, 0, 0],
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [5.8, 5.2, 5.8, 6.1, 5.0, 5.8, 4.8, 5.0],
         "resistances": [35, 35, 20, 20, 20, 35, 35],
         "poise": 10,
         "weight": 8.1
@@ -940,7 +940,7 @@
     "incantation-scarab": {
         "id": "incantation-scarab",
         "name": "Incantation Scarab",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [3.8, 4.0, 3.8, 3.8, 4.6, 4.6, 4.6, 4.5],
         "resistances": [42, 22, 27, 26, 27, 42, 22],
         "poise": 6,
         "weight": 5.1
@@ -948,7 +948,7 @@
     "iron-helmet": {
         "id": "iron-helmet",
         "name": "Iron Helmet",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.4, 3.1, 4.0, 4.2, 2.5, 3.1, 2.3, 3.1],
         "resistances": [12, 18, 8, 8, 8, 12, 18],
         "poise": 6,
         "weight": 3.8
@@ -956,7 +956,7 @@
     "iron-kasa": {
         "id": "iron-kasa",
         "name": "Iron Kasa",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [3.6, 3.6, 4.2, 3.6, 4.0, 4.2, 4.4, 4.0],
         "resistances": [30, 23, 24, 24, 24, 30, 23],
         "poise": 6,
         "weight": 3.8
@@ -964,7 +964,7 @@
     "jar": {
         "id": "jar",
         "name": "Jar",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [6.8, 3.4, 7.0, 6.8, 4.7, 4.9, 4.6, 4.7],
         "resistances": [24, 33, 16, 15, 16, 24, 33],
         "poise": 10,
         "weight": 6.8
@@ -972,7 +972,7 @@
     "juvenile-scholar-cap": {
         "id": "juvenile-scholar-cap",
         "name": "Juvenile Scholar Cap",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [1.4, 1.8, 1.8, 1.4, 4.5, 4.0, 4.2, 4.4],
         "resistances": [15, 10, 26, 29, 26, 15, 10],
         "poise": 2,
         "weight": 1.4
@@ -980,7 +980,7 @@
     "kaiden-helm": {
         "id": "kaiden-helm",
         "name": "Kaiden Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.4, 3.4, 4.4, 4.4, 3.1, 3.4, 2.8, 3.1],
         "resistances": [12, 22, 9, 9, 9, 12, 22],
         "poise": 7,
         "weight": 4.0
@@ -988,7 +988,7 @@
     "karolos-glintstone-crown": {
         "id": "karolos-glintstone-crown",
         "name": "Karolos Glintstone Crown",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.4, 3.1, 5.2, 4.8, 4.4, 4.5, 3.4, 3.8],
         "resistances": [16, 26, 10, 10, 10, 16, 26],
         "poise": 6,
         "weight": 5.1
@@ -996,7 +996,7 @@
     "knight-helm": {
         "id": "knight-helm",
         "name": "Knight Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.4, 4.2, 4.8, 4.8, 3.8, 3.8, 3.4, 3.1],
         "resistances": [12, 22, 8, 8, 8, 12, 22],
         "poise": 8,
         "weight": 4.6
@@ -1004,7 +1004,7 @@
     "land-of-reeds-helm": {
         "id": "land-of-reeds-helm",
         "name": "Land of Reeds Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [3.1, 3.4, 4.8, 3.4, 3.6, 4.0, 4.2, 3.8],
         "resistances": [26, 22, 0, 23, 0, 26, 22],
         "poise": 5,
         "weight": 3.6
@@ -1012,7 +1012,7 @@
     "lazuli-glintstone-crown": {
         "id": "lazuli-glintstone-crown",
         "name": "Lazuli Glintstone Crown",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.4, 3.1, 5.2, 4.8, 4.4, 4.5, 3.4, 3.8],
         "resistances": [16, 26, 10, 10, 10, 16, 26],
         "poise": 6,
         "weight": 5.1
@@ -1020,7 +1020,7 @@
     "leather-crown": {
         "id": "leather-crown",
         "name": "Leather Crown",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [3.1, 3.6, 3.4, 3.1, 3.4, 3.8, 4.2, 3.8],
         "resistances": [26, 15, 22, 20, 22, 26, 15],
         "poise": 5,
         "weight": 3.3
@@ -1028,7 +1028,7 @@
     "leather-headband": {
         "id": "leather-headband",
         "name": "Leather Headband",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [1.4, 2.1, 1.8, 1.4, 1.8, 2.3, 2.8, 2.3],
         "resistances": [16, 10, 12, 11, 12, 16, 10],
         "poise": 2,
         "weight": 1.0
@@ -1036,7 +1036,7 @@
     "leyndell-knight-helm": {
         "id": "leyndell-knight-helm",
         "name": "Leyndell Knight Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.8, 4.4, 4.8, 4.8, 3.6, 4.0, 3.6, 3.8],
         "resistances": [15, 24, 10, 10, 10, 15, 24],
         "poise": 8,
         "weight": 5.1
@@ -1044,7 +1044,7 @@
     "leyndell-soldier-helm": {
         "id": "leyndell-soldier-helm",
         "name": "Leyndell Soldier Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.4, 3.8, 4.2, 4.4, 2.8, 3.4, 2.8, 3.1],
         "resistances": [12, 22, 9, 9, 9, 12, 22],
         "poise": 7,
         "weight": 4.0
@@ -1052,7 +1052,7 @@
     "lionels-helm": {
         "id": "lionels-helm",
         "name": "Lionel's Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [6.3, 5.9, 7.0, 7.2, 4.8, 5.3, 4.6, 4.8],
         "resistances": [27, 42, 18, 22, 18, 27, 42],
         "poise": 13,
         "weight": 9.1
@@ -1060,7 +1060,7 @@
     "lusats-glintstone-crown": {
         "id": "lusats-glintstone-crown",
         "name": "Lusat's Glintstone Crown",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [3.1, 2.3, 3.1, 2.3, 5.5, 4.6, 4.8, 4.9],
         "resistances": [23, 11, 39, 44, 39, 23, 11],
         "poise": 4,
         "weight": 3.6
@@ -1068,7 +1068,7 @@
     "malenias-winged-helm": {
         "id": "malenias-winged-helm",
         "name": "Malenia's Winged Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.4, 3.4, 4.6, 4.0, 2.8, 3.4, 2.3, 3.8],
         "resistances": [22, 18, 8, 8, 8, 22, 18],
         "poise": 6,
         "weight": 4.0
@@ -1076,7 +1076,7 @@
     "malformed-dragon-helm": {
         "id": "malformed-dragon-helm",
         "name": "Malformed Dragon Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [6.1, 5.4, 6.3, 6.1, 4.6, 4.6, 4.9, 4.6],
         "resistances": [24, 33, 16, 16, 16, 24, 33],
         "poise": 10,
         "weight": 6.8
@@ -1084,7 +1084,7 @@
     "malikeths-helm": {
         "id": "malikeths-helm",
         "name": "Maliketh's Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.8, 4.2, 5.0, 4.8, 3.8, 4.0, 3.4, 4.6],
         "resistances": [15, 24, 10, 22, 10, 15, 24],
         "poise": 8,
         "weight": 5.5
@@ -1092,7 +1092,7 @@
     "marais-mask": {
         "id": "marais-mask",
         "name": "Marais Mask",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.1, 2.3, 1.8, 1.4, 4.6, 4.5, 4.5, 4.6],
         "resistances": [20, 14, 35, 33, 35, 20, 14],
         "poise": 4,
         "weight": 2.2
@@ -1100,7 +1100,7 @@
     "marionette-soldier-birdhelm": {
         "id": "marionette-soldier-birdhelm",
         "name": "Marionette Soldier Birdhelm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.4, 3.1, 4.0, 3.8, 3.1, 3.1, 2.5, 2.5],
         "resistances": [11, 18, 8, 9, 8, 11, 18],
         "poise": 6,
         "weight": 3.8
@@ -1108,7 +1108,7 @@
     "marionette-soldier-helm": {
         "id": "marionette-soldier-helm",
         "name": "Marionette Soldier Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.4, 3.1, 4.0, 3.8, 3.1, 3.1, 2.3, 3.1],
         "resistances": [10, 22, 9, 8, 9, 10, 22],
         "poise": 6,
         "weight": 3.8
@@ -1117,7 +1117,7 @@
         "id": "mask-of-confidence",
         "name": "Mask of Confidence",
         "stats": [0, 0, 0, 0, 0, 0, 0, 3],
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.3, 2.5, 2.3, 2.3, 5.3, 4.8, 4.7, 4.7],
         "resistances": [24, 11, 39, 35, 39, 24, 10],
         "poise": 5,
         "weight": 3.3
@@ -1125,7 +1125,7 @@
     "messmer-soldier-helm": {
         "id": "messmer-soldier-helm",
         "name": "Messmer Soldier Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.4, 3.6, 4.4, 4.2, 3.1, 3.6, 2.5, 3.1],
         "resistances": [12, 22, 9, 9, 9, 12, 22],
         "poise": 7,
         "weight": 4.0
@@ -1133,7 +1133,7 @@
     "messmers-helm": {
         "id": "messmers-helm",
         "name": "Messmer's Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [3.4, 3.4, 3.1, 3.8, 3.6, 4.4, 4.2, 3.6],
         "resistances": [26, 18, 24, 26, 24, 26, 18],
         "poise": 5,
         "weight": 3.6
@@ -1141,7 +1141,7 @@
     "messmers-helm-altered": {
         "id": "messmers-helm-altered",
         "name": "Messmer's Helm (Altered)",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [3.1, 3.1, 2.8, 3.6, 3.4, 4.2, 4.0, 3.4],
         "resistances": [24, 16, 23, 24, 23, 24, 16],
         "poise": 5,
         "weight": 3.3
@@ -1149,7 +1149,7 @@
     "mushroom-crown": {
         "id": "mushroom-crown",
         "name": "Mushroom Crown",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [5.8, 5.9, 6.8, 7.0, 4.8, 3.1, 4.6, 4.8],
         "resistances": [46, 45, 18, 22, 18, 46, 45],
         "poise": 10,
         "weight": 9.1
@@ -1157,7 +1157,7 @@
     "mushroom-head": {
         "id": "mushroom-head",
         "name": "Mushroom Head",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.1, 2.5, 0.9, 1.8, 4.7, 1.8, 4.6, 4.6],
         "resistances": [44, 10, 39, 33, 39, 44, 10],
         "poise": 2,
         "weight": 2.2
@@ -1166,7 +1166,7 @@
         "id": "navy-hood",
         "name": "Navy Hood",
         "stats": [0, 1, 0, 0, 0, 0, 0, 0],
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [1.4, 2.1, 1.8, 0.9, 4.6, 4.7, 4.4, 4.5],
         "resistances": [20, 10, 29, 27, 29, 20, 10],
         "poise": 3,
         "weight": 1.7
@@ -1174,7 +1174,7 @@
     "night-maiden-twin-crown": {
         "id": "night-maiden-twin-crown",
         "name": "Night Maiden Twin Crown",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.5, 3.1, 2.5, 3.4, 4.2, 3.8, 4.0, 4.2],
         "resistances": [26, 15, 22, 22, 22, 26, 15],
         "poise": 5,
         "weight": 3.3
@@ -1182,7 +1182,7 @@
     "nights-cavalry-helm": {
         "id": "nights-cavalry-helm",
         "name": "Night's Cavalry Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [5.0, 4.6, 5.0, 4.8, 3.8, 4.5, 3.8, 4.5],
         "resistances": [16, 24, 10, 10, 10, 16, 24],
         "poise": 8,
         "weight": 5.5
@@ -1190,7 +1190,7 @@
     "nights-cavalry-helm-altered": {
         "id": "nights-cavalry-helm-altered",
         "name": "Night's Cavalry Helm (Altered)",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.8, 4.4, 4.8, 4.4, 3.6, 4.4, 3.6, 4.4],
         "resistances": [13, 21, 9, 9, 9, 13, 21],
         "poise": 8,
         "weight": 5.1
@@ -1198,7 +1198,7 @@
     "nomadic-merchants-chapeau": {
         "id": "nomadic-merchants-chapeau",
         "name": "Nomadic Merchant's Chapeau",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.8, 3.1, 2.5, 2.3, 3.4, 3.4, 3.4, 3.1],
         "resistances": [24, 14, 31, 20, 31, 24, 14],
         "poise": 4,
         "weight": 3.0
@@ -1206,7 +1206,7 @@
     "nox-mirrorhelm": {
         "id": "nox-mirrorhelm",
         "name": "Nox Mirrorhelm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.0, 3.4, 5.5, 5.0, 6.7, 5.3, 4.2, 5.3],
         "resistances": [29, 33, 26, 42, 26, 29, 33],
         "poise": 6,
         "weight": 7.5
@@ -1214,7 +1214,7 @@
     "nox-monk-hood": {
         "id": "nox-monk-hood",
         "name": "Nox Monk Hood",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.8, 3.1, 2.8, 2.5, 4.0, 3.8, 3.8, 3.1],
         "resistances": [24, 15, 18, 18, 18, 24, 15],
         "poise": 4,
         "weight": 3.0
@@ -1222,7 +1222,7 @@
     "nox-monk-hood-altered": {
         "id": "nox-monk-hood-altered",
         "name": "Nox Monk Hood (Altered)",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.5, 2.8, 2.5, 2.3, 3.8, 3.6, 3.6, 2.8],
         "resistances": [21, 12, 14, 14, 14, 21, 12],
         "poise": 3,
         "weight": 2.7
@@ -1230,7 +1230,7 @@
     "nox-swordstress-crown": {
         "id": "nox-swordstress-crown",
         "name": "Nox Swordstress Crown",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.8, 3.4, 2.8, 3.1, 4.4, 3.6, 4.2, 3.8],
         "resistances": [24, 15, 22, 22, 22, 24, 15],
         "poise": 5,
         "weight": 3.3
@@ -1238,7 +1238,7 @@
     "nox-swordstress-crown-altered": {
         "id": "nox-swordstress-crown-altered",
         "name": "Nox Swordstress Crown (Altered)",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.3, 2.8, 2.3, 2.5, 4.0, 3.1, 3.8, 3.4],
         "resistances": [21, 11, 17, 17, 17, 21, 11],
         "poise": 2,
         "weight": 2.7
@@ -1246,7 +1246,7 @@
     "oathseeker-knight-helm": {
         "id": "oathseeker-knight-helm",
         "name": "Oathseeker Knight Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.4, 3.8, 4.2, 4.0, 3.6, 3.4, 2.3, 3.4],
         "resistances": [12, 21, 10, 9, 10, 12, 21],
         "poise": 7,
         "weight": 4.4
@@ -1254,7 +1254,7 @@
     "octopus-head": {
         "id": "octopus-head",
         "name": "Octopus Head",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [3.4, 5.4, 2.8, 2.8, 4.0, 3.6, 4.0, 3.8],
         "resistances": [31, 14, 23, 23, 23, 31, 14],
         "poise": 5,
         "weight": 3.6
@@ -1263,7 +1263,7 @@
         "id": "okina-mask",
         "name": "Okina Mask",
         "stats": [0, 0, 0, 0, 3, 0, 0, 0],
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [3.4, 3.6, 4.0, 3.1, 3.8, 3.8, 4.2, 3.6],
         "resistances": [29, 18, 23, 22, 23, 29, 18],
         "poise": 6,
         "weight": 3.6
@@ -1271,7 +1271,7 @@
     "old-aristocrat-cowl": {
         "id": "old-aristocrat-cowl",
         "name": "Old Aristocrat Cowl",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.5, 2.5, 2.3, 2.5, 3.4, 3.6, 3.4, 2.5],
         "resistances": [18, 11, 15, 16, 15, 18, 11],
         "poise": 3,
         "weight": 2.2
@@ -1280,7 +1280,7 @@
         "id": "olivinus-glintstone-crown",
         "name": "Olivinus Glintstone Crown",
         "stats": [0, 0, 0, 0, 0, 3, 0, 0],
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.4, 3.1, 5.2, 4.8, 4.4, 4.5, 3.4, 3.8],
         "resistances": [16, 26, 10, 10, 10, 16, 26],
         "poise": 6,
         "weight": 5.1
@@ -1288,7 +1288,7 @@
     "omen-helm": {
         "id": "omen-helm",
         "name": "Omen Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [6.7, 5.4, 6.8, 6.8, 4.6, 5.2, 5.3, 4.9],
         "resistances": [29, 27, 24, 33, 24, 29, 27],
         "poise": 14,
         "weight": 9.9
@@ -1297,7 +1297,7 @@
         "id": "omensmirk-mask",
         "name": "Omensmirk Mask",
         "stats": [0, 0, 0, 2, 0, 0, 0, 0],
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [3.1, 2.8, 2.5, 2.5, 3.1, 3.4, 4.0, 3.6],
         "resistances": [29, 12, 20, 20, 20, 29, 12],
         "poise": 6,
         "weight": 3.0
@@ -1305,7 +1305,7 @@
     "page-hood": {
         "id": "page-hood",
         "name": "Page Hood",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [1.8, 1.4, 0.9, 0.9, 4.4, 4.2, 4.5, 4.5],
         "resistances": [15, 8, 29, 29, 29, 15, 8],
         "poise": 2,
         "weight": 1.4
@@ -1313,7 +1313,7 @@
     "pelt-of-ralva": {
         "id": "pelt-of-ralva",
         "name": "Pelt of Ralva",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [3.1, 3.4, 3.1, 3.1, 4.2, 4.0, 4.5, 4.0],
         "resistances": [27, 23, 22, 22, 22, 27, 23],
         "poise": 5,
         "weight": 3.6
@@ -1321,7 +1321,7 @@
     "perfumer-hood": {
         "id": "perfumer-hood",
         "name": "Perfumer Hood",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [1.4, 2.1, 1.8, 1.4, 4.6, 4.2, 4.4, 4.6],
         "resistances": [26, 8, 27, 29, 27, 26, 8],
         "poise": 3,
         "weight": 1.7
@@ -1329,7 +1329,7 @@
     "preceptors-big-hat": {
         "id": "preceptors-big-hat",
         "name": "Preceptor's Big Hat",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.5, 2.8, 2.5, 2.5, 5.5, 4.9, 4.8, 4.8],
         "resistances": [26, 12, 44, 42, 44, 26, 12],
         "poise": 5,
         "weight": 3.6
@@ -1337,7 +1337,7 @@
     "prisoner-iron-mask": {
         "id": "prisoner-iron-mask",
         "name": "Prisoner Iron Mask",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [6.8, 5.9, 7.0, 6.8, 4.6, 4.9, 4.5, 4.8],
         "resistances": [29, 44, 35, 20, 35, 29, 44],
         "poise": 12,
         "weight": 8.6
@@ -1345,7 +1345,7 @@
     "prophet-blindfold": {
         "id": "prophet-blindfold",
         "name": "Prophet Blindfold",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [0.2, 0.9, 0.9, 0.2, 4.5, 4.2, 4.0, 4.5],
         "resistances": [14, 5, 27, 27, 27, 14, 5],
         "poise": 1,
         "weight": 1.0
@@ -1353,7 +1353,7 @@
     "pumpkin-helm": {
         "id": "pumpkin-helm",
         "name": "Pumpkin Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [7.0, 5.9, 6.7, 6.7, 4.6, 4.7, 5.2, 4.5],
         "resistances": [27, 42, 44, 18, 44, 27, 42],
         "poise": 11,
         "weight": 12.3
@@ -1362,7 +1362,7 @@
         "id": "queens-crescent-crown",
         "name": "Queen's Crescent Crown",
         "stats": [0, 0, 0, 0, 0, 3, 0, 0],
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.1, 1.8, 1.8, 1.4, 4.9, 4.5, 4.6, 4.7],
         "resistances": [18, 11, 31, 35, 31, 18, 11],
         "poise": 3,
         "weight": 2.2
@@ -1370,7 +1370,7 @@
     "radahn-soldier-helm": {
         "id": "radahn-soldier-helm",
         "name": "Radahn Soldier Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.6, 3.4, 4.2, 4.0, 3.1, 3.8, 2.5, 3.1],
         "resistances": [12, 20, 9, 10, 9, 12, 20],
         "poise": 7,
         "weight": 4.0
@@ -1378,7 +1378,7 @@
     "radahns-redmane-helm": {
         "id": "radahns-redmane-helm",
         "name": "Radahn's Redmane Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [6.8, 5.4, 6.7, 6.3, 4.8, 5.0, 4.5, 4.8],
         "resistances": [26, 42, 18, 16, 18, 26, 42],
         "poise": 11,
         "weight": 7.5
@@ -1386,7 +1386,7 @@
     "radiant-gold-mask": {
         "id": "radiant-gold-mask",
         "name": "Radiant Gold Mask",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.3, 2.1, 2.1, 1.4, 4.6, 4.5, 4.6, 4.8],
         "resistances": [22, 9, 33, 33, 33, 22, 9],
         "poise": 3,
         "weight": 2.2
@@ -1394,7 +1394,7 @@
     "raging-wolf-helm": {
         "id": "raging-wolf-helm",
         "name": "Raging Wolf Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.7, 4.1, 4.7, 4.5, 3.5, 3.9, 2.4, 3.3],
         "resistances": [14, 23, 8, 8, 8, 14, 23],
         "poise": 7,
         "weight": 4.4
@@ -1402,7 +1402,7 @@
     "rakshasa-helm": {
         "id": "rakshasa-helm",
         "name": "Rakshasa Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.6, 4.2, 5.0, 4.8, 4.0, 4.4, 3.8, 4.0],
         "resistances": [15, 26, 12, 12, 12, 15, 26],
         "poise": 9,
         "weight": 5.5
@@ -1410,7 +1410,7 @@
     "raya-lucarian-helm": {
         "id": "raya-lucarian-helm",
         "name": "Raya Lucarian Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.4, 3.4, 4.6, 4.4, 3.4, 3.6, 2.3, 2.8],
         "resistances": [12, 22, 9, 9, 9, 12, 22],
         "poise": 7,
         "weight": 4.0
@@ -1418,7 +1418,7 @@
     "redmane-knight-helm": {
         "id": "redmane-knight-helm",
         "name": "Redmane Knight Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [5.0, 4.0, 4.8, 4.4, 3.8, 4.4, 3.4, 3.8],
         "resistances": [15, 23, 10, 11, 10, 15, 23],
         "poise": 8,
         "weight": 5.1
@@ -1426,7 +1426,7 @@
     "rellanas-helm": {
         "id": "rellanas-helm",
         "name": "Rellana's Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.8, 4.2, 5.0, 4.6, 4.5, 4.2, 3.4, 3.8],
         "resistances": [15, 24, 10, 10, 10, 15, 24],
         "poise": 8,
         "weight": 5.1
@@ -1434,7 +1434,7 @@
     "rotten-duelist-helm": {
         "id": "rotten-duelist-helm",
         "name": "Rotten Duelist Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [5.5, 4.6, 5.8, 5.5, 4.5, 4.6, 4.4, 4.5],
         "resistances": [31, 31, 14, 14, 14, 31, 31],
         "poise": 9,
         "weight": 6.4
@@ -1442,7 +1442,7 @@
     "royal-knight-helm": {
         "id": "royal-knight-helm",
         "name": "Royal Knight Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [5.8, 5.2, 6.3, 6.1, 5.0, 4.7, 4.4, 4.6],
         "resistances": [22, 29, 15, 15, 15, 22, 29],
         "poise": 9,
         "weight": 6.6
@@ -1450,7 +1450,7 @@
     "royal-remains-helm": {
         "id": "royal-remains-helm",
         "name": "Royal Remains Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.2, 4.0, 4.6, 4.2, 3.4, 3.6, 2.8, 3.1],
         "resistances": [15, 24, 10, 5, 10, 15, 24],
         "poise": 7,
         "weight": 4.6
@@ -1458,7 +1458,7 @@
     "rulers-mask": {
         "id": "rulers-mask",
         "name": "Ruler's Mask",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [1.8, 2.3, 2.3, 1.4, 4.6, 4.4, 4.6, 4.7],
         "resistances": [20, 10, 33, 33, 33, 20, 10],
         "poise": 3,
         "weight": 2.2
@@ -1466,7 +1466,7 @@
     "sacred-crown-helm": {
         "id": "sacred-crown-helm",
         "name": "Sacred Crown Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [3.4, 3.8, 3.1, 3.6, 3.6, 3.8, 4.2, 4.0],
         "resistances": [27, 18, 23, 24, 23, 27, 18],
         "poise": 5,
         "weight": 3.6
@@ -1474,7 +1474,7 @@
     "sage-hood": {
         "id": "sage-hood",
         "name": "Sage Hood",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.3, 2.1, 2.1, 1.4, 4.8, 4.5, 4.6, 4.8],
         "resistances": [16, 10, 31, 33, 31, 16, 10],
         "poise": 3,
         "weight": 2.2
@@ -1482,7 +1482,7 @@
     "salzas-hood": {
         "id": "salzas-hood",
         "name": "Salza's Hood",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.4, 3.6, 4.4, 3.8, 3.1, 4.0, 2.8, 3.1],
         "resistances": [12, 20, 9, 10, 9, 12, 20],
         "poise": 6,
         "weight": 3.8
@@ -1497,7 +1497,7 @@
     "scaled-helm": {
         "id": "scaled-helm",
         "name": "Scaled Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [5.8, 5.0, 6.1, 5.8, 4.8, 5.0, 4.6, 4.8],
         "resistances": [24, 35, 16, 16, 16, 24, 35],
         "poise": 11,
         "weight": 6.8
@@ -1505,7 +1505,7 @@
     "shadow-militiaman-helm": {
         "id": "shadow-militiaman-helm",
         "name": "Shadow Militiaman Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.5, 3.1, 2.8, 2.8, 3.6, 3.8, 3.8, 3.1],
         "resistances": [33, 14, 18, 18, 18, 33, 14],
         "poise": 4,
         "weight": 3.0
@@ -1513,7 +1513,7 @@
     "shining-horned-headband": {
         "id": "shining-horned-headband",
         "name": "Shining Horned Headband",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.5, 2.8, 2.5, 3.6, 3.6, 3.4, 3.6, 3.1],
         "resistances": [33, 23, 27, 20, 27, 33, 23],
         "poise": 4,
         "weight": 3.3
@@ -1522,7 +1522,7 @@
         "id": "silver-tear-mask",
         "name": "Silver Tear Mask",
         "stats": [0, 0, 0, 0, 0, 0, 0, 8],
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.2, 3.6, 3.8, 3.1, 5.5, 5.2, 5.0, 5.3],
         "resistances": [26, 20, 44, 44, 44, 26, 20],
         "poise": 6,
         "weight": 4.6
@@ -1530,7 +1530,7 @@
     "skeletal-mask": {
         "id": "skeletal-mask",
         "name": "Skeletal Mask",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.5, 2.8, 3.1, 3.1, 3.4, 3.4, 3.6, 3.1],
         "resistances": [23, 14, 24, 24, 24, 23, 14],
         "poise": 4,
         "weight": 3.0
@@ -1538,7 +1538,7 @@
     "snow-witch-hat": {
         "id": "snow-witch-hat",
         "name": "Snow Witch Hat",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [1.8, 2.1, 2.1, 1.4, 4.6, 4.6, 4.6, 4.6],
         "resistances": [16, 14, 31, 31, 31, 16, 14],
         "poise": 3,
         "weight": 2.2
@@ -1546,7 +1546,7 @@
     "spellblades-pointed-hat": {
         "id": "spellblades-pointed-hat",
         "name": "Spellblade's Pointed Hat",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [1.3, 0.8, 1.3, 1.3, 4.5, 3.9, 4.1, 4.5],
         "resistances": [15, 8, 25, 27, 25, 15, 8],
         "poise": 2,
         "weight": 1.5
@@ -1554,7 +1554,7 @@
     "st.-trinas-blossom": {
         "id": "st.-trinas-blossom",
         "name": "St. Trina's Blossom",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [0.9, 0.9, 1.4, -0.8, 4.4, 3.8, 4.4, 4.4],
         "resistances": [12, 4, 24, 24, 24, 12, 4],
         "poise": 2,
         "weight": 1.0
@@ -1562,7 +1562,7 @@
     "thiolliers-mask": {
         "id": "thiolliers-mask",
         "name": "Thiollier's Mask",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.4, 3.4, 4.0, 3.8, 2.3, 3.1, 2.3, 3.1],
         "resistances": [15, 16, 11, 0, 11, 15, 16],
         "poise": 6,
         "weight": 3.8
@@ -1570,7 +1570,7 @@
     "travelers-hat": {
         "id": "travelers-hat",
         "name": "Traveler's Hat",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [1.8, 1.8, 1.4, 0.9, 4.6, 4.6, 4.4, 4.6],
         "resistances": [23, 9, 29, 27, 29, 23, 9],
         "poise": 3,
         "weight": 1.7
@@ -1578,7 +1578,7 @@
     "traveling-maiden-hood": {
         "id": "traveling-maiden-hood",
         "name": "Traveling Maiden Hood",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [1.4, 1.8, 1.8, 0.9, 4.6, 4.5, 4.6, 4.6],
         "resistances": [18, 10, 29, 31, 29, 18, 10],
         "poise": 3,
         "weight": 1.6
@@ -1586,7 +1586,7 @@
     "tree-sentinel-helm": {
         "id": "tree-sentinel-helm",
         "name": "Tree Sentinel Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [6.8, 5.4, 6.8, 6.3, 4.6, 6.2, 4.5, 5.0],
         "resistances": [29, 39, 18, 20, 18, 29, 39],
         "poise": 12,
         "weight": 8.1
@@ -1594,7 +1594,7 @@
     "twinned-helm": {
         "id": "twinned-helm",
         "name": "Twinned Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.8, 4.4, 5.2, 4.2, 4.0, 4.0, 3.1, 3.6],
         "resistances": [14, 23, 9, 23, 9, 14, 23],
         "poise": 7,
         "weight": 5.1
@@ -1603,7 +1603,7 @@
         "id": "twinsage-glintstone-crown",
         "name": "Twinsage Glintstone Crown",
         "stats": [0, 0, 0, 0, 0, 6, 0, 0],
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.4, 3.1, 5.2, 4.8, 4.4, 4.5, 3.4, 3.8],
         "resistances": [16, 26, 10, 10, 10, 16, 26],
         "poise": 6,
         "weight": 5.1
@@ -1611,7 +1611,7 @@
     "vagabond-knight-helm": {
         "id": "vagabond-knight-helm",
         "name": "Vagabond Knight Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.6, 3.6, 4.2, 4.0, 3.1, 3.6, 2.8, 2.8],
         "resistances": [14, 23, 9, 9, 9, 14, 23],
         "poise": 7,
         "weight": 4.0
@@ -1619,7 +1619,7 @@
     "verdigris-helm": {
         "id": "verdigris-helm",
         "name": "Verdigris Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [7.5, 6.4, 7.2, 6.8, 4.8, 4.7, 5.2, 4.7],
         "resistances": [39, 46, 15, 22, 15, 39, 46],
         "poise": 15,
         "weight": 11.1
@@ -1627,7 +1627,7 @@
     "veterans-helm": {
         "id": "veterans-helm",
         "name": "Veteran's Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [6.8, 6.1, 6.8, 6.3, 4.8, 5.0, 4.6, 4.7],
         "resistances": [27, 39, 20, 20, 20, 27, 39],
         "poise": 12,
         "weight": 8.1
@@ -1635,7 +1635,7 @@
     "vulgar-militia-helm": {
         "id": "vulgar-militia-helm",
         "name": "Vulgar Militia Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [3.4, 3.8, 3.6, 3.1, 3.8, 3.8, 4.0, 3.8],
         "resistances": [31, 16, 23, 23, 23, 31, 16],
         "poise": 6,
         "weight": 3.6
@@ -1643,7 +1643,7 @@
     "white-mask": {
         "id": "white-mask",
         "name": "White Mask",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [2.7, 3.0, 3.3, 2.7, 3.5, 3.7, 3.9, 3.7],
         "resistances": [23, 18, 21, 22, 21, 23, 18],
         "poise": 5,
         "weight": 3.2
@@ -1651,7 +1651,7 @@
     "winged-serpent-helm": {
         "id": "winged-serpent-helm",
         "name": "Winged Serpent Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.8, 4.0, 4.4, 4.0, 3.8, 4.4, 2.8, 3.4],
         "resistances": [14, 22, 10, 11, 10, 14, 22],
         "poise": 7,
         "weight": 4.6
@@ -1659,7 +1659,7 @@
     "wise-mans-mask": {
         "id": "wise-mans-mask",
         "name": "Wise Man's Mask",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.2, 3.6, 4.4, 4.0, 3.1, 4.0, 2.3, 3.1],
         "resistances": [11, 24, 9, 10, 9, 11, 24],
         "poise": 7,
         "weight": 4.0
@@ -1668,7 +1668,7 @@
         "id": "witchs-glintstone-crown",
         "name": "Witch's Glintstone Crown",
         "stats": [0, 0, 0, 0, 0, 3, 0, 3],
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.4, 3.1, 5.2, 4.8, 4.4, 4.5, 3.4, 3.8],
         "resistances": [16, 26, 10, 10, 10, 16, 26],
         "poise": 6,
         "weight": 5.1
@@ -1676,7 +1676,7 @@
     "young-lions-helm": {
         "id": "young-lions-helm",
         "name": "Young Lion's Helm",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [6.1, 5.2, 6.1, 6.1, 4.4, 4.6, 4.0, 4.6],
         "resistances": [22, 31, 11, 15, 11, 22, 31],
         "poise": 10,
         "weight": 6.4
@@ -1684,7 +1684,7 @@
     "zamor-mask": {
         "id": "zamor-mask",
         "name": "Zamor Mask",
-        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "defenses": [4.2, 3.4, 4.4, 3.8, 3.1, 3.1, 2.1, 2.8],
         "resistances": [9, 27, 5, 8, 5, 9, 27],
         "poise": 6,
         "weight": 3.8
