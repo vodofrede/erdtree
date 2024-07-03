@@ -7,12 +7,700 @@
         "poise": 0,
         "weight": 0
     },
+    "alberichs-robe": {
+        "id": "alberichs-robe",
+        "name": "Alberich's Robe",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [38, 23, 67, 71, 67, 38, 23],
+        "poise": 7,
+        "weight": 4.1
+    },
+    "alberichs-robe-altered": {
+        "id": "alberichs-robe-altered",
+        "name": "Alberich's Robe (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [32, 19, 57, 61, 57, 32, 19],
+        "poise": 5,
+        "weight": 3.2
+    },
+    "all-knowing-armor": {
+        "id": "all-knowing-armor",
+        "name": "All-Knowing Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [28, 46, 21, 21, 21, 28, 46],
+        "poise": 22,
+        "weight": 10.7
+    },
+    "all-knowing-armor-altered": {
+        "id": "all-knowing-armor-altered",
+        "name": "All-Knowing Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [22, 38, 16, 16, 16, 22, 38],
+        "poise": 21,
+        "weight": 9.3
+    },
+    "ansbachs-attire": {
+        "id": "ansbachs-attire",
+        "name": "Ansbach's Attire",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [38, 25, 76, 90, 76, 38, 25],
+        "poise": 12,
+        "weight": 5.1
+    },
+    "ansbachs-attire-altered": {
+        "id": "ansbachs-attire-altered",
+        "name": "Ansbach's Attire (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [35, 25, 67, 76, 67, 35, 25],
+        "poise": 10,
+        "weight": 4.1
+    },
+    "aristocrat-coat": {
+        "id": "aristocrat-coat",
+        "name": "Aristocrat Coat",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [50, 32, 42, 46, 42, 50, 32],
+        "poise": 13,
+        "weight": 7.1
+    },
+    "aristocrat-garb": {
+        "id": "aristocrat-garb",
+        "name": "Aristocrat Garb",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [47, 33, 36, 30, 36, 47, 33],
+        "poise": 12,
+        "weight": 4.9
+    },
+    "aristocrat-garb-altered": {
+        "id": "aristocrat-garb-altered",
+        "name": "Aristocrat Garb (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [42, 29, 32, 25, 32, 42, 29],
+        "poise": 10,
+        "weight": 4.1
+    },
+    "armor-of-night": {
+        "id": "armor-of-night",
+        "name": "Armor of Night",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [55, 32, 46, 46, 46, 55, 32],
+        "poise": 12,
+        "weight": 7.1
+    },
+    "armor-of-solitude": {
+        "id": "armor-of-solitude",
+        "name": "Armor of Solitude",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [60, 63, 99, 50, 99, 60, 63],
+        "poise": 45,
+        "weight": 24.0
+    },
+    "armor-of-solitude-altered": {
+        "id": "armor-of-solitude-altered",
+        "name": "Armor of Solitude (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [57, 60, 90, 46, 90, 57, 60],
+        "poise": 43,
+        "weight": 23.2
+    },
+    "ascetics-loincloth": {
+        "id": "ascetics-loincloth",
+        "name": "Ascetic's Loincloth",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [42, 23, 28, 63, 28, 42, 23],
+        "poise": 10,
+        "weight": 3.2
+    },
+    "astrologer-robe": {
+        "id": "astrologer-robe",
+        "name": "Astrologer Robe",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [50, 24, 90, 76, 90, 50, 24],
+        "poise": 12,
+        "weight": 6.3
+    },
+    "astrologer-robe-altered": {
+        "id": "astrologer-robe-altered",
+        "name": "Astrologer Robe (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [42, 21, 75, 64, 75, 42, 21],
+        "poise": 10,
+        "weight": 5.3
+    },
+    "azurs-glintstone-robe": {
+        "id": "azurs-glintstone-robe",
+        "name": "Azur's Glintstone Robe",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [50, 28, 99, 83, 99, 50, 28],
+        "poise": 12,
+        "weight": 7.1
+    },
+    "bandit-garb": {
+        "id": "bandit-garb",
+        "name": "Bandit Garb",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [52, 32, 54, 54, 54, 52, 32],
+        "poise": 15,
+        "weight": 7.7
+    },
+    "banished-knight-armor": {
+        "id": "banished-knight-armor",
+        "name": "Banished Knight Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [60, 83, 38, 42, 38, 60, 83],
+        "poise": 34,
+        "weight": 17.5
+    },
+    "banished-knight-armor-altered": {
+        "id": "banished-knight-armor-altered",
+        "name": "Banished Knight Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [52, 69, 32, 34, 32, 52, 69],
+        "poise": 33,
+        "weight": 16.5
+    },
+    "battlemage-robe": {
+        "id": "battlemage-robe",
+        "name": "Battlemage Robe",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [42, 23, 63, 71, 63, 42, 23],
+        "poise": 10,
+        "weight": 4.1
+    },
+    "beast-champion-armor": {
+        "id": "beast-champion-armor",
+        "name": "Beast Champion Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [57, 90, 42, 38, 42, 57, 90],
+        "poise": 34,
+        "weight": 17.5
+    },
+    "beast-champion-armor-altered": {
+        "id": "beast-champion-armor-altered",
+        "name": "Beast Champion Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [50, 75, 34, 32, 34, 50, 75],
+        "poise": 34,
+        "weight": 16.4
+    },
+    "black-knife-armor": {
+        "id": "black-knife-armor",
+        "name": "Black Knife Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [28, 46, 23, 23, 23, 28, 46],
+        "poise": 19,
+        "weight": 9.2
+    },
+    "black-knife-armor-altered": {
+        "id": "black-knife-armor-altered",
+        "name": "Black Knife Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [25, 42, 21, 21, 21, 25, 42],
+        "poise": 19,
+        "weight": 9.0
+    },
+    "black-knight-armor": {
+        "id": "black-knight-armor",
+        "name": "Black Knight Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [38, 61, 22, 21, 22, 38, 61],
+        "poise": 28,
+        "weight": 13.7
+    },
+    "blackflame-monk-armor": {
+        "id": "blackflame-monk-armor",
+        "name": "Blackflame Monk Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [32, 55, 21, 32, 21, 32, 55],
+        "poise": 24,
+        "weight": 11.8
+    },
+    "blaidds-armor": {
+        "id": "blaidds-armor",
+        "name": "Blaidd's Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [38, 76, 25, 25, 25, 38, 76],
+        "poise": 28,
+        "weight": 13.7
+    },
+    "blaidds-armor-altered": {
+        "id": "blaidds-armor-altered",
+        "name": "Blaidd's Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [32, 57, 22, 21, 22, 32, 57],
+        "poise": 27,
+        "weight": 12.5
+    },
+    "bloodhound-knight-armor": {
+        "id": "bloodhound-knight-armor",
+        "name": "Bloodhound Knight Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [32, 50, 23, 23, 23, 32, 50],
+        "poise": 19,
+        "weight": 10.6
+    },
+    "bloodhound-knight-armor-altered": {
+        "id": "bloodhound-knight-armor-altered",
+        "name": "Bloodhound Knight Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [29, 45, 21, 21, 21, 29, 45],
+        "poise": 19,
+        "weight": 9.6
+    },
+    "bloodsoaked-tabard": {
+        "id": "bloodsoaked-tabard",
+        "name": "Bloodsoaked Tabard",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [63, 38, 55, 50, 55, 63, 38],
+        "poise": 18,
+        "weight": 8.3
+    },
+    "blue-cloth-vest": {
+        "id": "blue-cloth-vest",
+        "name": "Blue Cloth Vest",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [63, 42, 50, 50, 50, 63, 42],
+        "poise": 16,
+        "weight": 7.7
+    },
+    "blue-festive-garb": {
+        "id": "blue-festive-garb",
+        "name": "Blue Festive Garb",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [46, 21, 71, 63, 71, 46, 21],
+        "poise": 7,
+        "weight": 4.1
+    },
+    "blue-silver-mail-armor": {
+        "id": "blue-silver-mail-armor",
+        "name": "Blue Silver Mail Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [25, 60, 18, 18, 18, 25, 60],
+        "poise": 19,
+        "weight": 9.2
+    },
+    "blue-silver-mail-armor-altered": {
+        "id": "blue-silver-mail-armor-altered",
+        "name": "Blue Silver Mail Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [21, 52, 10, 10, 10, 21, 52],
+        "poise": 17,
+        "weight": 8.5
+    },
+    "braided-cord-robe": {
+        "id": "braided-cord-robe",
+        "name": "Braided Cord Robe",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [38, 20, 104, 59, 104, 38, 20],
+        "poise": 5,
+        "weight": 3.4
+    },
+    "briar-armor": {
+        "id": "briar-armor",
+        "name": "Briar Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [35, 71, 24, 24, 24, 35, 71],
+        "poise": 21,
+        "weight": 11.8
+    },
+    "briar-armor-altered": {
+        "id": "briar-armor-altered",
+        "name": "Briar Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [29, 61, 21, 21, 21, 29, 61],
+        "poise": 19,
+        "weight": 10.7
+    },
+    "bull-goat-armor": {
+        "id": "bull-goat-armor",
+        "name": "Bull-Goat Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [71, 83, 46, 55, 46, 71, 83],
+        "poise": 47,
+        "weight": 26.5
+    },
+    "carian-knight-armor": {
+        "id": "carian-knight-armor",
+        "name": "Carian Knight Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [28, 46, 21, 23, 21, 28, 46],
+        "poise": 19,
+        "weight": 10.4
+    },
+    "carian-knight-armor-altered": {
+        "id": "carian-knight-armor-altered",
+        "name": "Carian Knight Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [22, 38, 16, 19, 16, 22, 38],
+        "poise": 18,
+        "weight": 9.7
+    },
+    "chain-armor": {
+        "id": "chain-armor",
+        "name": "Chain Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [25, 42, 11, 18, 11, 25, 42],
+        "poise": 17,
+        "weight": 8.8
+    },
+    "chain-draped-tabard": {
+        "id": "chain-draped-tabard",
+        "name": "Chain-Draped Tabard",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [63, 42, 55, 55, 55, 63, 42],
+        "poise": 17,
+        "weight": 8.3
+    },
+    "champion-pauldron": {
+        "id": "champion-pauldron",
+        "name": "Champion Pauldron",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [46, 28, 38, 35, 38, 46, 28],
+        "poise": 10,
+        "weight": 5.1
+    },
+    "cleanrot-armor": {
+        "id": "cleanrot-armor",
+        "name": "Cleanrot Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [63, 67, 28, 32, 28, 63, 67],
+        "poise": 27,
+        "weight": 15.0
+    },
+    "cleanrot-armor-altered": {
+        "id": "cleanrot-armor-altered",
+        "name": "Cleanrot Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [52, 54, 22, 22, 22, 52, 54],
+        "poise": 24,
+        "weight": 13.7
+    },
+    "cloth-garb": {
+        "id": "cloth-garb",
+        "name": "Cloth Garb",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [42, 23, 60, 60, 60, 42, 23],
+        "poise": 5,
+        "weight": 3.2
+    },
+    "common-soldier-cloth-armor": {
+        "id": "common-soldier-cloth-armor",
+        "name": "Common Soldier Cloth Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [25, 46, 18, 18, 18, 25, 46],
+        "poise": 19,
+        "weight": 8.8
+    },
+    "commoners-garb": {
+        "id": "commoners-garb",
+        "name": "Commoner's Garb",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [42, 25, 76, 83, 76, 42, 25],
+        "poise": 8,
+        "weight": 5.1
+    },
+    "commoners-garb-altered": {
+        "id": "commoners-garb-altered",
+        "name": "Commoner's Garb (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [34, 21, 61, 64, 61, 34, 21],
+        "poise": 7,
+        "weight": 4.1
+    },
+    "commoners-simple-garb": {
+        "id": "commoners-simple-garb",
+        "name": "Commoner's Simple Garb",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [46, 24, 76, 83, 76, 46, 24],
+        "poise": 8,
+        "weight": 5.1
+    },
+    "commoners-simple-garb-altered": {
+        "id": "commoners-simple-garb-altered",
+        "name": "Commoner's Simple Garb (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [38, 21, 61, 64, 61, 38, 21],
+        "poise": 7,
+        "weight": 4.1
+    },
+    "confessor-armor": {
+        "id": "confessor-armor",
+        "name": "Confessor Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [63, 50, 50, 55, 50, 63, 50],
+        "poise": 16,
+        "weight": 8.3
+    },
+    "confessor-armor-altered": {
+        "id": "confessor-armor-altered",
+        "name": "Confessor Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [54, 42, 42, 45, 42, 54, 42],
+        "poise": 15,
+        "weight": 7.3
+    },
+    "consorts-robe": {
+        "id": "consorts-robe",
+        "name": "Consort's Robe",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [46, 25, 67, 63, 67, 46, 25],
+        "poise": 7,
+        "weight": 4.1
+    },
+    "corhyns-robe": {
+        "id": "corhyns-robe",
+        "name": "Corhyn's Robe",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [46, 24, 107, 76, 107, 46, 24],
+        "poise": 10,
+        "weight": 6.3
+    },
+    "crucible-axe-armor": {
+        "id": "crucible-axe-armor",
+        "name": "Crucible Axe Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [50, 71, 35, 35, 35, 50, 71],
+        "poise": 33,
+        "weight": 15.5
+    },
+    "crucible-axe-armor-altered": {
+        "id": "crucible-axe-armor-altered",
+        "name": "Crucible Axe Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [42, 61, 29, 29, 29, 42, 61],
+        "poise": 31,
+        "weight": 14.9
+    },
+    "crucible-tree-armor": {
+        "id": "crucible-tree-armor",
+        "name": "Crucible Tree Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [50, 71, 35, 35, 35, 50, 71],
+        "poise": 33,
+        "weight": 15.5
+    },
+    "crucible-tree-armor-altered": {
+        "id": "crucible-tree-armor-altered",
+        "name": "Crucible Tree Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [42, 61, 29, 29, 29, 42, 61],
+        "poise": 31,
+        "weight": 14.9
+    },
+    "cuckoo-knight-armor": {
+        "id": "cuckoo-knight-armor",
+        "name": "Cuckoo Knight Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [32, 57, 24, 24, 24, 32, 57],
+        "poise": 24,
+        "weight": 11.8
+    },
+    "cuckoo-knight-armor-altered": {
+        "id": "cuckoo-knight-armor-altered",
+        "name": "Cuckoo Knight Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [29, 52, 21, 21, 21, 29, 52],
+        "poise": 24,
+        "weight": 10.8
+    },
+    "cuckoo-surcoat": {
+        "id": "cuckoo-surcoat",
+        "name": "Cuckoo Surcoat",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [28, 55, 23, 23, 23, 28, 55],
+        "poise": 22,
+        "weight": 10.6
+    },
+    "dancers-dress": {
+        "id": "dancers-dress",
+        "name": "Dancer's Dress",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [34, 21, 54, 57, 54, 34, 21],
+        "poise": 5,
+        "weight": 3.2
+    },
+    "dancers-dress-altered": {
+        "id": "dancers-dress-altered",
+        "name": "Dancer's Dress (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [32, 21, 52, 54, 52, 32, 21],
+        "poise": 3,
+        "weight": 2.4
+    },
+    "death-knight-armor": {
+        "id": "death-knight-armor",
+        "name": "Death Knight Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [25, 42, 16, 42, 16, 25, 42],
+        "poise": 22,
+        "weight": 11.2
+    },
     "deathbed-dress": {
         "id": "deathbed-dress",
         "name": "Deathbed Dress",
         "defenses": [0.6, 2.7, 0.6, 0.6, 11.9, 11.4, 11.9, 12.4],
         "resistances": [38, 11, 63, 107],
         "poise": 1,
+        "weight": 3.2
+    },
+    "depraved-perfumer-robe": {
+        "id": "depraved-perfumer-robe",
+        "name": "Depraved Perfumer Robe",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [65, 22, 55, 80, 55, 65, 22],
+        "poise": 8,
+        "weight": 5.0
+    },
+    "depraved-perfumer-robe-altered": {
+        "id": "depraved-perfumer-robe-altered",
+        "name": "Depraved Perfumer Robe (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [63, 18, 48, 63, 48, 63, 18],
+        "poise": 7,
+        "weight": 4.0
+    },
+    "dirty-chainmail": {
+        "id": "dirty-chainmail",
+        "name": "Dirty Chainmail",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [25, 50, 21, 21, 21, 25, 50],
+        "poise": 18,
+        "weight": 8.8
+    },
+    "divine-beast-warrior-armor": {
+        "id": "divine-beast-warrior-armor",
+        "name": "Divine Beast Warrior Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [31, 54, 18, 24, 18, 31, 54],
+        "poise": 22,
+        "weight": 10.4
+    },
+    "divine-bird-warrior-armor": {
+        "id": "divine-bird-warrior-armor",
+        "name": "Divine Bird Warrior Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [37, 56, 23, 23, 23, 37, 56],
+        "poise": 25,
+        "weight": 11.6
+    },
+    "drake-knight-armor": {
+        "id": "drake-knight-armor",
+        "name": "Drake Knight Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [25, 46, 21, 21, 21, 25, 46],
+        "poise": 19,
+        "weight": 9.2
+    },
+    "drake-knight-armor-altered": {
+        "id": "drake-knight-armor-altered",
+        "name": "Drake Knight Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [21, 34, 10, 10, 10, 21, 34],
+        "poise": 16,
+        "weight": 8.3
+    },
+    "dryleaf-robe": {
+        "id": "dryleaf-robe",
+        "name": "Dryleaf Robe",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [38, 25, 76, 71, 76, 38, 25],
+        "poise": 10,
+        "weight": 5.1
+    },
+    "dryleaf-robe-altered": {
+        "id": "dryleaf-robe-altered",
+        "name": "Dryleaf Robe (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [35, 24, 67, 63, 67, 35, 24],
+        "poise": 8,
+        "weight": 4.1
+    },
+    "eccentrics-armor": {
+        "id": "eccentrics-armor",
+        "name": "Eccentric's Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [35, 60, 23, 21, 23, 35, 60],
+        "poise": 21,
+        "weight": 10.6
+    },
+    "elden-lord-armor": {
+        "id": "elden-lord-armor",
+        "name": "Elden Lord Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [32, 55, 18, 21, 18, 32, 55],
+        "poise": 19,
+        "weight": 9.2
+    },
+    "elden-lord-armor-altered": {
+        "id": "elden-lord-armor-altered",
+        "name": "Elden Lord Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [22, 45, 10, 16, 10, 22, 45],
+        "poise": 17,
+        "weight": 8.4
+    },
+    "erdtree-surcoat": {
+        "id": "erdtree-surcoat",
+        "name": "Erdtree Surcoat",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [32, 55, 23, 23, 23, 32, 55],
+        "poise": 22,
+        "weight": 10.6
+    },
+    "errant-sorcerer-robe": {
+        "id": "errant-sorcerer-robe",
+        "name": "Errant Sorcerer Robe",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [35, 23, 67, 71, 67, 35, 23],
+        "poise": 8,
+        "weight": 4.1
+    },
+    "errant-sorcerer-robe-altered": {
+        "id": "errant-sorcerer-robe-altered",
+        "name": "Errant Sorcerer Robe (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [31, 20, 62, 66, 62, 31, 20],
+        "poise": 7,
+        "weight": 3.2
+    },
+    "exile-armor": {
+        "id": "exile-armor",
+        "name": "Exile Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [28, 55, 21, 18, 21, 28, 55],
+        "poise": 19,
+        "weight": 9.2
+    },
+    "eye-surcoat": {
+        "id": "eye-surcoat",
+        "name": "Eye Surcoat",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [25, 55, 21, 18, 21, 25, 55],
+        "poise": 21,
+        "weight": 9.2
+    },
+    "fell-omen-cloak": {
+        "id": "fell-omen-cloak",
+        "name": "Fell Omen Cloak",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [42, 25, 71, 83, 71, 42, 25],
+        "poise": 8,
+        "weight": 5.1
+    },
+    "festive-garb": {
+        "id": "festive-garb",
+        "name": "Festive Garb",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [42, 21, 67, 67, 67, 42, 21],
+        "poise": 7,
+        "weight": 4.1
+    },
+    "festive-garb-altered": {
+        "id": "festive-garb-altered",
+        "name": "Festive Garb (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [34, 16, 57, 57, 57, 34, 16],
+        "poise": 7,
         "weight": 3.2
     },
     "fias-robe": {
@@ -29,6 +717,174 @@
         "poise": 0,
         "weight": 3.2
     },
+    "finger-maiden-robe": {
+        "id": "finger-maiden-robe",
+        "name": "Finger Maiden Robe",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [38, 21, 63, 63, 63, 38, 21],
+        "poise": 10,
+        "weight": 4.6
+    },
+    "finger-maiden-robe-altered": {
+        "id": "finger-maiden-robe-altered",
+        "name": "Finger Maiden Robe (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [32, 16, 54, 54, 54, 32, 16],
+        "poise": 8,
+        "weight": 3.7
+    },
+    "finger-robe": {
+        "id": "finger-robe",
+        "name": "Finger Robe",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [42, 21, 64, 82, 64, 42, 21],
+        "poise": 12,
+        "weight": 5.1
+    },
+    "fingerprint-armor": {
+        "id": "fingerprint-armor",
+        "name": "Fingerprint Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [32, 60, 11, 23, 11, 32, 60],
+        "poise": 24,
+        "weight": 10.6
+    },
+    "fingerprint-armor-altered": {
+        "id": "fingerprint-armor-altered",
+        "name": "Fingerprint Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [29, 54, 10, 21, 10, 29, 54],
+        "poise": 24,
+        "weight": 10.0
+    },
+    "fire-knight-armor": {
+        "id": "fire-knight-armor",
+        "name": "Fire Knight Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [28, 46, 21, 24, 21, 28, 46],
+        "poise": 19,
+        "weight": 9.3
+    },
+    "fire-knight-armor-altered": {
+        "id": "fire-knight-armor-altered",
+        "name": "Fire Knight Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [25, 42, 18, 23, 18, 25, 42],
+        "poise": 17,
+        "weight": 8.4
+    },
+    "fire-monk-armor": {
+        "id": "fire-monk-armor",
+        "name": "Fire Monk Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [32, 55, 24, 24, 24, 32, 55],
+        "poise": 22,
+        "weight": 11.8
+    },
+    "fire-prelate-armor": {
+        "id": "fire-prelate-armor",
+        "name": "Fire Prelate Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [67, 63, 90, 50, 90, 67, 63],
+        "poise": 45,
+        "weight": 24.7
+    },
+    "fire-prelate-armor-altered": {
+        "id": "fire-prelate-armor-altered",
+        "name": "Fire Prelate Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [57, 54, 75, 42, 75, 57, 54],
+        "poise": 43,
+        "weight": 23.6
+    },
+    "foot-soldier-tabard": {
+        "id": "foot-soldier-tabard",
+        "name": "Foot Soldier Tabard",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [63, 42, 55, 55, 55, 63, 42],
+        "poise": 17,
+        "weight": 8.3
+    },
+    "freyjas-armor": {
+        "id": "freyjas-armor",
+        "name": "Freyja's Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [22, 54, 10, 22, 10, 22, 54],
+        "poise": 19,
+        "weight": 9.7
+    },
+    "freyjas-armor-altered": {
+        "id": "freyjas-armor-altered",
+        "name": "Freyja's Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [21, 52, 0, 21, 0, 21, 52],
+        "poise": 17,
+        "weight": 9.3
+    },
+    "fur-raiment": {
+        "id": "fur-raiment",
+        "name": "Fur Raiment",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [63, 42, 55, 38, 55, 63, 42],
+        "poise": 8,
+        "weight": 5.1
+    },
+    "gaiuss-armor": {
+        "id": "gaiuss-armor",
+        "name": "Gaius's Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [67, 83, 55, 55, 55, 67, 83],
+        "poise": 38,
+        "weight": 20.1
+    },
+    "gelmir-knight-armor": {
+        "id": "gelmir-knight-armor",
+        "name": "Gelmir Knight Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [35, 55, 24, 23, 24, 35, 55],
+        "poise": 24,
+        "weight": 11.8
+    },
+    "gelmir-knight-armor-altered": {
+        "id": "gelmir-knight-armor-altered",
+        "name": "Gelmir Knight Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [32, 50, 21, 21, 21, 32, 50],
+        "poise": 24,
+        "weight": 10.8
+    },
+    "gloried-attire": {
+        "id": "gloried-attire",
+        "name": "Gloried Attire",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [57, 32, 46, 42, 46, 57, 32],
+        "poise": 13,
+        "weight": 7.1
+    },
+    "godrick-knight-armor": {
+        "id": "godrick-knight-armor",
+        "name": "Godrick Knight Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [35, 57, 24, 24, 24, 35, 57],
+        "poise": 24,
+        "weight": 11.8
+    },
+    "godrick-knight-armor-altered": {
+        "id": "godrick-knight-armor-altered",
+        "name": "Godrick Knight Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [32, 52, 21, 21, 21, 32, 52],
+        "poise": 24,
+        "weight": 10.8
+    },
+    "godskin-apostle-robe": {
+        "id": "godskin-apostle-robe",
+        "name": "Godskin Apostle Robe",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [42, 21, 67, 63, 67, 42, 21],
+        "poise": 8,
+        "weight": 4.1
+    },
     "godskin-noble-robe": {
         "name": "Godskin Noble Robe",
         "defenses": [6.1, 9.5, 6.7, 6.1, 13, 12.4, 12.6, 14.1],
@@ -36,11 +892,1075 @@
         "poise": 5,
         "weight": 6.3
     },
+    "goldmasks-rags": {
+        "id": "goldmasks-rags",
+        "name": "Goldmask's Rags",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [38, 11, 60, 60, 60, 38, 11],
+        "poise": 5,
+        "weight": 2.4
+    },
+    "gravebird-armor": {
+        "id": "gravebird-armor",
+        "name": "Gravebird Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [50, 25, 38, 34, 38, 50, 25],
+        "poise": 13,
+        "weight": 6.0
+    },
+    "gravebirds-blackquill-armor": {
+        "id": "gravebirds-blackquill-armor",
+        "name": "Gravebird's Blackquill Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [54, 32, 45, 42, 45, 54, 32],
+        "poise": 16,
+        "weight": 7.4
+    },
+    "gravekeeper-cloak": {
+        "id": "gravekeeper-cloak",
+        "name": "Gravekeeper Cloak",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [63, 25, 42, 42, 42, 63, 25],
+        "poise": 12,
+        "weight": 6.3
+    },
+    "gravekeeper-cloak-altered": {
+        "id": "gravekeeper-cloak-altered",
+        "name": "Gravekeeper Cloak (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [54, 22, 34, 34, 34, 54, 22],
+        "poise": 8,
+        "weight": 5.1
+    },
+    "guardian-garb": {
+        "id": "guardian-garb",
+        "name": "Guardian Garb",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [61, 38, 50, 42, 50, 61, 38],
+        "poise": 15,
+        "weight": 7.7
+    },
+    "guardian-garb-full-bloom": {
+        "id": "guardian-garb-full-bloom",
+        "name": "Guardian Garb (Full Bloom)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [71, 46, 57, 55, 57, 71, 46],
+        "poise": 15,
+        "weight": 8.8
+    },
+    "haligtree-crest-surcoat": {
+        "id": "haligtree-crest-surcoat",
+        "name": "Haligtree Crest Surcoat",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [32, 55, 23, 24, 23, 32, 55],
+        "poise": 21,
+        "weight": 10.6
+    },
+    "haligtree-knight-armor": {
+        "id": "haligtree-knight-armor",
+        "name": "Haligtree Knight Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [35, 57, 24, 25, 24, 35, 57],
+        "poise": 22,
+        "weight": 11.8
+    },
+    "haligtree-knight-armor-altered": {
+        "id": "haligtree-knight-armor-altered",
+        "name": "Haligtree Knight Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [32, 52, 21, 22, 21, 32, 52],
+        "poise": 22,
+        "weight": 10.8
+    },
+    "high-page-clothes": {
+        "id": "high-page-clothes",
+        "name": "High Page Clothes",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [42, 23, 76, 76, 76, 42, 23],
+        "poise": 10,
+        "weight": 5.3
+    },
+    "high-page-clothes-altered": {
+        "id": "high-page-clothes-altered",
+        "name": "High Page Clothes (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [34, 19, 61, 61, 61, 34, 19],
+        "poise": 8,
+        "weight": 4.3
+    },
+    "high-priest-robe": {
+        "id": "high-priest-robe",
+        "name": "High Priest Robe",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [38, 21, 57, 69, 57, 38, 21],
+        "poise": 10,
+        "weight": 4.2
+    },
+    "highland-attire": {
+        "id": "highland-attire",
+        "name": "Highland Attire",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [55, 28, 42, 38, 42, 55, 28],
+        "poise": 13,
+        "weight": 6.3
+    },
+    "highwayman-cloth-armor": {
+        "id": "highwayman-cloth-armor",
+        "name": "Highwayman Cloth Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [57, 35, 50, 50, 50, 57, 35],
+        "poise": 16,
+        "weight": 7.7
+    },
+    "horned-warrior-armor": {
+        "id": "horned-warrior-armor",
+        "name": "Horned Warrior Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [31, 59, 18, 23, 18, 31, 59],
+        "poise": 22,
+        "weight": 10.4
+    },
+    "hoslows-armor": {
+        "id": "hoslows-armor",
+        "name": "Hoslow's Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [38, 60, 24, 24, 24, 38, 60],
+        "poise": 22,
+        "weight": 11.8
+    },
+    "hoslows-armor-altered": {
+        "id": "hoslows-armor-altered",
+        "name": "Hoslow's Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [32, 52, 21, 21, 21, 32, 52],
+        "poise": 21,
+        "weight": 10.8
+    },
+    "igons-armor": {
+        "id": "igons-armor",
+        "name": "Igon's Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [57, 38, 50, 50, 50, 57, 38],
+        "poise": 17,
+        "weight": 8.0
+    },
+    "igons-armor-altered": {
+        "id": "igons-armor-altered",
+        "name": "Igon's Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [54, 34, 45, 45, 45, 54, 34],
+        "poise": 16,
+        "weight": 7.7
+    },
+    "iron-rivet-armor": {
+        "id": "iron-rivet-armor",
+        "name": "Iron Rivet Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [57, 46, 42, 42, 42, 57, 46],
+        "poise": 13,
+        "weight": 7.1
+    },
+    "ivory-draped-tabard": {
+        "id": "ivory-draped-tabard",
+        "name": "Ivory-Draped Tabard",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [63, 42, 55, 57, 55, 63, 42],
+        "poise": 16,
+        "weight": 8.3
+    },
+    "juvenile-scholar-robe": {
+        "id": "juvenile-scholar-robe",
+        "name": "Juvenile Scholar Robe",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [38, 25, 63, 71, 63, 38, 25],
+        "poise": 7,
+        "weight": 4.1
+    },
+    "kaiden-armor": {
+        "id": "kaiden-armor",
+        "name": "Kaiden Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [25, 55, 11, 11, 11, 25, 55],
+        "poise": 18,
+        "weight": 8.8
+    },
+    "knight-armor": {
+        "id": "knight-armor",
+        "name": "Knight Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [28, 50, 18, 18, 18, 28, 50],
+        "poise": 24,
+        "weight": 10.6
+    },
+    "land-of-reeds-armor": {
+        "id": "land-of-reeds-armor",
+        "name": "Land of Reeds Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [60, 50, 50, 55, 50, 60, 50],
+        "poise": 16,
+        "weight": 8.3
+    },
+    "land-of-reeds-armor-altered": {
+        "id": "land-of-reeds-armor-altered",
+        "name": "Land of Reeds Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [52, 42, 42, 45, 42, 52, 42],
+        "poise": 15,
+        "weight": 7.8
+    },
+    "lazuli-robe": {
+        "id": "lazuli-robe",
+        "name": "Lazuli Robe",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [42, 21, 67, 67, 67, 42, 21],
+        "poise": 8,
+        "weight": 4.1
+    },
+    "leather-armor": {
+        "id": "leather-armor",
+        "name": "Leather Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [60, 35, 42, 50, 42, 60, 35],
+        "poise": 12,
+        "weight": 7.1
+    },
+    "leather-draped-tabard": {
+        "id": "leather-draped-tabard",
+        "name": "Leather-Draped Tabard",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [63, 42, 55, 55, 55, 63, 42],
+        "poise": 17,
+        "weight": 8.3
+    },
+    "ledas-armor": {
+        "id": "ledas-armor",
+        "name": "Leda's Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [29, 52, 22, 21, 22, 29, 52],
+        "poise": 21,
+        "weight": 10.6
+    },
+    "leyndell-knight-armor": {
+        "id": "leyndell-knight-armor",
+        "name": "Leyndell Knight Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [35, 55, 24, 24, 24, 35, 55],
+        "poise": 24,
+        "weight": 11.8
+    },
+    "leyndell-knight-armor-altered": {
+        "id": "leyndell-knight-armor-altered",
+        "name": "Leyndell Knight Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [32, 50, 21, 21, 21, 32, 50],
+        "poise": 24,
+        "weight": 10.8
+    },
+    "lionels-armor": {
+        "id": "lionels-armor",
+        "name": "Lionel's Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [63, 99, 42, 50, 42, 63, 99],
+        "poise": 40,
+        "weight": 21.2
+    },
+    "lionels-armor-altered": {
+        "id": "lionels-armor-altered",
+        "name": "Lionel's Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [57, 90, 38, 45, 38, 57, 90],
+        "poise": 38,
+        "weight": 20.2
+    },
+    "lord-of-bloods-robe": {
+        "id": "lord-of-bloods-robe",
+        "name": "Lord of Blood's Robe",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [63, 23, 55, 55, 55, 63, 23],
+        "poise": 17,
+        "weight": 8.1
+    },
+    "lord-of-bloods-robe-altered": {
+        "id": "lord-of-bloods-robe-altered",
+        "name": "Lord of Blood's Robe (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [57, 19, 47, 47, 47, 57, 19],
+        "poise": 16,
+        "weight": 7.3
+    },
+    "lusats-robe": {
+        "id": "lusats-robe",
+        "name": "Lusat's Robe",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [50, 25, 83, 99, 83, 50, 25],
+        "poise": 12,
+        "weight": 7.1
+    },
+    "malenias-armor": {
+        "id": "malenias-armor",
+        "name": "Malenia's Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [38, 32, 11, 11, 11, 38, 32],
+        "poise": 16,
+        "weight": 7.7
+    },
+    "malenias-armor-altered": {
+        "id": "malenias-armor-altered",
+        "name": "Malenia's Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [29, 25, 0, 0, 0, 29, 25],
+        "poise": 13,
+        "weight": 6.8
+    },
+    "malformed-dragon-armor": {
+        "id": "malformed-dragon-armor",
+        "name": "Malformed Dragon Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [57, 76, 38, 38, 38, 57, 76],
+        "poise": 31,
+        "weight": 16.0
+    },
+    "malikeths-armor": {
+        "id": "malikeths-armor",
+        "name": "Maliketh's Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [35, 57, 24, 50, 24, 35, 57],
+        "poise": 24,
+        "weight": 12.8
+    },
+    "malikeths-armor-altered": {
+        "id": "malikeths-armor-altered",
+        "name": "Maliketh's Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [29, 50, 21, 42, 21, 29, 50],
+        "poise": 22,
+        "weight": 11.8
+    },
+    "marais-robe": {
+        "id": "marais-robe",
+        "name": "Marais Robe",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [42, 28, 71, 67, 71, 42, 28],
+        "poise": 8,
+        "weight": 4.1
+    },
+    "marionette-soldier-armor": {
+        "id": "marionette-soldier-armor",
+        "name": "Marionette Soldier Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [24, 50, 21, 18, 21, 24, 50],
+        "poise": 18,
+        "weight": 8.8
+    },
+    "mausoleum-knight-armor": {
+        "id": "mausoleum-knight-armor",
+        "name": "Mausoleum Knight Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [35, 55, 24, 23, 24, 35, 55],
+        "poise": 25,
+        "weight": 11.8
+    },
+    "mausoleum-knight-armor-altered": {
+        "id": "mausoleum-knight-armor-altered",
+        "name": "Mausoleum Knight Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [32, 50, 21, 21, 21, 32, 50],
+        "poise": 25,
+        "weight": 10.8
+    },
+    "mausoleum-surcoat": {
+        "id": "mausoleum-surcoat",
+        "name": "Mausoleum Surcoat",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [32, 50, 23, 21, 23, 32, 50],
+        "poise": 24,
+        "weight": 10.6
+    },
+    "messmer-soldier-armor": {
+        "id": "messmer-soldier-armor",
+        "name": "Messmer Soldier Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [22, 42, 16, 16, 16, 22, 42],
+        "poise": 18,
+        "weight": 9.2
+    },
+    "messmer-soldier-armor-altered": {
+        "id": "messmer-soldier-armor-altered",
+        "name": "Messmer Soldier Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [22, 42, 16, 16, 16, 22, 42],
+        "poise": 18,
+        "weight": 8.1
+    },
+    "messmers-armor": {
+        "id": "messmers-armor",
+        "name": "Messmer's Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [54, 38, 52, 54, 52, 54, 38],
+        "poise": 16,
+        "weight": 7.8
+    },
+    "mushroom-body": {
+        "id": "mushroom-body",
+        "name": "Mushroom Body",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [102, 24, 90, 76, 90, 102, 24],
+        "poise": 5,
+        "weight": 5.1
+    },
+    "night-maiden-armor": {
+        "id": "night-maiden-armor",
+        "name": "Night Maiden Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [63, 38, 55, 55, 55, 63, 38],
+        "poise": 16,
+        "weight": 8.3
+    },
+    "nights-cavalry-armor": {
+        "id": "nights-cavalry-armor",
+        "name": "Night's Cavalry Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [38, 57, 24, 24, 24, 38, 57],
+        "poise": 25,
+        "weight": 12.8
+    },
+    "nights-cavalry-armor-altered": {
+        "id": "nights-cavalry-armor-altered",
+        "name": "Night's Cavalry Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [32, 50, 21, 21, 21, 32, 50],
+        "poise": 24,
+        "weight": 11.8
+    },
+    "nobles-traveling-garb": {
+        "id": "nobles-traveling-garb",
+        "name": "Noble's Traveling Garb",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [46, 24, 76, 83, 76, 46, 24],
+        "poise": 10,
+        "weight": 6.3
+    },
+    "nomadic-merchants-finery": {
+        "id": "nomadic-merchants-finery",
+        "name": "Nomadic Merchant's Finery",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [57, 32, 71, 46, 71, 57, 32],
+        "poise": 13,
+        "weight": 7.2
+    },
+    "nomadic-merchants-finery-altered": {
+        "id": "nomadic-merchants-finery-altered",
+        "name": "Nomadic Merchant's Finery (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [50, 25, 61, 38, 61, 50, 25],
+        "poise": 12,
+        "weight": 6.1
+    },
+    "nox-monk-armor": {
+        "id": "nox-monk-armor",
+        "name": "Nox Monk Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [63, 42, 50, 50, 50, 63, 42],
+        "poise": 16,
+        "weight": 8.1
+    },
+    "nox-monk-armor-altered": {
+        "id": "nox-monk-armor-altered",
+        "name": "Nox Monk Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [54, 34, 42, 42, 42, 54, 34],
+        "poise": 15,
+        "weight": 7.4
+    },
+    "nox-swordstress-armor": {
+        "id": "nox-swordstress-armor",
+        "name": "Nox Swordstress Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [60, 38, 55, 55, 55, 60, 38],
+        "poise": 17,
+        "weight": 8.3
+    },
+    "nox-swordstress-armor-altered": {
+        "id": "nox-swordstress-armor-altered",
+        "name": "Nox Swordstress Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [56, 34, 49, 49, 49, 56, 34],
+        "poise": 16,
+        "weight": 7.5
+    },
+    "oathseeker-knight-armor": {
+        "id": "oathseeker-knight-armor",
+        "name": "Oathseeker Knight Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [25, 50, 21, 21, 21, 25, 50],
+        "poise": 19,
+        "weight": 9.2
+    },
+    "officials-attire": {
+        "id": "officials-attire",
+        "name": "Official's Attire",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [38, 22, 61, 64, 61, 38, 22],
+        "poise": 8,
+        "weight": 4.1
+    },
+    "old-aristocrat-gown": {
+        "id": "old-aristocrat-gown",
+        "name": "Old Aristocrat Gown",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [42, 25, 35, 38, 35, 42, 25],
+        "poise": 10,
+        "weight": 5.1
+    },
+    "omen-armor": {
+        "id": "omen-armor",
+        "name": "Omen Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [67, 63, 57, 76, 57, 67, 63],
+        "poise": 43,
+        "weight": 23.1
+    },
+    "omenkiller-robe": {
+        "id": "omenkiller-robe",
+        "name": "Omenkiller Robe",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [67, 28, 46, 46, 46, 67, 28],
+        "poise": 16,
+        "weight": 7.1
+    },
+    "page-garb": {
+        "id": "page-garb",
+        "name": "Page Garb",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [42, 23, 83, 83, 83, 42, 23],
+        "poise": 10,
+        "weight": 5.1
+    },
+    "page-garb-altered": {
+        "id": "page-garb-altered",
+        "name": "Page Garb (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [34, 19, 64, 64, 64, 34, 19],
+        "poise": 8,
+        "weight": 4.5
+    },
+    "perfumer-robe": {
+        "id": "perfumer-robe",
+        "name": "Perfumer Robe",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [63, 21, 71, 76, 71, 63, 21],
+        "poise": 10,
+        "weight": 5.1
+    },
+    "perfumer-robe-altered": {
+        "id": "perfumer-robe-altered",
+        "name": "Perfumer Robe (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [54, 18, 63, 67, 57, 54, 18],
+        "poise": 8,
+        "weight": 4.1
+    },
+    "perfumers-traveling-garb": {
+        "id": "perfumers-traveling-garb",
+        "name": "Perfumer's Traveling Garb",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [57, 23, 76, 71, 76, 57, 23],
+        "poise": 10,
+        "weight": 5.1
+    },
+    "perfumers-traveling-garb-altered": {
+        "id": "perfumers-traveling-garb-altered",
+        "name": "Perfumer's Traveling Garb (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [55, 21, 67, 63, 67, 55, 21],
+        "poise": 8,
+        "weight": 4.1
+    },
+    "preceptors-long-gown": {
+        "id": "preceptors-long-gown",
+        "name": "Preceptor's Long Gown",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [50, 24, 83, 76, 83, 50, 24],
+        "poise": 12,
+        "weight": 6.3
+    },
+    "preceptors-long-gown-altered": {
+        "id": "preceptors-long-gown-altered",
+        "name": "Preceptor's Long Gown (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [38, 16, 57, 57, 57, 38, 16],
+        "poise": 7,
+        "weight": 3.2
+    },
+    "prisoner-clothing": {
+        "id": "prisoner-clothing",
+        "name": "Prisoner Clothing",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [42, 23, 63, 63, 63, 42, 23],
+        "poise": 5,
+        "weight": 3.2
+    },
+    "prophet-robe": {
+        "id": "prophet-robe",
+        "name": "Prophet Robe",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [46, 25, 83, 90, 83, 46, 25],
+        "poise": 12,
+        "weight": 6.3
+    },
+    "prophet-robe-altered": {
+        "id": "prophet-robe-altered",
+        "name": "Prophet Robe (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [38, 22, 69, 75, 69, 38, 22],
+        "poise": 10,
+        "weight": 5.1
+    },
+    "queens-robe": {
+        "id": "queens-robe",
+        "name": "Queen's Robe",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [42, 25, 71, 83, 71, 42, 25],
+        "poise": 8,
+        "weight": 5.1
+    },
+    "radahns-lion-armor": {
+        "id": "radahns-lion-armor",
+        "name": "Radahn's Lion Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [60, 99, 42, 38, 42, 60, 99],
+        "poise": 34,
+        "weight": 17.5
+    },
+    "radahns-lion-armor-altered": {
+        "id": "radahns-lion-armor-altered",
+        "name": "Radahn's Lion Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [52, 82, 34, 32, 34, 52, 82],
+        "poise": 33,
+        "weight": 16.4
+    },
+    "raging-wolf-armor": {
+        "id": "raging-wolf-armor",
+        "name": "Raging Wolf Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [31, 55, 17, 17, 17, 31, 55],
+        "poise": 21,
+        "weight": 10.1
+    },
+    "raging-wolf-armor-altered": {
+        "id": "raging-wolf-armor-altered",
+        "name": "Raging Wolf Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [25, 50, 10, 10, 10, 25, 50],
+        "poise": 19,
+        "weight": 9.0
+    },
+    "rakshasa-armor": {
+        "id": "rakshasa-armor",
+        "name": "Rakshasa Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [35, 60, 28, 28, 28, 35, 60],
+        "poise": 27,
+        "weight": 12.8
+    },
+    "raptors-black-feathers": {
+        "id": "raptors-black-feathers",
+        "name": "Raptor's Black Feathers",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [57, 35, 60, 60, 60, 57, 35],
+        "poise": 15,
+        "weight": 7.7
+    },
+    "raya-lucarian-robe": {
+        "id": "raya-lucarian-robe",
+        "name": "Raya Lucarian Robe",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [42, 18, 67, 63, 67, 42, 18],
+        "poise": 7,
+        "weight": 4.1
+    },
+    "redmane-knight-armor": {
+        "id": "redmane-knight-armor",
+        "name": "Redmane Knight Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [35, 55, 24, 25, 24, 35, 55],
+        "poise": 24,
+        "weight": 11.8
+    },
+    "redmane-knight-armor-altered": {
+        "id": "redmane-knight-armor-altered",
+        "name": "Redmane Knight Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [32, 50, 21, 22, 21, 32, 50],
+        "poise": 24,
+        "weight": 10.8
+    },
+    "redmane-surcoat": {
+        "id": "redmane-surcoat",
+        "name": "Redmane Surcoat",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [32, 50, 23, 24, 23, 32, 50],
+        "poise": 22,
+        "weight": 10.6
+    },
+    "rellanas-armor": {
+        "id": "rellanas-armor",
+        "name": "Rellana's Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [35, 57, 24, 24, 24, 35, 57],
+        "poise": 24,
+        "weight": 11.8
+    },
+    "ronins-armor": {
+        "id": "ronins-armor",
+        "name": "Ronin's Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [66, 48, 52, 57, 52, 66, 48],
+        "poise": 16,
+        "weight": 8.5
+    },
+    "ronins-armor-altered": {
+        "id": "ronins-armor-altered",
+        "name": "Ronin's Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [54, 38, 42, 45, 42, 54, 38],
+        "poise": 15,
+        "weight": 7.6
+    },
+    "rotten-gravekeeper-cloak": {
+        "id": "rotten-gravekeeper-cloak",
+        "name": "Rotten Gravekeeper Cloak",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [76, 32, 42, 42, 42, 76, 32],
+        "poise": 12,
+        "weight": 6.3
+    },
+    "rotten-gravekeeper-cloak-altered": {
+        "id": "rotten-gravekeeper-cloak-altered",
+        "name": "Rotten Gravekeeper Cloak (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [64, 25, 34, 34, 34, 64, 25],
+        "poise": 8,
+        "weight": 5.1
+    },
+    "royal-knight-armor": {
+        "id": "royal-knight-armor",
+        "name": "Royal Knight Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [50, 67, 35, 35, 35, 50, 67],
+        "poise": 24,
+        "weight": 15.5
+    },
+    "royal-knight-armor-altered": {
+        "id": "royal-knight-armor-altered",
+        "name": "Royal Knight Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [45, 61, 32, 32, 32, 45, 61],
+        "poise": 28,
+        "weight": 15.0
+    },
+    "royal-remains-armor": {
+        "id": "royal-remains-armor",
+        "name": "Royal Remains Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [35, 57, 24, 11, 24, 35, 57],
+        "poise": 21,
+        "weight": 10.6
+    },
+    "rulers-robe": {
+        "id": "rulers-robe",
+        "name": "Ruler's Robe",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [46, 24, 76, 76, 76, 46, 24],
+        "poise": 10,
+        "weight": 5.1
+    },
+    "sage-robe": {
+        "id": "sage-robe",
+        "name": "Sage Robe",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [38, 23, 71, 76, 71, 38, 23],
+        "poise": 8,
+        "weight": 5.1
+    },
     "sanguine-noble-robe": {
         "name": "Sanguine Noble Robe",
         "defenses": [6.1, 5.3, 5.3, 5.3, 13.3, 11.9, 13.0, 13.5],
         "resistances": [50, 21, 83, 76],
         "poise": 2,
         "weight": 5.1
+    },
+    "scale-armor": {
+        "id": "scale-armor",
+        "name": "Scale Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [25, 46, 11, 21, 11, 25, 46],
+        "poise": 18,
+        "weight": 8.8
+    },
+    "scaled-armor": {
+        "id": "scaled-armor",
+        "name": "Scaled Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [57, 83, 38, 38, 38, 57, 83],
+        "poise": 33,
+        "weight": 16.0
+    },
+    "scaled-armor-altered": {
+        "id": "scaled-armor-altered",
+        "name": "Scaled Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [45, 64, 29, 29, 29, 45, 64],
+        "poise": 30,
+        "weight": 15.0
+    },
+    "scarlet-tabard": {
+        "id": "scarlet-tabard",
+        "name": "Scarlet Tabard",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [63, 42, 55, 55, 55, 63, 42],
+        "poise": 17,
+        "weight": 8.3
+    },
+    "shadow-militiaman-armor": {
+        "id": "shadow-militiaman-armor",
+        "name": "Shadow Militiaman Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [69, 29, 38, 38, 38, 69, 29],
+        "poise": 13,
+        "weight": 7.1
+    },
+    "shaman-furs": {
+        "id": "shaman-furs",
+        "name": "Shaman Furs",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [63, 42, 55, 35, 55, 63, 42],
+        "poise": 10,
+        "weight": 5.1
+    },
+    "snow-witch-robe": {
+        "id": "snow-witch-robe",
+        "name": "Snow Witch Robe",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [38, 32, 71, 71, 71, 38, 32],
+        "poise": 8,
+        "weight": 5.5
+    },
+    "snow-witch-robe-altered": {
+        "id": "snow-witch-robe-altered",
+        "name": "Snow Witch Robe (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [32, 25, 57, 57, 57, 32, 25],
+        "poise": 7,
+        "weight": 4.6
+    },
+    "spellblades-traveling-attire": {
+        "id": "spellblades-traveling-attire",
+        "name": "Spellblade's Traveling Attire",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [35, 17, 59, 63, 59, 35, 17],
+        "poise": 7,
+        "weight": 3.3
+    },
+    "spellblades-traveling-attire-altered": {
+        "id": "spellblades-traveling-attire-altered",
+        "name": "Spellblade's Traveling Attire (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [32, 10, 54, 57, 54, 32, 10],
+        "poise": 5,
+        "weight": 2.5
+    },
+    "thiolliers-garb": {
+        "id": "thiolliers-garb",
+        "name": "Thiollier's Garb",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [71, 28, 63, 38, 63, 71, 28],
+        "poise": 13,
+        "weight": 7.1
+    },
+    "thiolliers-garb-altered": {
+        "id": "thiolliers-garb-altered",
+        "name": "Thiollier's Garb (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [67, 25, 60, 35, 60, 67, 25],
+        "poise": 12,
+        "weight": 6.3
+    },
+    "travelers-clothes": {
+        "id": "travelers-clothes",
+        "name": "Traveler's Clothes",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [35, 24, 67, 67, 67, 35, 24],
+        "poise": 8,
+        "weight": 4.1
+    },
+    "traveling-maiden-robe": {
+        "id": "traveling-maiden-robe",
+        "name": "Traveling Maiden Robe",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [46, 24, 76, 83, 76, 46, 24],
+        "poise": 10,
+        "weight": 4.9
+    },
+    "traveling-maiden-robe-altered": {
+        "id": "traveling-maiden-robe-altered",
+        "name": "Traveling Maiden Robe (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [38, 21, 61, 64, 61, 38, 21],
+        "poise": 8,
+        "weight": 4.3
+    },
+    "tree-and-beast-surcoat": {
+        "id": "tree-and-beast-surcoat",
+        "name": "Tree-and-Beast Surcoat",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [32, 55, 23, 23, 23, 32, 55],
+        "poise": 22,
+        "weight": 10.6
+    },
+    "tree-sentinel-armor": {
+        "id": "tree-sentinel-armor",
+        "name": "Tree Sentinel Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [67, 90, 42, 46, 42, 67, 90],
+        "poise": 39,
+        "weight": 18.9
+    },
+    "tree-sentinel-armor-altered": {
+        "id": "tree-sentinel-armor-altered",
+        "name": "Tree Sentinel Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [57, 75, 34, 38, 34, 57, 75],
+        "poise": 35,
+        "weight": 18.1
+    },
+    "tree-surcoat": {
+        "id": "tree-surcoat",
+        "name": "Tree Surcoat",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [25, 55, 21, 18, 21, 25, 55],
+        "poise": 21,
+        "weight": 9.2
+    },
+    "twinned-armor": {
+        "id": "twinned-armor",
+        "name": "Twinned Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [38, 60, 24, 60, 24, 38, 60],
+        "poise": 25,
+        "weight": 13.7
+    },
+    "twinned-armor-altered": {
+        "id": "twinned-armor-altered",
+        "name": "Twinned Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [32, 52, 21, 52, 21, 32, 52],
+        "poise": 24,
+        "weight": 12.8
+    },
+    "upper-class-robe": {
+        "id": "upper-class-robe",
+        "name": "Upper-Class Robe",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [38, 21, 61, 61, 61, 38, 21],
+        "poise": 8,
+        "weight": 4.1
+    },
+    "vagabond-knight-armor": {
+        "id": "vagabond-knight-armor",
+        "name": "Vagabond Knight Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [35, 57, 23, 23, 23, 35, 57],
+        "poise": 22,
+        "weight": 10.6
+    },
+    "vagabond-knight-armor-altered": {
+        "id": "vagabond-knight-armor-altered",
+        "name": "Vagabond Knight Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [29, 50, 19, 19, 19, 29, 50],
+        "poise": 21,
+        "weight": 9.6
+    },
+    "verdigris-armor": {
+        "id": "verdigris-armor",
+        "name": "Verdigris Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [82, 97, 32, 45, 32, 82, 97],
+        "poise": 47,
+        "weight": 25.9
+    },
+    "veterans-armor": {
+        "id": "veterans-armor",
+        "name": "Veteran's Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [63, 90, 46, 46, 46, 63, 90],
+        "poise": 38,
+        "weight": 18.9
+    },
+    "veterans-armor-altered": {
+        "id": "veterans-armor-altered",
+        "name": "Veteran's Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [54, 75, 38, 38, 38, 54, 75],
+        "poise": 35,
+        "weight": 17.2
+    },
+    "vulgar-militia-armor": {
+        "id": "vulgar-militia-armor",
+        "name": "Vulgar Militia Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [67, 35, 50, 50, 50, 67, 35],
+        "poise": 16,
+        "weight": 7.7
+    },
+    "war-surgeon-gown": {
+        "id": "war-surgeon-gown",
+        "name": "War Surgeon Gown",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [53, 37, 44, 48, 44, 53, 37],
+        "poise": 13,
+        "weight": 6.9
+    },
+    "war-surgeon-gown-altered": {
+        "id": "war-surgeon-gown-altered",
+        "name": "War Surgeon Gown (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [45, 32, 38, 42, 38, 45, 32],
+        "poise": 12,
+        "weight": 6.1
+    },
+    "white-reed-armor": {
+        "id": "white-reed-armor",
+        "name": "White Reed Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [67, 42, 55, 50, 55, 67, 42],
+        "poise": 17,
+        "weight": 8.3
+    },
+    "young-lions-armor": {
+        "id": "young-lions-armor",
+        "name": "Young Lion's Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [45, 64, 22, 32, 22, 45, 64],
+        "poise": 31,
+        "weight": 15.0
+    },
+    "young-lions-armor-altered": {
+        "id": "young-lions-armor-altered",
+        "name": "Young Lion's Armor (Altered)",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [38, 57, 21, 25, 21, 38, 57],
+        "poise": 28,
+        "weight": 13.7
+    },
+    "zamor-armor": {
+        "id": "zamor-armor",
+        "name": "Zamor Armor",
+        "defenses": [100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0, 100.0],
+        "resistances": [21, 63, 11, 18, 11, 21, 63],
+        "poise": 18,
+        "weight": 8.8
     }
 }
