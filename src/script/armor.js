@@ -170,7 +170,7 @@ function itemStatsToString(item) {
             .toFixed(1) + " elem. ";
     // let physical = item.defenses.slice(0, 4).reduce((total, defense, i) => total + defense.toFixed(1) + " " + DEFENSE_NAMES[i] + ", ", 0.0);
     // let elemental = item.defenses.slice(4, 8).reduce((total, defense, i) => total + defense.toFixed(1) + " " + DEFENSE_NAMES[i + 4] + ", ", "");
-    let resistances = item.resistances.reduce(
+    let resistances = item.resistances.slice(0, 4).reduce(
         (total, res, i) => total + res + " " + ["immunity", "robustness", "focus", "vitality"][i] + ", ",
         "",
     );
