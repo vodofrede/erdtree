@@ -1,7 +1,7 @@
 /* colors */
 :root {
     --primary: white;
-    --secondary: white;
+    --secondary: rgba(0, 0, 0, 0.075);
     --contrast: black;
     --accent: teal;
 }
