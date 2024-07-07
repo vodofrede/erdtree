@@ -1,288 +1,277 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- metadata -->
-        <meta charset="utf-8" />
-        <meta name="language" content="english" />
-        <meta http-equiv="content-language" content="en-us" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="style/main.css" />
-        <!-- title and description -->
-        <title>Class Optimizer - Erdtree</title>
-        <link rel="icon" type="image/x-icon " href="/resource/favicon.ico" />
-        <meta
-            name="description"
-            content="Starting Class Optimizer for Elden Ring - Including Equipment (Talismans and Helmets)"
-        />
-        <meta name="author" content="vodofrede" />
-        <meta property="og:title" content="Class Optimizer - Erdtree" />
-        <meta
-            property="og:description"
-            content="Starting Class Optimizer for Elden Ring - Including Equipment (Talismans and Helmets)"
-        />
-        <meta property="og:url" content="https://erdtree.palmoe.dk/class" />
-        <!-- scripts -->
-        <script src="/script/class.js"></script>
-    </head>
 
-    <body onload="init();">
-        <nav>
-            <h3><a href="/">Home</a></h3>
-            <h3><a href="/class.html" class="current">Starting Class</a></h3>
-            <h3><a href="/armor.html">Armor Optimizer</a></h3>
-            <h3><a href="/weapons.html">Weapon Finder</a></h3>
-        </nav>
-        <header>
-            <h1>Class Optimizer</h1>
-        </header>
-        <main>
-            <div class="app">
-                <article>
-                    <div>
-                        <b>Class</b>
-                        <input id="best" type="text" disabled />
-                    </div>
-                    <hr />
-                    <template id="class">
-                        <li>
-                            <span></span>
-                            <aside></aside>
-                        </li>
-                    </template>
-                    <div>
-                        <ul id="classes"></ul>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <b>Level</b>
-                        <div>
-                            <input id="initial-level" type="number" disabled />
-                            <input type="number" style="visibility: hidden" disabled />
-                            <input id="final-level" type="number" disabled />
-                            <input id="virtual-level" type="number" disabled />
-                        </div>
-                    </div>
-                    <hr />
-                    <div>
-                        <label for="vigor">Vigor</label>
-                        <div>
-                            <input type="number" name="initial" disabled />
-                            <input id="vigor" type="number" name="total" min="0" max="99" oninput="update()" />
-                            <input type="number" name="final" disabled />
-                            <input type="number" name="virtual" disabled />
-                        </div>
-                    </div>
-                    <div>
-                        <label for="mind">Mind</label>
-                        <div>
-                            <input type="number" name="initial" disabled />
-                            <input id="mind" type="number" name="total" min="0" max="99" oninput="update()" />
-                            <input type="number" name="final" disabled />
-                            <input type="number" name="virtual" disabled />
-                        </div>
-                    </div>
-                    <div>
-                        <label for="endurance">Endurance</label>
-                        <div>
-                            <input type="number" name="initial" disabled />
-                            <input id="endurance" type="number" name="total" min="0" max="99" oninput="update()" />
-                            <input type="number" name="final" disabled />
-                            <input type="number" name="virtual" disabled />
-                        </div>
-                    </div>
-                    <div>
-                        <label for="strength">Strength</label>
-                        <div>
-                            <input type="number" name="initial" disabled />
-                            <input id="strength" type="number" name="total" min="0" max="99" oninput="update()" />
-                            <input type="number" name="final" disabled />
-                            <input type="number" name="virtual" disabled />
-                        </div>
-                    </div>
-                    <div>
-                        <label for="dexterity">Dexterity</label>
-                        <div>
-                            <input type="number" name="initial" disabled />
-                            <input id="dexterity" type="number" name="total" min="0" max="99" oninput="update()" />
-                            <input type="number" name="final" disabled />
-                            <input type="number" name="virtual" disabled />
-                        </div>
-                    </div>
-                    <div>
-                        <label for="intelligence">Intelligence</label>
-                        <div>
-                            <input type="number" name="initial" disabled />
-                            <input id="intelligence" type="number" name="total" min="0" max="99" oninput="update()" />
-                            <input type="number" name="final" disabled />
-                            <input type="number" name="virtual" disabled />
-                        </div>
-                    </div>
-                    <div>
-                        <label for="faith">Faith</label>
-                        <div>
-                            <input type="number" name="initial" disabled />
-                            <input id="faith" type="number" name="total" min="0" max="99" oninput="update()" />
-                            <input type="number" name="final" disabled />
-                            <input type="number" name="virtual" disabled />
-                        </div>
-                    </div>
-                    <div>
-                        <label for="arcane">Arcane</label>
-                        <div>
-                            <input type="number" name="initial" disabled />
-                            <input id="arcane" type="number" name="total" min="0" max="99" oninput="update()" />
-                            <input type="number" name="final" disabled />
-                            <input type="number" name="virtual" disabled />
-                        </div>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <label>
-                            <b>Helmet</b>
-                        </label>
-                        <select id="helmet" name="equipment" onchange="update()">
-                            <option id="none" value="none">No Helmet</option>
-                        </select>
-                    </div>
-                    <hr />
-                    <div>
-                        <ul id="talismans">
-                            <template id="talisman">
-                                <li>
-                                    <div>
-                                        <input name="talisman" type="checkbox" onchange="update()" />
-                                        <label></label>
-                                    </div>
-                                    <aside style="font-size: 0.8rem"></aside>
-                                </li>
-                            </template>
-                        </ul>
-                    </div>
-                    <div>
-                        <button onclick="resetAll()">Reset All</button>
-                    </div>
-                </article>
-            </div>
-            <div>
-                <h2 style="text-align: center">Explanation & Usage</h2>
-                <p>The four columns in the second box represent, in order:</p>
-                <ol>
-                    <li>Class base stats, e.g. the stats the class has at its base level.</li>
+<head>
+    <!-- metadata -->
+    <meta charset="utf-8" />
+    <meta name="language" content="english" />
+    <meta http-equiv="content-language" content="en-us" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style/main.css" />
+    <!-- title and description -->
+    <title>Class Optimizer - Erdtree</title>
+    <link rel="icon" type="image/x-icon " href="/resource/favicon.ico" />
+    <meta name="description" content="Starting Class Optimizer for Elden Ring - Including Equipment (Talismans and Helmets)" />
+    <meta name="author" content="vodofrede" />
+    <meta property="og:title" content="Class Optimizer - Erdtree" />
+    <meta property="og:description" content="Starting Class Optimizer for Elden Ring - Including Equipment (Talismans and Helmets)" />
+    <meta property="og:url" content="https://erdtree.palmoe.dk/class" />
+    <!-- scripts -->
+    <script src="/script/class.js"></script>
+</head>
+
+<body onload="init();">
+    <nav>
+        <h3><a href="/">Home</a></h3>
+        <h3><a href="/class.html" class="current">Starting Class</a></h3>
+        <h3><a href="/armor.html">Armor Optimizer</a></h3>
+        <h3><a href="/weapons.html">Weapon Finder</a></h3>
+    </nav>
+    <header>
+        <h1>Class Optimizer</h1>
+    </header>
+    <main>
+        <div class="app">
+            <article>
+                <div>
+                    <b>Class</b>
+                    <input id="best" type="text" disabled />
+                </div>
+                <hr />
+                <template id="class">
                     <li>
-                        Desired stats. Here, you should input what the absolute minimum stats for your build should be.
-                        Leave the input fields blank for stats you don't care about.
+                        <span></span>
+                        <aside></aside>
                     </li>
-                    <li>Final stats. These are your characters stats as they should appear on your level-up screen.</li>
-                    <li>
-                        Virtual stats. These are your characters stats after talismans and helmet stat buffs are
-                        applied.
-                    </li>
-                </ol>
-            </div>
-            <div>
-                <h2 style="text-align: center">Softcaps</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Skill</th>
-                            <th>Stat</th>
-                            <th>Softcaps</th>
-                            <th>Notes</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Vigor</td>
-                            <td>HP</td>
-                            <td>25 (800HP)<br />40 (1450HP)<br />60 (1900HP)</td>
-                            <td>A +12 upgraded crimson flask heals for 810HP.</td>
-                        </tr>
-                        <tr>
-                            <td>Mind</td>
-                            <td>FP</td>
-                            <td>40 (220FP)</td>
-                            <td>A +12 upgraded cerulean flask gives 220FP.</td>
-                        </tr>
-                        <tr>
-                            <td>Endurance</td>
-                            <td>Stamina</td>
-                            <td>30 (125stm.)<br />50 (155stm.)</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>Equip Load</td>
-                            <td>25 (72 wgt.)<br />60 (120 wgt.)</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Strength</td>
-                            <td>AR</td>
-                            <td>37 ≃ 55 (2h)<br />54 ≃ 80 (2h)<br />66 ≃ 99 (2h)<br />80</td>
-                            <td>2-handing gives you 1.5x strength.</td>
-                        </tr>
-                        <tr>
-                            <td>Dexterity</td>
-                            <td>AR</td>
-                            <td>55, 80</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Intelligence</td>
-                            <td>AR</td>
-                            <td>55, 80</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>Spell Buff</td>
-                            <td>60, 80</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Faith</td>
-                            <td>AR</td>
-                            <td>55, 80</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>Spell Buff</td>
-                            <td>60, 80</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Arcane</td>
-                            <td>AR</td>
-                            <td>55, 80</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>Status</td>
-                            <td>45, 60</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>Spell Buff</td>
-                            <td>60, 80 (Pure catalyst)<br />30, 45 (Hybrid catalyst)</td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </main>
-        <div></div>
-        <footer>
-            <h5>
-                Erdtree Planner (<a href="https://git.palmoe.dk/vodofrede/erdtree" style="color: var(--link-color)"
-                    >available under BSD-3-Clause license</a
-                >)
-            </h5>
-            <h5>© 2022 vodofrede</h5>
-        </footer>
-    </body>
+                </template>
+                <div>
+                    <ul id="classes"></ul>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <b>Level</b>
+                    <div>
+                        <input id="initial-level" type="number" disabled />
+                        <input type="number" style="visibility: hidden" disabled />
+                        <input id="final-level" type="number" disabled />
+                        <input id="virtual-level" type="number" disabled />
+                    </div>
+                </div>
+                <hr />
+                <div>
+                    <label for="vigor">Vigor</label>
+                    <div>
+                        <input type="number" name="initial" disabled />
+                        <input id="vigor" type="number" name="total" min="0" max="99" oninput="update()" />
+                        <input type="number" name="final" disabled />
+                        <input type="number" name="virtual" disabled />
+                    </div>
+                </div>
+                <div>
+                    <label for="mind">Mind</label>
+                    <div>
+                        <input type="number" name="initial" disabled />
+                        <input id="mind" type="number" name="total" min="0" max="99" oninput="update()" />
+                        <input type="number" name="final" disabled />
+                        <input type="number" name="virtual" disabled />
+                    </div>
+                </div>
+                <div>
+                    <label for="endurance">Endurance</label>
+                    <div>
+                        <input type="number" name="initial" disabled />
+                        <input id="endurance" type="number" name="total" min="0" max="99" oninput="update()" />
+                        <input type="number" name="final" disabled />
+                        <input type="number" name="virtual" disabled />
+                    </div>
+                </div>
+                <div>
+                    <label for="strength">Strength</label>
+                    <div>
+                        <input type="number" name="initial" disabled />
+                        <input id="strength" type="number" name="total" min="0" max="99" oninput="update()" />
+                        <input type="number" name="final" disabled />
+                        <input type="number" name="virtual" disabled />
+                    </div>
+                </div>
+                <div>
+                    <label for="dexterity">Dexterity</label>
+                    <div>
+                        <input type="number" name="initial" disabled />
+                        <input id="dexterity" type="number" name="total" min="0" max="99" oninput="update()" />
+                        <input type="number" name="final" disabled />
+                        <input type="number" name="virtual" disabled />
+                    </div>
+                </div>
+                <div>
+                    <label for="intelligence">Intelligence</label>
+                    <div>
+                        <input type="number" name="initial" disabled />
+                        <input id="intelligence" type="number" name="total" min="0" max="99" oninput="update()" />
+                        <input type="number" name="final" disabled />
+                        <input type="number" name="virtual" disabled />
+                    </div>
+                </div>
+                <div>
+                    <label for="faith">Faith</label>
+                    <div>
+                        <input type="number" name="initial" disabled />
+                        <input id="faith" type="number" name="total" min="0" max="99" oninput="update()" />
+                        <input type="number" name="final" disabled />
+                        <input type="number" name="virtual" disabled />
+                    </div>
+                </div>
+                <div>
+                    <label for="arcane">Arcane</label>
+                    <div>
+                        <input type="number" name="initial" disabled />
+                        <input id="arcane" type="number" name="total" min="0" max="99" oninput="update()" />
+                        <input type="number" name="final" disabled />
+                        <input type="number" name="virtual" disabled />
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div>
+                    <label>
+                        <b>Helmet</b>
+                    </label>
+                    <select id="helmet" name="equipment" onchange="update()">
+                        <option id="none" value="none">No Helmet</option>
+                    </select>
+                </div>
+                <hr />
+                <div>
+                    <b>Talismans</b>
+                </div>
+                <div>
+                    <ul id="talismans">
+                        <template id="talisman">
+                            <li>
+                                <div>
+                                    <input name="talisman" type="checkbox" onchange="update()" />
+                                    <label></label>
+                                </div>
+                                <aside style="font-size: 0.8rem"></aside>
+                            </li>
+                        </template>
+                    </ul>
+                </div>
+                <div>
+                    <button onclick="resetAll()">Reset All</button>
+                </div>
+            </article>
+        </div>
+        <div>
+            <h2 style="text-align: center">Explanation & Usage</h2>
+            <p>The four columns in the second box represent, in order:</p>
+            <ol>
+                <li>Class base stats, e.g. the stats the class has at its base level.</li>
+                <li> Desired stats. Here, you should input what the absolute minimum stats for your build should be. Leave the input fields blank for stats you don't care about. </li>
+                <li>Final stats. These are your characters stats as they should appear on your level-up screen.</li>
+                <li> Virtual stats. These are your characters stats after talismans and helmet stat buffs are applied. </li>
+            </ol>
+        </div>
+        <div>
+            <h2 style="text-align: center">Softcaps</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Stat</th>
+                        <th>Softcaps</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vigor</td>
+                        <td>HP</td>
+                        <td>25 (800HP)<br />40 (1450HP)<br />60 (1900HP)</td>
+                        <td>A +12 upgraded crimson flask heals for 810HP.</td>
+                    </tr>
+                    <tr>
+                        <td>Mind</td>
+                        <td>FP</td>
+                        <td>40 (220FP)</td>
+                        <td>A +12 upgraded cerulean flask gives 220FP.</td>
+                    </tr>
+                    <tr>
+                        <td>Endurance</td>
+                        <td>Stamina</td>
+                        <td>30 (125stm.)<br />50 (155stm.)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Equip Load</td>
+                        <td>25 (72 wgt.)<br />60 (120 wgt.)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Strength</td>
+                        <td>AR</td>
+                        <td>37 ≃ 55 (2h)<br />54 ≃ 80 (2h)<br />66 ≃ 99 (2h)<br />80</td>
+                        <td>2-handing gives you 1.5x strength.</td>
+                    </tr>
+                    <tr>
+                        <td>Dexterity</td>
+                        <td>AR</td>
+                        <td>55, 80</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Intelligence</td>
+                        <td>AR</td>
+                        <td>55, 80</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Spell Buff</td>
+                        <td>60, 80</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Faith</td>
+                        <td>AR</td>
+                        <td>55, 80</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Spell Buff</td>
+                        <td>60, 80</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Arcane</td>
+                        <td>AR</td>
+                        <td>55, 80</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Status</td>
+                        <td>45, 60</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Spell Buff</td>
+                        <td>60, 80 (Pure catalyst)<br />30, 45 (Hybrid catalyst)</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <div></div>
+    <footer>
+        <h5> Erdtree Planner (<a href="https://git.palmoe.dk/vodofrede/erdtree" style="color: var(--link-color)">available under BSD-3-Clause license</a>) </h5>
+        <h5>© 2022 vodofrede</h5>
+    </footer>
+</body>
+
 </html>

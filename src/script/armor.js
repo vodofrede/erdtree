@@ -123,7 +123,7 @@ function knapSack(selection, sortBy) {
             best.sort((a, b) => setFitness(b, sortBy) - setFitness(a, sortBy));
             best.pop();
             return best;
-        }, selection.slice(0, 3))
+        }, selection.slice(0, 5))
         .sort((a, b) => setFitness(b, sortBy) - setFitness(a, sortBy));
 }
 
