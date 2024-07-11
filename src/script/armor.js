@@ -103,9 +103,13 @@ function update() {
             link.innerHTML = set[i].name;
             row.children[0].appendChild(link);
             row.children[0].appendChild(ignoreButton);
-            row.children[1].innerHTML = itemStatsToString(set[i]);
+            let stats = itemStatsToString(set[i]);
+            row.children[1].innerHTML = stats[0];
+            row.children[2].innerHTML = stats[1];
         });
-        rows[0].children[1].innerHTML = setStatsToString(set);
+        let stats = setStatsToString(set);
+        rows[0].children[1].innerHTML = stats[0];
+        rows[0].children[2].innerHTML = stats[1];
 
         destination.appendChild(clone);
     });
@@ -285,13 +289,17 @@ function itemStatsToString(item) {
             .toFixed(1) + " Standard, ";
     let physical = item.defenses[0].toFixed(1) + " Physical, ";
     let strike = item.defenses[1].toFixed(1) + " Strike, ";
+    let slash = item.defenses[2].toFixed(1) + " Slash, ";
+    let thrust = item.defenses[3].toFixed(1) + " Thrust, ";
     let elemental =
         item.defenses
             .slice(4, 8)
             .reduce((total, defense) => total + defense, 0.0)
             .toFixed(1) + " Elemental, ";
-    // let physical = item.defenses.slice(0, 4).reduce((total, defense, i) => total + defense.toFixed(1) + " " + DEFENSE_NAMES[i] + ", ", 0.0);
-    // let elemental = item.defenses.slice(4, 8).reduce((total, defense, i) => total + defense.toFixed(1) + " " + DEFENSE_NAMES[i + 4] + ", ", "");
+    let magic = item.defenses[4].toFixed(1) + " Magic, ";
+    let fire = item.defenses[5].toFixed(1) + " Fire, ";
+    let lightning = item.defenses[6].toFixed(1) + " Lightning, ";
+    let holy = item.defenses[7].toFixed(1) + " Holy, ";
     let resistances = item.resistances.reduce(
         (total, res, i) =>
             total +
@@ -310,16 +318,22 @@ function itemStatsToString(item) {
         ""
     );
 
-    return (
+    return [
         weight +
-        poise +
-        standard +
-        physical +
-        strike +
-        elemental +
-        "<br>" +
-        resistances
-    );
+            poise +
+            standard +
+            physical +
+            strike +
+            slash +
+            thrust +
+            "<br>" +
+            elemental +
+            magic +
+            fire +
+            lightning +
+            holy,
+        resistances,
+    ];
 }
 
 function setStatsToString(set) {
