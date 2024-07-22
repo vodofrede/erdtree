@@ -10,34 +10,27 @@ const populate = (select, items) =>
 const selected = (select) => select.options[select.selectedIndex];
 
 async function init() {
-    HELMETS = await fetch("/data/helmets.json").then((response) =>
-        response.json()
-    );
-    CHESTPIECES = await fetch("/data/chestpieces.json").then((response) =>
-        response.json()
-    );
-    GAUNTLETS = await fetch("/data/gauntlets.json").then((response) =>
-        response.json()
-    );
-    LEGGINGS = await fetch("/data/leggings.json").then((response) =>
-        response.json()
-    );
+    [HELMETS, CHESTPIECES, GAUNTLETS, LEGGINGS] = await Promise.all([
+        fetch("/data/helmets.json").then((response) =>
+            Object.values(response.json())
+        ),
+        fetch("/data/chestpieces.json").then((response) =>
+            Object.values(response.json())
+        ),
+        fetch("/data/gauntlets.json").then((response) =>
+            Object.values(response.json())
+        ),
+        fetch("/data/leggings.json").then((response) =>
+            Object.values(response.json())
+        ),
+    ]);
     EQUIPMENT = [HELMETS, CHESTPIECES, GAUNTLETS, LEGGINGS];
 
     // populate filter selects
-    populate(document.getElementById("locked-helmet"), Object.values(HELMETS));
-    populate(
-        document.getElementById("locked-chestpiece"),
-        Object.values(CHESTPIECES)
-    );
-    populate(
-        document.getElementById("locked-gauntlets"),
-        Object.values(GAUNTLETS)
-    );
-    populate(
-        document.getElementById("locked-leggings"),
-        Object.values(LEGGINGS)
-    );
+    populate(document.getElementById("locked-helmet"), HELMETS);
+    populate(document.getElementById("locked-chestpiece"), CHESTPIECES);
+    populate(document.getElementById("locked-gauntlets"), GAUNTLETS);
+    populate(document.getElementById("locked-leggings"), LEGGINGS);
 
     update();
 }
@@ -55,18 +48,14 @@ function update() {
 
     // get locked items
     let lockedItems = [...document.getElementsByName("locked-items")].map(
-        (select, i) => Object.values(EQUIPMENT[i])[select.selectedIndex - 1]
+        (select, i) => EQUIPMENT[i][select.selectedIndex - 1]
     );
 
     // pre-sort and eliminate some equipment
-    let helmets = dominated(Object.values(HELMETS), sortBy, lockedItems);
-    let chestpieces = dominated(
-        Object.values(CHESTPIECES),
-        sortBy,
-        lockedItems
-    );
-    let gauntlets = dominated(Object.values(GAUNTLETS), sortBy, lockedItems);
-    let leggings = dominated(Object.values(LEGGINGS), sortBy, lockedItems);
+    let helmets = dominated(HELMETS, sortBy, lockedItems);
+    let chestpieces = dominated(CHESTPIECES, sortBy, lockedItems);
+    let gauntlets = dominated(GAUNTLETS, sortBy, lockedItems);
+    let leggings = dominated(LEGGINGS, sortBy, lockedItems);
 
     let selection = permutations(
         [helmets, chestpieces, gauntlets, leggings],
