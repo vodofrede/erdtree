@@ -193,14 +193,16 @@ function permutations(
 }
 
 function knapSack(selection, sortBy) {
-    return selection
-        .reduce((best, set) => {
-            best.push(set);
-            best.sort((a, b) => setFitness(b, sortBy) - setFitness(a, sortBy));
+    return selection.reduce((best, set) => {
+        const index = best.findIndex(
+            (element) => setFitness(element, sortBy) < setFitness(set, sortBy)
+        );
+        if (index !== -1) {
+            best.splice(index, 0, set);
             best.pop();
-            return best;
-        }, selection.slice(0, 5))
-        .sort((a, b) => setFitness(b, sortBy) - setFitness(a, sortBy));
+        }
+        return best;
+    }, selection.slice(0, 5));
 }
 
 function fitness(item, sortBy) {
@@ -256,11 +258,17 @@ function fitness(item, sortBy) {
 
 const setWeight = (set) =>
     (set.weight ??= set.reduce((total, item) => total + item.weight, 0));
-const setFitness = (set, sortBy) =>
-    (set.fitness ??= set.reduce(
-        (total, item) => total + fitness(item, sortBy),
-        0.0
-    ));
+const setFitness = (set, sortBy) => {
+    if (!set.fitness) {
+        set.fitness = set.reduce((total, item) => {
+            if (!item.fitness) {
+                item.fitness = fitness(item, sortBy);
+            }
+            return total + item.fitness;
+        }, 0.0);
+    }
+    return set.fitness;
+};
 const isAllowedSet = (set, lockedItems) => [
     lockedItems.every((item) => item == undefined || set.includes(item)),
     ignored.every((item) => item == undefined || set.includes(item)),
