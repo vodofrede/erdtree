@@ -10,21 +10,15 @@ const populate = (select, items) =>
 const selected = (select) => select.options[select.selectedIndex];
 
 async function init() {
-    [HELMETS, CHESTPIECES, GAUNTLETS, LEGGINGS] = await Promise.all([
-        fetch("/data/helmets.json").then((response) =>
-            Object.values(response.json())
-        ),
-        fetch("/data/chestpieces.json").then((response) =>
-            Object.values(response.json())
-        ),
-        fetch("/data/gauntlets.json").then((response) =>
-            Object.values(response.json())
-        ),
-        fetch("/data/leggings.json").then((response) =>
-            Object.values(response.json())
-        ),
-    ]);
-    EQUIPMENT = [HELMETS, CHESTPIECES, GAUNTLETS, LEGGINGS];
+    EQUIPMENT = (
+        await Promise.all([
+            fetch("/data/helmets.json").then((r) => r.json()),
+            fetch("/data/chestpieces.json").then((r) => r.json()),
+            fetch("/data/gauntlets.json").then((r) => r.json()),
+            fetch("/data/leggings.json").then((r) => r.json()),
+        ])
+    ).map((json) => Object.values(json));
+    [HELMETS, CHESTPIECES, GAUNTLETS, LEGGINGS] = EQUIPMENT;
 
     // populate filter selects
     populate(document.getElementById("locked-helmet"), HELMETS);
