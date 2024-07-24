@@ -704,6 +704,7 @@
         "weight": 3.2
     },
     "fias-robe": {
+        "id": "fias-robe",
         "name": "Fia's Robe",
         "defenses": [5.3, 6.1, 5.3, 5.3, 12.6, 12.4, 12.6, 13.0],
         "resistances": [46, 46, 21, 21, 76, 76, 108],
@@ -711,6 +712,7 @@
         "weight": 5.1
     },
     "fias-robe-altered": {
+        "id": "fias-robe-altered",
         "name": "Fia's Robe (Altered)",
         "defenses": [2.7, 4.2, 2.7, 2.7, 11.9, 11.4, 11.9, 12.6],
         "resistances": [34, 34, 10, 10, 57, 57, 93],
