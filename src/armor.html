@@ -157,7 +157,7 @@
                             />
                             <label for="sort-standard"
                                 >Greatest Standard (Physical, Strike, Slash,
-                                Thrust) Absorption</label
+                                Pierce) Absorption</label
                             >
                         </div>
                     </div>
@@ -204,12 +204,12 @@
                         <div>
                             <input
                                 type="radio"
-                                id="sort-thrust"
+                                id="sort-pierce"
                                 name="sorting-order"
                                 onclick="update()"
                             />
-                            <label for="sort-thrust"
-                                >Greatest Thrust Absorption</label
+                            <label for="sort-pierce"
+                                >Greatest Pierce Absorption</label
                             >
                         </div>
                     </div>
@@ -322,12 +322,12 @@
                         <div>
                             <input
                                 type="radio"
-                                id="sort-blood-loss"
+                                id="sort-hemorrhage"
                                 name="sorting-order"
                                 onclick="update()"
                             />
-                            <label for="sort-blood-loss"
-                                >Greatest Blood Loss Resistance</label
+                            <label for="sort-hemorrhage"
+                                >Greatest Hemorrhage Resistance</label
                             >
                         </div>
                     </div>
@@ -335,12 +335,12 @@
                         <div>
                             <input
                                 type="radio"
-                                id="sort-freeze"
+                                id="sort-frostbite"
                                 name="sorting-order"
                                 onclick="update()"
                             />
-                            <label for="sort-freeze"
-                                >Greatest Freeze Resistance</label
+                            <label for="sort-frostbite"
+                                >Greatest Frostbite Resistance</label
                             >
                         </div>
                     </div>
@@ -392,6 +392,25 @@
                                 onclick="update()"
                             />
                             <label for="sort-poise">Greatest Poise</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input
+                                type="radio"
+                                id="sort-boss"
+                                name="sorting-order"
+                                onclick="update()"
+                            />
+                            <label for="sort-boss">VS. Boss:</label>
+                            <select
+                                type="text"
+                                id="sort-boss-select"
+                                name="sorting-by-boss"
+                                onchange="update()"
+                            >
+                                <option value="none">None</option>
+                            </select>
                         </div>
                     </div>
                     <hr />

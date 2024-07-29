@@ -3,6 +3,7 @@ let CHESTPIECES;
 let GAUNTLETS;
 let LEGGINGS;
 let EQUIPMENT;
+let BOSSES;
 let ignored = [];
 
 const populate = (select, items) =>
@@ -19,12 +20,18 @@ async function init() {
         ])
     ).map((json) => Object.values(json));
     [HELMETS, CHESTPIECES, GAUNTLETS, LEGGINGS] = EQUIPMENT;
+    BOSSES = await Promise.resolve(
+        fetch("/data/bosses.json").then((r) => r.json())
+    );
 
     // populate filter selects
     populate(document.getElementById("locked-helmet"), HELMETS);
     populate(document.getElementById("locked-chestpiece"), CHESTPIECES);
     populate(document.getElementById("locked-gauntlets"), GAUNTLETS);
     populate(document.getElementById("locked-leggings"), LEGGINGS);
+
+    //populate boss sort
+    populate(document.getElementById("sort-boss-select"), BOSSES);
 
     update();
 }
@@ -111,16 +118,18 @@ function update() {
     }
 
     // add ignored items to ignored list
-    ignored.forEach((item) => {
+    ignored.forEach((itemId) => {
         let li = document.createElement("li");
         let undoIgnoreButton = document.createElement("button");
         undoIgnoreButton.onclick = () => {
-            ignored = ignored.filter((i) => i != item);
+            ignored = ignored.filter((i) => i != itemId);
             update();
         };
         undoIgnoreButton.innerHTML = " 🗑";
         undoIgnoreButton.style = "background-color: green;";
-        li.innerHTML = EQUIPMENT.find((set) => set[item]?.name)[item].name;
+        li.innerHTML = EQUIPMENT.find((set) =>
+            set.find((i) => i.id == itemId)
+        ).find((i) => i.id == itemId).name;
         li.appendChild(undoIgnoreButton);
         ignoredList.appendChild(li);
     });
@@ -191,51 +200,86 @@ function knapSack(selection, sortBy) {
 function fitness(item, sortBy) {
     switch (sortBy) {
         case "sort-average":
-            return item.defenses.reduce((total, n) => total + n, 0) ?? 0;
+            return (
+                Object.values(item.defenses).reduce(
+                    (total, n) => total + n,
+                    0
+                ) ?? 0
+            );
         case "sort-standard":
             return (
-                item.defenses.slice(0, 4).reduce((total, n) => total + n, 0) ??
-                0
+                [
+                    item.defenses.physical,
+                    item.defenses.strike,
+                    item.defenses.slash,
+                    item.defenses.pierce,
+                ].reduce((total, n) => total + n, 0) ?? 0
             );
         case "sort-physical":
-            return item.defenses[0] ?? 0;
+            return item.defenses.physical ?? 0;
         case "sort-strike":
-            return item.defenses[1] ?? 0;
+            return item.defenses.strike ?? 0;
         case "sort-slash":
-            return item.defenses[2] ?? 0;
-        case "sort-thrust":
-            return item.defenses[3] ?? 0;
+            return item.defenses.slash ?? 0;
+        case "sort-pierce":
+            return item.defenses.pierce ?? 0;
         case "sort-elemental":
             return (
-                item.defenses.slice(4, 8).reduce((total, n) => total + n, 0) ??
-                0
+                [
+                    item.defenses.magic,
+                    item.defenses.fire,
+                    item.defenses.lightning,
+                    item.defenses.holy,
+                ].reduce((total, n) => total + n, 0) ?? 0
             );
         case "sort-magic":
-            return item.defenses[4] ?? 0;
+            return item.defenses.magic ?? 0;
         case "sort-fire":
-            return item.defenses[5] ?? 0;
+            return item.defenses.fire ?? 0;
         case "sort-lightning":
-            return item.defenses[6] ?? 0;
+            return item.defenses.lightning ?? 0;
         case "sort-holy":
-            return item.defenses[7] ?? 0;
+            return item.defenses.holy ?? 0;
         case "sort-resistances":
-            return item.resistances.reduce((total, n) => total + n, 0) ?? 0;
+            return (
+                Object.values(item.resistances).reduce(
+                    (total, n) => total + n,
+                    0
+                ) ?? 0
+            );
         case "sort-scarlet-rot":
-            return item.resistances[0] ?? 0;
+            return item.resistances.scarletRot ?? 0;
         case "sort-posion":
-            return item.resistances[1] ?? 0;
-        case "sort-blood-loss":
-            return item.resistances[2] ?? 0;
-        case "sort-freeze":
-            return item.resistances[3] ?? 0;
+            return item.resistances.poison ?? 0;
+        case "sort-hemorrhage":
+            return item.resistances.hemorrhage ?? 0;
+        case "sort-frostbite":
+            return item.resistances.frostbite ?? 0;
         case "sort-sleep":
-            return item.resistances[4] ?? 0;
+            return item.resistances.sleep ?? 0;
         case "sort-madness":
-            return item.resistances[5] ?? 0;
+            return item.resistances.madness ?? 0;
         case "sort-death":
-            return item.resistances[6] ?? 0;
+            return item.resistances.deathBlight ?? 0;
         case "sort-poise":
             return item.poise ?? 0;
+        case "sort-boss": {
+            let boss = BOSSES.find(
+                (boss) =>
+                    boss.id == document.getElementById("sort-boss-select").value
+            );
+            return (
+                [
+                    ...Object.values(item.defenses).filter((defense, index) =>
+                        boss.damageTypes[index] ? defense : 0
+                    ),
+                    ...Object.values(item.resistances).filter(
+                        (resistance, index) =>
+                            boss.statusEffects[index] ? resistance : 0
+                    ),
+                ].reduce((total, n) => total + n, 0) ?? 0
+            );
+        }
     }
 }
 
@@ -274,24 +318,32 @@ function itemStatsToString(item) {
     let weight = item.weight.toFixed(1) + " Weight, ";
     let poise = item.poise + " Poise, ";
     let standard =
-        item.defenses
-            .slice(0, 4)
+        [
+            item.defenses.physical,
+            item.defenses.strike,
+            item.defenses.slash,
+            item.defenses.pierce,
+        ]
             .reduce((total, defense) => total + defense, 0.0)
             .toFixed(1) + " Standard, ";
-    let physical = item.defenses[0].toFixed(1) + " Physical, ";
-    let strike = item.defenses[1].toFixed(1) + " Strike, ";
-    let slash = item.defenses[2].toFixed(1) + " Slash, ";
-    let thrust = item.defenses[3].toFixed(1) + " Thrust, ";
+    let physical = item.defenses.physical.toFixed(1) + " Physical, ";
+    let strike = item.defenses.strike.toFixed(1) + " Strike, ";
+    let slash = item.defenses.slash.toFixed(1) + " Slash, ";
+    let pierce = item.defenses.pierce.toFixed(1) + " Pierce, ";
     let elemental =
-        item.defenses
-            .slice(4, 8)
+        [
+            item.defenses.magic,
+            item.defenses.fire,
+            item.defenses.lightning,
+            item.defenses.holy,
+        ]
             .reduce((total, defense) => total + defense, 0.0)
             .toFixed(1) + " Elemental, ";
-    let magic = item.defenses[4].toFixed(1) + " Magic, ";
-    let fire = item.defenses[5].toFixed(1) + " Fire, ";
-    let lightning = item.defenses[6].toFixed(1) + " Lightning, ";
-    let holy = item.defenses[7].toFixed(1) + " Holy, ";
-    let resistances = item.resistances.reduce(
+    let magic = item.defenses.magic.toFixed(1) + " Magic, ";
+    let fire = item.defenses.fire.toFixed(1) + " Fire, ";
+    let lightning = item.defenses.lightning.toFixed(1) + " Lightning, ";
+    let holy = item.defenses.holy.toFixed(1) + " Holy, ";
+    let resistances = Object.values(item.resistances).reduce(
         (total, res, i) =>
             total +
             res +
@@ -299,7 +351,7 @@ function itemStatsToString(item) {
             [
                 "Scarlet Rot",
                 "Poison",
-                "Blood Loss",
+                "Hemorrhage",
                 "Frostbite",
                 "Sleep",
                 "Madness",
@@ -316,7 +368,7 @@ function itemStatsToString(item) {
             physical +
             strike +
             slash +
-            thrust +
+            pierce +
             "<br>" +
             elemental +
             magic +
@@ -331,20 +383,85 @@ function setStatsToString(set) {
     let imaginary = {
         weight: set[0].weight + set[1].weight + set[2].weight + set[3].weight,
         poise: set[0].poise + set[1].poise + set[2].poise + set[3].poise,
-        defenses: set[0].defenses.map(
-            (stat, i) =>
-                stat +
-                set[1].defenses[i] +
-                set[2].defenses[i] +
-                set[3].defenses[i]
-        ),
-        resistances: set[0].resistances.map(
-            (stat, i) =>
-                stat +
-                set[1].resistances[i] +
-                set[2].resistances[i] +
-                set[3].resistances[i]
-        ),
+        defenses: {
+            physical:
+                set[0].defenses.physical +
+                set[1].defenses.physical +
+                set[2].defenses.physical +
+                set[3].defenses.physical,
+            strike:
+                set[0].defenses.strike +
+                set[1].defenses.strike +
+                set[2].defenses.strike +
+                set[3].defenses.strike,
+            slash:
+                set[0].defenses.slash +
+                set[1].defenses.slash +
+                set[2].defenses.slash +
+                set[3].defenses.slash,
+            pierce:
+                set[0].defenses.pierce +
+                set[1].defenses.pierce +
+                set[2].defenses.pierce +
+                set[3].defenses.pierce,
+            magic:
+                set[0].defenses.magic +
+                set[1].defenses.magic +
+                set[2].defenses.magic +
+                set[3].defenses.magic,
+            fire:
+                set[0].defenses.fire +
+                set[1].defenses.fire +
+                set[2].defenses.fire +
+                set[3].defenses.fire,
+            lightning:
+                set[0].defenses.lightning +
+                set[1].defenses.lightning +
+                set[2].defenses.lightning +
+                set[3].defenses.lightning,
+            holy:
+                set[0].defenses.holy +
+                set[1].defenses.holy +
+                set[2].defenses.holy +
+                set[3].defenses.holy,
+        },
+        resistances: {
+            scarletRot:
+                set[0].resistances.scarletRot +
+                set[1].resistances.scarletRot +
+                set[2].resistances.scarletRot +
+                set[3].resistances.scarletRot,
+            poison:
+                set[0].resistances.poison +
+                set[1].resistances.poison +
+                set[2].resistances.poison +
+                set[3].resistances.poison,
+            hemorrhage:
+                set[0].resistances.hemorrhage +
+                set[1].resistances.hemorrhage +
+                set[2].resistances.hemorrhage +
+                set[3].resistances.hemorrhage,
+            frostbite:
+                set[0].resistances.frostbite +
+                set[1].resistances.frostbite +
+                set[2].resistances.frostbite +
+                set[3].resistances.frostbite,
+            sleep:
+                set[0].resistances.sleep +
+                set[1].resistances.sleep +
+                set[2].resistances.sleep +
+                set[3].resistances.sleep,
+            madness:
+                set[0].resistances.madness +
+                set[1].resistances.madness +
+                set[2].resistances.madness +
+                set[3].resistances.madness,
+            deathBlight:
+                set[0].resistances.deathBlight +
+                set[1].resistances.deathBlight +
+                set[2].resistances.deathBlight +
+                set[3].resistances.deathBlight,
+        },
     };
 
     return itemStatsToString(imaginary);
