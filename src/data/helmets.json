@@ -2,1693 +2,5555 @@
     "no-helmet": {
         "id": "no-helmet",
         "name": "No helmet",
-        "defenses": [0, 0, 0, 0, 0, 0, 0, 0],
-        "resistances": [0, 0, 0, 0, 0, 0, 0, 0],
+        "defenses": {
+            "physical": 0,
+            "strike": 0,
+            "slash": 0,
+            "pierce": 0,
+            "magic": 0,
+            "fire": 0,
+            "lightning": 0,
+            "holy": 0
+        },
+        "resistances": {
+            "poison": 0,
+            "scarletRot": 0,
+            "hemorrhage": 0,
+            "frostbite": 0,
+            "sleep": 0,
+            "madness": 0,
+            "deathBlight": 0
+        },
         "poise": 0,
         "weight": 0
     },
     "alberichs-pointed-hat": {
         "id": "alberichs-pointed-hat",
         "name": "Alberich's Pointed Hat",
-        "stats": [0, 0, 0, 0, 0, 0, 0, 4],
-        "defenses": [1.8, 1.4, 1.8, 1.8, 4.6, 4.2, 4.4, 4.6],
-        "resistances": [16, 16, 10, 10, 29, 29, 31],
+        "defenses": {
+            "physical": 1.8,
+            "slash": 1.8,
+            "strike": 1.4,
+            "pierce": 1.8,
+            "magic": 4.6,
+            "fire": 4.2,
+            "lightning": 4.4,
+            "holy": 4.6
+        },
+        "resistances": {
+            "scarletRot": 16,
+            "poison": 16,
+            "hemorrhage": 10,
+            "frostbite": 10,
+            "sleep": 29,
+            "madness": 29,
+            "deathBlight": 31
+        },
         "poise": 2,
         "weight": 1.7
     },
     "alberichs-pointed-hat-altered": {
         "id": "alberichs-pointed-hat-altered",
         "name": "Alberich's Pointed Hat (Altered)",
-        "defenses": [0.9, 0.2, 0.9, 0.9, 4.4, 3.8, 4.0, 4.4],
-        "resistances": [12, 12, 7, 7, 23, 23, 24],
+        "defenses": {
+            "physical": 0.9,
+            "slash": 0.9,
+            "strike": 0.2,
+            "pierce": 0.9,
+            "magic": 4.4,
+            "fire": 3.8,
+            "lightning": 4.0,
+            "holy": 4.4
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 7,
+            "frostbite": 7,
+            "sleep": 23,
+            "madness": 23,
+            "deathBlight": 24
+        },
         "poise": 1,
         "weight": 1.0
     },
     "albinauric-mask": {
         "id": "albinauric-mask",
         "name": "Albinauric Mask",
-        "defenses": [4.0, 3.1, 4.0, 3.8, 2.5, 3.1, 2.1, 2.5],
-        "resistances": [12, 12, 23, 23, 10, 10, 10],
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 1
+        },
+        "defenses": {
+            "physical": 4.0,
+            "slash": 4.0,
+            "strike": 3.1,
+            "pierce": 3.8,
+            "magic": 2.5,
+            "fire": 3.1,
+            "lightning": 2.1,
+            "holy": 2.5
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 23,
+            "frostbite": 23,
+            "sleep": 10,
+            "madness": 10,
+            "deathBlight": 10
+        },
         "poise": 5,
         "weight": 3.8
     },
     "all-knowing-helm": {
         "id": "all-knowing-helm",
         "name": "All-Knowing Helm",
-        "defenses": [4.6, 4.2, 4.8, 4.2, 4.4, 3.4, 3.6, 3.1],
-        "resistances": [12, 12, 20, 20, 9, 9, 9],
+        "defenses": {
+            "physical": 4.6,
+            "slash": 4.8,
+            "strike": 4.2,
+            "pierce": 4.2,
+            "magic": 4.4,
+            "fire": 3.4,
+            "lightning": 3.6,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 20,
+            "frostbite": 20,
+            "sleep": 9,
+            "madness": 9,
+            "deathBlight": 9
+        },
         "poise": 7,
         "weight": 4.6
     },
     "aristocrat-hat": {
         "id": "aristocrat-hat",
         "name": "Aristocrat Hat",
-        "defenses": [3.1, 3.1, 2.8, 3.1, 3.8, 4.0, 3.8, 3.1],
-        "resistances": [22, 22, 14, 14, 18, 18, 20],
+        "defenses": {
+            "physical": 3.1,
+            "slash": 2.8,
+            "strike": 3.1,
+            "pierce": 3.1,
+            "magic": 3.8,
+            "fire": 4.0,
+            "lightning": 3.8,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 22,
+            "poison": 22,
+            "hemorrhage": 14,
+            "frostbite": 14,
+            "sleep": 18,
+            "madness": 18,
+            "deathBlight": 20
+        },
         "poise": 4,
         "weight": 3.0
     },
     "aristocrat-headband": {
         "id": "aristocrat-headband",
         "name": "Aristocrat Headband",
-        "defenses": [1.9, 1.9, 1.9, 1.6, 4.0, 3.6, 3.8, 4.0],
-        "resistances": [15, 15, 10, 10, 25, 25, 22],
+        "defenses": {
+            "physical": 1.9,
+            "slash": 1.9,
+            "strike": 1.9,
+            "pierce": 1.6,
+            "magic": 4.0,
+            "fire": 3.6,
+            "lightning": 3.8,
+            "holy": 4.0
+        },
+        "resistances": {
+            "scarletRot": 15,
+            "poison": 15,
+            "hemorrhage": 10,
+            "frostbite": 10,
+            "sleep": 25,
+            "madness": 25,
+            "deathBlight": 22
+        },
         "poise": 2,
         "weight": 1.2
     },
     "ash-of-war-scarab": {
         "id": "ash-of-war-scarab",
         "name": "Ash-of-War Scarab",
-        "defenses": [-5.8, -5.6, -5.8, -5.8, -4.9, -4.9, -4.9, -5.1],
-        "resistances": [42, 42, 22, 22, 27, 27, 26],
+        "defenses": {
+            "physical": -5.82,
+            "strike": -5.6,
+            "slash": -5.82,
+            "pierce": -5.82,
+            "magic": -4.94,
+            "fire": -4.94,
+            "lightning": -4.94,
+            "holy": -5.05
+        },
+        "resistances": {
+            "poison": 42,
+            "scarletRot": 42,
+            "hemorrhage": 22,
+            "frostbite": 22,
+            "sleep": 27,
+            "madness": 27,
+            "deathBlight": 26
+        },
         "poise": 6,
         "weight": 5.1
     },
     "astrologer-hood": {
         "id": "astrologer-hood",
         "name": "Astrologer Hood",
-        "defenses": [1.8, 1.4, 1.4, 1.4, 4.6, 4.5, 4.6, 4.5],
-        "resistances": [18, 18, 9, 9, 31, 31, 27],
+        "defenses": {
+            "physical": 1.8,
+            "slash": 1.4,
+            "strike": 1.4,
+            "pierce": 1.4,
+            "magic": 4.6,
+            "fire": 4.5,
+            "lightning": 4.6,
+            "holy": 4.5
+        },
+        "resistances": {
+            "scarletRot": 18,
+            "poison": 18,
+            "hemorrhage": 9,
+            "frostbite": 9,
+            "sleep": 31,
+            "madness": 31,
+            "deathBlight": 27
+        },
         "poise": 3,
         "weight": 1.7
     },
     "azurs-glintstone-crown": {
         "id": "azurs-glintstone-crown",
         "name": "Azur's Glintstone Crown",
-        "defenses": [2.8, 2.3, 2.5, 2.5, 5.8, 4.6, 4.7, 5.0],
-        "resistances": [23, 23, 14, 14, 44, 44, 39],
+        "defenses": {
+            "physical": 2.8,
+            "slash": 2.5,
+            "strike": 2.3,
+            "pierce": 2.5,
+            "magic": 5.8,
+            "fire": 4.6,
+            "lightning": 4.7,
+            "holy": 5.0
+        },
+        "resistances": {
+            "scarletRot": 23,
+            "poison": 23,
+            "hemorrhage": 14,
+            "frostbite": 14,
+            "sleep": 44,
+            "madness": 44,
+            "deathBlight": 39
+        },
         "poise": 4,
         "weight": 3.6
     },
     "bandit-mask": {
         "id": "bandit-mask",
         "name": "Bandit Mask",
-        "defenses": [2.8, 3.1, 3.1, 3.1, 3.1, 3.4, 3.6, 3.1],
-        "resistances": [30, 30, 14, 14, 14, 14, 16],
+        "defenses": {
+            "physical": 2.8,
+            "slash": 3.1,
+            "strike": 3.1,
+            "pierce": 3.1,
+            "magic": 3.1,
+            "fire": 3.4,
+            "lightning": 3.6,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 30,
+            "poison": 30,
+            "hemorrhage": 14,
+            "frostbite": 14,
+            "sleep": 14,
+            "madness": 14,
+            "deathBlight": 16
+        },
         "poise": 4,
         "weight": 3.0
     },
     "banished-knight-helm": {
         "id": "banished-knight-helm",
         "name": "Banished Knight Helm",
-        "defenses": [6.8, 5.4, 7.0, 6.3, 4.8, 4.8, 4.6, 4.7],
-        "resistances": [26, 26, 35, 35, 16, 16, 18],
+        "defenses": {
+            "physical": 6.8,
+            "slash": 7.0,
+            "strike": 5.4,
+            "pierce": 6.3,
+            "magic": 4.8,
+            "fire": 4.8,
+            "lightning": 4.6,
+            "holy": 4.7
+        },
+        "resistances": {
+            "scarletRot": 26,
+            "poison": 26,
+            "hemorrhage": 35,
+            "frostbite": 35,
+            "sleep": 16,
+            "madness": 16,
+            "deathBlight": 18
+        },
         "poise": 11,
         "weight": 7.5
     },
     "banished-knight-helm-altered": {
         "id": "banished-knight-helm-altered",
         "name": "Banished Knight Helm (Altered)",
-        "defenses": [6.7, 5.2, 6.8, 6.1, 4.7, 4.7, 4.6, 4.6],
-        "resistances": [21, 21, 30, 30, 13, 13, 14],
+        "defenses": {
+            "physical": 6.7,
+            "slash": 6.8,
+            "strike": 5.2,
+            "pierce": 6.1,
+            "magic": 4.7,
+            "fire": 4.7,
+            "lightning": 4.6,
+            "holy": 4.6
+        },
+        "resistances": {
+            "scarletRot": 21,
+            "poison": 21,
+            "hemorrhage": 30,
+            "frostbite": 30,
+            "sleep": 13,
+            "madness": 13,
+            "deathBlight": 14
+        },
         "poise": 11,
         "weight": 7.1
     },
     "beast-champion-helm": {
         "id": "beast-champion-helm",
         "name": "Beast Champion Helm",
-        "defenses": [6.3, 5.9, 6.8, 6.7, 4.6, 4.9, 4.6, 4.8],
-        "resistances": [24, 24, 39, 39, 18, 18, 16],
+        "defenses": {
+            "physical": 6.3,
+            "slash": 6.8,
+            "strike": 5.9,
+            "pierce": 6.7,
+            "magic": 4.6,
+            "fire": 4.9,
+            "lightning": 4.6,
+            "holy": 4.8
+        },
+        "resistances": {
+            "scarletRot": 24,
+            "poison": 24,
+            "hemorrhage": 39,
+            "frostbite": 39,
+            "sleep": 18,
+            "madness": 18,
+            "deathBlight": 16
+        },
         "poise": 11,
         "weight": 7.5
     },
     "black-dumpling": {
         "id": "black-dumpling",
         "name": "Black Dumpling",
-        "defenses": [2.8, 3.1, 2.8, 2.8, 3.1, 3.4, 3.6, 3.1],
-        "resistances": [24, 24, 15, 15, 0, 0, 20],
+        "defenses": {
+            "physical": 2.8,
+            "slash": 2.8,
+            "strike": 3.1,
+            "pierce": 2.8,
+            "magic": 3.1,
+            "fire": 3.4,
+            "lightning": 3.6,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 24,
+            "poison": 24,
+            "hemorrhage": 15,
+            "frostbite": 15,
+            "sleep": 0,
+            "madness": 0,
+            "deathBlight": 20
+        },
         "poise": 4,
         "weight": 2.7
     },
     "black-hood": {
         "id": "black-hood",
         "name": "Black Hood",
-        "defenses": [2.8, 3.1, 3.1, 3.1, 3.1, 3.4, 3.6, 3.1],
-        "resistances": [33, 33, 16, 16, 16, 16, 18],
+        "defenses": {
+            "physical": 2.8,
+            "slash": 3.1,
+            "strike": 3.1,
+            "pierce": 3.1,
+            "magic": 3.1,
+            "fire": 3.4,
+            "lightning": 3.6,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 33,
+            "poison": 33,
+            "hemorrhage": 16,
+            "frostbite": 16,
+            "sleep": 16,
+            "madness": 16,
+            "deathBlight": 18
+        },
         "poise": 4,
         "weight": 3.0
     },
     "black-knife-hood": {
         "id": "black-knife-hood",
         "name": "Black Knife Hood",
-        "defenses": [3.8, 3.6, 4.2, 4.2, 2.8, 3.1, 2.1, 3.8],
-        "resistances": [11, 11, 18, 18, 9, 9, 9],
+        "defenses": {
+            "physical": 3.8,
+            "slash": 4.2,
+            "strike": 3.6,
+            "pierce": 4.2,
+            "magic": 2.8,
+            "fire": 3.1,
+            "lightning": 2.1,
+            "holy": 3.8
+        },
+        "resistances": {
+            "scarletRot": 11,
+            "poison": 11,
+            "hemorrhage": 18,
+            "frostbite": 18,
+            "sleep": 9,
+            "madness": 9,
+            "deathBlight": 9
+        },
         "poise": 6,
         "weight": 3.8
     },
     "black-knight-helm": {
         "id": "black-knight-helm",
         "name": "Black Knight Helm",
-        "defenses": [5.2, 4.4, 5.2, 5.8, 4.4, 4.6, 3.8, 4.0],
-        "resistances": [16, 16, 26, 26, 10, 10, 9],
+        "defenses": {
+            "physical": 5.2,
+            "slash": 5.2,
+            "strike": 4.4,
+            "pierce": 5.8,
+            "magic": 4.4,
+            "fire": 4.6,
+            "lightning": 3.8,
+            "holy": 4.0
+        },
+        "resistances": {
+            "scarletRot": 16,
+            "poison": 16,
+            "hemorrhage": 26,
+            "frostbite": 26,
+            "sleep": 10,
+            "madness": 10,
+            "deathBlight": 9
+        },
         "poise": 9,
         "weight": 5.9
     },
     "black-wolf-mask": {
         "id": "black-wolf-mask",
         "name": "Black Wolf Mask",
-        "defenses": [5.2, 4.6, 5.2, 5.5, 4.0, 4.5, 3.6, 4.2],
-        "resistances": [16, 16, 33, 33, 11, 11, 11],
+        "defenses": {
+            "physical": 5.2,
+            "slash": 5.2,
+            "strike": 4.6,
+            "pierce": 5.5,
+            "magic": 4.0,
+            "fire": 4.5,
+            "lightning": 3.6,
+            "holy": 4.2
+        },
+        "resistances": {
+            "scarletRot": 16,
+            "poison": 16,
+            "hemorrhage": 33,
+            "frostbite": 33,
+            "sleep": 11,
+            "madness": 11,
+            "deathBlight": 11
+        },
         "poise": 9,
         "weight": 5.9
     },
     "blackflame-monk-hood": {
         "id": "blackflame-monk-hood",
         "name": "Blackflame Monk Hood",
-        "defenses": [4.4, 3.4, 4.6, 4.2, 2.8, 4.4, 2.1, 2.8],
-        "resistances": [11, 11, 20, 20, 5, 5, 11],
+        "defenses": {
+            "physical": 4.4,
+            "slash": 4.6,
+            "strike": 3.4,
+            "pierce": 4.2,
+            "magic": 2.8,
+            "fire": 4.4,
+            "lightning": 2.1,
+            "holy": 2.8
+        },
+        "resistances": {
+            "scarletRot": 11,
+            "poison": 11,
+            "hemorrhage": 20,
+            "frostbite": 20,
+            "sleep": 5,
+            "madness": 5,
+            "deathBlight": 11
+        },
         "poise": 7,
         "weight": 4.0
     },
     "blackguards-iron-mask": {
         "id": "blackguards-iron-mask",
         "name": "Blackguard's Iron Mask",
-        "defenses": [5.8, 4.4, 6.1, 5.5, 4.2, 4.4, 4.0, 4.5],
-        "resistances": [22, 22, 31, 31, 12, 12, 12],
+        "defenses": {
+            "physical": 5.8,
+            "slash": 6.1,
+            "strike": 4.4,
+            "pierce": 5.5,
+            "magic": 4.2,
+            "fire": 4.4,
+            "lightning": 4.0,
+            "holy": 4.5
+        },
+        "resistances": {
+            "scarletRot": 22,
+            "poison": 22,
+            "hemorrhage": 31,
+            "frostbite": 31,
+            "sleep": 12,
+            "madness": 12,
+            "deathBlight": 12
+        },
         "poise": 9,
         "weight": 6.2
     },
     "bloodhound-knight-helm": {
         "id": "bloodhound-knight-helm",
         "name": "Bloodhound Knight Helm",
-        "defenses": [4.4, 4.0, 5.0, 4.8, 3.4, 3.6, 2.5, 3.6],
-        "resistances": [14, 14, 22, 22, 10, 10, 10],
+        "defenses": {
+            "physical": 4.4,
+            "slash": 5.0,
+            "strike": 4.0,
+            "pierce": 4.8,
+            "magic": 3.4,
+            "fire": 3.6,
+            "lightning": 2.5,
+            "holy": 3.6
+        },
+        "resistances": {
+            "scarletRot": 14,
+            "poison": 14,
+            "hemorrhage": 22,
+            "frostbite": 22,
+            "sleep": 10,
+            "madness": 10,
+            "deathBlight": 10
+        },
         "poise": 6,
         "weight": 4.6
     },
     "bloodsoaked-mask": {
         "id": "bloodsoaked-mask",
         "name": "Bloodsoaked Mask",
-        "defenses": [1.8, 1.8, 1.8, 2.1, 4.6, 4.4, 4.5, 4.6],
-        "resistances": [18, 18, 10, 10, 30, 30, 31],
+        "defenses": {
+            "physical": 1.8,
+            "slash": 1.8,
+            "strike": 1.8,
+            "pierce": 2.1,
+            "magic": 4.6,
+            "fire": 4.4,
+            "lightning": 4.5,
+            "holy": 4.6
+        },
+        "resistances": {
+            "scarletRot": 18,
+            "poison": 18,
+            "hemorrhage": 10,
+            "frostbite": 10,
+            "sleep": 30,
+            "madness": 30,
+            "deathBlight": 31
+        },
         "poise": 3,
         "weight": 2.2
     },
     "blue-cloth-cowl": {
         "id": "blue-cloth-cowl",
         "name": "Blue Cloth Cowl",
-        "defenses": [2.8, 2.8, 2.3, 2.3, 3.1, 3.4, 3.8, 2.8],
-        "resistances": [24, 24, 15, 15, 18, 18, 18],
+        "defenses": {
+            "physical": 2.8,
+            "slash": 2.3,
+            "strike": 2.8,
+            "pierce": 2.3,
+            "magic": 3.1,
+            "fire": 3.4,
+            "lightning": 3.8,
+            "holy": 2.8
+        },
+        "resistances": {
+            "scarletRot": 24,
+            "poison": 24,
+            "hemorrhage": 15,
+            "frostbite": 15,
+            "sleep": 18,
+            "madness": 18,
+            "deathBlight": 18
+        },
         "poise": 4,
         "weight": 2.7
     },
     "blue-festive-hood": {
         "id": "blue-festive-hood",
         "name": "Blue Festive Hood",
-        "defenses": [1.4, 1.4, 2.1, 1.8, 4.5, 4.0, 4.5, 4.9],
-        "resistances": [20, 20, 9, 9, 31, 31, 27],
+        "defenses": {
+            "physical": 1.4,
+            "slash": 2.1,
+            "strike": 1.4,
+            "pierce": 1.8,
+            "magic": 4.5,
+            "fire": 4.0,
+            "lightning": 4.5,
+            "holy": 4.9
+        },
+        "resistances": {
+            "scarletRot": 20,
+            "poison": 20,
+            "hemorrhage": 9,
+            "frostbite": 9,
+            "sleep": 31,
+            "madness": 31,
+            "deathBlight": 27
+        },
         "poise": 2,
         "weight": 1.7
     },
     "blue-silver-mail-hood": {
         "id": "blue-silver-mail-hood",
         "name": "Blue Silver Mail Hood",
-        "defenses": [4.2, 3.1, 4.4, 3.8, 3.6, 3.4, 2.5, 2.5],
-        "resistances": [10, 10, 24, 24, 5, 5, 5],
+        "defenses": {
+            "physical": 4.2,
+            "slash": 4.4,
+            "strike": 3.1,
+            "pierce": 3.8,
+            "magic": 3.6,
+            "fire": 3.4,
+            "lightning": 2.5,
+            "holy": 2.5
+        },
+        "resistances": {
+            "scarletRot": 10,
+            "poison": 10,
+            "hemorrhage": 24,
+            "frostbite": 24,
+            "sleep": 5,
+            "madness": 5,
+            "deathBlight": 5
+        },
         "poise": 6,
         "weight": 3.8
     },
     "briar-helm": {
         "id": "briar-helm",
         "name": "Briar Helm",
-        "defenses": [4.6, 4.0, 4.8, 4.4, 3.8, 4.4, 3.1, 3.8],
-        "resistances": [15, 15, 31, 31, 10, 10, 10],
+        "defenses": {
+            "physical": 4.6,
+            "slash": 4.8,
+            "strike": 4.0,
+            "pierce": 4.4,
+            "magic": 3.8,
+            "fire": 4.4,
+            "lightning": 3.1,
+            "holy": 3.8
+        },
+        "resistances": {
+            "scarletRot": 15,
+            "poison": 15,
+            "hemorrhage": 31,
+            "frostbite": 31,
+            "sleep": 10,
+            "madness": 10,
+            "deathBlight": 10
+        },
         "poise": 9,
         "weight": 5.1
     },
     "bull-goat-helm": {
         "id": "bull-goat-helm",
         "name": "Bull-Goat Helm",
-        "defenses": [7.5, 7.4, 6.7, 6.7, 4.7, 4.8, 5.3, 4.6],
-        "resistances": [31, 31, 35, 35, 20, 20, 23],
+        "defenses": {
+            "physical": 7.5,
+            "slash": 6.7,
+            "strike": 7.4,
+            "pierce": 6.7,
+            "magic": 4.7,
+            "fire": 4.8,
+            "lightning": 5.3,
+            "holy": 4.6
+        },
+        "resistances": {
+            "scarletRot": 31,
+            "poison": 31,
+            "hemorrhage": 35,
+            "frostbite": 35,
+            "sleep": 20,
+            "madness": 20,
+            "deathBlight": 23
+        },
         "poise": 15,
         "weight": 11.3
     },
     "carian-knight-helm": {
         "id": "carian-knight-helm",
         "name": "Carian Knight Helm",
-        "defenses": [4.2, 3.8, 4.4, 4.2, 4.4, 4.2, 3.4, 4.2],
-        "resistances": [12, 12, 20, 20, 9, 9, 10],
+        "defenses": {
+            "physical": 4.2,
+            "slash": 4.4,
+            "strike": 3.8,
+            "pierce": 4.2,
+            "magic": 4.4,
+            "fire": 4.2,
+            "lightning": 3.4,
+            "holy": 4.2
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 20,
+            "frostbite": 20,
+            "sleep": 9,
+            "madness": 9,
+            "deathBlight": 10
+        },
         "poise": 6,
         "weight": 4.6
     },
     "caterpillar-mask": {
         "id": "caterpillar-mask",
         "name": "Caterpillar Mask",
-        "defenses": [1.8, 1.4, 1.4, 0.9, 4.5, 3.8, 4.2, 4.6],
-        "resistances": [16, 16, 9, 9, 45, 45, 25],
+        "defenses": {
+            "physical": 1.8,
+            "slash": 1.4,
+            "strike": 1.4,
+            "pierce": 0.9,
+            "magic": 4.5,
+            "fire": 3.8,
+            "lightning": 4.2,
+            "holy": 4.6
+        },
+        "resistances": {
+            "scarletRot": 16,
+            "poison": 16,
+            "hemorrhage": 9,
+            "frostbite": 9,
+            "sleep": 45,
+            "madness": 45,
+            "deathBlight": 25
+        },
         "poise": 2,
         "weight": 1.4
     },
     "cerulean-tear-scarab": {
         "id": "cerulean-tear-scarab",
         "name": "Cerulean Tear Scarab",
-        "defenses": [3.8, 4.0, 3.8, 3.8, 4.6, 4.6, 4.6, 4.5],
-        "resistances": [42, 42, 22, 22, 27, 27, 26],
+        "defenses": {
+            "physical": 3.8,
+            "slash": 3.8,
+            "strike": 4.0,
+            "pierce": 3.8,
+            "magic": 4.6,
+            "fire": 4.6,
+            "lightning": 4.6,
+            "holy": 4.5
+        },
+        "resistances": {
+            "scarletRot": 42,
+            "poison": 42,
+            "hemorrhage": 22,
+            "frostbite": 22,
+            "sleep": 27,
+            "madness": 27,
+            "deathBlight": 26
+        },
         "poise": 6,
         "weight": 5.1
     },
     "chain-coif": {
         "id": "chain-coif",
         "name": "Chain Coif",
-        "defenses": [4.2, 3.1, 4.6, 4.2, 2.5, 3.8, 2.1, 2.8],
-        "resistances": [11, 11, 18, 18, 5, 5, 8],
+        "defenses": {
+            "physical": 4.2,
+            "slash": 4.6,
+            "strike": 3.1,
+            "pierce": 4.2,
+            "magic": 2.5,
+            "fire": 3.8,
+            "lightning": 2.1,
+            "holy": 2.8
+        },
+        "resistances": {
+            "scarletRot": 11,
+            "poison": 11,
+            "hemorrhage": 18,
+            "frostbite": 18,
+            "sleep": 5,
+            "madness": 5,
+            "deathBlight": 8
+        },
         "poise": 6,
         "weight": 3.8
     },
     "champion-headband": {
         "id": "champion-headband",
         "name": "Champion Headband",
-        "defenses": [2.3, 3.1, 2.5, 2.8, 2.8, 3.4, 3.6, 3.4],
-        "resistances": [22, 22, 14, 14, 18, 18, 16],
+        "defenses": {
+            "physical": 2.3,
+            "slash": 2.5,
+            "strike": 3.1,
+            "pierce": 2.8,
+            "magic": 2.8,
+            "fire": 3.4,
+            "lightning": 3.6,
+            "holy": 3.4
+        },
+        "resistances": {
+            "scarletRot": 22,
+            "poison": 22,
+            "hemorrhage": 14,
+            "frostbite": 14,
+            "sleep": 18,
+            "madness": 18,
+            "deathBlight": 16
+        },
         "poise": 5,
         "weight": 2.7
     },
     "circlet-of-light": {
         "id": "circlet-of-light",
         "name": "Circlet of Light",
-        "defenses": [2.8, 3.1, 2.5, 2.8, 2.8, 3.1, 3.4, 3.4],
-        "resistances": [23, 23, 14, 14, 15, 15, 20],
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 1,
+            "faith": 0,
+            "arcane": 1
+        },
+        "defenses": {
+            "physical": 2.8,
+            "slash": 2.5,
+            "strike": 3.1,
+            "pierce": 2.8,
+            "magic": 2.8,
+            "fire": 3.1,
+            "lightning": 3.4,
+            "holy": 3.4
+        },
+        "resistances": {
+            "scarletRot": 23,
+            "poison": 23,
+            "hemorrhage": 14,
+            "frostbite": 14,
+            "sleep": 15,
+            "madness": 15,
+            "deathBlight": 20
+        },
         "poise": 5,
         "weight": 1.0
     },
     "cleanrot-helm": {
         "id": "cleanrot-helm",
         "name": "Cleanrot Helm",
-        "defenses": [5.2, 4.8, 5.8, 6.3, 4.5, 4.6, 4.0, 4.8],
-        "resistances": [27, 27, 29, 29, 12, 12, 14],
+        "defenses": {
+            "physical": 5.2,
+            "slash": 5.8,
+            "strike": 4.8,
+            "pierce": 6.3,
+            "magic": 4.5,
+            "fire": 4.6,
+            "lightning": 4.0,
+            "holy": 4.8
+        },
+        "resistances": {
+            "scarletRot": 27,
+            "poison": 27,
+            "hemorrhage": 29,
+            "frostbite": 29,
+            "sleep": 12,
+            "madness": 12,
+            "deathBlight": 14
+        },
         "poise": 9,
         "weight": 6.4
     },
     "cleanrot-helm-altered": {
         "id": "cleanrot-helm-altered",
         "name": "Cleanrot Helm (Altered)",
-        "defenses": [4.6, 4.2, 5.0, 5.5, 4.0, 4.2, 3.4, 4.6],
-        "resistances": [21, 21, 21, 21, 9, 9, 10],
+        "defenses": {
+            "physical": 4.6,
+            "slash": 5.0,
+            "strike": 4.2,
+            "pierce": 5.5,
+            "magic": 4.0,
+            "fire": 4.2,
+            "lightning": 3.4,
+            "holy": 4.6
+        },
+        "resistances": {
+            "scarletRot": 21,
+            "poison": 21,
+            "hemorrhage": 21,
+            "frostbite": 21,
+            "sleep": 9,
+            "madness": 9,
+            "deathBlight": 10
+        },
         "poise": 7,
         "weight": 5.5
     },
     "common-soldier-helm": {
         "id": "common-soldier-helm",
         "name": "Common Soldier Helm",
-        "defenses": [4.4, 3.4, 4.2, 4.2, 2.5, 3.1, 2.1, 2.8],
-        "resistances": [11, 11, 20, 20, 8, 8, 8],
+        "defenses": {
+            "physical": 4.4,
+            "slash": 4.2,
+            "strike": 3.4,
+            "pierce": 4.2,
+            "magic": 2.5,
+            "fire": 3.1,
+            "lightning": 2.1,
+            "holy": 2.8
+        },
+        "resistances": {
+            "scarletRot": 11,
+            "poison": 11,
+            "hemorrhage": 20,
+            "frostbite": 20,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 8
+        },
         "poise": 6,
         "weight": 3.8
     },
     "commoners-headband": {
         "id": "commoners-headband",
         "name": "Commoner's Headband",
-        "defenses": [0.9, 1.8, 1.8, 1.4, 4.4, 4.0, 4.2, 4.4],
-        "resistances": [15, 15, 10, 10, 27, 27, 29],
+        "defenses": {
+            "physical": 0.9,
+            "slash": 1.8,
+            "strike": 1.8,
+            "pierce": 1.4,
+            "magic": 4.4,
+            "fire": 4.0,
+            "lightning": 4.2,
+            "holy": 4.4
+        },
+        "resistances": {
+            "scarletRot": 15,
+            "poison": 15,
+            "hemorrhage": 10,
+            "frostbite": 10,
+            "sleep": 27,
+            "madness": 27,
+            "deathBlight": 29
+        },
         "poise": 2,
         "weight": 1.4
     },
     "commoners-headband-altered": {
         "id": "commoners-headband-altered",
         "name": "Commoner's Headband (Altered)",
-        "defenses": [0.1, 1.1, 1.1, 0.6, 3.9, 3.5, 3.7, 3.9],
-        "resistances": [12, 12, 8, 8, 23, 23, 24],
+        "defenses": {
+            "physical": 0.1,
+            "slash": 1.1,
+            "strike": 1.1,
+            "pierce": 0.6,
+            "magic": 3.9,
+            "fire": 3.5,
+            "lightning": 3.7,
+            "holy": 3.9
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 8,
+            "frostbite": 8,
+            "sleep": 23,
+            "madness": 23,
+            "deathBlight": 24
+        },
         "poise": 1,
         "weight": 0.7
     },
     "confessor-hood": {
         "id": "confessor-hood",
         "name": "Confessor Hood",
-        "defenses": [2.8, 3.6, 2.8, 3.1, 3.8, 3.8, 4.2, 3.4],
-        "resistances": [26, 26, 20, 20, 20, 20, 22],
+        "defenses": {
+            "physical": 2.8,
+            "slash": 2.8,
+            "strike": 3.6,
+            "pierce": 3.1,
+            "magic": 3.8,
+            "fire": 3.8,
+            "lightning": 4.2,
+            "holy": 3.4
+        },
+        "resistances": {
+            "scarletRot": 26,
+            "poison": 26,
+            "hemorrhage": 20,
+            "frostbite": 20,
+            "sleep": 20,
+            "madness": 20,
+            "deathBlight": 22
+        },
         "poise": 5,
         "weight": 3.3
     },
     "confessor-hood-altered": {
         "id": "confessor-hood-altered",
         "name": "Confessor Hood (Altered)",
-        "defenses": [2.3, 3.1, 2.3, 2.5, 3.4, 3.4, 3.8, 2.8],
-        "resistances": [21, 21, 14, 14, 14, 14, 16],
+        "defenses": {
+            "physical": 2.3,
+            "slash": 2.3,
+            "strike": 3.1,
+            "pierce": 2.5,
+            "magic": 3.4,
+            "fire": 3.4,
+            "lightning": 3.8,
+            "holy": 2.8
+        },
+        "resistances": {
+            "scarletRot": 21,
+            "poison": 21,
+            "hemorrhage": 14,
+            "frostbite": 14,
+            "sleep": 14,
+            "madness": 14,
+            "deathBlight": 16
+        },
         "poise": 3,
         "weight": 2.7
     },
     "consorts-mask": {
         "id": "consorts-mask",
         "name": "Consort's Mask",
-        "defenses": [2.8, 2.8, 2.5, 2.5, 5.0, 4.8, 4.8, 5.0],
-        "resistances": [24, 24, 14, 14, 39, 39, 35],
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 1,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "defenses": {
+            "physical": 2.8,
+            "slash": 2.5,
+            "strike": 2.8,
+            "pierce": 2.5,
+            "magic": 5.0,
+            "fire": 4.8,
+            "lightning": 4.8,
+            "holy": 5.0
+        },
+        "resistances": {
+            "scarletRot": 24,
+            "poison": 24,
+            "hemorrhage": 14,
+            "frostbite": 14,
+            "sleep": 39,
+            "madness": 39,
+            "deathBlight": 35
+        },
         "poise": 5,
         "weight": 3.6
     },
     "crimson-hood": {
         "id": "crimson-hood",
         "name": "Crimson Hood",
-        "stats": [1, 0, 0, 0, 0, 0, 0, 0],
-        "defenses": [1.4, 1.8, 1.4, 1.8, 4.6, 4.6, 4.5, 4.6],
-        "resistances": [16, 16, 9, 9, 27, 27, 29],
+        "stats": {
+            "vigor": 1,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "defenses": {
+            "physical": 1.4,
+            "slash": 1.4,
+            "strike": 1.8,
+            "pierce": 1.8,
+            "magic": 4.6,
+            "fire": 4.6,
+            "lightning": 4.5,
+            "holy": 4.6
+        },
+        "resistances": {
+            "scarletRot": 16,
+            "poison": 16,
+            "hemorrhage": 9,
+            "frostbite": 9,
+            "sleep": 27,
+            "madness": 27,
+            "deathBlight": 29
+        },
         "poise": 3,
         "weight": 1.7
     },
     "crimson-tear-scarab": {
         "id": "crimson-tear-scarab",
         "name": "Crimson Tear Scarab",
-        "defenses": [3.8, 4.0, 3.8, 3.8, 4.6, 4.6, 4.6, 4.5],
-        "resistances": [42, 42, 22, 22, 27, 27, 26],
+        "defenses": {
+            "physical": 3.8,
+            "slash": 3.8,
+            "strike": 4.0,
+            "pierce": 3.8,
+            "magic": 4.6,
+            "fire": 4.6,
+            "lightning": 4.6,
+            "holy": 4.5
+        },
+        "resistances": {
+            "scarletRot": 42,
+            "poison": 42,
+            "hemorrhage": 22,
+            "frostbite": 22,
+            "sleep": 27,
+            "madness": 27,
+            "deathBlight": 26
+        },
         "poise": 6,
         "weight": 5.1
     },
     "crucible-axe-helm": {
         "id": "crucible-axe-helm",
         "name": "Crucible Axe Helm",
-        "defenses": [6.3, 5.0, 6.1, 6.1, 4.6, 4.6, 4.0, 4.8],
-        "resistances": [22, 22, 31, 31, 15, 15, 15],
+        "defenses": {
+            "physical": 6.3,
+            "slash": 6.1,
+            "strike": 5.0,
+            "pierce": 6.1,
+            "magic": 4.6,
+            "fire": 4.6,
+            "lightning": 4.0,
+            "holy": 4.8
+        },
+        "resistances": {
+            "scarletRot": 22,
+            "poison": 22,
+            "hemorrhage": 31,
+            "frostbite": 31,
+            "sleep": 15,
+            "madness": 15,
+            "deathBlight": 15
+        },
         "poise": 11,
         "weight": 6.6
     },
     "crucible-hammer-helm": {
         "id": "crucible-hammer-helm",
         "name": "Crucible Hammer-Helm",
-        "defenses": [6.8, 6.1, 6.8, 6.7, 4.7, 4.9, 4.5, 4.6],
-        "resistances": [26, 26, 33, 33, 18, 18, 18],
+        "defenses": {
+            "physical": 6.8,
+            "slash": 6.8,
+            "strike": 6.1,
+            "pierce": 6.7,
+            "magic": 4.7,
+            "fire": 4.9,
+            "lightning": 4.5,
+            "holy": 4.6
+        },
+        "resistances": {
+            "scarletRot": 26,
+            "poison": 26,
+            "hemorrhage": 33,
+            "frostbite": 33,
+            "sleep": 18,
+            "madness": 18,
+            "deathBlight": 18
+        },
         "poise": 11,
         "weight": 7.5
     },
     "crucible-tree-helm": {
         "id": "crucible-tree-helm",
         "name": "Crucible Tree Helm",
-        "defenses": [6.5, 5.0, 6.3, 5.6, 4.6, 4.2, 4.0, 5.2],
-        "resistances": [22, 22, 31, 31, 15, 15, 15],
+        "defenses": {
+            "physical": 6.5,
+            "slash": 6.3,
+            "strike": 5.0,
+            "pierce": 5.6,
+            "magic": 4.6,
+            "fire": 4.2,
+            "lightning": 4.0,
+            "holy": 5.2
+        },
+        "resistances": {
+            "scarletRot": 22,
+            "poison": 22,
+            "hemorrhage": 31,
+            "frostbite": 31,
+            "sleep": 15,
+            "madness": 15,
+            "deathBlight": 15
+        },
         "poise": 11,
         "weight": 6.6
     },
     "cuckoo-knight-helm": {
         "id": "cuckoo-knight-helm",
         "name": "Cuckoo Knight Helm",
-        "defenses": [4.8, 4.0, 5.2, 4.8, 4.4, 4.2, 3.1, 3.6],
-        "resistances": [14, 14, 24, 24, 10, 10, 10],
+        "defenses": {
+            "physical": 4.8,
+            "slash": 5.2,
+            "strike": 4.0,
+            "pierce": 4.8,
+            "magic": 4.4,
+            "fire": 4.2,
+            "lightning": 3.1,
+            "holy": 3.6
+        },
+        "resistances": {
+            "scarletRot": 14,
+            "poison": 14,
+            "hemorrhage": 24,
+            "frostbite": 24,
+            "sleep": 10,
+            "madness": 10,
+            "deathBlight": 10
+        },
         "poise": 8,
         "weight": 5.1
     },
     "curseblade-mask": {
         "id": "curseblade-mask",
         "name": "Curseblade Mask",
-        "defenses": [2.5, 0.9, 2.3, 2.1, 4.6, 4.6, 4.6, 4.9],
-        "resistances": [22, 22, 11, 11, 0, 0, 33],
+        "defenses": {
+            "physical": 2.5,
+            "slash": 2.3,
+            "strike": 0.9,
+            "pierce": 2.1,
+            "magic": 4.6,
+            "fire": 4.6,
+            "lightning": 4.6,
+            "holy": 4.9
+        },
+        "resistances": {
+            "scarletRot": 22,
+            "poison": 22,
+            "hemorrhage": 11,
+            "frostbite": 11,
+            "sleep": 0,
+            "madness": 0,
+            "deathBlight": 33
+        },
         "poise": 4,
         "weight": 2.2
     },
     "dancers-hood": {
         "id": "dancers-hood",
         "name": "Dancer's Hood",
-        "defenses": [0.9, 0.2, 1.8, 0.2, 4.4, 4.4, 4.0, 4.2],
-        "resistances": [15, 15, 10, 10, 24, 24, 26],
+        "defenses": {
+            "physical": 0.9,
+            "slash": 1.8,
+            "strike": 0.2,
+            "pierce": 0.2,
+            "magic": 4.4,
+            "fire": 4.4,
+            "lightning": 4.0,
+            "holy": 4.2
+        },
+        "resistances": {
+            "scarletRot": 15,
+            "poison": 15,
+            "hemorrhage": 10,
+            "frostbite": 10,
+            "sleep": 24,
+            "madness": 24,
+            "deathBlight": 26
+        },
         "poise": 1,
         "weight": 1.0
     },
     "danes-hat": {
         "id": "danes-hat",
         "name": "Dane's Hat",
-        "defenses": [1.8, 2.3, 1.4, 1.4, 5.0, 4.2, 4.5, 5.0],
-        "resistances": [16, 16, 11, 11, 33, 33, 31],
+        "defenses": {
+            "physical": 1.8,
+            "slash": 1.4,
+            "strike": 2.3,
+            "pierce": 1.4,
+            "magic": 5.0,
+            "fire": 4.2,
+            "lightning": 4.5,
+            "holy": 5.0
+        },
+        "resistances": {
+            "scarletRot": 16,
+            "poison": 16,
+            "hemorrhage": 11,
+            "frostbite": 11,
+            "sleep": 33,
+            "madness": 33,
+            "deathBlight": 31
+        },
         "poise": 3,
         "weight": 2.2
     },
     "death-knight-helm": {
         "id": "death-knight-helm",
         "name": "Death Knight Helm",
-        "defenses": [4.4, 3.8, 4.4, 4.4, 3.4, 3.4, 4.4, 2.8],
-        "resistances": [12, 12, 20, 20, 8, 8, 20],
+        "defenses": {
+            "physical": 4.4,
+            "slash": 4.4,
+            "strike": 3.8,
+            "pierce": 4.4,
+            "magic": 3.4,
+            "fire": 3.4,
+            "lightning": 4.4,
+            "holy": 2.8
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 20,
+            "frostbite": 20,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 20
+        },
         "poise": 7,
         "weight": 4.6
     },
     "death-mask-helm": {
         "id": "death-mask-helm",
         "name": "Death Mask Helm",
-        "defenses": [4.3, 3.3, 3.9, 3.5, 3.0, 3.9, 2.2, 2.7],
-        "resistances": [10, 10, 16, 16, 7, 7, 9],
+        "defenses": {
+            "physical": 4.3,
+            "slash": 3.9,
+            "strike": 3.3,
+            "pierce": 3.5,
+            "magic": 3.0,
+            "fire": 3.9,
+            "lightning": 2.2,
+            "holy": 2.7
+        },
+        "resistances": {
+            "scarletRot": 10,
+            "poison": 10,
+            "hemorrhage": 16,
+            "frostbite": 16,
+            "sleep": 7,
+            "madness": 7,
+            "deathBlight": 9
+        },
         "poise": 6,
         "weight": 3.4
     },
     "depraved-perfumer-headscarf": {
         "id": "depraved-perfumer-headscarf",
         "name": "Depraved Perfumer Headscarf",
-        "defenses": [2.0, 2.0, 1.7, 1.3, 4.6, 4.5, 4.4, 4.5],
-        "resistances": [28, 28, 10, 10, 25, 25, 34],
+        "defenses": {
+            "physical": 2.0,
+            "slash": 1.7,
+            "strike": 2.0,
+            "pierce": 1.3,
+            "magic": 4.6,
+            "fire": 4.5,
+            "lightning": 4.4,
+            "holy": 4.5
+        },
+        "resistances": {
+            "scarletRot": 28,
+            "poison": 28,
+            "hemorrhage": 10,
+            "frostbite": 10,
+            "sleep": 25,
+            "madness": 25,
+            "deathBlight": 34
+        },
         "poise": 3,
         "weight": 2.1
     },
     "dialloss-mask": {
         "id": "dialloss-mask",
         "name": "Diallos's Mask",
-        "defenses": [4.8, 3.8, 4.6, 4.4, 3.6, 3.6, 2.5, 3.4],
-        "resistances": [15, 15, 23, 23, 10, 10, 10],
+        "defenses": {
+            "physical": 4.8,
+            "slash": 4.6,
+            "strike": 3.8,
+            "pierce": 4.4,
+            "magic": 3.6,
+            "fire": 3.6,
+            "lightning": 2.5,
+            "holy": 3.4
+        },
+        "resistances": {
+            "scarletRot": 15,
+            "poison": 15,
+            "hemorrhage": 23,
+            "frostbite": 23,
+            "sleep": 10,
+            "madness": 10,
+            "deathBlight": 10
+        },
         "poise": 7,
         "weight": 4.6
     },
     "divine-beast-head": {
         "id": "divine-beast-head",
         "name": "Divine Beast Head",
-        "defenses": [7.0, 5.9, 6.7, 6.8, 4.9, 7.2, 4.6, 4.9],
-        "resistances": [29, 29, 26, 26, 0, 0, 24],
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 4,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "defenses": {
+            "physical": 7.0,
+            "slash": 6.7,
+            "strike": 5.9,
+            "pierce": 6.8,
+            "magic": 4.9,
+            "fire": 7.2,
+            "lightning": 4.6,
+            "holy": 4.9
+        },
+        "resistances": {
+            "scarletRot": 29,
+            "poison": 29,
+            "hemorrhage": 26,
+            "frostbite": 26,
+            "sleep": 0,
+            "madness": 0,
+            "deathBlight": 24
+        },
         "poise": 13,
         "weight": 10.6
     },
     "divine-beast-helm": {
         "id": "divine-beast-helm",
         "name": "Divine Beast Helm",
-        "defenses": [4.8, 4.4, 4.8, 4.4, 3.8, 4.0, 3.6, 3.8],
-        "resistances": [14, 14, 23, 23, 0, 0, 11],
+        "defenses": {
+            "physical": 4.8,
+            "slash": 4.8,
+            "strike": 4.4,
+            "pierce": 4.4,
+            "magic": 3.8,
+            "fire": 4.0,
+            "lightning": 3.6,
+            "holy": 3.8
+        },
+        "resistances": {
+            "scarletRot": 14,
+            "poison": 14,
+            "hemorrhage": 23,
+            "frostbite": 23,
+            "sleep": 0,
+            "madness": 0,
+            "deathBlight": 11
+        },
         "poise": 8,
         "weight": 5.1
     },
     "divine-bird-helm": {
         "id": "divine-bird-helm",
         "name": "Divine Bird Helm",
-        "defenses": [4.8, 4.4, 4.4, 4.2, 3.8, 3.6, 2.8, 3.1],
-        "resistances": [14, 14, 22, 22, 0, 0, 9],
+        "defenses": {
+            "physical": 4.8,
+            "slash": 4.4,
+            "strike": 4.4,
+            "pierce": 4.2,
+            "magic": 3.8,
+            "fire": 3.6,
+            "lightning": 2.8,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 14,
+            "poison": 14,
+            "hemorrhage": 22,
+            "frostbite": 22,
+            "sleep": 0,
+            "madness": 0,
+            "deathBlight": 9
+        },
         "poise": 8,
         "weight": 4.6
     },
     "drake-knight-helm": {
         "id": "drake-knight-helm",
         "name": "Drake Knight Helm",
-        "defenses": [4.0, 3.4, 4.2, 4.0, 3.6, 4.0, 3.1, 3.6],
-        "resistances": [11, 11, 20, 20, 9, 9, 9],
+        "defenses": {
+            "physical": 4.0,
+            "slash": 4.2,
+            "strike": 3.4,
+            "pierce": 4.0,
+            "magic": 3.6,
+            "fire": 4.0,
+            "lightning": 3.1,
+            "holy": 3.6
+        },
+        "resistances": {
+            "scarletRot": 11,
+            "poison": 11,
+            "hemorrhage": 20,
+            "frostbite": 20,
+            "sleep": 9,
+            "madness": 9,
+            "deathBlight": 9
+        },
         "poise": 6,
         "weight": 4.0
     },
     "drake-knight-helm-altered": {
         "id": "drake-knight-helm-altered",
         "name": "Drake Knight Helm (Altered)",
-        "defenses": [3.6, 2.9, 3.8, 3.6, 3.2, 3.6, 2.6, 3.2],
-        "resistances": [9, 9, 16, 16, 7, 7, 7],
+        "defenses": {
+            "physical": 3.6,
+            "slash": 3.8,
+            "strike": 2.9,
+            "pierce": 3.6,
+            "magic": 3.2,
+            "fire": 3.6,
+            "lightning": 2.6,
+            "holy": 3.2
+        },
+        "resistances": {
+            "scarletRot": 9,
+            "poison": 9,
+            "hemorrhage": 16,
+            "frostbite": 16,
+            "sleep": 7,
+            "madness": 7,
+            "deathBlight": 7
+        },
         "poise": 6,
         "weight": 3.6
     },
     "duelist-helm": {
         "id": "duelist-helm",
         "name": "Duelist Helm",
-        "defenses": [5.8, 5.2, 6.1, 6.1, 4.0, 4.5, 3.6, 4.2],
-        "resistances": [24, 24, 24, 24, 11, 11, 12],
+        "defenses": {
+            "physical": 5.8,
+            "slash": 6.1,
+            "strike": 5.2,
+            "pierce": 6.1,
+            "magic": 4.0,
+            "fire": 4.5,
+            "lightning": 3.6,
+            "holy": 4.2
+        },
+        "resistances": {
+            "scarletRot": 24,
+            "poison": 24,
+            "hemorrhage": 24,
+            "frostbite": 24,
+            "sleep": 11,
+            "madness": 11,
+            "deathBlight": 12
+        },
         "poise": 10,
         "weight": 6.2
     },
     "eccentrics-hood": {
         "id": "eccentrics-hood",
         "name": "Eccentric's Hood",
-        "defenses": [4.4, 3.4, 4.2, 4.4, 3.4, 3.6, 2.3, 3.1],
-        "resistances": [14, 14, 24, 24, 9, 9, 8],
+        "defenses": {
+            "physical": 4.4,
+            "slash": 4.2,
+            "strike": 3.4,
+            "pierce": 4.4,
+            "magic": 3.4,
+            "fire": 3.6,
+            "lightning": 2.3,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 14,
+            "poison": 14,
+            "hemorrhage": 24,
+            "frostbite": 24,
+            "sleep": 9,
+            "madness": 9,
+            "deathBlight": 8
+        },
         "poise": 6,
         "weight": 4.0
     },
     "eccentrics-hood-altered": {
         "id": "eccentrics-hood-altered",
         "name": "Eccentric's Hood (Altered)",
-        "defenses": [4.4, 3.4, 4.2, 4.4, 3.4, 3.6, 2.3, 3.1],
-        "resistances": [12, 12, 21, 21, 8, 8, 7],
+        "defenses": {
+            "physical": 4.4,
+            "slash": 4.2,
+            "strike": 3.4,
+            "pierce": 4.4,
+            "magic": 3.4,
+            "fire": 3.6,
+            "lightning": 2.3,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 21,
+            "frostbite": 21,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 7
+        },
         "poise": 6,
         "weight": 4.0
     },
     "elden-lord-crown": {
         "id": "elden-lord-crown",
         "name": "Elden Lord Crown",
-        "defenses": [3.8, 3.4, 3.6, 4.0, 2.5, 3.6, 2.1, 2.3],
-        "resistances": [11, 11, 20, 20, 0, 0, 5],
+        "defenses": {
+            "physical": 3.8,
+            "slash": 3.6,
+            "strike": 3.4,
+            "pierce": 4.0,
+            "magic": 2.5,
+            "fire": 3.6,
+            "lightning": 2.1,
+            "holy": 2.3
+        },
+        "resistances": {
+            "scarletRot": 11,
+            "poison": 11,
+            "hemorrhage": 20,
+            "frostbite": 20,
+            "sleep": 0,
+            "madness": 0,
+            "deathBlight": 5
+        },
         "poise": 5,
         "weight": 3.6
     },
     "envoy-crown": {
         "id": "envoy-crown",
         "name": "Envoy Crown",
-        "defenses": [2.8, 3.1, 3.1, 2.8, 5.3, 4.7, 4.9, 5.5],
-        "resistances": [27, 27, 15, 15, 46, 46, 46],
+        "defenses": {
+            "physical": 2.8,
+            "slash": 3.1,
+            "strike": 3.1,
+            "pierce": 2.8,
+            "magic": 5.3,
+            "fire": 4.7,
+            "lightning": 4.9,
+            "holy": 5.5
+        },
+        "resistances": {
+            "scarletRot": 27,
+            "poison": 27,
+            "hemorrhage": 15,
+            "frostbite": 15,
+            "sleep": 46,
+            "madness": 46,
+            "deathBlight": 46
+        },
         "poise": 4,
         "weight": 3.8
     },
     "exile-hood": {
         "id": "exile-hood",
         "name": "Exile Hood",
-        "defenses": [4.4, 3.4, 4.6, 4.4, 2.8, 3.8, 2.3, 3.4],
-        "resistances": [12, 12, 23, 23, 9, 9, 8],
+        "defenses": {
+            "physical": 4.4,
+            "slash": 4.6,
+            "strike": 3.4,
+            "pierce": 4.4,
+            "magic": 2.8,
+            "fire": 3.8,
+            "lightning": 2.3,
+            "holy": 3.4
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 23,
+            "frostbite": 23,
+            "sleep": 9,
+            "madness": 9,
+            "deathBlight": 8
+        },
         "poise": 6,
         "weight": 4.0
     },
     "fang-helm": {
         "id": "fang-helm",
         "name": "Fang Helm",
-        "defenses": [2.3, 2.5, 2.3, 2.3, 3.6, 3.4, 4.0, 3.4],
-        "resistances": [23, 23, 18, 18, 16, 16, 16],
+        "defenses": {
+            "physical": 2.3,
+            "slash": 2.3,
+            "strike": 2.5,
+            "pierce": 2.3,
+            "magic": 3.6,
+            "fire": 3.4,
+            "lightning": 4.0,
+            "holy": 3.4
+        },
+        "resistances": {
+            "scarletRot": 23,
+            "poison": 23,
+            "hemorrhage": 18,
+            "frostbite": 18,
+            "sleep": 16,
+            "madness": 16,
+            "deathBlight": 16
+        },
         "poise": 4,
         "weight": 2.7
     },
     "festive-hood": {
         "id": "festive-hood",
         "name": "Festive Hood",
-        "defenses": [1.4, 1.8, 2.1, 1.8, 4.5, 4.2, 4.4, 4.6],
-        "resistances": [18, 18, 9, 9, 29, 29, 29],
+        "defenses": {
+            "physical": 1.4,
+            "slash": 2.1,
+            "strike": 1.8,
+            "pierce": 1.8,
+            "magic": 4.5,
+            "fire": 4.2,
+            "lightning": 4.4,
+            "holy": 4.6
+        },
+        "resistances": {
+            "scarletRot": 18,
+            "poison": 18,
+            "hemorrhage": 9,
+            "frostbite": 9,
+            "sleep": 29,
+            "madness": 29,
+            "deathBlight": 29
+        },
         "poise": 2,
         "weight": 1.7
     },
     "festive-hood-altered": {
         "id": "festive-hood-altered",
         "name": "Festive Hood (Altered)",
-        "defenses": [0.2, 0.9, 1.4, 0.9, 4.2, 3.8, 4.0, 4.5],
-        "resistances": [13, 13, 4, 4, 23, 23, 23],
+        "defenses": {
+            "physical": 0.2,
+            "slash": 1.4,
+            "strike": 0.9,
+            "pierce": 0.9,
+            "magic": 4.2,
+            "fire": 3.8,
+            "lightning": 4.0,
+            "holy": 4.5
+        },
+        "resistances": {
+            "scarletRot": 13,
+            "poison": 13,
+            "hemorrhage": 4,
+            "frostbite": 4,
+            "sleep": 23,
+            "madness": 23,
+            "deathBlight": 23
+        },
         "poise": 1,
         "weight": 1.0
     },
     "fias-hood": {
         "id": "fias-hood",
         "name": "Fia's Hood",
-        "defenses": [1.4, 1.8, 1.4, 1.4, 4.4, 4.2, 4.4, 4.6],
-        "resistances": [18, 18, 8, 8, 29, 29, 45],
+        "defenses": {
+            "physical": 1.4,
+            "slash": 1.4,
+            "strike": 1.8,
+            "pierce": 1.4,
+            "magic": 4.4,
+            "fire": 4.2,
+            "lightning": 4.4,
+            "holy": 4.6
+        },
+        "resistances": {
+            "scarletRot": 18,
+            "poison": 18,
+            "hemorrhage": 8,
+            "frostbite": 8,
+            "sleep": 29,
+            "madness": 29,
+            "deathBlight": 45
+        },
         "poise": 2,
         "weight": 1.7
     },
     "finger-maiden-fillet": {
         "id": "finger-maiden-fillet",
         "name": "Finger Maiden Fillet",
-        "defenses": [2.1, 1.8, 1.8, 1.4, 4.8, 4.6, 4.6, 4.8],
-        "resistances": [18, 18, 10, 10, 31, 31, 31],
+        "defenses": {
+            "physical": 2.1,
+            "slash": 1.8,
+            "strike": 1.8,
+            "pierce": 1.4,
+            "magic": 4.8,
+            "fire": 4.6,
+            "lightning": 4.6,
+            "holy": 4.8
+        },
+        "resistances": {
+            "scarletRot": 18,
+            "poison": 18,
+            "hemorrhage": 10,
+            "frostbite": 10,
+            "sleep": 31,
+            "madness": 31,
+            "deathBlight": 31
+        },
         "poise": 4,
         "weight": 2.2
     },
     "fingerprint-helm": {
         "id": "fingerprint-helm",
         "name": "Fingerprint Helm",
-        "defenses": [4.8, 4.2, 4.2, 4.2, 3.4, 4.5, 2.3, 3.4],
-        "resistances": [14, 14, 26, 26, 5, 5, 10],
+        "defenses": {
+            "physical": 4.8,
+            "slash": 4.2,
+            "strike": 4.2,
+            "pierce": 4.2,
+            "magic": 3.4,
+            "fire": 4.5,
+            "lightning": 2.3,
+            "holy": 3.4
+        },
+        "resistances": {
+            "scarletRot": 14,
+            "poison": 14,
+            "hemorrhage": 26,
+            "frostbite": 26,
+            "sleep": 5,
+            "madness": 5,
+            "deathBlight": 10
+        },
         "poise": 8,
         "weight": 4.6
     },
     "fire-knight-helm": {
         "id": "fire-knight-helm",
         "name": "Fire Knight Helm",
-        "defenses": [4.6, 3.6, 4.2, 3.8, 3.4, 4.2, 2.5, 3.1],
-        "resistances": [12, 12, 20, 20, 9, 9, 10],
+        "defenses": {
+            "physical": 4.6,
+            "slash": 4.2,
+            "strike": 3.6,
+            "pierce": 3.8,
+            "magic": 3.4,
+            "fire": 4.2,
+            "lightning": 2.5,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 20,
+            "frostbite": 20,
+            "sleep": 9,
+            "madness": 9,
+            "deathBlight": 10
+        },
         "poise": 6,
         "weight": 4.0
     },
     "fire-monk-hood": {
         "id": "fire-monk-hood",
         "name": "Fire Monk Hood",
-        "defenses": [4.6, 3.8, 4.2, 4.0, 3.1, 4.5, 2.5, 2.5],
-        "resistances": [11, 11, 20, 20, 9, 9, 9],
+        "defenses": {
+            "physical": 4.6,
+            "slash": 4.2,
+            "strike": 3.8,
+            "pierce": 4.0,
+            "magic": 3.1,
+            "fire": 4.5,
+            "lightning": 2.5,
+            "holy": 2.5
+        },
+        "resistances": {
+            "scarletRot": 11,
+            "poison": 11,
+            "hemorrhage": 20,
+            "frostbite": 20,
+            "sleep": 9,
+            "madness": 9,
+            "deathBlight": 9
+        },
         "poise": 6,
         "weight": 4.0
     },
     "fire-prelate-helm": {
         "id": "fire-prelate-helm",
         "name": "Fire Prelate Helm",
-        "defenses": [7.0, 6.1, 6.7, 6.7, 4.8, 7.2, 4.6, 4.7],
-        "resistances": [29, 29, 27, 27, 39, 39, 22],
+        "defenses": {
+            "physical": 7.0,
+            "slash": 6.7,
+            "strike": 6.1,
+            "pierce": 6.7,
+            "magic": 4.8,
+            "fire": 7.2,
+            "lightning": 4.6,
+            "holy": 4.7
+        },
+        "resistances": {
+            "scarletRot": 29,
+            "poison": 29,
+            "hemorrhage": 27,
+            "frostbite": 27,
+            "sleep": 39,
+            "madness": 39,
+            "deathBlight": 22
+        },
         "poise": 14,
         "weight": 10.6
     },
     "foot-soldier-cap": {
         "id": "foot-soldier-cap",
         "name": "Foot Soldier Cap",
-        "defenses": [3.4, 3.6, 3.4, 3.4, 3.8, 4.0, 4.2, 3.8],
-        "resistances": [27, 27, 18, 18, 23, 23, 23],
+        "defenses": {
+            "physical": 3.4,
+            "slash": 3.4,
+            "strike": 3.6,
+            "pierce": 3.4,
+            "magic": 3.8,
+            "fire": 4.0,
+            "lightning": 4.2,
+            "holy": 3.8
+        },
+        "resistances": {
+            "scarletRot": 27,
+            "poison": 27,
+            "hemorrhage": 18,
+            "frostbite": 18,
+            "sleep": 23,
+            "madness": 23,
+            "deathBlight": 23
+        },
         "poise": 6,
         "weight": 3.6
     },
     "foot-soldier-helm": {
         "id": "foot-soldier-helm",
         "name": "Foot Soldier Helm",
-        "defenses": [3.6, 3.4, 3.1, 3.1, 3.8, 4.2, 4.2, 3.8],
-        "resistances": [27, 27, 18, 18, 23, 23, 23],
+        "defenses": {
+            "physical": 3.6,
+            "slash": 3.1,
+            "strike": 3.4,
+            "pierce": 3.1,
+            "magic": 3.8,
+            "fire": 4.2,
+            "lightning": 4.2,
+            "holy": 3.8
+        },
+        "resistances": {
+            "scarletRot": 27,
+            "poison": 27,
+            "hemorrhage": 18,
+            "frostbite": 18,
+            "sleep": 23,
+            "madness": 23,
+            "deathBlight": 23
+        },
         "poise": 6,
         "weight": 3.6
     },
     "foot-soldier-helmet": {
         "id": "foot-soldier-helmet",
         "name": "Foot Soldier Helmet",
-        "defenses": [3.4, 3.4, 3.6, 3.6, 4.0, 4.0, 4.0, 3.6],
-        "resistances": [27, 27, 18, 18, 23, 23, 23],
+        "defenses": {
+            "physical": 3.4,
+            "slash": 3.6,
+            "strike": 3.4,
+            "pierce": 3.6,
+            "magic": 4.0,
+            "fire": 4.0,
+            "lightning": 4.0,
+            "holy": 3.6
+        },
+        "resistances": {
+            "scarletRot": 27,
+            "poison": 27,
+            "hemorrhage": 18,
+            "frostbite": 18,
+            "sleep": 23,
+            "madness": 23,
+            "deathBlight": 23
+        },
         "poise": 6,
         "weight": 3.6
     },
     "freyjas-helm": {
         "id": "freyjas-helm",
         "name": "Freyja's Helm",
-        "defenses": [5.5, 4.2, 4.8, 4.8, 4.0, 4.2, 3.8, 4.2],
-        "resistances": [13, 13, 28, 28, 9, 9, 12],
+        "defenses": {
+            "physical": 5.5,
+            "slash": 4.8,
+            "strike": 4.2,
+            "pierce": 4.8,
+            "magic": 4.0,
+            "fire": 4.2,
+            "lightning": 3.8,
+            "holy": 4.2
+        },
+        "resistances": {
+            "scarletRot": 13,
+            "poison": 13,
+            "hemorrhage": 28,
+            "frostbite": 28,
+            "sleep": 9,
+            "madness": 9,
+            "deathBlight": 12
+        },
         "poise": 8,
         "weight": 5.8
     },
     "gaiuss-helm": {
         "id": "gaiuss-helm",
         "name": "Gaius's Helm",
-        "defenses": [6.1, 5.6, 7.2, 7.0, 5.0, 4.9, 4.9, 4.9],
-        "resistances": [29, 29, 35, 35, 23, 23, 23],
+        "defenses": {
+            "physical": 6.1,
+            "slash": 7.2,
+            "strike": 5.6,
+            "pierce": 7.0,
+            "magic": 5.0,
+            "fire": 4.9,
+            "lightning": 4.9,
+            "holy": 4.9
+        },
+        "resistances": {
+            "scarletRot": 29,
+            "poison": 29,
+            "hemorrhage": 35,
+            "frostbite": 35,
+            "sleep": 23,
+            "madness": 23,
+            "deathBlight": 23
+        },
         "poise": 12,
         "weight": 8.6
     },
     "gelmir-knight-helm": {
         "id": "gelmir-knight-helm",
         "name": "Gelmir Knight Helm",
-        "defenses": [4.8, 4.0, 5.0, 4.8, 3.8, 4.4, 3.6, 3.8],
-        "resistances": [15, 15, 23, 23, 10, 10, 10],
+        "defenses": {
+            "physical": 4.8,
+            "slash": 5.0,
+            "strike": 4.0,
+            "pierce": 4.8,
+            "magic": 3.8,
+            "fire": 4.4,
+            "lightning": 3.6,
+            "holy": 3.8
+        },
+        "resistances": {
+            "scarletRot": 15,
+            "poison": 15,
+            "hemorrhage": 23,
+            "frostbite": 23,
+            "sleep": 10,
+            "madness": 10,
+            "deathBlight": 10
+        },
         "poise": 8,
         "weight": 5.1
     },
     "gilded-foot-soldier-cap": {
         "id": "gilded-foot-soldier-cap",
         "name": "Gilded Foot Soldier Cap",
-        "defenses": [3.4, 3.8, 3.1, 3.6, 3.6, 3.8, 4.4, 3.8],
-        "resistances": [27, 27, 18, 18, 23, 23, 23],
+        "defenses": {
+            "physical": 3.4,
+            "slash": 3.1,
+            "strike": 3.8,
+            "pierce": 3.6,
+            "magic": 3.6,
+            "fire": 3.8,
+            "lightning": 4.4,
+            "holy": 3.8
+        },
+        "resistances": {
+            "scarletRot": 27,
+            "poison": 27,
+            "hemorrhage": 18,
+            "frostbite": 18,
+            "sleep": 23,
+            "madness": 23,
+            "deathBlight": 23
+        },
         "poise": 6,
         "weight": 3.6
     },
     "glintstone-scarab": {
         "id": "glintstone-scarab",
         "name": "Glintstone Scarab",
-        "defenses": [3.8, 4.0, 3.8, 3.8, 4.6, 4.6, 4.6, 4.5],
-        "resistances": [42, 42, 22, 22, 27, 27, 26],
+        "defenses": {
+            "physical": 3.8,
+            "slash": 3.8,
+            "strike": 4.0,
+            "pierce": 3.8,
+            "magic": 4.6,
+            "fire": 4.6,
+            "lightning": 4.6,
+            "holy": 4.5
+        },
+        "resistances": {
+            "scarletRot": 42,
+            "poison": 42,
+            "hemorrhage": 22,
+            "frostbite": 22,
+            "sleep": 27,
+            "madness": 27,
+            "deathBlight": 26
+        },
         "poise": 6,
         "weight": 5.1
     },
     "godrick-knight-helm": {
         "id": "godrick-knight-helm",
         "name": "Godrick Knight Helm",
-        "defenses": [4.8, 4.2, 5.0, 4.6, 3.8, 4.2, 3.4, 3.8],
-        "resistances": [15, 15, 24, 24, 10, 10, 10],
+        "defenses": {
+            "physical": 4.8,
+            "slash": 5.0,
+            "strike": 4.2,
+            "pierce": 4.6,
+            "magic": 3.8,
+            "fire": 4.2,
+            "lightning": 3.4,
+            "holy": 3.8
+        },
+        "resistances": {
+            "scarletRot": 15,
+            "poison": 15,
+            "hemorrhage": 24,
+            "frostbite": 24,
+            "sleep": 10,
+            "madness": 10,
+            "deathBlight": 10
+        },
         "poise": 8,
         "weight": 5.1
     },
     "godrick-soldier-helm": {
         "id": "godrick-soldier-helm",
         "name": "Godrick Soldier Helm",
-        "defenses": [4.4, 3.6, 4.4, 4.2, 3.1, 3.6, 2.5, 3.1],
-        "resistances": [12, 12, 22, 22, 9, 9, 9],
+        "defenses": {
+            "physical": 4.4,
+            "slash": 4.4,
+            "strike": 3.6,
+            "pierce": 4.2,
+            "magic": 3.1,
+            "fire": 3.6,
+            "lightning": 2.5,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 22,
+            "frostbite": 22,
+            "sleep": 9,
+            "madness": 9,
+            "deathBlight": 9
+        },
         "poise": 7,
         "weight": 4.0
     },
     "godskin-apostle-hood": {
         "id": "godskin-apostle-hood",
         "name": "Godskin Apostle Hood",
-        "defenses": [2.3, 2.1, 2.1, 1.4, 4.6, 4.4, 4.5, 5.0],
-        "resistances": [20, 20, 10, 10, 33, 33, 31],
+        "defenses": {
+            "physical": 2.3,
+            "slash": 2.1,
+            "strike": 2.1,
+            "pierce": 1.4,
+            "magic": 4.6,
+            "fire": 4.4,
+            "lightning": 4.5,
+            "holy": 5.0
+        },
+        "resistances": {
+            "scarletRot": 20,
+            "poison": 20,
+            "hemorrhage": 10,
+            "frostbite": 10,
+            "sleep": 33,
+            "madness": 33,
+            "deathBlight": 31
+        },
         "poise": 3,
         "weight": 2.2
     },
     "godskin-noble-hood": {
         "id": "godskin-noble-hood",
         "name": "Godskin Noble Hood",
-        "defenses": [1.4, 2.8, 1.8, 1.4, 4.5, 4.0, 4.2, 4.8],
-        "resistances": [16, 16, 10, 10, 27, 27, 29],
+        "defenses": {
+            "physical": 1.4,
+            "slash": 1.8,
+            "strike": 2.8,
+            "pierce": 1.4,
+            "magic": 4.5,
+            "fire": 4.0,
+            "lightning": 4.2,
+            "holy": 4.8
+        },
+        "resistances": {
+            "scarletRot": 16,
+            "poison": 16,
+            "hemorrhage": 10,
+            "frostbite": 10,
+            "sleep": 27,
+            "madness": 27,
+            "deathBlight": 29
+        },
         "poise": 3,
         "weight": 1.7
     },
     "grass-hair-ornament": {
         "id": "grass-hair-ornament",
         "name": "Grass Hair Ornament",
-        "defenses": [1.4, 1.4, 1.4, 0.9, 4.5, 4.2, 4.4, 4.5],
-        "resistances": [16, 16, 9, 9, 27, 27, 27],
+        "defenses": {
+            "physical": 1.4,
+            "slash": 1.4,
+            "strike": 1.4,
+            "pierce": 0.9,
+            "magic": 4.5,
+            "fire": 4.2,
+            "lightning": 4.4,
+            "holy": 4.5
+        },
+        "resistances": {
+            "scarletRot": 16,
+            "poison": 16,
+            "hemorrhage": 9,
+            "frostbite": 9,
+            "sleep": 27,
+            "madness": 27,
+            "deathBlight": 27
+        },
         "poise": 2,
         "weight": 1.4
     },
     "gravebird-helm": {
         "id": "gravebird-helm",
         "name": "Gravebird Helm",
-        "defenses": [3.4, 3.6, 3.6, 3.1, 4.0, 3.8, 4.2, 4.2],
-        "resistances": [24, 24, 14, 14, 21, 21, 20],
+        "defenses": {
+            "physical": 3.4,
+            "slash": 3.6,
+            "strike": 3.6,
+            "pierce": 3.1,
+            "magic": 4.0,
+            "fire": 3.8,
+            "lightning": 4.2,
+            "holy": 4.2
+        },
+        "resistances": {
+            "scarletRot": 24,
+            "poison": 24,
+            "hemorrhage": 14,
+            "frostbite": 14,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 20
+        },
         "poise": 6,
         "weight": 3.6
     },
     "great-horned-headband": {
         "id": "great-horned-headband",
         "name": "Great Horned Headband",
-        "defenses": [2.8, 3.1, 2.8, 2.8, 3.1, 3.4, 3.8, 3.4],
-        "resistances": [33, 33, 23, 23, 27, 27, 22],
+        "defenses": {
+            "physical": 2.8,
+            "slash": 2.8,
+            "strike": 3.1,
+            "pierce": 2.8,
+            "magic": 3.1,
+            "fire": 3.4,
+            "lightning": 3.8,
+            "holy": 3.4
+        },
+        "resistances": {
+            "scarletRot": 33,
+            "poison": 33,
+            "hemorrhage": 23,
+            "frostbite": 23,
+            "sleep": 27,
+            "madness": 27,
+            "deathBlight": 22
+        },
         "poise": 4,
         "weight": 3.3
     },
     "greathelm": {
         "id": "greathelm",
         "name": "Greathelm",
-        "defenses": [5.5, 4.2, 5.8, 5.2, 4.2, 4.6, 3.8, 4.2],
-        "resistances": [16, 16, 29, 29, 11, 11, 11],
+        "defenses": {
+            "physical": 5.5,
+            "slash": 5.8,
+            "strike": 4.2,
+            "pierce": 5.2,
+            "magic": 4.2,
+            "fire": 4.6,
+            "lightning": 3.8,
+            "holy": 4.2
+        },
+        "resistances": {
+            "scarletRot": 16,
+            "poison": 16,
+            "hemorrhage": 29,
+            "frostbite": 29,
+            "sleep": 11,
+            "madness": 11,
+            "deathBlight": 11
+        },
         "poise": 9,
         "weight": 5.9
     },
     "greathood": {
         "id": "greathood",
         "name": "Greathood",
-        "defenses": [3.8, 3.6, 3.8, 3.6, 5.5, 5.0, 5.5, 6.2],
-        "resistances": [33, 33, 20, 20, 47, 47, 47],
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 2,
+            "faith": 2,
+            "arcane": 0
+        },
+        "defenses": {
+            "physical": 3.8,
+            "slash": 3.8,
+            "strike": 3.6,
+            "pierce": 3.6,
+            "magic": 5.5,
+            "fire": 5.0,
+            "lightning": 5.5,
+            "holy": 6.2
+        },
+        "resistances": {
+            "scarletRot": 33,
+            "poison": 33,
+            "hemorrhage": 20,
+            "frostbite": 20,
+            "sleep": 47,
+            "madness": 47,
+            "deathBlight": 47
+        },
         "poise": 5,
         "weight": 5.1
     },
     "greatjar": {
         "id": "greatjar",
         "name": "Greatjar",
-        "defenses": [8.0, 6.9, 7.7, 7.7, 5.3, 5.2, 5.5, 5.1],
-        "resistances": [32, 32, 34, 34, 22, 22, 21],
+        "defenses": {
+            "physical": 8.0,
+            "slash": 7.7,
+            "strike": 6.9,
+            "pierce": 7.7,
+            "magic": 5.3,
+            "fire": 5.2,
+            "lightning": 5.5,
+            "holy": 5.1
+        },
+        "resistances": {
+            "scarletRot": 32,
+            "poison": 32,
+            "hemorrhage": 34,
+            "frostbite": 34,
+            "sleep": 22,
+            "madness": 22,
+            "deathBlight": 21
+        },
         "poise": 14,
         "weight": 12.3
     },
     "guardian-mask": {
         "id": "guardian-mask",
         "name": "Guardian Mask",
-        "defenses": [3.8, 3.6, 3.6, 3.4, 4.2, 4.0, 4.2, 4.2],
-        "resistances": [33, 33, 22, 22, 26, 26, 24],
+        "defenses": {
+            "physical": 3.8,
+            "slash": 3.6,
+            "strike": 3.6,
+            "pierce": 3.4,
+            "magic": 4.2,
+            "fire": 4.0,
+            "lightning": 4.2,
+            "holy": 4.2
+        },
+        "resistances": {
+            "scarletRot": 33,
+            "poison": 33,
+            "hemorrhage": 22,
+            "frostbite": 22,
+            "sleep": 26,
+            "madness": 26,
+            "deathBlight": 24
+        },
         "poise": 5,
         "weight": 3.8
     },
     "guilty-hood": {
         "id": "guilty-hood",
         "name": "Guilty Hood",
-        "defenses": [0.9, 1.4, 1.8, 0.2, 4.4, 4.0, 4.5, 4.6],
-        "resistances": [15, 15, 9, 9, 27, 27, 31],
+        "defenses": {
+            "physical": 0.9,
+            "slash": 1.8,
+            "strike": 1.4,
+            "pierce": 0.2,
+            "magic": 4.4,
+            "fire": 4.0,
+            "lightning": 4.5,
+            "holy": 4.6
+        },
+        "resistances": {
+            "scarletRot": 15,
+            "poison": 15,
+            "hemorrhage": 9,
+            "frostbite": 9,
+            "sleep": 27,
+            "madness": 27,
+            "deathBlight": 31
+        },
         "poise": 2,
         "weight": 1.4
     },
     "haima-glintstone-crown": {
         "id": "haima-glintstone-crown",
         "name": "Haima Glintstone Crown",
-        "stats": [0, 0, 0, 2, 0, 2, 0, 0],
-        "defenses": [2.3, 2.5, 2.1, 2.3, 4.8, 4.5, 4.6, 4.6],
-        "resistances": [22, 22, 11, 11, 33, 33, 39],
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 2,
+            "dexterity": 0,
+            "intelligence": 2,
+            "faith": 0,
+            "arcane": 0
+        },
+        "defenses": {
+            "physical": 2.3,
+            "slash": 2.1,
+            "strike": 2.5,
+            "pierce": 2.3,
+            "magic": 4.8,
+            "fire": 4.5,
+            "lightning": 4.6,
+            "holy": 4.6
+        },
+        "resistances": {
+            "scarletRot": 22,
+            "poison": 22,
+            "hemorrhage": 11,
+            "frostbite": 11,
+            "sleep": 33,
+            "madness": 33,
+            "deathBlight": 39
+        },
         "poise": 4,
         "weight": 2.7
     },
     "haligtree-helm": {
         "id": "haligtree-helm",
         "name": "Haligtree Helm",
-        "stats": [0, 0, 0, 0, 0, 0, 1, 0],
-        "defenses": [4.4, 3.8, 4.2, 4.4, 2.8, 3.4, 2.5, 3.4],
-        "resistances": [12, 12, 22, 22, 9, 9, 10],
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 1,
+            "arcane": 0
+        },
+        "defenses": {
+            "physical": 4.4,
+            "slash": 4.2,
+            "strike": 3.8,
+            "pierce": 4.4,
+            "magic": 2.8,
+            "fire": 3.4,
+            "lightning": 2.5,
+            "holy": 3.4
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 22,
+            "frostbite": 22,
+            "sleep": 9,
+            "madness": 9,
+            "deathBlight": 10
+        },
         "poise": 6,
         "weight": 4.0
     },
     "haligtree-knight-helm": {
         "id": "haligtree-knight-helm",
         "name": "Haligtree Knight Helm",
-        "stats": [0, 0, 0, 0, 0, 0, 2, 0],
-        "defenses": [4.8, 4.4, 4.8, 4.8, 3.6, 4.0, 3.4, 4.0],
-        "resistances": [15, 15, 24, 24, 10, 10, 11],
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 2,
+            "arcane": 0
+        },
+        "defenses": {
+            "physical": 4.8,
+            "slash": 4.8,
+            "strike": 4.4,
+            "pierce": 4.8,
+            "magic": 3.6,
+            "fire": 4.0,
+            "lightning": 3.4,
+            "holy": 4.0
+        },
+        "resistances": {
+            "scarletRot": 15,
+            "poison": 15,
+            "hemorrhage": 24,
+            "frostbite": 24,
+            "sleep": 10,
+            "madness": 10,
+            "deathBlight": 11
+        },
         "poise": 7,
         "weight": 5.1
     },
     "helm-of-night": {
         "id": "helm-of-night",
         "name": "Helm of Night",
-        "defenses": [2.5, 2.5, 2.8, 2.8, 4.4, 3.4, 3.4, 4.5],
-        "resistances": [23, 23, 14, 14, 20, 20, 20],
+        "defenses": {
+            "physical": 2.5,
+            "slash": 2.8,
+            "strike": 2.5,
+            "pierce": 2.8,
+            "magic": 4.4,
+            "fire": 3.4,
+            "lightning": 3.4,
+            "holy": 4.5
+        },
+        "resistances": {
+            "scarletRot": 23,
+            "poison": 23,
+            "hemorrhage": 14,
+            "frostbite": 14,
+            "sleep": 20,
+            "madness": 20,
+            "deathBlight": 20
+        },
         "poise": 4,
         "weight": 3.0
     },
     "helm-of-solitude": {
         "id": "helm-of-solitude",
         "name": "Helm of Solitude",
-        "defenses": [6.8, 6.4, 6.7, 6.3, 4.7, 5.2, 4.8, 4.9],
-        "resistances": [26, 26, 27, 27, 42, 42, 22],
+        "defenses": {
+            "physical": 6.8,
+            "slash": 6.7,
+            "strike": 6.4,
+            "pierce": 6.3,
+            "magic": 4.7,
+            "fire": 5.2,
+            "lightning": 4.8,
+            "holy": 4.9
+        },
+        "resistances": {
+            "scarletRot": 26,
+            "poison": 26,
+            "hemorrhage": 27,
+            "frostbite": 27,
+            "sleep": 42,
+            "madness": 42,
+            "deathBlight": 22
+        },
         "poise": 14,
         "weight": 10.3
     },
     "hierodas-glintstone-crown": {
         "id": "hierodas-glintstone-crown",
         "name": "Hierodas Glintstone Crown",
-        "stats": [0, 0, 2, 0, 0, 2, 0, 0],
-        "defenses": [2.3, 2.3, 2.8, 2.3, 4.9, 4.7, 4.6, 4.9],
-        "resistances": [20, 20, 11, 11, 39, 39, 42],
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 2,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 2,
+            "faith": 0,
+            "arcane": 0
+        },
+        "defenses": {
+            "physical": 2.3,
+            "slash": 2.8,
+            "strike": 2.3,
+            "pierce": 2.3,
+            "magic": 4.9,
+            "fire": 4.7,
+            "lightning": 4.6,
+            "holy": 4.9
+        },
+        "resistances": {
+            "scarletRot": 20,
+            "poison": 20,
+            "hemorrhage": 11,
+            "frostbite": 11,
+            "sleep": 39,
+            "madness": 39,
+            "deathBlight": 42
+        },
         "poise": 4,
         "weight": 3.0
     },
     "high-page-hood": {
         "id": "high-page-hood",
         "name": "High Page Hood",
-        "defenses": [0.9, 1.8, 0.9, 0.9, 4.6, 4.2, 4.4, 4.5],
-        "resistances": [15, 15, 8, 8, 27, 27, 27],
+        "defenses": {
+            "physical": 0.9,
+            "slash": 0.9,
+            "strike": 1.8,
+            "pierce": 0.9,
+            "magic": 4.6,
+            "fire": 4.2,
+            "lightning": 4.4,
+            "holy": 4.5
+        },
+        "resistances": {
+            "scarletRot": 15,
+            "poison": 15,
+            "hemorrhage": 8,
+            "frostbite": 8,
+            "sleep": 27,
+            "madness": 27,
+            "deathBlight": 27
+        },
         "poise": 2,
         "weight": 1.4
     },
     "high-priest-hat": {
         "id": "high-priest-hat",
         "name": "High Priest Hat",
-        "defenses": [1.8, 2.1, 1.4, 0.9, 4.6, 4.5, 4.4, 4.5],
-        "resistances": [18, 18, 10, 10, 27, 27, 33],
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 1,
+            "faith": 0,
+            "arcane": 1
+        },
+        "defenses": {
+            "physical": 1.8,
+            "slash": 1.4,
+            "strike": 2.1,
+            "pierce": 0.9,
+            "magic": 4.6,
+            "fire": 4.5,
+            "lightning": 4.4,
+            "holy": 4.5
+        },
+        "resistances": {
+            "scarletRot": 18,
+            "poison": 18,
+            "hemorrhage": 10,
+            "frostbite": 10,
+            "sleep": 27,
+            "madness": 27,
+            "deathBlight": 33
+        },
         "poise": 3,
         "weight": 1.7
     },
     "highwayman-hood": {
         "id": "highwayman-hood",
         "name": "Highwayman Hood",
-        "defenses": [2.8, 3.6, 2.8, 3.1, 3.8, 3.8, 4.0, 3.6],
-        "resistances": [24, 24, 15, 15, 22, 22, 22],
+        "defenses": {
+            "physical": 2.8,
+            "slash": 2.8,
+            "strike": 3.6,
+            "pierce": 3.1,
+            "magic": 3.8,
+            "fire": 3.8,
+            "lightning": 4.0,
+            "holy": 3.6
+        },
+        "resistances": {
+            "scarletRot": 24,
+            "poison": 24,
+            "hemorrhage": 15,
+            "frostbite": 15,
+            "sleep": 22,
+            "madness": 22,
+            "deathBlight": 22
+        },
         "poise": 4,
         "weight": 3.3
     },
     "horned-warrior-helm": {
         "id": "horned-warrior-helm",
         "name": "Horned Warrior Helm",
-        "defenses": [4.8, 4.4, 4.6, 4.0, 3.6, 3.6, 3.1, 3.1],
-        "resistances": [13, 13, 25, 25, 0, 0, 9],
+        "defenses": {
+            "physical": 4.8,
+            "slash": 4.6,
+            "strike": 4.4,
+            "pierce": 4.0,
+            "magic": 3.6,
+            "fire": 3.6,
+            "lightning": 3.1,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 13,
+            "poison": 13,
+            "hemorrhage": 25,
+            "frostbite": 25,
+            "sleep": 0,
+            "madness": 0,
+            "deathBlight": 9
+        },
         "poise": 7,
         "weight": 4.6
     },
     "hoslows-helm": {
         "id": "hoslows-helm",
         "name": "Hoslow's Helm",
-        "defenses": [5.2, 4.4, 5.0, 4.8, 4.0, 4.4, 3.8, 3.8],
-        "resistances": [18, 18, 27, 27, 11, 11, 11],
+        "defenses": {
+            "physical": 5.2,
+            "slash": 5.0,
+            "strike": 4.4,
+            "pierce": 4.8,
+            "magic": 4.0,
+            "fire": 4.4,
+            "lightning": 3.8,
+            "holy": 3.8
+        },
+        "resistances": {
+            "scarletRot": 18,
+            "poison": 18,
+            "hemorrhage": 27,
+            "frostbite": 27,
+            "sleep": 11,
+            "madness": 11,
+            "deathBlight": 11
+        },
         "poise": 8,
         "weight": 5.5
     },
     "igons-helm": {
         "id": "igons-helm",
         "name": "Igon's Helm",
-        "defenses": [3.1, 3.4, 3.1, 3.1, 3.6, 3.8, 4.0, 3.6],
-        "resistances": [26, 26, 16, 16, 22, 22, 22],
+        "defenses": {
+            "physical": 3.1,
+            "slash": 3.1,
+            "strike": 3.4,
+            "pierce": 3.1,
+            "magic": 3.6,
+            "fire": 3.8,
+            "lightning": 4.0,
+            "holy": 3.6
+        },
+        "resistances": {
+            "scarletRot": 26,
+            "poison": 26,
+            "hemorrhage": 16,
+            "frostbite": 16,
+            "sleep": 22,
+            "madness": 22,
+            "deathBlight": 22
+        },
         "poise": 5,
         "weight": 3.3
     },
     "igons-helm-altered": {
         "id": "igons-helm-altered",
         "name": "Igon's Helm (Altered)",
-        "defenses": [2.8, 3.1, 2.8, 2.8, 3.4, 3.6, 3.8, 3.4],
-        "resistances": [24, 24, 15, 15, 20, 20, 20],
+        "defenses": {
+            "physical": 2.8,
+            "slash": 2.8,
+            "strike": 3.1,
+            "pierce": 2.8,
+            "magic": 3.4,
+            "fire": 3.6,
+            "lightning": 3.8,
+            "holy": 3.4
+        },
+        "resistances": {
+            "scarletRot": 24,
+            "poison": 24,
+            "hemorrhage": 15,
+            "frostbite": 15,
+            "sleep": 20,
+            "madness": 20,
+            "deathBlight": 20
+        },
         "poise": 5,
         "weight": 3.0
     },
     "ijis-mirrorhelm": {
         "id": "ijis-mirrorhelm",
         "name": "Iji's Mirrorhelm",
-        "defenses": [3.8, 3.8, 5.2, 5.2, 6.2, 4.6, 4.8, 5.8],
-        "resistances": [22, 22, 42, 42, 26, 26, 39],
+        "defenses": {
+            "physical": 3.8,
+            "slash": 5.2,
+            "strike": 3.8,
+            "pierce": 5.2,
+            "magic": 6.2,
+            "fire": 4.6,
+            "lightning": 4.8,
+            "holy": 5.8
+        },
+        "resistances": {
+            "scarletRot": 22,
+            "poison": 22,
+            "hemorrhage": 42,
+            "frostbite": 42,
+            "sleep": 26,
+            "madness": 26,
+            "deathBlight": 39
+        },
         "poise": 7,
         "weight": 7.5
     },
     "imp-head-cat": {
         "id": "imp-head-cat",
         "name": "Imp Head (Cat)",
-        "stats": [0, 0, 0, 0, 0, 2, 0, 0],
-        "defenses": [5.8, 5.2, 5.8, 6.1, 5.0, 5.8, 4.8, 5.0],
-        "resistances": [35, 35, 35, 35, 20, 20, 20],
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 2,
+            "faith": 0,
+            "arcane": 0
+        },
+        "defenses": {
+            "physical": 5.8,
+            "slash": 5.8,
+            "strike": 5.2,
+            "pierce": 6.1,
+            "magic": 5.0,
+            "fire": 5.8,
+            "lightning": 4.8,
+            "holy": 5.0
+        },
+        "resistances": {
+            "scarletRot": 35,
+            "poison": 35,
+            "hemorrhage": 35,
+            "frostbite": 35,
+            "sleep": 20,
+            "madness": 20,
+            "deathBlight": 20
+        },
         "poise": 10,
         "weight": 8.1
     },
     "imp-head-corpse": {
         "id": "imp-head-corpse",
         "name": "Imp Head (Corpse)",
-        "stats": [0, 0, 0, 0, 0, 0, 2, 0],
-        "defenses": [5.8, 5.2, 5.8, 6.1, 5.0, 5.8, 4.8, 5.0],
-        "resistances": [35, 35, 35, 35, 20, 20, 20],
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 2,
+            "arcane": 0
+        },
+        "defenses": {
+            "physical": 5.8,
+            "slash": 5.8,
+            "strike": 5.2,
+            "pierce": 6.1,
+            "magic": 5.0,
+            "fire": 5.8,
+            "lightning": 4.8,
+            "holy": 5.0
+        },
+        "resistances": {
+            "scarletRot": 35,
+            "poison": 35,
+            "hemorrhage": 35,
+            "frostbite": 35,
+            "sleep": 20,
+            "madness": 20,
+            "deathBlight": 20
+        },
         "poise": 10,
         "weight": 8.1
     },
     "imp-head-elder": {
         "id": "imp-head-elder",
         "name": "Imp Head (Elder)",
-        "stats": [0, 0, 0, 0, 0, 0, 0, 2],
-        "defenses": [5.8, 5.2, 5.8, 6.1, 5.0, 5.8, 4.8, 5.0],
-        "resistances": [35, 35, 35, 35, 20, 20, 20],
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 2
+        },
+        "defenses": {
+            "physical": 5.8,
+            "slash": 5.8,
+            "strike": 5.2,
+            "pierce": 6.1,
+            "magic": 5.0,
+            "fire": 5.8,
+            "lightning": 4.8,
+            "holy": 5.0
+        },
+        "resistances": {
+            "scarletRot": 35,
+            "poison": 35,
+            "hemorrhage": 35,
+            "frostbite": 35,
+            "sleep": 20,
+            "madness": 20,
+            "deathBlight": 20
+        },
         "poise": 10,
         "weight": 8.1
     },
     "imp-head-fanged": {
         "id": "imp-head-fanged",
         "name": "Imp Head (Fanged)",
-        "stats": [0, 0, 0, 2, 0, 0, 0, 0],
-        "defenses": [5.8, 5.2, 5.8, 6.1, 5.0, 5.8, 4.8, 5.0],
-        "resistances": [35, 35, 35, 35, 20, 20, 20],
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 2,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "defenses": {
+            "physical": 5.8,
+            "slash": 5.8,
+            "strike": 5.2,
+            "pierce": 6.1,
+            "magic": 5.0,
+            "fire": 5.8,
+            "lightning": 4.8,
+            "holy": 5.0
+        },
+        "resistances": {
+            "scarletRot": 35,
+            "poison": 35,
+            "hemorrhage": 35,
+            "frostbite": 35,
+            "sleep": 20,
+            "madness": 20,
+            "deathBlight": 20
+        },
         "poise": 10,
         "weight": 8.1
     },
     "imp-head-lion": {
         "id": "imp-head-lion",
         "name": "Imp Head (Lion)",
-        "defenses": [7.0, 5.9, 7.0, 7.0, 4.6, 5.2, 4.6, 4.6],
-        "resistances": [26, 26, 44, 44, 18, 18, 18],
+        "defenses": {
+            "physical": 7.0,
+            "slash": 7.0,
+            "strike": 5.9,
+            "pierce": 7.0,
+            "magic": 4.6,
+            "fire": 5.2,
+            "lightning": 4.6,
+            "holy": 4.6
+        },
+        "resistances": {
+            "scarletRot": 26,
+            "poison": 26,
+            "hemorrhage": 44,
+            "frostbite": 44,
+            "sleep": 18,
+            "madness": 18,
+            "deathBlight": 18
+        },
         "poise": 13,
         "weight": 8.1
     },
     "imp-head-long-tongued": {
         "id": "imp-head-long-tongued",
         "name": "Imp Head (Long-Tongued)",
-        "stats": [0, 0, 0, 0, 2, 0, 0, 0],
-        "defenses": [5.8, 5.2, 5.8, 6.1, 5.0, 5.8, 4.8, 5.0],
-        "resistances": [35, 35, 35, 35, 20, 20, 20],
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 2,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "defenses": {
+            "physical": 5.8,
+            "slash": 5.8,
+            "strike": 5.2,
+            "pierce": 6.1,
+            "magic": 5.0,
+            "fire": 5.8,
+            "lightning": 4.8,
+            "holy": 5.0
+        },
+        "resistances": {
+            "scarletRot": 35,
+            "poison": 35,
+            "hemorrhage": 35,
+            "frostbite": 35,
+            "sleep": 20,
+            "madness": 20,
+            "deathBlight": 20
+        },
         "poise": 10,
         "weight": 8.1
     },
     "imp-head-wolf": {
         "id": "imp-head-wolf",
         "name": "Imp Head (Wolf)",
-        "stats": [0, 0, 2, 0, 0, 0, 0, 0],
-        "defenses": [5.8, 5.2, 5.8, 6.1, 5.0, 5.8, 4.8, 5.0],
-        "resistances": [35, 35, 35, 35, 20, 20, 20],
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 2,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "defenses": {
+            "physical": 5.8,
+            "slash": 5.8,
+            "strike": 5.2,
+            "pierce": 6.1,
+            "magic": 5.0,
+            "fire": 5.8,
+            "lightning": 4.8,
+            "holy": 5.0
+        },
+        "resistances": {
+            "scarletRot": 35,
+            "poison": 35,
+            "hemorrhage": 35,
+            "frostbite": 35,
+            "sleep": 20,
+            "madness": 20,
+            "deathBlight": 20
+        },
         "poise": 10,
         "weight": 8.1
     },
     "incantation-scarab": {
         "id": "incantation-scarab",
         "name": "Incantation Scarab",
-        "defenses": [3.8, 4.0, 3.8, 3.8, 4.6, 4.6, 4.6, 4.5],
-        "resistances": [42, 42, 22, 22, 27, 27, 26],
+        "defenses": {
+            "physical": 3.8,
+            "slash": 3.8,
+            "strike": 4.0,
+            "pierce": 3.8,
+            "magic": 4.6,
+            "fire": 4.6,
+            "lightning": 4.6,
+            "holy": 4.5
+        },
+        "resistances": {
+            "scarletRot": 42,
+            "poison": 42,
+            "hemorrhage": 22,
+            "frostbite": 22,
+            "sleep": 27,
+            "madness": 27,
+            "deathBlight": 26
+        },
         "poise": 6,
         "weight": 5.1
     },
     "iron-helmet": {
         "id": "iron-helmet",
         "name": "Iron Helmet",
-        "defenses": [4.4, 3.1, 4.0, 4.2, 2.5, 3.1, 2.3, 3.1],
-        "resistances": [12, 12, 18, 18, 8, 8, 8],
+        "defenses": {
+            "physical": 4.4,
+            "slash": 4.0,
+            "strike": 3.1,
+            "pierce": 4.2,
+            "magic": 2.5,
+            "fire": 3.1,
+            "lightning": 2.3,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 18,
+            "frostbite": 18,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 8
+        },
         "poise": 6,
         "weight": 3.8
     },
     "iron-kasa": {
         "id": "iron-kasa",
         "name": "Iron Kasa",
-        "defenses": [3.6, 3.6, 4.2, 3.6, 4.0, 4.2, 4.4, 4.0],
-        "resistances": [30, 30, 23, 23, 24, 24, 24],
+        "defenses": {
+            "physical": 3.6,
+            "slash": 4.2,
+            "strike": 3.6,
+            "pierce": 3.6,
+            "magic": 4.0,
+            "fire": 4.2,
+            "lightning": 4.4,
+            "holy": 4.0
+        },
+        "resistances": {
+            "scarletRot": 30,
+            "poison": 30,
+            "hemorrhage": 23,
+            "frostbite": 23,
+            "sleep": 24,
+            "madness": 24,
+            "deathBlight": 24
+        },
         "poise": 6,
         "weight": 3.8
     },
     "jar": {
         "id": "jar",
         "name": "Jar",
-        "defenses": [6.8, 3.4, 7.0, 6.8, 4.7, 4.9, 4.6, 4.7],
-        "resistances": [24, 24, 33, 33, 16, 16, 15],
+        "defenses": {
+            "physical": 6.8,
+            "slash": 7.0,
+            "strike": 3.4,
+            "pierce": 6.8,
+            "magic": 4.7,
+            "fire": 4.9,
+            "lightning": 4.6,
+            "holy": 4.7
+        },
+        "resistances": {
+            "scarletRot": 24,
+            "poison": 24,
+            "hemorrhage": 33,
+            "frostbite": 33,
+            "sleep": 16,
+            "madness": 16,
+            "deathBlight": 15
+        },
         "poise": 10,
         "weight": 6.8
     },
     "juvenile-scholar-cap": {
         "id": "juvenile-scholar-cap",
         "name": "Juvenile Scholar Cap",
-        "defenses": [1.4, 1.8, 1.8, 1.4, 4.5, 4.0, 4.2, 4.4],
-        "resistances": [15, 15, 10, 10, 26, 26, 29],
+        "defenses": {
+            "physical": 1.4,
+            "slash": 1.8,
+            "strike": 1.8,
+            "pierce": 1.4,
+            "magic": 4.5,
+            "fire": 4.0,
+            "lightning": 4.2,
+            "holy": 4.4
+        },
+        "resistances": {
+            "scarletRot": 15,
+            "poison": 15,
+            "hemorrhage": 10,
+            "frostbite": 10,
+            "sleep": 26,
+            "madness": 26,
+            "deathBlight": 29
+        },
         "poise": 2,
         "weight": 1.4
     },
     "kaiden-helm": {
         "id": "kaiden-helm",
         "name": "Kaiden Helm",
-        "defenses": [4.4, 3.4, 4.4, 4.4, 3.1, 3.4, 2.8, 3.1],
-        "resistances": [12, 12, 22, 22, 9, 9, 9],
+        "defenses": {
+            "physical": 4.4,
+            "slash": 4.4,
+            "strike": 3.4,
+            "pierce": 4.4,
+            "magic": 3.1,
+            "fire": 3.4,
+            "lightning": 2.8,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 22,
+            "frostbite": 22,
+            "sleep": 9,
+            "madness": 9,
+            "deathBlight": 9
+        },
         "poise": 7,
         "weight": 4.0
     },
     "karolos-glintstone-crown": {
         "id": "karolos-glintstone-crown",
         "name": "Karolos Glintstone Crown",
-        "defenses": [4.4, 3.1, 5.2, 4.8, 4.4, 4.5, 3.4, 3.8],
-        "resistances": [16, 16, 26, 26, 10, 10, 10],
+        "defenses": {
+            "physical": 4.4,
+            "slash": 5.2,
+            "strike": 3.1,
+            "pierce": 4.8,
+            "magic": 4.4,
+            "fire": 4.5,
+            "lightning": 3.4,
+            "holy": 3.8
+        },
+        "resistances": {
+            "scarletRot": 16,
+            "poison": 16,
+            "hemorrhage": 26,
+            "frostbite": 26,
+            "sleep": 10,
+            "madness": 10,
+            "deathBlight": 10
+        },
         "poise": 6,
         "weight": 5.1
     },
     "knight-helm": {
         "id": "knight-helm",
         "name": "Knight Helm",
-        "defenses": [4.4, 4.2, 4.8, 4.8, 3.8, 3.8, 3.4, 3.1],
-        "resistances": [12, 12, 22, 22, 8, 8, 8],
+        "defenses": {
+            "physical": 4.4,
+            "slash": 4.8,
+            "strike": 4.2,
+            "pierce": 4.8,
+            "magic": 3.8,
+            "fire": 3.8,
+            "lightning": 3.4,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 22,
+            "frostbite": 22,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 8
+        },
         "poise": 8,
         "weight": 4.6
     },
     "land-of-reeds-helm": {
         "id": "land-of-reeds-helm",
         "name": "Land of Reeds Helm",
-        "defenses": [3.1, 3.4, 4.8, 3.4, 3.6, 4.0, 4.2, 3.8],
-        "resistances": [26, 26, 22, 22, 0, 0, 23],
+        "defenses": {
+            "physical": 3.1,
+            "slash": 4.8,
+            "strike": 3.4,
+            "pierce": 3.4,
+            "magic": 3.6,
+            "fire": 4.0,
+            "lightning": 4.2,
+            "holy": 3.8
+        },
+        "resistances": {
+            "scarletRot": 26,
+            "poison": 26,
+            "hemorrhage": 22,
+            "frostbite": 22,
+            "sleep": 0,
+            "madness": 0,
+            "deathBlight": 23
+        },
         "poise": 5,
         "weight": 3.6
     },
     "lazuli-glintstone-crown": {
         "id": "lazuli-glintstone-crown",
         "name": "Lazuli Glintstone Crown",
-        "defenses": [4.4, 3.1, 5.2, 4.8, 4.4, 4.5, 3.4, 3.8],
-        "resistances": [16, 16, 26, 26, 10, 10, 10],
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 3,
+            "intelligence": 3,
+            "faith": 0,
+            "arcane": 0
+        },
+        "defenses": {
+            "physical": 4.4,
+            "slash": 5.2,
+            "strike": 3.1,
+            "pierce": 4.8,
+            "magic": 4.4,
+            "fire": 4.5,
+            "lightning": 3.4,
+            "holy": 3.8
+        },
+        "resistances": {
+            "scarletRot": 16,
+            "poison": 16,
+            "hemorrhage": 26,
+            "frostbite": 26,
+            "sleep": 10,
+            "madness": 10,
+            "deathBlight": 10
+        },
         "poise": 6,
         "weight": 5.1
     },
     "leather-crown": {
         "id": "leather-crown",
         "name": "Leather Crown",
-        "defenses": [3.1, 3.6, 3.4, 3.1, 3.4, 3.8, 4.2, 3.8],
-        "resistances": [26, 26, 15, 15, 22, 22, 20],
+        "defenses": {
+            "physical": 3.1,
+            "slash": 3.4,
+            "strike": 3.6,
+            "pierce": 3.1,
+            "magic": 3.4,
+            "fire": 3.8,
+            "lightning": 4.2,
+            "holy": 3.8
+        },
+        "resistances": {
+            "scarletRot": 26,
+            "poison": 26,
+            "hemorrhage": 15,
+            "frostbite": 15,
+            "sleep": 22,
+            "madness": 22,
+            "deathBlight": 20
+        },
         "poise": 5,
         "weight": 3.3
     },
     "leather-headband": {
         "id": "leather-headband",
         "name": "Leather Headband",
-        "defenses": [1.4, 2.1, 1.8, 1.4, 1.8, 2.3, 2.8, 2.3],
-        "resistances": [16, 16, 10, 10, 12, 12, 11],
+        "defenses": {
+            "physical": 1.4,
+            "slash": 1.8,
+            "strike": 2.1,
+            "pierce": 1.4,
+            "magic": 1.8,
+            "fire": 2.3,
+            "lightning": 2.8,
+            "holy": 2.3
+        },
+        "resistances": {
+            "scarletRot": 16,
+            "poison": 16,
+            "hemorrhage": 10,
+            "frostbite": 10,
+            "sleep": 12,
+            "madness": 12,
+            "deathBlight": 11
+        },
         "poise": 2,
         "weight": 1.0
     },
     "leyndell-knight-helm": {
         "id": "leyndell-knight-helm",
         "name": "Leyndell Knight Helm",
-        "defenses": [4.8, 4.4, 4.8, 4.8, 3.6, 4.0, 3.6, 3.8],
-        "resistances": [15, 15, 24, 24, 10, 10, 10],
+        "defenses": {
+            "physical": 4.8,
+            "slash": 4.8,
+            "strike": 4.4,
+            "pierce": 4.8,
+            "magic": 3.6,
+            "fire": 4.0,
+            "lightning": 3.6,
+            "holy": 3.8
+        },
+        "resistances": {
+            "scarletRot": 15,
+            "poison": 15,
+            "hemorrhage": 24,
+            "frostbite": 24,
+            "sleep": 10,
+            "madness": 10,
+            "deathBlight": 10
+        },
         "poise": 8,
         "weight": 5.1
     },
     "leyndell-soldier-helm": {
         "id": "leyndell-soldier-helm",
         "name": "Leyndell Soldier Helm",
-        "defenses": [4.4, 3.8, 4.2, 4.4, 2.8, 3.4, 2.8, 3.1],
-        "resistances": [12, 12, 22, 22, 9, 9, 9],
+        "defenses": {
+            "physical": 4.4,
+            "slash": 4.2,
+            "strike": 3.8,
+            "pierce": 4.4,
+            "magic": 2.8,
+            "fire": 3.4,
+            "lightning": 2.8,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 22,
+            "frostbite": 22,
+            "sleep": 9,
+            "madness": 9,
+            "deathBlight": 9
+        },
         "poise": 7,
         "weight": 4.0
     },
     "lionels-helm": {
         "id": "lionels-helm",
         "name": "Lionel's Helm",
-        "defenses": [6.3, 5.9, 7.0, 7.2, 4.8, 5.3, 4.6, 4.8],
-        "resistances": [27, 27, 42, 42, 18, 18, 22],
+        "defenses": {
+            "physical": 6.3,
+            "slash": 7.0,
+            "strike": 5.9,
+            "pierce": 7.2,
+            "magic": 4.8,
+            "fire": 5.3,
+            "lightning": 4.6,
+            "holy": 4.8
+        },
+        "resistances": {
+            "scarletRot": 27,
+            "poison": 27,
+            "hemorrhage": 42,
+            "frostbite": 42,
+            "sleep": 18,
+            "madness": 18,
+            "deathBlight": 22
+        },
         "poise": 13,
         "weight": 9.1
     },
     "lusats-glintstone-crown": {
         "id": "lusats-glintstone-crown",
         "name": "Lusat's Glintstone Crown",
-        "defenses": [3.1, 2.3, 3.1, 2.3, 5.5, 4.6, 4.8, 4.9],
-        "resistances": [23, 23, 11, 11, 39, 39, 44],
+        "defenses": {
+            "physical": 3.1,
+            "slash": 3.1,
+            "strike": 2.3,
+            "pierce": 2.3,
+            "magic": 5.5,
+            "fire": 4.6,
+            "lightning": 4.8,
+            "holy": 4.9
+        },
+        "resistances": {
+            "scarletRot": 23,
+            "poison": 23,
+            "hemorrhage": 11,
+            "frostbite": 11,
+            "sleep": 39,
+            "madness": 39,
+            "deathBlight": 44
+        },
         "poise": 4,
         "weight": 3.6
     },
     "malenias-winged-helm": {
         "id": "malenias-winged-helm",
         "name": "Malenia's Winged Helm",
-        "defenses": [4.4, 3.4, 4.6, 4.0, 2.8, 3.4, 2.3, 3.8],
-        "resistances": [22, 22, 18, 18, 8, 8, 8],
+        "defenses": {
+            "physical": 4.4,
+            "slash": 4.6,
+            "strike": 3.4,
+            "pierce": 4.0,
+            "magic": 2.8,
+            "fire": 3.4,
+            "lightning": 2.3,
+            "holy": 3.8
+        },
+        "resistances": {
+            "scarletRot": 22,
+            "poison": 22,
+            "hemorrhage": 18,
+            "frostbite": 18,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 8
+        },
         "poise": 6,
         "weight": 4.0
     },
     "malformed-dragon-helm": {
         "id": "malformed-dragon-helm",
         "name": "Malformed Dragon Helm",
-        "defenses": [6.1, 5.4, 6.3, 6.1, 4.6, 4.6, 4.9, 4.6],
-        "resistances": [24, 24, 33, 33, 16, 16, 16],
+        "defenses": {
+            "physical": 6.1,
+            "slash": 6.3,
+            "strike": 5.4,
+            "pierce": 6.1,
+            "magic": 4.6,
+            "fire": 4.6,
+            "lightning": 4.9,
+            "holy": 4.6
+        },
+        "resistances": {
+            "scarletRot": 24,
+            "poison": 24,
+            "hemorrhage": 33,
+            "frostbite": 33,
+            "sleep": 16,
+            "madness": 16,
+            "deathBlight": 16
+        },
         "poise": 10,
         "weight": 6.8
     },
     "malikeths-helm": {
         "id": "malikeths-helm",
         "name": "Maliketh's Helm",
-        "defenses": [4.8, 4.2, 5.0, 4.8, 3.8, 4.0, 3.4, 4.6],
-        "resistances": [15, 15, 24, 24, 10, 10, 22],
+        "defenses": {
+            "physical": 4.8,
+            "slash": 5.0,
+            "strike": 4.2,
+            "pierce": 4.8,
+            "magic": 3.8,
+            "fire": 4.0,
+            "lightning": 3.4,
+            "holy": 4.6
+        },
+        "resistances": {
+            "scarletRot": 15,
+            "poison": 15,
+            "hemorrhage": 24,
+            "frostbite": 24,
+            "sleep": 10,
+            "madness": 10,
+            "deathBlight": 22
+        },
         "poise": 8,
         "weight": 5.5
     },
     "marais-mask": {
         "id": "marais-mask",
         "name": "Marais Mask",
-        "defenses": [2.1, 2.3, 1.8, 1.4, 4.6, 4.5, 4.5, 4.6],
-        "resistances": [20, 20, 14, 14, 35, 35, 33],
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 1
+        },
+        "defenses": {
+            "physical": 2.1,
+            "slash": 1.8,
+            "strike": 2.3,
+            "pierce": 1.4,
+            "magic": 4.6,
+            "fire": 4.5,
+            "lightning": 4.5,
+            "holy": 4.6
+        },
+        "resistances": {
+            "scarletRot": 20,
+            "poison": 20,
+            "hemorrhage": 14,
+            "frostbite": 14,
+            "sleep": 35,
+            "madness": 35,
+            "deathBlight": 33
+        },
         "poise": 4,
         "weight": 2.2
     },
     "marionette-soldier-birdhelm": {
         "id": "marionette-soldier-birdhelm",
         "name": "Marionette Soldier Birdhelm",
-        "defenses": [4.4, 3.1, 4.0, 3.8, 3.1, 3.1, 2.5, 2.5],
-        "resistances": [11, 11, 18, 18, 8, 8, 9],
+        "defenses": {
+            "physical": 4.4,
+            "slash": 4.0,
+            "strike": 3.1,
+            "pierce": 3.8,
+            "magic": 3.1,
+            "fire": 3.1,
+            "lightning": 2.5,
+            "holy": 2.5
+        },
+        "resistances": {
+            "scarletRot": 11,
+            "poison": 11,
+            "hemorrhage": 18,
+            "frostbite": 18,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 9
+        },
         "poise": 6,
         "weight": 3.8
     },
     "marionette-soldier-helm": {
         "id": "marionette-soldier-helm",
         "name": "Marionette Soldier Helm",
-        "defenses": [4.4, 3.1, 4.0, 3.8, 3.1, 3.1, 2.3, 3.1],
-        "resistances": [10, 10, 22, 22, 9, 9, 8],
+        "defenses": {
+            "physical": 4.4,
+            "slash": 4.0,
+            "strike": 3.1,
+            "pierce": 3.8,
+            "magic": 3.1,
+            "fire": 3.1,
+            "lightning": 2.3,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 10,
+            "poison": 10,
+            "hemorrhage": 22,
+            "frostbite": 22,
+            "sleep": 9,
+            "madness": 9,
+            "deathBlight": 8
+        },
         "poise": 6,
         "weight": 3.8
     },
     "mask-of-confidence": {
         "id": "mask-of-confidence",
         "name": "Mask of Confidence",
-        "stats": [0, 0, 0, 0, 0, 0, 0, 3],
-        "defenses": [2.3, 2.5, 2.3, 2.3, 5.3, 4.8, 4.7, 4.7],
-        "resistances": [24, 24, 11, 10, 39, 39, 35],
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 3
+        },
+        "defenses": {
+            "physical": 2.3,
+            "slash": 2.3,
+            "strike": 2.5,
+            "pierce": 2.3,
+            "magic": 5.3,
+            "fire": 4.8,
+            "lightning": 4.7,
+            "holy": 4.7
+        },
+        "resistances": {
+            "scarletRot": 24,
+            "poison": 24,
+            "hemorrhage": 11,
+            "frostbite": 10,
+            "sleep": 39,
+            "madness": 39,
+            "deathBlight": 35
+        },
         "poise": 5,
         "weight": 3.3
     },
     "messmer-soldier-helm": {
         "id": "messmer-soldier-helm",
         "name": "Messmer Soldier Helm",
-        "defenses": [4.4, 3.6, 4.4, 4.2, 3.1, 3.6, 2.5, 3.1],
-        "resistances": [12, 12, 22, 22, 9, 9, 9],
+        "defenses": {
+            "physical": 4.4,
+            "slash": 4.4,
+            "strike": 3.6,
+            "pierce": 4.2,
+            "magic": 3.1,
+            "fire": 3.6,
+            "lightning": 2.5,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 22,
+            "frostbite": 22,
+            "sleep": 9,
+            "madness": 9,
+            "deathBlight": 9
+        },
         "poise": 7,
         "weight": 4.0
     },
     "messmers-helm": {
         "id": "messmers-helm",
         "name": "Messmer's Helm",
-        "defenses": [3.4, 3.4, 3.1, 3.8, 3.6, 4.4, 4.2, 3.6],
-        "resistances": [26, 26, 18, 18, 24, 24, 26],
+        "defenses": {
+            "physical": 3.4,
+            "slash": 3.1,
+            "strike": 3.4,
+            "pierce": 3.8,
+            "magic": 3.6,
+            "fire": 4.4,
+            "lightning": 4.2,
+            "holy": 3.6
+        },
+        "resistances": {
+            "scarletRot": 26,
+            "poison": 26,
+            "hemorrhage": 18,
+            "frostbite": 18,
+            "sleep": 24,
+            "madness": 24,
+            "deathBlight": 26
+        },
         "poise": 5,
         "weight": 3.6
     },
     "messmers-helm-altered": {
         "id": "messmers-helm-altered",
         "name": "Messmer's Helm (Altered)",
-        "defenses": [3.1, 3.1, 2.8, 3.6, 3.4, 4.2, 4.0, 3.4],
-        "resistances": [24, 24, 16, 16, 23, 23, 24],
+        "defenses": {
+            "physical": 3.1,
+            "slash": 2.8,
+            "strike": 3.1,
+            "pierce": 3.6,
+            "magic": 3.4,
+            "fire": 4.2,
+            "lightning": 4.0,
+            "holy": 3.4
+        },
+        "resistances": {
+            "scarletRot": 24,
+            "poison": 24,
+            "hemorrhage": 16,
+            "frostbite": 16,
+            "sleep": 23,
+            "madness": 23,
+            "deathBlight": 24
+        },
         "poise": 5,
         "weight": 3.3
     },
     "mushroom-crown": {
         "id": "mushroom-crown",
         "name": "Mushroom Crown",
-        "defenses": [5.8, 5.9, 6.8, 7.0, 4.8, 3.1, 4.6, 4.8],
-        "resistances": [46, 46, 45, 45, 18, 18, 22],
+        "defenses": {
+            "physical": 5.8,
+            "slash": 6.8,
+            "strike": 5.9,
+            "pierce": 7.0,
+            "magic": 4.8,
+            "fire": 3.1,
+            "lightning": 4.6,
+            "holy": 4.8
+        },
+        "resistances": {
+            "scarletRot": 46,
+            "poison": 46,
+            "hemorrhage": 45,
+            "frostbite": 45,
+            "sleep": 18,
+            "madness": 18,
+            "deathBlight": 22
+        },
         "poise": 10,
         "weight": 9.1
     },
     "mushroom-head": {
         "id": "mushroom-head",
         "name": "Mushroom Head",
-        "defenses": [2.1, 2.5, 0.9, 1.8, 4.7, 1.8, 4.6, 4.6],
-        "resistances": [44, 44, 10, 10, 39, 39, 33],
+        "defenses": {
+            "physical": 2.1,
+            "slash": 0.9,
+            "strike": 2.5,
+            "pierce": 1.8,
+            "magic": 4.7,
+            "fire": 1.8,
+            "lightning": 4.6,
+            "holy": 4.6
+        },
+        "resistances": {
+            "scarletRot": 44,
+            "poison": 44,
+            "hemorrhage": 10,
+            "frostbite": 10,
+            "sleep": 39,
+            "madness": 39,
+            "deathBlight": 33
+        },
         "poise": 2,
         "weight": 2.2
     },
     "navy-hood": {
         "id": "navy-hood",
         "name": "Navy Hood",
-        "stats": [0, 1, 0, 0, 0, 0, 0, 0],
-        "defenses": [1.4, 2.1, 1.8, 0.9, 4.6, 4.7, 4.4, 4.5],
-        "resistances": [20, 20, 10, 10, 29, 29, 27],
+        "stats": {
+            "vigor": 0,
+            "mind": 1,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "defenses": {
+            "physical": 1.4,
+            "slash": 1.8,
+            "strike": 2.1,
+            "pierce": 0.9,
+            "magic": 4.6,
+            "fire": 4.7,
+            "lightning": 4.4,
+            "holy": 4.5
+        },
+        "resistances": {
+            "scarletRot": 20,
+            "poison": 20,
+            "hemorrhage": 10,
+            "frostbite": 10,
+            "sleep": 29,
+            "madness": 29,
+            "deathBlight": 27
+        },
         "poise": 3,
         "weight": 1.7
     },
     "night-maiden-twin-crown": {
         "id": "night-maiden-twin-crown",
         "name": "Night Maiden Twin Crown",
-        "defenses": [2.5, 3.1, 2.5, 3.4, 4.2, 3.8, 4.0, 4.2],
-        "resistances": [26, 26, 15, 15, 22, 22, 22],
+        "defenses": {
+            "physical": 2.5,
+            "slash": 2.5,
+            "strike": 3.1,
+            "pierce": 3.4,
+            "magic": 4.2,
+            "fire": 3.8,
+            "lightning": 4.0,
+            "holy": 4.2
+        },
+        "resistances": {
+            "scarletRot": 26,
+            "poison": 26,
+            "hemorrhage": 15,
+            "frostbite": 15,
+            "sleep": 22,
+            "madness": 22,
+            "deathBlight": 22
+        },
         "poise": 5,
         "weight": 3.3
     },
     "nights-cavalry-helm": {
         "id": "nights-cavalry-helm",
         "name": "Night's Cavalry Helm",
-        "defenses": [5.0, 4.6, 5.0, 4.8, 3.8, 4.5, 3.8, 4.5],
-        "resistances": [16, 16, 24, 24, 10, 10, 10],
+        "defenses": {
+            "physical": 5.0,
+            "slash": 5.0,
+            "strike": 4.6,
+            "pierce": 4.8,
+            "magic": 3.8,
+            "fire": 4.5,
+            "lightning": 3.8,
+            "holy": 4.5
+        },
+        "resistances": {
+            "scarletRot": 16,
+            "poison": 16,
+            "hemorrhage": 24,
+            "frostbite": 24,
+            "sleep": 10,
+            "madness": 10,
+            "deathBlight": 10
+        },
         "poise": 8,
         "weight": 5.5
     },
     "nights-cavalry-helm-altered": {
         "id": "nights-cavalry-helm-altered",
         "name": "Night's Cavalry Helm (Altered)",
-        "defenses": [4.8, 4.4, 4.8, 4.4, 3.6, 4.4, 3.6, 4.4],
-        "resistances": [13, 13, 21, 21, 9, 9, 9],
+        "defenses": {
+            "physical": 4.8,
+            "slash": 4.8,
+            "strike": 4.4,
+            "pierce": 4.4,
+            "magic": 3.6,
+            "fire": 4.4,
+            "lightning": 3.6,
+            "holy": 4.4
+        },
+        "resistances": {
+            "scarletRot": 13,
+            "poison": 13,
+            "hemorrhage": 21,
+            "frostbite": 21,
+            "sleep": 9,
+            "madness": 9,
+            "deathBlight": 9
+        },
         "poise": 8,
         "weight": 5.1
     },
     "nomadic-merchants-chapeau": {
         "id": "nomadic-merchants-chapeau",
         "name": "Nomadic Merchant's Chapeau",
-        "defenses": [2.8, 3.1, 2.5, 2.3, 3.4, 3.4, 3.4, 3.1],
-        "resistances": [24, 24, 14, 14, 31, 31, 20],
+        "defenses": {
+            "physical": 2.8,
+            "slash": 2.5,
+            "strike": 3.1,
+            "pierce": 2.3,
+            "magic": 3.4,
+            "fire": 3.4,
+            "lightning": 3.4,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 24,
+            "poison": 24,
+            "hemorrhage": 14,
+            "frostbite": 14,
+            "sleep": 31,
+            "madness": 31,
+            "deathBlight": 20
+        },
         "poise": 4,
         "weight": 3.0
     },
     "nox-mirrorhelm": {
         "id": "nox-mirrorhelm",
         "name": "Nox Mirrorhelm",
-        "defenses": [4.0, 3.4, 5.5, 5.0, 6.7, 5.3, 4.2, 5.3],
-        "resistances": [29, 29, 33, 33, 26, 26, 42],
+        "defenses": {
+            "physical": 4.0,
+            "slash": 5.5,
+            "strike": 3.4,
+            "pierce": 5.0,
+            "magic": 6.7,
+            "fire": 5.3,
+            "lightning": 4.2,
+            "holy": 5.3
+        },
+        "resistances": {
+            "scarletRot": 29,
+            "poison": 29,
+            "hemorrhage": 33,
+            "frostbite": 33,
+            "sleep": 26,
+            "madness": 26,
+            "deathBlight": 42
+        },
         "poise": 6,
         "weight": 7.5
     },
     "nox-monk-hood": {
         "id": "nox-monk-hood",
         "name": "Nox Monk Hood",
-        "defenses": [2.8, 3.1, 2.8, 2.5, 4.0, 3.8, 3.8, 3.1],
-        "resistances": [24, 24, 15, 15, 18, 18, 18],
+        "defenses": {
+            "physical": 2.8,
+            "slash": 2.8,
+            "strike": 3.1,
+            "pierce": 2.5,
+            "magic": 4.0,
+            "fire": 3.8,
+            "lightning": 3.8,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 24,
+            "poison": 24,
+            "hemorrhage": 15,
+            "frostbite": 15,
+            "sleep": 18,
+            "madness": 18,
+            "deathBlight": 18
+        },
         "poise": 4,
         "weight": 3.0
     },
     "nox-monk-hood-altered": {
         "id": "nox-monk-hood-altered",
         "name": "Nox Monk Hood (Altered)",
-        "defenses": [2.5, 2.8, 2.5, 2.3, 3.8, 3.6, 3.6, 2.8],
-        "resistances": [21, 21, 12, 12, 14, 14, 14],
+        "defenses": {
+            "physical": 2.5,
+            "slash": 2.5,
+            "strike": 2.8,
+            "pierce": 2.3,
+            "magic": 3.8,
+            "fire": 3.6,
+            "lightning": 3.6,
+            "holy": 2.8
+        },
+        "resistances": {
+            "scarletRot": 21,
+            "poison": 21,
+            "hemorrhage": 12,
+            "frostbite": 12,
+            "sleep": 14,
+            "madness": 14,
+            "deathBlight": 14
+        },
         "poise": 3,
         "weight": 2.7
     },
     "nox-swordstress-crown": {
         "id": "nox-swordstress-crown",
         "name": "Nox Swordstress Crown",
-        "defenses": [2.8, 3.4, 2.8, 3.1, 4.4, 3.6, 4.2, 3.8],
-        "resistances": [24, 24, 15, 15, 22, 22, 22],
+        "defenses": {
+            "physical": 2.8,
+            "slash": 2.8,
+            "strike": 3.4,
+            "pierce": 3.1,
+            "magic": 4.4,
+            "fire": 3.6,
+            "lightning": 4.2,
+            "holy": 3.8
+        },
+        "resistances": {
+            "scarletRot": 24,
+            "poison": 24,
+            "hemorrhage": 15,
+            "frostbite": 15,
+            "sleep": 22,
+            "madness": 22,
+            "deathBlight": 22
+        },
         "poise": 5,
         "weight": 3.3
     },
     "nox-swordstress-crown-altered": {
         "id": "nox-swordstress-crown-altered",
         "name": "Nox Swordstress Crown (Altered)",
-        "defenses": [2.3, 2.8, 2.3, 2.5, 4.0, 3.1, 3.8, 3.4],
-        "resistances": [21, 21, 11, 11, 17, 17, 17],
+        "defenses": {
+            "physical": 2.3,
+            "slash": 2.3,
+            "strike": 2.8,
+            "pierce": 2.5,
+            "magic": 4.0,
+            "fire": 3.1,
+            "lightning": 3.8,
+            "holy": 3.4
+        },
+        "resistances": {
+            "scarletRot": 21,
+            "poison": 21,
+            "hemorrhage": 11,
+            "frostbite": 11,
+            "sleep": 17,
+            "madness": 17,
+            "deathBlight": 17
+        },
         "poise": 2,
         "weight": 2.7
     },
     "oathseeker-knight-helm": {
         "id": "oathseeker-knight-helm",
         "name": "Oathseeker Knight Helm",
-        "defenses": [4.4, 3.8, 4.2, 4.0, 3.6, 3.4, 2.3, 3.4],
-        "resistances": [12, 12, 21, 21, 10, 10, 9],
+        "defenses": {
+            "physical": 4.4,
+            "slash": 4.2,
+            "strike": 3.8,
+            "pierce": 4.0,
+            "magic": 3.6,
+            "fire": 3.4,
+            "lightning": 2.3,
+            "holy": 3.4
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 21,
+            "frostbite": 21,
+            "sleep": 10,
+            "madness": 10,
+            "deathBlight": 9
+        },
         "poise": 7,
         "weight": 4.4
     },
     "octopus-head": {
         "id": "octopus-head",
         "name": "Octopus Head",
-        "defenses": [3.4, 5.4, 2.8, 2.8, 4.0, 3.6, 4.0, 3.8],
-        "resistances": [31, 31, 14, 14, 23, 23, 23],
+        "defenses": {
+            "physical": 3.4,
+            "slash": 2.8,
+            "strike": 5.4,
+            "pierce": 2.8,
+            "magic": 4.0,
+            "fire": 3.6,
+            "lightning": 4.0,
+            "holy": 3.8
+        },
+        "resistances": {
+            "scarletRot": 31,
+            "poison": 31,
+            "hemorrhage": 14,
+            "frostbite": 14,
+            "sleep": 23,
+            "madness": 23,
+            "deathBlight": 23
+        },
         "poise": 5,
         "weight": 3.6
     },
     "okina-mask": {
         "id": "okina-mask",
         "name": "Okina Mask",
-        "stats": [0, 0, 0, 0, 3, 0, 0, 0],
-        "defenses": [3.4, 3.6, 4.0, 3.1, 3.8, 3.8, 4.2, 3.6],
-        "resistances": [29, 29, 18, 18, 23, 23, 22],
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 3,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "defenses": {
+            "physical": 3.4,
+            "slash": 4.0,
+            "strike": 3.6,
+            "pierce": 3.1,
+            "magic": 3.8,
+            "fire": 3.8,
+            "lightning": 4.2,
+            "holy": 3.6
+        },
+        "resistances": {
+            "scarletRot": 29,
+            "poison": 29,
+            "hemorrhage": 18,
+            "frostbite": 18,
+            "sleep": 23,
+            "madness": 23,
+            "deathBlight": 22
+        },
         "poise": 6,
         "weight": 3.6
     },
     "old-aristocrat-cowl": {
         "id": "old-aristocrat-cowl",
         "name": "Old Aristocrat Cowl",
-        "defenses": [2.5, 2.5, 2.3, 2.5, 3.4, 3.6, 3.4, 2.5],
-        "resistances": [18, 18, 11, 11, 15, 15, 16],
+        "defenses": {
+            "physical": 2.5,
+            "slash": 2.3,
+            "strike": 2.5,
+            "pierce": 2.5,
+            "magic": 3.4,
+            "fire": 3.6,
+            "lightning": 3.4,
+            "holy": 2.5
+        },
+        "resistances": {
+            "scarletRot": 18,
+            "poison": 18,
+            "hemorrhage": 11,
+            "frostbite": 11,
+            "sleep": 15,
+            "madness": 15,
+            "deathBlight": 16
+        },
         "poise": 3,
         "weight": 2.2
     },
     "olivinus-glintstone-crown": {
         "id": "olivinus-glintstone-crown",
         "name": "Olivinus Glintstone Crown",
-        "stats": [0, 0, 0, 0, 0, 3, 0, 0],
-        "defenses": [4.4, 3.1, 5.2, 4.8, 4.4, 4.5, 3.4, 3.8],
-        "resistances": [16, 16, 26, 26, 10, 10, 10],
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 3,
+            "faith": 0,
+            "arcane": 0
+        },
+        "defenses": {
+            "physical": 4.4,
+            "slash": 5.2,
+            "strike": 3.1,
+            "pierce": 4.8,
+            "magic": 4.4,
+            "fire": 4.5,
+            "lightning": 3.4,
+            "holy": 3.8
+        },
+        "resistances": {
+            "scarletRot": 16,
+            "poison": 16,
+            "hemorrhage": 26,
+            "frostbite": 26,
+            "sleep": 10,
+            "madness": 10,
+            "deathBlight": 10
+        },
         "poise": 6,
         "weight": 5.1
     },
     "omen-helm": {
         "id": "omen-helm",
         "name": "Omen Helm",
-        "defenses": [6.7, 5.4, 6.8, 6.8, 4.6, 5.2, 5.3, 4.9],
-        "resistances": [29, 29, 27, 27, 24, 24, 33],
+        "defenses": {
+            "physical": 6.7,
+            "slash": 6.8,
+            "strike": 5.4,
+            "pierce": 6.8,
+            "magic": 4.6,
+            "fire": 5.2,
+            "lightning": 5.3,
+            "holy": 4.9
+        },
+        "resistances": {
+            "scarletRot": 29,
+            "poison": 29,
+            "hemorrhage": 27,
+            "frostbite": 27,
+            "sleep": 24,
+            "madness": 24,
+            "deathBlight": 33
+        },
         "poise": 14,
         "weight": 9.9
     },
     "omensmirk-mask": {
         "id": "omensmirk-mask",
         "name": "Omensmirk Mask",
-        "stats": [0, 0, 0, 2, 0, 0, 0, 0],
-        "defenses": [3.1, 2.8, 2.5, 2.5, 3.1, 3.4, 4.0, 3.6],
-        "resistances": [29, 29, 12, 12, 20, 20, 20],
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 2,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "defenses": {
+            "physical": 3.1,
+            "slash": 2.5,
+            "strike": 2.8,
+            "pierce": 2.5,
+            "magic": 3.1,
+            "fire": 3.4,
+            "lightning": 4.0,
+            "holy": 3.6
+        },
+        "resistances": {
+            "scarletRot": 29,
+            "poison": 29,
+            "hemorrhage": 12,
+            "frostbite": 12,
+            "sleep": 20,
+            "madness": 20,
+            "deathBlight": 20
+        },
         "poise": 6,
         "weight": 3.0
     },
     "page-hood": {
         "id": "page-hood",
         "name": "Page Hood",
-        "defenses": [1.8, 1.4, 0.9, 0.9, 4.4, 4.2, 4.5, 4.5],
-        "resistances": [15, 15, 8, 8, 29, 29, 29],
+        "defenses": {
+            "physical": 1.8,
+            "slash": 0.9,
+            "strike": 1.4,
+            "pierce": 0.9,
+            "magic": 4.4,
+            "fire": 4.2,
+            "lightning": 4.5,
+            "holy": 4.5
+        },
+        "resistances": {
+            "scarletRot": 15,
+            "poison": 15,
+            "hemorrhage": 8,
+            "frostbite": 8,
+            "sleep": 29,
+            "madness": 29,
+            "deathBlight": 29
+        },
         "poise": 2,
         "weight": 1.4
     },
     "pelt-of-ralva": {
         "id": "pelt-of-ralva",
         "name": "Pelt of Ralva",
-        "defenses": [3.1, 3.4, 3.1, 3.1, 4.2, 4.0, 4.5, 4.0],
-        "resistances": [27, 27, 23, 23, 22, 22, 22],
+        "defenses": {
+            "physical": 3.1,
+            "slash": 3.1,
+            "strike": 3.4,
+            "pierce": 3.1,
+            "magic": 4.2,
+            "fire": 4.0,
+            "lightning": 4.5,
+            "holy": 4.0
+        },
+        "resistances": {
+            "scarletRot": 27,
+            "poison": 27,
+            "hemorrhage": 23,
+            "frostbite": 23,
+            "sleep": 22,
+            "madness": 22,
+            "deathBlight": 22
+        },
         "poise": 5,
         "weight": 3.6
     },
     "perfumer-hood": {
         "id": "perfumer-hood",
         "name": "Perfumer Hood",
-        "defenses": [1.4, 2.1, 1.8, 1.4, 4.6, 4.2, 4.4, 4.6],
-        "resistances": [26, 26, 8, 8, 27, 27, 29],
+        "defenses": {
+            "physical": 1.4,
+            "slash": 1.8,
+            "strike": 2.1,
+            "pierce": 1.4,
+            "magic": 4.6,
+            "fire": 4.2,
+            "lightning": 4.4,
+            "holy": 4.6
+        },
+        "resistances": {
+            "scarletRot": 26,
+            "poison": 26,
+            "hemorrhage": 8,
+            "frostbite": 8,
+            "sleep": 27,
+            "madness": 27,
+            "deathBlight": 29
+        },
         "poise": 3,
         "weight": 1.7
     },
     "preceptors-big-hat": {
         "id": "preceptors-big-hat",
         "name": "Preceptor's Big Hat",
-        "defenses": [2.5, 2.8, 2.5, 2.5, 5.5, 4.9, 4.8, 4.8],
-        "resistances": [26, 26, 12, 12, 44, 44, 42],
+        "stats": {
+            "vigor": 0,
+            "mind": 3,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "defenses": {
+            "physical": 2.5,
+            "slash": 2.5,
+            "strike": 2.8,
+            "pierce": 2.5,
+            "magic": 5.5,
+            "fire": 4.9,
+            "lightning": 4.8,
+            "holy": 4.8
+        },
+        "resistances": {
+            "scarletRot": 26,
+            "poison": 26,
+            "hemorrhage": 12,
+            "frostbite": 12,
+            "sleep": 44,
+            "madness": 44,
+            "deathBlight": 42
+        },
         "poise": 5,
         "weight": 3.6
     },
     "prisoner-iron-mask": {
         "id": "prisoner-iron-mask",
         "name": "Prisoner Iron Mask",
-        "defenses": [6.8, 5.9, 7.0, 6.8, 4.6, 4.9, 4.5, 4.8],
-        "resistances": [29, 29, 44, 44, 35, 35, 20],
+        "defenses": {
+            "physical": 6.8,
+            "slash": 7.0,
+            "strike": 5.9,
+            "pierce": 6.8,
+            "magic": 4.6,
+            "fire": 4.9,
+            "lightning": 4.5,
+            "holy": 4.8
+        },
+        "resistances": {
+            "scarletRot": 29,
+            "poison": 29,
+            "hemorrhage": 44,
+            "frostbite": 44,
+            "sleep": 35,
+            "madness": 35,
+            "deathBlight": 20
+        },
         "poise": 12,
         "weight": 8.6
     },
     "prophet-blindfold": {
         "id": "prophet-blindfold",
         "name": "Prophet Blindfold",
-        "defenses": [0.2, 0.9, 0.9, 0.2, 4.5, 4.2, 4.0, 4.5],
-        "resistances": [14, 14, 5, 5, 27, 27, 27],
+        "defenses": {
+            "physical": 0.2,
+            "slash": 0.9,
+            "strike": 0.9,
+            "pierce": 0.2,
+            "magic": 4.5,
+            "fire": 4.2,
+            "lightning": 4.0,
+            "holy": 4.5
+        },
+        "resistances": {
+            "scarletRot": 14,
+            "poison": 14,
+            "hemorrhage": 5,
+            "frostbite": 5,
+            "sleep": 27,
+            "madness": 27,
+            "deathBlight": 27
+        },
         "poise": 1,
         "weight": 1.0
     },
     "pumpkin-helm": {
         "id": "pumpkin-helm",
         "name": "Pumpkin Helm",
-        "defenses": [7.0, 5.9, 6.7, 6.7, 4.6, 4.7, 5.2, 4.5],
-        "resistances": [27, 27, 42, 42, 44, 44, 18],
+        "defenses": {
+            "physical": 7.0,
+            "slash": 6.7,
+            "strike": 5.9,
+            "pierce": 6.7,
+            "magic": 4.6,
+            "fire": 4.7,
+            "lightning": 5.2,
+            "holy": 4.5
+        },
+        "resistances": {
+            "scarletRot": 27,
+            "poison": 27,
+            "hemorrhage": 42,
+            "frostbite": 42,
+            "sleep": 44,
+            "madness": 44,
+            "deathBlight": 18
+        },
         "poise": 11,
         "weight": 12.3
     },
     "queens-crescent-crown": {
         "id": "queens-crescent-crown",
         "name": "Queen's Crescent Crown",
-        "stats": [0, 0, 0, 0, 0, 3, 0, 0],
-        "defenses": [2.1, 1.8, 1.8, 1.4, 4.9, 4.5, 4.6, 4.7],
-        "resistances": [18, 18, 11, 11, 31, 31, 35],
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 3,
+            "faith": 0,
+            "arcane": 0
+        },
+        "defenses": {
+            "physical": 2.1,
+            "slash": 1.8,
+            "strike": 1.8,
+            "pierce": 1.4,
+            "magic": 4.9,
+            "fire": 4.5,
+            "lightning": 4.6,
+            "holy": 4.7
+        },
+        "resistances": {
+            "scarletRot": 18,
+            "poison": 18,
+            "hemorrhage": 11,
+            "frostbite": 11,
+            "sleep": 31,
+            "madness": 31,
+            "deathBlight": 35
+        },
         "poise": 3,
         "weight": 2.2
     },
     "radahn-soldier-helm": {
         "id": "radahn-soldier-helm",
         "name": "Radahn Soldier Helm",
-        "defenses": [4.6, 3.4, 4.2, 4.0, 3.1, 3.8, 2.5, 3.1],
-        "resistances": [12, 12, 20, 20, 9, 9, 10],
+        "defenses": {
+            "physical": 4.6,
+            "slash": 4.2,
+            "strike": 3.4,
+            "pierce": 4.0,
+            "magic": 3.1,
+            "fire": 3.8,
+            "lightning": 2.5,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 20,
+            "frostbite": 20,
+            "sleep": 9,
+            "madness": 9,
+            "deathBlight": 10
+        },
         "poise": 7,
         "weight": 4.0
     },
     "radahns-redmane-helm": {
         "id": "radahns-redmane-helm",
         "name": "Radahn's Redmane Helm",
-        "defenses": [6.8, 5.4, 6.7, 6.3, 4.8, 5.0, 4.5, 4.8],
-        "resistances": [26, 26, 42, 42, 18, 18, 16],
+        "defenses": {
+            "physical": 6.8,
+            "slash": 6.7,
+            "strike": 5.4,
+            "pierce": 6.3,
+            "magic": 4.8,
+            "fire": 5.0,
+            "lightning": 4.5,
+            "holy": 4.8
+        },
+        "resistances": {
+            "scarletRot": 26,
+            "poison": 26,
+            "hemorrhage": 42,
+            "frostbite": 42,
+            "sleep": 18,
+            "madness": 18,
+            "deathBlight": 16
+        },
         "poise": 11,
         "weight": 7.5
     },
     "radiant-gold-mask": {
         "id": "radiant-gold-mask",
         "name": "Radiant Gold Mask",
-        "defenses": [2.3, 2.1, 2.1, 1.4, 4.6, 4.5, 4.6, 4.8],
-        "resistances": [22, 22, 9, 9, 33, 33, 33],
+        "defenses": {
+            "physical": 2.3,
+            "slash": 2.1,
+            "strike": 2.1,
+            "pierce": 1.4,
+            "magic": 4.6,
+            "fire": 4.5,
+            "lightning": 4.6,
+            "holy": 4.8
+        },
+        "resistances": {
+            "scarletRot": 22,
+            "poison": 22,
+            "hemorrhage": 9,
+            "frostbite": 9,
+            "sleep": 33,
+            "madness": 33,
+            "deathBlight": 33
+        },
         "poise": 3,
         "weight": 2.2
     },
     "raging-wolf-helm": {
         "id": "raging-wolf-helm",
         "name": "Raging Wolf Helm",
-        "defenses": [4.7, 4.1, 4.7, 4.5, 3.5, 3.9, 2.4, 3.3],
-        "resistances": [14, 14, 23, 23, 8, 8, 8],
+        "defenses": {
+            "physical": 4.7,
+            "slash": 4.7,
+            "strike": 4.1,
+            "pierce": 4.5,
+            "magic": 3.5,
+            "fire": 3.9,
+            "lightning": 2.4,
+            "holy": 3.3
+        },
+        "resistances": {
+            "scarletRot": 14,
+            "poison": 14,
+            "hemorrhage": 23,
+            "frostbite": 23,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 8
+        },
         "poise": 7,
         "weight": 4.4
     },
     "rakshasa-helm": {
         "id": "rakshasa-helm",
         "name": "Rakshasa Helm",
-        "defenses": [4.6, 4.2, 5.0, 4.8, 4.0, 4.4, 3.8, 4.0],
-        "resistances": [15, 15, 26, 26, 12, 12, 12],
+        "defenses": {
+            "physical": 4.6,
+            "slash": 5.0,
+            "strike": 4.2,
+            "pierce": 4.8,
+            "magic": 4.0,
+            "fire": 4.4,
+            "lightning": 3.8,
+            "holy": 4.0
+        },
+        "resistances": {
+            "scarletRot": 15,
+            "poison": 15,
+            "hemorrhage": 26,
+            "frostbite": 26,
+            "sleep": 12,
+            "madness": 12,
+            "deathBlight": 12
+        },
         "poise": 9,
         "weight": 5.5
     },
     "raya-lucarian-helm": {
         "id": "raya-lucarian-helm",
         "name": "Raya Lucarian Helm",
-        "defenses": [4.4, 3.4, 4.6, 4.4, 3.4, 3.6, 2.3, 2.8],
-        "resistances": [12, 12, 22, 22, 9, 9, 9],
+        "defenses": {
+            "physical": 4.4,
+            "slash": 4.6,
+            "strike": 3.4,
+            "pierce": 4.4,
+            "magic": 3.4,
+            "fire": 3.6,
+            "lightning": 2.3,
+            "holy": 2.8
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 22,
+            "frostbite": 22,
+            "sleep": 9,
+            "madness": 9,
+            "deathBlight": 9
+        },
         "poise": 7,
         "weight": 4.0
     },
     "redmane-knight-helm": {
         "id": "redmane-knight-helm",
         "name": "Redmane Knight Helm",
-        "defenses": [5.0, 4.0, 4.8, 4.4, 3.8, 4.4, 3.4, 3.8],
-        "resistances": [15, 15, 23, 23, 10, 10, 11],
+        "defenses": {
+            "physical": 5.0,
+            "slash": 4.8,
+            "strike": 4.0,
+            "pierce": 4.4,
+            "magic": 3.8,
+            "fire": 4.4,
+            "lightning": 3.4,
+            "holy": 3.8
+        },
+        "resistances": {
+            "scarletRot": 15,
+            "poison": 15,
+            "hemorrhage": 23,
+            "frostbite": 23,
+            "sleep": 10,
+            "madness": 10,
+            "deathBlight": 11
+        },
         "poise": 8,
         "weight": 5.1
     },
     "rellanas-helm": {
         "id": "rellanas-helm",
         "name": "Rellana's Helm",
-        "defenses": [4.8, 4.2, 5.0, 4.6, 4.5, 4.2, 3.4, 3.8],
-        "resistances": [15, 15, 24, 24, 10, 10, 10],
+        "defenses": {
+            "physical": 4.8,
+            "slash": 5.0,
+            "strike": 4.2,
+            "pierce": 4.6,
+            "magic": 4.5,
+            "fire": 4.2,
+            "lightning": 3.4,
+            "holy": 3.8
+        },
+        "resistances": {
+            "scarletRot": 15,
+            "poison": 15,
+            "hemorrhage": 24,
+            "frostbite": 24,
+            "sleep": 10,
+            "madness": 10,
+            "deathBlight": 10
+        },
         "poise": 8,
         "weight": 5.1
     },
     "rotten-duelist-helm": {
         "id": "rotten-duelist-helm",
         "name": "Rotten Duelist Helm",
-        "defenses": [5.5, 4.6, 5.8, 5.5, 4.5, 4.6, 4.4, 4.5],
-        "resistances": [31, 31, 31, 31, 14, 14, 14],
+        "defenses": {
+            "physical": 5.5,
+            "slash": 5.8,
+            "strike": 4.6,
+            "pierce": 5.5,
+            "magic": 4.5,
+            "fire": 4.6,
+            "lightning": 4.4,
+            "holy": 4.5
+        },
+        "resistances": {
+            "scarletRot": 31,
+            "poison": 31,
+            "hemorrhage": 31,
+            "frostbite": 31,
+            "sleep": 14,
+            "madness": 14,
+            "deathBlight": 14
+        },
         "poise": 9,
         "weight": 6.4
     },
     "royal-knight-helm": {
         "id": "royal-knight-helm",
         "name": "Royal Knight Helm",
-        "defenses": [5.8, 5.2, 6.3, 6.1, 5.0, 4.7, 4.4, 4.6],
-        "resistances": [22, 22, 29, 29, 15, 15, 15],
+        "defenses": {
+            "physical": 5.8,
+            "slash": 6.3,
+            "strike": 5.2,
+            "pierce": 6.1,
+            "magic": 5.0,
+            "fire": 4.7,
+            "lightning": 4.4,
+            "holy": 4.6
+        },
+        "resistances": {
+            "scarletRot": 22,
+            "poison": 22,
+            "hemorrhage": 29,
+            "frostbite": 29,
+            "sleep": 15,
+            "madness": 15,
+            "deathBlight": 15
+        },
         "poise": 9,
         "weight": 6.6
     },
     "royal-remains-helm": {
         "id": "royal-remains-helm",
         "name": "Royal Remains Helm",
-        "defenses": [4.2, 4.0, 4.6, 4.2, 3.4, 3.6, 2.8, 3.1],
-        "resistances": [15, 15, 24, 24, 10, 10, 5],
+        "defenses": {
+            "physical": 4.2,
+            "slash": 4.6,
+            "strike": 4.0,
+            "pierce": 4.2,
+            "magic": 3.4,
+            "fire": 3.6,
+            "lightning": 2.8,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 15,
+            "poison": 15,
+            "hemorrhage": 24,
+            "frostbite": 24,
+            "sleep": 10,
+            "madness": 10,
+            "deathBlight": 5
+        },
         "poise": 7,
         "weight": 4.6
     },
     "rulers-mask": {
         "id": "rulers-mask",
         "name": "Ruler's Mask",
-        "defenses": [1.8, 2.3, 2.3, 1.4, 4.6, 4.4, 4.6, 4.7],
-        "resistances": [20, 20, 10, 10, 33, 33, 33],
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 1,
+            "arcane": 0
+        },
+        "defenses": {
+            "physical": 1.8,
+            "slash": 2.3,
+            "strike": 2.3,
+            "pierce": 1.4,
+            "magic": 4.6,
+            "fire": 4.4,
+            "lightning": 4.6,
+            "holy": 4.7
+        },
+        "resistances": {
+            "scarletRot": 20,
+            "poison": 20,
+            "hemorrhage": 10,
+            "frostbite": 10,
+            "sleep": 33,
+            "madness": 33,
+            "deathBlight": 33
+        },
         "poise": 3,
         "weight": 2.2
     },
     "sacred-crown-helm": {
         "id": "sacred-crown-helm",
         "name": "Sacred Crown Helm",
-        "defenses": [3.4, 3.8, 3.1, 3.6, 3.6, 3.8, 4.2, 4.0],
-        "resistances": [27, 27, 18, 18, 23, 23, 24],
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 1,
+            "arcane": 0
+        },
+        "defenses": {
+            "physical": 3.4,
+            "slash": 3.1,
+            "strike": 3.8,
+            "pierce": 3.6,
+            "magic": 3.6,
+            "fire": 3.8,
+            "lightning": 4.2,
+            "holy": 4.0
+        },
+        "resistances": {
+            "scarletRot": 27,
+            "poison": 27,
+            "hemorrhage": 18,
+            "frostbite": 18,
+            "sleep": 23,
+            "madness": 23,
+            "deathBlight": 24
+        },
         "poise": 5,
         "weight": 3.6
     },
     "sage-hood": {
         "id": "sage-hood",
         "name": "Sage Hood",
-        "defenses": [2.3, 2.1, 2.1, 1.4, 4.8, 4.5, 4.6, 4.8],
-        "resistances": [16, 16, 10, 10, 31, 31, 33],
+        "defenses": {
+            "physical": 2.3,
+            "slash": 2.1,
+            "strike": 2.1,
+            "pierce": 1.4,
+            "magic": 4.8,
+            "fire": 4.5,
+            "lightning": 4.6,
+            "holy": 4.8
+        },
+        "resistances": {
+            "scarletRot": 16,
+            "poison": 16,
+            "hemorrhage": 10,
+            "frostbite": 10,
+            "sleep": 31,
+            "madness": 31,
+            "deathBlight": 33
+        },
         "poise": 3,
         "weight": 2.2
     },
     "salzas-hood": {
         "id": "salzas-hood",
         "name": "Salza's Hood",
-        "defenses": [4.4, 3.6, 4.4, 3.8, 3.1, 4.0, 2.8, 3.1],
-        "resistances": [12, 12, 20, 20, 9, 9, 10],
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 2,
+            "faith": 0,
+            "arcane": 0
+        },
+        "defenses": {
+            "physical": 4.4,
+            "slash": 4.4,
+            "strike": 3.6,
+            "pierce": 3.8,
+            "magic": 3.1,
+            "fire": 4.0,
+            "lightning": 2.8,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 20,
+            "frostbite": 20,
+            "sleep": 9,
+            "madness": 9,
+            "deathBlight": 10
+        },
         "poise": 6,
         "weight": 3.8
     },
     "sanguine-noble-hood": {
         "id": "sanguine-noble-hood",
         "name": "Sanguine Noble Hood",
-        "defenses": [1.4, 0.9, 0.9, 0.9, 4.6, 3.8, 4.5, 4.6],
-        "resistances": [18, 18, 5, 5, 29, 29, 27],
+        "defenses": {
+            "physical": 1.4,
+            "slash": 0.9,
+            "strike": 0.9,
+            "pierce": 0.9,
+            "magic": 4.6,
+            "fire": 3.8,
+            "lightning": 4.5,
+            "holy": 4.6
+        },
+        "resistances": {
+            "scarletRot": 18,
+            "poison": 18,
+            "hemorrhage": 5,
+            "frostbite": 5,
+            "sleep": 29,
+            "madness": 29,
+            "deathBlight": 27
+        },
         "poise": 2,
         "weight": 1.4
     },
     "scaled-helm": {
         "id": "scaled-helm",
         "name": "Scaled Helm",
-        "defenses": [5.8, 5.0, 6.1, 5.8, 4.8, 5.0, 4.6, 4.8],
-        "resistances": [24, 24, 35, 35, 16, 16, 16],
+        "defenses": {
+            "physical": 5.8,
+            "slash": 6.1,
+            "strike": 5.0,
+            "pierce": 5.8,
+            "magic": 4.8,
+            "fire": 5.0,
+            "lightning": 4.6,
+            "holy": 4.8
+        },
+        "resistances": {
+            "scarletRot": 24,
+            "poison": 24,
+            "hemorrhage": 35,
+            "frostbite": 35,
+            "sleep": 16,
+            "madness": 16,
+            "deathBlight": 16
+        },
         "poise": 11,
         "weight": 6.8
     },
     "shadow-militiaman-helm": {
         "id": "shadow-militiaman-helm",
         "name": "Shadow Militiaman Helm",
-        "defenses": [2.5, 3.1, 2.8, 2.8, 3.6, 3.8, 3.8, 3.1],
-        "resistances": [33, 33, 14, 14, 18, 18, 18],
+        "defenses": {
+            "physical": 2.5,
+            "slash": 2.8,
+            "strike": 3.1,
+            "pierce": 2.8,
+            "magic": 3.6,
+            "fire": 3.8,
+            "lightning": 3.8,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 33,
+            "poison": 33,
+            "hemorrhage": 14,
+            "frostbite": 14,
+            "sleep": 18,
+            "madness": 18,
+            "deathBlight": 18
+        },
         "poise": 4,
         "weight": 3.0
     },
     "shining-horned-headband": {
         "id": "shining-horned-headband",
         "name": "Shining Horned Headband",
-        "defenses": [2.5, 2.8, 2.5, 3.6, 3.6, 3.4, 3.6, 3.1],
-        "resistances": [33, 33, 23, 23, 27, 27, 20],
+        "defenses": {
+            "physical": 2.5,
+            "slash": 2.5,
+            "strike": 2.8,
+            "pierce": 3.6,
+            "magic": 3.6,
+            "fire": 3.4,
+            "lightning": 3.6,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 33,
+            "poison": 33,
+            "hemorrhage": 23,
+            "frostbite": 23,
+            "sleep": 27,
+            "madness": 27,
+            "deathBlight": 20
+        },
         "poise": 4,
         "weight": 3.3
     },
     "silver-tear-mask": {
         "id": "silver-tear-mask",
         "name": "Silver Tear Mask",
-        "stats": [0, 0, 0, 0, 0, 0, 0, 8],
-        "defenses": [4.2, 3.6, 3.8, 3.1, 5.5, 5.2, 5.0, 5.3],
-        "resistances": [26, 26, 20, 20, 44, 44, 44],
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 8
+        },
+        "defenses": {
+            "physical": 4.2,
+            "slash": 3.8,
+            "strike": 3.6,
+            "pierce": 3.1,
+            "magic": 5.5,
+            "fire": 5.2,
+            "lightning": 5.0,
+            "holy": 5.3
+        },
+        "resistances": {
+            "scarletRot": 26,
+            "poison": 26,
+            "hemorrhage": 20,
+            "frostbite": 20,
+            "sleep": 44,
+            "madness": 44,
+            "deathBlight": 44
+        },
         "poise": 6,
         "weight": 4.6
     },
     "skeletal-mask": {
         "id": "skeletal-mask",
         "name": "Skeletal Mask",
-        "defenses": [2.5, 2.8, 3.1, 3.1, 3.4, 3.4, 3.6, 3.1],
-        "resistances": [23, 23, 14, 14, 24, 24, 24],
+        "defenses": {
+            "physical": 2.5,
+            "slash": 3.1,
+            "strike": 2.8,
+            "pierce": 3.1,
+            "magic": 3.4,
+            "fire": 3.4,
+            "lightning": 3.6,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 23,
+            "poison": 23,
+            "hemorrhage": 14,
+            "frostbite": 14,
+            "sleep": 24,
+            "madness": 24,
+            "deathBlight": 24
+        },
         "poise": 4,
         "weight": 3.0
     },
     "snow-witch-hat": {
         "id": "snow-witch-hat",
         "name": "Snow Witch Hat",
-        "defenses": [1.8, 2.1, 2.1, 1.4, 4.6, 4.6, 4.6, 4.6],
-        "resistances": [16, 16, 14, 14, 31, 31, 31],
+        "defenses": {
+            "physical": 1.8,
+            "slash": 2.1,
+            "strike": 2.1,
+            "pierce": 1.4,
+            "magic": 4.6,
+            "fire": 4.6,
+            "lightning": 4.6,
+            "holy": 4.6
+        },
+        "resistances": {
+            "scarletRot": 16,
+            "poison": 16,
+            "hemorrhage": 14,
+            "frostbite": 14,
+            "sleep": 31,
+            "madness": 31,
+            "deathBlight": 31
+        },
         "poise": 3,
         "weight": 2.2
     },
     "spellblades-pointed-hat": {
         "id": "spellblades-pointed-hat",
         "name": "Spellblade's Pointed Hat",
-        "defenses": [1.3, 0.8, 1.3, 1.3, 4.5, 3.9, 4.1, 4.5],
-        "resistances": [15, 15, 8, 8, 25, 25, 27],
+        "defenses": {
+            "physical": 1.3,
+            "slash": 1.3,
+            "strike": 0.8,
+            "pierce": 1.3,
+            "magic": 4.5,
+            "fire": 3.9,
+            "lightning": 4.1,
+            "holy": 4.5
+        },
+        "resistances": {
+            "scarletRot": 15,
+            "poison": 15,
+            "hemorrhage": 8,
+            "frostbite": 8,
+            "sleep": 25,
+            "madness": 25,
+            "deathBlight": 27
+        },
         "poise": 2,
         "weight": 1.5
     },
     "st.-trinas-blossom": {
         "id": "st.-trinas-blossom",
         "name": "St. Trina's Blossom",
-        "defenses": [0.9, 0.9, 1.4, -0.8, 4.4, 3.8, 4.4, 4.4],
-        "resistances": [12, 12, 4, 4, 24, 24, 24],
+        "defenses": {
+            "physical": 0.9,
+            "slash": 1.4,
+            "strike": 0.9,
+            "pierce": -0.8,
+            "magic": 4.4,
+            "fire": 3.8,
+            "lightning": 4.4,
+            "holy": 4.4
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 4,
+            "frostbite": 4,
+            "sleep": 24,
+            "madness": 24,
+            "deathBlight": 24
+        },
         "poise": 2,
         "weight": 1.0
     },
     "thiolliers-mask": {
         "id": "thiolliers-mask",
         "name": "Thiollier's Mask",
-        "defenses": [4.4, 3.4, 4.0, 3.8, 2.3, 3.1, 2.3, 3.1],
-        "resistances": [15, 15, 16, 16, 11, 11, 0],
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 3
+        },
+        "defenses": {
+            "physical": 4.4,
+            "slash": 4.0,
+            "strike": 3.4,
+            "pierce": 3.8,
+            "magic": 2.3,
+            "fire": 3.1,
+            "lightning": 2.3,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 15,
+            "poison": 15,
+            "hemorrhage": 16,
+            "frostbite": 16,
+            "sleep": 11,
+            "madness": 11,
+            "deathBlight": 0
+        },
         "poise": 6,
         "weight": 3.8
     },
     "travelers-hat": {
         "id": "travelers-hat",
         "name": "Traveler's Hat",
-        "defenses": [1.8, 1.8, 1.4, 0.9, 4.6, 4.6, 4.4, 4.6],
-        "resistances": [23, 23, 9, 9, 29, 29, 27],
+        "defenses": {
+            "physical": 1.8,
+            "slash": 1.4,
+            "strike": 1.8,
+            "pierce": 0.9,
+            "magic": 4.6,
+            "fire": 4.6,
+            "lightning": 4.4,
+            "holy": 4.6
+        },
+        "resistances": {
+            "scarletRot": 23,
+            "poison": 23,
+            "hemorrhage": 9,
+            "frostbite": 9,
+            "sleep": 29,
+            "madness": 29,
+            "deathBlight": 27
+        },
         "poise": 3,
         "weight": 1.7
     },
     "traveling-maiden-hood": {
         "id": "traveling-maiden-hood",
         "name": "Traveling Maiden Hood",
-        "defenses": [1.4, 1.8, 1.8, 0.9, 4.6, 4.5, 4.6, 4.6],
-        "resistances": [18, 18, 10, 10, 29, 29, 31],
+        "defenses": {
+            "physical": 1.4,
+            "slash": 1.8,
+            "strike": 1.8,
+            "pierce": 0.9,
+            "magic": 4.6,
+            "fire": 4.5,
+            "lightning": 4.6,
+            "holy": 4.6
+        },
+        "resistances": {
+            "scarletRot": 18,
+            "poison": 18,
+            "hemorrhage": 10,
+            "frostbite": 10,
+            "sleep": 29,
+            "madness": 29,
+            "deathBlight": 31
+        },
         "poise": 3,
         "weight": 1.6
     },
     "tree-sentinel-helm": {
         "id": "tree-sentinel-helm",
         "name": "Tree Sentinel Helm",
-        "defenses": [6.8, 5.4, 6.8, 6.3, 4.6, 6.2, 4.5, 5.0],
-        "resistances": [29, 29, 39, 39, 18, 18, 20],
+        "defenses": {
+            "physical": 6.8,
+            "slash": 6.8,
+            "strike": 5.4,
+            "pierce": 6.3,
+            "magic": 4.6,
+            "fire": 6.2,
+            "lightning": 4.5,
+            "holy": 5.0
+        },
+        "resistances": {
+            "scarletRot": 29,
+            "poison": 29,
+            "hemorrhage": 39,
+            "frostbite": 39,
+            "sleep": 18,
+            "madness": 18,
+            "deathBlight": 20
+        },
         "poise": 12,
         "weight": 8.1
     },
     "twinned-helm": {
         "id": "twinned-helm",
         "name": "Twinned Helm",
-        "defenses": [4.8, 4.4, 5.2, 4.2, 4.0, 4.0, 3.1, 3.6],
-        "resistances": [14, 14, 23, 23, 9, 9, 23],
+        "defenses": {
+            "physical": 4.8,
+            "slash": 5.2,
+            "strike": 4.4,
+            "pierce": 4.2,
+            "magic": 4.0,
+            "fire": 4.0,
+            "lightning": 3.1,
+            "holy": 3.6
+        },
+        "resistances": {
+            "scarletRot": 14,
+            "poison": 14,
+            "hemorrhage": 23,
+            "frostbite": 23,
+            "sleep": 9,
+            "madness": 9,
+            "deathBlight": 23
+        },
         "poise": 7,
         "weight": 5.1
     },
     "twinsage-glintstone-crown": {
         "id": "twinsage-glintstone-crown",
         "name": "Twinsage Glintstone Crown",
-        "stats": [0, 0, 0, 0, 0, 6, 0, 0],
-        "defenses": [4.4, 3.1, 5.2, 4.8, 4.4, 4.5, 3.4, 3.8],
-        "resistances": [16, 16, 26, 26, 10, 10, 10],
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 6,
+            "faith": 0,
+            "arcane": 0
+        },
+        "defenses": {
+            "physical": 4.4,
+            "slash": 5.2,
+            "strike": 3.1,
+            "pierce": 4.8,
+            "magic": 4.4,
+            "fire": 4.5,
+            "lightning": 3.4,
+            "holy": 3.8
+        },
+        "resistances": {
+            "scarletRot": 16,
+            "poison": 16,
+            "hemorrhage": 26,
+            "frostbite": 26,
+            "sleep": 10,
+            "madness": 10,
+            "deathBlight": 10
+        },
         "poise": 6,
         "weight": 5.1
     },
     "vagabond-knight-helm": {
         "id": "vagabond-knight-helm",
         "name": "Vagabond Knight Helm",
-        "defenses": [4.6, 3.6, 4.2, 4.0, 3.1, 3.6, 2.8, 2.8],
-        "resistances": [14, 14, 23, 23, 9, 9, 9],
+        "defenses": {
+            "physical": 4.6,
+            "slash": 4.2,
+            "strike": 3.6,
+            "pierce": 4.0,
+            "magic": 3.1,
+            "fire": 3.6,
+            "lightning": 2.8,
+            "holy": 2.8
+        },
+        "resistances": {
+            "scarletRot": 14,
+            "poison": 14,
+            "hemorrhage": 23,
+            "frostbite": 23,
+            "sleep": 9,
+            "madness": 9,
+            "deathBlight": 9
+        },
         "poise": 7,
         "weight": 4.0
     },
     "verdigris-helm": {
         "id": "verdigris-helm",
         "name": "Verdigris Helm",
-        "defenses": [7.5, 6.4, 7.2, 6.8, 4.8, 4.7, 5.2, 4.7],
-        "resistances": [39, 39, 46, 46, 15, 15, 22],
+        "defenses": {
+            "physical": 7.5,
+            "slash": 7.2,
+            "strike": 6.4,
+            "pierce": 6.8,
+            "magic": 4.8,
+            "fire": 4.7,
+            "lightning": 5.2,
+            "holy": 4.7
+        },
+        "resistances": {
+            "scarletRot": 39,
+            "poison": 39,
+            "hemorrhage": 46,
+            "frostbite": 46,
+            "sleep": 15,
+            "madness": 15,
+            "deathBlight": 22
+        },
         "poise": 15,
         "weight": 11.1
     },
     "veterans-helm": {
         "id": "veterans-helm",
         "name": "Veteran's Helm",
-        "defenses": [6.8, 6.1, 6.8, 6.3, 4.8, 5.0, 4.6, 4.7],
-        "resistances": [27, 27, 39, 39, 20, 20, 20],
+        "defenses": {
+            "physical": 6.8,
+            "slash": 6.8,
+            "strike": 6.1,
+            "pierce": 6.3,
+            "magic": 4.8,
+            "fire": 5.0,
+            "lightning": 4.6,
+            "holy": 4.7
+        },
+        "resistances": {
+            "scarletRot": 27,
+            "poison": 27,
+            "hemorrhage": 39,
+            "frostbite": 39,
+            "sleep": 20,
+            "madness": 20,
+            "deathBlight": 20
+        },
         "poise": 12,
         "weight": 8.1
     },
     "vulgar-militia-helm": {
         "id": "vulgar-militia-helm",
         "name": "Vulgar Militia Helm",
-        "defenses": [3.4, 3.8, 3.6, 3.1, 3.8, 3.8, 4.0, 3.8],
-        "resistances": [31, 31, 16, 16, 23, 23, 23],
+        "defenses": {
+            "physical": 3.4,
+            "slash": 3.6,
+            "strike": 3.8,
+            "pierce": 3.1,
+            "magic": 3.8,
+            "fire": 3.8,
+            "lightning": 4.0,
+            "holy": 3.8
+        },
+        "resistances": {
+            "scarletRot": 31,
+            "poison": 31,
+            "hemorrhage": 16,
+            "frostbite": 16,
+            "sleep": 23,
+            "madness": 23,
+            "deathBlight": 23
+        },
         "poise": 6,
         "weight": 3.6
     },
     "white-mask": {
         "id": "white-mask",
         "name": "White Mask",
-        "defenses": [2.7, 3.0, 3.3, 2.7, 3.5, 3.7, 3.9, 3.7],
-        "resistances": [23, 23, 18, 18, 21, 21, 22],
+        "defenses": {
+            "physical": 2.7,
+            "slash": 3.3,
+            "strike": 3.0,
+            "pierce": 2.7,
+            "magic": 3.5,
+            "fire": 3.7,
+            "lightning": 3.9,
+            "holy": 3.7
+        },
+        "resistances": {
+            "scarletRot": 23,
+            "poison": 23,
+            "hemorrhage": 18,
+            "frostbite": 18,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 22
+        },
         "poise": 5,
         "weight": 3.2
     },
     "winged-serpent-helm": {
         "id": "winged-serpent-helm",
         "name": "Winged Serpent Helm",
-        "defenses": [4.8, 4.0, 4.4, 4.0, 3.8, 4.4, 2.8, 3.4],
-        "resistances": [14, 14, 22, 22, 10, 10, 11],
+        "defenses": {
+            "physical": 4.8,
+            "slash": 4.4,
+            "strike": 4.0,
+            "pierce": 4.0,
+            "magic": 3.8,
+            "fire": 4.4,
+            "lightning": 2.8,
+            "holy": 3.4
+        },
+        "resistances": {
+            "scarletRot": 14,
+            "poison": 14,
+            "hemorrhage": 22,
+            "frostbite": 22,
+            "sleep": 10,
+            "madness": 10,
+            "deathBlight": 11
+        },
         "poise": 7,
         "weight": 4.6
     },
     "wise-mans-mask": {
         "id": "wise-mans-mask",
         "name": "Wise Man's Mask",
-        "defenses": [4.2, 3.6, 4.4, 4.0, 3.1, 4.0, 2.3, 3.1],
-        "resistances": [11, 11, 24, 24, 9, 9, 10],
+        "defenses": {
+            "physical": 4.2,
+            "slash": 4.4,
+            "strike": 3.6,
+            "pierce": 4.0,
+            "magic": 3.1,
+            "fire": 4.0,
+            "lightning": 2.3,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 11,
+            "poison": 11,
+            "hemorrhage": 24,
+            "frostbite": 24,
+            "sleep": 9,
+            "madness": 9,
+            "deathBlight": 10
+        },
         "poise": 7,
         "weight": 4.0
     },
     "witchs-glintstone-crown": {
         "id": "witchs-glintstone-crown",
         "name": "Witch's Glintstone Crown",
-        "stats": [0, 0, 0, 0, 0, 3, 0, 3],
-        "defenses": [4.4, 3.1, 5.2, 4.8, 4.4, 4.5, 3.4, 3.8],
-        "resistances": [16, 16, 26, 26, 10, 10, 10],
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 3,
+            "faith": 0,
+            "arcane": 3
+        },
+        "defenses": {
+            "physical": 4.4,
+            "slash": 5.2,
+            "strike": 3.1,
+            "pierce": 4.8,
+            "magic": 4.4,
+            "fire": 4.5,
+            "lightning": 3.4,
+            "holy": 3.8
+        },
+        "resistances": {
+            "scarletRot": 16,
+            "poison": 16,
+            "hemorrhage": 26,
+            "frostbite": 26,
+            "sleep": 10,
+            "madness": 10,
+            "deathBlight": 10
+        },
         "poise": 6,
         "weight": 5.1
     },
     "young-lions-helm": {
         "id": "young-lions-helm",
         "name": "Young Lion's Helm",
-        "defenses": [6.1, 5.2, 6.1, 6.1, 4.4, 4.6, 4.0, 4.6],
-        "resistances": [22, 22, 31, 31, 11, 11, 15],
+        "defenses": {
+            "physical": 6.1,
+            "slash": 6.1,
+            "strike": 5.2,
+            "pierce": 6.1,
+            "magic": 4.4,
+            "fire": 4.6,
+            "lightning": 4.0,
+            "holy": 4.6
+        },
+        "resistances": {
+            "scarletRot": 22,
+            "poison": 22,
+            "hemorrhage": 31,
+            "frostbite": 31,
+            "sleep": 11,
+            "madness": 11,
+            "deathBlight": 15
+        },
         "poise": 10,
         "weight": 6.4
     },
     "zamor-mask": {
         "id": "zamor-mask",
         "name": "Zamor Mask",
-        "defenses": [4.2, 3.4, 4.4, 3.8, 3.1, 3.1, 2.1, 2.8],
-        "resistances": [9, 9, 27, 27, 5, 5, 8],
+        "defenses": {
+            "physical": 4.2,
+            "slash": 4.4,
+            "strike": 3.4,
+            "pierce": 3.8,
+            "magic": 3.1,
+            "fire": 3.1,
+            "lightning": 2.1,
+            "holy": 2.8
+        },
+        "resistances": {
+            "scarletRot": 9,
+            "poison": 9,
+            "hemorrhage": 27,
+            "frostbite": 27,
+            "sleep": 5,
+            "madness": 5,
+            "deathBlight": 8
+        },
         "poise": 6,
         "weight": 3.8
     }
