@@ -249,7 +249,7 @@ function fitness(item, sortBy) {
             );
         case "sort-scarlet-rot":
             return item.resistances.scarletRot ?? 0;
-        case "sort-posion":
+        case "sort-poison":
             return item.resistances.poison ?? 0;
         case "sort-hemorrhage":
             return item.resistances.hemorrhage ?? 0;
