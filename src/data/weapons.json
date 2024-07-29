@@ -14979,6 +14979,52 @@
             }
         }
     },
+    "fire-knights-greatsword": {
+        "id": "fire-knights-greatsword",
+        "name": "Fire Knight's Greatsword",
+        "requirements": [22, 18, 0, 12, 0],
+        "category": "colossal-sword",
+        "unique": false,
+        "infusions": {
+            "standard": {
+                "damage": [147, 0, 44, 0, 0],
+                "scaling": [0.28, 0.47, 0.0, 0.25, 0.0],
+                "aux": {},
+                "masks": [
+                    [1, 1, 0, 0, 0],
+                    [0, 0, 1, 0, 0],
+                    [0, 0, 0, 1, 0],
+                    [0, 1, 0, 0, 0],
+                    [0, 0, 0, 1, 0]
+                ],
+                "corrections": ["0", "0", "0", "0", "0", "6", "6", "6", "6"],
+                "buffable": true
+            }
+        }
+    },
+    "fire-knights-shortsword": {
+        "id": "fire-knights-shortsword",
+        "name": "Fire Knight's Shortsword",
+        "requirements": [8, 13, 0, 12, 0],
+        "category": "dagger",
+        "unique": false,
+        "infusions": {
+            "standard": {
+                "damage": [75, 0, 22, 0, 0],
+                "scaling": [0.3, 0.5, 0.0, 0.3, 0.0],
+                "aux": {},
+                "masks": [
+                    [1, 1, 0, 0, 0],
+                    [0, 0, 1, 0, 0],
+                    [0, 0, 0, 1, 0],
+                    [0, 1, 0, 0, 0],
+                    [0, 0, 0, 1, 0]
+                ],
+                "corrections": ["0", "0", "0", "0", "0", "6", "6", "6", "6"],
+                "buffable": true
+            }
+        }
+    },
     "firespark-perfume-bottle": {
         "id": "firespark-perfume-bottle",
         "name": "Firespark Perfume Bottle",
@@ -27250,7 +27296,7 @@
                     [0, 0, 0, 1, 0]
                 ],
                 "corrections": ["0", "0", "4", "0", "0", "6", "6", "6", "6"],
-                "buffable": false
+                "buffable": true
             },
             "flame-art": {
                 "damage": [63, 0, 80, 0, 0],
