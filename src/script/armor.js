@@ -263,23 +263,6 @@ function fitness(item, sortBy) {
             return item.resistances.deathBlight ?? 0;
         case "sort-poise":
             return item.poise ?? 0;
-        case "sort-boss": {
-            let boss = BOSSES.find(
-                (boss) =>
-                    boss.id == document.getElementById("sort-boss-select").value
-            );
-            return (
-                [
-                    ...Object.values(item.defenses).filter((defense, index) =>
-                        boss.damageTypes[index] ? defense : 0
-                    ),
-                    ...Object.values(item.resistances).filter(
-                        (resistance, index) =>
-                            boss.statusEffects[index] ? resistance : 0
-                    ),
-                ].reduce((total, n) => total + n, 0) ?? 0
-            );
-        }
     }
 }
 
