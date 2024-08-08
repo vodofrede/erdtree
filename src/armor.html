@@ -6,7 +6,7 @@
         <meta name="language" content="english" />
         <meta http-equiv="content-language" content="en-us" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="style/main.css" />
+        <link rel="stylesheet" href="/style/main.css" />
         <!-- title and description -->
         <title>Armor Optimizer - Erdtree</title>
         <link rel="icon" type="image/x-icon " href="/resource/favicon.ico" />
@@ -57,7 +57,9 @@
                         />
                     </div>
                     <div>
-                        <label for="current-equip-load">Current Equip Load</label>
+                        <label for="current-equip-load"
+                            >Current Equip Load</label
+                        >
                         <input
                             style="max-width: 50px"
                             class="stat"
@@ -88,8 +90,16 @@
                     <b>Breakpoints</b>
                     <div>
                         <div>
-                            <input type="radio" id="fast-roll" onclick="update()" name="roll-type" value="0.3" />
-                            <label for="fast-roll">Fast Roll (up to 30% equip load)</label>
+                            <input
+                                type="radio"
+                                id="fast-roll"
+                                onclick="update()"
+                                name="roll-type"
+                                value="0.3"
+                            />
+                            <label for="fast-roll"
+                                >Fast Roll (up to 30% equip load)</label
+                            >
                         </div>
                     </div>
                     <div>
@@ -102,44 +112,285 @@
                                 value="0.7"
                                 checked
                             />
-                            <label for="normal-roll">Normal Roll (up to 70% equip load)</label>
+                            <label for="normal-roll"
+                                >Normal Roll (up to 70% equip load)</label
+                            >
                         </div>
                     </div>
                     <div>
                         <div>
-                            <input type="radio" id="fat-roll" onclick="update()" name="roll-type" value="1.0" />
-                            <label for="fat-roll">Fat Roll (up to 100% equip load)</label>
+                            <input
+                                type="radio"
+                                id="fat-roll"
+                                onclick="update()"
+                                name="roll-type"
+                                value="1.0"
+                            />
+                            <label for="fat-roll"
+                                >Fat Roll (up to 100% equip load)</label
+                            >
                         </div>
                     </div>
                     <hr />
                     <b>Sort by</b>
                     <div>
                         <div>
-                            <input type="radio" id="sort-average" name="sorting-order" onclick="update()" />
-                            <label for="sort-average">Greatest Average Negation</label>
+                            <input
+                                type="radio"
+                                id="sort-average"
+                                name="sorting-order"
+                                onclick="update()"
+                            />
+                            <label for="sort-average"
+                                >Greatest Average Absorption</label
+                            >
                         </div>
                     </div>
                     <div>
                         <div>
-                            <input type="radio" id="sort-physical" name="sorting-order" onclick="update()" checked />
-                            <label for="sort-physical">Greatest Physical Negation</label>
+                            <input
+                                type="radio"
+                                id="sort-standard"
+                                name="sorting-order"
+                                onclick="update()"
+                                checked
+                            />
+                            <label for="sort-standard"
+                                >Greatest Standard (Physical, Strike, Slash,
+                                Pierce) Absorption</label
+                            >
                         </div>
                     </div>
                     <div>
                         <div>
-                            <input type="radio" id="sort-elemental" name="sorting-order" onclick="update()" />
-                            <label for="sort-elemental">Greatest Elemental Negation</label>
+                            <input
+                                type="radio"
+                                id="sort-physical"
+                                name="sorting-order"
+                                onclick="update()"
+                            />
+                            <label for="sort-physical"
+                                >Greatest Physical Absorption</label
+                            >
                         </div>
                     </div>
                     <div>
                         <div>
-                            <input type="radio" id="sort-resistances" name="sorting-order" onclick="update()" />
-                            <label for="sort-resistances">Greatest Resistances</label>
+                            <input
+                                type="radio"
+                                id="sort-strike"
+                                name="sorting-order"
+                                onclick="update()"
+                            />
+                            <label for="sort-strike"
+                                >Greatest Strike Absorption</label
+                            >
                         </div>
                     </div>
                     <div>
                         <div>
-                            <input type="radio" id="sort-poise" name="sorting-order" onclick="update()" />
+                            <input
+                                type="radio"
+                                id="sort-slash"
+                                name="sorting-order"
+                                onclick="update()"
+                            />
+                            <label for="sort-slash"
+                                >Greatest Slash Absorption</label
+                            >
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input
+                                type="radio"
+                                id="sort-pierce"
+                                name="sorting-order"
+                                onclick="update()"
+                            />
+                            <label for="sort-pierce"
+                                >Greatest Pierce Absorption</label
+                            >
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input
+                                type="radio"
+                                id="sort-elemental"
+                                name="sorting-order"
+                                onclick="update()"
+                            />
+                            <label for="sort-elemental"
+                                >Greatest Elemental (Magic, Fire, Lightning,
+                                Holy) Absorption</label
+                            >
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input
+                                type="radio"
+                                id="sort-magic"
+                                name="sorting-order"
+                                onclick="update()"
+                            />
+                            <label for="sort-magic"
+                                >Greatest Magic Absorption</label
+                            >
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input
+                                type="radio"
+                                id="sort-fire"
+                                name="sorting-order"
+                                onclick="update()"
+                            />
+                            <label for="sort-fire"
+                                >Greatest Fire Absorption</label
+                            >
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input
+                                type="radio"
+                                id="sort-lightning"
+                                name="sorting-order"
+                                onclick="update()"
+                            />
+                            <label for="sort-lightning"
+                                >Greatest Lightning Absorption</label
+                            >
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input
+                                type="radio"
+                                id="sort-holy"
+                                name="sorting-order"
+                                onclick="update()"
+                            />
+                            <label for="sort-holy"
+                                >Greatest Holy Absorption</label
+                            >
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input
+                                type="radio"
+                                id="sort-resistances"
+                                name="sorting-order"
+                                onclick="update()"
+                            />
+                            <label for="sort-resistances"
+                                >Greatest Resistances</label
+                            >
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input
+                                type="radio"
+                                id="sort-scarlet-rot"
+                                name="sorting-order"
+                                onclick="update()"
+                            />
+                            <label for="sort-scarlet-rot"
+                                >Greatest Scarlet Rot Resistance</label
+                            >
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input
+                                type="radio"
+                                id="sort-poison"
+                                name="sorting-order"
+                                onclick="update()"
+                            />
+                            <label for="sort-poison"
+                                >Greatest Poison Resistance</label
+                            >
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input
+                                type="radio"
+                                id="sort-hemorrhage"
+                                name="sorting-order"
+                                onclick="update()"
+                            />
+                            <label for="sort-hemorrhage"
+                                >Greatest Hemorrhage Resistance</label
+                            >
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input
+                                type="radio"
+                                id="sort-frostbite"
+                                name="sorting-order"
+                                onclick="update()"
+                            />
+                            <label for="sort-frostbite"
+                                >Greatest Frostbite Resistance</label
+                            >
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input
+                                type="radio"
+                                id="sort-sleep"
+                                name="sorting-order"
+                                onclick="update()"
+                            />
+                            <label for="sort-sleep"
+                                >Greatest Sleep Resistance</label
+                            >
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input
+                                type="radio"
+                                id="sort-madness"
+                                name="sorting-order"
+                                onclick="update()"
+                            />
+                            <label for="sort-madness"
+                                >Greatest Madness Resistance</label
+                            >
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input
+                                type="radio"
+                                id="sort-death"
+                                name="sorting-order"
+                                onclick="update()"
+                            />
+                            <label for="sort-death"
+                                >Greatest Death Resistance</label
+                            >
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input
+                                type="radio"
+                                id="sort-poise"
+                                name="sorting-order"
+                                onclick="update()"
+                            />
                             <label for="sort-poise">Greatest Poise</label>
                         </div>
                     </div>
@@ -147,13 +398,25 @@
                     <b>Extras</b>
                     <div>
                         <div>
-                            <input type="checkbox" id="winged-crystal-tear" onchange="update()" disabled />
-                            <label for="winged-crystal-tear">Winged Crystal Tear (in mixed physick)</label>
+                            <input
+                                type="checkbox"
+                                id="winged-crystal-tear"
+                                onchange="update()"
+                                disabled
+                            />
+                            <label for="winged-crystal-tear"
+                                >Winged Crystal Tear (in mixed physick)</label
+                            >
                         </div>
                     </div>
                     <div>
                         <div>
-                            <input type="checkbox" id="fashion" onchange="update()" disabled />
+                            <input
+                                type="checkbox"
+                                id="fashion"
+                                onchange="update()"
+                                disabled
+                            />
                             <label for="fashion">Fashion Mode</label>
                         </div>
                     </div>
@@ -164,30 +427,57 @@
                     </template>
                     <div>
                         <label for="locked-helmet">Helmet</label>
-                        <select type="text" id="locked-helmet" name="locked-items" onchange="update()">
+                        <select
+                            type="text"
+                            id="locked-helmet"
+                            name="locked-items"
+                            onchange="update()"
+                        >
                             <option value="none">None</option>
                         </select>
                     </div>
                     <div>
                         <label for="locked-chestpiece">Chestpiece</label>
-                        <select type="text" id="locked-chestpiece" name="locked-items" onchange="update()">
+                        <select
+                            type="text"
+                            id="locked-chestpiece"
+                            name="locked-items"
+                            onchange="update()"
+                        >
                             <option value="none">None</option>
                         </select>
                     </div>
                     <div>
                         <label for="locked-gauntlets">Gauntlets</label>
-                        <select type=" text" id="locked-gauntlets" name="locked-items" onchange="update()">
+                        <select
+                            type=" text"
+                            id="locked-gauntlets"
+                            name="locked-items"
+                            onchange="update()"
+                        >
                             <option value="none">None</option>
                         </select>
                     </div>
                     <div>
                         <label for="locked-leggings">Leggings</label>
-                        <select type="text" id="locked-leggings" name="locked-items" onchange="update()">
+                        <select
+                            type="text"
+                            id="locked-leggings"
+                            name="locked-items"
+                            onchange="update()"
+                        >
                             <option value="none">None</option>
                         </select>
                     </div>
                     <div>
-                        <button id="clear-equipment" onclick="resetAll()">Reset All</button>
+                        <button id="clear-equipment" onclick="resetAll()">
+                            Reset All
+                        </button>
+                    </div>
+                    <hr />
+                    <b>Ignored Armor</b>
+                    <div>
+                        <ul id="ignored-items"></ul>
                     </div>
                 </article>
                 <!-- sort -->
@@ -200,29 +490,35 @@
                         <thead>
                             <tr>
                                 <th>Armor</th>
-                                <th>Stats</th>
+                                <th>Absorption</th>
+                                <th>Resistances</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Total</td>
-                                <td>Stats</td>
+                                <th>Total</th>
+                                <th>Absorption</th>
+                                <th>Resistances</th>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td>Stats</td>
+                                <th>Absorption</th>
+                                <th>Resistances</th>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td>Stats</td>
+                                <th>Absorption</th>
+                                <th>Resistances</th>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td>Stats</td>
+                                <th>Absorption</th>
+                                <th>Resistances</th>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td>Stats</td>
+                                <th>Absorption</th>
+                                <th>Resistances</th>
                             </tr>
                         </tbody>
                     </template>
@@ -232,7 +528,10 @@
         <footer>
             <h5>
                 Erdtree Planner (
-                <a href="https://git.palmoe.dk/vodofrede/erdtree" style="color: var(--link-color)">
+                <a
+                    href="https://git.palmoe.dk/vodofrede/erdtree"
+                    style="color: var(--link-color)"
+                >
                     available under BSD-3-Clause license
                 </a>
                 )
