@@ -3,7 +3,6 @@ let CHESTPIECES;
 let GAUNTLETS;
 let LEGGINGS;
 let EQUIPMENT;
-let BOSSES;
 let ignored = [];
 
 const populate = (select, items) =>
@@ -20,18 +19,12 @@ async function init() {
         ])
     ).map((json) => Object.values(json));
     [HELMETS, CHESTPIECES, GAUNTLETS, LEGGINGS] = EQUIPMENT;
-    BOSSES = await Promise.resolve(
-        fetch("/data/bosses.json").then((r) => r.json())
-    );
 
     // populate filter selects
     populate(document.getElementById("locked-helmet"), HELMETS);
     populate(document.getElementById("locked-chestpiece"), CHESTPIECES);
     populate(document.getElementById("locked-gauntlets"), GAUNTLETS);
     populate(document.getElementById("locked-leggings"), LEGGINGS);
-
-    //populate boss sort
-    populate(document.getElementById("sort-boss-select"), BOSSES);
 
     update();
 }
