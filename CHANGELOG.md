@@ -11,22 +11,39 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+-   refreshed website looks
+-   light mode colors fix
+
 ### Deprecated
 
 ### Removed
 
 ### Fixed
 
+-   fixed throwing blades being called backhand blades in UI
+
 ### Security
 
-## [1.9.0] - 2023-02-23
+## [1.9.1] - 2024-06-06
+
+### Fixed
+
+-   fixed armor weight calculation
+
+## [1.9.0] - 2024-06-04
+
+### Added
+
+-   added data from Shadow of the Erdtree
+
+## [1.8.0] - 2023-02-23
 
 ### Added
 
 -   added clickable links to armor optimizer
 -   added "none" option locked item in armor optimizer
 
-## [1.8.0] - 2022-06-03
+## [1.7.0] - 2022-06-03
 
 ### Added
 
@@ -42,7 +59,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -   removed build planner
 -   removed placeholder filter div
 
-## [1.7.0] - 2022-04-20
+## [1.6.1] - 2022-04-20
 
 ### Fixed
 
@@ -109,7 +126,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   updated border style on tables
 
-## [0.7.0] - 2022-04-05
+## [0.6.0] - 2022-04-05
 
 ### Added
 
@@ -119,7 +136,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   fixed softcap table
 
-## [0.6.0] - 2022-03-29
+## [0.5.1] - 2022-03-29
 
 ### Fixed
 
