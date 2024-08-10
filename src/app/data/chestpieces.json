@@ -1,0 +1,6172 @@
+{
+    "no-chestpiece": {
+        "id": "no-chestpiece",
+        "name": "No chestpiece",
+        "defenses": {
+            "physical": 0,
+            "strike": 0,
+            "slash": 0,
+            "pierce": 0,
+            "magic": 0,
+            "fire": 0,
+            "lightning": 0,
+            "holy": 0
+        },
+        "resistances": {
+            "poison": 0,
+            "scarletRot": 0,
+            "hemorrhage": 0,
+            "frostbite": 0,
+            "sleep": 0,
+            "madness": 0,
+            "deathBlight": 0
+        },
+        "poise": 0,
+        "weight": 0
+    },
+    "alberichs-robe": {
+        "id": "alberichs-robe",
+        "name": "Alberich's Robe",
+        "defenses": {
+            "physical": 5.3,
+            "slash": 5.3,
+            "strike": 4.2,
+            "pierce": 5.3,
+            "magic": 12.8,
+            "fire": 11.9,
+            "lightning": 12.4,
+            "holy": 12.8
+        },
+        "resistances": {
+            "scarletRot": 38,
+            "poison": 38,
+            "hemorrhage": 23,
+            "frostbite": 23,
+            "sleep": 67,
+            "madness": 67,
+            "deathBlight": 71
+        },
+        "poise": 7,
+        "weight": 4.1
+    },
+    "alberichs-robe-altered": {
+        "id": "alberichs-robe-altered",
+        "name": "Alberich's Robe (Altered)",
+        "defenses": {
+            "physical": 4.2,
+            "slash": 4.2,
+            "strike": 2.7,
+            "pierce": 4.2,
+            "magic": 12.6,
+            "fire": 11.4,
+            "lightning": 11.9,
+            "holy": 12.6
+        },
+        "resistances": {
+            "scarletRot": 32,
+            "poison": 32,
+            "hemorrhage": 19,
+            "frostbite": 19,
+            "sleep": 57,
+            "madness": 57,
+            "deathBlight": 61
+        },
+        "poise": 5,
+        "weight": 3.2
+    },
+    "all-knowing-armor": {
+        "id": "all-knowing-armor",
+        "name": "All-Knowing Armor",
+        "defenses": {
+            "physical": 12.9,
+            "slash": 13.5,
+            "strike": 11.9,
+            "pierce": 11.9,
+            "magic": 12.4,
+            "fire": 9.5,
+            "lightning": 10.2,
+            "holy": 8.8
+        },
+        "resistances": {
+            "scarletRot": 28,
+            "poison": 28,
+            "hemorrhage": 46,
+            "frostbite": 46,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 21
+        },
+        "poise": 22,
+        "weight": 10.7
+    },
+    "all-knowing-armor-altered": {
+        "id": "all-knowing-armor-altered",
+        "name": "All-Knowing Armor (Altered)",
+        "defenses": {
+            "physical": 12.4,
+            "slash": 12.9,
+            "strike": 10.9,
+            "pierce": 11.4,
+            "magic": 11.4,
+            "fire": 8.8,
+            "lightning": 9.5,
+            "holy": 8.0
+        },
+        "resistances": {
+            "scarletRot": 22,
+            "poison": 22,
+            "hemorrhage": 38,
+            "frostbite": 38,
+            "sleep": 16,
+            "madness": 16,
+            "deathBlight": 16
+        },
+        "poise": 21,
+        "weight": 9.3
+    },
+    "ansbachs-attire": {
+        "id": "ansbachs-attire",
+        "name": "Ansbach's Attire",
+        "defenses": {
+            "physical": 5.3,
+            "slash": 6.1,
+            "strike": 6.1,
+            "pierce": 4.2,
+            "magic": 13.0,
+            "fire": 13.0,
+            "lightning": 12.6,
+            "holy": 13.0
+        },
+        "resistances": {
+            "scarletRot": 38,
+            "poison": 38,
+            "hemorrhage": 25,
+            "frostbite": 25,
+            "sleep": 76,
+            "madness": 76,
+            "deathBlight": 90
+        },
+        "poise": 12,
+        "weight": 5.1
+    },
+    "ansbachs-attire-altered": {
+        "id": "ansbachs-attire-altered",
+        "name": "Ansbach's Attire (Altered)",
+        "defenses": {
+            "physical": 4.2,
+            "slash": 5.3,
+            "strike": 5.3,
+            "pierce": 2.7,
+            "magic": 12.8,
+            "fire": 12.8,
+            "lightning": 12.4,
+            "holy": 12.8
+        },
+        "resistances": {
+            "scarletRot": 35,
+            "poison": 35,
+            "hemorrhage": 25,
+            "frostbite": 25,
+            "sleep": 67,
+            "madness": 67,
+            "deathBlight": 76
+        },
+        "poise": 10,
+        "weight": 4.1
+    },
+    "aristocrat-coat": {
+        "id": "aristocrat-coat",
+        "name": "Aristocrat Coat",
+        "defenses": {
+            "physical": 8.8,
+            "slash": 8.0,
+            "strike": 8.8,
+            "pierce": 8.8,
+            "magic": 10.9,
+            "fire": 11.4,
+            "lightning": 10.9,
+            "holy": 8.8
+        },
+        "resistances": {
+            "scarletRot": 50,
+            "poison": 50,
+            "hemorrhage": 32,
+            "frostbite": 32,
+            "sleep": 42,
+            "madness": 42,
+            "deathBlight": 46
+        },
+        "poise": 13,
+        "weight": 7.1
+    },
+    "aristocrat-garb": {
+        "id": "aristocrat-garb",
+        "name": "Aristocrat Garb",
+        "defenses": {
+            "physical": 7.8,
+            "slash": 7.8,
+            "strike": 8.6,
+            "pierce": 7.8,
+            "magic": 6.5,
+            "fire": 6.9,
+            "lightning": 7.8,
+            "holy": 6.5
+        },
+        "resistances": {
+            "scarletRot": 47,
+            "poison": 47,
+            "hemorrhage": 33,
+            "frostbite": 33,
+            "sleep": 36,
+            "madness": 36,
+            "deathBlight": 30
+        },
+        "poise": 12,
+        "weight": 4.9
+    },
+    "aristocrat-garb-altered": {
+        "id": "aristocrat-garb-altered",
+        "name": "Aristocrat Garb (Altered)",
+        "defenses": {
+            "physical": 7.1,
+            "slash": 7.1,
+            "strike": 8.0,
+            "pierce": 7.1,
+            "magic": 6.1,
+            "fire": 6.7,
+            "lightning": 7.1,
+            "holy": 6.1
+        },
+        "resistances": {
+            "scarletRot": 42,
+            "poison": 42,
+            "hemorrhage": 29,
+            "frostbite": 29,
+            "sleep": 32,
+            "madness": 32,
+            "deathBlight": 25
+        },
+        "poise": 10,
+        "weight": 4.1
+    },
+    "armor-of-night": {
+        "id": "armor-of-night",
+        "name": "Armor of Night",
+        "defenses": {
+            "physical": 7.1,
+            "slash": 8.0,
+            "strike": 7.1,
+            "pierce": 8.0,
+            "magic": 12.4,
+            "fire": 9.5,
+            "lightning": 9.5,
+            "holy": 12.6
+        },
+        "resistances": {
+            "scarletRot": 55,
+            "poison": 55,
+            "hemorrhage": 32,
+            "frostbite": 32,
+            "sleep": 46,
+            "madness": 46,
+            "deathBlight": 46
+        },
+        "poise": 12,
+        "weight": 7.1
+    },
+    "armor-of-solitude": {
+        "id": "armor-of-solitude",
+        "name": "Armor of Solitude",
+        "defenses": {
+            "physical": 18.7,
+            "slash": 18.3,
+            "strike": 17.7,
+            "pierce": 17.5,
+            "magic": 13.3,
+            "fire": 14.5,
+            "lightning": 13.5,
+            "holy": 13.8
+        },
+        "resistances": {
+            "scarletRot": 60,
+            "poison": 60,
+            "hemorrhage": 63,
+            "frostbite": 63,
+            "sleep": 99,
+            "madness": 99,
+            "deathBlight": 50
+        },
+        "poise": 45,
+        "weight": 24.0
+    },
+    "armor-of-solitude-altered": {
+        "id": "armor-of-solitude-altered",
+        "name": "Armor of Solitude (Altered)",
+        "defenses": {
+            "physical": 18.3,
+            "slash": 17.5,
+            "strike": 17.0,
+            "pierce": 16.8,
+            "magic": 13.0,
+            "fire": 14.1,
+            "lightning": 13.3,
+            "holy": 13.5
+        },
+        "resistances": {
+            "scarletRot": 57,
+            "poison": 57,
+            "hemorrhage": 60,
+            "frostbite": 60,
+            "sleep": 90,
+            "madness": 90,
+            "deathBlight": 46
+        },
+        "poise": 43,
+        "weight": 23.2
+    },
+    "ascetics-loincloth": {
+        "id": "ascetics-loincloth",
+        "name": "Ascetic's Loincloth",
+        "defenses": {
+            "physical": 6.1,
+            "slash": 5.3,
+            "strike": 0.6,
+            "pierce": 2.7,
+            "magic": 12.6,
+            "fire": 12.6,
+            "lightning": 12.4,
+            "holy": 13.3
+        },
+        "resistances": {
+            "scarletRot": 42,
+            "poison": 42,
+            "hemorrhage": 23,
+            "frostbite": 23,
+            "sleep": 28,
+            "madness": 28,
+            "deathBlight": 63
+        },
+        "poise": 10,
+        "weight": 3.2
+    },
+    "astrologer-robe": {
+        "id": "astrologer-robe",
+        "name": "Astrologer Robe",
+        "defenses": {
+            "physical": 6.7,
+            "slash": 6.1,
+            "strike": 6.1,
+            "pierce": 6.1,
+            "magic": 13.5,
+            "fire": 13.0,
+            "lightning": 13.3,
+            "holy": 13.0
+        },
+        "resistances": {
+            "scarletRot": 50,
+            "poison": 50,
+            "hemorrhage": 24,
+            "frostbite": 24,
+            "sleep": 90,
+            "madness": 90,
+            "deathBlight": 76
+        },
+        "poise": 12,
+        "weight": 6.3
+    },
+    "astrologer-robe-altered": {
+        "id": "astrologer-robe-altered",
+        "name": "Astrologer Robe (Altered)",
+        "defenses": {
+            "physical": 6.1,
+            "slash": 5.3,
+            "strike": 5.3,
+            "pierce": 5.3,
+            "magic": 13.3,
+            "fire": 12.8,
+            "lightning": 13.0,
+            "holy": 12.8
+        },
+        "resistances": {
+            "scarletRot": 42,
+            "poison": 42,
+            "hemorrhage": 21,
+            "frostbite": 21,
+            "sleep": 75,
+            "madness": 75,
+            "deathBlight": 64
+        },
+        "poise": 10,
+        "weight": 5.3
+    },
+    "azurs-glintstone-robe": {
+        "id": "azurs-glintstone-robe",
+        "name": "Azur's Glintstone Robe",
+        "defenses": {
+            "physical": 7.1,
+            "slash": 6.7,
+            "strike": 6.1,
+            "pierce": 6.7,
+            "magic": 15.4,
+            "fire": 12.8,
+            "lightning": 13.0,
+            "holy": 13.8
+        },
+        "resistances": {
+            "scarletRot": 50,
+            "poison": 50,
+            "hemorrhage": 28,
+            "frostbite": 28,
+            "sleep": 99,
+            "madness": 99,
+            "deathBlight": 83
+        },
+        "poise": 12,
+        "weight": 7.1
+    },
+    "bandit-garb": {
+        "id": "bandit-garb",
+        "name": "Bandit Garb",
+        "defenses": {
+            "physical": 8.0,
+            "slash": 9.5,
+            "strike": 8.8,
+            "pierce": 9.5,
+            "magic": 10.2,
+            "fire": 10.2,
+            "lightning": 10.9,
+            "holy": 9.5
+        },
+        "resistances": {
+            "scarletRot": 52,
+            "poison": 52,
+            "hemorrhage": 32,
+            "frostbite": 32,
+            "sleep": 54,
+            "madness": 54,
+            "deathBlight": 54
+        },
+        "poise": 15,
+        "weight": 7.7
+    },
+    "banished-knight-armor": {
+        "id": "banished-knight-armor",
+        "name": "Banished Knight Armor",
+        "defenses": {
+            "physical": 18.7,
+            "slash": 19.2,
+            "strike": 15.0,
+            "pierce": 17.5,
+            "magic": 13.5,
+            "fire": 13.5,
+            "lightning": 13.0,
+            "holy": 13.3
+        },
+        "resistances": {
+            "scarletRot": 60,
+            "poison": 60,
+            "hemorrhage": 83,
+            "frostbite": 83,
+            "sleep": 38,
+            "madness": 38,
+            "deathBlight": 42
+        },
+        "poise": 34,
+        "weight": 17.5
+    },
+    "banished-knight-armor-altered": {
+        "id": "banished-knight-armor-altered",
+        "name": "Banished Knight Armor (Altered)",
+        "defenses": {
+            "physical": 18.3,
+            "slash": 18.7,
+            "strike": 14.4,
+            "pierce": 16.8,
+            "magic": 13.3,
+            "fire": 13.3,
+            "lightning": 12.8,
+            "holy": 13.0
+        },
+        "resistances": {
+            "scarletRot": 52,
+            "poison": 52,
+            "hemorrhage": 69,
+            "frostbite": 69,
+            "sleep": 32,
+            "madness": 32,
+            "deathBlight": 34
+        },
+        "poise": 33,
+        "weight": 16.5
+    },
+    "battlemage-robe": {
+        "id": "battlemage-robe",
+        "name": "Battlemage Robe",
+        "defenses": {
+            "physical": 5.3,
+            "slash": 4.2,
+            "strike": 6.1,
+            "pierce": 5.3,
+            "magic": 13.0,
+            "fire": 11.9,
+            "lightning": 12.4,
+            "holy": 12.6
+        },
+        "resistances": {
+            "scarletRot": 42,
+            "poison": 42,
+            "hemorrhage": 23,
+            "frostbite": 23,
+            "sleep": 63,
+            "madness": 63,
+            "deathBlight": 71
+        },
+        "poise": 10,
+        "weight": 4.1
+    },
+    "beast-champion-armor": {
+        "id": "beast-champion-armor",
+        "name": "Beast Champion Armor",
+        "defenses": {
+            "physical": 17.5,
+            "slash": 18.7,
+            "strike": 16.3,
+            "pierce": 18.3,
+            "magic": 13.0,
+            "fire": 13.8,
+            "lightning": 12.8,
+            "holy": 13.5
+        },
+        "resistances": {
+            "scarletRot": 57,
+            "poison": 57,
+            "hemorrhage": 90,
+            "frostbite": 90,
+            "sleep": 42,
+            "madness": 42,
+            "deathBlight": 38
+        },
+        "poise": 34,
+        "weight": 17.5
+    },
+    "beast-champion-armor-altered": {
+        "id": "beast-champion-armor-altered",
+        "name": "Beast Champion Armor (Altered)",
+        "defenses": {
+            "physical": 17.2,
+            "slash": 18.5,
+            "strike": 15.9,
+            "pierce": 18.2,
+            "magic": 12.9,
+            "fire": 13.7,
+            "lightning": 12.7,
+            "holy": 13.4
+        },
+        "resistances": {
+            "scarletRot": 50,
+            "poison": 50,
+            "hemorrhage": 75,
+            "frostbite": 75,
+            "sleep": 34,
+            "madness": 34,
+            "deathBlight": 32
+        },
+        "poise": 34,
+        "weight": 16.4
+    },
+    "black-knife-armor": {
+        "id": "black-knife-armor",
+        "name": "Black Knife Armor",
+        "defenses": {
+            "physical": 11.4,
+            "slash": 12.4,
+            "strike": 10.9,
+            "pierce": 12.4,
+            "magic": 8.8,
+            "fire": 9.5,
+            "lightning": 6.7,
+            "holy": 11.4
+        },
+        "resistances": {
+            "scarletRot": 28,
+            "poison": 28,
+            "hemorrhage": 46,
+            "frostbite": 46,
+            "sleep": 23,
+            "madness": 23,
+            "deathBlight": 23
+        },
+        "poise": 19,
+        "weight": 9.2
+    },
+    "black-knife-armor-altered": {
+        "id": "black-knife-armor-altered",
+        "name": "Black Knife Armor (Altered)",
+        "defenses": {
+            "physical": 11.3,
+            "slash": 12.3,
+            "strike": 10.8,
+            "pierce": 12.3,
+            "magic": 8.7,
+            "fire": 9.4,
+            "lightning": 6.6,
+            "holy": 11.3
+        },
+        "resistances": {
+            "scarletRot": 25,
+            "poison": 25,
+            "hemorrhage": 42,
+            "frostbite": 42,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 21
+        },
+        "poise": 19,
+        "weight": 9.0
+    },
+    "black-knight-armor": {
+        "id": "black-knight-armor",
+        "name": "Black Knight Armor",
+        "defenses": {
+            "physical": 14.6,
+            "slash": 14.6,
+            "strike": 12.4,
+            "pierce": 16.0,
+            "magic": 12.4,
+            "fire": 13.0,
+            "lightning": 10.9,
+            "holy": 11.4
+        },
+        "resistances": {
+            "scarletRot": 38,
+            "poison": 38,
+            "hemorrhage": 61,
+            "frostbite": 61,
+            "sleep": 22,
+            "madness": 22,
+            "deathBlight": 21
+        },
+        "poise": 28,
+        "weight": 13.7
+    },
+    "blackflame-monk-armor": {
+        "id": "blackflame-monk-armor",
+        "name": "Blackflame Monk Armor",
+        "defenses": {
+            "physical": 13.5,
+            "slash": 14.6,
+            "strike": 11.4,
+            "pierce": 12.9,
+            "magic": 10.2,
+            "fire": 13.0,
+            "lightning": 8.0,
+            "holy": 10.2
+        },
+        "resistances": {
+            "scarletRot": 32,
+            "poison": 32,
+            "hemorrhage": 55,
+            "frostbite": 55,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 32
+        },
+        "poise": 24,
+        "weight": 11.8
+    },
+    "blaidds-armor": {
+        "id": "blaidds-armor",
+        "name": "Blaidd's Armor",
+        "defenses": {
+            "physical": 14.6,
+            "slash": 14.6,
+            "strike": 12.9,
+            "pierce": 15.3,
+            "magic": 11.4,
+            "fire": 12.6,
+            "lightning": 10.2,
+            "holy": 11.9
+        },
+        "resistances": {
+            "scarletRot": 38,
+            "poison": 38,
+            "hemorrhage": 76,
+            "frostbite": 76,
+            "sleep": 25,
+            "madness": 25,
+            "deathBlight": 25
+        },
+        "poise": 28,
+        "weight": 13.7
+    },
+    "blaidds-armor-altered": {
+        "id": "blaidds-armor-altered",
+        "name": "Blaidd's Armor (Altered)",
+        "defenses": {
+            "physical": 14.0,
+            "slash": 14.0,
+            "strike": 12.4,
+            "pierce": 14.6,
+            "magic": 10.9,
+            "fire": 12.4,
+            "lightning": 9.5,
+            "holy": 11.4
+        },
+        "resistances": {
+            "scarletRot": 32,
+            "poison": 32,
+            "hemorrhage": 57,
+            "frostbite": 57,
+            "sleep": 22,
+            "madness": 22,
+            "deathBlight": 21
+        },
+        "poise": 27,
+        "weight": 12.5
+    },
+    "bloodhound-knight-armor": {
+        "id": "bloodhound-knight-armor",
+        "name": "Bloodhound Knight Armor",
+        "defenses": {
+            "physical": 12.4,
+            "slash": 14.0,
+            "strike": 11.4,
+            "pierce": 13.5,
+            "magic": 9.5,
+            "fire": 10.2,
+            "lightning": 7.1,
+            "holy": 10.2
+        },
+        "resistances": {
+            "scarletRot": 32,
+            "poison": 32,
+            "hemorrhage": 50,
+            "frostbite": 50,
+            "sleep": 23,
+            "madness": 23,
+            "deathBlight": 23
+        },
+        "poise": 19,
+        "weight": 10.6
+    },
+    "bloodhound-knight-armor-altered": {
+        "id": "bloodhound-knight-armor-altered",
+        "name": "Bloodhound Knight Armor (Altered)",
+        "defenses": {
+            "physical": 12.1,
+            "slash": 13.7,
+            "strike": 11.1,
+            "pierce": 13.2,
+            "magic": 9.2,
+            "fire": 9.9,
+            "lightning": 6.8,
+            "holy": 9.9
+        },
+        "resistances": {
+            "scarletRot": 29,
+            "poison": 29,
+            "hemorrhage": 45,
+            "frostbite": 45,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 21
+        },
+        "poise": 19,
+        "weight": 9.6
+    },
+    "bloodsoaked-tabard": {
+        "id": "bloodsoaked-tabard",
+        "name": "Bloodsoaked Tabard",
+        "defenses": {
+            "physical": 9.5,
+            "slash": 10.2,
+            "strike": 9.5,
+            "pierce": 9.5,
+            "magic": 10.9,
+            "fire": 10.9,
+            "lightning": 12.4,
+            "holy": 11.4
+        },
+        "resistances": {
+            "scarletRot": 63,
+            "poison": 63,
+            "hemorrhage": 38,
+            "frostbite": 38,
+            "sleep": 55,
+            "madness": 55,
+            "deathBlight": 50
+        },
+        "poise": 18,
+        "weight": 8.3
+    },
+    "blue-cloth-vest": {
+        "id": "blue-cloth-vest",
+        "name": "Blue Cloth Vest",
+        "defenses": {
+            "physical": 9.5,
+            "slash": 8.0,
+            "strike": 9.5,
+            "pierce": 8.0,
+            "magic": 10.2,
+            "fire": 10.9,
+            "lightning": 11.9,
+            "holy": 9.5
+        },
+        "resistances": {
+            "scarletRot": 63,
+            "poison": 63,
+            "hemorrhage": 42,
+            "frostbite": 42,
+            "sleep": 50,
+            "madness": 50,
+            "deathBlight": 50
+        },
+        "poise": 16,
+        "weight": 7.7
+    },
+    "blue-festive-garb": {
+        "id": "blue-festive-garb",
+        "name": "Blue Festive Garb",
+        "defenses": {
+            "physical": 4.2,
+            "slash": 6.1,
+            "strike": 4.2,
+            "pierce": 5.3,
+            "magic": 12.6,
+            "fire": 11.4,
+            "lightning": 12.6,
+            "holy": 13.8
+        },
+        "resistances": {
+            "scarletRot": 46,
+            "poison": 46,
+            "hemorrhage": 21,
+            "frostbite": 21,
+            "sleep": 71,
+            "madness": 71,
+            "deathBlight": 63
+        },
+        "poise": 7,
+        "weight": 4.1
+    },
+    "blue-silver-mail-armor": {
+        "id": "blue-silver-mail-armor",
+        "name": "Blue Silver Mail Armor",
+        "defenses": {
+            "physical": 12.4,
+            "slash": 12.9,
+            "strike": 9.5,
+            "pierce": 11.4,
+            "magic": 10.9,
+            "fire": 10.2,
+            "lightning": 8.0,
+            "holy": 8.0
+        },
+        "resistances": {
+            "scarletRot": 25,
+            "poison": 25,
+            "hemorrhage": 60,
+            "frostbite": 60,
+            "sleep": 18,
+            "madness": 18,
+            "deathBlight": 18
+        },
+        "poise": 19,
+        "weight": 9.2
+    },
+    "blue-silver-mail-armor-altered": {
+        "id": "blue-silver-mail-armor-altered",
+        "name": "Blue Silver Mail Armor (Altered)",
+        "defenses": {
+            "physical": 12.1,
+            "slash": 12.6,
+            "strike": 9.0,
+            "pierce": 11.1,
+            "magic": 10.4,
+            "fire": 9.7,
+            "lightning": 7.3,
+            "holy": 7.3
+        },
+        "resistances": {
+            "scarletRot": 21,
+            "poison": 21,
+            "hemorrhage": 52,
+            "frostbite": 52,
+            "sleep": 10,
+            "madness": 10,
+            "deathBlight": 10
+        },
+        "poise": 17,
+        "weight": 8.5
+    },
+    "braided-cord-robe": {
+        "id": "braided-cord-robe",
+        "name": "Braided Cord Robe",
+        "defenses": {
+            "physical": 6.3,
+            "slash": 5.2,
+            "strike": 5.2,
+            "pierce": 3.7,
+            "magic": 13.6,
+            "fire": 11.9,
+            "lightning": 12.9,
+            "holy": 14.0
+        },
+        "resistances": {
+            "scarletRot": 38,
+            "poison": 38,
+            "hemorrhage": 20,
+            "frostbite": 20,
+            "sleep": 104,
+            "madness": 104,
+            "deathBlight": 59
+        },
+        "poise": 5,
+        "weight": 3.4
+    },
+    "briar-armor": {
+        "id": "briar-armor",
+        "name": "Briar Armor",
+        "defenses": {
+            "physical": 12.9,
+            "slash": 13.5,
+            "strike": 11.4,
+            "pierce": 12.4,
+            "magic": 10.9,
+            "fire": 12.4,
+            "lightning": 8.8,
+            "holy": 10.9
+        },
+        "resistances": {
+            "scarletRot": 35,
+            "poison": 35,
+            "hemorrhage": 71,
+            "frostbite": 71,
+            "sleep": 24,
+            "madness": 24,
+            "deathBlight": 24
+        },
+        "poise": 21,
+        "weight": 11.8
+    },
+    "briar-armor-altered": {
+        "id": "briar-armor-altered",
+        "name": "Briar Armor (Altered)",
+        "defenses": {
+            "physical": 12.4,
+            "slash": 12.4,
+            "strike": 10.9,
+            "pierce": 11.9,
+            "magic": 10.2,
+            "fire": 11.4,
+            "lightning": 7.1,
+            "holy": 9.5
+        },
+        "resistances": {
+            "scarletRot": 29,
+            "poison": 29,
+            "hemorrhage": 61,
+            "frostbite": 61,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 21
+        },
+        "poise": 19,
+        "weight": 10.7
+    },
+    "bull-goat-armor": {
+        "id": "bull-goat-armor",
+        "name": "Bull-Goat Armor",
+        "defenses": {
+            "physical": 20.4,
+            "slash": 18.3,
+            "strike": 20.2,
+            "pierce": 18.3,
+            "magic": 13.3,
+            "fire": 13.5,
+            "lightning": 14.9,
+            "holy": 12.8
+        },
+        "resistances": {
+            "scarletRot": 71,
+            "poison": 71,
+            "hemorrhage": 83,
+            "frostbite": 83,
+            "sleep": 46,
+            "madness": 46,
+            "deathBlight": 55
+        },
+        "poise": 47,
+        "weight": 26.5
+    },
+    "carian-knight-armor": {
+        "id": "carian-knight-armor",
+        "name": "Carian Knight Armor",
+        "defenses": {
+            "physical": 11.8,
+            "slash": 12.3,
+            "strike": 10.8,
+            "pierce": 11.8,
+            "magic": 12.3,
+            "fire": 11.8,
+            "lightning": 9.4,
+            "holy": 11.8
+        },
+        "resistances": {
+            "scarletRot": 28,
+            "poison": 28,
+            "hemorrhage": 46,
+            "frostbite": 46,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 23
+        },
+        "poise": 19,
+        "weight": 10.4
+    },
+    "carian-knight-armor-altered": {
+        "id": "carian-knight-armor-altered",
+        "name": "Carian Knight Armor (Altered)",
+        "defenses": {
+            "physical": 11.7,
+            "slash": 12.2,
+            "strike": 9.8,
+            "pierce": 11.7,
+            "magic": 11.7,
+            "fire": 11.7,
+            "lightning": 9.1,
+            "holy": 11.7
+        },
+        "resistances": {
+            "scarletRot": 22,
+            "poison": 22,
+            "hemorrhage": 38,
+            "frostbite": 38,
+            "sleep": 16,
+            "madness": 16,
+            "deathBlight": 19
+        },
+        "poise": 18,
+        "weight": 9.7
+    },
+    "chain-armor": {
+        "id": "chain-armor",
+        "name": "Chain Armor",
+        "defenses": {
+            "physical": 11.9,
+            "slash": 12.9,
+            "strike": 8.8,
+            "pierce": 11.9,
+            "magic": 7.1,
+            "fire": 10.9,
+            "lightning": 6.1,
+            "holy": 8.0
+        },
+        "resistances": {
+            "scarletRot": 25,
+            "poison": 25,
+            "hemorrhage": 42,
+            "frostbite": 42,
+            "sleep": 11,
+            "madness": 11,
+            "deathBlight": 18
+        },
+        "poise": 17,
+        "weight": 8.8
+    },
+    "chain-draped-tabard": {
+        "id": "chain-draped-tabard",
+        "name": "Chain-Draped Tabard",
+        "defenses": {
+            "physical": 9.5,
+            "slash": 9.5,
+            "strike": 10.2,
+            "pierce": 9.5,
+            "magic": 10.9,
+            "fire": 11.4,
+            "lightning": 11.9,
+            "holy": 10.9
+        },
+        "resistances": {
+            "scarletRot": 63,
+            "poison": 63,
+            "hemorrhage": 42,
+            "frostbite": 42,
+            "sleep": 55,
+            "madness": 55,
+            "deathBlight": 55
+        },
+        "poise": 17,
+        "weight": 8.3
+    },
+    "champion-pauldron": {
+        "id": "champion-pauldron",
+        "name": "Champion Pauldron",
+        "defenses": {
+            "physical": 6.1,
+            "slash": 6.7,
+            "strike": 8.0,
+            "pierce": 7.1,
+            "magic": 7.1,
+            "fire": 8.8,
+            "lightning": 9.5,
+            "holy": 8.8
+        },
+        "resistances": {
+            "scarletRot": 46,
+            "poison": 46,
+            "hemorrhage": 28,
+            "frostbite": 28,
+            "sleep": 38,
+            "madness": 38,
+            "deathBlight": 35
+        },
+        "poise": 10,
+        "weight": 5.1
+    },
+    "cleanrot-armor": {
+        "id": "cleanrot-armor",
+        "name": "Cleanrot Armor",
+        "defenses": {
+            "physical": 14.6,
+            "slash": 16.0,
+            "strike": 13.4,
+            "pierce": 17.5,
+            "magic": 12.6,
+            "fire": 12.8,
+            "lightning": 11.4,
+            "holy": 13.5
+        },
+        "resistances": {
+            "scarletRot": 63,
+            "poison": 63,
+            "hemorrhage": 67,
+            "frostbite": 67,
+            "sleep": 28,
+            "madness": 28,
+            "deathBlight": 32
+        },
+        "poise": 27,
+        "weight": 15.0
+    },
+    "cleanrot-armor-altered": {
+        "id": "cleanrot-armor-altered",
+        "name": "Cleanrot Armor (Altered)",
+        "defenses": {
+            "physical": 13.5,
+            "slash": 14.6,
+            "strike": 12.4,
+            "pierce": 16.0,
+            "magic": 11.9,
+            "fire": 12.4,
+            "lightning": 10.2,
+            "holy": 13.0
+        },
+        "resistances": {
+            "scarletRot": 52,
+            "poison": 52,
+            "hemorrhage": 54,
+            "frostbite": 54,
+            "sleep": 22,
+            "madness": 22,
+            "deathBlight": 22
+        },
+        "poise": 24,
+        "weight": 13.7
+    },
+    "cloth-garb": {
+        "id": "cloth-garb",
+        "name": "Cloth Garb",
+        "defenses": {
+            "physical": 5.3,
+            "slash": 2.7,
+            "strike": 4.2,
+            "pierce": 4.2,
+            "magic": 12.8,
+            "fire": 12.4,
+            "lightning": 11.9,
+            "holy": 12.4
+        },
+        "resistances": {
+            "scarletRot": 42,
+            "poison": 42,
+            "hemorrhage": 23,
+            "frostbite": 23,
+            "sleep": 60,
+            "madness": 60,
+            "deathBlight": 60
+        },
+        "poise": 5,
+        "weight": 3.2
+    },
+    "common-soldier-cloth-armor": {
+        "id": "common-soldier-cloth-armor",
+        "name": "Common Soldier Cloth Armor",
+        "defenses": {
+            "physical": 12.4,
+            "slash": 11.9,
+            "strike": 9.5,
+            "pierce": 11.9,
+            "magic": 7.1,
+            "fire": 8.8,
+            "lightning": 6.1,
+            "holy": 8.0
+        },
+        "resistances": {
+            "scarletRot": 25,
+            "poison": 25,
+            "hemorrhage": 46,
+            "frostbite": 46,
+            "sleep": 18,
+            "madness": 18,
+            "deathBlight": 18
+        },
+        "poise": 19,
+        "weight": 8.8
+    },
+    "commoners-garb": {
+        "id": "commoners-garb",
+        "name": "Commoner's Garb",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 1,
+            "arcane": 0
+        },
+        "defenses": {
+            "physical": 5.3,
+            "slash": 6.7,
+            "strike": 6.7,
+            "pierce": 6.1,
+            "magic": 12.8,
+            "fire": 12.4,
+            "lightning": 12.6,
+            "holy": 12.8
+        },
+        "resistances": {
+            "scarletRot": 42,
+            "poison": 42,
+            "hemorrhage": 25,
+            "frostbite": 25,
+            "sleep": 76,
+            "madness": 76,
+            "deathBlight": 83
+        },
+        "poise": 8,
+        "weight": 5.1
+    },
+    "commoners-garb-altered": {
+        "id": "commoners-garb-altered",
+        "name": "Commoner's Garb (Altered)",
+        "defenses": {
+            "physical": 4.2,
+            "slash": 6.1,
+            "strike": 6.1,
+            "pierce": 5.3,
+            "magic": 12.6,
+            "fire": 11.9,
+            "lightning": 12.4,
+            "holy": 12.6
+        },
+        "resistances": {
+            "scarletRot": 34,
+            "poison": 34,
+            "hemorrhage": 21,
+            "frostbite": 21,
+            "sleep": 61,
+            "madness": 61,
+            "deathBlight": 64
+        },
+        "poise": 7,
+        "weight": 4.1
+    },
+    "commoners-simple-garb": {
+        "id": "commoners-simple-garb",
+        "name": "Commoner's Simple Garb",
+        "defenses": {
+            "physical": 4.2,
+            "slash": 6.7,
+            "strike": 6.7,
+            "pierce": 6.1,
+            "magic": 13.0,
+            "fire": 12.6,
+            "lightning": 12.6,
+            "holy": 12.8
+        },
+        "resistances": {
+            "scarletRot": 46,
+            "poison": 46,
+            "hemorrhage": 24,
+            "frostbite": 24,
+            "sleep": 76,
+            "madness": 76,
+            "deathBlight": 83
+        },
+        "poise": 8,
+        "weight": 5.1
+    },
+    "commoners-simple-garb-altered": {
+        "id": "commoners-simple-garb-altered",
+        "name": "Commoner's Simple Garb (Altered)",
+        "defenses": {
+            "physical": 3.2,
+            "slash": 6.1,
+            "strike": 6.1,
+            "pierce": 5.3,
+            "magic": 12.8,
+            "fire": 12.4,
+            "lightning": 12.4,
+            "holy": 12.6
+        },
+        "resistances": {
+            "scarletRot": 38,
+            "poison": 38,
+            "hemorrhage": 21,
+            "frostbite": 21,
+            "sleep": 61,
+            "madness": 61,
+            "deathBlight": 64
+        },
+        "poise": 7,
+        "weight": 4.1
+    },
+    "confessor-armor": {
+        "id": "confessor-armor",
+        "name": "Confessor Armor",
+        "defenses": {
+            "physical": 8.8,
+            "slash": 8.8,
+            "strike": 10.9,
+            "pierce": 9.5,
+            "magic": 11.4,
+            "fire": 11.4,
+            "lightning": 12.4,
+            "holy": 10.2
+        },
+        "resistances": {
+            "scarletRot": 63,
+            "poison": 63,
+            "hemorrhage": 50,
+            "frostbite": 50,
+            "sleep": 50,
+            "madness": 50,
+            "deathBlight": 55
+        },
+        "poise": 16,
+        "weight": 8.3
+    },
+    "confessor-armor-altered": {
+        "id": "confessor-armor-altered",
+        "name": "Confessor Armor (Altered)",
+        "defenses": {
+            "physical": 7.6,
+            "slash": 7.6,
+            "strike": 9.8,
+            "pierce": 8.4,
+            "magic": 10.5,
+            "fire": 10.5,
+            "lightning": 11.5,
+            "holy": 9.1
+        },
+        "resistances": {
+            "scarletRot": 54,
+            "poison": 54,
+            "hemorrhage": 42,
+            "frostbite": 42,
+            "sleep": 42,
+            "madness": 42,
+            "deathBlight": 45
+        },
+        "poise": 15,
+        "weight": 7.3
+    },
+    "consorts-robe": {
+        "id": "consorts-robe",
+        "name": "Consort's Robe",
+        "defenses": {
+            "physical": 5.3,
+            "slash": 4.2,
+            "strike": 4.2,
+            "pierce": 5.3,
+            "magic": 13.0,
+            "fire": 12.4,
+            "lightning": 12.4,
+            "holy": 12.8
+        },
+        "resistances": {
+            "scarletRot": 46,
+            "poison": 46,
+            "hemorrhage": 25,
+            "frostbite": 25,
+            "sleep": 67,
+            "madness": 67,
+            "deathBlight": 63
+        },
+        "poise": 7,
+        "weight": 4.1
+    },
+    "corhyns-robe": {
+        "id": "corhyns-robe",
+        "name": "Corhyn's Robe",
+        "defenses": {
+            "physical": 6.1,
+            "slash": 6.7,
+            "strike": 6.7,
+            "pierce": 6.1,
+            "magic": 13.3,
+            "fire": 12.8,
+            "lightning": 12.8,
+            "holy": 13.5
+        },
+        "resistances": {
+            "scarletRot": 46,
+            "poison": 46,
+            "hemorrhage": 24,
+            "frostbite": 24,
+            "sleep": 107,
+            "madness": 107,
+            "deathBlight": 76
+        },
+        "poise": 10,
+        "weight": 6.3
+    },
+    "crucible-axe-armor": {
+        "id": "crucible-axe-armor",
+        "name": "Crucible Axe Armor",
+        "defenses": {
+            "physical": 17.5,
+            "slash": 16.8,
+            "strike": 13.9,
+            "pierce": 16.8,
+            "magic": 13.0,
+            "fire": 12.8,
+            "lightning": 11.4,
+            "holy": 13.5
+        },
+        "resistances": {
+            "scarletRot": 50,
+            "poison": 50,
+            "hemorrhage": 71,
+            "frostbite": 71,
+            "sleep": 35,
+            "madness": 35,
+            "deathBlight": 35
+        },
+        "poise": 33,
+        "weight": 15.5
+    },
+    "crucible-axe-armor-altered": {
+        "id": "crucible-axe-armor-altered",
+        "name": "Crucible Axe Armor (Altered)",
+        "defenses": {
+            "physical": 16.8,
+            "slash": 16.0,
+            "strike": 13.4,
+            "pierce": 16.0,
+            "magic": 12.8,
+            "fire": 12.6,
+            "lightning": 10.9,
+            "holy": 13.3
+        },
+        "resistances": {
+            "scarletRot": 42,
+            "poison": 42,
+            "hemorrhage": 61,
+            "frostbite": 61,
+            "sleep": 29,
+            "madness": 29,
+            "deathBlight": 29
+        },
+        "poise": 31,
+        "weight": 14.9
+    },
+    "crucible-tree-armor": {
+        "id": "crucible-tree-armor",
+        "name": "Crucible Tree Armor",
+        "defenses": {
+            "physical": 17.7,
+            "slash": 17.5,
+            "strike": 13.9,
+            "pierce": 15.8,
+            "magic": 13.0,
+            "fire": 11.9,
+            "lightning": 11.4,
+            "holy": 14.5
+        },
+        "resistances": {
+            "scarletRot": 50,
+            "poison": 50,
+            "hemorrhage": 71,
+            "frostbite": 71,
+            "sleep": 35,
+            "madness": 35,
+            "deathBlight": 35
+        },
+        "poise": 33,
+        "weight": 15.5
+    },
+    "crucible-tree-armor-altered": {
+        "id": "crucible-tree-armor-altered",
+        "name": "Crucible Tree Armor (Altered)",
+        "defenses": {
+            "physical": 17.0,
+            "slash": 16.0,
+            "strike": 13.4,
+            "pierce": 15.6,
+            "magic": 12.8,
+            "fire": 11.4,
+            "lightning": 10.9,
+            "holy": 14.1
+        },
+        "resistances": {
+            "scarletRot": 42,
+            "poison": 42,
+            "hemorrhage": 61,
+            "frostbite": 61,
+            "sleep": 29,
+            "madness": 29,
+            "deathBlight": 29
+        },
+        "poise": 31,
+        "weight": 14.9
+    },
+    "cuckoo-knight-armor": {
+        "id": "cuckoo-knight-armor",
+        "name": "Cuckoo Knight Armor",
+        "defenses": {
+            "physical": 13.5,
+            "slash": 14.6,
+            "strike": 11.4,
+            "pierce": 13.5,
+            "magic": 12.4,
+            "fire": 11.9,
+            "lightning": 8.8,
+            "holy": 10.2
+        },
+        "resistances": {
+            "scarletRot": 32,
+            "poison": 32,
+            "hemorrhage": 57,
+            "frostbite": 57,
+            "sleep": 24,
+            "madness": 24,
+            "deathBlight": 24
+        },
+        "poise": 24,
+        "weight": 11.8
+    },
+    "cuckoo-knight-armor-altered": {
+        "id": "cuckoo-knight-armor-altered",
+        "name": "Cuckoo Knight Armor (Altered)",
+        "defenses": {
+            "physical": 13.1,
+            "slash": 14.2,
+            "strike": 11.0,
+            "pierce": 13.1,
+            "magic": 12.0,
+            "fire": 11.5,
+            "lightning": 8.4,
+            "holy": 9.8
+        },
+        "resistances": {
+            "scarletRot": 29,
+            "poison": 29,
+            "hemorrhage": 52,
+            "frostbite": 52,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 21
+        },
+        "poise": 24,
+        "weight": 10.8
+    },
+    "cuckoo-surcoat": {
+        "id": "cuckoo-surcoat",
+        "name": "Cuckoo Surcoat",
+        "defenses": {
+            "physical": 12.9,
+            "slash": 13.5,
+            "strike": 10.9,
+            "pierce": 12.9,
+            "magic": 11.9,
+            "fire": 10.9,
+            "lightning": 7.1,
+            "holy": 8.8
+        },
+        "resistances": {
+            "scarletRot": 28,
+            "poison": 28,
+            "hemorrhage": 55,
+            "frostbite": 55,
+            "sleep": 23,
+            "madness": 23,
+            "deathBlight": 23
+        },
+        "poise": 22,
+        "weight": 10.6
+    },
+    "dancers-dress": {
+        "id": "dancers-dress",
+        "name": "Dancer's Dress",
+        "defenses": {
+            "physical": 4.2,
+            "slash": 6.1,
+            "strike": 2.7,
+            "pierce": 2.7,
+            "magic": 12.6,
+            "fire": 12.6,
+            "lightning": 11.9,
+            "holy": 12.4
+        },
+        "resistances": {
+            "scarletRot": 34,
+            "poison": 34,
+            "hemorrhage": 21,
+            "frostbite": 21,
+            "sleep": 54,
+            "madness": 54,
+            "deathBlight": 57
+        },
+        "poise": 5,
+        "weight": 3.2
+    },
+    "dancers-dress-altered": {
+        "id": "dancers-dress-altered",
+        "name": "Dancer's Dress (Altered)",
+        "defenses": {
+            "physical": 2.7,
+            "slash": 5.3,
+            "strike": 0.6,
+            "pierce": 0.6,
+            "magic": 12.4,
+            "fire": 12.4,
+            "lightning": 11.4,
+            "holy": 11.9
+        },
+        "resistances": {
+            "scarletRot": 32,
+            "poison": 32,
+            "hemorrhage": 21,
+            "frostbite": 21,
+            "sleep": 52,
+            "madness": 52,
+            "deathBlight": 54
+        },
+        "poise": 3,
+        "weight": 2.4
+    },
+    "death-knight-armor": {
+        "id": "death-knight-armor",
+        "name": "Death Knight Armor",
+        "defenses": {
+            "physical": 12.6,
+            "slash": 12.2,
+            "strike": 10.7,
+            "pierce": 12.2,
+            "magic": 9.3,
+            "fire": 9.7,
+            "lightning": 12.4,
+            "holy": 8.2
+        },
+        "resistances": {
+            "scarletRot": 25,
+            "poison": 25,
+            "hemorrhage": 42,
+            "frostbite": 42,
+            "sleep": 16,
+            "madness": 16,
+            "deathBlight": 42
+        },
+        "poise": 22,
+        "weight": 11.2
+    },
+    "deathbed-dress": {
+        "id": "deathbed-dress",
+        "name": "Deathbed Dress",
+        "defenses": {
+            "physical": 0.6,
+            "strike": 2.7,
+            "slash": 0.6,
+            "pierce": 0.6,
+            "magic": 11.9,
+            "fire": 11.4,
+            "lightning": 11.9,
+            "holy": 12.4
+        },
+        "resistances": {
+            "poison": 38,
+            "scarletRot": 38,
+            "hemorrhage": 11,
+            "frostbite": 11,
+            "sleep": 63,
+            "madness": 63,
+            "deathBlight": 107
+        },
+        "poise": 1,
+        "weight": 3.2
+    },
+    "depraved-perfumer-robe": {
+        "id": "depraved-perfumer-robe",
+        "name": "Depraved Perfumer Robe",
+        "defenses": {
+            "physical": 6.0,
+            "slash": 5.2,
+            "strike": 6.0,
+            "pierce": 4.1,
+            "magic": 13.2,
+            "fire": 12.7,
+            "lightning": 12.5,
+            "holy": 12.7
+        },
+        "resistances": {
+            "scarletRot": 65,
+            "poison": 65,
+            "hemorrhage": 22,
+            "frostbite": 22,
+            "sleep": 55,
+            "madness": 55,
+            "deathBlight": 80
+        },
+        "poise": 8,
+        "weight": 5.0
+    },
+    "depraved-perfumer-robe-altered": {
+        "id": "depraved-perfumer-robe-altered",
+        "name": "Depraved Perfumer Robe (Altered)",
+        "defenses": {
+            "physical": 5.3,
+            "slash": 4.1,
+            "strike": 5.2,
+            "pierce": 2.6,
+            "magic": 13.0,
+            "fire": 12.6,
+            "lightning": 12.4,
+            "holy": 12.6
+        },
+        "resistances": {
+            "scarletRot": 63,
+            "poison": 63,
+            "hemorrhage": 18,
+            "frostbite": 18,
+            "sleep": 48,
+            "madness": 48,
+            "deathBlight": 63
+        },
+        "poise": 7,
+        "weight": 4.0
+    },
+    "dirty-chainmail": {
+        "id": "dirty-chainmail",
+        "name": "Dirty Chainmail",
+        "defenses": {
+            "physical": 11.4,
+            "slash": 11.9,
+            "strike": 8.8,
+            "pierce": 11.4,
+            "magic": 8.0,
+            "fire": 8.8,
+            "lightning": 6.1,
+            "holy": 8.0
+        },
+        "resistances": {
+            "scarletRot": 25,
+            "poison": 25,
+            "hemorrhage": 50,
+            "frostbite": 50,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 21
+        },
+        "poise": 18,
+        "weight": 8.8
+    },
+    "divine-beast-warrior-armor": {
+        "id": "divine-beast-warrior-armor",
+        "name": "Divine Beast Warrior Armor",
+        "defenses": {
+            "physical": 12.9,
+            "slash": 12.4,
+            "strike": 11.9,
+            "pierce": 11.9,
+            "magic": 10.2,
+            "fire": 10.2,
+            "lightning": 8.8,
+            "holy": 9.5
+        },
+        "resistances": {
+            "scarletRot": 31,
+            "poison": 31,
+            "hemorrhage": 54,
+            "frostbite": 54,
+            "sleep": 18,
+            "madness": 18,
+            "deathBlight": 24
+        },
+        "poise": 22,
+        "weight": 10.4
+    },
+    "divine-bird-warrior-armor": {
+        "id": "divine-bird-warrior-armor",
+        "name": "Divine Bird Warrior Armor",
+        "defenses": {
+            "physical": 14.0,
+            "slash": 13.5,
+            "strike": 12.9,
+            "pierce": 12.4,
+            "magic": 11.4,
+            "fire": 11.4,
+            "lightning": 9.5,
+            "holy": 10.2
+        },
+        "resistances": {
+            "scarletRot": 37,
+            "poison": 37,
+            "hemorrhage": 56,
+            "frostbite": 56,
+            "sleep": 23,
+            "madness": 23,
+            "deathBlight": 23
+        },
+        "poise": 25,
+        "weight": 11.6
+    },
+    "drake-knight-armor": {
+        "id": "drake-knight-armor",
+        "name": "Drake Knight Armor",
+        "defenses": {
+            "physical": 11.4,
+            "slash": 11.9,
+            "strike": 9.5,
+            "pierce": 11.4,
+            "magic": 10.2,
+            "fire": 11.4,
+            "lightning": 8.8,
+            "holy": 10.2
+        },
+        "resistances": {
+            "scarletRot": 25,
+            "poison": 25,
+            "hemorrhage": 46,
+            "frostbite": 46,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 21
+        },
+        "poise": 19,
+        "weight": 9.2
+    },
+    "drake-knight-armor-altered": {
+        "id": "drake-knight-armor-altered",
+        "name": "Drake Knight Armor (Altered)",
+        "defenses": {
+            "physical": 11.2,
+            "slash": 11.2,
+            "strike": 8.6,
+            "pierce": 10.7,
+            "magic": 8.0,
+            "fire": 9.5,
+            "lightning": 6.7,
+            "holy": 8.0
+        },
+        "resistances": {
+            "scarletRot": 21,
+            "poison": 21,
+            "hemorrhage": 34,
+            "frostbite": 34,
+            "sleep": 10,
+            "madness": 10,
+            "deathBlight": 10
+        },
+        "poise": 16,
+        "weight": 8.3
+    },
+    "dryleaf-robe": {
+        "id": "dryleaf-robe",
+        "name": "Dryleaf Robe",
+        "defenses": {
+            "physical": 5.3,
+            "slash": 4.2,
+            "strike": 6.7,
+            "pierce": 4.2,
+            "magic": 14.1,
+            "fire": 11.9,
+            "lightning": 12.6,
+            "holy": 14.1
+        },
+        "resistances": {
+            "scarletRot": 38,
+            "poison": 38,
+            "hemorrhage": 25,
+            "frostbite": 25,
+            "sleep": 76,
+            "madness": 76,
+            "deathBlight": 71
+        },
+        "poise": 10,
+        "weight": 5.1
+    },
+    "dryleaf-robe-altered": {
+        "id": "dryleaf-robe-altered",
+        "name": "Dryleaf Robe (Altered)",
+        "defenses": {
+            "physical": 4.2,
+            "slash": 2.7,
+            "strike": 6.1,
+            "pierce": 2.7,
+            "magic": 13.8,
+            "fire": 11.4,
+            "lightning": 12.4,
+            "holy": 13.8
+        },
+        "resistances": {
+            "scarletRot": 35,
+            "poison": 35,
+            "hemorrhage": 24,
+            "frostbite": 24,
+            "sleep": 67,
+            "madness": 67,
+            "deathBlight": 63
+        },
+        "poise": 8,
+        "weight": 4.1
+    },
+    "eccentrics-armor": {
+        "id": "eccentrics-armor",
+        "name": "Eccentric's Armor",
+        "defenses": {
+            "physical": 12.9,
+            "slash": 12.4,
+            "strike": 10.9,
+            "pierce": 12.9,
+            "magic": 10.9,
+            "fire": 10.9,
+            "lightning": 7.1,
+            "holy": 9.5
+        },
+        "resistances": {
+            "scarletRot": 35,
+            "poison": 35,
+            "hemorrhage": 60,
+            "frostbite": 60,
+            "sleep": 23,
+            "madness": 23,
+            "deathBlight": 21
+        },
+        "poise": 21,
+        "weight": 10.6
+    },
+    "elden-lord-armor": {
+        "id": "elden-lord-armor",
+        "name": "Elden Lord Armor",
+        "defenses": {
+            "physical": 11.9,
+            "slash": 11.4,
+            "strike": 10.9,
+            "pierce": 12.4,
+            "magic": 8.8,
+            "fire": 11.4,
+            "lightning": 7.1,
+            "holy": 8.0
+        },
+        "resistances": {
+            "scarletRot": 32,
+            "poison": 32,
+            "hemorrhage": 55,
+            "frostbite": 55,
+            "sleep": 18,
+            "madness": 18,
+            "deathBlight": 21
+        },
+        "poise": 19,
+        "weight": 9.2
+    },
+    "elden-lord-armor-altered": {
+        "id": "elden-lord-armor-altered",
+        "name": "Elden Lord Armor (Altered)",
+        "defenses": {
+            "physical": 11.1,
+            "slash": 10.6,
+            "strike": 9.9,
+            "pierce": 11.6,
+            "magic": 7.7,
+            "fire": 10.6,
+            "lightning": 6.4,
+            "holy": 6.8
+        },
+        "resistances": {
+            "scarletRot": 22,
+            "poison": 22,
+            "hemorrhage": 45,
+            "frostbite": 45,
+            "sleep": 10,
+            "madness": 10,
+            "deathBlight": 16
+        },
+        "poise": 17,
+        "weight": 8.4
+    },
+    "erdtree-surcoat": {
+        "id": "erdtree-surcoat",
+        "name": "Erdtree Surcoat",
+        "defenses": {
+            "physical": 12.9,
+            "slash": 12.4,
+            "strike": 11.9,
+            "pierce": 12.9,
+            "magic": 9.5,
+            "fire": 10.2,
+            "lightning": 8.8,
+            "holy": 9.5
+        },
+        "resistances": {
+            "scarletRot": 32,
+            "poison": 32,
+            "hemorrhage": 55,
+            "frostbite": 55,
+            "sleep": 23,
+            "madness": 23,
+            "deathBlight": 23
+        },
+        "poise": 22,
+        "weight": 10.6
+    },
+    "errant-sorcerer-robe": {
+        "id": "errant-sorcerer-robe",
+        "name": "Errant Sorcerer Robe",
+        "defenses": {
+            "physical": 4.2,
+            "slash": 6.1,
+            "strike": 4.2,
+            "pierce": 4.2,
+            "magic": 13.0,
+            "fire": 12.6,
+            "lightning": 12.4,
+            "holy": 13.0
+        },
+        "resistances": {
+            "scarletRot": 35,
+            "poison": 35,
+            "hemorrhage": 23,
+            "frostbite": 23,
+            "sleep": 67,
+            "madness": 67,
+            "deathBlight": 71
+        },
+        "poise": 8,
+        "weight": 4.1
+    },
+    "errant-sorcerer-robe-altered": {
+        "id": "errant-sorcerer-robe-altered",
+        "name": "Errant Sorcerer Robe (Altered)",
+        "defenses": {
+            "physical": 2.7,
+            "slash": 5.3,
+            "strike": 2.7,
+            "pierce": 2.7,
+            "magic": 12.8,
+            "fire": 12.4,
+            "lightning": 11.9,
+            "holy": 12.8
+        },
+        "resistances": {
+            "scarletRot": 31,
+            "poison": 31,
+            "hemorrhage": 20,
+            "frostbite": 20,
+            "sleep": 62,
+            "madness": 62,
+            "deathBlight": 66
+        },
+        "poise": 7,
+        "weight": 3.2
+    },
+    "exile-armor": {
+        "id": "exile-armor",
+        "name": "Exile Armor",
+        "defenses": {
+            "physical": 12.4,
+            "slash": 12.9,
+            "strike": 9.5,
+            "pierce": 12.4,
+            "magic": 8.0,
+            "fire": 10.9,
+            "lightning": 6.7,
+            "holy": 9.5
+        },
+        "resistances": {
+            "scarletRot": 28,
+            "poison": 28,
+            "hemorrhage": 55,
+            "frostbite": 55,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 18
+        },
+        "poise": 19,
+        "weight": 9.2
+    },
+    "eye-surcoat": {
+        "id": "eye-surcoat",
+        "name": "Eye Surcoat",
+        "defenses": {
+            "physical": 12.9,
+            "slash": 12.9,
+            "strike": 8.8,
+            "pierce": 11.9,
+            "magic": 8.8,
+            "fire": 10.9,
+            "lightning": 7.1,
+            "holy": 8.8
+        },
+        "resistances": {
+            "scarletRot": 25,
+            "poison": 25,
+            "hemorrhage": 55,
+            "frostbite": 55,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 18
+        },
+        "poise": 21,
+        "weight": 9.2
+    },
+    "fell-omen-cloak": {
+        "id": "fell-omen-cloak",
+        "name": "Fell Omen Cloak",
+        "defenses": {
+            "physical": 6.1,
+            "slash": 6.7,
+            "strike": 6.7,
+            "pierce": 6.1,
+            "magic": 13.0,
+            "fire": 12.4,
+            "lightning": 12.6,
+            "holy": 12.8
+        },
+        "resistances": {
+            "scarletRot": 42,
+            "poison": 42,
+            "hemorrhage": 25,
+            "frostbite": 25,
+            "sleep": 71,
+            "madness": 71,
+            "deathBlight": 83
+        },
+        "poise": 8,
+        "weight": 5.1
+    },
+    "festive-garb": {
+        "id": "festive-garb",
+        "name": "Festive Garb",
+        "defenses": {
+            "physical": 4.2,
+            "slash": 6.1,
+            "strike": 5.3,
+            "pierce": 5.3,
+            "magic": 12.6,
+            "fire": 11.9,
+            "lightning": 12.4,
+            "holy": 13.0
+        },
+        "resistances": {
+            "scarletRot": 42,
+            "poison": 42,
+            "hemorrhage": 21,
+            "frostbite": 21,
+            "sleep": 67,
+            "madness": 67,
+            "deathBlight": 67
+        },
+        "poise": 7,
+        "weight": 4.1
+    },
+    "festive-garb-altered": {
+        "id": "festive-garb-altered",
+        "name": "Festive Garb (Altered)",
+        "defenses": {
+            "physical": 2.7,
+            "slash": 5.3,
+            "strike": 4.2,
+            "pierce": 4.2,
+            "magic": 12.4,
+            "fire": 11.4,
+            "lightning": 11.9,
+            "holy": 12.8
+        },
+        "resistances": {
+            "scarletRot": 34,
+            "poison": 34,
+            "hemorrhage": 16,
+            "frostbite": 16,
+            "sleep": 57,
+            "madness": 57,
+            "deathBlight": 57
+        },
+        "poise": 7,
+        "weight": 3.2
+    },
+    "fias-robe": {
+        "id": "fias-robe",
+        "name": "Fia's Robe",
+        "defenses": {
+            "physical": 5.3,
+            "strike": 6.1,
+            "slash": 5.3,
+            "pierce": 5.3,
+            "magic": 12.6,
+            "fire": 12.4,
+            "lightning": 12.6,
+            "holy": 13
+        },
+        "resistances": {
+            "poison": 46,
+            "scarletRot": 46,
+            "hemorrhage": 21,
+            "frostbite": 21,
+            "sleep": 76,
+            "madness": 76,
+            "deathBlight": 108
+        },
+        "poise": 2,
+        "weight": 5.1
+    },
+    "fias-robe-altered": {
+        "id": "fias-robe-altered",
+        "name": "Fia's Robe (Altered)",
+        "defenses": {
+            "physical": 2.7,
+            "strike": 4.2,
+            "slash": 2.7,
+            "pierce": 2.7,
+            "magic": 11.9,
+            "fire": 11.4,
+            "lightning": 11.9,
+            "holy": 12.6
+        },
+        "resistances": {
+            "poison": 34,
+            "scarletRot": 34,
+            "hemorrhage": 10,
+            "frostbite": 10,
+            "sleep": 57,
+            "madness": 57,
+            "deathBlight": 93
+        },
+        "poise": 0,
+        "weight": 3.2
+    },
+    "finger-maiden-robe": {
+        "id": "finger-maiden-robe",
+        "name": "Finger Maiden Robe",
+        "defenses": {
+            "physical": 5.8,
+            "slash": 4.7,
+            "strike": 4.7,
+            "pierce": 3.2,
+            "magic": 13.8,
+            "fire": 13.1,
+            "lightning": 13.3,
+            "holy": 13.8
+        },
+        "resistances": {
+            "scarletRot": 38,
+            "poison": 38,
+            "hemorrhage": 21,
+            "frostbite": 21,
+            "sleep": 63,
+            "madness": 63,
+            "deathBlight": 63
+        },
+        "poise": 10,
+        "weight": 4.6
+    },
+    "finger-maiden-robe-altered": {
+        "id": "finger-maiden-robe-altered",
+        "name": "Finger Maiden Robe (Altered)",
+        "defenses": {
+            "physical": 4.2,
+            "slash": 2.7,
+            "strike": 2.7,
+            "pierce": 0.6,
+            "magic": 13.0,
+            "fire": 12.4,
+            "lightning": 12.6,
+            "holy": 13.5
+        },
+        "resistances": {
+            "scarletRot": 32,
+            "poison": 32,
+            "hemorrhage": 16,
+            "frostbite": 16,
+            "sleep": 54,
+            "madness": 54,
+            "deathBlight": 54
+        },
+        "poise": 8,
+        "weight": 3.7
+    },
+    "finger-robe": {
+        "id": "finger-robe",
+        "name": "Finger Robe",
+        "defenses": {
+            "physical": 6.0,
+            "slash": 5.2,
+            "strike": 6.6,
+            "pierce": 4.1,
+            "magic": 13.0,
+            "fire": 12.8,
+            "lightning": 12.6,
+            "holy": 12.8
+        },
+        "resistances": {
+            "scarletRot": 42,
+            "poison": 42,
+            "hemorrhage": 21,
+            "frostbite": 21,
+            "sleep": 64,
+            "madness": 64,
+            "deathBlight": 82
+        },
+        "poise": 12,
+        "weight": 5.1
+    },
+    "fingerprint-armor": {
+        "id": "fingerprint-armor",
+        "name": "Fingerprint Armor",
+        "defenses": {
+            "physical": 13.5,
+            "slash": 11.9,
+            "strike": 11.9,
+            "pierce": 11.9,
+            "magic": 9.5,
+            "fire": 12.6,
+            "lightning": 6.7,
+            "holy": 9.5
+        },
+        "resistances": {
+            "scarletRot": 32,
+            "poison": 32,
+            "hemorrhage": 60,
+            "frostbite": 60,
+            "sleep": 11,
+            "madness": 11,
+            "deathBlight": 23
+        },
+        "poise": 24,
+        "weight": 10.6
+    },
+    "fingerprint-armor-altered": {
+        "id": "fingerprint-armor-altered",
+        "name": "Fingerprint Armor (Altered)",
+        "defenses": {
+            "physical": 13.1,
+            "slash": 11.5,
+            "strike": 11.5,
+            "pierce": 11.5,
+            "magic": 9.1,
+            "fire": 12.2,
+            "lightning": 6.3,
+            "holy": 9.1
+        },
+        "resistances": {
+            "scarletRot": 29,
+            "poison": 29,
+            "hemorrhage": 54,
+            "frostbite": 54,
+            "sleep": 10,
+            "madness": 10,
+            "deathBlight": 21
+        },
+        "poise": 24,
+        "weight": 10.0
+    },
+    "fire-knight-armor": {
+        "id": "fire-knight-armor",
+        "name": "Fire Knight Armor",
+        "defenses": {
+            "physical": 12.9,
+            "slash": 11.9,
+            "strike": 10.2,
+            "pierce": 10.9,
+            "magic": 9.5,
+            "fire": 11.9,
+            "lightning": 7.1,
+            "holy": 8.8
+        },
+        "resistances": {
+            "scarletRot": 28,
+            "poison": 28,
+            "hemorrhage": 46,
+            "frostbite": 46,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 24
+        },
+        "poise": 19,
+        "weight": 9.3
+    },
+    "fire-knight-armor-altered": {
+        "id": "fire-knight-armor-altered",
+        "name": "Fire Knight Armor (Altered)",
+        "defenses": {
+            "physical": 11.9,
+            "slash": 11.9,
+            "strike": 9.5,
+            "pierce": 10.2,
+            "magic": 8.0,
+            "fire": 10.9,
+            "lightning": 7.1,
+            "holy": 8.0
+        },
+        "resistances": {
+            "scarletRot": 25,
+            "poison": 25,
+            "hemorrhage": 42,
+            "frostbite": 42,
+            "sleep": 18,
+            "madness": 18,
+            "deathBlight": 23
+        },
+        "poise": 17,
+        "weight": 8.4
+    },
+    "fire-monk-armor": {
+        "id": "fire-monk-armor",
+        "name": "Fire Monk Armor",
+        "defenses": {
+            "physical": 14.0,
+            "slash": 13.5,
+            "strike": 12.4,
+            "pierce": 12.4,
+            "magic": 10.9,
+            "fire": 13.3,
+            "lightning": 9.5,
+            "holy": 9.5
+        },
+        "resistances": {
+            "scarletRot": 32,
+            "poison": 32,
+            "hemorrhage": 55,
+            "frostbite": 55,
+            "sleep": 24,
+            "madness": 24,
+            "deathBlight": 24
+        },
+        "poise": 22,
+        "weight": 11.8
+    },
+    "fire-prelate-armor": {
+        "id": "fire-prelate-armor",
+        "name": "Fire Prelate Armor",
+        "defenses": {
+            "physical": 19.2,
+            "slash": 18.3,
+            "strike": 17.0,
+            "pierce": 18.3,
+            "magic": 13.5,
+            "fire": 19.8,
+            "lightning": 13.0,
+            "holy": 13.3
+        },
+        "resistances": {
+            "scarletRot": 67,
+            "poison": 67,
+            "hemorrhage": 63,
+            "frostbite": 63,
+            "sleep": 90,
+            "madness": 90,
+            "deathBlight": 50
+        },
+        "poise": 45,
+        "weight": 24.7
+    },
+    "fire-prelate-armor-altered": {
+        "id": "fire-prelate-armor-altered",
+        "name": "Fire Prelate Armor (Altered)",
+        "defenses": {
+            "physical": 18.7,
+            "slash": 17.5,
+            "strike": 16.3,
+            "pierce": 17.5,
+            "magic": 13.3,
+            "fire": 18.3,
+            "lightning": 12.8,
+            "holy": 13.0
+        },
+        "resistances": {
+            "scarletRot": 57,
+            "poison": 57,
+            "hemorrhage": 54,
+            "frostbite": 54,
+            "sleep": 75,
+            "madness": 75,
+            "deathBlight": 42
+        },
+        "poise": 43,
+        "weight": 23.6
+    },
+    "foot-soldier-tabard": {
+        "id": "foot-soldier-tabard",
+        "name": "Foot Soldier Tabard",
+        "defenses": {
+            "physical": 9.5,
+            "slash": 10.2,
+            "strike": 9.5,
+            "pierce": 10.2,
+            "magic": 11.4,
+            "fire": 11.4,
+            "lightning": 11.4,
+            "holy": 10.2
+        },
+        "resistances": {
+            "scarletRot": 63,
+            "poison": 63,
+            "hemorrhage": 42,
+            "frostbite": 42,
+            "sleep": 55,
+            "madness": 55,
+            "deathBlight": 55
+        },
+        "poise": 17,
+        "weight": 8.3
+    },
+    "freyjas-armor": {
+        "id": "freyjas-armor",
+        "name": "Freyja's Armor",
+        "defenses": {
+            "physical": 13.5,
+            "slash": 11.4,
+            "strike": 9.5,
+            "pierce": 11.4,
+            "magic": 8.8,
+            "fire": 9.5,
+            "lightning": 8.0,
+            "holy": 9.5
+        },
+        "resistances": {
+            "scarletRot": 22,
+            "poison": 22,
+            "hemorrhage": 54,
+            "frostbite": 54,
+            "sleep": 10,
+            "madness": 10,
+            "deathBlight": 22
+        },
+        "poise": 19,
+        "weight": 9.7
+    },
+    "freyjas-armor-altered": {
+        "id": "freyjas-armor-altered",
+        "name": "Freyja's Armor (Altered)",
+        "defenses": {
+            "physical": 12.9,
+            "slash": 10.9,
+            "strike": 8.8,
+            "pierce": 10.9,
+            "magic": 8.0,
+            "fire": 8.8,
+            "lightning": 7.1,
+            "holy": 8.8
+        },
+        "resistances": {
+            "scarletRot": 21,
+            "poison": 21,
+            "hemorrhage": 52,
+            "frostbite": 52,
+            "sleep": 0,
+            "madness": 0,
+            "deathBlight": 21
+        },
+        "poise": 17,
+        "weight": 9.3
+    },
+    "fur-raiment": {
+        "id": "fur-raiment",
+        "name": "Fur Raiment",
+        "defenses": {
+            "physical": 6.1,
+            "slash": 6.1,
+            "strike": 6.7,
+            "pierce": 6.1,
+            "magic": 6.7,
+            "fire": 7.1,
+            "lightning": 8.8,
+            "holy": 7.1
+        },
+        "resistances": {
+            "scarletRot": 63,
+            "poison": 63,
+            "hemorrhage": 42,
+            "frostbite": 42,
+            "sleep": 55,
+            "madness": 55,
+            "deathBlight": 38
+        },
+        "poise": 8,
+        "weight": 5.1
+    },
+    "gaiuss-armor": {
+        "id": "gaiuss-armor",
+        "name": "Gaius's Armor",
+        "defenses": {
+            "physical": 16.8,
+            "slash": 19.7,
+            "strike": 15.7,
+            "pierce": 19.2,
+            "magic": 14.1,
+            "fire": 13.8,
+            "lightning": 13.8,
+            "holy": 13.8
+        },
+        "resistances": {
+            "scarletRot": 67,
+            "poison": 67,
+            "hemorrhage": 83,
+            "frostbite": 83,
+            "sleep": 55,
+            "madness": 55,
+            "deathBlight": 55
+        },
+        "poise": 38,
+        "weight": 20.1
+    },
+    "gelmir-knight-armor": {
+        "id": "gelmir-knight-armor",
+        "name": "Gelmir Knight Armor",
+        "defenses": {
+            "physical": 13.5,
+            "slash": 14.0,
+            "strike": 11.4,
+            "pierce": 13.5,
+            "magic": 10.9,
+            "fire": 12.4,
+            "lightning": 10.2,
+            "holy": 10.9
+        },
+        "resistances": {
+            "scarletRot": 35,
+            "poison": 35,
+            "hemorrhage": 55,
+            "frostbite": 55,
+            "sleep": 24,
+            "madness": 24,
+            "deathBlight": 23
+        },
+        "poise": 24,
+        "weight": 11.8
+    },
+    "gelmir-knight-armor-altered": {
+        "id": "gelmir-knight-armor-altered",
+        "name": "Gelmir Knight Armor (Altered)",
+        "defenses": {
+            "physical": 13.1,
+            "slash": 13.6,
+            "strike": 11.0,
+            "pierce": 13.1,
+            "magic": 10.5,
+            "fire": 12.0,
+            "lightning": 9.8,
+            "holy": 10.5
+        },
+        "resistances": {
+            "scarletRot": 32,
+            "poison": 32,
+            "hemorrhage": 50,
+            "frostbite": 50,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 21
+        },
+        "poise": 24,
+        "weight": 10.8
+    },
+    "gloried-attire": {
+        "id": "gloried-attire",
+        "name": "Gloried Attire",
+        "defenses": {
+            "physical": 8.0,
+            "slash": 8.8,
+            "strike": 9.5,
+            "pierce": 8.0,
+            "magic": 8.8,
+            "fire": 10.2,
+            "lightning": 11.4,
+            "holy": 10.2
+        },
+        "resistances": {
+            "scarletRot": 57,
+            "poison": 57,
+            "hemorrhage": 32,
+            "frostbite": 32,
+            "sleep": 46,
+            "madness": 46,
+            "deathBlight": 42
+        },
+        "poise": 13,
+        "weight": 7.1
+    },
+    "godrick-knight-armor": {
+        "id": "godrick-knight-armor",
+        "name": "Godrick Knight Armor",
+        "defenses": {
+            "physical": 13.5,
+            "slash": 14.0,
+            "strike": 11.9,
+            "pierce": 12.9,
+            "magic": 10.9,
+            "fire": 11.9,
+            "lightning": 9.5,
+            "holy": 10.9
+        },
+        "resistances": {
+            "scarletRot": 35,
+            "poison": 35,
+            "hemorrhage": 57,
+            "frostbite": 57,
+            "sleep": 24,
+            "madness": 24,
+            "deathBlight": 24
+        },
+        "poise": 24,
+        "weight": 11.8
+    },
+    "godrick-knight-armor-altered": {
+        "id": "godrick-knight-armor-altered",
+        "name": "Godrick Knight Armor (Altered)",
+        "defenses": {
+            "physical": 13.1,
+            "slash": 13.6,
+            "strike": 11.5,
+            "pierce": 12.5,
+            "magic": 10.5,
+            "fire": 11.5,
+            "lightning": 9.1,
+            "holy": 10.5
+        },
+        "resistances": {
+            "scarletRot": 32,
+            "poison": 32,
+            "hemorrhage": 52,
+            "frostbite": 52,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 21
+        },
+        "poise": 24,
+        "weight": 10.8
+    },
+    "godskin-apostle-robe": {
+        "id": "godskin-apostle-robe",
+        "name": "Godskin Apostle Robe",
+        "defenses": {
+            "physical": 6.1,
+            "slash": 5.3,
+            "strike": 5.3,
+            "pierce": 2.7,
+            "magic": 12.6,
+            "fire": 11.9,
+            "lightning": 12.4,
+            "holy": 13.8
+        },
+        "resistances": {
+            "scarletRot": 42,
+            "poison": 42,
+            "hemorrhage": 21,
+            "frostbite": 21,
+            "sleep": 67,
+            "madness": 67,
+            "deathBlight": 63
+        },
+        "poise": 8,
+        "weight": 4.1
+    },
+    "godskin-noble-robe": {
+        "id": "godskin-noble-robe",
+        "name": "Godskin Noble Robe",
+        "defenses": {
+            "physical": 6.1,
+            "slash": 6.7,
+            "strike": 9.5,
+            "pierce": 6.1,
+            "magic": 13.0,
+            "fire": 12.4,
+            "lightning": 12.6,
+            "holy": 14.1
+        },
+        "resistances": {
+            "scarletRot": 46,
+            "poison": 46,
+            "hemorrhage": 25,
+            "frostbite": 25,
+            "sleep": 76,
+            "madness": 76,
+            "deathBlight": 83
+        },
+        "poise": 12,
+        "weight": 6.3
+    },
+    "goldmasks-rags": {
+        "id": "goldmasks-rags",
+        "name": "Goldmask's Rags",
+        "defenses": {
+            "physical": 4.2,
+            "slash": 2.7,
+            "strike": 2.7,
+            "pierce": 0.6,
+            "magic": 11.9,
+            "fire": 11.4,
+            "lightning": 11.9,
+            "holy": 12.8
+        },
+        "resistances": {
+            "scarletRot": 38,
+            "poison": 38,
+            "hemorrhage": 11,
+            "frostbite": 11,
+            "sleep": 60,
+            "madness": 60,
+            "deathBlight": 60
+        },
+        "poise": 5,
+        "weight": 2.4
+    },
+    "gravebird-armor": {
+        "id": "gravebird-armor",
+        "name": "Gravebird Armor",
+        "defenses": {
+            "physical": 6.9,
+            "slash": 7.8,
+            "strike": 7.8,
+            "pierce": 6.5,
+            "magic": 9.3,
+            "fire": 8.6,
+            "lightning": 10.0,
+            "holy": 10.0
+        },
+        "resistances": {
+            "scarletRot": 50,
+            "poison": 50,
+            "hemorrhage": 25,
+            "frostbite": 25,
+            "sleep": 38,
+            "madness": 38,
+            "deathBlight": 34
+        },
+        "poise": 13,
+        "weight": 6.0
+    },
+    "gravebirds-blackquill-armor": {
+        "id": "gravebirds-blackquill-armor",
+        "name": "Gravebird's Blackquill Armor",
+        "defenses": {
+            "physical": 8.6,
+            "slash": 9.3,
+            "strike": 9.3,
+            "pierce": 7.8,
+            "magic": 10.7,
+            "fire": 10.0,
+            "lightning": 11.2,
+            "holy": 11.2
+        },
+        "resistances": {
+            "scarletRot": 54,
+            "poison": 54,
+            "hemorrhage": 32,
+            "frostbite": 32,
+            "sleep": 45,
+            "madness": 45,
+            "deathBlight": 42
+        },
+        "poise": 16,
+        "weight": 7.4
+    },
+    "gravekeeper-cloak": {
+        "id": "gravekeeper-cloak",
+        "name": "Gravekeeper Cloak",
+        "defenses": {
+            "physical": 7.1,
+            "slash": 7.1,
+            "strike": 8.8,
+            "pierce": 7.1,
+            "magic": 8.0,
+            "fire": 9.5,
+            "lightning": 10.2,
+            "holy": 8.8
+        },
+        "resistances": {
+            "scarletRot": 63,
+            "poison": 63,
+            "hemorrhage": 25,
+            "frostbite": 25,
+            "sleep": 42,
+            "madness": 42,
+            "deathBlight": 42
+        },
+        "poise": 12,
+        "weight": 6.3
+    },
+    "gravekeeper-cloak-altered": {
+        "id": "gravekeeper-cloak-altered",
+        "name": "Gravekeeper Cloak (Altered)",
+        "defenses": {
+            "physical": 6.7,
+            "slash": 6.7,
+            "strike": 8.0,
+            "pierce": 6.7,
+            "magic": 7.1,
+            "fire": 8.8,
+            "lightning": 9.5,
+            "holy": 8.0
+        },
+        "resistances": {
+            "scarletRot": 54,
+            "poison": 54,
+            "hemorrhage": 22,
+            "frostbite": 22,
+            "sleep": 34,
+            "madness": 34,
+            "deathBlight": 34
+        },
+        "poise": 8,
+        "weight": 5.1
+    },
+    "guardian-garb": {
+        "id": "guardian-garb",
+        "name": "Guardian Garb",
+        "defenses": {
+            "physical": 9.5,
+            "slash": 8.8,
+            "strike": 9.5,
+            "pierce": 8.0,
+            "magic": 10.9,
+            "fire": 10.2,
+            "lightning": 10.9,
+            "holy": 10.9
+        },
+        "resistances": {
+            "scarletRot": 61,
+            "poison": 61,
+            "hemorrhage": 38,
+            "frostbite": 38,
+            "sleep": 50,
+            "madness": 50,
+            "deathBlight": 42
+        },
+        "poise": 15,
+        "weight": 7.7
+    },
+    "guardian-garb-full-bloom": {
+        "id": "guardian-garb-full-bloom",
+        "name": "Guardian Garb (Full Bloom)",
+        "defenses": {
+            "physical": 10.2,
+            "slash": 9.5,
+            "strike": 10.2,
+            "pierce": 9.5,
+            "magic": 11.9,
+            "fire": -2.3,
+            "lightning": 11.9,
+            "holy": 11.4
+        },
+        "resistances": {
+            "scarletRot": 71,
+            "poison": 71,
+            "hemorrhage": 46,
+            "frostbite": 46,
+            "sleep": 57,
+            "madness": 57,
+            "deathBlight": 55
+        },
+        "poise": 15,
+        "weight": 8.8
+    },
+    "haligtree-crest-surcoat": {
+        "id": "haligtree-crest-surcoat",
+        "name": "Haligtree Crest Surcoat",
+        "defenses": {
+            "physical": 12.9,
+            "slash": 12.4,
+            "strike": 11.9,
+            "pierce": 12.9,
+            "magic": 9.5,
+            "fire": 10.2,
+            "lightning": 8.0,
+            "holy": 10.2
+        },
+        "resistances": {
+            "scarletRot": 32,
+            "poison": 32,
+            "hemorrhage": 55,
+            "frostbite": 55,
+            "sleep": 23,
+            "madness": 23,
+            "deathBlight": 24
+        },
+        "poise": 21,
+        "weight": 10.6
+    },
+    "haligtree-knight-armor": {
+        "id": "haligtree-knight-armor",
+        "name": "Haligtree Knight Armor",
+        "defenses": {
+            "physical": 13.5,
+            "slash": 13.5,
+            "strike": 12.4,
+            "pierce": 13.5,
+            "magic": 10.2,
+            "fire": 11.4,
+            "lightning": 9.5,
+            "holy": 11.4
+        },
+        "resistances": {
+            "scarletRot": 35,
+            "poison": 35,
+            "hemorrhage": 57,
+            "frostbite": 57,
+            "sleep": 24,
+            "madness": 24,
+            "deathBlight": 25
+        },
+        "poise": 22,
+        "weight": 11.8
+    },
+    "haligtree-knight-armor-altered": {
+        "id": "haligtree-knight-armor-altered",
+        "name": "Haligtree Knight Armor (Altered)",
+        "defenses": {
+            "physical": 13.1,
+            "slash": 13.1,
+            "strike": 12.0,
+            "pierce": 13.1,
+            "magic": 9.8,
+            "fire": 11.0,
+            "lightning": 9.1,
+            "holy": 11.0
+        },
+        "resistances": {
+            "scarletRot": 32,
+            "poison": 32,
+            "hemorrhage": 52,
+            "frostbite": 52,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 22
+        },
+        "poise": 22,
+        "weight": 10.8
+    },
+    "high-page-clothes": {
+        "id": "high-page-clothes",
+        "name": "High Page Clothes",
+        "defenses": {
+            "physical": 5.5,
+            "slash": 5.5,
+            "strike": 6.9,
+            "pierce": 5.5,
+            "magic": 13.5,
+            "fire": 12.8,
+            "lightning": 13.0,
+            "holy": 13.2
+        },
+        "resistances": {
+            "scarletRot": 42,
+            "poison": 42,
+            "hemorrhage": 23,
+            "frostbite": 23,
+            "sleep": 76,
+            "madness": 76,
+            "deathBlight": 76
+        },
+        "poise": 10,
+        "weight": 5.3
+    },
+    "high-page-clothes-altered": {
+        "id": "high-page-clothes-altered",
+        "name": "High Page Clothes (Altered)",
+        "defenses": {
+            "physical": 4.4,
+            "slash": 4.4,
+            "strike": 6.3,
+            "pierce": 4.4,
+            "magic": 13.2,
+            "fire": 12.6,
+            "lightning": 12.8,
+            "holy": 13.0
+        },
+        "resistances": {
+            "scarletRot": 34,
+            "poison": 34,
+            "hemorrhage": 19,
+            "frostbite": 19,
+            "sleep": 61,
+            "madness": 61,
+            "deathBlight": 61
+        },
+        "poise": 8,
+        "weight": 4.3
+    },
+    "high-priest-robe": {
+        "id": "high-priest-robe",
+        "name": "High Priest Robe",
+        "defenses": {
+            "physical": 5.2,
+            "slash": 4.1,
+            "strike": 6.0,
+            "pierce": 2.6,
+            "magic": 12.8,
+            "fire": 12.6,
+            "lightning": 12.4,
+            "holy": 12.6
+        },
+        "resistances": {
+            "scarletRot": 38,
+            "poison": 38,
+            "hemorrhage": 21,
+            "frostbite": 21,
+            "sleep": 57,
+            "madness": 57,
+            "deathBlight": 69
+        },
+        "poise": 10,
+        "weight": 4.2
+    },
+    "highland-attire": {
+        "id": "highland-attire",
+        "name": "Highland Attire",
+        "defenses": {
+            "physical": 7.1,
+            "slash": 8.0,
+            "strike": 8.8,
+            "pierce": 7.1,
+            "magic": 8.0,
+            "fire": 9.5,
+            "lightning": 10.9,
+            "holy": 9.5
+        },
+        "resistances": {
+            "scarletRot": 55,
+            "poison": 55,
+            "hemorrhage": 28,
+            "frostbite": 28,
+            "sleep": 42,
+            "madness": 42,
+            "deathBlight": 38
+        },
+        "poise": 13,
+        "weight": 6.3
+    },
+    "highwayman-cloth-armor": {
+        "id": "highwayman-cloth-armor",
+        "name": "Highwayman Cloth Armor",
+        "defenses": {
+            "physical": 8.0,
+            "slash": 8.0,
+            "strike": 10.2,
+            "pierce": 8.8,
+            "magic": 10.9,
+            "fire": 10.9,
+            "lightning": 11.4,
+            "holy": 10.2
+        },
+        "resistances": {
+            "scarletRot": 57,
+            "poison": 57,
+            "hemorrhage": 35,
+            "frostbite": 35,
+            "sleep": 50,
+            "madness": 50,
+            "deathBlight": 50
+        },
+        "poise": 16,
+        "weight": 7.7
+    },
+    "horned-warrior-armor": {
+        "id": "horned-warrior-armor",
+        "name": "Horned Warrior Armor",
+        "defenses": {
+            "physical": 13.5,
+            "slash": 12.9,
+            "strike": 12.4,
+            "pierce": 11.4,
+            "magic": 10.2,
+            "fire": 10.2,
+            "lightning": 8.8,
+            "holy": 8.8
+        },
+        "resistances": {
+            "scarletRot": 31,
+            "poison": 31,
+            "hemorrhage": 59,
+            "frostbite": 59,
+            "sleep": 18,
+            "madness": 18,
+            "deathBlight": 23
+        },
+        "poise": 22,
+        "weight": 10.4
+    },
+    "hoslows-armor": {
+        "id": "hoslows-armor",
+        "name": "Hoslow's Armor",
+        "defenses": {
+            "physical": 14.0,
+            "slash": 13.5,
+            "strike": 11.9,
+            "pierce": 12.4,
+            "magic": 10.9,
+            "fire": 11.9,
+            "lightning": 10.2,
+            "holy": 10.2
+        },
+        "resistances": {
+            "scarletRot": 38,
+            "poison": 38,
+            "hemorrhage": 60,
+            "frostbite": 60,
+            "sleep": 24,
+            "madness": 24,
+            "deathBlight": 24
+        },
+        "poise": 22,
+        "weight": 11.8
+    },
+    "hoslows-armor-altered": {
+        "id": "hoslows-armor-altered",
+        "name": "Hoslow's Armor (Altered)",
+        "defenses": {
+            "physical": 13.6,
+            "slash": 12.5,
+            "strike": 11.5,
+            "pierce": 12.0,
+            "magic": 10.3,
+            "fire": 11.0,
+            "lightning": 8.9,
+            "holy": 8.9
+        },
+        "resistances": {
+            "scarletRot": 32,
+            "poison": 32,
+            "hemorrhage": 52,
+            "frostbite": 52,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 21
+        },
+        "poise": 21,
+        "weight": 10.8
+    },
+    "igons-armor": {
+        "id": "igons-armor",
+        "name": "Igon's Armor",
+        "defenses": {
+            "physical": 9.5,
+            "slash": 9.5,
+            "strike": 10.2,
+            "pierce": 9.5,
+            "magic": 10.9,
+            "fire": 11.4,
+            "lightning": 11.9,
+            "holy": 10.9
+        },
+        "resistances": {
+            "scarletRot": 57,
+            "poison": 57,
+            "hemorrhage": 38,
+            "frostbite": 38,
+            "sleep": 50,
+            "madness": 50,
+            "deathBlight": 50
+        },
+        "poise": 17,
+        "weight": 8.0
+    },
+    "igons-armor-altered": {
+        "id": "igons-armor-altered",
+        "name": "Igon's Armor (Altered)",
+        "defenses": {
+            "physical": 8.8,
+            "slash": 8.8,
+            "strike": 9.5,
+            "pierce": 8.8,
+            "magic": 10.2,
+            "fire": 10.9,
+            "lightning": 11.4,
+            "holy": 10.2
+        },
+        "resistances": {
+            "scarletRot": 54,
+            "poison": 54,
+            "hemorrhage": 34,
+            "frostbite": 34,
+            "sleep": 45,
+            "madness": 45,
+            "deathBlight": 45
+        },
+        "poise": 16,
+        "weight": 7.7
+    },
+    "iron-rivet-armor": {
+        "id": "iron-rivet-armor",
+        "name": "Iron Rivet Armor",
+        "defenses": {
+            "physical": 7.1,
+            "slash": 7.1,
+            "strike": 8.0,
+            "pierce": 7.1,
+            "magic": 10.9,
+            "fire": 10.2,
+            "lightning": 11.9,
+            "holy": 10.2
+        },
+        "resistances": {
+            "scarletRot": 57,
+            "poison": 57,
+            "hemorrhage": 46,
+            "frostbite": 46,
+            "sleep": 42,
+            "madness": 42,
+            "deathBlight": 42
+        },
+        "poise": 13,
+        "weight": 7.1
+    },
+    "ivory-draped-tabard": {
+        "id": "ivory-draped-tabard",
+        "name": "Ivory-Draped Tabard",
+        "defenses": {
+            "physical": 9.5,
+            "slash": 8.8,
+            "strike": 10.9,
+            "pierce": 10.2,
+            "magic": 10.2,
+            "fire": 10.9,
+            "lightning": 11.9,
+            "holy": 11.4
+        },
+        "resistances": {
+            "scarletRot": 63,
+            "poison": 63,
+            "hemorrhage": 42,
+            "frostbite": 42,
+            "sleep": 55,
+            "madness": 55,
+            "deathBlight": 57
+        },
+        "poise": 16,
+        "weight": 8.3
+    },
+    "juvenile-scholar-robe": {
+        "id": "juvenile-scholar-robe",
+        "name": "Juvenile Scholar Robe",
+        "defenses": {
+            "physical": 5.3,
+            "slash": 6.1,
+            "strike": 6.1,
+            "pierce": 5.3,
+            "magic": 12.8,
+            "fire": 11.9,
+            "lightning": 12.4,
+            "holy": 12.6
+        },
+        "resistances": {
+            "scarletRot": 38,
+            "poison": 38,
+            "hemorrhage": 25,
+            "frostbite": 25,
+            "sleep": 63,
+            "madness": 63,
+            "deathBlight": 71
+        },
+        "poise": 7,
+        "weight": 4.1
+    },
+    "kaiden-armor": {
+        "id": "kaiden-armor",
+        "name": "Kaiden Armor",
+        "defenses": {
+            "physical": 11.9,
+            "slash": 11.9,
+            "strike": 8.8,
+            "pierce": 11.9,
+            "magic": 8.0,
+            "fire": 8.8,
+            "lightning": 7.1,
+            "holy": 8.0
+        },
+        "resistances": {
+            "scarletRot": 25,
+            "poison": 25,
+            "hemorrhage": 55,
+            "frostbite": 55,
+            "sleep": 11,
+            "madness": 11,
+            "deathBlight": 11
+        },
+        "poise": 18,
+        "weight": 8.8
+    },
+    "knight-armor": {
+        "id": "knight-armor",
+        "name": "Knight Armor",
+        "defenses": {
+            "physical": 12.4,
+            "slash": 13.5,
+            "strike": 11.9,
+            "pierce": 13.5,
+            "magic": 10.9,
+            "fire": 10.9,
+            "lightning": 9.5,
+            "holy": 8.8
+        },
+        "resistances": {
+            "scarletRot": 28,
+            "poison": 28,
+            "hemorrhage": 50,
+            "frostbite": 50,
+            "sleep": 18,
+            "madness": 18,
+            "deathBlight": 18
+        },
+        "poise": 24,
+        "weight": 10.6
+    },
+    "land-of-reeds-armor": {
+        "id": "land-of-reeds-armor",
+        "name": "Land of Reeds Armor",
+        "defenses": {
+            "physical": 8.8,
+            "slash": 11.9,
+            "strike": 9.5,
+            "pierce": 9.5,
+            "magic": 10.2,
+            "fire": 11.4,
+            "lightning": 11.9,
+            "holy": 10.9
+        },
+        "resistances": {
+            "scarletRot": 60,
+            "poison": 60,
+            "hemorrhage": 50,
+            "frostbite": 50,
+            "sleep": 50,
+            "madness": 50,
+            "deathBlight": 55
+        },
+        "poise": 16,
+        "weight": 8.3
+    },
+    "land-of-reeds-armor-altered": {
+        "id": "land-of-reeds-armor-altered",
+        "name": "Land of Reeds Armor (Altered)",
+        "defenses": {
+            "physical": 8.0,
+            "slash": 11.4,
+            "strike": 8.8,
+            "pierce": 8.8,
+            "magic": 9.5,
+            "fire": 10.9,
+            "lightning": 11.4,
+            "holy": 10.2
+        },
+        "resistances": {
+            "scarletRot": 52,
+            "poison": 52,
+            "hemorrhage": 42,
+            "frostbite": 42,
+            "sleep": 42,
+            "madness": 42,
+            "deathBlight": 45
+        },
+        "poise": 15,
+        "weight": 7.8
+    },
+    "lazuli-robe": {
+        "id": "lazuli-robe",
+        "name": "Lazuli Robe",
+        "defenses": {
+            "physical": 6.1,
+            "slash": 4.2,
+            "strike": 5.3,
+            "pierce": 2.7,
+            "magic": 13.8,
+            "fire": 11.9,
+            "lightning": 12.4,
+            "holy": 12.8
+        },
+        "resistances": {
+            "scarletRot": 42,
+            "poison": 42,
+            "hemorrhage": 21,
+            "frostbite": 21,
+            "sleep": 67,
+            "madness": 67,
+            "deathBlight": 67
+        },
+        "poise": 8,
+        "weight": 4.1
+    },
+    "leather-armor": {
+        "id": "leather-armor",
+        "name": "Leather Armor",
+        "defenses": {
+            "physical": 8.0,
+            "slash": 8.0,
+            "strike": 9.5,
+            "pierce": 8.8,
+            "magic": 9.5,
+            "fire": 9.5,
+            "lightning": 10.2,
+            "holy": 10.2
+        },
+        "resistances": {
+            "scarletRot": 60,
+            "poison": 60,
+            "hemorrhage": 35,
+            "frostbite": 35,
+            "sleep": 42,
+            "madness": 42,
+            "deathBlight": 50
+        },
+        "poise": 12,
+        "weight": 7.1
+    },
+    "leather-draped-tabard": {
+        "id": "leather-draped-tabard",
+        "name": "Leather-Draped Tabard",
+        "defenses": {
+            "physical": 9.5,
+            "slash": 8.8,
+            "strike": 10.9,
+            "pierce": 10.2,
+            "magic": 10.2,
+            "fire": 10.9,
+            "lightning": 12.4,
+            "holy": 10.9
+        },
+        "resistances": {
+            "scarletRot": 63,
+            "poison": 63,
+            "hemorrhage": 42,
+            "frostbite": 42,
+            "sleep": 55,
+            "madness": 55,
+            "deathBlight": 55
+        },
+        "poise": 17,
+        "weight": 8.3
+    },
+    "ledas-armor": {
+        "id": "ledas-armor",
+        "name": "Leda's Armor",
+        "defenses": {
+            "physical": 12.7,
+            "slash": 12.2,
+            "strike": 11.2,
+            "pierce": 11.7,
+            "magic": 10.9,
+            "fire": 10.2,
+            "lightning": 7.1,
+            "holy": 10.2
+        },
+        "resistances": {
+            "scarletRot": 29,
+            "poison": 29,
+            "hemorrhage": 52,
+            "frostbite": 52,
+            "sleep": 22,
+            "madness": 22,
+            "deathBlight": 21
+        },
+        "poise": 21,
+        "weight": 10.6
+    },
+    "leyndell-knight-armor": {
+        "id": "leyndell-knight-armor",
+        "name": "Leyndell Knight Armor",
+        "defenses": {
+            "physical": 13.5,
+            "slash": 13.5,
+            "strike": 12.4,
+            "pierce": 13.5,
+            "magic": 10.2,
+            "fire": 11.4,
+            "lightning": 11.4,
+            "holy": 10.2
+        },
+        "resistances": {
+            "scarletRot": 35,
+            "poison": 35,
+            "hemorrhage": 55,
+            "frostbite": 55,
+            "sleep": 24,
+            "madness": 24,
+            "deathBlight": 24
+        },
+        "poise": 24,
+        "weight": 11.8
+    },
+    "leyndell-knight-armor-altered": {
+        "id": "leyndell-knight-armor-altered",
+        "name": "Leyndell Knight Armor (Altered)",
+        "defenses": {
+            "physical": 13.1,
+            "slash": 13.1,
+            "strike": 12.0,
+            "pierce": 13.1,
+            "magic": 9.8,
+            "fire": 11.0,
+            "lightning": 11.0,
+            "holy": 9.8
+        },
+        "resistances": {
+            "scarletRot": 32,
+            "poison": 32,
+            "hemorrhage": 50,
+            "frostbite": 50,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 21
+        },
+        "poise": 24,
+        "weight": 10.8
+    },
+    "lionels-armor": {
+        "id": "lionels-armor",
+        "name": "Lionel's Armor",
+        "defenses": {
+            "physical": 17.5,
+            "slash": 19.2,
+            "strike": 16.3,
+            "pierce": 19.7,
+            "magic": 13.5,
+            "fire": 14.9,
+            "lightning": 13.0,
+            "holy": 13.5
+        },
+        "resistances": {
+            "scarletRot": 63,
+            "poison": 63,
+            "hemorrhage": 99,
+            "frostbite": 99,
+            "sleep": 42,
+            "madness": 42,
+            "deathBlight": 50
+        },
+        "poise": 40,
+        "weight": 21.2
+    },
+    "lionels-armor-altered": {
+        "id": "lionels-armor-altered",
+        "name": "Lionel's Armor (Altered)",
+        "defenses": {
+            "physical": 17.1,
+            "slash": 18.8,
+            "strike": 15.9,
+            "pierce": 19.3,
+            "magic": 13.1,
+            "fire": 14.5,
+            "lightning": 12.6,
+            "holy": 13.1
+        },
+        "resistances": {
+            "scarletRot": 57,
+            "poison": 57,
+            "hemorrhage": 90,
+            "frostbite": 90,
+            "sleep": 38,
+            "madness": 38,
+            "deathBlight": 45
+        },
+        "poise": 38,
+        "weight": 20.2
+    },
+    "lord-of-bloods-robe": {
+        "id": "lord-of-bloods-robe",
+        "name": "Lord of Blood's Robe",
+        "defenses": {
+            "physical": 9.3,
+            "slash": 8.6,
+            "strike": 10.0,
+            "pierce": 8.6,
+            "magic": 10.0,
+            "fire": 12.2,
+            "lightning": 12.2,
+            "holy": 13.3
+        },
+        "resistances": {
+            "scarletRot": 63,
+            "poison": 63,
+            "hemorrhage": 23,
+            "frostbite": 23,
+            "sleep": 55,
+            "madness": 55,
+            "deathBlight": 55
+        },
+        "poise": 17,
+        "weight": 8.1
+    },
+    "lord-of-bloods-robe-altered": {
+        "id": "lord-of-bloods-robe-altered",
+        "name": "Lord of Blood's Robe (Altered)",
+        "defenses": {
+            "physical": 8.9,
+            "slash": 8.1,
+            "strike": 9.6,
+            "pierce": 8.1,
+            "magic": 9.6,
+            "fire": 12.0,
+            "lightning": 12.0,
+            "holy": 13.4
+        },
+        "resistances": {
+            "scarletRot": 57,
+            "poison": 57,
+            "hemorrhage": 19,
+            "frostbite": 19,
+            "sleep": 47,
+            "madness": 47,
+            "deathBlight": 47
+        },
+        "poise": 16,
+        "weight": 7.3
+    },
+    "lusats-robe": {
+        "id": "lusats-robe",
+        "name": "Lusat's Robe",
+        "defenses": {
+            "physical": 8.0,
+            "slash": 8.0,
+            "strike": 6.1,
+            "pierce": 6.1,
+            "magic": 15.4,
+            "fire": 12.8,
+            "lightning": 13.3,
+            "holy": 13.5
+        },
+        "resistances": {
+            "scarletRot": 50,
+            "poison": 50,
+            "hemorrhage": 25,
+            "frostbite": 25,
+            "sleep": 83,
+            "madness": 83,
+            "deathBlight": 99
+        },
+        "poise": 12,
+        "weight": 7.1
+    },
+    "malenias-armor": {
+        "id": "malenias-armor",
+        "name": "Malenia's Armor",
+        "defenses": {
+            "physical": 10.9,
+            "slash": 11.4,
+            "strike": 7.1,
+            "pierce": 9.5,
+            "magic": 6.1,
+            "fire": 7.1,
+            "lightning": 4.2,
+            "holy": 7.1
+        },
+        "resistances": {
+            "scarletRot": 38,
+            "poison": 38,
+            "hemorrhage": 32,
+            "frostbite": 32,
+            "sleep": 11,
+            "madness": 11,
+            "deathBlight": 11
+        },
+        "poise": 16,
+        "weight": 7.7
+    },
+    "malenias-armor-altered": {
+        "id": "malenias-armor-altered",
+        "name": "Malenia's Armor (Altered)",
+        "defenses": {
+            "physical": 10.0,
+            "slash": 10.7,
+            "strike": 6.5,
+            "pierce": 8.6,
+            "magic": 5.1,
+            "fire": 6.5,
+            "lightning": 2.5,
+            "holy": 6.5
+        },
+        "resistances": {
+            "scarletRot": 29,
+            "poison": 29,
+            "hemorrhage": 25,
+            "frostbite": 25,
+            "sleep": 0,
+            "madness": 0,
+            "deathBlight": 0
+        },
+        "poise": 13,
+        "weight": 6.8
+    },
+    "malformed-dragon-armor": {
+        "id": "malformed-dragon-armor",
+        "name": "Malformed Dragon Armor",
+        "defenses": {
+            "physical": 16.8,
+            "slash": 17.5,
+            "strike": 15.0,
+            "pierce": 16.8,
+            "magic": 13.0,
+            "fire": 13.0,
+            "lightning": 13.8,
+            "holy": 13.0
+        },
+        "resistances": {
+            "scarletRot": 57,
+            "poison": 57,
+            "hemorrhage": 76,
+            "frostbite": 76,
+            "sleep": 38,
+            "madness": 38,
+            "deathBlight": 38
+        },
+        "poise": 31,
+        "weight": 16.0
+    },
+    "malikeths-armor": {
+        "id": "malikeths-armor",
+        "name": "Maliketh's Armor",
+        "defenses": {
+            "physical": 13.5,
+            "slash": 14.0,
+            "strike": 11.9,
+            "pierce": 13.5,
+            "magic": 10.9,
+            "fire": 11.4,
+            "lightning": 9.5,
+            "holy": 12.8
+        },
+        "resistances": {
+            "scarletRot": 35,
+            "poison": 35,
+            "hemorrhage": 57,
+            "frostbite": 57,
+            "sleep": 24,
+            "madness": 24,
+            "deathBlight": 50
+        },
+        "poise": 24,
+        "weight": 12.8
+    },
+    "malikeths-armor-altered": {
+        "id": "malikeths-armor-altered",
+        "name": "Maliketh's Armor (Altered)",
+        "defenses": {
+            "physical": 12.9,
+            "slash": 13.5,
+            "strike": 11.4,
+            "pierce": 12.4,
+            "magic": 10.2,
+            "fire": 10.9,
+            "lightning": 8.8,
+            "holy": 12.6
+        },
+        "resistances": {
+            "scarletRot": 29,
+            "poison": 29,
+            "hemorrhage": 50,
+            "frostbite": 50,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 42
+        },
+        "poise": 22,
+        "weight": 11.8
+    },
+    "marais-robe": {
+        "id": "marais-robe",
+        "name": "Marais Robe",
+        "defenses": {
+            "physical": 5.3,
+            "slash": 4.2,
+            "strike": 6.1,
+            "pierce": 2.7,
+            "magic": 12.6,
+            "fire": 12.4,
+            "lightning": 12.4,
+            "holy": 12.6
+        },
+        "resistances": {
+            "scarletRot": 42,
+            "poison": 42,
+            "hemorrhage": 28,
+            "frostbite": 28,
+            "sleep": 71,
+            "madness": 71,
+            "deathBlight": 67
+        },
+        "poise": 8,
+        "weight": 4.1
+    },
+    "marionette-soldier-armor": {
+        "id": "marionette-soldier-armor",
+        "name": "Marionette Soldier Armor",
+        "defenses": {
+            "physical": 11.9,
+            "slash": 13.5,
+            "strike": 8.8,
+            "pierce": 8.8,
+            "magic": 8.8,
+            "fire": 8.8,
+            "lightning": 6.7,
+            "holy": 8.8
+        },
+        "resistances": {
+            "scarletRot": 24,
+            "poison": 24,
+            "hemorrhage": 50,
+            "frostbite": 50,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 18
+        },
+        "poise": 18,
+        "weight": 8.8
+    },
+    "mausoleum-knight-armor": {
+        "id": "mausoleum-knight-armor",
+        "name": "Mausoleum Knight Armor",
+        "defenses": {
+            "physical": 13.5,
+            "slash": 14.6,
+            "strike": 11.4,
+            "pierce": 12.9,
+            "magic": 10.9,
+            "fire": 11.4,
+            "lightning": 10.2,
+            "holy": 11.4
+        },
+        "resistances": {
+            "scarletRot": 35,
+            "poison": 35,
+            "hemorrhage": 55,
+            "frostbite": 55,
+            "sleep": 24,
+            "madness": 24,
+            "deathBlight": 23
+        },
+        "poise": 25,
+        "weight": 11.8
+    },
+    "mausoleum-knight-armor-altered": {
+        "id": "mausoleum-knight-armor-altered",
+        "name": "Mausoleum Knight Armor (Altered)",
+        "defenses": {
+            "physical": 13.1,
+            "slash": 14.2,
+            "strike": 11.0,
+            "pierce": 12.5,
+            "magic": 10.5,
+            "fire": 11.0,
+            "lightning": 9.8,
+            "holy": 11.0
+        },
+        "resistances": {
+            "scarletRot": 32,
+            "poison": 32,
+            "hemorrhage": 50,
+            "frostbite": 50,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 21
+        },
+        "poise": 25,
+        "weight": 10.8
+    },
+    "mausoleum-surcoat": {
+        "id": "mausoleum-surcoat",
+        "name": "Mausoleum Surcoat",
+        "defenses": {
+            "physical": 12.9,
+            "slash": 13.5,
+            "strike": 10.9,
+            "pierce": 12.4,
+            "magic": 10.2,
+            "fire": 10.2,
+            "lightning": 8.8,
+            "holy": 10.2
+        },
+        "resistances": {
+            "scarletRot": 32,
+            "poison": 32,
+            "hemorrhage": 50,
+            "frostbite": 50,
+            "sleep": 23,
+            "madness": 23,
+            "deathBlight": 21
+        },
+        "poise": 24,
+        "weight": 10.6
+    },
+    "messmer-soldier-armor": {
+        "id": "messmer-soldier-armor",
+        "name": "Messmer Soldier Armor",
+        "defenses": {
+            "physical": 12.1,
+            "slash": 12.1,
+            "strike": 9.7,
+            "pierce": 11.6,
+            "magic": 8.2,
+            "fire": 9.7,
+            "lightning": 6.9,
+            "holy": 8.2
+        },
+        "resistances": {
+            "scarletRot": 22,
+            "poison": 22,
+            "hemorrhage": 42,
+            "frostbite": 42,
+            "sleep": 16,
+            "madness": 16,
+            "deathBlight": 16
+        },
+        "poise": 18,
+        "weight": 9.2
+    },
+    "messmer-soldier-armor-altered": {
+        "id": "messmer-soldier-armor-altered",
+        "name": "Messmer Soldier Armor (Altered)",
+        "defenses": {
+            "physical": 12.1,
+            "slash": 12.1,
+            "strike": 9.7,
+            "pierce": 11.6,
+            "magic": 8.2,
+            "fire": 9.7,
+            "lightning": 6.9,
+            "holy": 8.2
+        },
+        "resistances": {
+            "scarletRot": 22,
+            "poison": 22,
+            "hemorrhage": 42,
+            "frostbite": 42,
+            "sleep": 16,
+            "madness": 16,
+            "deathBlight": 16
+        },
+        "poise": 18,
+        "weight": 8.1
+    },
+    "messmers-armor": {
+        "id": "messmers-armor",
+        "name": "Messmer's Armor",
+        "defenses": {
+            "physical": 9.3,
+            "slash": 8.6,
+            "strike": 9.3,
+            "pierce": 10.7,
+            "magic": 10.0,
+            "fire": 12.2,
+            "lightning": 11.7,
+            "holy": 10.0
+        },
+        "resistances": {
+            "scarletRot": 54,
+            "poison": 54,
+            "hemorrhage": 38,
+            "frostbite": 38,
+            "sleep": 52,
+            "madness": 52,
+            "deathBlight": 54
+        },
+        "poise": 16,
+        "weight": 7.8
+    },
+    "mushroom-body": {
+        "id": "mushroom-body",
+        "name": "Mushroom Body",
+        "defenses": {
+            "physical": 6.1,
+            "slash": 2.7,
+            "strike": 7.1,
+            "pierce": 5.3,
+            "magic": 13.3,
+            "fire": 5.3,
+            "lightning": 12.8,
+            "holy": 13.0
+        },
+        "resistances": {
+            "scarletRot": 102,
+            "poison": 102,
+            "hemorrhage": 24,
+            "frostbite": 24,
+            "sleep": 90,
+            "madness": 90,
+            "deathBlight": 76
+        },
+        "poise": 5,
+        "weight": 5.1
+    },
+    "night-maiden-armor": {
+        "id": "night-maiden-armor",
+        "name": "Night Maiden Armor",
+        "defenses": {
+            "physical": 8.0,
+            "slash": 8.0,
+            "strike": 9.5,
+            "pierce": 10.2,
+            "magic": 12.4,
+            "fire": 11.4,
+            "lightning": 11.9,
+            "holy": 12.4
+        },
+        "resistances": {
+            "scarletRot": 63,
+            "poison": 63,
+            "hemorrhage": 38,
+            "frostbite": 38,
+            "sleep": 55,
+            "madness": 55,
+            "deathBlight": 55
+        },
+        "poise": 16,
+        "weight": 8.3
+    },
+    "nights-cavalry-armor": {
+        "id": "nights-cavalry-armor",
+        "name": "Night's Cavalry Armor",
+        "defenses": {
+            "physical": 14.0,
+            "slash": 14.0,
+            "strike": 12.9,
+            "pierce": 13.5,
+            "magic": 10.9,
+            "fire": 12.6,
+            "lightning": 10.9,
+            "holy": 12.6
+        },
+        "resistances": {
+            "scarletRot": 38,
+            "poison": 38,
+            "hemorrhage": 57,
+            "frostbite": 57,
+            "sleep": 24,
+            "madness": 24,
+            "deathBlight": 24
+        },
+        "poise": 25,
+        "weight": 12.8
+    },
+    "nights-cavalry-armor-altered": {
+        "id": "nights-cavalry-armor-altered",
+        "name": "Night's Cavalry Armor (Altered)",
+        "defenses": {
+            "physical": 13.5,
+            "slash": 13.5,
+            "strike": 12.4,
+            "pierce": 12.4,
+            "magic": 10.2,
+            "fire": 12.4,
+            "lightning": 10.2,
+            "holy": 12.4
+        },
+        "resistances": {
+            "scarletRot": 32,
+            "poison": 32,
+            "hemorrhage": 50,
+            "frostbite": 50,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 21
+        },
+        "poise": 24,
+        "weight": 11.8
+    },
+    "nobles-traveling-garb": {
+        "id": "nobles-traveling-garb",
+        "name": "Noble's Traveling Garb",
+        "defenses": {
+            "physical": 6.1,
+            "slash": 6.1,
+            "strike": 6.7,
+            "pierce": 6.7,
+            "magic": 13.3,
+            "fire": 13.5,
+            "lightning": 13.0,
+            "holy": 13.3
+        },
+        "resistances": {
+            "scarletRot": 46,
+            "poison": 46,
+            "hemorrhage": 24,
+            "frostbite": 24,
+            "sleep": 76,
+            "madness": 76,
+            "deathBlight": 83
+        },
+        "poise": 10,
+        "weight": 6.3
+    },
+    "nomadic-merchants-finery": {
+        "id": "nomadic-merchants-finery",
+        "name": "Nomadic Merchant's Finery",
+        "defenses": {
+            "physical": 8.0,
+            "slash": 7.1,
+            "strike": 8.8,
+            "pierce": 6.7,
+            "magic": 9.5,
+            "fire": 9.5,
+            "lightning": 9.5,
+            "holy": 8.8
+        },
+        "resistances": {
+            "scarletRot": 57,
+            "poison": 57,
+            "hemorrhage": 32,
+            "frostbite": 32,
+            "sleep": 71,
+            "madness": 71,
+            "deathBlight": 46
+        },
+        "poise": 13,
+        "weight": 7.2
+    },
+    "nomadic-merchants-finery-altered": {
+        "id": "nomadic-merchants-finery-altered",
+        "name": "Nomadic Merchant's Finery (Altered)",
+        "defenses": {
+            "physical": 7.0,
+            "slash": 6.6,
+            "strike": 7.9,
+            "pierce": 6.0,
+            "magic": 8.7,
+            "fire": 8.7,
+            "lightning": 8.7,
+            "holy": 7.9
+        },
+        "resistances": {
+            "scarletRot": 50,
+            "poison": 50,
+            "hemorrhage": 25,
+            "frostbite": 25,
+            "sleep": 61,
+            "madness": 61,
+            "deathBlight": 38
+        },
+        "poise": 12,
+        "weight": 6.1
+    },
+    "nox-monk-armor": {
+        "id": "nox-monk-armor",
+        "name": "Nox Monk Armor",
+        "defenses": {
+            "physical": 9.3,
+            "slash": 9.3,
+            "strike": 10.0,
+            "pierce": 8.6,
+            "magic": 12.2,
+            "fire": 11.7,
+            "lightning": 11.7,
+            "holy": 10.0
+        },
+        "resistances": {
+            "scarletRot": 63,
+            "poison": 63,
+            "hemorrhage": 42,
+            "frostbite": 42,
+            "sleep": 50,
+            "madness": 50,
+            "deathBlight": 50
+        },
+        "poise": 16,
+        "weight": 8.1
+    },
+    "nox-monk-armor-altered": {
+        "id": "nox-monk-armor-altered",
+        "name": "Nox Monk Armor (Altered)",
+        "defenses": {
+            "physical": 8.6,
+            "slash": 8.6,
+            "strike": 9.3,
+            "pierce": 7.8,
+            "magic": 11.7,
+            "fire": 11.2,
+            "lightning": 11.2,
+            "holy": 9.3
+        },
+        "resistances": {
+            "scarletRot": 54,
+            "poison": 54,
+            "hemorrhage": 34,
+            "frostbite": 34,
+            "sleep": 42,
+            "madness": 42,
+            "deathBlight": 42
+        },
+        "poise": 15,
+        "weight": 7.4
+    },
+    "nox-swordstress-armor": {
+        "id": "nox-swordstress-armor",
+        "name": "Nox Swordstress Armor",
+        "defenses": {
+            "physical": 8.8,
+            "slash": 8.8,
+            "strike": 10.2,
+            "pierce": 9.5,
+            "magic": 12.6,
+            "fire": 10.9,
+            "lightning": 12.4,
+            "holy": 11.4
+        },
+        "resistances": {
+            "scarletRot": 60,
+            "poison": 60,
+            "hemorrhage": 38,
+            "frostbite": 38,
+            "sleep": 55,
+            "madness": 55,
+            "deathBlight": 55
+        },
+        "poise": 17,
+        "weight": 8.3
+    },
+    "nox-swordstress-armor-altered": {
+        "id": "nox-swordstress-armor-altered",
+        "name": "Nox Swordstress Armor (Altered)",
+        "defenses": {
+            "physical": 8.0,
+            "slash": 8.0,
+            "strike": 9.5,
+            "pierce": 8.8,
+            "magic": 12.4,
+            "fire": 10.2,
+            "lightning": 11.9,
+            "holy": 10.9
+        },
+        "resistances": {
+            "scarletRot": 56,
+            "poison": 56,
+            "hemorrhage": 34,
+            "frostbite": 34,
+            "sleep": 49,
+            "madness": 49,
+            "deathBlight": 49
+        },
+        "poise": 16,
+        "weight": 7.5
+    },
+    "oathseeker-knight-armor": {
+        "id": "oathseeker-knight-armor",
+        "name": "Oathseeker Knight Armor",
+        "defenses": {
+            "physical": 12.2,
+            "slash": 11.7,
+            "strike": 10.0,
+            "pierce": 11.2,
+            "magic": 9.5,
+            "fire": 9.5,
+            "lightning": 6.7,
+            "holy": 9.5
+        },
+        "resistances": {
+            "scarletRot": 25,
+            "poison": 25,
+            "hemorrhage": 50,
+            "frostbite": 50,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 21
+        },
+        "poise": 19,
+        "weight": 9.2
+    },
+    "officials-attire": {
+        "id": "officials-attire",
+        "name": "Official's Attire",
+        "defenses": {
+            "physical": 4.2,
+            "slash": 4.2,
+            "strike": 4.2,
+            "pierce": 5.3,
+            "magic": 12.8,
+            "fire": 11.9,
+            "lightning": 12.4,
+            "holy": 12.8
+        },
+        "resistances": {
+            "scarletRot": 38,
+            "poison": 38,
+            "hemorrhage": 22,
+            "frostbite": 22,
+            "sleep": 61,
+            "madness": 61,
+            "deathBlight": 64
+        },
+        "poise": 8,
+        "weight": 4.1
+    },
+    "old-aristocrat-gown": {
+        "id": "old-aristocrat-gown",
+        "name": "Old Aristocrat Gown",
+        "defenses": {
+            "physical": 7.1,
+            "slash": 6.7,
+            "strike": 7.1,
+            "pierce": 7.1,
+            "magic": 9.5,
+            "fire": 10.2,
+            "lightning": 9.5,
+            "holy": 7.1
+        },
+        "resistances": {
+            "scarletRot": 42,
+            "poison": 42,
+            "hemorrhage": 25,
+            "frostbite": 25,
+            "sleep": 35,
+            "madness": 35,
+            "deathBlight": 38
+        },
+        "poise": 10,
+        "weight": 5.1
+    },
+    "omen-armor": {
+        "id": "omen-armor",
+        "name": "Omen Armor",
+        "defenses": {
+            "physical": 18.3,
+            "slash": 18.7,
+            "strike": 15.0,
+            "pierce": 18.7,
+            "magic": 13.0,
+            "fire": 14.5,
+            "lightning": 14.9,
+            "holy": 13.8
+        },
+        "resistances": {
+            "scarletRot": 67,
+            "poison": 67,
+            "hemorrhage": 63,
+            "frostbite": 63,
+            "sleep": 57,
+            "madness": 57,
+            "deathBlight": 76
+        },
+        "poise": 43,
+        "weight": 23.1
+    },
+    "omenkiller-robe": {
+        "id": "omenkiller-robe",
+        "name": "Omenkiller Robe",
+        "defenses": {
+            "physical": 8.8,
+            "slash": 7.1,
+            "strike": 8.0,
+            "pierce": 7.1,
+            "magic": 8.8,
+            "fire": 9.5,
+            "lightning": 11.4,
+            "holy": 10.2
+        },
+        "resistances": {
+            "scarletRot": 67,
+            "poison": 67,
+            "hemorrhage": 28,
+            "frostbite": 28,
+            "sleep": 46,
+            "madness": 46,
+            "deathBlight": 46
+        },
+        "poise": 16,
+        "weight": 7.1
+    },
+    "page-garb": {
+        "id": "page-garb",
+        "name": "Page Garb",
+        "defenses": {
+            "physical": 6.7,
+            "slash": 5.3,
+            "strike": 6.1,
+            "pierce": 5.3,
+            "magic": 12.8,
+            "fire": 12.6,
+            "lightning": 13.0,
+            "holy": 13.0
+        },
+        "resistances": {
+            "scarletRot": 42,
+            "poison": 42,
+            "hemorrhage": 23,
+            "frostbite": 23,
+            "sleep": 83,
+            "madness": 83,
+            "deathBlight": 83
+        },
+        "poise": 10,
+        "weight": 5.1
+    },
+    "page-garb-altered": {
+        "id": "page-garb-altered",
+        "name": "Page Garb (Altered)",
+        "defenses": {
+            "physical": 6.3,
+            "slash": 4.4,
+            "strike": 5.5,
+            "pierce": 4.4,
+            "magic": 12.8,
+            "fire": 12.6,
+            "lightning": 13.0,
+            "holy": 13.0
+        },
+        "resistances": {
+            "scarletRot": 34,
+            "poison": 34,
+            "hemorrhage": 19,
+            "frostbite": 19,
+            "sleep": 64,
+            "madness": 64,
+            "deathBlight": 64
+        },
+        "poise": 8,
+        "weight": 4.5
+    },
+    "perfumer-robe": {
+        "id": "perfumer-robe",
+        "name": "Perfumer Robe",
+        "defenses": {
+            "physical": 5.3,
+            "slash": 6.1,
+            "strike": 6.7,
+            "pierce": 5.3,
+            "magic": 13.0,
+            "fire": 12.4,
+            "lightning": 12.6,
+            "holy": 13.0
+        },
+        "resistances": {
+            "scarletRot": 63,
+            "poison": 63,
+            "hemorrhage": 21,
+            "frostbite": 21,
+            "sleep": 71,
+            "madness": 71,
+            "deathBlight": 76
+        },
+        "poise": 10,
+        "weight": 5.1
+    },
+    "perfumer-robe-altered": {
+        "id": "perfumer-robe-altered",
+        "name": "Perfumer Robe (Altered)",
+        "defenses": {
+            "physical": 4.2,
+            "slash": 5.3,
+            "strike": 6.1,
+            "pierce": 4.2,
+            "magic": 12.8,
+            "fire": 11.9,
+            "lightning": 12.4,
+            "holy": 12.8
+        },
+        "resistances": {
+            "scarletRot": 54,
+            "poison": 54,
+            "hemorrhage": 18,
+            "frostbite": 18,
+            "sleep": 63,
+            "madness": 57,
+            "deathBlight": 67
+        },
+        "poise": 8,
+        "weight": 4.1
+    },
+    "perfumers-traveling-garb": {
+        "id": "perfumers-traveling-garb",
+        "name": "Perfumer's Traveling Garb",
+        "defenses": {
+            "physical": 6.1,
+            "slash": 5.3,
+            "strike": 6.1,
+            "pierce": 4.2,
+            "magic": 13.0,
+            "fire": 13.0,
+            "lightning": 12.6,
+            "holy": 13.0
+        },
+        "resistances": {
+            "scarletRot": 57,
+            "poison": 57,
+            "hemorrhage": 23,
+            "frostbite": 23,
+            "sleep": 76,
+            "madness": 76,
+            "deathBlight": 71
+        },
+        "poise": 10,
+        "weight": 5.1
+    },
+    "perfumers-traveling-garb-altered": {
+        "id": "perfumers-traveling-garb-altered",
+        "name": "Perfumer's Traveling Garb (Altered)",
+        "defenses": {
+            "physical": 5.3,
+            "slash": 4.2,
+            "strike": 5.3,
+            "pierce": 2.7,
+            "magic": 12.8,
+            "fire": 12.8,
+            "lightning": 12.4,
+            "holy": 12.8
+        },
+        "resistances": {
+            "scarletRot": 55,
+            "poison": 55,
+            "hemorrhage": 21,
+            "frostbite": 21,
+            "sleep": 67,
+            "madness": 67,
+            "deathBlight": 63
+        },
+        "poise": 8,
+        "weight": 4.1
+    },
+    "preceptors-long-gown": {
+        "id": "preceptors-long-gown",
+        "name": "Preceptor's Long Gown",
+        "defenses": {
+            "physical": 6.1,
+            "slash": 6.1,
+            "strike": 6.7,
+            "pierce": 6.1,
+            "magic": 14.5,
+            "fire": 13.3,
+            "lightning": 12.8,
+            "holy": 12.8
+        },
+        "resistances": {
+            "scarletRot": 50,
+            "poison": 50,
+            "hemorrhage": 24,
+            "frostbite": 24,
+            "sleep": 83,
+            "madness": 83,
+            "deathBlight": 76
+        },
+        "poise": 12,
+        "weight": 6.3
+    },
+    "preceptors-long-gown-altered": {
+        "id": "preceptors-long-gown-altered",
+        "name": "Preceptor's Long Gown (Altered)",
+        "defenses": {
+            "physical": 4.2,
+            "slash": 2.7,
+            "strike": 4.2,
+            "pierce": 4.2,
+            "magic": 12.8,
+            "fire": 12.4,
+            "lightning": 11.9,
+            "holy": 12.4
+        },
+        "resistances": {
+            "scarletRot": 38,
+            "poison": 38,
+            "hemorrhage": 16,
+            "frostbite": 16,
+            "sleep": 57,
+            "madness": 57,
+            "deathBlight": 57
+        },
+        "poise": 7,
+        "weight": 3.2
+    },
+    "prisoner-clothing": {
+        "id": "prisoner-clothing",
+        "name": "Prisoner Clothing",
+        "defenses": {
+            "physical": 4.2,
+            "slash": 5.3,
+            "strike": 5.3,
+            "pierce": 4.2,
+            "magic": 11.9,
+            "fire": 11.4,
+            "lightning": 11.4,
+            "holy": 12.6
+        },
+        "resistances": {
+            "scarletRot": 42,
+            "poison": 42,
+            "hemorrhage": 23,
+            "frostbite": 23,
+            "sleep": 63,
+            "madness": 63,
+            "deathBlight": 63
+        },
+        "poise": 5,
+        "weight": 3.2
+    },
+    "prophet-robe": {
+        "id": "prophet-robe",
+        "name": "Prophet Robe",
+        "defenses": {
+            "physical": 6.7,
+            "slash": 6.1,
+            "strike": 6.7,
+            "pierce": 6.7,
+            "magic": 13.5,
+            "fire": 12.6,
+            "lightning": 13.0,
+            "holy": 13.0
+        },
+        "resistances": {
+            "scarletRot": 46,
+            "poison": 46,
+            "hemorrhage": 25,
+            "frostbite": 25,
+            "sleep": 83,
+            "madness": 83,
+            "deathBlight": 90
+        },
+        "poise": 12,
+        "weight": 6.3
+    },
+    "prophet-robe-altered": {
+        "id": "prophet-robe-altered",
+        "name": "Prophet Robe (Altered)",
+        "defenses": {
+            "physical": 6.1,
+            "slash": 5.3,
+            "strike": 6.1,
+            "pierce": 6.1,
+            "magic": 13.3,
+            "fire": 12.4,
+            "lightning": 12.8,
+            "holy": 12.8
+        },
+        "resistances": {
+            "scarletRot": 38,
+            "poison": 38,
+            "hemorrhage": 22,
+            "frostbite": 22,
+            "sleep": 69,
+            "madness": 69,
+            "deathBlight": 75
+        },
+        "poise": 10,
+        "weight": 5.1
+    },
+    "queens-robe": {
+        "id": "queens-robe",
+        "name": "Queen's Robe",
+        "defenses": {
+            "physical": 6.1,
+            "slash": 5.3,
+            "strike": 5.3,
+            "pierce": 4.2,
+            "magic": 13.8,
+            "fire": 12.6,
+            "lightning": 12.8,
+            "holy": 13.3
+        },
+        "resistances": {
+            "scarletRot": 42,
+            "poison": 42,
+            "hemorrhage": 25,
+            "frostbite": 25,
+            "sleep": 71,
+            "madness": 71,
+            "deathBlight": 83
+        },
+        "poise": 8,
+        "weight": 5.1
+    },
+    "radahns-lion-armor": {
+        "id": "radahns-lion-armor",
+        "name": "Radahn's Lion Armor",
+        "defenses": {
+            "physical": 18.7,
+            "slash": 18.3,
+            "strike": 15.0,
+            "pierce": 17.5,
+            "magic": 13.5,
+            "fire": 14.1,
+            "lightning": 12.6,
+            "holy": 13.5
+        },
+        "resistances": {
+            "scarletRot": 60,
+            "poison": 60,
+            "hemorrhage": 99,
+            "frostbite": 99,
+            "sleep": 42,
+            "madness": 42,
+            "deathBlight": 38
+        },
+        "poise": 34,
+        "weight": 17.5
+    },
+    "radahns-lion-armor-altered": {
+        "id": "radahns-lion-armor-altered",
+        "name": "Radahn's Lion Armor (Altered)",
+        "defenses": {
+            "physical": 18.5,
+            "slash": 17.7,
+            "strike": 14.6,
+            "pierce": 17.0,
+            "magic": 13.3,
+            "fire": 14.0,
+            "lightning": 12.4,
+            "holy": 13.3
+        },
+        "resistances": {
+            "scarletRot": 52,
+            "poison": 52,
+            "hemorrhage": 82,
+            "frostbite": 82,
+            "sleep": 34,
+            "madness": 34,
+            "deathBlight": 32
+        },
+        "poise": 33,
+        "weight": 16.4
+    },
+    "raging-wolf-armor": {
+        "id": "raging-wolf-armor",
+        "name": "Raging Wolf Armor",
+        "defenses": {
+            "physical": 13.2,
+            "slash": 13.2,
+            "strike": 11.6,
+            "pierce": 12.6,
+            "magic": 9.9,
+            "fire": 11.1,
+            "lightning": 6.8,
+            "holy": 9.2
+        },
+        "resistances": {
+            "scarletRot": 31,
+            "poison": 31,
+            "hemorrhage": 55,
+            "frostbite": 55,
+            "sleep": 17,
+            "madness": 17,
+            "deathBlight": 17
+        },
+        "poise": 21,
+        "weight": 10.1
+    },
+    "raging-wolf-armor-altered": {
+        "id": "raging-wolf-armor-altered",
+        "name": "Raging Wolf Armor (Altered)",
+        "defenses": {
+            "physical": 12.8,
+            "slash": 12.8,
+            "strike": 10.8,
+            "pierce": 12.3,
+            "magic": 8.7,
+            "fire": 10.8,
+            "lightning": 6.6,
+            "holy": 8.7
+        },
+        "resistances": {
+            "scarletRot": 25,
+            "poison": 25,
+            "hemorrhage": 50,
+            "frostbite": 50,
+            "sleep": 10,
+            "madness": 10,
+            "deathBlight": 10
+        },
+        "poise": 19,
+        "weight": 9.0
+    },
+    "rakshasa-armor": {
+        "id": "rakshasa-armor",
+        "name": "Rakshasa Armor",
+        "defenses": {
+            "physical": 12.9,
+            "slash": 14.0,
+            "strike": 11.9,
+            "pierce": 13.5,
+            "magic": 11.4,
+            "fire": 12.4,
+            "lightning": 10.9,
+            "holy": 11.4
+        },
+        "resistances": {
+            "scarletRot": 35,
+            "poison": 35,
+            "hemorrhage": 60,
+            "frostbite": 60,
+            "sleep": 28,
+            "madness": 28,
+            "deathBlight": 28
+        },
+        "poise": 27,
+        "weight": 12.8
+    },
+    "raptors-black-feathers": {
+        "id": "raptors-black-feathers",
+        "name": "Raptor's Black Feathers",
+        "defenses": {
+            "physical": 8.0,
+            "slash": 9.5,
+            "strike": 8.8,
+            "pierce": 9.5,
+            "magic": 10.2,
+            "fire": 10.2,
+            "lightning": 10.9,
+            "holy": 9.5
+        },
+        "resistances": {
+            "scarletRot": 57,
+            "poison": 57,
+            "hemorrhage": 35,
+            "frostbite": 35,
+            "sleep": 60,
+            "madness": 60,
+            "deathBlight": 60
+        },
+        "poise": 15,
+        "weight": 7.7
+    },
+    "raya-lucarian-robe": {
+        "id": "raya-lucarian-robe",
+        "name": "Raya Lucarian Robe",
+        "defenses": {
+            "physical": 5.3,
+            "slash": 6.1,
+            "strike": 6.1,
+            "pierce": 2.7,
+            "magic": 13.5,
+            "fire": 12.6,
+            "lightning": 12.4,
+            "holy": 12.8
+        },
+        "resistances": {
+            "scarletRot": 42,
+            "poison": 42,
+            "hemorrhage": 18,
+            "frostbite": 18,
+            "sleep": 67,
+            "madness": 67,
+            "deathBlight": 63
+        },
+        "poise": 7,
+        "weight": 4.1
+    },
+    "redmane-knight-armor": {
+        "id": "redmane-knight-armor",
+        "name": "Redmane Knight Armor",
+        "defenses": {
+            "physical": 13.5,
+            "slash": 13.5,
+            "strike": 11.4,
+            "pierce": 12.4,
+            "magic": 10.9,
+            "fire": 12.8,
+            "lightning": 9.5,
+            "holy": 10.9
+        },
+        "resistances": {
+            "scarletRot": 35,
+            "poison": 35,
+            "hemorrhage": 55,
+            "frostbite": 55,
+            "sleep": 24,
+            "madness": 24,
+            "deathBlight": 25
+        },
+        "poise": 24,
+        "weight": 11.8
+    },
+    "redmane-knight-armor-altered": {
+        "id": "redmane-knight-armor-altered",
+        "name": "Redmane Knight Armor (Altered)",
+        "defenses": {
+            "physical": 13.1,
+            "slash": 13.1,
+            "strike": 11.0,
+            "pierce": 12.0,
+            "magic": 10.5,
+            "fire": 12.4,
+            "lightning": 9.1,
+            "holy": 10.5
+        },
+        "resistances": {
+            "scarletRot": 32,
+            "poison": 32,
+            "hemorrhage": 50,
+            "frostbite": 50,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 22
+        },
+        "poise": 24,
+        "weight": 10.8
+    },
+    "redmane-surcoat": {
+        "id": "redmane-surcoat",
+        "name": "Redmane Surcoat",
+        "defenses": {
+            "physical": 13.5,
+            "slash": 12.4,
+            "strike": 10.9,
+            "pierce": 11.9,
+            "magic": 10.2,
+            "fire": 11.4,
+            "lightning": 8.0,
+            "holy": 9.5
+        },
+        "resistances": {
+            "scarletRot": 32,
+            "poison": 32,
+            "hemorrhage": 50,
+            "frostbite": 50,
+            "sleep": 23,
+            "madness": 23,
+            "deathBlight": 24
+        },
+        "poise": 22,
+        "weight": 10.6
+    },
+    "rellanas-armor": {
+        "id": "rellanas-armor",
+        "name": "Rellana's Armor",
+        "defenses": {
+            "physical": 13.5,
+            "slash": 14.0,
+            "strike": 11.9,
+            "pierce": 12.9,
+            "magic": 12.6,
+            "fire": 11.9,
+            "lightning": 9.5,
+            "holy": 10.9
+        },
+        "resistances": {
+            "scarletRot": 35,
+            "poison": 35,
+            "hemorrhage": 57,
+            "frostbite": 57,
+            "sleep": 24,
+            "madness": 24,
+            "deathBlight": 24
+        },
+        "poise": 24,
+        "weight": 11.8
+    },
+    "ronins-armor": {
+        "id": "ronins-armor",
+        "name": "Ronin's Armor",
+        "defenses": {
+            "physical": 10.5,
+            "slash": 11.2,
+            "strike": 10.5,
+            "pierce": 10.5,
+            "magic": 11.9,
+            "fire": 12.4,
+            "lightning": 13.4,
+            "holy": 11.9
+        },
+        "resistances": {
+            "scarletRot": 66,
+            "poison": 66,
+            "hemorrhage": 48,
+            "frostbite": 48,
+            "sleep": 52,
+            "madness": 52,
+            "deathBlight": 57
+        },
+        "poise": 16,
+        "weight": 8.5
+    },
+    "ronins-armor-altered": {
+        "id": "ronins-armor-altered",
+        "name": "Ronin's Armor (Altered)",
+        "defenses": {
+            "physical": 8.8,
+            "slash": 9.5,
+            "strike": 8.8,
+            "pierce": 8.8,
+            "magic": 10.2,
+            "fire": 10.9,
+            "lightning": 11.9,
+            "holy": 10.2
+        },
+        "resistances": {
+            "scarletRot": 54,
+            "poison": 54,
+            "hemorrhage": 38,
+            "frostbite": 38,
+            "sleep": 42,
+            "madness": 42,
+            "deathBlight": 45
+        },
+        "poise": 15,
+        "weight": 7.6
+    },
+    "rotten-gravekeeper-cloak": {
+        "id": "rotten-gravekeeper-cloak",
+        "name": "Rotten Gravekeeper Cloak",
+        "defenses": {
+            "physical": 6.7,
+            "slash": 6.7,
+            "strike": 6.7,
+            "pierce": 6.7,
+            "magic": 8.8,
+            "fire": 8.8,
+            "lightning": 10.9,
+            "holy": 8.8
+        },
+        "resistances": {
+            "scarletRot": 76,
+            "poison": 76,
+            "hemorrhage": 32,
+            "frostbite": 32,
+            "sleep": 42,
+            "madness": 42,
+            "deathBlight": 42
+        },
+        "poise": 12,
+        "weight": 6.3
+    },
+    "rotten-gravekeeper-cloak-altered": {
+        "id": "rotten-gravekeeper-cloak-altered",
+        "name": "Rotten Gravekeeper Cloak (Altered)",
+        "defenses": {
+            "physical": 6.1,
+            "slash": 6.1,
+            "strike": 6.1,
+            "pierce": 6.1,
+            "magic": 8.0,
+            "fire": 8.0,
+            "lightning": 10.2,
+            "holy": 8.0
+        },
+        "resistances": {
+            "scarletRot": 64,
+            "poison": 64,
+            "hemorrhage": 25,
+            "frostbite": 25,
+            "sleep": 34,
+            "madness": 34,
+            "deathBlight": 34
+        },
+        "poise": 8,
+        "weight": 5.1
+    },
+    "royal-knight-armor": {
+        "id": "royal-knight-armor",
+        "name": "Royal Knight Armor",
+        "defenses": {
+            "physical": 16.0,
+            "slash": 17.5,
+            "strike": 14.4,
+            "pierce": 16.8,
+            "magic": 14.1,
+            "fire": 13.3,
+            "lightning": 12.4,
+            "holy": 13.0
+        },
+        "resistances": {
+            "scarletRot": 50,
+            "poison": 50,
+            "hemorrhage": 67,
+            "frostbite": 67,
+            "sleep": 35,
+            "madness": 35,
+            "deathBlight": 35
+        },
+        "poise": 24,
+        "weight": 15.5
+    },
+    "royal-knight-armor-altered": {
+        "id": "royal-knight-armor-altered",
+        "name": "Royal Knight Armor (Altered)",
+        "defenses": {
+            "physical": 15.8,
+            "slash": 17.3,
+            "strike": 14.2,
+            "pierce": 16.6,
+            "magic": 13.9,
+            "fire": 13.1,
+            "lightning": 12.2,
+            "holy": 12.8
+        },
+        "resistances": {
+            "scarletRot": 45,
+            "poison": 45,
+            "hemorrhage": 61,
+            "frostbite": 61,
+            "sleep": 32,
+            "madness": 32,
+            "deathBlight": 32
+        },
+        "poise": 28,
+        "weight": 15.0
+    },
+    "royal-remains-armor": {
+        "id": "royal-remains-armor",
+        "name": "Royal Remains Armor",
+        "defenses": {
+            "physical": 11.9,
+            "slash": 12.9,
+            "strike": 11.4,
+            "pierce": 11.9,
+            "magic": 9.5,
+            "fire": 10.2,
+            "lightning": 8.0,
+            "holy": 8.8
+        },
+        "resistances": {
+            "scarletRot": 35,
+            "poison": 35,
+            "hemorrhage": 57,
+            "frostbite": 57,
+            "sleep": 24,
+            "madness": 24,
+            "deathBlight": 11
+        },
+        "poise": 21,
+        "weight": 10.6
+    },
+    "rulers-robe": {
+        "id": "rulers-robe",
+        "name": "Ruler's Robe",
+        "defenses": {
+            "physical": 5.3,
+            "slash": 6.7,
+            "strike": 6.7,
+            "pierce": 4.2,
+            "magic": 13.0,
+            "fire": 12.4,
+            "lightning": 12.8,
+            "holy": 13.3
+        },
+        "resistances": {
+            "scarletRot": 46,
+            "poison": 46,
+            "hemorrhage": 24,
+            "frostbite": 24,
+            "sleep": 76,
+            "madness": 76,
+            "deathBlight": 76
+        },
+        "poise": 10,
+        "weight": 5.1
+    },
+    "sage-robe": {
+        "id": "sage-robe",
+        "name": "Sage Robe",
+        "defenses": {
+            "physical": 6.7,
+            "slash": 6.1,
+            "strike": 6.1,
+            "pierce": 4.2,
+            "magic": 13.5,
+            "fire": 12.6,
+            "lightning": 13.0,
+            "holy": 13.5
+        },
+        "resistances": {
+            "scarletRot": 38,
+            "poison": 38,
+            "hemorrhage": 23,
+            "frostbite": 23,
+            "sleep": 71,
+            "madness": 71,
+            "deathBlight": 76
+        },
+        "poise": 8,
+        "weight": 5.1
+    },
+    "sanguine-noble-robe": {
+        "id": "sanguine-noble-robe",
+        "name": "Sanguine Noble Robe",
+        "defenses": {
+            "physical": 6.1,
+            "slash": 5.3,
+            "strike": 5.3,
+            "pierce": 5.3,
+            "magic": 13.3,
+            "fire": 11.9,
+            "lightning": 13.0,
+            "holy": 13.5
+        },
+        "resistances": {
+            "scarletRot": 50,
+            "poison": 50,
+            "hemorrhage": 21,
+            "frostbite": 21,
+            "sleep": 83,
+            "madness": 83,
+            "deathBlight": 76
+        },
+        "poise": 10,
+        "weight": 5.1
+    },
+    "scale-armor": {
+        "id": "scale-armor",
+        "name": "Scale Armor",
+        "defenses": {
+            "physical": 11.9,
+            "slash": 12.4,
+            "strike": 10.2,
+            "pierce": 10.9,
+            "magic": 7.1,
+            "fire": 10.9,
+            "lightning": 6.7,
+            "holy": 8.0
+        },
+        "resistances": {
+            "scarletRot": 25,
+            "poison": 25,
+            "hemorrhage": 46,
+            "frostbite": 46,
+            "sleep": 11,
+            "madness": 11,
+            "deathBlight": 21
+        },
+        "poise": 18,
+        "weight": 8.8
+    },
+    "scaled-armor": {
+        "id": "scaled-armor",
+        "name": "Scaled Armor",
+        "defenses": {
+            "physical": 16.0,
+            "slash": 16.8,
+            "strike": 13.9,
+            "pierce": 16.0,
+            "magic": 13.5,
+            "fire": 14.1,
+            "lightning": 13.0,
+            "holy": 13.5
+        },
+        "resistances": {
+            "scarletRot": 57,
+            "poison": 57,
+            "hemorrhage": 83,
+            "frostbite": 83,
+            "sleep": 38,
+            "madness": 38,
+            "deathBlight": 38
+        },
+        "poise": 33,
+        "weight": 16.0
+    },
+    "scaled-armor-altered": {
+        "id": "scaled-armor-altered",
+        "name": "Scaled Armor (Altered)",
+        "defenses": {
+            "physical": 15.3,
+            "slash": 16.0,
+            "strike": 13.4,
+            "pierce": 15.3,
+            "magic": 12.8,
+            "fire": 13.3,
+            "lightning": 12.4,
+            "holy": 12.8
+        },
+        "resistances": {
+            "scarletRot": 45,
+            "poison": 45,
+            "hemorrhage": 64,
+            "frostbite": 64,
+            "sleep": 29,
+            "madness": 29,
+            "deathBlight": 29
+        },
+        "poise": 30,
+        "weight": 15.0
+    },
+    "scarlet-tabard": {
+        "id": "scarlet-tabard",
+        "name": "Scarlet Tabard",
+        "defenses": {
+            "physical": 10.2,
+            "slash": 8.8,
+            "strike": 9.5,
+            "pierce": 8.8,
+            "magic": 10.9,
+            "fire": 11.9,
+            "lightning": 11.9,
+            "holy": 10.9
+        },
+        "resistances": {
+            "scarletRot": 63,
+            "poison": 63,
+            "hemorrhage": 42,
+            "frostbite": 42,
+            "sleep": 55,
+            "madness": 55,
+            "deathBlight": 55
+        },
+        "poise": 17,
+        "weight": 8.3
+    },
+    "shadow-militiaman-armor": {
+        "id": "shadow-militiaman-armor",
+        "name": "Shadow Militiaman Armor",
+        "defenses": {
+            "physical": 7.1,
+            "slash": 8.0,
+            "strike": 8.8,
+            "pierce": 8.0,
+            "magic": 10.2,
+            "fire": 10.9,
+            "lightning": 10.9,
+            "holy": 8.8
+        },
+        "resistances": {
+            "scarletRot": 69,
+            "poison": 69,
+            "hemorrhage": 29,
+            "frostbite": 29,
+            "sleep": 38,
+            "madness": 38,
+            "deathBlight": 38
+        },
+        "poise": 13,
+        "weight": 7.1
+    },
+    "shaman-furs": {
+        "id": "shaman-furs",
+        "name": "Shaman Furs",
+        "defenses": {
+            "physical": 5.3,
+            "slash": 5.3,
+            "strike": 6.1,
+            "pierce": 8.0,
+            "magic": 8.0,
+            "fire": 7.1,
+            "lightning": 8.0,
+            "holy": 6.7
+        },
+        "resistances": {
+            "scarletRot": 63,
+            "poison": 63,
+            "hemorrhage": 42,
+            "frostbite": 42,
+            "sleep": 55,
+            "madness": 55,
+            "deathBlight": 35
+        },
+        "poise": 10,
+        "weight": 5.1
+    },
+    "snow-witch-robe": {
+        "id": "snow-witch-robe",
+        "name": "Snow Witch Robe",
+        "defenses": {
+            "physical": 5.7,
+            "slash": 6.5,
+            "strike": 6.5,
+            "pierce": 4.6,
+            "magic": 13.4,
+            "fire": 13.4,
+            "lightning": 13.2,
+            "holy": 13.4
+        },
+        "resistances": {
+            "scarletRot": 38,
+            "poison": 38,
+            "hemorrhage": 32,
+            "frostbite": 32,
+            "sleep": 71,
+            "madness": 71,
+            "deathBlight": 71
+        },
+        "poise": 8,
+        "weight": 5.5
+    },
+    "snow-witch-robe-altered": {
+        "id": "snow-witch-robe-altered",
+        "name": "Snow Witch Robe (Altered)",
+        "defenses": {
+            "physical": 4.6,
+            "slash": 5.7,
+            "strike": 5.7,
+            "pierce": 3.1,
+            "magic": 13.2,
+            "fire": 13.2,
+            "lightning": 13.0,
+            "holy": 13.2
+        },
+        "resistances": {
+            "scarletRot": 32,
+            "poison": 32,
+            "hemorrhage": 25,
+            "frostbite": 25,
+            "sleep": 57,
+            "madness": 57,
+            "deathBlight": 57
+        },
+        "poise": 7,
+        "weight": 4.6
+    },
+    "spellblades-traveling-attire": {
+        "id": "spellblades-traveling-attire",
+        "name": "Spellblade's Traveling Attire",
+        "defenses": {
+            "physical": 4.1,
+            "slash": 4.1,
+            "strike": 2.6,
+            "pierce": 4.1,
+            "magic": 12.7,
+            "fire": 11.3,
+            "lightning": 11.8,
+            "holy": 12.7
+        },
+        "resistances": {
+            "scarletRot": 35,
+            "poison": 35,
+            "hemorrhage": 17,
+            "frostbite": 17,
+            "sleep": 59,
+            "madness": 59,
+            "deathBlight": 63
+        },
+        "poise": 7,
+        "weight": 3.3
+    },
+    "spellblades-traveling-attire-altered": {
+        "id": "spellblades-traveling-attire-altered",
+        "name": "Spellblade's Traveling Attire (Altered)",
+        "defenses": {
+            "physical": 2.6,
+            "slash": 2.6,
+            "strike": 0.5,
+            "pierce": 2.6,
+            "magic": 12.6,
+            "fire": 10.9,
+            "lightning": 11.4,
+            "holy": 12.6
+        },
+        "resistances": {
+            "scarletRot": 32,
+            "poison": 32,
+            "hemorrhage": 10,
+            "frostbite": 10,
+            "sleep": 54,
+            "madness": 54,
+            "deathBlight": 57
+        },
+        "poise": 5,
+        "weight": 2.5
+    },
+    "thiolliers-garb": {
+        "id": "thiolliers-garb",
+        "name": "Thiollier's Garb",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 2
+        },
+        "defenses": {
+            "physical": 8.8,
+            "slash": 7.1,
+            "strike": 8.8,
+            "pierce": 7.1,
+            "magic": 8.0,
+            "fire": 9.5,
+            "lightning": 10.9,
+            "holy": 10.2
+        },
+        "resistances": {
+            "scarletRot": 71,
+            "poison": 71,
+            "hemorrhage": 28,
+            "frostbite": 28,
+            "sleep": 63,
+            "madness": 63,
+            "deathBlight": 38
+        },
+        "poise": 13,
+        "weight": 7.1
+    },
+    "thiolliers-garb-altered": {
+        "id": "thiolliers-garb-altered",
+        "name": "Thiollier's Garb (Altered)",
+        "defenses": {
+            "physical": 8.0,
+            "slash": 6.7,
+            "strike": 8.0,
+            "pierce": 6.7,
+            "magic": 7.1,
+            "fire": 8.8,
+            "lightning": 10.2,
+            "holy": 9.5
+        },
+        "resistances": {
+            "scarletRot": 67,
+            "poison": 67,
+            "hemorrhage": 25,
+            "frostbite": 25,
+            "sleep": 60,
+            "madness": 60,
+            "deathBlight": 35
+        },
+        "poise": 12,
+        "weight": 6.3
+    },
+    "travelers-clothes": {
+        "id": "travelers-clothes",
+        "name": "Traveler's Clothes",
+        "defenses": {
+            "physical": 6.1,
+            "slash": 4.2,
+            "strike": 5.3,
+            "pierce": 2.7,
+            "magic": 13.3,
+            "fire": 12.6,
+            "lightning": 12.8,
+            "holy": 12.4
+        },
+        "resistances": {
+            "scarletRot": 35,
+            "poison": 35,
+            "hemorrhage": 24,
+            "frostbite": 24,
+            "sleep": 67,
+            "madness": 67,
+            "deathBlight": 67
+        },
+        "poise": 8,
+        "weight": 4.1
+    },
+    "traveling-maiden-robe": {
+        "id": "traveling-maiden-robe",
+        "name": "Traveling Maiden Robe",
+        "defenses": {
+            "physical": 5.4,
+            "slash": 6.2,
+            "strike": 6.2,
+            "pierce": 4.3,
+            "magic": 13.4,
+            "fire": 12.9,
+            "lightning": 13.1,
+            "holy": 13.4
+        },
+        "resistances": {
+            "scarletRot": 46,
+            "poison": 46,
+            "hemorrhage": 24,
+            "frostbite": 24,
+            "sleep": 76,
+            "madness": 76,
+            "deathBlight": 83
+        },
+        "poise": 10,
+        "weight": 4.9
+    },
+    "traveling-maiden-robe-altered": {
+        "id": "traveling-maiden-robe-altered",
+        "name": "Traveling Maiden Robe (Altered)",
+        "defenses": {
+            "physical": 4.3,
+            "slash": 5.4,
+            "strike": 5.4,
+            "pierce": 2.8,
+            "magic": 13.1,
+            "fire": 12.7,
+            "lightning": 12.9,
+            "holy": 13.1
+        },
+        "resistances": {
+            "scarletRot": 38,
+            "poison": 38,
+            "hemorrhage": 21,
+            "frostbite": 21,
+            "sleep": 61,
+            "madness": 61,
+            "deathBlight": 64
+        },
+        "poise": 8,
+        "weight": 4.3
+    },
+    "tree-and-beast-surcoat": {
+        "id": "tree-and-beast-surcoat",
+        "name": "Tree-and-Beast Surcoat",
+        "defenses": {
+            "physical": 12.9,
+            "slash": 12.9,
+            "strike": 11.4,
+            "pierce": 12.4,
+            "magic": 10.2,
+            "fire": 10.9,
+            "lightning": 8.0,
+            "holy": 9.5
+        },
+        "resistances": {
+            "scarletRot": 32,
+            "poison": 32,
+            "hemorrhage": 55,
+            "frostbite": 55,
+            "sleep": 23,
+            "madness": 23,
+            "deathBlight": 23
+        },
+        "poise": 22,
+        "weight": 10.6
+    },
+    "tree-sentinel-armor": {
+        "id": "tree-sentinel-armor",
+        "name": "Tree Sentinel Armor",
+        "defenses": {
+            "physical": 18.7,
+            "slash": 18.7,
+            "strike": 15.0,
+            "pierce": 17.5,
+            "magic": 13.0,
+            "fire": 17.1,
+            "lightning": 12.6,
+            "holy": 14.1
+        },
+        "resistances": {
+            "scarletRot": 67,
+            "poison": 67,
+            "hemorrhage": 90,
+            "frostbite": 90,
+            "sleep": 42,
+            "madness": 42,
+            "deathBlight": 46
+        },
+        "poise": 39,
+        "weight": 18.9
+    },
+    "tree-sentinel-armor-altered": {
+        "id": "tree-sentinel-armor-altered",
+        "name": "Tree Sentinel Armor (Altered)",
+        "defenses": {
+            "physical": 18.5,
+            "slash": 18.5,
+            "strike": 14.8,
+            "pierce": 17.3,
+            "magic": 12.6,
+            "fire": 16.4,
+            "lightning": 12.4,
+            "holy": 14.0
+        },
+        "resistances": {
+            "scarletRot": 57,
+            "poison": 57,
+            "hemorrhage": 75,
+            "frostbite": 75,
+            "sleep": 34,
+            "madness": 34,
+            "deathBlight": 38
+        },
+        "poise": 35,
+        "weight": 18.1
+    },
+    "tree-surcoat": {
+        "id": "tree-surcoat",
+        "name": "Tree Surcoat",
+        "defenses": {
+            "physical": 12.9,
+            "slash": 12.9,
+            "strike": 8.8,
+            "pierce": 11.9,
+            "magic": 8.8,
+            "fire": 10.9,
+            "lightning": 7.1,
+            "holy": 8.8
+        },
+        "resistances": {
+            "scarletRot": 25,
+            "poison": 25,
+            "hemorrhage": 55,
+            "frostbite": 55,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 18
+        },
+        "poise": 21,
+        "weight": 9.2
+    },
+    "twinned-armor": {
+        "id": "twinned-armor",
+        "name": "Twinned Armor",
+        "defenses": {
+            "physical": 14.6,
+            "slash": 16.0,
+            "strike": 13.4,
+            "pierce": 13.5,
+            "magic": 12.4,
+            "fire": 12.4,
+            "lightning": 10.2,
+            "holy": 11.4
+        },
+        "resistances": {
+            "scarletRot": 38,
+            "poison": 38,
+            "hemorrhage": 60,
+            "frostbite": 60,
+            "sleep": 24,
+            "madness": 24,
+            "deathBlight": 60
+        },
+        "poise": 25,
+        "weight": 13.7
+    },
+    "twinned-armor-altered": {
+        "id": "twinned-armor-altered",
+        "name": "Twinned Armor (Altered)",
+        "defenses": {
+            "physical": 14.0,
+            "slash": 15.3,
+            "strike": 12.9,
+            "pierce": 12.9,
+            "magic": 11.9,
+            "fire": 11.9,
+            "lightning": 9.5,
+            "holy": 10.9
+        },
+        "resistances": {
+            "scarletRot": 32,
+            "poison": 32,
+            "hemorrhage": 52,
+            "frostbite": 52,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 52
+        },
+        "poise": 24,
+        "weight": 12.8
+    },
+    "upper-class-robe": {
+        "id": "upper-class-robe",
+        "name": "Upper-Class Robe",
+        "defenses": {
+            "physical": 4.2,
+            "slash": 6.1,
+            "strike": 6.1,
+            "pierce": 2.7,
+            "magic": 12.8,
+            "fire": 11.9,
+            "lightning": 12.6,
+            "holy": 13.0
+        },
+        "resistances": {
+            "scarletRot": 38,
+            "poison": 38,
+            "hemorrhage": 21,
+            "frostbite": 21,
+            "sleep": 61,
+            "madness": 61,
+            "deathBlight": 61
+        },
+        "poise": 8,
+        "weight": 4.1
+    },
+    "vagabond-knight-armor": {
+        "id": "vagabond-knight-armor",
+        "name": "Vagabond Knight Armor",
+        "defenses": {
+            "physical": 13.5,
+            "slash": 12.4,
+            "strike": 11.4,
+            "pierce": 11.9,
+            "magic": 10.2,
+            "fire": 10.9,
+            "lightning": 8.8,
+            "holy": 8.8
+        },
+        "resistances": {
+            "scarletRot": 35,
+            "poison": 35,
+            "hemorrhage": 57,
+            "frostbite": 57,
+            "sleep": 23,
+            "madness": 23,
+            "deathBlight": 23
+        },
+        "poise": 22,
+        "weight": 10.6
+    },
+    "vagabond-knight-armor-altered": {
+        "id": "vagabond-knight-armor-altered",
+        "name": "Vagabond Knight Armor (Altered)",
+        "defenses": {
+            "physical": 13.2,
+            "slash": 12.2,
+            "strike": 10.5,
+            "pierce": 11.7,
+            "magic": 9.1,
+            "fire": 10.5,
+            "lightning": 8.3,
+            "holy": 8.3
+        },
+        "resistances": {
+            "scarletRot": 29,
+            "poison": 29,
+            "hemorrhage": 50,
+            "frostbite": 50,
+            "sleep": 19,
+            "madness": 19,
+            "deathBlight": 19
+        },
+        "poise": 21,
+        "weight": 9.6
+    },
+    "verdigris-armor": {
+        "id": "verdigris-armor",
+        "name": "Verdigris Armor",
+        "defenses": {
+            "physical": 20.4,
+            "slash": 19.7,
+            "strike": 17.7,
+            "pierce": 18.7,
+            "magic": 13.5,
+            "fire": 13.3,
+            "lightning": 14.5,
+            "holy": 13.3
+        },
+        "resistances": {
+            "scarletRot": 82,
+            "poison": 82,
+            "hemorrhage": 97,
+            "frostbite": 97,
+            "sleep": 32,
+            "madness": 32,
+            "deathBlight": 45
+        },
+        "poise": 47,
+        "weight": 25.9
+    },
+    "veterans-armor": {
+        "id": "veterans-armor",
+        "name": "Veteran's Armor",
+        "defenses": {
+            "physical": 18.7,
+            "slash": 18.7,
+            "strike": 17.0,
+            "pierce": 17.5,
+            "magic": 13.5,
+            "fire": 14.1,
+            "lightning": 12.8,
+            "holy": 13.3
+        },
+        "resistances": {
+            "scarletRot": 63,
+            "poison": 63,
+            "hemorrhage": 90,
+            "frostbite": 90,
+            "sleep": 46,
+            "madness": 46,
+            "deathBlight": 46
+        },
+        "poise": 38,
+        "weight": 18.9
+    },
+    "veterans-armor-altered": {
+        "id": "veterans-armor-altered",
+        "name": "Veteran's Armor (Altered)",
+        "defenses": {
+            "physical": 18.1,
+            "slash": 18.5,
+            "strike": 16.8,
+            "pierce": 17.3,
+            "magic": 13.1,
+            "fire": 13.6,
+            "lightning": 12.4,
+            "holy": 12.8
+        },
+        "resistances": {
+            "scarletRot": 54,
+            "poison": 54,
+            "hemorrhage": 75,
+            "frostbite": 75,
+            "sleep": 38,
+            "madness": 38,
+            "deathBlight": 38
+        },
+        "poise": 35,
+        "weight": 17.2
+    },
+    "vulgar-militia-armor": {
+        "id": "vulgar-militia-armor",
+        "name": "Vulgar Militia Armor",
+        "defenses": {
+            "physical": 8.8,
+            "slash": 9.5,
+            "strike": 10.2,
+            "pierce": 8.0,
+            "magic": 10.2,
+            "fire": 10.2,
+            "lightning": 10.9,
+            "holy": 10.2
+        },
+        "resistances": {
+            "scarletRot": 67,
+            "poison": 67,
+            "hemorrhage": 35,
+            "frostbite": 35,
+            "sleep": 50,
+            "madness": 50,
+            "deathBlight": 50
+        },
+        "poise": 16,
+        "weight": 7.7
+    },
+    "war-surgeon-gown": {
+        "id": "war-surgeon-gown",
+        "name": "War Surgeon Gown",
+        "defenses": {
+            "physical": 7.0,
+            "slash": 8.7,
+            "strike": 7.9,
+            "pierce": 7.0,
+            "magic": 9.4,
+            "fire": 10.1,
+            "lightning": 10.8,
+            "holy": 10.1
+        },
+        "resistances": {
+            "scarletRot": 53,
+            "poison": 53,
+            "hemorrhage": 37,
+            "frostbite": 37,
+            "sleep": 44,
+            "madness": 44,
+            "deathBlight": 48
+        },
+        "poise": 13,
+        "weight": 6.9
+    },
+    "war-surgeon-gown-altered": {
+        "id": "war-surgeon-gown-altered",
+        "name": "War Surgeon Gown (Altered)",
+        "defenses": {
+            "physical": 6.6,
+            "slash": 7.9,
+            "strike": 7.0,
+            "pierce": 6.6,
+            "magic": 8.7,
+            "fire": 9.4,
+            "lightning": 10.1,
+            "holy": 9.4
+        },
+        "resistances": {
+            "scarletRot": 45,
+            "poison": 45,
+            "hemorrhage": 32,
+            "frostbite": 32,
+            "sleep": 38,
+            "madness": 38,
+            "deathBlight": 42
+        },
+        "poise": 12,
+        "weight": 6.1
+    },
+    "white-reed-armor": {
+        "id": "white-reed-armor",
+        "name": "White Reed Armor",
+        "defenses": {
+            "physical": 9.5,
+            "slash": 11.4,
+            "strike": 10.2,
+            "pierce": 8.8,
+            "magic": 10.9,
+            "fire": 10.9,
+            "lightning": 11.9,
+            "holy": 10.2
+        },
+        "resistances": {
+            "scarletRot": 67,
+            "poison": 67,
+            "hemorrhage": 42,
+            "frostbite": 42,
+            "sleep": 55,
+            "madness": 55,
+            "deathBlight": 50
+        },
+        "poise": 17,
+        "weight": 8.3
+    },
+    "young-lions-armor": {
+        "id": "young-lions-armor",
+        "name": "Young Lion's Armor",
+        "defenses": {
+            "physical": 16.8,
+            "slash": 16.8,
+            "strike": 14.4,
+            "pierce": 16.8,
+            "magic": 12.4,
+            "fire": 12.8,
+            "lightning": 11.4,
+            "holy": 12.8
+        },
+        "resistances": {
+            "scarletRot": 45,
+            "poison": 45,
+            "hemorrhage": 64,
+            "frostbite": 64,
+            "sleep": 22,
+            "madness": 22,
+            "deathBlight": 32
+        },
+        "poise": 31,
+        "weight": 15.0
+    },
+    "young-lions-armor-altered": {
+        "id": "young-lions-armor-altered",
+        "name": "Young Lion's Armor (Altered)",
+        "defenses": {
+            "physical": 15.3,
+            "slash": 15.3,
+            "strike": 13.4,
+            "pierce": 15.3,
+            "magic": 11.4,
+            "fire": 12.4,
+            "lightning": 10.2,
+            "holy": 12.4
+        },
+        "resistances": {
+            "scarletRot": 38,
+            "poison": 38,
+            "hemorrhage": 57,
+            "frostbite": 57,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 25
+        },
+        "poise": 28,
+        "weight": 13.7
+    },
+    "zamor-armor": {
+        "id": "zamor-armor",
+        "name": "Zamor Armor",
+        "defenses": {
+            "physical": 11.9,
+            "slash": 12.4,
+            "strike": 9.5,
+            "pierce": 10.9,
+            "magic": 8.8,
+            "fire": 8.8,
+            "lightning": 6.1,
+            "holy": 8.0
+        },
+        "resistances": {
+            "scarletRot": 21,
+            "poison": 21,
+            "hemorrhage": 63,
+            "frostbite": 63,
+            "sleep": 11,
+            "madness": 11,
+            "deathBlight": 18
+        },
+        "poise": 18,
+        "weight": 8.8
+    }
+}
