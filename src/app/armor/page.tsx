@@ -1,12 +1,10 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useState } from "react";
 import ArmorResultSet from "../ui/ArmorResultSet";
 import InputNumber from "../ui/InputNumber";
 import InputRadio from "../ui/InputRadio";
 import InputSelect from "../ui/InputSelect";
-import { NavLinks } from "../ui/nav-links";
 import { Armor } from "../util/types/armor";
 import { Set } from "../util/types/set";
 
@@ -439,7 +437,6 @@ export default function ArmorPage() {
 
     return (
         <div>
-            <NavLinks />
             <header>
                 <h1>Armor Optimizer</h1>
             </header>
@@ -771,19 +768,6 @@ export default function ArmorPage() {
                     </article>
                 </div>
             </main>
-            <footer>
-                <h5>
-                    Erdtree Planner (
-                    <Link
-                        href="https://git.palmoe.dk/vodofrede/erdtree"
-                        style={{ color: "var(--link-color)" }}
-                    >
-                        available under BSD-3-Clause license
-                    </Link>
-                    )
-                </h5>
-                <h5>© 2024 vodofrede</h5>
-            </footer>
         </div>
     );
 }
