@@ -9,13 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
--   can ignore armor pieces
-
 ### Changed
 
 -   refreshed website looks
 -   light mode colors fix
--   more armor sorting options
+-   split armor absorptions and resistances
 
 ### Deprecated
 

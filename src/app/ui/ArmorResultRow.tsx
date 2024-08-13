@@ -46,7 +46,7 @@ function ArmorResultRow(props: {
         <tr id={props.id}>
             <td>
                 {name}
-                {ignoreButton}
+                {/* {ignoreButton} */}
             </td>
             <td>{props.stats[0]}</td>
             <td>{props.stats[1]}</td>

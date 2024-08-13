@@ -1,14 +1,14 @@
 import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import "./globals.css";
-import { NavLinks } from "./ui/nav-links";
+import { NavLinks } from "./ui/NavLinks";
 
 export const metadata: Metadata = {
     title: "Elden Ring Build Tools - Erdtree",
     description: "Elden Ring Build Tools - Armor, Weapon and Class Optimizer",
     authors: { name: "vodofrede", url: "https://github.com/vodofrede" },
     icons: {
-        icon: "/favicon.ico",
+        icon: "./favicon.ico",
     },
 };
 
