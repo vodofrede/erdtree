@@ -1,10 +1,7 @@
-export type Weapon = {
-    id: string;
-    name: string;
-    requirements: number[];
-    category: string;
-    unique: boolean;
-    infusions: {
+import { Stat } from "../interfaces/stat";
+
+interface WeaponInfusion {
+    [key: string]: {
         id: string;
         damage: number[];
         scaling: number[];
@@ -12,5 +9,14 @@ export type Weapon = {
         masks: number[][];
         corrections: string[];
         buffable: boolean;
-    }[];
+    };
+}
+
+export type Weapon = {
+    id: string;
+    name: string;
+    requirements: Stat;
+    category: string;
+    unique: boolean;
+    infusions: WeaponInfusion;
 };

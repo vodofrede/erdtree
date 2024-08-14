@@ -1,8 +1,552 @@
 "use client";
 
-import { changeSort, resetAll, setAll, update } from "./script";
+import { useEffect, useState } from "react";
+import { AttackRating } from "../util/interfaces/attackRating";
+import { Stat } from "../util/interfaces/stat";
+import { Correction } from "../util/types/correction";
+import { Infusion } from "../util/types/infusion";
+import { Weapon } from "../util/types/weapon";
+import { WeaponResultRow } from "./WeaponResultRow";
+
+const WEAPONS: Weapon[] = Object.values(require("../data/weapons.json"));
+const INFUSIONS: Infusion[] = Object.values(require("../data/infusions.json"));
+const CORRECTIONS: Correction[] = Object.values(require("../data/damage.json"));
+
+const INFUSION_NAMES: string[] = INFUSIONS.map((inf) => inf.name);
+const CATEGORY_NAMES: string[][] = [
+    [
+        "Daggers",
+        "Straight Swords",
+        "Greatswords",
+        "Colossal Swords",
+        "Thrusting Swords",
+        "Heavy Thrusting Swords",
+        "Curved Swords",
+        "Curved Greatswords",
+        "Katanas",
+        "Twinblades",
+        "Hammers",
+        "Great Hammers",
+        "Flails",
+        "Axes",
+        "Greateaxes",
+        "Spears",
+        "Great Spears",
+        "Halberds",
+        "Scythes",
+        "Whips",
+        "Fists",
+        "Claws",
+        "Colossal Weapons",
+        "Torches",
+        "Thrusting Shield",
+        "Hand-to-Hand Arts",
+        "Throwing Blades",
+        "Backhand Blades",
+        "Perfume Bottles",
+        "Beast Claws",
+        "Light Greatsword",
+        "Great Katana",
+    ],
+    ["Light Bows", "Bows", "Greatbows", "Crossbows", "Ballistae"],
+    ["Small Shields", "Medium Shields", "Greatshields"],
+    ["Glintstone Staves", "Sacred Seals"],
+];
+
+interface Checkbox {
+    [key: string]: boolean;
+}
+
+interface WeaponResult {
+    weaponName: string;
+    attackRatings: AttackRating;
+    max: number;
+}
+
+interface SortBy {
+    dmgType: string;
+    desc: boolean;
+}
 
 export default function Weapons() {
+    const [results, setResults] = useState<WeaponResult[]>([]);
+    const [stats, setStats] = useState<Stat>({
+        STR: 10,
+        DEX: 10,
+        INT: 10,
+        FTH: 10,
+        ARC: 10,
+    });
+    const [reinforced, setReinforced] = useState(true);
+    const [requireStats, setRequireStats] = useState(true);
+    const [buffable, setBuffable] = useState(false);
+    const [twoHanded, setTwoHanded] = useState({
+        damage: false,
+        requirements: false,
+    });
+    const [infusions, setInfusions] = useState<Checkbox>({
+        standard: true,
+        heavy: true,
+        keen: true,
+        quality: true,
+        fire: true,
+        "flame-art": true,
+        lightning: true,
+        sacred: true,
+        magic: true,
+        cold: true,
+        poison: true,
+        blood: true,
+        occult: true,
+    });
+    const [sortBy, setSortBy] = useState<SortBy>({
+        dmgType: "max",
+        desc: true,
+    });
+    const [categories, setCategories] = useState<Checkbox>({
+        dagger: true,
+        "straight-sword": true,
+        greatsword: true,
+        "colossal-sword": true,
+        "thrusting-sword": true,
+        "heavy-thrusting-sword": true,
+        "curved-sword": true,
+        "curved-greatsword": true,
+        katana: true,
+        twinblade: true,
+        hammer: true,
+        "great-hammer": true,
+        flail: true,
+        axe: true,
+        greataxe: true,
+        spear: true,
+        "great-spear": true,
+        halberd: true,
+        scythe: true,
+        whip: true,
+        fist: true,
+        claw: true,
+        "colossal-weapon": true,
+        torch: true,
+        "thrusting-shield": true,
+        "hand-to-hand-art": true,
+        "throwing-blade": true,
+        "backhand-blade": true,
+        "perfume-bottle": true,
+        "beast-claw": true,
+        "light-greatsword": true,
+        "great-katana": true,
+        "light-bow": false,
+        bow: false,
+        greatbow: false,
+        crossbow: false,
+        ballista: false,
+        "small-shield": false,
+        "medium-shield": false,
+        greatshield: false,
+        "glintstone-staff": false,
+        "sacred-seal": false,
+    });
+
+    let infIndex = Object.values(INFUSIONS).findIndex(
+        (inf) => inf.id == sortBy.dmgType
+    );
+
+    function updateStats(id: string, value: number) {
+        setStats({
+            ...stats,
+            [id]: value < 0 ? 0 : value > 99 ? 99 : value,
+        });
+    }
+
+    function updateCategories(id: string, state: boolean) {
+        setCategories({
+            ...categories,
+            [id]: state,
+        });
+    }
+
+    function updateInfusions(id: string, state: boolean) {
+        setInfusions({
+            ...infusions,
+            [id]: state,
+        });
+    }
+
+    function setAllInfusions(state: boolean) {
+        setInfusions({
+            standard: state,
+            heavy: state,
+            keen: state,
+            quality: state,
+            fire: state,
+            "flame-art": state,
+            lightning: state,
+            sacred: state,
+            magic: state,
+            cold: state,
+            poison: state,
+            blood: state,
+            occult: state,
+        });
+    }
+
+    function setAllCategories(state: boolean) {
+        setCategories({
+            dagger: state,
+            "straight-sword": state,
+            greatsword: state,
+            "colossal-sword": state,
+            "thrusting-sword": state,
+            "heavy-thrusting-sword": state,
+            "curved-sword": state,
+            "curved-greatsword": state,
+            katana: state,
+            twinblade: state,
+            hammer: state,
+            "great-hammer": state,
+            flail: state,
+            axe: state,
+            greataxe: state,
+            spear: state,
+            "great-spear": state,
+            halberd: state,
+            scythe: state,
+            whip: state,
+            fist: state,
+            claw: state,
+            "colossal-weapon": state,
+            torch: state,
+            "thrusting-shield": state,
+            "hand-to-hand-art": state,
+            "throwing-blade": state,
+            "backhand-blade": state,
+            "perfume-bottle": state,
+            "beast-claw": state,
+            "light-greatsword": state,
+            "great-katana": state,
+            "light-bow": state,
+            bow: state,
+            greatbow: state,
+            crossbow: state,
+            ballista: state,
+            "small-shield": state,
+            "medium-shield": state,
+            greatshield: state,
+            "glintstone-staff": state,
+            "sacred-seal": state,
+        });
+    }
+
+    function setAllWeaponCategories(state: boolean) {
+        setCategories({
+            ...categories,
+            dagger: state,
+            "straight-sword": state,
+            greatsword: state,
+            "colossal-sword": state,
+            "thrusting-sword": state,
+            "heavy-thrusting-sword": state,
+            "curved-sword": state,
+            "curved-greatsword": state,
+            katana: state,
+            twinblade: state,
+            hammer: state,
+            "great-hammer": state,
+            flail: state,
+            axe: state,
+            greataxe: state,
+            spear: state,
+            "great-spear": state,
+            halberd: state,
+            scythe: state,
+            whip: state,
+            fist: state,
+            claw: state,
+            "colossal-weapon": state,
+            torch: state,
+            "thrusting-shield": state,
+            "hand-to-hand-art": state,
+            "throwing-blade": state,
+            "backhand-blade": state,
+            "perfume-bottle": state,
+            "beast-claw": state,
+            "light-greatsword": state,
+            "great-katana": state,
+        });
+    }
+
+    function corrections(calc: Correction, stats: Stat, masks: number[]) {
+        return Object.keys(stats).map((statId: string, ty: number) => {
+            if (!masks[ty]) {
+                return 0.0;
+            }
+
+            let capIndex =
+                calc.softcaps[ty].findIndex(
+                    (cap: number) => cap >= stats[statId]
+                ) - 1;
+            let cap = calc.softcaps[ty][capIndex];
+            let capDelta = (calc.softcaps[ty][capIndex + 1] || cap) - cap;
+            let growth = calc.growth[ty][capIndex];
+            let growthDelta =
+                (calc.growth[ty][capIndex + 1] || growth) - growth;
+            let adjust = calc.adjustments[ty][capIndex];
+
+            return Math.sign(adjust) != -1
+                ? growth +
+                      growthDelta * ((stats[statId] - cap) / capDelta) ** adjust
+                : growth +
+                      growthDelta *
+                          (1 -
+                              (1 - (stats[statId] - cap) / capDelta) **
+                                  Math.abs(adjust));
+        });
+    }
+
+    function damage(
+        weapon: Weapon,
+        infusion: Infusion,
+        upgraded: boolean,
+        stats: Stat
+    ): number {
+        let weaponInfusion =
+            weapon.infusions[
+                Object.keys(weapon.infusions).find(
+                    (infId) => infId == infusion.id
+                )!
+            ];
+        let upgLevel = upgraded ? (weapon.unique ? 10 : 25) : 0;
+
+        let baseDmg = infusion.damage.map(
+            (dmg: number, ty: number) =>
+                weaponInfusion.damage[ty] *
+                (dmg +
+                    infusion.upgrade[ty] *
+                        upgLevel *
+                        (weapon.unique ? 2.5 : 1.0))
+        );
+
+        let scalingDmg = Object.keys(stats).some(
+            (statId: string, i: number) =>
+                stats[statId] < weapon.requirements[i]
+        )
+            ? baseDmg.map((dmg: number) => dmg * -0.4)
+            : baseDmg.map((dmg: number, ty: number) => {
+                  let calcCorrect = corrections(
+                      CORRECTIONS.find(
+                          (c) => c.id == weaponInfusion.corrections[ty]
+                      )!,
+                      stats,
+                      weaponInfusion.masks[ty]
+                  );
+                  let statScaling = weaponInfusion.scaling.map(
+                      (scaling: number) =>
+                          infusion.scaling[ty] *
+                          (scaling +
+                              scaling *
+                                  infusion.growth[ty] *
+                                  upgLevel *
+                                  (weapon.unique ? 4.0 : 1.0))
+                  );
+                  return statScaling
+                      .map(
+                          (scaling: number, statIndex: number) =>
+                              (dmg * scaling * calcCorrect[statIndex]) / 100.0
+                      )
+                      .reduce((sum: number, n: number) => sum + n);
+              });
+
+        return Math.floor(
+            baseDmg.reduce((sum: number, n: number) => sum + n) +
+                scalingDmg.reduce((sum: number, n: number) => sum + n)
+        );
+    }
+
+    function resetAll() {
+        setStats({
+            STR: 10,
+            DEX: 10,
+            INT: 10,
+            FTH: 10,
+            ARC: 10,
+        });
+        setReinforced(true);
+        setRequireStats(true);
+        setBuffable(false);
+        setTwoHanded({
+            requirements: false,
+            damage: false,
+        });
+        setInfusions({
+            standard: true,
+            heavy: true,
+            keen: true,
+            quality: true,
+            fire: true,
+            "flame-art": true,
+            lightning: true,
+            sacred: true,
+            magic: true,
+            occult: true,
+            cold: true,
+            poison: true,
+            blood: true,
+        });
+    }
+
+    function createCategoryCheckbox(
+        categoryId: string,
+        i: number
+    ): JSX.Element {
+        return (
+            <div key={categoryId}>
+                <span>
+                    <input
+                        type="checkbox"
+                        id={categoryId}
+                        name="category"
+                        className={
+                            i < CATEGORY_NAMES[0].length
+                                ? "weapon"
+                                : i <
+                                  CATEGORY_NAMES[0].length +
+                                      CATEGORY_NAMES[1].length
+                                ? "ranged"
+                                : i <
+                                  CATEGORY_NAMES[0].length +
+                                      CATEGORY_NAMES[1].length +
+                                      CATEGORY_NAMES[2].length
+                                ? "shield"
+                                : "catalyst"
+                        }
+                        onChange={(event) =>
+                            updateCategories(categoryId, event.target.checked)
+                        }
+                        checked={categories[categoryId]}
+                    />
+                    <label htmlFor={categoryId}>
+                        {i < CATEGORY_NAMES[0].length
+                            ? CATEGORY_NAMES[0][i]
+                            : i <
+                              CATEGORY_NAMES[0].length +
+                                  CATEGORY_NAMES[1].length
+                            ? CATEGORY_NAMES[1][i - CATEGORY_NAMES[0].length]
+                            : i <
+                              CATEGORY_NAMES[0].length +
+                                  CATEGORY_NAMES[1].length +
+                                  CATEGORY_NAMES[2].length
+                            ? CATEGORY_NAMES[2][
+                                  i -
+                                      CATEGORY_NAMES[0].length -
+                                      CATEGORY_NAMES[1].length
+                              ]
+                            : CATEGORY_NAMES[3][
+                                  i -
+                                      CATEGORY_NAMES[0].length -
+                                      CATEGORY_NAMES[1].length -
+                                      CATEGORY_NAMES[2].length
+                              ]}
+                    </label>
+                </span>
+            </div>
+        );
+    }
+
+    useEffect(() => {
+        infIndex = Object.values(INFUSIONS).findIndex(
+            (inf) => inf.id == sortBy.dmgType
+        );
+        let filtered = WEAPONS.filter((weapon) => {
+            // filter out weapons that don't fit the current parameters
+            return (
+                // check all stats except for STR
+                ((Object.keys(weapon.requirements).every((statName: string) =>
+                    statName == "STR"
+                        ? true
+                        : stats[statName] >= weapon.requirements[statName]
+                ) &&
+                    // and if the weapon is using two handed damage
+                    (twoHanded.damage
+                        ? // and if the weapon is using two handed requirements
+                          twoHanded.requirements
+                            ? // then use the two handing formula for STR
+                              stats["STR"] * 1.5 >= weapon.requirements["STR"]
+                            : // else use the one handable formula for STR
+                              Math.ceil(stats["STR"] / 1.5) >=
+                              weapon.requirements["STR"]
+                        : // else use the one handed formula for STR
+                          stats["STR"] >= weapon.requirements["STR"])) ||
+                    // or ignore stats if not required
+                    !requireStats) &&
+                // and if the weapon's category is allowed
+                categories[weapon.category] &&
+                // and if the weapon's infusion is allowed
+                Object.keys(weapon.infusions).some(
+                    (infId) => infusions[infId]
+                ) &&
+                // and if the weapon is buffable or buffable is not required
+                (!buffable ||
+                    Object.keys(weapon.infusions).some(
+                        (infId) => weapon.infusions[infId].buffable
+                    ))
+            );
+        }).map((weapon) => {
+            // calculate attack ratings for every allowed infusion as well as the maximum damage of any infusion
+            let attackRatings: AttackRating = {};
+            Object.values(INFUSIONS)
+                .filter((inf) => infusions[inf.id])
+                .forEach(
+                    (inf) =>
+                        (attackRatings = {
+                            ...attackRatings,
+                            [inf.id]:
+                                Object.keys(weapon.infusions).find(
+                                    (infId) => infId == inf.id
+                                ) != null
+                                    ? !buffable ||
+                                      weapon.infusions[
+                                          Object.keys(weapon.infusions).find(
+                                              (infId) => infId == inf.id
+                                          )!
+                                      ]?.buffable
+                                        ? damage(
+                                              weapon,
+                                              INFUSIONS.find(
+                                                  (i) => i.id == inf.id
+                                              )!,
+                                              reinforced,
+                                              twoHanded.damage
+                                                  ? {
+                                                        ...stats,
+                                                        STR: stats["STR"] * 1.5,
+                                                    }
+                                                  : stats
+                                          )
+                                        : 0
+                                    : 0,
+                        })
+                );
+            let max = Math.max(0, ...Object.values(attackRatings));
+
+            return {
+                weaponName: weapon.name,
+                attackRatings: attackRatings,
+                max: max,
+            };
+        });
+        setResults(filtered);
+    }, [
+        stats,
+        reinforced,
+        requireStats,
+        buffable,
+        twoHanded,
+        infusions,
+        categories,
+        sortBy,
+    ]);
+
     return (
         <div>
             <header>
@@ -22,66 +566,27 @@ export default function Weapons() {
                             </button>
                         </div>
                         <hr />
-                        <div>
-                            <label htmlFor="str">Strength</label>
-                            <input
-                                id="str"
-                                type="number"
-                                name="stat"
-                                value="10"
-                                min="0"
-                                max="99"
-                                onChange={update}
-                            />
-                        </div>
-                        <div>
-                            <label htmlFor="dex">Dexterity</label>
-                            <input
-                                id="dex"
-                                type="number"
-                                name="stat"
-                                value="10"
-                                min="0"
-                                max="99"
-                                onChange={update}
-                            />
-                        </div>
-                        <div>
-                            <label htmlFor="int">Intelligence</label>
-                            <input
-                                id="int"
-                                type="number"
-                                name="stat"
-                                value="10"
-                                min="0"
-                                max="99"
-                                onChange={update}
-                            />
-                        </div>
-                        <div>
-                            <label htmlFor="fth">Faith</label>
-                            <input
-                                id="fth"
-                                type="number"
-                                name="stat"
-                                value="10"
-                                min="0"
-                                max="99"
-                                onChange={update}
-                            />
-                        </div>
-                        <div>
-                            <label htmlFor="arc">Arcane</label>
-                            <input
-                                id="arc"
-                                type="number"
-                                name="stat"
-                                value="10"
-                                min="0"
-                                max="99"
-                                onChange={update}
-                            />
-                        </div>
+                        {Object.keys(stats).map(
+                            (statId: string, ty: number) => (
+                                <div key={statId}>
+                                    <label htmlFor="str">{statId}</label>
+                                    <input
+                                        id={statId.toLowerCase()}
+                                        type="number"
+                                        name="stat"
+                                        value={stats[statId]}
+                                        min={0}
+                                        max={99}
+                                        onChange={(event) => {
+                                            updateStats(
+                                                statId,
+                                                +event.target.value
+                                            );
+                                        }}
+                                    />
+                                </div>
+                            )
+                        )}
                         <hr />
                         <div>
                             <span>
@@ -89,8 +594,10 @@ export default function Weapons() {
                                     type="radio"
                                     id="max-upgrade"
                                     name="upgrade-level"
-                                    onChange={update}
-                                    checked
+                                    onChange={() => {
+                                        setReinforced(true);
+                                    }}
+                                    checked={reinforced}
                                 />
                                 <label htmlFor="max-upgrade">
                                     Reinforced (+10 or +25)
@@ -103,7 +610,10 @@ export default function Weapons() {
                                     type="radio"
                                     id="min-upgrade"
                                     name="upgrade-level"
-                                    onChange={update}
+                                    onChange={() => {
+                                        setReinforced(false);
+                                    }}
+                                    checked={!reinforced}
                                 />
                                 <label htmlFor="min-upgrade">
                                     Not Reinforced (+0)
@@ -116,8 +626,10 @@ export default function Weapons() {
                                 <input
                                     id="requirements"
                                     type="checkbox"
-                                    onChange={update}
-                                    checked
+                                    onChange={(event) => {
+                                        setRequireStats(event.target.checked);
+                                    }}
+                                    checked={requireStats}
                                 />
                                 <label htmlFor="requirements">
                                     Requirements Met
@@ -129,7 +641,10 @@ export default function Weapons() {
                                 <input
                                     type="checkbox"
                                     id="buffable"
-                                    onChange={update}
+                                    onChange={(event) => {
+                                        setBuffable(event.target.checked);
+                                    }}
+                                    checked={buffable}
                                 />
                                 <label htmlFor="buffable">Buffable Only</label>
                             </span>
@@ -142,8 +657,16 @@ export default function Weapons() {
                                     type="radio"
                                     id="2h-never"
                                     name="handedness"
-                                    onChange={update}
-                                    checked
+                                    onChange={(event) => {
+                                        setTwoHanded({
+                                            damage: !event.target.checked,
+                                            requirements: !event.target.checked,
+                                        });
+                                    }}
+                                    checked={
+                                        !twoHanded.damage &&
+                                        !twoHanded.requirements
+                                    }
                                 />
                                 <label htmlFor="2h-never">One-handing</label>
                             </span>
@@ -154,10 +677,19 @@ export default function Weapons() {
                                     type="radio"
                                     id="2h-sometimes"
                                     name="handedness"
-                                    onChange={update}
+                                    onChange={(event) => {
+                                        setTwoHanded({
+                                            damage: event.target.checked,
+                                            requirements: !event.target.checked,
+                                        });
+                                    }}
+                                    checked={
+                                        twoHanded.damage &&
+                                        !twoHanded.requirements
+                                    }
                                 />
                                 <label htmlFor="2h-sometimes">
-                                    Usable One-handed
+                                    Usable 1H or 2H
                                 </label>
                             </span>
                         </div>
@@ -167,8 +699,16 @@ export default function Weapons() {
                                     id="2h-always"
                                     type="radio"
                                     name="handedness"
-                                    onChange={update}
-                                    // name="two-handing"
+                                    onChange={(event) => {
+                                        setTwoHanded({
+                                            damage: event.target.checked,
+                                            requirements: event.target.checked,
+                                        });
+                                    }}
+                                    checked={
+                                        twoHanded.damage &&
+                                        twoHanded.requirements
+                                    }
                                 />
                                 <label htmlFor="2h-always">Two-handing</label>
                             </span>
@@ -177,282 +717,40 @@ export default function Weapons() {
                         <div>
                             <b>Infusions</b>
                             <span>
-                                <button
-                                    onClick={() => setAll("infusion", true)}
-                                >
+                                <button onClick={() => setAllInfusions(true)}>
                                     Any
                                 </button>
-                                <button
-                                    onClick={() => setAll("infusion", false)}
-                                >
+                                <button onClick={() => setAllInfusions(false)}>
                                     None
                                 </button>
                             </span>
                         </div>
-                        <div>
-                            <span>
-                                <input
-                                    id="standard-infusion"
-                                    value="standard"
-                                    type="checkbox"
-                                    name="infusion"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="standard-infusion">
-                                    Standard
-                                </label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    id="heavy-infusion"
-                                    value="heavy"
-                                    type="checkbox"
-                                    name="infusion"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="heavy-infusion">Heavy</label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    id="keen-infusion"
-                                    value="keen"
-                                    type="checkbox"
-                                    name="infusion"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="keen-infusion">Keen</label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    id="quality-infusion"
-                                    value="quality"
-                                    type="checkbox"
-                                    name="infusion"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="quality-infusion">
-                                    Quality
-                                </label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    id="fire-infusion"
-                                    value="fire"
-                                    type="checkbox"
-                                    name="infusion"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="fire-infusion">Fire</label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    id="flame-art-infusion"
-                                    value="flame-art"
-                                    type="checkbox"
-                                    name="infusion"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="flame-art-infusion">
-                                    Flame Art
-                                </label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    id="lightning-infusion"
-                                    value="lightning"
-                                    type="checkbox"
-                                    name="infusion"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="lightning-infusion">
-                                    Lightning
-                                </label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    id="sacred-infusion"
-                                    value="sacred"
-                                    type="checkbox"
-                                    name="infusion"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="sacred-infusion">Sacred</label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    id="magic-infusion"
-                                    value="magic"
-                                    type="checkbox"
-                                    name="infusion"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="magic-infusion">Magic</label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    id="occult-infusion"
-                                    value="occult"
-                                    type="checkbox"
-                                    name="infusion"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="occult-infusion">Occult</label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    id="cold-infusion"
-                                    value="cold"
-                                    type="checkbox"
-                                    name="infusion"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="cold-infusion">Cold</label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    id="poison-infusion"
-                                    value="poison"
-                                    type="checkbox"
-                                    name="infusion"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="poison-infusion">Poison</label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    id="blood-infusion"
-                                    value="blood"
-                                    type="checkbox"
-                                    name="infusion"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="blood-infusion">Blood</label>
-                            </span>
-                        </div>
-                        <hr />
-                        {/* <!-- damage types --> */}
-                        <b>Damage Types</b>
-                        <div>
-                            <span>
-                                <input
-                                    id="physical-type"
-                                    type="checkbox"
-                                    name="damage-type"
-                                    disabled
-                                />
-                                <label htmlFor="physical-type">
-                                    Physical Damage
-                                </label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    id="magic-type"
-                                    type="checkbox"
-                                    name="damage-type"
-                                    disabled
-                                />
-                                <label htmlFor="magic-type">Magic Damage</label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    id="fire-type"
-                                    type="checkbox"
-                                    name="damage-type"
-                                    disabled
-                                />
-                                <label htmlFor="fire-type">Fire Damage</label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    id="lightning-type"
-                                    type="checkbox"
-                                    name="damage-type"
-                                    disabled
-                                />
-                                <label htmlFor="lightning-type">
-                                    Lightning Damage
-                                </label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    id="holy-type"
-                                    type="checkbox"
-                                    name="damage-type"
-                                    disabled
-                                />
-                                <label htmlFor="holy-type">Holy Damage</label>
-                            </span>
-                        </div>
+                        {Object.keys(infusions).map((key: string, i) => (
+                            <div key={key}>
+                                <span>
+                                    <input
+                                        id={key + "-infusion"}
+                                        value={key}
+                                        type="checkbox"
+                                        name="infusion"
+                                        onChange={(event) => {
+                                            updateInfusions(
+                                                key,
+                                                event.target.checked
+                                            );
+                                        }}
+                                        checked={infusions[key]}
+                                    />
+                                    <label htmlFor={key}>
+                                        {INFUSION_NAMES[i]}
+                                    </label>
+                                </span>
+                            </div>
+                        ))}
                     </article>
                     {/* <!-- results --> */}
                     <article style={{ flexBasis: "55%" }}>
                         <b>Damage</b>
-                        <template id="weapon">
-                            <tr>
-                                <td>
-                                    <a target="_blank"></a>
-                                </td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </template>
                         <div style={{ overflow: "auto" }}>
                             <table>
                                 <thead>
@@ -464,9 +762,17 @@ export default function Weapons() {
                                         </th>
                                         <th>
                                             <b
-                                                onClick={() =>
-                                                    changeSort("max")
-                                                }
+                                                onClick={() => {
+                                                    sortBy.dmgType == "max"
+                                                        ? setSortBy({
+                                                              ...sortBy,
+                                                              desc: !sortBy.desc,
+                                                          })
+                                                        : setSortBy({
+                                                              dmgType: "max",
+                                                              desc: true,
+                                                          });
+                                                }}
                                                 onMouseOver={(event) =>
                                                     (event.currentTarget.style.cursor =
                                                         "pointer")
@@ -478,177 +784,301 @@ export default function Weapons() {
                                             </b>
                                         </th>
                                         <th id="standard">
-                                            <input
-                                                name="damage-result"
-                                                type="image"
-                                                src="/resource/icon/standard.jpg"
+                                            <img
+                                                src="/icons/standard.jpg"
                                                 style={{ maxWidth: "20px" }}
                                                 title="Standard"
                                                 alt="Standard"
-                                                onClick={() =>
-                                                    changeSort("standard")
-                                                }
+                                                onClick={() => {
+                                                    sortBy.dmgType == "standard"
+                                                        ? setSortBy({
+                                                              ...sortBy,
+                                                              desc: !sortBy.desc,
+                                                          })
+                                                        : setSortBy({
+                                                              dmgType:
+                                                                  "standard",
+                                                              desc: true,
+                                                          });
+                                                }}
                                             />
                                         </th>
                                         <th id="heavy">
-                                            <input
-                                                name="damage-result"
-                                                type="image"
-                                                src="/resource/icon/heavy.jpg"
+                                            <img
+                                                src="/icons/heavy.jpg"
                                                 style={{ maxWidth: "20px" }}
                                                 title="Heavy"
                                                 alt="Heavy"
-                                                onClick={() =>
-                                                    changeSort("heavy")
-                                                }
+                                                onClick={() => {
+                                                    sortBy.dmgType == "heavy"
+                                                        ? setSortBy({
+                                                              ...sortBy,
+                                                              desc: !sortBy.desc,
+                                                          })
+                                                        : setSortBy({
+                                                              dmgType: "heavy",
+                                                              desc: true,
+                                                          });
+                                                }}
                                             />
                                         </th>
                                         <th id="keen">
-                                            <input
-                                                name="damage-result"
-                                                type="image"
-                                                src="/resource/icon/keen.jpg"
+                                            <img
+                                                src="/icons/keen.jpg"
                                                 style={{ maxWidth: "20px" }}
                                                 title="Keen"
                                                 alt="Keen"
-                                                onClick={() =>
-                                                    changeSort("keen")
-                                                }
+                                                onClick={() => {
+                                                    sortBy.dmgType == "keen"
+                                                        ? setSortBy({
+                                                              ...sortBy,
+                                                              desc: !sortBy.desc,
+                                                          })
+                                                        : setSortBy({
+                                                              dmgType: "keen",
+                                                              desc: true,
+                                                          });
+                                                }}
                                             />
                                         </th>
                                         <th id="quality">
-                                            <input
-                                                name="damage-result"
-                                                type="image"
-                                                src="/resource/icon/quality.jpg"
+                                            <img
+                                                src="/icons/quality.jpg"
                                                 style={{ maxWidth: "20px" }}
                                                 title="Quality"
                                                 alt="Quality"
-                                                onClick={() =>
-                                                    changeSort("quality")
-                                                }
+                                                onClick={() => {
+                                                    sortBy.dmgType == "quality"
+                                                        ? setSortBy({
+                                                              ...sortBy,
+                                                              desc: !sortBy.desc,
+                                                          })
+                                                        : setSortBy({
+                                                              dmgType:
+                                                                  "quality",
+                                                              desc: true,
+                                                          });
+                                                }}
                                             />
                                         </th>
                                         <th id="fire">
-                                            <input
-                                                name="damage-result"
-                                                type="image"
-                                                src="/resource/icon/fire.jpg"
+                                            <img
+                                                src="/icons/fire.jpg"
                                                 style={{ maxWidth: "20px" }}
                                                 title="Fire"
                                                 alt="Fire"
-                                                onClick={() =>
-                                                    changeSort("fire")
-                                                }
+                                                onClick={() => {
+                                                    sortBy.dmgType == "fire"
+                                                        ? setSortBy({
+                                                              ...sortBy,
+                                                              desc: !sortBy.desc,
+                                                          })
+                                                        : setSortBy({
+                                                              dmgType: "fire",
+                                                              desc: true,
+                                                          });
+                                                }}
                                             />
                                         </th>
                                         <th id="flame-art">
-                                            <input
-                                                name="damage-result"
-                                                type="image"
-                                                src="/resource/icon/flame-art.jpg"
+                                            <img
+                                                src="/icons/flame-art.jpg"
                                                 style={{ maxWidth: "20px" }}
                                                 title="Flame Art"
                                                 alt="Flame Art"
-                                                onClick={() =>
-                                                    changeSort("flame-art")
-                                                }
+                                                onClick={() => {
+                                                    sortBy.dmgType ==
+                                                    "flame-art"
+                                                        ? setSortBy({
+                                                              ...sortBy,
+                                                              desc: !sortBy.desc,
+                                                          })
+                                                        : setSortBy({
+                                                              dmgType:
+                                                                  "flame-art",
+                                                              desc: true,
+                                                          });
+                                                }}
                                             />
                                         </th>
                                         <th id="lightning">
-                                            <input
-                                                name="damage-result"
-                                                type="image"
-                                                src="/resource/icon/lightning.jpg"
+                                            <img
+                                                src="/icons/lightning.jpg"
                                                 style={{ maxWidth: "20px" }}
                                                 title="Lightning"
                                                 alt="Lightning"
-                                                onClick={() =>
-                                                    changeSort("lightning")
-                                                }
+                                                onClick={() => {
+                                                    sortBy.dmgType ==
+                                                    "lightning"
+                                                        ? setSortBy({
+                                                              ...sortBy,
+                                                              desc: !sortBy.desc,
+                                                          })
+                                                        : setSortBy({
+                                                              dmgType:
+                                                                  "lightning",
+                                                              desc: true,
+                                                          });
+                                                }}
                                             />
                                         </th>
                                         <th id="sacred">
-                                            <input
-                                                name="damage-result"
-                                                type="image"
-                                                src="/resource/icon/sacred.jpg"
+                                            <img
+                                                src="/icons/sacred.jpg"
                                                 style={{ maxWidth: "20px" }}
                                                 title="Sacred"
                                                 alt="Sacred"
-                                                onClick={() =>
-                                                    changeSort("sacred")
-                                                }
+                                                onClick={() => {
+                                                    sortBy.dmgType == "sacred"
+                                                        ? setSortBy({
+                                                              ...sortBy,
+                                                              desc: !sortBy.desc,
+                                                          })
+                                                        : setSortBy({
+                                                              dmgType: "sacred",
+                                                              desc: true,
+                                                          });
+                                                }}
                                             />
                                         </th>
                                         <th id="magic">
-                                            <input
-                                                name="damage-result"
-                                                type="image"
-                                                src="/resource/icon/magic.jpg"
+                                            <img
+                                                src="/icons/magic.jpg"
                                                 style={{ maxWidth: "20px" }}
                                                 title="Magic"
                                                 alt="Magic"
-                                                onClick={() =>
-                                                    changeSort("magic")
-                                                }
+                                                onClick={() => {
+                                                    sortBy.dmgType == "magic"
+                                                        ? setSortBy({
+                                                              ...sortBy,
+                                                              desc: !sortBy.desc,
+                                                          })
+                                                        : setSortBy({
+                                                              dmgType: "magic",
+                                                              desc: true,
+                                                          });
+                                                }}
                                             />
                                         </th>
                                         <th id="cold">
-                                            <input
-                                                name="damage-result"
-                                                type="image"
-                                                src="/resource/icon/cold.jpg"
+                                            <img
+                                                src="/icons/cold.jpg"
                                                 style={{ maxWidth: "20px" }}
                                                 title="Cold"
                                                 alt="Cold"
-                                                onClick={() =>
-                                                    changeSort("cold")
-                                                }
+                                                onClick={() => {
+                                                    sortBy.dmgType == "cold"
+                                                        ? setSortBy({
+                                                              ...sortBy,
+                                                              desc: !sortBy.desc,
+                                                          })
+                                                        : setSortBy({
+                                                              dmgType: "cold",
+                                                              desc: true,
+                                                          });
+                                                }}
                                             />
                                         </th>
                                         <th id="poison">
-                                            <input
-                                                name="damage-result"
-                                                type="image"
-                                                src="/resource/icon/poison.jpg"
+                                            <img
+                                                src="/icons/poison.jpg"
                                                 style={{ maxWidth: "20px" }}
                                                 title="Poison"
                                                 alt="Poison"
-                                                onClick={() =>
-                                                    changeSort("poison")
-                                                }
+                                                onClick={() => {
+                                                    sortBy.dmgType == "poison"
+                                                        ? setSortBy({
+                                                              ...sortBy,
+                                                              desc: !sortBy.desc,
+                                                          })
+                                                        : setSortBy({
+                                                              dmgType: "poison",
+                                                              desc: true,
+                                                          });
+                                                }}
                                             />
                                         </th>
                                         <th id="blood">
-                                            <input
-                                                name="damage-result"
-                                                type="image"
-                                                src="/resource/icon/blood.jpg"
+                                            <img
+                                                src="/icons/blood.jpg"
                                                 style={{ maxWidth: "20px" }}
                                                 title="Blood"
                                                 alt="Blood"
-                                                onClick={() =>
-                                                    changeSort("blood")
-                                                }
+                                                onClick={() => {
+                                                    sortBy.dmgType == "blood"
+                                                        ? setSortBy({
+                                                              ...sortBy,
+                                                              desc: !sortBy.desc,
+                                                          })
+                                                        : setSortBy({
+                                                              dmgType: "blood",
+                                                              desc: true,
+                                                          });
+                                                }}
                                             />
                                         </th>
                                         <th id="occult">
-                                            <input
-                                                name="damage-result"
-                                                type="image"
-                                                src="/resource/icon/occult.jpg"
+                                            <img
+                                                src="/icons/occult.jpg"
                                                 style={{ maxWidth: "20px" }}
                                                 title="Occult"
                                                 alt="Occult"
-                                                onClick={() =>
-                                                    changeSort("occult")
-                                                }
+                                                onClick={() => {
+                                                    sortBy.dmgType == "occult"
+                                                        ? setSortBy({
+                                                              ...sortBy,
+                                                              desc: !sortBy.desc,
+                                                          })
+                                                        : setSortBy({
+                                                              dmgType: "occult",
+                                                              desc: true,
+                                                          });
+                                                }}
                                             />
                                         </th>
                                     </tr>
                                 </thead>
-                                <tbody id="weapons"></tbody>
+                                <tbody id="weapons">
+                                    {results
+                                        .sort((a, b) => {
+                                            // sort based on current sort order
+                                            if (infIndex == -1) {
+                                                // sort by max
+                                                return sortBy.desc
+                                                    ? b.max - a.max
+                                                    : a.max - b.max;
+                                            } else {
+                                                return sortBy.desc
+                                                    ? b.attackRatings[
+                                                          infIndex
+                                                      ] -
+                                                          a.attackRatings[
+                                                              infIndex
+                                                          ]
+                                                    : a.attackRatings[
+                                                          infIndex
+                                                      ] -
+                                                          b.attackRatings[
+                                                              infIndex
+                                                          ];
+                                            }
+                                        })
+                                        .map((weaponResult) => (
+                                            <WeaponResultRow
+                                                key={weaponResult.weaponName.replaceAll(
+                                                    " ",
+                                                    "-"
+                                                )}
+                                                weaponName={
+                                                    weaponResult.weaponName
+                                                }
+                                                attackRatings={
+                                                    weaponResult.attackRatings
+                                                }
+                                                max={weaponResult.max}
+                                            />
+                                        ))}
+                                </tbody>
                             </table>
                         </div>
                     </article>
@@ -657,14 +1087,10 @@ export default function Weapons() {
                         <div>
                             <b>Categories</b>
                             <span>
-                                <button
-                                    onClick={() => setAll("category", true)}
-                                >
+                                <button onClick={() => setAllCategories(true)}>
                                     Any
                                 </button>
-                                <button
-                                    onClick={() => setAll("category", false)}
-                                >
+                                <button onClick={() => setAllCategories(false)}>
                                     None
                                 </button>
                             </span>
@@ -673,584 +1099,53 @@ export default function Weapons() {
                         <div>
                             <b>Weapons</b>
                             <span>
-                                <button onClick={() => setAll("weapon", true)}>
+                                <button
+                                    onClick={() => setAllWeaponCategories(true)}
+                                >
                                     Any
                                 </button>
-                                <button onClick={() => setAll("weapon", false)}>
+                                <button
+                                    onClick={() =>
+                                        setAllWeaponCategories(false)
+                                    }
+                                >
                                     None
                                 </button>
                             </span>
                         </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="dagger"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="dagger">Daggers</label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="straight-sword"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="straight-sword">
-                                    Straight Swords
-                                </label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="greatsword"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="greatsword">Greatswords</label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="colossal-sword"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="colossal-sword">
-                                    Colossal Swords
-                                </label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="thrusting-sword"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="thrusting-sword">
-                                    Thrusting Swords
-                                </label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="heavy-thrusting-sword"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="heavy-thrusting-sword">
-                                    Heavy Thrusting Swords
-                                </label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="curved-sword"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="curved-sword">
-                                    Curved Swords
-                                </label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="curved-greatsword"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="curved-greatsword">
-                                    Curved Greatswords
-                                </label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="katana"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="katana">Katanas</label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="twinblade"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="twinblade">Twinblades</label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="hammer"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="hammer">Hammers</label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="great-hammer"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="great-hammer">
-                                    Great Hammers
-                                </label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="flail"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="flail">Flails</label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="axe"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="axe">Axes</label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="greataxe"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="greataxe">Greataxes</label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="spear"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="spear">Spears</label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="great-spear"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="great-spear">
-                                    Great Spears
-                                </label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="halberd"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="halberd">Halberds</label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="scythe"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="scythe">Scythes</label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="whip"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="whip">Whips</label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="fist"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="fist">Fists</label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="claw"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="claw">Claws</label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="colossal-weapon"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="colossal-weapon">
-                                    Colossal Weapons
-                                </label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="torch"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="torch">Torches</label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="thrusting-shield"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="thrusting-shield">
-                                    Thrusting Shield
-                                </label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="hand-to-hand-arts"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="hand-to-hand-art">
-                                    Hand-to-hand Arts
-                                </label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="throwing-blade"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="throwing-blade">
-                                    Throwing Blades
-                                </label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="backhand-blade"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="backhand-blade">
-                                    Backhand Blades
-                                </label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="perfume-bottle"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="perfume-bottle">
-                                    Perfume Bottles
-                                </label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="beast-claw"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="beast-claw">Beast Claws</label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="light-greatsword"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="light-greatsword">
-                                    Light Greatsword
-                                </label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="great-katana"
-                                    name="category"
-                                    className="weapon"
-                                    onChange={update}
-                                    checked
-                                />
-                                <label htmlFor="great-katana">
-                                    Great Katana
-                                </label>
-                            </span>
-                        </div>
-                        <hr />
-                        <div>
-                            <b>Ranged</b>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="light-bow"
-                                    name="category"
-                                />
-                                <label htmlFor="light-bow">Light Bows</label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="bow"
-                                    name="category"
-                                />
-                                <label htmlFor="bow">Bows</label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="greatbow"
-                                    name="category"
-                                />
-                                <label htmlFor="greatbow">Greatbows</label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="crossbow"
-                                    name="category"
-                                />
-                                <label htmlFor="crossbow">Crossbows</label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="ballistas"
-                                    name="category"
-                                />
-                                <label htmlFor="ballistas">Ballistas</label>
-                            </span>
-                        </div>
-                        <hr />
-                        <div>
-                            <b>Shields</b>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="small-shield"
-                                    name="category"
-                                />
-                                <label htmlFor="small-shield">
-                                    Small Shields
-                                </label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="medium-shield"
-                                    name="category"
-                                />
-                                <label htmlFor="medium-shield">
-                                    Medium Shields
-                                </label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="greatshield"
-                                    name="category"
-                                />
-                                <label htmlFor="greatshield">
-                                    Greatshields
-                                </label>
-                            </span>
-                        </div>
-                        <hr />
-                        <div>
-                            <b>Catalysts</b>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="glintstone-staff"
-                                    name="category"
-                                />
-                                <label htmlFor="glintstone-staff">
-                                    Glintstone Staves
-                                </label>
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                <input
-                                    type="checkbox"
-                                    id="sacred-seal"
-                                    name="category"
-                                />
-                                <label htmlFor="sacred-seal">
-                                    Sacred Seals
-                                </label>
-                            </span>
-                        </div>
+                        {Object.keys(categories).map(
+                            (categoryId: string, i: number) =>
+                                i == CATEGORY_NAMES[0].length
+                                    ? [
+                                          <hr key={"hr_" + categoryId} />,
+                                          <div key={"div_" + categoryId}>
+                                              <b>Ranged</b>
+                                          </div>,
+                                          createCategoryCheckbox(categoryId, i),
+                                      ].map((c: JSX.Element) => c)
+                                    : i ==
+                                      CATEGORY_NAMES[0].length +
+                                          CATEGORY_NAMES[1].length
+                                    ? [
+                                          <hr key={"hr_" + categoryId} />,
+                                          <div key={"div_" + categoryId}>
+                                              <b>Shields</b>
+                                          </div>,
+                                          createCategoryCheckbox(categoryId, i),
+                                      ].map((c: JSX.Element) => c)
+                                    : i ==
+                                      CATEGORY_NAMES[0].length +
+                                          CATEGORY_NAMES[1].length +
+                                          CATEGORY_NAMES[2].length
+                                    ? [
+                                          <hr key={"hr_" + categoryId} />,
+                                          <div key={"div_" + categoryId}>
+                                              <b>Catalysts</b>
+                                          </div>,
+                                          createCategoryCheckbox(categoryId, i),
+                                      ].map((c: JSX.Element) => c)
+                                    : createCategoryCheckbox(categoryId, i)
+                        )}
                     </article>
                 </div>
                 <div>
@@ -1296,3 +1191,130 @@ export default function Weapons() {
         </div>
     );
 }
+
+/*
+        {WEAPONS.filter((weapon) => {
+                                        // filter out weapons that don't fit the current parameters
+                                        return (
+                                            (weapon.requirements.every(
+                                                (stat: number, i: number) =>
+                                                    stat <= stats[i]
+                                            ) ||
+                                                !requireStats) &&
+                                            (weapon.requirements[0] <=
+                                                Math.ceil(stats[0] / 1.5) ||
+                                                !oneHandable) &&
+                                            categories.includes(
+                                                weapon.category
+                                            ) &&
+                                            allowedInfusions.some(
+                                                (id) =>
+                                                    weapon.infusions.find(
+                                                        (inf) => inf.id == id
+                                                    ) != undefined
+                                            ) &&
+                                            (!onlyBuffable ||
+                                                Object.values(
+                                                    weapon.infusions
+                                                ).some((inf) => inf.buffable))
+                                        );
+                                    })
+                                        .map((weapon) => {
+                                            // calculate attack ratings for every allowed infusion as well as the maximum damage of any infusion
+                                            let attackRatings = Object.values(
+                                                INFUSIONS
+                                            )
+                                                .filter((inf) =>
+                                                    allowedInfusions.includes(
+                                                        inf.id
+                                                    )
+                                                )
+                                                .map((inf) => {
+                                                    return weapon.infusions.find(
+                                                        (i) => i.id == inf.id
+                                                    ) != null
+                                                        ? !onlyBuffable ||
+                                                          weapon.infusions.find(
+                                                              (i) =>
+                                                                  i.id == inf.id
+                                                          )?.buffable
+                                                            ? damage(
+                                                                  weapon,
+                                                                  INFUSIONS.find(
+                                                                      (i) =>
+                                                                          i.id ==
+                                                                          inf.id
+                                                                  )!,
+                                                                  upgraded,
+                                                                  stats
+                                                              )
+                                                            : 0
+                                                        : 0;
+                                                });
+                                            let max = Math.max(
+                                                0,
+                                                ...attackRatings
+                                            );
+
+                                            return [weapon, attackRatings, max];
+                                        })
+                                        .sort(
+                                            (
+                                                [_w1, ar1, max1],
+                                                [_w2, ar2, max2]
+                                            ) => {
+                                                // sort based on current sort order
+                                                if (infIndex == -1) {
+                                                    // sort by max
+                                                    return dmgSortAscending
+                                                        ? (max2 as number) -
+                                                              (max1 as number)
+                                                        : (max1 as number) -
+                                                              (max2 as number);
+                                                } else {
+                                                    return dmgSortAscending
+                                                        ? (ar2 as number[])[
+                                                              infIndex
+                                                          ] -
+                                                              (ar1 as number[])[
+                                                                  infIndex
+                                                              ]
+                                                        : (ar1 as number[])[
+                                                              infIndex
+                                                          ] -
+                                                              (ar2 as number[])[
+                                                                  infIndex
+                                                              ];
+                                                }
+                                            }
+                                        )
+                                        .map(([weapon, attackRatings, max]) => {
+                                            // clone and append table row to results with correct values
+                                            <WeaponResultRow
+                                                weapon={weapon}
+                                                attackRatings={attackRatings}
+                                                max={max}
+                                            />;
+                                            // let clone: HTMLTableRowElement = <WeaponResultRow />;
+                                            // let tr: HTMLTableRowElement = clone.children[0];
+
+                                            // tr.children[0].children[0].innerHTML = (weapon as Weapon).name;
+                                            // // add a link to the fextralife wiki
+                                            // (tr.children[0].children[0] as HTMLAnchorElement).href =
+                                            //     (weapon as Weapon).id != "unarmed"
+                                            //         ? "https://eldenring.wiki.fextralife.com/" +
+                                            //           (weapon as Weapon).name.replaceAll(" ", "+")
+                                            //         : "https://cdn.discordapp.com/attachments/410786957426163725/961366807460057158/unknown.png";
+
+                                            // tr.children[1].innerHTML = (max as number).toString() || "-";
+                                            // (attackRatings as number[]).forEach((ar: number, i: number) => {
+                                            //     let elem = tr.children[i + 2] as HTMLTableCellElement;
+                                            //     elem.innerHTML = ar.toString() || "-";
+                                            //     if (ar == max) {
+                                            //         elem.style.fontWeight = "900";
+                                            //     }
+                                            // });
+
+                                            // return tr;
+                                        })}
+        */
