@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     description: "Elden Ring Build Tools - Armor, Weapon and Class Optimizer",
     authors: { name: "vodofrede", url: "https://github.com/vodofrede" },
     icons: {
-        icon: "./favicon.ico",
+        icon: "/favicon.ico",
     },
 };
 
