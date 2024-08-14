@@ -159,21 +159,21 @@ export default function Weapons() {
         });
     }
 
-    function updateCategories(id: string, state: boolean) {
+    function updateCategories(id: string, state: boolean): void {
         setCategories({
             ...categories,
             [id]: state,
         });
     }
 
-    function updateInfusions(id: string, state: boolean) {
+    function updateInfusions(id: string, state: boolean): void {
         setInfusions({
             ...infusions,
             [id]: state,
         });
     }
 
-    function setAllInfusions(state: boolean) {
+    function setAllInfusions(state: boolean): void {
         setInfusions({
             standard: state,
             heavy: state,
@@ -191,7 +191,7 @@ export default function Weapons() {
         });
     }
 
-    function setAllCategories(state: boolean) {
+    function setAllCategories(state: boolean): void {
         setCategories({
             dagger: state,
             "straight-sword": state,
@@ -238,7 +238,7 @@ export default function Weapons() {
         });
     }
 
-    function setAllWeaponCategories(state: boolean) {
+    function setAllWeaponCategories(state: boolean): void {
         setCategories({
             ...categories,
             dagger: state,
@@ -276,7 +276,11 @@ export default function Weapons() {
         });
     }
 
-    function corrections(calc: Correction, stats: Stat, masks: number[]) {
+    function corrections(
+        calc: Correction,
+        stats: Stat,
+        masks: number[]
+    ): number[] {
         return Object.keys(stats).map((statId: string, ty: number) => {
             if (!masks[ty]) {
                 return 0.0;
@@ -363,7 +367,7 @@ export default function Weapons() {
         );
     }
 
-    function resetAll() {
+    function resetAll(): void {
         setStats({
             STR: 10,
             DEX: 10,
