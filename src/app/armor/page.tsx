@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import ArmorResultSet from "../ui/ArmorResultSet";
-import InputNumber from "../ui/InputNumber";
-import InputRadio from "../ui/InputRadio";
-import InputSelect from "../ui/InputSelect";
 import { Armor } from "../util/types/armor";
 import { Set } from "../util/types/set";
+import ArmorResultSet from "./ArmorResultSet";
+import InputNumber from "./InputNumber";
+import InputRadio from "./InputRadio";
+import InputSelect from "./InputSelect";
 
 const ARMOR_RESULTS_SET_IDS = ["first", "second", "third", "fourth", "fifth"];
 
