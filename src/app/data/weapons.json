@@ -2,7 +2,7 @@
     "unarmed": {
         "id": "unarmed",
         "name": "Unarmed",
-        "requirements": [0, 0, 0, 0, 0],
+        "requirements": { "STR": 0, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "fist",
         "unique": false,
         "infusions": {
@@ -24,7 +24,7 @@
     "academy-glintstone-staff": {
         "id": "academy-glintstone-staff",
         "name": "Academy Glintstone Staff",
-        "requirements": [6, 0, 28, 0, 0],
+        "requirements": { "STR": 6, "DEX": 0, "INT": 28, "FTH": 0, "ARC": 0 },
         "category": "glintstone-staff",
         "unique": false,
         "infusions": {
@@ -58,7 +58,7 @@
     "alabaster-lords-sword": {
         "id": "alabaster-lords-sword",
         "name": "Alabaster Lord's Sword",
-        "requirements": [16, 12, 18, 0, 0],
+        "requirements": { "STR": 16, "DEX": 12, "INT": 18, "FTH": 0, "ARC": 0 },
         "category": "greatsword",
         "unique": true,
         "infusions": {
@@ -82,7 +82,7 @@
     "albinauric-bow": {
         "id": "albinauric-bow",
         "name": "Albinauric Bow",
-        "requirements": [7, 18, 0, 0, 0],
+        "requirements": { "STR": 7, "DEX": 18, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "bow",
         "unique": false,
         "infusions": {
@@ -106,7 +106,7 @@
     "albinauric-shield": {
         "id": "albinauric-shield",
         "name": "Albinauric Shield",
-        "requirements": [11, 0, 0, 0, 0],
+        "requirements": { "STR": 11, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -310,7 +310,7 @@
     "albinauric-staff": {
         "id": "albinauric-staff",
         "name": "Albinauric Staff",
-        "requirements": [6, 0, 10, 0, 12],
+        "requirements": { "STR": 6, "DEX": 0, "INT": 10, "FTH": 0, "ARC": 12 },
         "category": "glintstone-staff",
         "unique": false,
         "infusions": {
@@ -344,7 +344,7 @@
     "ancient-meteoric-ore-greatsword": {
         "id": "ancient-meteoric-ore-greatsword",
         "name": "Ancient Meteoric Ore Greatsword",
-        "requirements": [35, 10, 0, 0, 19],
+        "requirements": { "STR": 35, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 19 },
         "category": "colossal-sword",
         "unique": true,
         "infusions": {
@@ -368,7 +368,7 @@
     "ansbachs-longbow": {
         "id": "ansbachs-longbow",
         "name": "Ansbach's Longbow",
-        "requirements": [9, 43, 0, 0, 0],
+        "requirements": { "STR": 9, "DEX": 43, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "bow",
         "unique": true,
         "infusions": {
@@ -392,7 +392,7 @@
     "ants-skull-plate": {
         "id": "ants-skull-plate",
         "name": "Ant's Skull Plate",
-        "requirements": [28, 0, 0, 0, 0],
+        "requirements": { "STR": 28, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatshield",
         "unique": false,
         "infusions": {
@@ -416,7 +416,7 @@
     "antspur-rapier": {
         "id": "antspur-rapier",
         "name": "Antspur Rapier",
-        "requirements": [10, 20, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 20, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "thrusting-sword",
         "unique": false,
         "infusions": {
@@ -649,7 +649,13 @@
     "anvil-hammer": {
         "id": "anvil-hammer",
         "name": "Anvil Hammer",
-        "requirements": [39, 10, 11, 20, 0],
+        "requirements": {
+            "STR": 39,
+            "DEX": 10,
+            "INT": 11,
+            "FTH": 20,
+            "ARC": 0
+        },
         "category": "great-hammer",
         "unique": true,
         "infusions": {
@@ -673,7 +679,7 @@
     "arbalest": {
         "id": "arbalest",
         "name": "Arbalest",
-        "requirements": [18, 12, 0, 0, 0],
+        "requirements": { "STR": 18, "DEX": 12, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "crossbow",
         "unique": false,
         "infusions": {
@@ -697,7 +703,7 @@
     "astrologers-staff": {
         "id": "astrologers-staff",
         "name": "Astrologer's Staff",
-        "requirements": [7, 0, 16, 0, 0],
+        "requirements": { "STR": 7, "DEX": 0, "INT": 16, "FTH": 0, "ARC": 0 },
         "category": "glintstone-staff",
         "unique": false,
         "infusions": {
@@ -731,7 +737,7 @@
     "axe-of-godfrey": {
         "id": "axe-of-godfrey",
         "name": "Axe of Godfrey",
-        "requirements": [42, 14, 0, 0, 0],
+        "requirements": { "STR": 42, "DEX": 14, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "colossal-weapon",
         "unique": true,
         "infusions": {
@@ -755,7 +761,7 @@
     "axe-of-godrick": {
         "id": "axe-of-godrick",
         "name": "Axe of Godrick",
-        "requirements": [34, 22, 0, 0, 0],
+        "requirements": { "STR": 34, "DEX": 22, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greataxe",
         "unique": true,
         "infusions": {
@@ -779,7 +785,7 @@
     "azurs-glintstone-staff": {
         "id": "azurs-glintstone-staff",
         "name": "Azur's Glintstone Staff",
-        "requirements": [10, 0, 52, 0, 0],
+        "requirements": { "STR": 10, "DEX": 0, "INT": 52, "FTH": 0, "ARC": 0 },
         "category": "glintstone-staff",
         "unique": false,
         "infusions": {
@@ -813,7 +819,7 @@
     "backhand-blade": {
         "id": "backhand-blade",
         "name": "Backhand Blade",
-        "requirements": [10, 13, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 13, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "backhand-blade",
         "unique": false,
         "infusions": {
@@ -1017,7 +1023,7 @@
     "bandits-curved-sword": {
         "id": "bandits-curved-sword",
         "name": "Bandit's Curved Sword",
-        "requirements": [11, 13, 0, 0, 0],
+        "requirements": { "STR": 11, "DEX": 13, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "curved-sword",
         "unique": false,
         "infusions": {
@@ -1221,7 +1227,7 @@
     "banished-knights-greatsword": {
         "id": "banished-knights-greatsword",
         "name": "Banished Knight's Greatsword",
-        "requirements": [17, 9, 0, 0, 0],
+        "requirements": { "STR": 17, "DEX": 9, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatsword",
         "unique": false,
         "infusions": {
@@ -1425,7 +1431,7 @@
     "banished-knights-halberd": {
         "id": "banished-knights-halberd",
         "name": "Banished Knight's Halberd",
-        "requirements": [14, 12, 0, 0, 0],
+        "requirements": { "STR": 14, "DEX": 12, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "halberd",
         "unique": false,
         "infusions": {
@@ -1629,7 +1635,7 @@
     "banished-knights-shield": {
         "id": "banished-knights-shield",
         "name": "Banished Knight's Shield",
-        "requirements": [14, 0, 0, 0, 0],
+        "requirements": { "STR": 14, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -1833,7 +1839,7 @@
     "barbed-staff-spear": {
         "id": "barbed-staff-spear",
         "name": "Barbed Staff-Spear",
-        "requirements": [14, 18, 0, 22, 0],
+        "requirements": { "STR": 14, "DEX": 18, "INT": 0, "FTH": 22, "ARC": 0 },
         "category": "great-spear",
         "unique": true,
         "infusions": {
@@ -1857,7 +1863,7 @@
     "bastard-sword": {
         "id": "bastard-sword",
         "name": "Bastard Sword",
-        "requirements": [16, 10, 0, 0, 0],
+        "requirements": { "STR": 16, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatsword",
         "unique": false,
         "infusions": {
@@ -2061,7 +2067,7 @@
     "bastards-stars": {
         "id": "bastards-stars",
         "name": "Bastard's Stars",
-        "requirements": [8, 22, 22, 0, 0],
+        "requirements": { "STR": 8, "DEX": 22, "INT": 22, "FTH": 0, "ARC": 0 },
         "category": "flail",
         "unique": true,
         "infusions": {
@@ -2085,7 +2091,7 @@
     "battle-axe": {
         "id": "battle-axe",
         "name": "Battle Axe",
-        "requirements": [12, 8, 0, 0, 0],
+        "requirements": { "STR": 12, "DEX": 8, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "axe",
         "unique": false,
         "infusions": {
@@ -2289,7 +2295,7 @@
     "battle-hammer": {
         "id": "battle-hammer",
         "name": "Battle Hammer",
-        "requirements": [26, 8, 0, 0, 0],
+        "requirements": { "STR": 26, "DEX": 8, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "great-hammer",
         "unique": false,
         "infusions": {
@@ -2493,7 +2499,7 @@
     "beast-claw": {
         "id": "beast-claw",
         "name": "Beast Claw",
-        "requirements": [13, 11, 0, 0, 0],
+        "requirements": { "STR": 13, "DEX": 11, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "beast-claw",
         "unique": false,
         "infusions": {
@@ -2703,7 +2709,7 @@
     "beast-crest-heater-shield": {
         "id": "beast-crest-heater-shield",
         "name": "Beast Crest Heater Shield",
-        "requirements": [10, 0, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -2907,7 +2913,7 @@
     "beast-repellent-torch": {
         "id": "beast-repellent-torch",
         "name": "Beast-Repellent Torch",
-        "requirements": [12, 8, 0, 0, 0],
+        "requirements": { "STR": 12, "DEX": 8, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "torch",
         "unique": false,
         "infusions": {
@@ -2931,7 +2937,7 @@
     "beastclaw-greathammer": {
         "id": "beastclaw-greathammer",
         "name": "Beastclaw Greathammer",
-        "requirements": [20, 10, 0, 18, 0],
+        "requirements": { "STR": 20, "DEX": 10, "INT": 0, "FTH": 18, "ARC": 0 },
         "category": "great-hammer",
         "unique": true,
         "infusions": {
@@ -2955,7 +2961,7 @@
     "beastmans-cleaver": {
         "id": "beastmans-cleaver",
         "name": "Beastman's Cleaver",
-        "requirements": [25, 14, 0, 0, 0],
+        "requirements": { "STR": 25, "DEX": 14, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "curved-greatsword",
         "unique": false,
         "infusions": {
@@ -3159,7 +3165,7 @@
     "beastmans-curved-sword": {
         "id": "beastmans-curved-sword",
         "name": "Beastman's Curved Sword",
-        "requirements": [13, 11, 0, 0, 0],
+        "requirements": { "STR": 13, "DEX": 11, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "curved-sword",
         "unique": false,
         "infusions": {
@@ -3363,7 +3369,7 @@
     "beastmans-jar-shield": {
         "id": "beastmans-jar-shield",
         "name": "Beastman's Jar-Shield",
-        "requirements": [10, 0, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "small-shield",
         "unique": false,
         "infusions": {
@@ -3567,7 +3573,7 @@
     "black-bow": {
         "id": "black-bow",
         "name": "Black Bow",
-        "requirements": [9, 20, 0, 0, 0],
+        "requirements": { "STR": 9, "DEX": 20, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "bow",
         "unique": true,
         "infusions": {
@@ -3591,7 +3597,7 @@
     "black-knife": {
         "id": "black-knife",
         "name": "Black Knife",
-        "requirements": [8, 12, 0, 18, 0],
+        "requirements": { "STR": 8, "DEX": 12, "INT": 0, "FTH": 18, "ARC": 0 },
         "category": "dagger",
         "unique": true,
         "infusions": {
@@ -3615,7 +3621,7 @@
     "black-leather-shield": {
         "id": "black-leather-shield",
         "name": "Black Leather Shield",
-        "requirements": [10, 0, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -3819,7 +3825,7 @@
     "black-steel-greathammer": {
         "id": "black-steel-greathammer",
         "name": "Black Steel Greathammer",
-        "requirements": [25, 11, 0, 17, 0],
+        "requirements": { "STR": 25, "DEX": 11, "INT": 0, "FTH": 17, "ARC": 0 },
         "category": "great-hammer",
         "unique": false,
         "infusions": {
@@ -4023,7 +4029,7 @@
     "black-steel-greatshield": {
         "id": "black-steel-greatshield",
         "name": "Black Steel Greatshield",
-        "requirements": [35, 0, 0, 0, 0],
+        "requirements": { "STR": 35, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatshield",
         "unique": false,
         "infusions": {
@@ -4227,7 +4233,7 @@
     "black-steel-twinblade": {
         "id": "black-steel-twinblade",
         "name": "Black Steel Twinblade",
-        "requirements": [18, 15, 0, 13, 0],
+        "requirements": { "STR": 18, "DEX": 15, "INT": 0, "FTH": 13, "ARC": 0 },
         "category": "twinblade",
         "unique": false,
         "infusions": {
@@ -4431,7 +4437,7 @@
     "blade-of-calling": {
         "id": "blade-of-calling",
         "name": "Blade of Calling",
-        "requirements": [6, 13, 0, 15, 0],
+        "requirements": { "STR": 6, "DEX": 13, "INT": 0, "FTH": 15, "ARC": 0 },
         "category": "dagger",
         "unique": true,
         "infusions": {
@@ -4455,7 +4461,7 @@
     "blasphemous-blade": {
         "id": "blasphemous-blade",
         "name": "Blasphemous Blade",
-        "requirements": [22, 15, 0, 21, 0],
+        "requirements": { "STR": 22, "DEX": 15, "INT": 0, "FTH": 21, "ARC": 0 },
         "category": "greatsword",
         "unique": true,
         "infusions": {
@@ -4479,7 +4485,7 @@
     "bloodfiends-arm": {
         "id": "bloodfiends-arm",
         "name": "Bloodfiend's Arm",
-        "requirements": [28, 11, 0, 0, 16],
+        "requirements": { "STR": 28, "DEX": 11, "INT": 0, "FTH": 0, "ARC": 16 },
         "category": "great-hammer",
         "unique": false,
         "infusions": {
@@ -4683,7 +4689,7 @@
     "bloodfiends-fork": {
         "id": "bloodfiends-fork",
         "name": "Bloodfiend's Fork",
-        "requirements": [14, 8, 0, 0, 13],
+        "requirements": { "STR": 14, "DEX": 8, "INT": 0, "FTH": 0, "ARC": 13 },
         "category": "spear",
         "unique": false,
         "infusions": {
@@ -4893,7 +4899,7 @@
     "bloodfiends-spear": {
         "id": "bloodfiends-spear",
         "name": "Bloodfiend's Spear",
-        "requirements": [22, 12, 0, 0, 13],
+        "requirements": { "STR": 22, "DEX": 12, "INT": 0, "FTH": 0, "ARC": 13 },
         "category": "spear",
         "unique": true,
         "infusions": {
@@ -4917,7 +4923,7 @@
     "bloodhound-claws": {
         "id": "bloodhound-claws",
         "name": "Bloodhound Claws",
-        "requirements": [10, 15, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 15, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "claw",
         "unique": false,
         "infusions": {
@@ -5127,7 +5133,7 @@
     "bloodhounds-fang": {
         "id": "bloodhounds-fang",
         "name": "Bloodhound's Fang",
-        "requirements": [18, 17, 0, 0, 0],
+        "requirements": { "STR": 18, "DEX": 17, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "curved-greatsword",
         "unique": true,
         "infusions": {
@@ -5151,7 +5157,7 @@
     "bloodstained-dagger": {
         "id": "bloodstained-dagger",
         "name": "Bloodstained Dagger",
-        "requirements": [9, 12, 0, 0, 0],
+        "requirements": { "STR": 9, "DEX": 12, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "dagger",
         "unique": false,
         "infusions": {
@@ -5361,7 +5367,7 @@
     "bloody-helice": {
         "id": "bloody-helice",
         "name": "Bloody Helice",
-        "requirements": [16, 19, 0, 0, 17],
+        "requirements": { "STR": 16, "DEX": 19, "INT": 0, "FTH": 0, "ARC": 17 },
         "category": "heavy-thrusting-sword",
         "unique": true,
         "infusions": {
@@ -5385,7 +5391,7 @@
     "blue-crest-heater-shield": {
         "id": "blue-crest-heater-shield",
         "name": "Blue Crest Heater Shield",
-        "requirements": [10, 0, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -5589,7 +5595,7 @@
     "blue-gold-kite-shield": {
         "id": "blue-gold-kite-shield",
         "name": "Blue-Gold Kite Shield",
-        "requirements": [12, 0, 0, 0, 0],
+        "requirements": { "STR": 12, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -5793,7 +5799,7 @@
     "blue-white-wooden-shield": {
         "id": "blue-white-wooden-shield",
         "name": "Blue-White Wooden Shield",
-        "requirements": [8, 0, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "small-shield",
         "unique": false,
         "infusions": {
@@ -5997,7 +6003,7 @@
     "bolt-of-gransax": {
         "id": "bolt-of-gransax",
         "name": "Bolt of Gransax",
-        "requirements": [20, 40, 0, 0, 0],
+        "requirements": { "STR": 20, "DEX": 40, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "spear",
         "unique": true,
         "infusions": {
@@ -6021,7 +6027,7 @@
     "bone-bow": {
         "id": "bone-bow",
         "name": "Bone Bow",
-        "requirements": [8, 11, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 11, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "light-bow",
         "unique": false,
         "infusions": {
@@ -6045,7 +6051,7 @@
     "bonny-butchering-knife": {
         "id": "bonny-butchering-knife",
         "name": "Bonny Butchering Knife",
-        "requirements": [16, 20, 0, 0, 0],
+        "requirements": { "STR": 16, "DEX": 20, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greataxe",
         "unique": true,
         "infusions": {
@@ -6069,7 +6075,7 @@
     "brass-shield": {
         "id": "brass-shield",
         "name": "Brass Shield",
-        "requirements": [16, 0, 0, 0, 0],
+        "requirements": { "STR": 16, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -6273,7 +6279,7 @@
     "briar-greatshield": {
         "id": "briar-greatshield",
         "name": "Briar Greatshield",
-        "requirements": [21, 0, 0, 0, 0],
+        "requirements": { "STR": 21, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatshield",
         "unique": false,
         "infusions": {
@@ -6483,7 +6489,7 @@
     "brick-hammer": {
         "id": "brick-hammer",
         "name": "Brick Hammer",
-        "requirements": [31, 0, 0, 0, 0],
+        "requirements": { "STR": 31, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "great-hammer",
         "unique": false,
         "infusions": {
@@ -6687,7 +6693,7 @@
     "broadsword": {
         "id": "broadsword",
         "name": "Broadsword",
-        "requirements": [10, 10, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "straight-sword",
         "unique": false,
         "infusions": {
@@ -6891,7 +6897,7 @@
     "buckler": {
         "id": "buckler",
         "name": "Buckler",
-        "requirements": [8, 13, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 13, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "small-shield",
         "unique": false,
         "infusions": {
@@ -7095,7 +7101,7 @@
     "butchering-knife": {
         "id": "butchering-knife",
         "name": "Butchering Knife",
-        "requirements": [16, 20, 0, 0, 0],
+        "requirements": { "STR": 16, "DEX": 20, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greataxe",
         "unique": false,
         "infusions": {
@@ -7299,7 +7305,7 @@
     "caestus": {
         "id": "caestus",
         "name": "Caestus",
-        "requirements": [8, 8, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 8, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "fist",
         "unique": false,
         "infusions": {
@@ -7503,7 +7509,7 @@
     "candletree-wooden-shield": {
         "id": "candletree-wooden-shield",
         "name": "Candletree Wooden Shield",
-        "requirements": [8, 0, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -7707,7 +7713,7 @@
     "cane-sword": {
         "id": "cane-sword",
         "name": "Cane Sword",
-        "requirements": [8, 11, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 11, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "straight-sword",
         "unique": false,
         "infusions": {
@@ -7911,7 +7917,7 @@
     "carian-glintblade-staff": {
         "id": "carian-glintblade-staff",
         "name": "Carian Glintblade Staff",
-        "requirements": [6, 12, 22, 0, 0],
+        "requirements": { "STR": 6, "DEX": 12, "INT": 22, "FTH": 0, "ARC": 0 },
         "category": "glintstone-staff",
         "unique": false,
         "infusions": {
@@ -7945,7 +7951,7 @@
     "carian-glintstone-staff": {
         "id": "carian-glintstone-staff",
         "name": "Carian Glintstone Staff",
-        "requirements": [6, 8, 24, 0, 0],
+        "requirements": { "STR": 6, "DEX": 8, "INT": 24, "FTH": 0, "ARC": 0 },
         "category": "glintstone-staff",
         "unique": false,
         "infusions": {
@@ -7979,7 +7985,7 @@
     "carian-knights-shield": {
         "id": "carian-knights-shield",
         "name": "Carian Knight's Shield",
-        "requirements": [10, 10, 15, 0, 0],
+        "requirements": { "STR": 10, "DEX": 10, "INT": 15, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -8183,7 +8189,7 @@
     "carian-knights-sword": {
         "id": "carian-knights-sword",
         "name": "Carian Knight's Sword",
-        "requirements": [10, 10, 18, 0, 0],
+        "requirements": { "STR": 10, "DEX": 10, "INT": 18, "FTH": 0, "ARC": 0 },
         "category": "straight-sword",
         "unique": true,
         "infusions": {
@@ -8207,7 +8213,7 @@
     "carian-regal-scepter": {
         "id": "carian-regal-scepter",
         "name": "Carian Regal Scepter",
-        "requirements": [8, 10, 60, 0, 0],
+        "requirements": { "STR": 8, "DEX": 10, "INT": 60, "FTH": 0, "ARC": 0 },
         "category": "glintstone-staff",
         "unique": false,
         "infusions": {
@@ -8241,7 +8247,7 @@
     "carian-sorcery-sword": {
         "id": "carian-sorcery-sword",
         "name": "Carian Sorcery Sword",
-        "requirements": [10, 19, 16, 0, 0],
+        "requirements": { "STR": 10, "DEX": 19, "INT": 16, "FTH": 0, "ARC": 0 },
         "category": "straight-sword",
         "unique": false,
         "infusions": {
@@ -8265,7 +8271,7 @@
     "carian-thrusting-shield": {
         "id": "carian-thrusting-shield",
         "name": "Carian Thrusting Shield",
-        "requirements": [17, 13, 15, 0, 0],
+        "requirements": { "STR": 17, "DEX": 13, "INT": 15, "FTH": 0, "ARC": 0 },
         "category": "thrusting-shield",
         "unique": false,
         "infusions": {
@@ -8469,7 +8475,7 @@
     "celebrants-cleaver": {
         "id": "celebrants-cleaver",
         "name": "Celebrant's Cleaver",
-        "requirements": [12, 8, 0, 0, 0],
+        "requirements": { "STR": 12, "DEX": 8, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "axe",
         "unique": false,
         "infusions": {
@@ -8673,7 +8679,7 @@
     "celebrants-rib-rake": {
         "id": "celebrants-rib-rake",
         "name": "Celebrant's Rib-Rake",
-        "requirements": [8, 14, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 14, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "spear",
         "unique": false,
         "infusions": {
@@ -8877,7 +8883,7 @@
     "celebrants-sickle": {
         "id": "celebrants-sickle",
         "name": "Celebrant's Sickle",
-        "requirements": [6, 11, 0, 0, 0],
+        "requirements": { "STR": 6, "DEX": 11, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "dagger",
         "unique": false,
         "infusions": {
@@ -9081,7 +9087,7 @@
     "celebrants-skull": {
         "id": "celebrants-skull",
         "name": "Celebrant's Skull",
-        "requirements": [18, 12, 0, 0, 0],
+        "requirements": { "STR": 18, "DEX": 12, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "great-hammer",
         "unique": false,
         "infusions": {
@@ -9285,7 +9291,7 @@
     "chainlink-flail": {
         "id": "chainlink-flail",
         "name": "Chainlink Flail",
-        "requirements": [18, 12, 0, 0, 0],
+        "requirements": { "STR": 18, "DEX": 12, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "flail",
         "unique": false,
         "infusions": {
@@ -9495,7 +9501,7 @@
     "chilling-perfume-bottle": {
         "id": "chilling-perfume-bottle",
         "name": "Chilling Perfume Bottle",
-        "requirements": [3, 13, 13, 0, 0],
+        "requirements": { "STR": 3, "DEX": 13, "INT": 13, "FTH": 0, "ARC": 0 },
         "category": "perfume-bottle",
         "unique": false,
         "infusions": {
@@ -9519,7 +9525,7 @@
     "cinquedea": {
         "id": "cinquedea",
         "name": "Cinquedea",
-        "requirements": [10, 10, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "dagger",
         "unique": true,
         "infusions": {
@@ -9543,7 +9549,7 @@
     "cipher-pata": {
         "id": "cipher-pata",
         "name": "Cipher Pata",
-        "requirements": [0, 0, 0, 30, 0],
+        "requirements": { "STR": 0, "DEX": 0, "INT": 0, "FTH": 30, "ARC": 0 },
         "category": "fist",
         "unique": true,
         "infusions": {
@@ -9567,7 +9573,7 @@
     "clawmark-seal": {
         "id": "clawmark-seal",
         "name": "Clawmark Seal",
-        "requirements": [4, 0, 0, 10, 0],
+        "requirements": { "STR": 4, "DEX": 0, "INT": 0, "FTH": 10, "ARC": 0 },
         "category": "sacred-seal",
         "unique": false,
         "infusions": {
@@ -9601,7 +9607,7 @@
     "claws-of-night": {
         "id": "claws-of-night",
         "name": "Claws of Night",
-        "requirements": [8, 20, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 20, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "claw",
         "unique": true,
         "infusions": {
@@ -9625,7 +9631,7 @@
     "claymans-harpoon": {
         "id": "claymans-harpoon",
         "name": "Clayman's Harpoon",
-        "requirements": [12, 10, 12, 0, 0],
+        "requirements": { "STR": 12, "DEX": 10, "INT": 12, "FTH": 0, "ARC": 0 },
         "category": "spear",
         "unique": false,
         "infusions": {
@@ -9829,7 +9835,7 @@
     "claymore": {
         "id": "claymore",
         "name": "Claymore",
-        "requirements": [16, 13, 0, 0, 0],
+        "requirements": { "STR": 16, "DEX": 13, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatsword",
         "unique": false,
         "infusions": {
@@ -10033,7 +10039,7 @@
     "cleanrot-knights-sword": {
         "id": "cleanrot-knights-sword",
         "name": "Cleanrot Knight's Sword",
-        "requirements": [11, 13, 0, 0, 0],
+        "requirements": { "STR": 11, "DEX": 13, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "thrusting-sword",
         "unique": false,
         "infusions": {
@@ -10237,7 +10243,7 @@
     "cleanrot-spear": {
         "id": "cleanrot-spear",
         "name": "Cleanrot Spear",
-        "requirements": [16, 16, 0, 14, 0],
+        "requirements": { "STR": 16, "DEX": 16, "INT": 0, "FTH": 14, "ARC": 0 },
         "category": "spear",
         "unique": true,
         "infusions": {
@@ -10261,7 +10267,7 @@
     "clinging-bone": {
         "id": "clinging-bone",
         "name": "Clinging Bone",
-        "requirements": [8, 22, 0, 0, 16],
+        "requirements": { "STR": 8, "DEX": 22, "INT": 0, "FTH": 0, "ARC": 16 },
         "category": "fist",
         "unique": true,
         "infusions": {
@@ -10285,7 +10291,7 @@
     "club": {
         "id": "club",
         "name": "Club",
-        "requirements": [10, 0, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "hammer",
         "unique": false,
         "infusions": {
@@ -10489,7 +10495,7 @@
     "coded-sword": {
         "id": "coded-sword",
         "name": "Coded Sword",
-        "requirements": [0, 0, 0, 20, 0],
+        "requirements": { "STR": 0, "DEX": 0, "INT": 0, "FTH": 20, "ARC": 0 },
         "category": "straight-sword",
         "unique": true,
         "infusions": {
@@ -10513,7 +10519,7 @@
     "coil-shield": {
         "id": "coil-shield",
         "name": "Coil Shield",
-        "requirements": [10, 10, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "small-shield",
         "unique": false,
         "infusions": {
@@ -10537,7 +10543,7 @@
     "commanders-standard": {
         "id": "commanders-standard",
         "name": "Commander's Standard",
-        "requirements": [24, 14, 0, 0, 0],
+        "requirements": { "STR": 24, "DEX": 14, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "halberd",
         "unique": true,
         "infusions": {
@@ -10561,7 +10567,7 @@
     "composite-bow": {
         "id": "composite-bow",
         "name": "Composite Bow",
-        "requirements": [15, 15, 0, 0, 0],
+        "requirements": { "STR": 15, "DEX": 15, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "light-bow",
         "unique": false,
         "infusions": {
@@ -10585,7 +10591,7 @@
     "cranial-vessel-candlestand": {
         "id": "cranial-vessel-candlestand",
         "name": "Cranial Vessel Candlestand",
-        "requirements": [26, 8, 0, 22, 0],
+        "requirements": { "STR": 26, "DEX": 8, "INT": 0, "FTH": 22, "ARC": 0 },
         "category": "great-hammer",
         "unique": true,
         "infusions": {
@@ -10609,7 +10615,7 @@
     "crepuss-black-key-crossbow": {
         "id": "crepuss-black-key-crossbow",
         "name": "Crepus's Black-Key Crossbow",
-        "requirements": [14, 16, 0, 0, 0],
+        "requirements": { "STR": 14, "DEX": 16, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "crossbow",
         "unique": false,
         "infusions": {
@@ -10633,7 +10639,7 @@
     "crescent-moon-axe": {
         "id": "crescent-moon-axe",
         "name": "Crescent Moon Axe",
-        "requirements": [25, 15, 0, 0, 0],
+        "requirements": { "STR": 25, "DEX": 15, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greataxe",
         "unique": false,
         "infusions": {
@@ -10837,7 +10843,7 @@
     "cross-naginata": {
         "id": "cross-naginata",
         "name": "Cross-Naginata",
-        "requirements": [16, 20, 0, 0, 0],
+        "requirements": { "STR": 16, "DEX": 20, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "spear",
         "unique": false,
         "infusions": {
@@ -11047,7 +11053,7 @@
     "crossed-tree-towershield": {
         "id": "crossed-tree-towershield",
         "name": "Crossed-Tree Towershield",
-        "requirements": [30, 0, 0, 0, 0],
+        "requirements": { "STR": 30, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatshield",
         "unique": false,
         "infusions": {
@@ -11251,7 +11257,7 @@
     "crucible-hornshield": {
         "id": "crucible-hornshield",
         "name": "Crucible Hornshield",
-        "requirements": [26, 0, 0, 0, 0],
+        "requirements": { "STR": 26, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatshield",
         "unique": false,
         "infusions": {
@@ -11275,7 +11281,7 @@
     "crystal-knife": {
         "id": "crystal-knife",
         "name": "Crystal Knife",
-        "requirements": [8, 12, 9, 0, 0],
+        "requirements": { "STR": 8, "DEX": 12, "INT": 9, "FTH": 0, "ARC": 0 },
         "category": "dagger",
         "unique": false,
         "infusions": {
@@ -11299,7 +11305,7 @@
     "crystal-spear": {
         "id": "crystal-spear",
         "name": "Crystal Spear",
-        "requirements": [10, 16, 16, 0, 0],
+        "requirements": { "STR": 10, "DEX": 16, "INT": 16, "FTH": 0, "ARC": 0 },
         "category": "spear",
         "unique": true,
         "infusions": {
@@ -11323,7 +11329,7 @@
     "crystal-staff": {
         "id": "crystal-staff",
         "name": "Crystal Staff",
-        "requirements": [8, 0, 48, 0, 0],
+        "requirements": { "STR": 8, "DEX": 0, "INT": 48, "FTH": 0, "ARC": 0 },
         "category": "glintstone-staff",
         "unique": false,
         "infusions": {
@@ -11357,7 +11363,7 @@
     "crystal-sword": {
         "id": "crystal-sword",
         "name": "Crystal Sword",
-        "requirements": [13, 10, 15, 0, 0],
+        "requirements": { "STR": 13, "DEX": 10, "INT": 15, "FTH": 0, "ARC": 0 },
         "category": "straight-sword",
         "unique": true,
         "infusions": {
@@ -11381,7 +11387,7 @@
     "cuckoo-greatshield": {
         "id": "cuckoo-greatshield",
         "name": "Cuckoo Greatshield",
-        "requirements": [32, 0, 0, 0, 0],
+        "requirements": { "STR": 32, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatshield",
         "unique": false,
         "infusions": {
@@ -11585,7 +11591,7 @@
     "curseblades-cirque": {
         "id": "curseblades-cirque",
         "name": "Curseblade's Cirque",
-        "requirements": [9, 22, 0, 0, 0],
+        "requirements": { "STR": 9, "DEX": 22, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "backhand-blade",
         "unique": true,
         "infusions": {
@@ -11609,7 +11615,7 @@
     "curved-club": {
         "id": "curved-club",
         "name": "Curved Club",
-        "requirements": [11, 7, 0, 0, 0],
+        "requirements": { "STR": 11, "DEX": 7, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "hammer",
         "unique": false,
         "infusions": {
@@ -11813,7 +11819,7 @@
     "curved-great-club": {
         "id": "curved-great-club",
         "name": "Curved Great Club",
-        "requirements": [24, 10, 0, 0, 0],
+        "requirements": { "STR": 24, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "great-hammer",
         "unique": false,
         "infusions": {
@@ -12017,7 +12023,7 @@
     "dagger": {
         "id": "dagger",
         "name": "Dagger",
-        "requirements": [5, 9, 0, 0, 0],
+        "requirements": { "STR": 5, "DEX": 9, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "dagger",
         "unique": false,
         "infusions": {
@@ -12221,7 +12227,7 @@
     "dancing-blade-of-ranah": {
         "id": "dancing-blade-of-ranah",
         "name": "Dancing Blade of Ranah",
-        "requirements": [9, 20, 0, 0, 0],
+        "requirements": { "STR": 9, "DEX": 20, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "curved-sword",
         "unique": true,
         "infusions": {
@@ -12245,7 +12251,7 @@
     "danes-footwork": {
         "id": "danes-footwork",
         "name": "Dane's Footwork",
-        "requirements": [8, 8, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 8, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "hand-to-hand-art",
         "unique": false,
         "infusions": {
@@ -12449,7 +12455,7 @@
     "dark-moon-greatsword": {
         "id": "dark-moon-greatsword",
         "name": "Dark Moon Greatsword",
-        "requirements": [16, 11, 38, 0, 0],
+        "requirements": { "STR": 16, "DEX": 11, "INT": 38, "FTH": 0, "ARC": 0 },
         "category": "greatsword",
         "unique": true,
         "infusions": {
@@ -12473,7 +12479,7 @@
     "deadly-perfume-bottle": {
         "id": "deadly-perfume-bottle",
         "name": "Deadly Perfume Bottle",
-        "requirements": [3, 13, 0, 0, 18],
+        "requirements": { "STR": 3, "DEX": 13, "INT": 0, "FTH": 0, "ARC": 18 },
         "category": "perfume-bottle",
         "unique": true,
         "infusions": {
@@ -12497,7 +12503,7 @@
     "death-knights-longhaft-axe": {
         "id": "death-knights-longhaft-axe",
         "name": "Death Knight's Longhaft Axe",
-        "requirements": [23, 10, 0, 18, 0],
+        "requirements": { "STR": 23, "DEX": 10, "INT": 0, "FTH": 18, "ARC": 0 },
         "category": "greataxe",
         "unique": true,
         "infusions": {
@@ -12521,7 +12527,7 @@
     "death-knights-twin-axes": {
         "id": "death-knights-twin-axes",
         "name": "Death Knight's Twin Axes",
-        "requirements": [14, 12, 0, 16, 0],
+        "requirements": { "STR": 14, "DEX": 12, "INT": 0, "FTH": 16, "ARC": 0 },
         "category": "axe",
         "unique": true,
         "infusions": {
@@ -12545,7 +12551,7 @@
     "death-ritual-spear": {
         "id": "death-ritual-spear",
         "name": "Death Ritual Spear",
-        "requirements": [14, 20, 18, 0, 0],
+        "requirements": { "STR": 14, "DEX": 20, "INT": 18, "FTH": 0, "ARC": 0 },
         "category": "spear",
         "unique": true,
         "infusions": {
@@ -12569,7 +12575,7 @@
     "deaths-poker": {
         "id": "deaths-poker",
         "name": "Death's Poker",
-        "requirements": [15, 17, 11, 0, 0],
+        "requirements": { "STR": 15, "DEX": 17, "INT": 11, "FTH": 0, "ARC": 0 },
         "category": "greatsword",
         "unique": true,
         "infusions": {
@@ -12593,7 +12599,7 @@
     "demi-human-queens-staff": {
         "id": "demi-human-queens-staff",
         "name": "Demi-Human Queen's Staff",
-        "requirements": [6, 0, 10, 0, 0],
+        "requirements": { "STR": 6, "DEX": 0, "INT": 10, "FTH": 0, "ARC": 0 },
         "category": "glintstone-staff",
         "unique": false,
         "infusions": {
@@ -12627,7 +12633,7 @@
     "devonias-hammer": {
         "id": "devonias-hammer",
         "name": "Devonia's Hammer",
-        "requirements": [30, 13, 0, 19, 0],
+        "requirements": { "STR": 30, "DEX": 13, "INT": 0, "FTH": 19, "ARC": 0 },
         "category": "colossal-weapon",
         "unique": true,
         "infusions": {
@@ -12651,7 +12657,7 @@
     "devourers-scepter": {
         "id": "devourers-scepter",
         "name": "Devourer's Scepter",
-        "requirements": [24, 20, 0, 25, 0],
+        "requirements": { "STR": 24, "DEX": 20, "INT": 0, "FTH": 25, "ARC": 0 },
         "category": "great-hammer",
         "unique": true,
         "infusions": {
@@ -12675,7 +12681,7 @@
     "diggers-staff": {
         "id": "diggers-staff",
         "name": "Digger's Staff",
-        "requirements": [8, 0, 12, 0, 0],
+        "requirements": { "STR": 8, "DEX": 0, "INT": 12, "FTH": 0, "ARC": 0 },
         "category": "glintstone-staff",
         "unique": false,
         "infusions": {
@@ -12709,7 +12715,7 @@
     "dismounter": {
         "id": "dismounter",
         "name": "Dismounter",
-        "requirements": [19, 16, 0, 0, 0],
+        "requirements": { "STR": 19, "DEX": 16, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "curved-greatsword",
         "unique": false,
         "infusions": {
@@ -12913,7 +12919,7 @@
     "distinguished-greatshield": {
         "id": "distinguished-greatshield",
         "name": "Distinguished Greatshield",
-        "requirements": [32, 0, 0, 0, 0],
+        "requirements": { "STR": 32, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatshield",
         "unique": false,
         "infusions": {
@@ -13117,7 +13123,7 @@
     "dragon-communion-seal": {
         "id": "dragon-communion-seal",
         "name": "Dragon Communion Seal",
-        "requirements": [0, 0, 0, 10, 10],
+        "requirements": { "STR": 0, "DEX": 0, "INT": 0, "FTH": 10, "ARC": 10 },
         "category": "sacred-seal",
         "unique": false,
         "infusions": {
@@ -13151,7 +13157,7 @@
     "dragon-greatclaw": {
         "id": "dragon-greatclaw",
         "name": "Dragon Greatclaw",
-        "requirements": [30, 14, 0, 0, 0],
+        "requirements": { "STR": 30, "DEX": 14, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "colossal-weapon",
         "unique": true,
         "infusions": {
@@ -13175,7 +13181,7 @@
     "dragon-halberd": {
         "id": "dragon-halberd",
         "name": "Dragon Halberd",
-        "requirements": [22, 10, 0, 0, 0],
+        "requirements": { "STR": 22, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "halberd",
         "unique": true,
         "infusions": {
@@ -13199,7 +13205,7 @@
     "dragon-hunters-great-katana": {
         "id": "dragon-hunters-great-katana",
         "name": "Dragon-Hunter's Great Katana",
-        "requirements": [15, 20, 0, 0, 0],
+        "requirements": { "STR": 15, "DEX": 20, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "great-katana",
         "unique": true,
         "infusions": {
@@ -13223,7 +13229,7 @@
     "dragon-kings-cragblade": {
         "id": "dragon-kings-cragblade",
         "name": "Dragon King's Cragblade",
-        "requirements": [18, 37, 0, 0, 0],
+        "requirements": { "STR": 18, "DEX": 37, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "heavy-thrusting-sword",
         "unique": true,
         "infusions": {
@@ -13247,7 +13253,7 @@
     "dragon-towershield": {
         "id": "dragon-towershield",
         "name": "Dragon Towershield",
-        "requirements": [30, 0, 0, 0, 0],
+        "requirements": { "STR": 30, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatshield",
         "unique": false,
         "infusions": {
@@ -13451,7 +13457,7 @@
     "dragonclaw-shield": {
         "id": "dragonclaw-shield",
         "name": "Dragonclaw Shield",
-        "requirements": [28, 12, 0, 0, 0],
+        "requirements": { "STR": 28, "DEX": 12, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatshield",
         "unique": false,
         "infusions": {
@@ -13475,7 +13481,7 @@
     "dragonscale-blade": {
         "id": "dragonscale-blade",
         "name": "Dragonscale Blade",
-        "requirements": [12, 20, 0, 0, 0],
+        "requirements": { "STR": 12, "DEX": 20, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "katana",
         "unique": true,
         "infusions": {
@@ -13499,7 +13505,7 @@
     "dryleaf-arts": {
         "id": "dryleaf-arts",
         "name": "Dryleaf Arts",
-        "requirements": [8, 8, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 8, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "hand-to-hand-art",
         "unique": false,
         "infusions": {
@@ -13703,7 +13709,7 @@
     "dryleaf-seal": {
         "id": "dryleaf-seal",
         "name": "Dryleaf Seal",
-        "requirements": [8, 0, 0, 27, 0],
+        "requirements": { "STR": 8, "DEX": 0, "INT": 0, "FTH": 27, "ARC": 0 },
         "category": "sacred-seal",
         "unique": false,
         "infusions": {
@@ -13737,7 +13743,7 @@
     "dueling-shield": {
         "id": "dueling-shield",
         "name": "Dueling Shield",
-        "requirements": [15, 14, 0, 0, 0],
+        "requirements": { "STR": 15, "DEX": 14, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "thrusting-shield",
         "unique": false,
         "infusions": {
@@ -13941,7 +13947,7 @@
     "duelist-greataxe": {
         "id": "duelist-greataxe",
         "name": "Duelist Greataxe",
-        "requirements": [30, 10, 0, 0, 0],
+        "requirements": { "STR": 30, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "colossal-weapon",
         "unique": false,
         "infusions": {
@@ -14145,7 +14151,7 @@
     "eclipse-crest-greatshield": {
         "id": "eclipse-crest-greatshield",
         "name": "Eclipse Crest Greatshield",
-        "requirements": [32, 0, 0, 0, 0],
+        "requirements": { "STR": 32, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatshield",
         "unique": false,
         "infusions": {
@@ -14349,7 +14355,7 @@
     "eclipse-crest-heater-shield": {
         "id": "eclipse-crest-heater-shield",
         "name": "Eclipse Crest Heater Shield",
-        "requirements": [10, 0, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -14553,7 +14559,7 @@
     "eclipse-shotel": {
         "id": "eclipse-shotel",
         "name": "Eclipse Shotel",
-        "requirements": [10, 25, 0, 30, 0],
+        "requirements": { "STR": 10, "DEX": 25, "INT": 0, "FTH": 30, "ARC": 0 },
         "category": "curved-sword",
         "unique": true,
         "infusions": {
@@ -14577,7 +14583,7 @@
     "eleonoras-poleblade": {
         "id": "eleonoras-poleblade",
         "name": "Eleonora's Poleblade",
-        "requirements": [12, 21, 0, 0, 19],
+        "requirements": { "STR": 12, "DEX": 21, "INT": 0, "FTH": 0, "ARC": 19 },
         "category": "twinblade",
         "unique": true,
         "infusions": {
@@ -14601,7 +14607,7 @@
     "envoys-greathorn": {
         "id": "envoys-greathorn",
         "name": "Envoy's Greathorn",
-        "requirements": [28, 12, 0, 24, 0],
+        "requirements": { "STR": 28, "DEX": 12, "INT": 0, "FTH": 24, "ARC": 0 },
         "category": "colossal-weapon",
         "unique": true,
         "infusions": {
@@ -14625,7 +14631,7 @@
     "envoys-horn": {
         "id": "envoys-horn",
         "name": "Envoy's Horn",
-        "requirements": [10, 12, 0, 16, 0],
+        "requirements": { "STR": 10, "DEX": 12, "INT": 0, "FTH": 16, "ARC": 0 },
         "category": "hammer",
         "unique": true,
         "infusions": {
@@ -14649,7 +14655,7 @@
     "envoys-long-horn": {
         "id": "envoys-long-horn",
         "name": "Envoy's Long Horn",
-        "requirements": [23, 11, 0, 18, 0],
+        "requirements": { "STR": 23, "DEX": 11, "INT": 0, "FTH": 18, "ARC": 0 },
         "category": "great-hammer",
         "unique": true,
         "infusions": {
@@ -14673,7 +14679,7 @@
     "erdsteel-dagger": {
         "id": "erdsteel-dagger",
         "name": "Erdsteel Dagger",
-        "requirements": [7, 12, 0, 14, 0],
+        "requirements": { "STR": 7, "DEX": 12, "INT": 0, "FTH": 14, "ARC": 0 },
         "category": "dagger",
         "unique": false,
         "infusions": {
@@ -14877,7 +14883,7 @@
     "erdtree-bow": {
         "id": "erdtree-bow",
         "name": "Erdtree Bow",
-        "requirements": [8, 12, 0, 14, 0],
+        "requirements": { "STR": 8, "DEX": 12, "INT": 0, "FTH": 14, "ARC": 0 },
         "category": "bow",
         "unique": true,
         "infusions": {
@@ -14901,7 +14907,7 @@
     "erdtree-greatbow": {
         "id": "erdtree-greatbow",
         "name": "Erdtree Greatbow",
-        "requirements": [20, 14, 0, 14, 0],
+        "requirements": { "STR": 20, "DEX": 14, "INT": 0, "FTH": 14, "ARC": 0 },
         "category": "greatbow",
         "unique": true,
         "infusions": {
@@ -14925,7 +14931,7 @@
     "erdtree-greatshield": {
         "id": "erdtree-greatshield",
         "name": "Erdtree Greatshield",
-        "requirements": [30, 0, 0, 12, 0],
+        "requirements": { "STR": 30, "DEX": 0, "INT": 0, "FTH": 12, "ARC": 0 },
         "category": "greatshield",
         "unique": false,
         "infusions": {
@@ -14949,7 +14955,7 @@
     "erdtree-seal": {
         "id": "erdtree-seal",
         "name": "Erdtree Seal",
-        "requirements": [0, 0, 0, 40, 0],
+        "requirements": { "STR": 0, "DEX": 0, "INT": 0, "FTH": 40, "ARC": 0 },
         "category": "sacred-seal",
         "unique": false,
         "infusions": {
@@ -14983,7 +14989,7 @@
     "estoc": {
         "id": "estoc",
         "name": "Estoc",
-        "requirements": [11, 13, 0, 0, 0],
+        "requirements": { "STR": 11, "DEX": 13, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "thrusting-sword",
         "unique": false,
         "infusions": {
@@ -15187,7 +15193,7 @@
     "euporia": {
         "id": "euporia",
         "name": "Euporia",
-        "requirements": [16, 16, 0, 24, 0],
+        "requirements": { "STR": 16, "DEX": 16, "INT": 0, "FTH": 24, "ARC": 0 },
         "category": "twinblade",
         "unique": true,
         "infusions": {
@@ -15211,7 +15217,7 @@
     "executioners-greataxe": {
         "id": "executioners-greataxe",
         "name": "Executioner's Greataxe",
-        "requirements": [34, 8, 0, 0, 0],
+        "requirements": { "STR": 34, "DEX": 8, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greataxe",
         "unique": false,
         "infusions": {
@@ -15415,7 +15421,7 @@
     "falchion": {
         "id": "falchion",
         "name": "Falchion",
-        "requirements": [9, 13, 0, 0, 0],
+        "requirements": { "STR": 9, "DEX": 13, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "curved-sword",
         "unique": false,
         "infusions": {
@@ -15619,7 +15625,7 @@
     "fallingstar-beast-jaw": {
         "id": "fallingstar-beast-jaw",
         "name": "Fallingstar Beast Jaw",
-        "requirements": [34, 12, 20, 0, 0],
+        "requirements": { "STR": 34, "DEX": 12, "INT": 20, "FTH": 0, "ARC": 0 },
         "category": "colossal-weapon",
         "unique": true,
         "infusions": {
@@ -15643,7 +15649,7 @@
     "falx": {
         "id": "falx",
         "name": "Falx",
-        "requirements": [12, 15, 0, 0, 0],
+        "requirements": { "STR": 12, "DEX": 15, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "curved-sword",
         "unique": true,
         "infusions": {
@@ -15667,7 +15673,7 @@
     "family-heads": {
         "id": "family-heads",
         "name": "Family Heads",
-        "requirements": [8, 18, 16, 0, 0],
+        "requirements": { "STR": 8, "DEX": 18, "INT": 16, "FTH": 0, "ARC": 0 },
         "category": "flail",
         "unique": true,
         "infusions": {
@@ -15691,7 +15697,7 @@
     "finger-seal": {
         "id": "finger-seal",
         "name": "Finger Seal",
-        "requirements": [4, 0, 0, 10, 0],
+        "requirements": { "STR": 4, "DEX": 0, "INT": 0, "FTH": 10, "ARC": 0 },
         "category": "sacred-seal",
         "unique": false,
         "infusions": {
@@ -15725,7 +15731,7 @@
     "fingerprint-stone-shield": {
         "id": "fingerprint-stone-shield",
         "name": "Fingerprint Stone Shield",
-        "requirements": [48, 0, 0, 0, 0],
+        "requirements": { "STR": 48, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatshield",
         "unique": false,
         "infusions": {
@@ -15938,7 +15944,7 @@
     "fire-knights-greatsword": {
         "id": "fire-knights-greatsword",
         "name": "Fire Knight's Greatsword",
-        "requirements": [22, 18, 0, 12, 0],
+        "requirements": { "STR": 22, "DEX": 18, "INT": 0, "FTH": 12, "ARC": 0 },
         "category": "colossal-sword",
         "unique": false,
         "infusions": {
@@ -16142,7 +16148,7 @@
     "fire-knights-seal": {
         "id": "fire-knights-seal",
         "name": "Fire Knight's Seal",
-        "requirements": [8, 0, 0, 23, 0],
+        "requirements": { "STR": 8, "DEX": 0, "INT": 0, "FTH": 23, "ARC": 0 },
         "category": "sacred-seal",
         "unique": false,
         "infusions": {
@@ -16176,7 +16182,7 @@
     "fire-knights-shortsword": {
         "id": "fire-knights-shortsword",
         "name": "Fire Knight's Shortsword",
-        "requirements": [8, 13, 0, 12, 0],
+        "requirements": { "STR": 8, "DEX": 13, "INT": 0, "FTH": 12, "ARC": 0 },
         "category": "dagger",
         "unique": false,
         "infusions": {
@@ -16380,7 +16386,7 @@
     "firespark-perfume-bottle": {
         "id": "firespark-perfume-bottle",
         "name": "Firespark Perfume Bottle",
-        "requirements": [3, 14, 0, 0, 0],
+        "requirements": { "STR": 3, "DEX": 14, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "perfume-bottle",
         "unique": false,
         "infusions": {
@@ -16404,7 +16410,7 @@
     "flail": {
         "id": "flail",
         "name": "Flail",
-        "requirements": [10, 18, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 18, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "flail",
         "unique": false,
         "infusions": {
@@ -16614,7 +16620,7 @@
     "flamberge": {
         "id": "flamberge",
         "name": "Flamberge",
-        "requirements": [15, 14, 0, 0, 0],
+        "requirements": { "STR": 15, "DEX": 14, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatsword",
         "unique": false,
         "infusions": {
@@ -16824,7 +16830,7 @@
     "flame-crest-wooden-shield": {
         "id": "flame-crest-wooden-shield",
         "name": "Flame Crest Wooden Shield",
-        "requirements": [8, 0, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -17028,7 +17034,7 @@
     "flowerstone-gavel": {
         "id": "flowerstone-gavel",
         "name": "Flowerstone Gavel",
-        "requirements": [14, 8, 0, 0, 15],
+        "requirements": { "STR": 14, "DEX": 8, "INT": 0, "FTH": 0, "ARC": 15 },
         "category": "hammer",
         "unique": true,
         "infusions": {
@@ -17052,7 +17058,7 @@
     "flowing-curved-sword": {
         "id": "flowing-curved-sword",
         "name": "Flowing Curved Sword",
-        "requirements": [9, 17, 0, 0, 0],
+        "requirements": { "STR": 9, "DEX": 17, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "curved-sword",
         "unique": false,
         "infusions": {
@@ -17256,7 +17262,7 @@
     "forked-greatsword": {
         "id": "forked-greatsword",
         "name": "Forked Greatsword",
-        "requirements": [14, 16, 0, 0, 0],
+        "requirements": { "STR": 14, "DEX": 16, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatsword",
         "unique": false,
         "infusions": {
@@ -17466,7 +17472,7 @@
     "forked-hatchet": {
         "id": "forked-hatchet",
         "name": "Forked Hatchet",
-        "requirements": [9, 14, 0, 0, 0],
+        "requirements": { "STR": 9, "DEX": 14, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "axe",
         "unique": false,
         "infusions": {
@@ -17676,7 +17682,7 @@
     "forked-tongue-hatchet": {
         "id": "forked-tongue-hatchet",
         "name": "Forked-Tongue Hatchet",
-        "requirements": [10, 13, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 13, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "axe",
         "unique": false,
         "infusions": {
@@ -17700,7 +17706,7 @@
     "frenzied-flame-seal": {
         "id": "frenzied-flame-seal",
         "name": "Frenzied Flame Seal",
-        "requirements": [0, 0, 0, 0, 0],
+        "requirements": { "STR": 0, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "sacred-seal",
         "unique": false,
         "infusions": {
@@ -17734,7 +17740,7 @@
     "frenzyflame-perfume-bottle": {
         "id": "frenzyflame-perfume-bottle",
         "name": "Frenzyflame Perfume Bottle",
-        "requirements": [3, 10, 12, 12, 0],
+        "requirements": { "STR": 3, "DEX": 10, "INT": 12, "FTH": 12, "ARC": 0 },
         "category": "perfume-bottle",
         "unique": false,
         "infusions": {
@@ -17758,7 +17764,7 @@
     "freyjas-greatsword": {
         "id": "freyjas-greatsword",
         "name": "Freyja's Greatsword",
-        "requirements": [25, 14, 0, 0, 0],
+        "requirements": { "STR": 25, "DEX": 14, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "curved-greatsword",
         "unique": false,
         "infusions": {
@@ -17962,7 +17968,7 @@
     "frozen-needle": {
         "id": "frozen-needle",
         "name": "Frozen Needle",
-        "requirements": [11, 18, 0, 0, 0],
+        "requirements": { "STR": 11, "DEX": 18, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "thrusting-sword",
         "unique": true,
         "infusions": {
@@ -17986,7 +17992,7 @@
     "full-moon-crossbow": {
         "id": "full-moon-crossbow",
         "name": "Full Moon Crossbow",
-        "requirements": [10, 10, 14, 0, 0],
+        "requirements": { "STR": 10, "DEX": 10, "INT": 14, "FTH": 0, "ARC": 0 },
         "category": "crossbow",
         "unique": false,
         "infusions": {
@@ -18010,7 +18016,7 @@
     "gargoyles-black-axe": {
         "id": "gargoyles-black-axe",
         "name": "Gargoyle's Black Axe",
-        "requirements": [24, 8, 0, 22, 0],
+        "requirements": { "STR": 24, "DEX": 8, "INT": 0, "FTH": 22, "ARC": 0 },
         "category": "greataxe",
         "unique": true,
         "infusions": {
@@ -18034,7 +18040,7 @@
     "gargoyles-black-blades": {
         "id": "gargoyles-black-blades",
         "name": "Gargoyle's Black Blades",
-        "requirements": [18, 15, 0, 22, 0],
+        "requirements": { "STR": 18, "DEX": 15, "INT": 0, "FTH": 22, "ARC": 0 },
         "category": "twinblade",
         "unique": true,
         "infusions": {
@@ -18058,7 +18064,7 @@
     "gargoyles-black-halberd": {
         "id": "gargoyles-black-halberd",
         "name": "Gargoyle's Black Halberd",
-        "requirements": [26, 10, 0, 22, 0],
+        "requirements": { "STR": 26, "DEX": 10, "INT": 0, "FTH": 22, "ARC": 0 },
         "category": "halberd",
         "unique": true,
         "infusions": {
@@ -18082,7 +18088,7 @@
     "gargoyles-blackblade": {
         "id": "gargoyles-blackblade",
         "name": "Gargoyle's Blackblade",
-        "requirements": [18, 10, 0, 22, 0],
+        "requirements": { "STR": 18, "DEX": 10, "INT": 0, "FTH": 22, "ARC": 0 },
         "category": "greatsword",
         "unique": true,
         "infusions": {
@@ -18106,7 +18112,7 @@
     "gargoyles-great-axe": {
         "id": "gargoyles-great-axe",
         "name": "Gargoyle's Great Axe",
-        "requirements": [24, 8, 0, 0, 0],
+        "requirements": { "STR": 24, "DEX": 8, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greataxe",
         "unique": false,
         "infusions": {
@@ -18310,7 +18316,7 @@
     "gargoyles-greatsword": {
         "id": "gargoyles-greatsword",
         "name": "Gargoyle's Greatsword",
-        "requirements": [18, 10, 0, 0, 0],
+        "requirements": { "STR": 18, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatsword",
         "unique": false,
         "infusions": {
@@ -18514,7 +18520,7 @@
     "gargoyles-halberd": {
         "id": "gargoyles-halberd",
         "name": "Gargoyle's Halberd",
-        "requirements": [26, 10, 0, 0, 0],
+        "requirements": { "STR": 26, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "halberd",
         "unique": false,
         "infusions": {
@@ -18718,7 +18724,7 @@
     "gargoyles-twinblade": {
         "id": "gargoyles-twinblade",
         "name": "Gargoyle's Twinblade",
-        "requirements": [18, 15, 0, 0, 0],
+        "requirements": { "STR": 18, "DEX": 15, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "twinblade",
         "unique": false,
         "infusions": {
@@ -18922,7 +18928,7 @@
     "gazing-finger": {
         "id": "gazing-finger",
         "name": "Gazing Finger",
-        "requirements": [20, 8, 20, 14, 0],
+        "requirements": { "STR": 20, "DEX": 8, "INT": 20, "FTH": 14, "ARC": 0 },
         "category": "colossal-weapon",
         "unique": true,
         "infusions": {
@@ -18946,7 +18952,7 @@
     "gelmir-glintstone-staff": {
         "id": "gelmir-glintstone-staff",
         "name": "Gelmir Glintstone Staff",
-        "requirements": [6, 0, 14, 14, 0],
+        "requirements": { "STR": 6, "DEX": 0, "INT": 14, "FTH": 14, "ARC": 0 },
         "category": "glintstone-staff",
         "unique": false,
         "infusions": {
@@ -18980,7 +18986,7 @@
     "ghizas-wheel": {
         "id": "ghizas-wheel",
         "name": "Ghiza's Wheel",
-        "requirements": [28, 18, 0, 0, 0],
+        "requirements": { "STR": 28, "DEX": 18, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "colossal-weapon",
         "unique": true,
         "infusions": {
@@ -19004,7 +19010,7 @@
     "ghostflame-torch": {
         "id": "ghostflame-torch",
         "name": "Ghostflame Torch",
-        "requirements": [10, 10, 14, 0, 0],
+        "requirements": { "STR": 10, "DEX": 10, "INT": 14, "FTH": 0, "ARC": 0 },
         "category": "torch",
         "unique": false,
         "infusions": {
@@ -19028,7 +19034,7 @@
     "giant-crusher": {
         "id": "giant-crusher",
         "name": "Giant-Crusher",
-        "requirements": [60, 0, 0, 0, 0],
+        "requirements": { "STR": 60, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "colossal-weapon",
         "unique": false,
         "infusions": {
@@ -19232,7 +19238,7 @@
     "giants-red-braid": {
         "id": "giants-red-braid",
         "name": "Giant's Red Braid",
-        "requirements": [18, 12, 0, 21, 0],
+        "requirements": { "STR": 18, "DEX": 12, "INT": 0, "FTH": 21, "ARC": 0 },
         "category": "whip",
         "unique": true,
         "infusions": {
@@ -19256,7 +19262,7 @@
     "giants-seal": {
         "id": "giants-seal",
         "name": "Giant's Seal",
-        "requirements": [4, 0, 0, 14, 0],
+        "requirements": { "STR": 4, "DEX": 0, "INT": 0, "FTH": 14, "ARC": 0 },
         "category": "sacred-seal",
         "unique": false,
         "infusions": {
@@ -19290,7 +19296,7 @@
     "gilded-greatshield": {
         "id": "gilded-greatshield",
         "name": "Gilded Greatshield",
-        "requirements": [36, 0, 0, 0, 0],
+        "requirements": { "STR": 36, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatshield",
         "unique": false,
         "infusions": {
@@ -19494,7 +19500,7 @@
     "gilded-iron-shield": {
         "id": "gilded-iron-shield",
         "name": "Gilded Iron Shield",
-        "requirements": [8, 0, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "small-shield",
         "unique": false,
         "infusions": {
@@ -19698,7 +19704,7 @@
     "glaive": {
         "id": "glaive",
         "name": "Glaive",
-        "requirements": [18, 15, 0, 0, 0],
+        "requirements": { "STR": 18, "DEX": 15, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "halberd",
         "unique": false,
         "infusions": {
@@ -19902,7 +19908,7 @@
     "glintstone-kris": {
         "id": "glintstone-kris",
         "name": "Glintstone Kris",
-        "requirements": [5, 12, 16, 0, 0],
+        "requirements": { "STR": 5, "DEX": 12, "INT": 16, "FTH": 0, "ARC": 0 },
         "category": "dagger",
         "unique": true,
         "infusions": {
@@ -19926,7 +19932,7 @@
     "glintstone-staff": {
         "id": "glintstone-staff",
         "name": "Glintstone Staff",
-        "requirements": [6, 0, 10, 0, 0],
+        "requirements": { "STR": 6, "DEX": 0, "INT": 10, "FTH": 0, "ARC": 0 },
         "category": "glintstone-staff",
         "unique": false,
         "infusions": {
@@ -19960,7 +19966,7 @@
     "godskin-peeler": {
         "id": "godskin-peeler",
         "name": "Godskin Peeler",
-        "requirements": [17, 22, 0, 0, 0],
+        "requirements": { "STR": 17, "DEX": 22, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "twinblade",
         "unique": false,
         "infusions": {
@@ -20164,7 +20170,7 @@
     "godskin-stitcher": {
         "id": "godskin-stitcher",
         "name": "Godskin Stitcher",
-        "requirements": [14, 17, 0, 0, 0],
+        "requirements": { "STR": 14, "DEX": 17, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "heavy-thrusting-sword",
         "unique": false,
         "infusions": {
@@ -20368,7 +20374,7 @@
     "godslayers-greatsword": {
         "id": "godslayers-greatsword",
         "name": "Godslayer's Greatsword",
-        "requirements": [20, 22, 0, 20, 0],
+        "requirements": { "STR": 20, "DEX": 22, "INT": 0, "FTH": 20, "ARC": 0 },
         "category": "colossal-sword",
         "unique": true,
         "infusions": {
@@ -20392,7 +20398,7 @@
     "godslayers-seal": {
         "id": "godslayers-seal",
         "name": "Godslayer's Seal",
-        "requirements": [4, 0, 0, 27, 0],
+        "requirements": { "STR": 4, "DEX": 0, "INT": 0, "FTH": 27, "ARC": 0 },
         "category": "sacred-seal",
         "unique": false,
         "infusions": {
@@ -20426,7 +20432,7 @@
     "golden-beast-crest-shield": {
         "id": "golden-beast-crest-shield",
         "name": "Golden Beast Crest Shield",
-        "requirements": [24, 0, 0, 0, 0],
+        "requirements": { "STR": 24, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatshield",
         "unique": false,
         "infusions": {
@@ -20630,7 +20636,7 @@
     "golden-epitaph": {
         "id": "golden-epitaph",
         "name": "Golden Epitaph",
-        "requirements": [12, 10, 0, 14, 0],
+        "requirements": { "STR": 12, "DEX": 10, "INT": 0, "FTH": 14, "ARC": 0 },
         "category": "straight-sword",
         "unique": true,
         "infusions": {
@@ -20654,7 +20660,7 @@
     "golden-greatshield": {
         "id": "golden-greatshield",
         "name": "Golden Greatshield",
-        "requirements": [34, 0, 0, 0, 0],
+        "requirements": { "STR": 34, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatshield",
         "unique": false,
         "infusions": {
@@ -20858,7 +20864,7 @@
     "golden-halberd": {
         "id": "golden-halberd",
         "name": "Golden Halberd",
-        "requirements": [30, 14, 0, 12, 0],
+        "requirements": { "STR": 30, "DEX": 14, "INT": 0, "FTH": 12, "ARC": 0 },
         "category": "halberd",
         "unique": true,
         "infusions": {
@@ -20882,7 +20888,7 @@
     "golden-lion-shield": {
         "id": "golden-lion-shield",
         "name": "Golden Lion Shield",
-        "requirements": [11, 0, 0, 0, 0],
+        "requirements": { "STR": 11, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -20906,7 +20912,7 @@
     "golden-order-greatsword": {
         "id": "golden-order-greatsword",
         "name": "Golden Order Greatsword",
-        "requirements": [16, 21, 0, 28, 0],
+        "requirements": { "STR": 16, "DEX": 21, "INT": 0, "FTH": 28, "ARC": 0 },
         "category": "greatsword",
         "unique": true,
         "infusions": {
@@ -20930,7 +20936,7 @@
     "golden-order-seal": {
         "id": "golden-order-seal",
         "name": "Golden Order Seal",
-        "requirements": [0, 0, 17, 17, 0],
+        "requirements": { "STR": 0, "DEX": 0, "INT": 17, "FTH": 17, "ARC": 0 },
         "category": "sacred-seal",
         "unique": false,
         "infusions": {
@@ -20964,7 +20970,7 @@
     "golem-fist": {
         "id": "golem-fist",
         "name": "Golem Fist",
-        "requirements": [24, 8, 11, 11, 0],
+        "requirements": { "STR": 24, "DEX": 8, "INT": 11, "FTH": 11, "ARC": 0 },
         "category": "fist",
         "unique": false,
         "infusions": {
@@ -21168,7 +21174,7 @@
     "golem-greatbow": {
         "id": "golem-greatbow",
         "name": "Golem Greatbow",
-        "requirements": [24, 18, 0, 0, 0],
+        "requirements": { "STR": 24, "DEX": 18, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatbow",
         "unique": true,
         "infusions": {
@@ -21192,7 +21198,7 @@
     "golems-halberd": {
         "id": "golems-halberd",
         "name": "Golem's Halberd",
-        "requirements": [36, 14, 0, 0, 0],
+        "requirements": { "STR": 36, "DEX": 14, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "colossal-weapon",
         "unique": false,
         "infusions": {
@@ -21396,7 +21402,7 @@
     "grafted-blade-greatsword": {
         "id": "grafted-blade-greatsword",
         "name": "Grafted Blade Greatsword",
-        "requirements": [40, 14, 0, 0, 0],
+        "requirements": { "STR": 40, "DEX": 14, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "colossal-sword",
         "unique": true,
         "infusions": {
@@ -21420,7 +21426,7 @@
     "grafted-dragon": {
         "id": "grafted-dragon",
         "name": "Grafted Dragon",
-        "requirements": [20, 14, 0, 16, 0],
+        "requirements": { "STR": 20, "DEX": 14, "INT": 0, "FTH": 16, "ARC": 0 },
         "category": "fist",
         "unique": true,
         "infusions": {
@@ -21444,7 +21450,7 @@
     "grave-scythe": {
         "id": "grave-scythe",
         "name": "Grave Scythe",
-        "requirements": [17, 13, 0, 0, 0],
+        "requirements": { "STR": 17, "DEX": 13, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "scythe",
         "unique": false,
         "infusions": {
@@ -21654,7 +21660,7 @@
     "gravel-stone-seal": {
         "id": "gravel-stone-seal",
         "name": "Gravel Stone Seal",
-        "requirements": [4, 0, 0, 18, 0],
+        "requirements": { "STR": 4, "DEX": 0, "INT": 0, "FTH": 18, "ARC": 0 },
         "category": "sacred-seal",
         "unique": false,
         "infusions": {
@@ -21688,7 +21694,7 @@
     "great-club": {
         "id": "great-club",
         "name": "Great Club",
-        "requirements": [35, 0, 0, 0, 0],
+        "requirements": { "STR": 35, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "colossal-weapon",
         "unique": false,
         "infusions": {
@@ -21892,7 +21898,7 @@
     "great-epee": {
         "id": "great-epee",
         "name": "Great epee",
-        "requirements": [15, 16, 0, 0, 0],
+        "requirements": { "STR": 15, "DEX": 16, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "heavy-thrusting-sword",
         "unique": false,
         "infusions": {
@@ -22096,7 +22102,7 @@
     "great-katana": {
         "id": "great-katana",
         "name": "Great Katana",
-        "requirements": [14, 18, 0, 0, 0],
+        "requirements": { "STR": 14, "DEX": 18, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "great-katana",
         "unique": false,
         "infusions": {
@@ -22306,7 +22312,7 @@
     "great-knife": {
         "id": "great-knife",
         "name": "Great Knife",
-        "requirements": [6, 12, 0, 0, 0],
+        "requirements": { "STR": 6, "DEX": 12, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "dagger",
         "unique": false,
         "infusions": {
@@ -22516,7 +22522,7 @@
     "great-mace": {
         "id": "great-mace",
         "name": "Great Mace",
-        "requirements": [28, 0, 0, 0, 0],
+        "requirements": { "STR": 28, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "great-hammer",
         "unique": false,
         "infusions": {
@@ -22720,7 +22726,7 @@
     "great-omenkiller-cleaver": {
         "id": "great-omenkiller-cleaver",
         "name": "Great Omenkiller Cleaver",
-        "requirements": [23, 12, 0, 0, 0],
+        "requirements": { "STR": 23, "DEX": 12, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greataxe",
         "unique": false,
         "infusions": {
@@ -22930,7 +22936,7 @@
     "great-stars": {
         "id": "great-stars",
         "name": "Great Stars",
-        "requirements": [22, 12, 0, 0, 0],
+        "requirements": { "STR": 22, "DEX": 12, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "great-hammer",
         "unique": false,
         "infusions": {
@@ -23140,7 +23146,7 @@
     "great-turtle-shell": {
         "id": "great-turtle-shell",
         "name": "Great Turtle Shell",
-        "requirements": [14, 0, 0, 0, 0],
+        "requirements": { "STR": 14, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -23344,7 +23350,7 @@
     "greataxe": {
         "id": "greataxe",
         "name": "Greataxe",
-        "requirements": [30, 8, 0, 0, 0],
+        "requirements": { "STR": 30, "DEX": 8, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greataxe",
         "unique": false,
         "infusions": {
@@ -23548,7 +23554,7 @@
     "greatbow": {
         "id": "greatbow",
         "name": "Greatbow",
-        "requirements": [20, 20, 0, 0, 0],
+        "requirements": { "STR": 20, "DEX": 20, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatbow",
         "unique": false,
         "infusions": {
@@ -23572,7 +23578,7 @@
     "greathorn-hammer": {
         "id": "greathorn-hammer",
         "name": "Greathorn Hammer",
-        "requirements": [22, 10, 0, 0, 0],
+        "requirements": { "STR": 22, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "great-hammer",
         "unique": false,
         "infusions": {
@@ -23776,7 +23782,7 @@
     "greatsword": {
         "id": "greatsword",
         "name": "Greatsword",
-        "requirements": [31, 12, 0, 0, 0],
+        "requirements": { "STR": 31, "DEX": 12, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "colossal-sword",
         "unique": false,
         "infusions": {
@@ -23980,7 +23986,7 @@
     "greatsword-of-damnation": {
         "id": "greatsword-of-damnation",
         "name": "Greatsword of Damnation",
-        "requirements": [20, 15, 0, 20, 0],
+        "requirements": { "STR": 20, "DEX": 15, "INT": 0, "FTH": 20, "ARC": 0 },
         "category": "greatsword",
         "unique": true,
         "infusions": {
@@ -24004,7 +24010,7 @@
     "greatsword-of-radahn-light": {
         "id": "greatsword-of-radahn-light",
         "name": "Greatsword of Radahn (Light)",
-        "requirements": [32, 24, 15, 0, 0],
+        "requirements": { "STR": 32, "DEX": 24, "INT": 15, "FTH": 0, "ARC": 0 },
         "category": "colossal-sword",
         "unique": true,
         "infusions": {
@@ -24028,7 +24034,7 @@
     "greatsword-of-radahn-lord": {
         "id": "greatsword-of-radahn-lord",
         "name": "Greatsword of Radahn (Lord)",
-        "requirements": [32, 24, 15, 0, 0],
+        "requirements": { "STR": 32, "DEX": 24, "INT": 15, "FTH": 0, "ARC": 0 },
         "category": "colossal-sword",
         "unique": true,
         "infusions": {
@@ -24052,7 +24058,7 @@
     "greatsword-of-solitude": {
         "id": "greatsword-of-solitude",
         "name": "Greatsword of Solitude",
-        "requirements": [27, 13, 0, 0, 0],
+        "requirements": { "STR": 27, "DEX": 13, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatsword",
         "unique": true,
         "infusions": {
@@ -24076,7 +24082,7 @@
     "grossmesser": {
         "id": "grossmesser",
         "name": "Grossmesser",
-        "requirements": [14, 12, 0, 0, 0],
+        "requirements": { "STR": 14, "DEX": 12, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "curved-sword",
         "unique": false,
         "infusions": {
@@ -24280,7 +24286,7 @@
     "guardians-swordspear": {
         "id": "guardians-swordspear",
         "name": "Guardian's Swordspear",
-        "requirements": [17, 16, 0, 0, 0],
+        "requirements": { "STR": 17, "DEX": 16, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "halberd",
         "unique": false,
         "infusions": {
@@ -24484,7 +24490,7 @@
     "halberd": {
         "id": "halberd",
         "name": "Halberd",
-        "requirements": [14, 12, 0, 0, 0],
+        "requirements": { "STR": 14, "DEX": 12, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "halberd",
         "unique": false,
         "infusions": {
@@ -24688,7 +24694,7 @@
     "haligtree-crest-greatshield": {
         "id": "haligtree-crest-greatshield",
         "name": "Haligtree Crest Greatshield",
-        "requirements": [36, 0, 0, 0, 0],
+        "requirements": { "STR": 36, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatshield",
         "unique": false,
         "infusions": {
@@ -24892,7 +24898,7 @@
     "halo-scythe": {
         "id": "halo-scythe",
         "name": "Halo Scythe",
-        "requirements": [13, 16, 0, 15, 0],
+        "requirements": { "STR": 13, "DEX": 16, "INT": 0, "FTH": 15, "ARC": 0 },
         "category": "scythe",
         "unique": true,
         "infusions": {
@@ -24916,7 +24922,7 @@
     "hammer": {
         "id": "hammer",
         "name": "Hammer",
-        "requirements": [14, 7, 0, 0, 0],
+        "requirements": { "STR": 14, "DEX": 7, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "hammer",
         "unique": false,
         "infusions": {
@@ -25120,7 +25126,7 @@
     "hand-axe": {
         "id": "hand-axe",
         "name": "Hand Axe",
-        "requirements": [9, 8, 0, 0, 0],
+        "requirements": { "STR": 9, "DEX": 8, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "axe",
         "unique": false,
         "infusions": {
@@ -25324,7 +25330,7 @@
     "hand-ballista": {
         "id": "hand-ballista",
         "name": "Hand Ballista",
-        "requirements": [30, 14, 0, 0, 0],
+        "requirements": { "STR": 30, "DEX": 14, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "ballista",
         "unique": false,
         "infusions": {
@@ -25348,7 +25354,7 @@
     "hand-of-malenia": {
         "id": "hand-of-malenia",
         "name": "Hand of Malenia",
-        "requirements": [16, 48, 0, 0, 0],
+        "requirements": { "STR": 16, "DEX": 48, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "katana",
         "unique": true,
         "infusions": {
@@ -25372,7 +25378,7 @@
     "harp-bow": {
         "id": "harp-bow",
         "name": "Harp Bow",
-        "requirements": [9, 9, 0, 0, 0],
+        "requirements": { "STR": 9, "DEX": 9, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "light-bow",
         "unique": true,
         "infusions": {
@@ -25396,7 +25402,7 @@
     "hawk-crest-wooden-shield": {
         "id": "hawk-crest-wooden-shield",
         "name": "Hawk Crest Wooden Shield",
-        "requirements": [8, 0, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -25600,7 +25606,7 @@
     "heater-shield": {
         "id": "heater-shield",
         "name": "Heater Shield",
-        "requirements": [10, 0, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -25804,7 +25810,7 @@
     "heavy-crossbow": {
         "id": "heavy-crossbow",
         "name": "Heavy Crossbow",
-        "requirements": [14, 10, 0, 0, 0],
+        "requirements": { "STR": 14, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "crossbow",
         "unique": false,
         "infusions": {
@@ -25828,7 +25834,7 @@
     "helphens-steeple": {
         "id": "helphens-steeple",
         "name": "Helphen's Steeple",
-        "requirements": [19, 10, 22, 0, 0],
+        "requirements": { "STR": 19, "DEX": 10, "INT": 22, "FTH": 0, "ARC": 0 },
         "category": "greatsword",
         "unique": true,
         "infusions": {
@@ -25852,7 +25858,7 @@
     "highland-axe": {
         "id": "highland-axe",
         "name": "Highland Axe",
-        "requirements": [12, 9, 0, 0, 0],
+        "requirements": { "STR": 12, "DEX": 9, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "axe",
         "unique": false,
         "infusions": {
@@ -26056,7 +26062,7 @@
     "hookclaws": {
         "id": "hookclaws",
         "name": "Hookclaws",
-        "requirements": [8, 14, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 14, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "claw",
         "unique": false,
         "infusions": {
@@ -26266,7 +26272,7 @@
     "horn-bow": {
         "id": "horn-bow",
         "name": "Horn Bow",
-        "requirements": [10, 14, 12, 0, 0],
+        "requirements": { "STR": 10, "DEX": 14, "INT": 12, "FTH": 0, "ARC": 0 },
         "category": "bow",
         "unique": false,
         "infusions": {
@@ -26290,7 +26296,7 @@
     "horned-warriors-greatsword": {
         "id": "horned-warriors-greatsword",
         "name": "Horned Warrior's Greatsword",
-        "requirements": [19, 16, 0, 13, 0],
+        "requirements": { "STR": 19, "DEX": 16, "INT": 0, "FTH": 13, "ARC": 0 },
         "category": "curved-greatsword",
         "unique": true,
         "infusions": {
@@ -26314,7 +26320,7 @@
     "horned-warriors-sword": {
         "id": "horned-warriors-sword",
         "name": "Horned Warrior's Sword",
-        "requirements": [11, 14, 0, 14, 0],
+        "requirements": { "STR": 11, "DEX": 14, "INT": 0, "FTH": 14, "ARC": 0 },
         "category": "curved-sword",
         "unique": true,
         "infusions": {
@@ -26338,7 +26344,7 @@
     "horse-crest-wooden-shield": {
         "id": "horse-crest-wooden-shield",
         "name": "Horse Crest Wooden Shield",
-        "requirements": [8, 0, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -26542,7 +26548,7 @@
     "hoslows-petal-whip": {
         "id": "hoslows-petal-whip",
         "name": "Hoslow's Petal Whip",
-        "requirements": [10, 20, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 20, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "whip",
         "unique": false,
         "infusions": {
@@ -26752,7 +26758,7 @@
     "ice-crest-shield": {
         "id": "ice-crest-shield",
         "name": "Ice Crest Shield",
-        "requirements": [9, 0, 0, 0, 0],
+        "requirements": { "STR": 9, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "small-shield",
         "unique": false,
         "infusions": {
@@ -26956,7 +26962,7 @@
     "icerind-hatchet": {
         "id": "icerind-hatchet",
         "name": "Icerind Hatchet",
-        "requirements": [11, 16, 0, 0, 0],
+        "requirements": { "STR": 11, "DEX": 16, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "axe",
         "unique": true,
         "infusions": {
@@ -26980,7 +26986,7 @@
     "icon-shield": {
         "id": "icon-shield",
         "name": "Icon Shield",
-        "requirements": [22, 0, 0, 0, 0],
+        "requirements": { "STR": 22, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatshield",
         "unique": false,
         "infusions": {
@@ -27004,7 +27010,7 @@
     "igons-greatbow": {
         "id": "igons-greatbow",
         "name": "Igon's Greatbow",
-        "requirements": [23, 16, 0, 0, 0],
+        "requirements": { "STR": 23, "DEX": 16, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatbow",
         "unique": false,
         "infusions": {
@@ -27028,7 +27034,7 @@
     "inquisitors-girandole": {
         "id": "inquisitors-girandole",
         "name": "Inquisitor's Girandole",
-        "requirements": [18, 15, 0, 16, 0],
+        "requirements": { "STR": 18, "DEX": 15, "INT": 0, "FTH": 16, "ARC": 0 },
         "category": "spear",
         "unique": true,
         "infusions": {
@@ -27052,7 +27058,7 @@
     "inseparable-sword": {
         "id": "inseparable-sword",
         "name": "Inseparable Sword",
-        "requirements": [18, 18, 0, 20, 0],
+        "requirements": { "STR": 18, "DEX": 18, "INT": 0, "FTH": 20, "ARC": 0 },
         "category": "straight-sword",
         "unique": true,
         "infusions": {
@@ -27076,7 +27082,7 @@
     "inverted-hawk-heater-shield": {
         "id": "inverted-hawk-heater-shield",
         "name": "Inverted Hawk Heater Shield",
-        "requirements": [10, 0, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -27280,7 +27286,7 @@
     "inverted-hawk-towershield": {
         "id": "inverted-hawk-towershield",
         "name": "Inverted Hawk Towershield",
-        "requirements": [30, 0, 0, 0, 0],
+        "requirements": { "STR": 30, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatshield",
         "unique": false,
         "infusions": {
@@ -27484,7 +27490,7 @@
     "iron-ball": {
         "id": "iron-ball",
         "name": "Iron Ball",
-        "requirements": [11, 8, 0, 0, 0],
+        "requirements": { "STR": 11, "DEX": 8, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "fist",
         "unique": false,
         "infusions": {
@@ -27688,7 +27694,7 @@
     "iron-cleaver": {
         "id": "iron-cleaver",
         "name": "Iron Cleaver",
-        "requirements": [15, 7, 0, 0, 0],
+        "requirements": { "STR": 15, "DEX": 7, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "axe",
         "unique": false,
         "infusions": {
@@ -27892,7 +27898,7 @@
     "iron-greatsword": {
         "id": "iron-greatsword",
         "name": "Iron Greatsword",
-        "requirements": [18, 10, 0, 0, 0],
+        "requirements": { "STR": 18, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatsword",
         "unique": false,
         "infusions": {
@@ -28096,7 +28102,7 @@
     "iron-roundshield": {
         "id": "iron-roundshield",
         "name": "Iron Roundshield",
-        "requirements": [8, 0, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "small-shield",
         "unique": false,
         "infusions": {
@@ -28300,7 +28306,7 @@
     "iron-spear": {
         "id": "iron-spear",
         "name": "Iron Spear",
-        "requirements": [13, 11, 0, 0, 0],
+        "requirements": { "STR": 13, "DEX": 11, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "spear",
         "unique": false,
         "infusions": {
@@ -28504,7 +28510,7 @@
     "ivory-sickle": {
         "id": "ivory-sickle",
         "name": "Ivory Sickle",
-        "requirements": [6, 11, 13, 0, 0],
+        "requirements": { "STR": 6, "DEX": 11, "INT": 13, "FTH": 0, "ARC": 0 },
         "category": "dagger",
         "unique": false,
         "infusions": {
@@ -28528,7 +28534,7 @@
     "jar-cannon": {
         "id": "jar-cannon",
         "name": "Jar Cannon",
-        "requirements": [34, 12, 0, 0, 0],
+        "requirements": { "STR": 34, "DEX": 12, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "ballista",
         "unique": false,
         "infusions": {
@@ -28552,7 +28558,7 @@
     "jawbone-axe": {
         "id": "jawbone-axe",
         "name": "Jawbone Axe",
-        "requirements": [14, 8, 0, 0, 0],
+        "requirements": { "STR": 14, "DEX": 8, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "axe",
         "unique": false,
         "infusions": {
@@ -28756,7 +28762,7 @@
     "jellyfish-shield": {
         "id": "jellyfish-shield",
         "name": "Jellyfish Shield",
-        "requirements": [20, 14, 0, 0, 0],
+        "requirements": { "STR": 20, "DEX": 14, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatshield",
         "unique": false,
         "infusions": {
@@ -28780,7 +28786,7 @@
     "katar": {
         "id": "katar",
         "name": "Katar",
-        "requirements": [8, 10, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "fist",
         "unique": false,
         "infusions": {
@@ -28984,7 +28990,7 @@
     "kite-shield": {
         "id": "kite-shield",
         "name": "Kite Shield",
-        "requirements": [12, 0, 0, 0, 0],
+        "requirements": { "STR": 12, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -29188,7 +29194,7 @@
     "knights-greatsword": {
         "id": "knights-greatsword",
         "name": "Knight's Greatsword",
-        "requirements": [16, 12, 0, 0, 0],
+        "requirements": { "STR": 16, "DEX": 12, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatsword",
         "unique": false,
         "infusions": {
@@ -29392,7 +29398,7 @@
     "lamenting-visage": {
         "id": "lamenting-visage",
         "name": "Lamenting Visage",
-        "requirements": [9, 0, 0, 0, 0],
+        "requirements": { "STR": 9, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "torch",
         "unique": true,
         "infusions": {
@@ -29416,7 +29422,7 @@
     "lance": {
         "id": "lance",
         "name": "Lance",
-        "requirements": [20, 14, 0, 0, 0],
+        "requirements": { "STR": 20, "DEX": 14, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "great-spear",
         "unique": false,
         "infusions": {
@@ -29620,7 +29626,7 @@
     "large-club": {
         "id": "large-club",
         "name": "Large Club",
-        "requirements": [22, 0, 0, 0, 0],
+        "requirements": { "STR": 22, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "great-hammer",
         "unique": false,
         "infusions": {
@@ -29824,7 +29830,7 @@
     "large-leather-shield": {
         "id": "large-leather-shield",
         "name": "Large Leather Shield",
-        "requirements": [8, 0, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -30028,7 +30034,7 @@
     "lazuli-glintstone-sword": {
         "id": "lazuli-glintstone-sword",
         "name": "Lazuli Glintstone Sword",
-        "requirements": [8, 9, 13, 0, 0],
+        "requirements": { "STR": 8, "DEX": 9, "INT": 13, "FTH": 0, "ARC": 0 },
         "category": "straight-sword",
         "unique": true,
         "infusions": {
@@ -30052,7 +30058,7 @@
     "ledas-sword": {
         "id": "ledas-sword",
         "name": "Leda's Sword",
-        "requirements": [11, 22, 0, 19, 0],
+        "requirements": { "STR": 11, "DEX": 22, "INT": 0, "FTH": 19, "ARC": 0 },
         "category": "light-greatsword",
         "unique": true,
         "infusions": {
@@ -30076,7 +30082,7 @@
     "light-crossbow": {
         "id": "light-crossbow",
         "name": "Light Crossbow",
-        "requirements": [12, 8, 0, 0, 0],
+        "requirements": { "STR": 12, "DEX": 8, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "crossbow",
         "unique": false,
         "infusions": {
@@ -30100,7 +30106,7 @@
     "lion-greatbow": {
         "id": "lion-greatbow",
         "name": "Lion Greatbow",
-        "requirements": [22, 18, 0, 0, 0],
+        "requirements": { "STR": 22, "DEX": 18, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatbow",
         "unique": true,
         "infusions": {
@@ -30124,7 +30130,7 @@
     "lizard-greatsword": {
         "id": "lizard-greatsword",
         "name": "Lizard Greatsword",
-        "requirements": [12, 14, 0, 0, 0],
+        "requirements": { "STR": 12, "DEX": 14, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatsword",
         "unique": false,
         "infusions": {
@@ -30328,7 +30334,7 @@
     "longbow": {
         "id": "longbow",
         "name": "Longbow",
-        "requirements": [9, 14, 0, 0, 0],
+        "requirements": { "STR": 9, "DEX": 14, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "bow",
         "unique": false,
         "infusions": {
@@ -30352,7 +30358,7 @@
     "longhaft-axe": {
         "id": "longhaft-axe",
         "name": "Longhaft Axe",
-        "requirements": [24, 8, 0, 0, 0],
+        "requirements": { "STR": 24, "DEX": 8, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greataxe",
         "unique": false,
         "infusions": {
@@ -30556,7 +30562,7 @@
     "longsword": {
         "id": "longsword",
         "name": "Longsword",
-        "requirements": [10, 10, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "straight-sword",
         "unique": false,
         "infusions": {
@@ -30760,7 +30766,7 @@
     "lordsworns-greatsword": {
         "id": "lordsworns-greatsword",
         "name": "Lordsworn's Greatsword",
-        "requirements": [16, 10, 0, 0, 0],
+        "requirements": { "STR": 16, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatsword",
         "unique": false,
         "infusions": {
@@ -30964,7 +30970,7 @@
     "lordsworns-shield": {
         "id": "lordsworns-shield",
         "name": "Lordsworn's Shield",
-        "requirements": [16, 0, 0, 0, 0],
+        "requirements": { "STR": 16, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatshield",
         "unique": false,
         "infusions": {
@@ -31168,7 +31174,7 @@
     "lordsworns-straight-sword": {
         "id": "lordsworns-straight-sword",
         "name": "Lordsworn's Straight Sword",
-        "requirements": [10, 10, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "straight-sword",
         "unique": false,
         "infusions": {
@@ -31372,7 +31378,7 @@
     "lorettas-war-sickle": {
         "id": "lorettas-war-sickle",
         "name": "Loretta's War Sickle",
-        "requirements": [20, 15, 20, 0, 0],
+        "requirements": { "STR": 20, "DEX": 15, "INT": 20, "FTH": 0, "ARC": 0 },
         "category": "halberd",
         "unique": true,
         "infusions": {
@@ -31396,7 +31402,7 @@
     "lucerne": {
         "id": "lucerne",
         "name": "Lucerne",
-        "requirements": [15, 12, 0, 0, 0],
+        "requirements": { "STR": 15, "DEX": 12, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "halberd",
         "unique": false,
         "infusions": {
@@ -31600,7 +31606,7 @@
     "lusats-glintstone-staff": {
         "id": "lusats-glintstone-staff",
         "name": "Lusat's Glintstone Staff",
-        "requirements": [10, 0, 52, 0, 0],
+        "requirements": { "STR": 10, "DEX": 0, "INT": 52, "FTH": 0, "ARC": 0 },
         "category": "glintstone-staff",
         "unique": false,
         "infusions": {
@@ -31634,7 +31640,7 @@
     "mace": {
         "id": "mace",
         "name": "Mace",
-        "requirements": [12, 7, 0, 0, 0],
+        "requirements": { "STR": 12, "DEX": 7, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "hammer",
         "unique": false,
         "infusions": {
@@ -31838,7 +31844,7 @@
     "madding-hand": {
         "id": "madding-hand",
         "name": "Madding Hand",
-        "requirements": [8, 8, 13, 20, 0],
+        "requirements": { "STR": 8, "DEX": 8, "INT": 13, "FTH": 20, "ARC": 0 },
         "category": "fist",
         "unique": true,
         "infusions": {
@@ -31872,7 +31878,7 @@
     "magma-blade": {
         "id": "magma-blade",
         "name": "Magma Blade",
-        "requirements": [9, 15, 0, 16, 0],
+        "requirements": { "STR": 9, "DEX": 15, "INT": 0, "FTH": 16, "ARC": 0 },
         "category": "curved-sword",
         "unique": true,
         "infusions": {
@@ -31896,7 +31902,7 @@
     "magma-whip-candlestick": {
         "id": "magma-whip-candlestick",
         "name": "Magma Whip Candlestick",
-        "requirements": [8, 16, 0, 18, 0],
+        "requirements": { "STR": 8, "DEX": 16, "INT": 0, "FTH": 18, "ARC": 0 },
         "category": "whip",
         "unique": true,
         "infusions": {
@@ -31920,7 +31926,7 @@
     "magma-wyrms-scalesword": {
         "id": "magma-wyrms-scalesword",
         "name": "Magma Wyrm's Scalesword",
-        "requirements": [24, 15, 0, 18, 0],
+        "requirements": { "STR": 24, "DEX": 15, "INT": 0, "FTH": 18, "ARC": 0 },
         "category": "curved-greatsword",
         "unique": true,
         "infusions": {
@@ -31944,7 +31950,7 @@
     "main-gauche": {
         "id": "main-gauche",
         "name": "Main-gauche",
-        "requirements": [7, 15, 0, 0, 0],
+        "requirements": { "STR": 7, "DEX": 15, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "dagger",
         "unique": false,
         "infusions": {
@@ -32148,7 +32154,7 @@
     "malikeths-black-blade": {
         "id": "malikeths-black-blade",
         "name": "Maliketh's Black Blade",
-        "requirements": [34, 12, 0, 20, 0],
+        "requirements": { "STR": 34, "DEX": 12, "INT": 0, "FTH": 20, "ARC": 0 },
         "category": "colossal-sword",
         "unique": true,
         "infusions": {
@@ -32172,7 +32178,7 @@
     "man-serpents-shield": {
         "id": "man-serpents-shield",
         "name": "Man-Serpent's Shield",
-        "requirements": [8, 0, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "small-shield",
         "unique": false,
         "infusions": {
@@ -32376,7 +32382,7 @@
     "manor-towershield": {
         "id": "manor-towershield",
         "name": "Manor Towershield",
-        "requirements": [30, 0, 0, 0, 0],
+        "requirements": { "STR": 30, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatshield",
         "unique": false,
         "infusions": {
@@ -32580,7 +32586,7 @@
     "mantis-blade": {
         "id": "mantis-blade",
         "name": "Mantis Blade",
-        "requirements": [10, 12, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 12, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "curved-sword",
         "unique": false,
         "infusions": {
@@ -32784,7 +32790,7 @@
     "marais-executioners-sword": {
         "id": "marais-executioners-sword",
         "name": "Marais Executioner's Sword",
-        "requirements": [24, 14, 0, 0, 23],
+        "requirements": { "STR": 24, "DEX": 14, "INT": 0, "FTH": 0, "ARC": 23 },
         "category": "greatsword",
         "unique": true,
         "infusions": {
@@ -32808,7 +32814,7 @@
     "marikas-hammer": {
         "id": "marikas-hammer",
         "name": "Marika's Hammer",
-        "requirements": [20, 12, 0, 19, 0],
+        "requirements": { "STR": 20, "DEX": 12, "INT": 0, "FTH": 19, "ARC": 0 },
         "category": "hammer",
         "unique": true,
         "infusions": {
@@ -32832,7 +32838,7 @@
     "marred-leather-shield": {
         "id": "marred-leather-shield",
         "name": "Marred Leather Shield",
-        "requirements": [8, 0, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -33042,7 +33048,7 @@
     "marred-wooden-shield": {
         "id": "marred-wooden-shield",
         "name": "Marred Wooden Shield",
-        "requirements": [8, 0, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -33252,7 +33258,7 @@
     "maternal-staff": {
         "id": "maternal-staff",
         "name": "Maternal Staff",
-        "requirements": [7, 0, 21, 0, 21],
+        "requirements": { "STR": 7, "DEX": 0, "INT": 21, "FTH": 0, "ARC": 21 },
         "category": "glintstone-staff",
         "unique": false,
         "infusions": {
@@ -33286,7 +33292,7 @@
     "messmer-soldier-shield": {
         "id": "messmer-soldier-shield",
         "name": "Messmer Soldier Shield",
-        "requirements": [10, 0, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -33490,7 +33496,7 @@
     "messmer-soldiers-axe": {
         "id": "messmer-soldiers-axe",
         "name": "Messmer Soldier's Axe",
-        "requirements": [14, 10, 0, 0, 0],
+        "requirements": { "STR": 14, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "axe",
         "unique": false,
         "infusions": {
@@ -33694,7 +33700,7 @@
     "messmer-soldiers-spear": {
         "id": "messmer-soldiers-spear",
         "name": "Messmer Soldier's Spear",
-        "requirements": [19, 16, 0, 0, 0],
+        "requirements": { "STR": 19, "DEX": 16, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "great-spear",
         "unique": false,
         "infusions": {
@@ -33898,7 +33904,7 @@
     "meteoric-ore-blade": {
         "id": "meteoric-ore-blade",
         "name": "Meteoric Ore Blade",
-        "requirements": [15, 14, 18, 0, 0],
+        "requirements": { "STR": 15, "DEX": 14, "INT": 18, "FTH": 0, "ARC": 0 },
         "category": "katana",
         "unique": true,
         "infusions": {
@@ -33922,7 +33928,7 @@
     "meteorite-staff": {
         "id": "meteorite-staff",
         "name": "Meteorite Staff",
-        "requirements": [6, 0, 18, 0, 0],
+        "requirements": { "STR": 6, "DEX": 0, "INT": 18, "FTH": 0, "ARC": 0 },
         "category": "glintstone-staff",
         "unique": false,
         "infusions": {
@@ -33956,7 +33962,7 @@
     "milady": {
         "id": "milady",
         "name": "Milady",
-        "requirements": [12, 17, 0, 0, 0],
+        "requirements": { "STR": 12, "DEX": 17, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "light-greatsword",
         "unique": false,
         "infusions": {
@@ -34160,7 +34166,7 @@
     "miquellan-knights-sword": {
         "id": "miquellan-knights-sword",
         "name": "Miquellan Knight's Sword",
-        "requirements": [11, 11, 0, 16, 0],
+        "requirements": { "STR": 11, "DEX": 11, "INT": 0, "FTH": 16, "ARC": 0 },
         "category": "straight-sword",
         "unique": true,
         "infusions": {
@@ -34184,7 +34190,7 @@
     "misbegotten-shortbow": {
         "id": "misbegotten-shortbow",
         "name": "Misbegotten Shortbow",
-        "requirements": [16, 8, 0, 0, 0],
+        "requirements": { "STR": 16, "DEX": 8, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "light-bow",
         "unique": false,
         "infusions": {
@@ -34208,7 +34214,7 @@
     "misericorde": {
         "id": "misericorde",
         "name": "Misericorde",
-        "requirements": [7, 12, 0, 0, 0],
+        "requirements": { "STR": 7, "DEX": 12, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "dagger",
         "unique": false,
         "infusions": {
@@ -34412,7 +34418,7 @@
     "mohgwyns-sacred-spear": {
         "id": "mohgwyns-sacred-spear",
         "name": "Mohgwyn's Sacred Spear",
-        "requirements": [24, 14, 0, 0, 27],
+        "requirements": { "STR": 24, "DEX": 14, "INT": 0, "FTH": 0, "ARC": 27 },
         "category": "great-spear",
         "unique": true,
         "infusions": {
@@ -34436,7 +34442,7 @@
     "monks-flameblade": {
         "id": "monks-flameblade",
         "name": "Monk's Flameblade",
-        "requirements": [18, 18, 0, 0, 0],
+        "requirements": { "STR": 18, "DEX": 18, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "curved-greatsword",
         "unique": false,
         "infusions": {
@@ -34640,7 +34646,7 @@
     "monks-flamemace": {
         "id": "monks-flamemace",
         "name": "Monk's Flamemace",
-        "requirements": [13, 13, 0, 0, 0],
+        "requirements": { "STR": 13, "DEX": 13, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "hammer",
         "unique": false,
         "infusions": {
@@ -34844,7 +34850,7 @@
     "moonrithylls-knight-sword": {
         "id": "moonrithylls-knight-sword",
         "name": "Moonrithyll's Knight Sword",
-        "requirements": [20, 14, 18, 0, 0],
+        "requirements": { "STR": 20, "DEX": 14, "INT": 18, "FTH": 0, "ARC": 0 },
         "category": "colossal-sword",
         "unique": true,
         "infusions": {
@@ -34868,7 +34874,7 @@
     "moonveil": {
         "id": "moonveil",
         "name": "Moonveil",
-        "requirements": [12, 18, 23, 0, 0],
+        "requirements": { "STR": 12, "DEX": 18, "INT": 23, "FTH": 0, "ARC": 0 },
         "category": "katana",
         "unique": true,
         "infusions": {
@@ -34892,7 +34898,7 @@
     "morgotts-cursed-sword": {
         "id": "morgotts-cursed-sword",
         "name": "Morgott's Cursed Sword",
-        "requirements": [14, 35, 0, 0, 17],
+        "requirements": { "STR": 14, "DEX": 35, "INT": 0, "FTH": 0, "ARC": 17 },
         "category": "curved-greatsword",
         "unique": true,
         "infusions": {
@@ -34916,7 +34922,7 @@
     "morning-star": {
         "id": "morning-star",
         "name": "Morning Star",
-        "requirements": [12, 8, 0, 0, 0],
+        "requirements": { "STR": 12, "DEX": 8, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "hammer",
         "unique": false,
         "infusions": {
@@ -35126,7 +35132,7 @@
     "nagakiba": {
         "id": "nagakiba",
         "name": "Nagakiba",
-        "requirements": [18, 22, 0, 0, 0],
+        "requirements": { "STR": 18, "DEX": 22, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "katana",
         "unique": false,
         "infusions": {
@@ -35336,7 +35342,13 @@
     "nanayas-torch": {
         "id": "nanayas-torch",
         "name": "Nanaya's Torch",
-        "requirements": [10, 10, 14, 16, 0],
+        "requirements": {
+            "STR": 10,
+            "DEX": 10,
+            "INT": 14,
+            "FTH": 16,
+            "ARC": 0
+        },
         "category": "torch",
         "unique": true,
         "infusions": {
@@ -35360,7 +35372,7 @@
     "nightrider-flail": {
         "id": "nightrider-flail",
         "name": "Nightrider Flail",
-        "requirements": [10, 24, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 24, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "flail",
         "unique": false,
         "infusions": {
@@ -35570,7 +35582,7 @@
     "nightrider-glaive": {
         "id": "nightrider-glaive",
         "name": "Nightrider Glaive",
-        "requirements": [26, 10, 0, 0, 0],
+        "requirements": { "STR": 26, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "halberd",
         "unique": false,
         "infusions": {
@@ -35774,7 +35786,7 @@
     "nobles-estoc": {
         "id": "nobles-estoc",
         "name": "Noble's Estoc",
-        "requirements": [9, 10, 0, 0, 0],
+        "requirements": { "STR": 9, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "thrusting-sword",
         "unique": false,
         "infusions": {
@@ -35978,7 +35990,7 @@
     "nobles-slender-sword": {
         "id": "nobles-slender-sword",
         "name": "Noble's Slender Sword",
-        "requirements": [8, 11, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 11, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "straight-sword",
         "unique": false,
         "infusions": {
@@ -36182,7 +36194,7 @@
     "nox-flowing-hammer": {
         "id": "nox-flowing-hammer",
         "name": "Nox Flowing Hammer",
-        "requirements": [17, 7, 0, 0, 0],
+        "requirements": { "STR": 17, "DEX": 7, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "hammer",
         "unique": true,
         "infusions": {
@@ -36206,7 +36218,7 @@
     "nox-flowing-sword": {
         "id": "nox-flowing-sword",
         "name": "Nox Flowing Sword",
-        "requirements": [8, 15, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 15, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "straight-sword",
         "unique": true,
         "infusions": {
@@ -36230,7 +36242,7 @@
     "obsidian-lamina": {
         "id": "obsidian-lamina",
         "name": "Obsidian Lamina",
-        "requirements": [12, 25, 0, 0, 17],
+        "requirements": { "STR": 12, "DEX": 25, "INT": 0, "FTH": 0, "ARC": 17 },
         "category": "scythe",
         "unique": true,
         "infusions": {
@@ -36254,7 +36266,7 @@
     "omen-cleaver": {
         "id": "omen-cleaver",
         "name": "Omen Cleaver",
-        "requirements": [19, 16, 0, 0, 0],
+        "requirements": { "STR": 19, "DEX": 16, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "curved-greatsword",
         "unique": false,
         "infusions": {
@@ -36458,7 +36470,7 @@
     "one-eyed-shield": {
         "id": "one-eyed-shield",
         "name": "One-Eyed Shield",
-        "requirements": [36, 0, 0, 0, 0],
+        "requirements": { "STR": 36, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatshield",
         "unique": false,
         "infusions": {
@@ -36482,7 +36494,7 @@
     "onyx-lords-greatsword": {
         "id": "onyx-lords-greatsword",
         "name": "Onyx Lord's Greatsword",
-        "requirements": [20, 16, 16, 0, 0],
+        "requirements": { "STR": 20, "DEX": 16, "INT": 16, "FTH": 0, "ARC": 0 },
         "category": "curved-greatsword",
         "unique": true,
         "infusions": {
@@ -36506,7 +36518,7 @@
     "ordoviss-greatsword": {
         "id": "ordoviss-greatsword",
         "name": "Ordovis's Greatsword",
-        "requirements": [25, 13, 0, 15, 0],
+        "requirements": { "STR": 25, "DEX": 13, "INT": 0, "FTH": 15, "ARC": 0 },
         "category": "greatsword",
         "unique": true,
         "infusions": {
@@ -36530,7 +36542,7 @@
     "ornamental-straight-sword": {
         "id": "ornamental-straight-sword",
         "name": "Ornamental Straight Sword",
-        "requirements": [10, 14, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 14, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "straight-sword",
         "unique": true,
         "infusions": {
@@ -36554,7 +36566,7 @@
     "parrying-dagger": {
         "id": "parrying-dagger",
         "name": "Parrying Dagger",
-        "requirements": [5, 14, 0, 0, 0],
+        "requirements": { "STR": 5, "DEX": 14, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "dagger",
         "unique": false,
         "infusions": {
@@ -36758,7 +36770,7 @@
     "partisan": {
         "id": "partisan",
         "name": "Partisan",
-        "requirements": [15, 12, 0, 0, 0],
+        "requirements": { "STR": 15, "DEX": 12, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "spear",
         "unique": false,
         "infusions": {
@@ -36962,7 +36974,7 @@
     "pata": {
         "id": "pata",
         "name": "Pata",
-        "requirements": [11, 15, 0, 0, 0],
+        "requirements": { "STR": 11, "DEX": 15, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "fist",
         "unique": false,
         "infusions": {
@@ -37166,7 +37178,7 @@
     "perfume-bottle": {
         "id": "perfume-bottle",
         "name": "Perfume Bottle",
-        "requirements": [3, 16, 0, 14, 0],
+        "requirements": { "STR": 3, "DEX": 16, "INT": 0, "FTH": 14, "ARC": 0 },
         "category": "perfume-bottle",
         "unique": false,
         "infusions": {
@@ -37190,7 +37202,7 @@
     "perfumers-shield": {
         "id": "perfumers-shield",
         "name": "Perfumer's Shield",
-        "requirements": [8, 0, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "small-shield",
         "unique": false,
         "infusions": {
@@ -37394,7 +37406,7 @@
     "pests-glaive": {
         "id": "pests-glaive",
         "name": "Pest's Glaive",
-        "requirements": [13, 13, 0, 0, 0],
+        "requirements": { "STR": 13, "DEX": 13, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "halberd",
         "unique": false,
         "infusions": {
@@ -37598,7 +37610,7 @@
     "pickaxe": {
         "id": "pickaxe",
         "name": "Pickaxe",
-        "requirements": [22, 10, 0, 0, 0],
+        "requirements": { "STR": 22, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "great-hammer",
         "unique": false,
         "infusions": {
@@ -37802,7 +37814,7 @@
     "pike": {
         "id": "pike",
         "name": "Pike",
-        "requirements": [20, 14, 0, 0, 0],
+        "requirements": { "STR": 20, "DEX": 14, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "spear",
         "unique": false,
         "infusions": {
@@ -38006,7 +38018,7 @@
     "pillory-shield": {
         "id": "pillory-shield",
         "name": "Pillory Shield",
-        "requirements": [10, 0, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "small-shield",
         "unique": false,
         "infusions": {
@@ -38210,7 +38222,7 @@
     "poisoned-hand": {
         "id": "poisoned-hand",
         "name": "Poisoned Hand",
-        "requirements": [8, 8, 0, 0, 28],
+        "requirements": { "STR": 8, "DEX": 8, "INT": 0, "FTH": 0, "ARC": 28 },
         "category": "fist",
         "unique": true,
         "infusions": {
@@ -38244,7 +38256,7 @@
     "poleblade-of-the-bud": {
         "id": "poleblade-of-the-bud",
         "name": "Poleblade of the Bud",
-        "requirements": [14, 22, 0, 0, 20],
+        "requirements": { "STR": 14, "DEX": 22, "INT": 0, "FTH": 0, "ARC": 20 },
         "category": "halberd",
         "unique": true,
         "infusions": {
@@ -38270,7 +38282,7 @@
     "prelates-inferno-crozier": {
         "id": "prelates-inferno-crozier",
         "name": "Prelate's Inferno Crozier",
-        "requirements": [45, 8, 0, 0, 0],
+        "requirements": { "STR": 45, "DEX": 8, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "colossal-weapon",
         "unique": false,
         "infusions": {
@@ -38474,7 +38486,7 @@
     "prince-of-deaths-staff": {
         "id": "prince-of-deaths-staff",
         "name": "Prince of Death's Staff",
-        "requirements": [6, 0, 18, 18, 0],
+        "requirements": { "STR": 6, "DEX": 0, "INT": 18, "FTH": 18, "ARC": 0 },
         "category": "glintstone-staff",
         "unique": false,
         "infusions": {
@@ -38508,7 +38520,7 @@
     "pulley-bow": {
         "id": "pulley-bow",
         "name": "Pulley Bow",
-        "requirements": [11, 11, 0, 0, 0],
+        "requirements": { "STR": 11, "DEX": 11, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "bow",
         "unique": true,
         "infusions": {
@@ -38532,7 +38544,7 @@
     "pulley-crossbow": {
         "id": "pulley-crossbow",
         "name": "Pulley Crossbow",
-        "requirements": [16, 16, 0, 0, 0],
+        "requirements": { "STR": 16, "DEX": 16, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "crossbow",
         "unique": false,
         "infusions": {
@@ -38556,7 +38568,7 @@
     "putrescence-cleaver": {
         "id": "putrescence-cleaver",
         "name": "Putrescence Cleaver",
-        "requirements": [28, 10, 0, 0, 15],
+        "requirements": { "STR": 28, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 15 },
         "category": "curved-greatsword",
         "unique": true,
         "infusions": {
@@ -38580,7 +38592,7 @@
     "queeligns-greatsword": {
         "id": "queeligns-greatsword",
         "name": "Queelign's Greatsword",
-        "requirements": [14, 18, 0, 12, 0],
+        "requirements": { "STR": 14, "DEX": 18, "INT": 0, "FTH": 12, "ARC": 0 },
         "category": "heavy-thrusting-sword",
         "unique": false,
         "infusions": {
@@ -38784,7 +38796,7 @@
     "rakshasas-great-katana": {
         "id": "rakshasas-great-katana",
         "name": "Rakshasa's Great Katana",
-        "requirements": [12, 27, 0, 0, 0],
+        "requirements": { "STR": 12, "DEX": 27, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "great-katana",
         "unique": true,
         "infusions": {
@@ -38808,7 +38820,7 @@
     "rapier": {
         "id": "rapier",
         "name": "Rapier",
-        "requirements": [7, 12, 0, 0, 0],
+        "requirements": { "STR": 7, "DEX": 12, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "thrusting-sword",
         "unique": false,
         "infusions": {
@@ -39012,7 +39024,7 @@
     "raptor-talons": {
         "id": "raptor-talons",
         "name": "Raptor Talons",
-        "requirements": [6, 14, 0, 0, 0],
+        "requirements": { "STR": 6, "DEX": 14, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "claw",
         "unique": false,
         "infusions": {
@@ -39222,7 +39234,7 @@
     "red-bears-claw": {
         "id": "red-bears-claw",
         "name": "Red Bear's Claw",
-        "requirements": [20, 10, 0, 0, 0],
+        "requirements": { "STR": 20, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "beast-claw",
         "unique": true,
         "infusions": {
@@ -39246,7 +39258,7 @@
     "red-branch-shortbow": {
         "id": "red-branch-shortbow",
         "name": "Red Branch Shortbow",
-        "requirements": [8, 16, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 16, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "light-bow",
         "unique": false,
         "infusions": {
@@ -39270,7 +39282,7 @@
     "red-crest-heater-shield": {
         "id": "red-crest-heater-shield",
         "name": "Red Crest Heater Shield",
-        "requirements": [10, 0, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -39474,7 +39486,7 @@
     "red-thorn-roundshield": {
         "id": "red-thorn-roundshield",
         "name": "Red Thorn Roundshield",
-        "requirements": [8, 0, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "small-shield",
         "unique": false,
         "infusions": {
@@ -39678,7 +39690,7 @@
     "redmane-greatshield": {
         "id": "redmane-greatshield",
         "name": "Redmane Greatshield",
-        "requirements": [30, 0, 0, 0, 0],
+        "requirements": { "STR": 30, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatshield",
         "unique": false,
         "infusions": {
@@ -39882,7 +39894,7 @@
     "reduvia": {
         "id": "reduvia",
         "name": "Reduvia",
-        "requirements": [5, 13, 0, 0, 13],
+        "requirements": { "STR": 5, "DEX": 13, "INT": 0, "FTH": 0, "ARC": 13 },
         "category": "dagger",
         "unique": true,
         "infusions": {
@@ -39906,7 +39918,7 @@
     "regalia-of-eochaid": {
         "id": "regalia-of-eochaid",
         "name": "Regalia of Eochaid",
-        "requirements": [12, 18, 0, 0, 15],
+        "requirements": { "STR": 12, "DEX": 18, "INT": 0, "FTH": 0, "ARC": 15 },
         "category": "straight-sword",
         "unique": true,
         "infusions": {
@@ -39930,7 +39942,13 @@
     "rellanas-twin-blades": {
         "id": "rellanas-twin-blades",
         "name": "Rellana's Twin Blades",
-        "requirements": [13, 16, 16, 16, 0],
+        "requirements": {
+            "STR": 13,
+            "DEX": 16,
+            "INT": 16,
+            "FTH": 16,
+            "ARC": 0
+        },
         "category": "light-greatsword",
         "unique": true,
         "infusions": {
@@ -39954,7 +39972,7 @@
     "repeating-crossbow": {
         "id": "repeating-crossbow",
         "name": "Repeating Crossbow",
-        "requirements": [13, 15, 0, 0, 0],
+        "requirements": { "STR": 13, "DEX": 15, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "crossbow",
         "unique": true,
         "infusions": {
@@ -39978,7 +39996,7 @@
     "rickety-shield": {
         "id": "rickety-shield",
         "name": "Rickety Shield",
-        "requirements": [8, 0, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "small-shield",
         "unique": false,
         "infusions": {
@@ -40182,7 +40200,7 @@
     "rift-shield": {
         "id": "rift-shield",
         "name": "Rift Shield",
-        "requirements": [8, 0, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "small-shield",
         "unique": false,
         "infusions": {
@@ -40386,7 +40404,7 @@
     "ringed-finger": {
         "id": "ringed-finger",
         "name": "Ringed Finger",
-        "requirements": [15, 9, 0, 0, 0],
+        "requirements": { "STR": 15, "DEX": 9, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "hammer",
         "unique": true,
         "infusions": {
@@ -40410,7 +40428,7 @@
     "ripple-blade": {
         "id": "ripple-blade",
         "name": "Ripple Blade",
-        "requirements": [11, 11, 0, 0, 20],
+        "requirements": { "STR": 11, "DEX": 11, "INT": 0, "FTH": 0, "ARC": 20 },
         "category": "axe",
         "unique": false,
         "infusions": {
@@ -40444,7 +40462,7 @@
     "ripple-crescent-halberd": {
         "id": "ripple-crescent-halberd",
         "name": "Ripple Crescent Halberd",
-        "requirements": [12, 12, 0, 0, 20],
+        "requirements": { "STR": 12, "DEX": 12, "INT": 0, "FTH": 0, "ARC": 20 },
         "category": "halberd",
         "unique": false,
         "infusions": {
@@ -40478,7 +40496,7 @@
     "rivers-of-blood": {
         "id": "rivers-of-blood",
         "name": "Rivers of Blood",
-        "requirements": [12, 18, 0, 0, 20],
+        "requirements": { "STR": 12, "DEX": 18, "INT": 0, "FTH": 0, "ARC": 20 },
         "category": "katana",
         "unique": true,
         "infusions": {
@@ -40502,7 +40520,7 @@
     "riveted-wooden-shield": {
         "id": "riveted-wooden-shield",
         "name": "Riveted Wooden Shield",
-        "requirements": [8, 0, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "small-shield",
         "unique": false,
         "infusions": {
@@ -40706,7 +40724,7 @@
     "rogiers-rapier": {
         "id": "rogiers-rapier",
         "name": "Rogier's Rapier",
-        "requirements": [8, 17, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 17, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "thrusting-sword",
         "unique": false,
         "infusions": {
@@ -40910,7 +40928,7 @@
     "rosus-axe": {
         "id": "rosus-axe",
         "name": "Rosus' Axe",
-        "requirements": [18, 10, 18, 0, 0],
+        "requirements": { "STR": 18, "DEX": 10, "INT": 18, "FTH": 0, "ARC": 0 },
         "category": "axe",
         "unique": true,
         "infusions": {
@@ -40934,7 +40952,7 @@
     "rotten-battle-hammer": {
         "id": "rotten-battle-hammer",
         "name": "Rotten Battle Hammer",
-        "requirements": [26, 8, 0, 0, 0],
+        "requirements": { "STR": 26, "DEX": 8, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "great-hammer",
         "unique": false,
         "infusions": {
@@ -41167,7 +41185,7 @@
     "rotten-crystal-spear": {
         "id": "rotten-crystal-spear",
         "name": "Rotten Crystal Spear",
-        "requirements": [10, 16, 16, 0, 0],
+        "requirements": { "STR": 10, "DEX": 16, "INT": 16, "FTH": 0, "ARC": 0 },
         "category": "spear",
         "unique": true,
         "infusions": {
@@ -41193,7 +41211,7 @@
     "rotten-crystal-staff": {
         "id": "rotten-crystal-staff",
         "name": "Rotten Crystal Staff",
-        "requirements": [8, 0, 48, 0, 0],
+        "requirements": { "STR": 8, "DEX": 0, "INT": 48, "FTH": 0, "ARC": 0 },
         "category": "glintstone-staff",
         "unique": false,
         "infusions": {
@@ -41229,7 +41247,7 @@
     "rotten-crystal-sword": {
         "id": "rotten-crystal-sword",
         "name": "Rotten Crystal Sword",
-        "requirements": [13, 10, 15, 0, 0],
+        "requirements": { "STR": 13, "DEX": 10, "INT": 15, "FTH": 0, "ARC": 0 },
         "category": "straight-sword",
         "unique": true,
         "infusions": {
@@ -41255,7 +41273,7 @@
     "rotten-greataxe": {
         "id": "rotten-greataxe",
         "name": "Rotten Greataxe",
-        "requirements": [30, 10, 0, 0, 0],
+        "requirements": { "STR": 30, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "colossal-weapon",
         "unique": false,
         "infusions": {
@@ -41488,7 +41506,7 @@
     "rotten-staff": {
         "id": "rotten-staff",
         "name": "Rotten Staff",
-        "requirements": [34, 8, 0, 0, 0],
+        "requirements": { "STR": 34, "DEX": 8, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "colossal-weapon",
         "unique": true,
         "infusions": {
@@ -41514,7 +41532,7 @@
     "round-shield": {
         "id": "round-shield",
         "name": "Round Shield",
-        "requirements": [8, 0, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -41718,7 +41736,7 @@
     "royal-greatsword": {
         "id": "royal-greatsword",
         "name": "Royal Greatsword",
-        "requirements": [26, 18, 22, 0, 0],
+        "requirements": { "STR": 26, "DEX": 18, "INT": 22, "FTH": 0, "ARC": 0 },
         "category": "colossal-sword",
         "unique": true,
         "infusions": {
@@ -41742,7 +41760,7 @@
     "ruins-greatsword": {
         "id": "ruins-greatsword",
         "name": "Ruins Greatsword",
-        "requirements": [50, 0, 16, 0, 0],
+        "requirements": { "STR": 50, "DEX": 0, "INT": 16, "FTH": 0, "ARC": 0 },
         "category": "colossal-sword",
         "unique": true,
         "infusions": {
@@ -41766,7 +41784,7 @@
     "rusted-anchor": {
         "id": "rusted-anchor",
         "name": "Rusted Anchor",
-        "requirements": [26, 9, 0, 0, 0],
+        "requirements": { "STR": 26, "DEX": 9, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greataxe",
         "unique": false,
         "infusions": {
@@ -41970,7 +41988,7 @@
     "sacred-relic-sword": {
         "id": "sacred-relic-sword",
         "name": "Sacred Relic Sword",
-        "requirements": [14, 24, 0, 22, 0],
+        "requirements": { "STR": 14, "DEX": 24, "INT": 0, "FTH": 22, "ARC": 0 },
         "category": "greatsword",
         "unique": true,
         "infusions": {
@@ -41994,7 +42012,7 @@
     "sacrificial-axe": {
         "id": "sacrificial-axe",
         "name": "Sacrificial Axe",
-        "requirements": [16, 10, 0, 0, 0],
+        "requirements": { "STR": 16, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "axe",
         "unique": false,
         "infusions": {
@@ -42198,7 +42216,7 @@
     "scavengers-curved-sword": {
         "id": "scavengers-curved-sword",
         "name": "Scavenger's Curved Sword",
-        "requirements": [9, 14, 0, 0, 0],
+        "requirements": { "STR": 9, "DEX": 14, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "curved-sword",
         "unique": false,
         "infusions": {
@@ -42408,7 +42426,7 @@
     "scepter-of-the-all-knowing": {
         "id": "scepter-of-the-all-knowing",
         "name": "Scepter of the All-Knowing",
-        "requirements": [12, 18, 21, 0, 0],
+        "requirements": { "STR": 12, "DEX": 18, "INT": 21, "FTH": 0, "ARC": 0 },
         "category": "hammer",
         "unique": true,
         "infusions": {
@@ -42432,7 +42450,7 @@
     "scimitar": {
         "id": "scimitar",
         "name": "Scimitar",
-        "requirements": [7, 13, 0, 0, 0],
+        "requirements": { "STR": 7, "DEX": 13, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "curved-sword",
         "unique": false,
         "infusions": {
@@ -42636,7 +42654,7 @@
     "scorpion-kite-shield": {
         "id": "scorpion-kite-shield",
         "name": "Scorpion Kite Shield",
-        "requirements": [12, 0, 0, 0, 0],
+        "requirements": { "STR": 12, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -42840,7 +42858,7 @@
     "scorpions-stinger": {
         "id": "scorpions-stinger",
         "name": "Scorpion's Stinger",
-        "requirements": [6, 12, 0, 0, 0],
+        "requirements": { "STR": 6, "DEX": 12, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "dagger",
         "unique": true,
         "infusions": {
@@ -42866,7 +42884,7 @@
     "scripture-wooden-shield": {
         "id": "scripture-wooden-shield",
         "name": "Scripture Wooden Shield",
-        "requirements": [8, 0, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "small-shield",
         "unique": false,
         "infusions": {
@@ -43070,7 +43088,7 @@
     "scythe": {
         "id": "scythe",
         "name": "Scythe",
-        "requirements": [14, 14, 0, 0, 0],
+        "requirements": { "STR": 14, "DEX": 14, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "scythe",
         "unique": false,
         "infusions": {
@@ -43280,7 +43298,7 @@
     "sentrys-torch": {
         "id": "sentrys-torch",
         "name": "Sentry's Torch",
-        "requirements": [15, 8, 0, 15, 0],
+        "requirements": { "STR": 15, "DEX": 8, "INT": 0, "FTH": 15, "ARC": 0 },
         "category": "torch",
         "unique": true,
         "infusions": {
@@ -43304,7 +43322,7 @@
     "serpent-bow": {
         "id": "serpent-bow",
         "name": "Serpent Bow",
-        "requirements": [8, 15, 0, 0, 11],
+        "requirements": { "STR": 8, "DEX": 15, "INT": 0, "FTH": 0, "ARC": 11 },
         "category": "bow",
         "unique": true,
         "infusions": {
@@ -43328,7 +43346,7 @@
     "serpent-crest-shield": {
         "id": "serpent-crest-shield",
         "name": "Serpent Crest Shield",
-        "requirements": [12, 0, 0, 0, 0],
+        "requirements": { "STR": 12, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -43532,7 +43550,7 @@
     "serpent-flail": {
         "id": "serpent-flail",
         "name": "Serpent Flail",
-        "requirements": [10, 24, 0, 21, 0],
+        "requirements": { "STR": 10, "DEX": 24, "INT": 0, "FTH": 21, "ARC": 0 },
         "category": "flail",
         "unique": true,
         "infusions": {
@@ -43556,7 +43574,7 @@
     "serpent-gods-curved-sword": {
         "id": "serpent-gods-curved-sword",
         "name": "Serpent-God's Curved Sword",
-        "requirements": [13, 9, 0, 0, 0],
+        "requirements": { "STR": 13, "DEX": 9, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "curved-sword",
         "unique": false,
         "infusions": {
@@ -43760,7 +43778,7 @@
     "serpent-hunter": {
         "id": "serpent-hunter",
         "name": "Serpent-Hunter",
-        "requirements": [0, 0, 0, 0, 0],
+        "requirements": { "STR": 0, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "great-spear",
         "unique": true,
         "infusions": {
@@ -43784,7 +43802,7 @@
     "serpentbone-blade": {
         "id": "serpentbone-blade",
         "name": "Serpentbone Blade",
-        "requirements": [11, 22, 0, 0, 0],
+        "requirements": { "STR": 11, "DEX": 22, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "katana",
         "unique": false,
         "infusions": {
@@ -43808,7 +43826,7 @@
     "shadow-sunflower-blossom": {
         "id": "shadow-sunflower-blossom",
         "name": "Shadow Sunflower Blossom",
-        "requirements": [24, 8, 0, 25, 0],
+        "requirements": { "STR": 24, "DEX": 8, "INT": 0, "FTH": 25, "ARC": 0 },
         "category": "colossal-weapon",
         "unique": true,
         "infusions": {
@@ -43832,7 +43850,7 @@
     "shamshir": {
         "id": "shamshir",
         "name": "Shamshir",
-        "requirements": [7, 13, 0, 0, 0],
+        "requirements": { "STR": 7, "DEX": 13, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "curved-sword",
         "unique": false,
         "infusions": {
@@ -44036,7 +44054,7 @@
     "shield-of-night": {
         "id": "shield-of-night",
         "name": "Shield of Night",
-        "requirements": [8, 15, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 15, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "fist",
         "unique": false,
         "infusions": {
@@ -44060,7 +44078,7 @@
     "shield-of-the-guilty": {
         "id": "shield-of-the-guilty",
         "name": "Shield of the Guilty",
-        "requirements": [8, 0, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -44270,7 +44288,7 @@
     "short-spear": {
         "id": "short-spear",
         "name": "Short Spear",
-        "requirements": [10, 10, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "spear",
         "unique": false,
         "infusions": {
@@ -44474,7 +44492,7 @@
     "short-sword": {
         "id": "short-sword",
         "name": "Short Sword",
-        "requirements": [8, 10, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "straight-sword",
         "unique": false,
         "infusions": {
@@ -44678,7 +44696,7 @@
     "shortbow": {
         "id": "shortbow",
         "name": "Shortbow",
-        "requirements": [8, 10, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "light-bow",
         "unique": false,
         "infusions": {
@@ -44702,7 +44720,7 @@
     "shotel": {
         "id": "shotel",
         "name": "Shotel",
-        "requirements": [9, 19, 0, 0, 0],
+        "requirements": { "STR": 9, "DEX": 19, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "curved-sword",
         "unique": false,
         "infusions": {
@@ -44906,7 +44924,7 @@
     "silurias-tree": {
         "id": "silurias-tree",
         "name": "Siluria's Tree",
-        "requirements": [27, 13, 0, 20, 0],
+        "requirements": { "STR": 27, "DEX": 13, "INT": 0, "FTH": 20, "ARC": 0 },
         "category": "great-spear",
         "unique": true,
         "infusions": {
@@ -44930,7 +44948,7 @@
     "silver-mirrorshield": {
         "id": "silver-mirrorshield",
         "name": "Silver Mirrorshield",
-        "requirements": [12, 10, 10, 0, 0],
+        "requirements": { "STR": 12, "DEX": 10, "INT": 10, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -44954,7 +44972,13 @@
     "smithscript-axe": {
         "id": "smithscript-axe",
         "name": "Smithscript Axe",
-        "requirements": [13, 10, 11, 11, 0],
+        "requirements": {
+            "STR": 13,
+            "DEX": 10,
+            "INT": 11,
+            "FTH": 11,
+            "ARC": 0
+        },
         "category": "axe",
         "unique": false,
         "infusions": {
@@ -45158,7 +45182,7 @@
     "smithscript-cirque": {
         "id": "smithscript-cirque",
         "name": "Smithscript Cirque",
-        "requirements": [9, 14, 11, 11, 0],
+        "requirements": { "STR": 9, "DEX": 14, "INT": 11, "FTH": 11, "ARC": 0 },
         "category": "backhand-blade",
         "unique": false,
         "infusions": {
@@ -45362,7 +45386,7 @@
     "smithscript-dagger": {
         "id": "smithscript-dagger",
         "name": "Smithscript Dagger",
-        "requirements": [5, 11, 11, 11, 0],
+        "requirements": { "STR": 5, "DEX": 11, "INT": 11, "FTH": 11, "ARC": 0 },
         "category": "throwing-blade",
         "unique": false,
         "infusions": {
@@ -45566,7 +45590,13 @@
     "smithscript-greathammer": {
         "id": "smithscript-greathammer",
         "name": "Smithscript Greathammer",
-        "requirements": [20, 10, 11, 11, 0],
+        "requirements": {
+            "STR": 20,
+            "DEX": 10,
+            "INT": 11,
+            "FTH": 11,
+            "ARC": 0
+        },
         "category": "great-hammer",
         "unique": false,
         "infusions": {
@@ -45770,7 +45800,13 @@
     "smithscript-shield": {
         "id": "smithscript-shield",
         "name": "Smithscript Shield",
-        "requirements": [10, 15, 11, 11, 0],
+        "requirements": {
+            "STR": 10,
+            "DEX": 15,
+            "INT": 11,
+            "FTH": 11,
+            "ARC": 0
+        },
         "category": "small-shield",
         "unique": false,
         "infusions": {
@@ -45794,7 +45830,7 @@
     "smithscript-spear": {
         "id": "smithscript-spear",
         "name": "Smithscript Spear",
-        "requirements": [9, 12, 11, 11, 0],
+        "requirements": { "STR": 9, "DEX": 12, "INT": 11, "FTH": 11, "ARC": 0 },
         "category": "spear",
         "unique": false,
         "infusions": {
@@ -45998,7 +46034,7 @@
     "smoldering-shield": {
         "id": "smoldering-shield",
         "name": "Smoldering Shield",
-        "requirements": [10, 9, 0, 12, 0],
+        "requirements": { "STR": 10, "DEX": 9, "INT": 0, "FTH": 12, "ARC": 0 },
         "category": "small-shield",
         "unique": false,
         "infusions": {
@@ -46022,7 +46058,7 @@
     "soldiers-crossbow": {
         "id": "soldiers-crossbow",
         "name": "Soldier's Crossbow",
-        "requirements": [10, 8, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 8, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "crossbow",
         "unique": false,
         "infusions": {
@@ -46046,7 +46082,7 @@
     "spear": {
         "id": "spear",
         "name": "Spear",
-        "requirements": [12, 15, 0, 0, 0],
+        "requirements": { "STR": 12, "DEX": 15, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "spear",
         "unique": false,
         "infusions": {
@@ -46250,7 +46286,7 @@
     "spear-of-the-impaler": {
         "id": "spear-of-the-impaler",
         "name": "Spear of the Impaler",
-        "requirements": [14, 35, 0, 18, 0],
+        "requirements": { "STR": 14, "DEX": 35, "INT": 0, "FTH": 18, "ARC": 0 },
         "category": "great-spear",
         "unique": true,
         "infusions": {
@@ -46274,7 +46310,7 @@
     "spiked-caestus": {
         "id": "spiked-caestus",
         "name": "Spiked Caestus",
-        "requirements": [8, 10, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "fist",
         "unique": false,
         "infusions": {
@@ -46484,7 +46520,7 @@
     "spiked-club": {
         "id": "spiked-club",
         "name": "Spiked Club",
-        "requirements": [12, 7, 0, 0, 0],
+        "requirements": { "STR": 12, "DEX": 7, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "hammer",
         "unique": false,
         "infusions": {
@@ -46694,7 +46730,7 @@
     "spiked-palisade-shield": {
         "id": "spiked-palisade-shield",
         "name": "Spiked Palisade Shield",
-        "requirements": [20, 0, 0, 0, 0],
+        "requirements": { "STR": 20, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatshield",
         "unique": false,
         "infusions": {
@@ -46904,7 +46940,7 @@
     "spiked-spear": {
         "id": "spiked-spear",
         "name": "Spiked Spear",
-        "requirements": [14, 16, 0, 0, 0],
+        "requirements": { "STR": 14, "DEX": 16, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "spear",
         "unique": false,
         "infusions": {
@@ -47114,7 +47150,7 @@
     "spiralhorn-shield": {
         "id": "spiralhorn-shield",
         "name": "Spiralhorn Shield",
-        "requirements": [8, 10, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "small-shield",
         "unique": false,
         "infusions": {
@@ -47324,7 +47360,7 @@
     "spiraltree-seal": {
         "id": "spiraltree-seal",
         "name": "Spiraltree Seal",
-        "requirements": [8, 0, 0, 17, 0],
+        "requirements": { "STR": 8, "DEX": 0, "INT": 0, "FTH": 17, "ARC": 0 },
         "category": "sacred-seal",
         "unique": false,
         "infusions": {
@@ -47358,7 +47394,7 @@
     "spirit-glaive": {
         "id": "spirit-glaive",
         "name": "Spirit Glaive",
-        "requirements": [14, 17, 16, 0, 0],
+        "requirements": { "STR": 14, "DEX": 17, "INT": 16, "FTH": 0, "ARC": 0 },
         "category": "halberd",
         "unique": true,
         "infusions": {
@@ -47382,7 +47418,7 @@
     "spirit-sword": {
         "id": "spirit-sword",
         "name": "Spirit Sword",
-        "requirements": [8, 16, 16, 0, 0],
+        "requirements": { "STR": 8, "DEX": 16, "INT": 16, "FTH": 0, "ARC": 0 },
         "category": "curved-sword",
         "unique": true,
         "infusions": {
@@ -47406,7 +47442,7 @@
     "spread-crossbow": {
         "id": "spread-crossbow",
         "name": "Spread Crossbow",
-        "requirements": [11, 17, 0, 0, 0],
+        "requirements": { "STR": 11, "DEX": 17, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "crossbow",
         "unique": false,
         "infusions": {
@@ -47430,7 +47466,7 @@
     "st.-trinas-torch": {
         "id": "st.-trinas-torch",
         "name": "St. Trina's Torch",
-        "requirements": [10, 10, 0, 14, 0],
+        "requirements": { "STR": 10, "DEX": 10, "INT": 0, "FTH": 14, "ARC": 0 },
         "category": "torch",
         "unique": true,
         "infusions": {
@@ -47454,7 +47490,7 @@
     "staff-of-loss": {
         "id": "staff-of-loss",
         "name": "Staff of Loss",
-        "requirements": [6, 12, 14, 0, 0],
+        "requirements": { "STR": 6, "DEX": 12, "INT": 14, "FTH": 0, "ARC": 0 },
         "category": "glintstone-staff",
         "unique": false,
         "infusions": {
@@ -47488,7 +47524,7 @@
     "staff-of-the-avatar": {
         "id": "staff-of-the-avatar",
         "name": "Staff of the Avatar",
-        "requirements": [34, 8, 0, 24, 0],
+        "requirements": { "STR": 34, "DEX": 8, "INT": 0, "FTH": 24, "ARC": 0 },
         "category": "colossal-weapon",
         "unique": true,
         "infusions": {
@@ -47512,7 +47548,7 @@
     "staff-of-the-great-beyond": {
         "id": "staff-of-the-great-beyond",
         "name": "Staff of the Great Beyond",
-        "requirements": [7, 0, 25, 25, 0],
+        "requirements": { "STR": 7, "DEX": 0, "INT": 25, "FTH": 25, "ARC": 0 },
         "category": "glintstone-staff",
         "unique": false,
         "infusions": {
@@ -47546,7 +47582,7 @@
     "staff-of-the-guilty": {
         "id": "staff-of-the-guilty",
         "name": "Staff of the Guilty",
-        "requirements": [8, 0, 0, 12, 0],
+        "requirements": { "STR": 8, "DEX": 0, "INT": 0, "FTH": 12, "ARC": 0 },
         "category": "glintstone-staff",
         "unique": false,
         "infusions": {
@@ -47580,7 +47616,7 @@
     "star-fist": {
         "id": "star-fist",
         "name": "Star Fist",
-        "requirements": [12, 8, 0, 0, 0],
+        "requirements": { "STR": 12, "DEX": 8, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "fist",
         "unique": false,
         "infusions": {
@@ -47790,7 +47826,7 @@
     "star-lined-sword": {
         "id": "star-lined-sword",
         "name": "Star-Lined Sword",
-        "requirements": [10, 23, 21, 0, 0],
+        "requirements": { "STR": 10, "DEX": 23, "INT": 21, "FTH": 0, "ARC": 0 },
         "category": "straight-sword",
         "unique": true,
         "infusions": {
@@ -47814,7 +47850,7 @@
     "starscourge-greatsword": {
         "id": "starscourge-greatsword",
         "name": "Starscourge Greatsword",
-        "requirements": [38, 12, 15, 0, 0],
+        "requirements": { "STR": 38, "DEX": 12, "INT": 15, "FTH": 0, "ARC": 0 },
         "category": "colossal-sword",
         "unique": true,
         "infusions": {
@@ -47838,7 +47874,7 @@
     "steel-wire-torch": {
         "id": "steel-wire-torch",
         "name": "Steel-Wire Torch",
-        "requirements": [10, 8, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 8, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "torch",
         "unique": false,
         "infusions": {
@@ -47862,7 +47898,7 @@
     "stone-club": {
         "id": "stone-club",
         "name": "Stone Club",
-        "requirements": [16, 8, 0, 0, 0],
+        "requirements": { "STR": 16, "DEX": 8, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "hammer",
         "unique": false,
         "infusions": {
@@ -48066,7 +48102,7 @@
     "stone-sheathed-sword": {
         "id": "stone-sheathed-sword",
         "name": "Stone-Sheathed Sword",
-        "requirements": [16, 8, 0, 0, 0],
+        "requirements": { "STR": 16, "DEX": 8, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "straight-sword",
         "unique": true,
         "infusions": {
@@ -48090,7 +48126,7 @@
     "stormhawk-axe": {
         "id": "stormhawk-axe",
         "name": "Stormhawk Axe",
-        "requirements": [19, 15, 0, 0, 0],
+        "requirements": { "STR": 19, "DEX": 15, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "axe",
         "unique": true,
         "infusions": {
@@ -48114,7 +48150,7 @@
     "sun-realm-shield": {
         "id": "sun-realm-shield",
         "name": "Sun Realm Shield",
-        "requirements": [8, 0, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -48318,7 +48354,7 @@
     "swift-spear": {
         "id": "swift-spear",
         "name": "Swift Spear",
-        "requirements": [10, 26, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 26, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "spear",
         "unique": false,
         "infusions": {
@@ -48522,7 +48558,7 @@
     "sword-lance": {
         "id": "sword-lance",
         "name": "Sword Lance",
-        "requirements": [21, 11, 0, 0, 0],
+        "requirements": { "STR": 21, "DEX": 11, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatsword",
         "unique": false,
         "infusions": {
@@ -48726,7 +48762,7 @@
     "sword-of-darkness": {
         "id": "sword-of-darkness",
         "name": "Sword of Darkness",
-        "requirements": [14, 11, 0, 24, 0],
+        "requirements": { "STR": 14, "DEX": 11, "INT": 0, "FTH": 24, "ARC": 0 },
         "category": "straight-sword",
         "unique": true,
         "infusions": {
@@ -48750,7 +48786,7 @@
     "sword-of-light": {
         "id": "sword-of-light",
         "name": "Sword of Light",
-        "requirements": [14, 11, 0, 24, 0],
+        "requirements": { "STR": 14, "DEX": 11, "INT": 0, "FTH": 24, "ARC": 0 },
         "category": "straight-sword",
         "unique": true,
         "infusions": {
@@ -48774,7 +48810,7 @@
     "sword-of-milos": {
         "id": "sword-of-milos",
         "name": "Sword of Milos",
-        "requirements": [15, 19, 0, 0, 0],
+        "requirements": { "STR": 15, "DEX": 19, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatsword",
         "unique": true,
         "infusions": {
@@ -48798,7 +48834,7 @@
     "sword-of-night": {
         "id": "sword-of-night",
         "name": "Sword of Night",
-        "requirements": [11, 20, 0, 0, 0],
+        "requirements": { "STR": 11, "DEX": 20, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "katana",
         "unique": true,
         "infusions": {
@@ -48822,7 +48858,13 @@
     "sword-of-night-and-flame": {
         "id": "sword-of-night-and-flame",
         "name": "Sword of Night and Flame",
-        "requirements": [12, 12, 24, 24, 0],
+        "requirements": {
+            "STR": 12,
+            "DEX": 12,
+            "INT": 24,
+            "FTH": 24,
+            "ARC": 0
+        },
         "category": "straight-sword",
         "unique": true,
         "infusions": {
@@ -48846,7 +48888,7 @@
     "sword-of-st.-trina": {
         "id": "sword-of-st.-trina",
         "name": "Sword of St. Trina",
-        "requirements": [10, 12, 14, 0, 0],
+        "requirements": { "STR": 10, "DEX": 12, "INT": 14, "FTH": 0, "ARC": 0 },
         "category": "straight-sword",
         "unique": true,
         "infusions": {
@@ -48870,7 +48912,7 @@
     "thiolliers-hidden-needle": {
         "id": "thiolliers-hidden-needle",
         "name": "Thiollier's Hidden Needle",
-        "requirements": [10, 22, 15, 0, 0],
+        "requirements": { "STR": 10, "DEX": 22, "INT": 15, "FTH": 0, "ARC": 0 },
         "category": "fist",
         "unique": true,
         "infusions": {
@@ -48894,7 +48936,7 @@
     "thorned-whip": {
         "id": "thorned-whip",
         "name": "Thorned Whip",
-        "requirements": [8, 16, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 16, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "whip",
         "unique": false,
         "infusions": {
@@ -49104,7 +49146,7 @@
     "tooth-whip": {
         "id": "tooth-whip",
         "name": "Tooth Whip",
-        "requirements": [10, 24, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 24, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "whip",
         "unique": true,
         "infusions": {
@@ -49128,7 +49170,7 @@
     "torch": {
         "id": "torch",
         "name": "Torch",
-        "requirements": [5, 5, 0, 0, 0],
+        "requirements": { "STR": 5, "DEX": 5, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "torch",
         "unique": false,
         "infusions": {
@@ -49152,7 +49194,7 @@
     "torchpole": {
         "id": "torchpole",
         "name": "Torchpole",
-        "requirements": [14, 15, 0, 0, 0],
+        "requirements": { "STR": 14, "DEX": 15, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "spear",
         "unique": false,
         "infusions": {
@@ -49176,7 +49218,7 @@
     "treespear": {
         "id": "treespear",
         "name": "Treespear",
-        "requirements": [15, 22, 0, 18, 0],
+        "requirements": { "STR": 15, "DEX": 22, "INT": 0, "FTH": 18, "ARC": 0 },
         "category": "great-spear",
         "unique": false,
         "infusions": {
@@ -49200,7 +49242,7 @@
     "troll-knights-sword": {
         "id": "troll-knights-sword",
         "name": "Troll Knight's Sword",
-        "requirements": [20, 14, 18, 0, 0],
+        "requirements": { "STR": 20, "DEX": 14, "INT": 18, "FTH": 0, "ARC": 0 },
         "category": "colossal-sword",
         "unique": true,
         "infusions": {
@@ -49224,7 +49266,7 @@
     "trolls-golden-sword": {
         "id": "trolls-golden-sword",
         "name": "Troll's Golden Sword",
-        "requirements": [29, 10, 0, 0, 0],
+        "requirements": { "STR": 29, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "colossal-sword",
         "unique": false,
         "infusions": {
@@ -49428,7 +49470,7 @@
     "trolls-hammer": {
         "id": "trolls-hammer",
         "name": "Troll's Hammer",
-        "requirements": [28, 8, 0, 10, 0],
+        "requirements": { "STR": 28, "DEX": 8, "INT": 0, "FTH": 10, "ARC": 0 },
         "category": "colossal-weapon",
         "unique": false,
         "infusions": {
@@ -49632,7 +49674,7 @@
     "twinbird-kite-shield": {
         "id": "twinbird-kite-shield",
         "name": "Twinbird Kite Shield",
-        "requirements": [12, 0, 0, 0, 0],
+        "requirements": { "STR": 12, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -49836,7 +49878,7 @@
     "twinblade": {
         "id": "twinblade",
         "name": "Twinblade",
-        "requirements": [10, 18, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 18, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "twinblade",
         "unique": false,
         "infusions": {
@@ -50040,7 +50082,7 @@
     "twinned-knight-swords": {
         "id": "twinned-knight-swords",
         "name": "Twinned Knight Swords",
-        "requirements": [16, 18, 0, 0, 0],
+        "requirements": { "STR": 16, "DEX": 18, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "twinblade",
         "unique": false,
         "infusions": {
@@ -50244,7 +50286,7 @@
     "uchigatana": {
         "id": "uchigatana",
         "name": "Uchigatana",
-        "requirements": [11, 15, 0, 0, 0],
+        "requirements": { "STR": 11, "DEX": 15, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "katana",
         "unique": false,
         "infusions": {
@@ -50454,7 +50496,7 @@
     "urumi": {
         "id": "urumi",
         "name": "Urumi",
-        "requirements": [10, 19, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 19, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "whip",
         "unique": false,
         "infusions": {
@@ -50658,7 +50700,7 @@
     "varres-bouquet": {
         "id": "varres-bouquet",
         "name": "Varre's Bouquet",
-        "requirements": [8, 16, 0, 0, 24],
+        "requirements": { "STR": 8, "DEX": 16, "INT": 0, "FTH": 0, "ARC": 24 },
         "category": "hammer",
         "unique": true,
         "infusions": {
@@ -50682,7 +50724,7 @@
     "velvet-sword-of-st.-trina": {
         "id": "velvet-sword-of-st.-trina",
         "name": "Velvet Sword of St. Trina",
-        "requirements": [10, 12, 14, 0, 0],
+        "requirements": { "STR": 10, "DEX": 12, "INT": 14, "FTH": 0, "ARC": 0 },
         "category": "straight-sword",
         "unique": true,
         "infusions": {
@@ -50706,7 +50748,7 @@
     "venomous-fang": {
         "id": "venomous-fang",
         "name": "Venomous Fang",
-        "requirements": [9, 9, 0, 0, 0],
+        "requirements": { "STR": 9, "DEX": 9, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "claw",
         "unique": false,
         "infusions": {
@@ -50916,7 +50958,7 @@
     "verdigris-greatshield": {
         "id": "verdigris-greatshield",
         "name": "Verdigris Greatshield",
-        "requirements": [49, 0, 0, 0, 0],
+        "requirements": { "STR": 49, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatshield",
         "unique": false,
         "infusions": {
@@ -50940,7 +50982,7 @@
     "veterans-prosthesis": {
         "id": "veterans-prosthesis",
         "name": "Veteran's Prosthesis",
-        "requirements": [15, 12, 0, 0, 0],
+        "requirements": { "STR": 15, "DEX": 12, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "fist",
         "unique": true,
         "infusions": {
@@ -50964,7 +51006,7 @@
     "visage-shield": {
         "id": "visage-shield",
         "name": "Visage Shield",
-        "requirements": [44, 0, 0, 0, 0],
+        "requirements": { "STR": 44, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatshield",
         "unique": false,
         "infusions": {
@@ -50988,7 +51030,7 @@
     "vulgar-militia-saw": {
         "id": "vulgar-militia-saw",
         "name": "Vulgar Militia Saw",
-        "requirements": [15, 13, 0, 0, 0],
+        "requirements": { "STR": 15, "DEX": 13, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "halberd",
         "unique": false,
         "infusions": {
@@ -51198,7 +51240,7 @@
     "vulgar-militia-shotel": {
         "id": "vulgar-militia-shotel",
         "name": "Vulgar Militia Shotel",
-        "requirements": [14, 16, 0, 0, 0],
+        "requirements": { "STR": 14, "DEX": 16, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "halberd",
         "unique": false,
         "infusions": {
@@ -51402,7 +51444,7 @@
     "vykes-war-spear": {
         "id": "vykes-war-spear",
         "name": "Vyke's War Spear",
-        "requirements": [16, 20, 0, 18, 0],
+        "requirements": { "STR": 16, "DEX": 20, "INT": 0, "FTH": 18, "ARC": 0 },
         "category": "great-spear",
         "unique": true,
         "infusions": {
@@ -51426,7 +51468,7 @@
     "wakizashi": {
         "id": "wakizashi",
         "name": "Wakizashi",
-        "requirements": [9, 13, 0, 0, 0],
+        "requirements": { "STR": 9, "DEX": 13, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "dagger",
         "unique": false,
         "infusions": {
@@ -51636,7 +51678,7 @@
     "warhawks-talon": {
         "id": "warhawks-talon",
         "name": "Warhawk's Talon",
-        "requirements": [10, 16, 0, 0, 0],
+        "requirements": { "STR": 10, "DEX": 16, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "straight-sword",
         "unique": false,
         "infusions": {
@@ -51840,7 +51882,7 @@
     "warped-axe": {
         "id": "warped-axe",
         "name": "Warped Axe",
-        "requirements": [24, 8, 0, 0, 0],
+        "requirements": { "STR": 24, "DEX": 8, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greataxe",
         "unique": false,
         "infusions": {
@@ -52044,7 +52086,7 @@
     "warpick": {
         "id": "warpick",
         "name": "Warpick",
-        "requirements": [11, 9, 0, 0, 0],
+        "requirements": { "STR": 11, "DEX": 9, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "hammer",
         "unique": false,
         "infusions": {
@@ -52248,7 +52290,7 @@
     "watchdogs-greatsword": {
         "id": "watchdogs-greatsword",
         "name": "Watchdog's Greatsword",
-        "requirements": [30, 10, 0, 0, 0],
+        "requirements": { "STR": 30, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "colossal-sword",
         "unique": false,
         "infusions": {
@@ -52452,7 +52494,7 @@
     "watchdogs-staff": {
         "id": "watchdogs-staff",
         "name": "Watchdog's Staff",
-        "requirements": [34, 10, 0, 0, 0],
+        "requirements": { "STR": 34, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "colossal-weapon",
         "unique": true,
         "infusions": {
@@ -52476,7 +52518,7 @@
     "weathered-straight-sword": {
         "id": "weathered-straight-sword",
         "name": "Weathered Straight Sword",
-        "requirements": [7, 10, 0, 0, 0],
+        "requirements": { "STR": 7, "DEX": 10, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "straight-sword",
         "unique": false,
         "infusions": {
@@ -52680,7 +52722,7 @@
     "whip": {
         "id": "whip",
         "name": "Whip",
-        "requirements": [8, 14, 0, 0, 0],
+        "requirements": { "STR": 8, "DEX": 14, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "whip",
         "unique": false,
         "infusions": {
@@ -52884,7 +52926,7 @@
     "wing-of-astel": {
         "id": "wing-of-astel",
         "name": "Wing of Astel",
-        "requirements": [7, 17, 20, 0, 0],
+        "requirements": { "STR": 7, "DEX": 17, "INT": 20, "FTH": 0, "ARC": 0 },
         "category": "curved-sword",
         "unique": true,
         "infusions": {
@@ -52908,7 +52950,7 @@
     "winged-greathorn": {
         "id": "winged-greathorn",
         "name": "Winged Greathorn",
-        "requirements": [30, 20, 0, 0, 0],
+        "requirements": { "STR": 30, "DEX": 20, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greataxe",
         "unique": true,
         "infusions": {
@@ -52932,7 +52974,7 @@
     "winged-scythe": {
         "id": "winged-scythe",
         "name": "Winged Scythe",
-        "requirements": [16, 16, 0, 24, 0],
+        "requirements": { "STR": 16, "DEX": 16, "INT": 0, "FTH": 24, "ARC": 0 },
         "category": "scythe",
         "unique": true,
         "infusions": {
@@ -52956,7 +52998,7 @@
     "wolf-crest-shield": {
         "id": "wolf-crest-shield",
         "name": "Wolf Crest Shield",
-        "requirements": [12, 0, 0, 0, 0],
+        "requirements": { "STR": 12, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "medium-shield",
         "unique": false,
         "infusions": {
@@ -53160,7 +53202,7 @@
     "wooden-greatshield": {
         "id": "wooden-greatshield",
         "name": "Wooden Greatshield",
-        "requirements": [14, 0, 0, 0, 0],
+        "requirements": { "STR": 14, "DEX": 0, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "greatshield",
         "unique": false,
         "infusions": {
@@ -53364,7 +53406,7 @@
     "zamor-curved-sword": {
         "id": "zamor-curved-sword",
         "name": "Zamor Curved Sword",
-        "requirements": [16, 18, 0, 0, 0],
+        "requirements": { "STR": 16, "DEX": 18, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "curved-greatsword",
         "unique": true,
         "infusions": {
@@ -53388,7 +53430,7 @@
     "zweihander": {
         "id": "zweihander",
         "name": "Zweihander",
-        "requirements": [19, 11, 0, 0, 0],
+        "requirements": { "STR": 19, "DEX": 11, "INT": 0, "FTH": 0, "ARC": 0 },
         "category": "colossal-sword",
         "unique": false,
         "infusions": {

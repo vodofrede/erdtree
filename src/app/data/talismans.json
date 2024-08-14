@@ -1,1 +1,3258 @@
-{"no-talisman": {"id": "no-talisman", "name": "No talisman"}, "crimson-amber-medallion": {"id": "crimson-amber-medallion", "name": "Crimson Amber Medallion", "weight": "0.3", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.06, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "crimson-amber-medallion-+1": {"id": "crimson-amber-medallion-+1", "name": "Crimson Amber Medallion +1", "weight": "0.3", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.07, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "crimson-amber-medallion-+2": {"id": "crimson-amber-medallion-+2", "name": "Crimson Amber Medallion +2", "weight": "0.3", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.08, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "cerulean-amber-medallion": {"id": "cerulean-amber-medallion", "name": "Cerulean Amber Medallion", "weight": "0.3", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.07, "maxStamina": 1.0, "equipLoad": 1.0}}, "cerulean-amber-medallion-+1": {"id": "cerulean-amber-medallion-+1", "name": "Cerulean Amber Medallion +1", "weight": "0.3", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.09, "maxStamina": 1.0, "equipLoad": 1.0}}, "cerulean-amber-medallion-+2": {"id": "cerulean-amber-medallion-+2", "name": "Cerulean Amber Medallion +2", "weight": "0.3", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.11, "maxStamina": 1.0, "equipLoad": 1.0}}, "viridian-amber-medallion": {"id": "viridian-amber-medallion", "name": "Viridian Amber Medallion", "weight": "0.3", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.11, "equipLoad": 1.0}}, "viridian-amber-medallion-+1": {"id": "viridian-amber-medallion-+1", "name": "Viridian Amber Medallion +1", "weight": "0.3", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.13, "equipLoad": 1.0}}, "viridian-amber-medallion-+2": {"id": "viridian-amber-medallion-+2", "name": "Viridian Amber Medallion +2", "weight": "0.3", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.15, "equipLoad": 1.0}}, "arsenal-charm": {"id": "arsenal-charm", "name": "Arsenal Charm", "weight": "1.5", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.15}}, "arsenal-charm-+1": {"id": "arsenal-charm-+1", "name": "Arsenal Charm +1", "weight": "1.5", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.17}}, "great-jars-arsenal": {"id": "great-jars-arsenal", "name": "Great-Jar's Arsenal", "weight": "1.5", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.19}}, "erdtrees-favor": {"id": "erdtrees-favor", "name": "Erdtree's Favor", "weight": "1.5", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.03, "maxFp": 1.0, "maxStamina": 1.07, "equipLoad": 1.05}}, "erdtrees-favor-+1": {"id": "erdtrees-favor-+1", "name": "Erdtree's Favor +1", "weight": "1.5", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.035, "maxFp": 1.0, "maxStamina": 1.085, "equipLoad": 1.065}}, "erdtrees-favor-+2": {"id": "erdtrees-favor-+2", "name": "Erdtree's Favor +2", "weight": "1.5", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.04, "maxFp": 1.0, "maxStamina": 1.1, "equipLoad": 1.08}}, "radagons-scarseal": {"id": "radagons-scarseal", "name": "Radagon's Scarseal", "weight": "0.8", "stats": {"vigor": 3, "mind": 0, "endurance": 3, "strength": 3, "dexterity": 3, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "radagons-soreseal": {"id": "radagons-soreseal", "name": "Radagon's Soreseal", "weight": "0.8", "stats": {"vigor": 5, "mind": 0, "endurance": 5, "strength": 5, "dexterity": 5, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "starscourge-heirloom": {"id": "starscourge-heirloom", "name": "Starscourge Heirloom", "weight": "0.8", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 5, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "prosthesis-wearer-heirloom": {"id": "prosthesis-wearer-heirloom", "name": "Prosthesis-Wearer Heirloom", "weight": "0.8", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 5, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "stargazer-heirloom": {"id": "stargazer-heirloom", "name": "Stargazer Heirloom", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 5, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "two-fingers-heirloom": {"id": "two-fingers-heirloom", "name": "Two Fingers Heirloom", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 5, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "silver-scarab": {"id": "silver-scarab", "name": "Silver Scarab", "weight": "1.2", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "gold-scarab": {"id": "gold-scarab", "name": "Gold Scarab", "weight": "1.2", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "moon-of-nokstella": {"id": "moon-of-nokstella", "name": "Moon of Nokstella", "weight": "0.8", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "green-turtle-talisman": {"id": "green-turtle-talisman", "name": "Green Turtle Talisman", "weight": "0.7", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "stalwart-horn-charm": {"id": "stalwart-horn-charm", "name": "Stalwart Horn Charm", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "stalwart-horn-charm-+1": {"id": "stalwart-horn-charm-+1", "name": "Stalwart Horn Charm +1", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "immunizing-horn-charm": {"id": "immunizing-horn-charm", "name": "Immunizing Horn Charm", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "immunizing-horn-charm-+1": {"id": "immunizing-horn-charm-+1", "name": "Immunizing Horn Charm +1", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "clarifying-horn-charm": {"id": "clarifying-horn-charm", "name": "Clarifying Horn Charm", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "clarifying-horn-charm-+1": {"id": "clarifying-horn-charm-+1", "name": "Clarifying Horn Charm +1", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "prince-of-deaths-pustule": {"id": "prince-of-deaths-pustule", "name": "Prince of Death's Pustule", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "prince-of-deaths-cyst": {"id": "prince-of-deaths-cyst", "name": "Prince of Death's Cyst", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "mottled-necklace": {"id": "mottled-necklace", "name": "Mottled Necklace", "weight": "0.9", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "mottled-necklace-+1": {"id": "mottled-necklace-+1", "name": "Mottled Necklace +1", "weight": "0.9", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "bull-goats-talisman": {"id": "bull-goats-talisman", "name": "Bull-Goat's Talisman", "weight": "0.5", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "marikas-scarseal": {"id": "marikas-scarseal", "name": "Marika's Scarseal", "weight": "0.8", "stats": {"vigor": 0, "mind": 3, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 3, "faith": 3, "arcane": 3}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "marikas-soreseal": {"id": "marikas-soreseal", "name": "Marika's Soreseal", "weight": "0.8", "stats": {"vigor": 0, "mind": 5, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 5, "faith": 5, "arcane": 5}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "warrior-jar-shard": {"id": "warrior-jar-shard", "name": "Warrior Jar Shard", "weight": "0.9", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "shard-of-alexander": {"id": "shard-of-alexander", "name": "Shard of Alexander", "weight": "0.9", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "millicents-prosthesis": {"id": "millicents-prosthesis", "name": "Millicent's Prosthesis", "weight": "1.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 5, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "magic-scorpion-charm": {"id": "magic-scorpion-charm", "name": "Magic Scorpion Charm", "weight": "0.8", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "lightning-scorpion-charm": {"id": "lightning-scorpion-charm", "name": "Lightning Scorpion Charm", "weight": "0.8", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "fire-scorpion-charm": {"id": "fire-scorpion-charm", "name": "Fire Scorpion Charm", "weight": "0.8", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "sacred-scorpion-charm": {"id": "sacred-scorpion-charm", "name": "Sacred Scorpion Charm", "weight": "0.8", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "red-feathered-branchsword": {"id": "red-feathered-branchsword", "name": "Red-Feathered Branchsword", "weight": "1.4", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "ritual-sword-talisman": {"id": "ritual-sword-talisman", "name": "Ritual Sword Talisman", "weight": "0.9", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "spear-talisman": {"id": "spear-talisman", "name": "Spear Talisman", "weight": "0.5", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "hammer-talisman": {"id": "hammer-talisman", "name": "Hammer Talisman", "weight": "0.9", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "winged-sword-insignia": {"id": "winged-sword-insignia", "name": "Winged Sword Insignia", "weight": "1.4", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "rotten-winged-sword-insignia": {"id": "rotten-winged-sword-insignia", "name": "Rotten Winged Sword Insignia", "weight": "1.4", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "dagger-talisman": {"id": "dagger-talisman", "name": "Dagger Talisman", "weight": "1.1", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "arrows-reach-talisman": {"id": "arrows-reach-talisman", "name": "Arrow's Reach Talisman", "weight": "0.7", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "blue-dancer-charm": {"id": "blue-dancer-charm", "name": "Blue Dancer Charm", "weight": "0.9", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "twinblade-talisman": {"id": "twinblade-talisman", "name": "Twinblade Talisman", "weight": "0.7", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "axe-talisman": {"id": "axe-talisman", "name": "Axe Talisman", "weight": "0.8", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "lance-talisman": {"id": "lance-talisman", "name": "Lance Talisman", "weight": "0.7", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "arrows-sting-talisman": {"id": "arrows-sting-talisman", "name": "Arrow's Sting Talisman", "weight": "0.7", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "lord-of-bloods-exultation": {"id": "lord-of-bloods-exultation", "name": "Lord of Blood's Exultation", "weight": "0.9", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "kindred-of-rots-exultation": {"id": "kindred-of-rots-exultation", "name": "Kindred of Rot's Exultation", "weight": "0.9", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "claw-talisman": {"id": "claw-talisman", "name": "Claw Talisman", "weight": "0.7", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "roar-medallion": {"id": "roar-medallion", "name": "Roar Medallion", "weight": "0.7", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "curved-sword-talisman": {"id": "curved-sword-talisman", "name": "Curved Sword Talisman", "weight": "0.7", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "companion-jar": {"id": "companion-jar", "name": "Companion Jar", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "perfumers-talisman": {"id": "perfumers-talisman", "name": "Perfumer's Talisman", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "graven-school-talisman": {"id": "graven-school-talisman", "name": "Graven-School Talisman", "weight": "0.7", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "graven-mass-talisman": {"id": "graven-mass-talisman", "name": "Graven-Mass Talisman", "weight": "1", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "faithfuls-canvas-talisman": {"id": "faithfuls-canvas-talisman", "name": "Faithful's Canvas Talisman", "weight": "0.7", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "flocks-canvas-talisman": {"id": "flocks-canvas-talisman", "name": "Flock's Canvas Talisman", "weight": "1", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "old-lords-talisman": {"id": "old-lords-talisman", "name": "Old Lord's Talisman", "weight": "0.5", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "radagon-icon": {"id": "radagon-icon", "name": "Radagon Icon", "weight": "0.7", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "primal-glintstone-blade": {"id": "primal-glintstone-blade", "name": "Primal Glintstone Blade", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 0.85, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "godfrey-icon": {"id": "godfrey-icon", "name": "Godfrey Icon", "weight": "0.8", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "dragoncrest-shield-talisman": {"id": "dragoncrest-shield-talisman", "name": "Dragoncrest Shield Talisman", "weight": "0.8", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "dragoncrest-shield-talisman-+1": {"id": "dragoncrest-shield-talisman-+1", "name": "Dragoncrest Shield Talisman +1", "weight": "0.8", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "dragoncrest-shield-talisman-+2": {"id": "dragoncrest-shield-talisman-+2", "name": "Dragoncrest Shield Talisman +2", "weight": "0.8", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "dragoncrest-greatshield-talisman": {"id": "dragoncrest-greatshield-talisman", "name": "Dragoncrest Greatshield Talisman", "weight": "0.8", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "spelldrake-talisman": {"id": "spelldrake-talisman", "name": "Spelldrake Talisman", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "spelldrake-talisman-+1": {"id": "spelldrake-talisman-+1", "name": "Spelldrake Talisman +1", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "spelldrake-talisman-+2": {"id": "spelldrake-talisman-+2", "name": "Spelldrake Talisman +2", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "flamedrake-talisman": {"id": "flamedrake-talisman", "name": "Flamedrake Talisman", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "flamedrake-talisman-+1": {"id": "flamedrake-talisman-+1", "name": "Flamedrake Talisman +1", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "flamedrake-talisman-+2": {"id": "flamedrake-talisman-+2", "name": "Flamedrake Talisman +2", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "boltdrake-talisman": {"id": "boltdrake-talisman", "name": "Boltdrake Talisman", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "boltdrake-talisman-+1": {"id": "boltdrake-talisman-+1", "name": "Boltdrake Talisman +1", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "boltdrake-talisman-+2": {"id": "boltdrake-talisman-+2", "name": "Boltdrake Talisman +2", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "haligdrake-talisman": {"id": "haligdrake-talisman", "name": "Haligdrake Talisman", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "haligdrake-talisman-+1": {"id": "haligdrake-talisman-+1", "name": "Haligdrake Talisman +1", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "haligdrake-talisman-+2": {"id": "haligdrake-talisman-+2", "name": "Haligdrake Talisman +2", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "pearldrake-talisman": {"id": "pearldrake-talisman", "name": "Pearldrake Talisman", "weight": "0.9", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "pearldrake-talisman-+1": {"id": "pearldrake-talisman-+1", "name": "Pearldrake Talisman +1", "weight": "0.9", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "pearldrake-talisman-+2": {"id": "pearldrake-talisman-+2", "name": "Pearldrake Talisman +2", "weight": "0.9", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "crucible-scale-talisman": {"id": "crucible-scale-talisman", "name": "Crucible Scale Talisman", "weight": "1.1", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "crucible-feather-talisman": {"id": "crucible-feather-talisman", "name": "Crucible Feather Talisman", "weight": "0.8", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "blue-feathered-branchsword": {"id": "blue-feathered-branchsword", "name": "Blue-Feathered Branchsword", "weight": "1.1", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "ritual-shield-talisman": {"id": "ritual-shield-talisman", "name": "Ritual Shield Talisman", "weight": "0.9", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "greatshield-talisman": {"id": "greatshield-talisman", "name": "Greatshield Talisman", "weight": "0.9", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "crucible-knot-talisman": {"id": "crucible-knot-talisman", "name": "Crucible Knot Talisman", "weight": "0.5", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "crimson-seed-talisman": {"id": "crimson-seed-talisman", "name": "Crimson Seed Talisman", "weight": "0.8", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "cerulean-seed-talisman": {"id": "cerulean-seed-talisman", "name": "Cerulean Seed Talisman", "weight": "0.8", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "blessed-dew-talisman": {"id": "blessed-dew-talisman", "name": "Blessed Dew Talisman", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "takers-cameo": {"id": "takers-cameo", "name": "Taker's Cameo", "weight": "1", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "godskin-swaddling-cloth": {"id": "godskin-swaddling-cloth", "name": "Godskin Swaddling Cloth", "weight": "0.9", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "assassins-crimson-dagger": {"id": "assassins-crimson-dagger", "name": "Assassin's Crimson Dagger", "weight": "0.8", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "assassins-cerulean-dagger": {"id": "assassins-cerulean-dagger", "name": "Assassin's Cerulean Dagger", "weight": "0.8", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "crepuss-vial": {"id": "crepuss-vial", "name": "Crepus's Vial", "weight": "0.7", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "concealing-veil": {"id": "concealing-veil", "name": "Concealing Veil", "weight": "0.9", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "carian-filigreed-crest": {"id": "carian-filigreed-crest", "name": "Carian Filigreed Crest", "weight": "0.8", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "longtail-cat-talisman": {"id": "longtail-cat-talisman", "name": "Longtail Cat Talisman", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "shabriris-woe": {"id": "shabriris-woe", "name": "Shabriri's Woe", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "daedicars-woe": {"id": "daedicars-woe", "name": "Daedicar's Woe", "weight": "0.8", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "sacrificial-twig": {"id": "sacrificial-twig", "name": "Sacrificial Twig", "weight": "1", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "furled-fingers-trick-mirror": {"id": "furled-fingers-trick-mirror", "name": "Furled Finger's Trick-Mirror", "weight": "0.7", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "hosts-trick-mirror": {"id": "hosts-trick-mirror", "name": "Host's Trick-Mirror", "weight": "0.7", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "entwining-umbilical-cord": {"id": "entwining-umbilical-cord", "name": "Entwining Umbilical Cord", "weight": "0.5", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "ancestral-spirits-horne": {"id": "ancestral-spirits-horne", "name": "Ancestral Spirit's Horne", "weight": "1.2", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "crimson-amber-medallion-+3": {"id": "crimson-amber-medallion-+3", "name": "Crimson Amber Medallion +3", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.1, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "cerulean-amber-medallion-+3": {"id": "cerulean-amber-medallion-+3", "name": "Cerulean Amber Medallion +3", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.13, "maxStamina": 1.0, "equipLoad": 1.0}}, "viridian-amber-medallion-+3": {"id": "viridian-amber-medallion-+3", "name": "Viridian Amber Medallion +3", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.17, "equipLoad": 1.0}}, "two-headed-turtle-talisman": {"id": "two-headed-turtle-talisman", "name": "Two-Headed Turtle Talisman", "weight": "1", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "stalwart-horn-charm-+2": {"id": "stalwart-horn-charm-+2", "name": "Stalwart Horn Charm +2", "weight": "0.9", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "immunizing-horn-charm-+2": {"id": "immunizing-horn-charm-+2", "name": "Immunizing Horn Charm +2", "weight": "0.9", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "clarifying-horn-charm-+2": {"id": "clarifying-horn-charm-+2", "name": "Clarifying Horn Charm +2", "weight": "0.9", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "mottled-necklace-+2": {"id": "mottled-necklace-+2", "name": "Mottled Necklace +2", "weight": "1.2", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "spelldrake-talisman-+3": {"id": "spelldrake-talisman-+3", "name": "Spelldrake Talisman +3", "weight": "0.9", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "flamedrake-talisman-+3": {"id": "flamedrake-talisman-+3", "name": "Flamedrake Talisman +3", "weight": "0.9", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "boltdrake-talisman-+3": {"id": "boltdrake-talisman-+3", "name": "Boltdrake Talisman +3", "weight": "0.9", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "golden-braid": {"id": "golden-braid", "name": "Golden Braid", "weight": "0.9", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "pearldrake-talisman-+3": {"id": "pearldrake-talisman-+3", "name": "Pearldrake Talisman +3", "weight": "1.2", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "crimson-seed-talisman-+1": {"id": "crimson-seed-talisman-+1", "name": "Crimson Seed Talisman +1", "weight": "1.1", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "cerulean-seed-talisman-+1": {"id": "cerulean-seed-talisman-+1", "name": "Cerulean Seed Talisman +1", "weight": "1.1", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "blessed-blue-dew-talisman": {"id": "blessed-blue-dew-talisman", "name": "Blessed Blue Dew Talisman", "weight": "1.2", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "fine-crucible-feather-talisman": {"id": "fine-crucible-feather-talisman", "name": "Fine Crucible Feather Talisman", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "outer-god-heirloom": {"id": "outer-god-heirloom", "name": "Outer God Heirloom", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 5}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "shattered-stone-talisman": {"id": "shattered-stone-talisman", "name": "Shattered Stone Talisman", "weight": "0.8", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "two-handed-sword-talisman": {"id": "two-handed-sword-talisman", "name": "Two-Handed Sword Talisman", "weight": "1.2", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "crusade-insignia": {"id": "crusade-insignia", "name": "Crusade Insignia", "weight": "1.2", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "aged-ones-exultation": {"id": "aged-ones-exultation", "name": "Aged One's Exultation", "weight": "0.9", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "arrows-soaring-sting-talisman": {"id": "arrows-soaring-sting-talisman", "name": "Arrow's Soaring Sting Talisman", "weight": "1.1", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "pearl-shield-talisman": {"id": "pearl-shield-talisman", "name": "Pearl Shield Talisman", "weight": "0.9", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "dried-bouquet": {"id": "dried-bouquet", "name": "Dried Bouquet", "weight": "0.8", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "smithing-talisman": {"id": "smithing-talisman", "name": "Smithing Talisman", "weight": "1.3", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "ailment-talisman": {"id": "ailment-talisman", "name": "Ailment Talisman", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "retaliatory-crossed-tree": {"id": "retaliatory-crossed-tree", "name": "Retaliatory Crossed-Tree", "weight": "0.8", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "lacerating-crossed-tree": {"id": "lacerating-crossed-tree", "name": "Lacerating Crossed-Tree", "weight": "0.8", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "sharpshot-talisman": {"id": "sharpshot-talisman", "name": "Sharpshot Talisman", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "st.-trinas-smile": {"id": "st.-trinas-smile", "name": "St. Trina's Smile", "weight": "0.9", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "talisman-of-the-dread": {"id": "talisman-of-the-dread", "name": "Talisman of the Dread", "weight": "0.6", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "enraged-divine-beast": {"id": "enraged-divine-beast", "name": "Enraged Divine Beast", "weight": "0.7", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "beloved-stardust": {"id": "beloved-stardust", "name": "Beloved Stardust", "weight": "1.3", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "talisman-of-lords-bestowal": {"id": "talisman-of-lords-bestowal", "name": "Talisman of Lord's Bestowal", "weight": "3", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "verdigris-discus": {"id": "verdigris-discus", "name": "Verdigris Discus", "weight": "4.5", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "rellanas-cameo": {"id": "rellanas-cameo", "name": "Rellana's Cameo", "weight": "0.8", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "blade-of-mercy": {"id": "blade-of-mercy", "name": "Blade of Mercy", "weight": "1.3", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}, "talisman-of-all-crucibles": {"id": "talisman-of-all-crucibles", "name": "Talisman of All Crucibles", "weight": "1.9", "stats": {"vigor": 0, "mind": 0, "endurance": 0, "strength": 0, "dexterity": 0, "intelligence": 0, "faith": 0, "arcane": 0}, "multipliers": {"maxHp": 1.0, "maxFp": 1.0, "maxStamina": 1.0, "equipLoad": 1.0}}}
+{
+    "no-talisman": { "id": "no-talisman", "name": "No talisman" },
+    "crimson-amber-medallion": {
+        "id": "crimson-amber-medallion",
+        "name": "Crimson Amber Medallion",
+        "weight": "0.3",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.06,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "crimson-amber-medallion-+1": {
+        "id": "crimson-amber-medallion-+1",
+        "name": "Crimson Amber Medallion +1",
+        "weight": "0.3",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.07,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "crimson-amber-medallion-+2": {
+        "id": "crimson-amber-medallion-+2",
+        "name": "Crimson Amber Medallion +2",
+        "weight": "0.3",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.08,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "cerulean-amber-medallion": {
+        "id": "cerulean-amber-medallion",
+        "name": "Cerulean Amber Medallion",
+        "weight": "0.3",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.07,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "cerulean-amber-medallion-+1": {
+        "id": "cerulean-amber-medallion-+1",
+        "name": "Cerulean Amber Medallion +1",
+        "weight": "0.3",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.09,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "cerulean-amber-medallion-+2": {
+        "id": "cerulean-amber-medallion-+2",
+        "name": "Cerulean Amber Medallion +2",
+        "weight": "0.3",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.11,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "viridian-amber-medallion": {
+        "id": "viridian-amber-medallion",
+        "name": "Viridian Amber Medallion",
+        "weight": "0.3",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.11,
+            "equipLoad": 1.0
+        }
+    },
+    "viridian-amber-medallion-+1": {
+        "id": "viridian-amber-medallion-+1",
+        "name": "Viridian Amber Medallion +1",
+        "weight": "0.3",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.13,
+            "equipLoad": 1.0
+        }
+    },
+    "viridian-amber-medallion-+2": {
+        "id": "viridian-amber-medallion-+2",
+        "name": "Viridian Amber Medallion +2",
+        "weight": "0.3",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.15,
+            "equipLoad": 1.0
+        }
+    },
+    "arsenal-charm": {
+        "id": "arsenal-charm",
+        "name": "Arsenal Charm",
+        "weight": "1.5",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.15
+        }
+    },
+    "arsenal-charm-+1": {
+        "id": "arsenal-charm-+1",
+        "name": "Arsenal Charm +1",
+        "weight": "1.5",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.17
+        }
+    },
+    "great-jars-arsenal": {
+        "id": "great-jars-arsenal",
+        "name": "Great-Jar's Arsenal",
+        "weight": "1.5",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.19
+        }
+    },
+    "erdtrees-favor": {
+        "id": "erdtrees-favor",
+        "name": "Erdtree's Favor",
+        "weight": "1.5",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.03,
+            "maxFp": 1.0,
+            "maxStamina": 1.07,
+            "equipLoad": 1.05
+        }
+    },
+    "erdtrees-favor-+1": {
+        "id": "erdtrees-favor-+1",
+        "name": "Erdtree's Favor +1",
+        "weight": "1.5",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.035,
+            "maxFp": 1.0,
+            "maxStamina": 1.085,
+            "equipLoad": 1.065
+        }
+    },
+    "erdtrees-favor-+2": {
+        "id": "erdtrees-favor-+2",
+        "name": "Erdtree's Favor +2",
+        "weight": "1.5",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.04,
+            "maxFp": 1.0,
+            "maxStamina": 1.1,
+            "equipLoad": 1.08
+        }
+    },
+    "radagons-scarseal": {
+        "id": "radagons-scarseal",
+        "name": "Radagon's Scarseal",
+        "weight": "0.8",
+        "stats": {
+            "vigor": 3,
+            "mind": 0,
+            "endurance": 3,
+            "strength": 3,
+            "dexterity": 3,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "radagons-soreseal": {
+        "id": "radagons-soreseal",
+        "name": "Radagon's Soreseal",
+        "weight": "0.8",
+        "stats": {
+            "vigor": 5,
+            "mind": 0,
+            "endurance": 5,
+            "strength": 5,
+            "dexterity": 5,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "starscourge-heirloom": {
+        "id": "starscourge-heirloom",
+        "name": "Starscourge Heirloom",
+        "weight": "0.8",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 5,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "prosthesis-wearer-heirloom": {
+        "id": "prosthesis-wearer-heirloom",
+        "name": "Prosthesis-Wearer Heirloom",
+        "weight": "0.8",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 5,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "stargazer-heirloom": {
+        "id": "stargazer-heirloom",
+        "name": "Stargazer Heirloom",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 5,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "two-fingers-heirloom": {
+        "id": "two-fingers-heirloom",
+        "name": "Two Fingers Heirloom",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 5,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "silver-scarab": {
+        "id": "silver-scarab",
+        "name": "Silver Scarab",
+        "weight": "1.2",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "gold-scarab": {
+        "id": "gold-scarab",
+        "name": "Gold Scarab",
+        "weight": "1.2",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "moon-of-nokstella": {
+        "id": "moon-of-nokstella",
+        "name": "Moon of Nokstella",
+        "weight": "0.8",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "green-turtle-talisman": {
+        "id": "green-turtle-talisman",
+        "name": "Green Turtle Talisman",
+        "weight": "0.7",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "stalwart-horn-charm": {
+        "id": "stalwart-horn-charm",
+        "name": "Stalwart Horn Charm",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "stalwart-horn-charm-+1": {
+        "id": "stalwart-horn-charm-+1",
+        "name": "Stalwart Horn Charm +1",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "immunizing-horn-charm": {
+        "id": "immunizing-horn-charm",
+        "name": "Immunizing Horn Charm",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "immunizing-horn-charm-+1": {
+        "id": "immunizing-horn-charm-+1",
+        "name": "Immunizing Horn Charm +1",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "clarifying-horn-charm": {
+        "id": "clarifying-horn-charm",
+        "name": "Clarifying Horn Charm",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "clarifying-horn-charm-+1": {
+        "id": "clarifying-horn-charm-+1",
+        "name": "Clarifying Horn Charm +1",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "prince-of-deaths-pustule": {
+        "id": "prince-of-deaths-pustule",
+        "name": "Prince of Death's Pustule",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "prince-of-deaths-cyst": {
+        "id": "prince-of-deaths-cyst",
+        "name": "Prince of Death's Cyst",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "mottled-necklace": {
+        "id": "mottled-necklace",
+        "name": "Mottled Necklace",
+        "weight": "0.9",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "mottled-necklace-+1": {
+        "id": "mottled-necklace-+1",
+        "name": "Mottled Necklace +1",
+        "weight": "0.9",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "bull-goats-talisman": {
+        "id": "bull-goats-talisman",
+        "name": "Bull-Goat's Talisman",
+        "weight": "0.5",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "marikas-scarseal": {
+        "id": "marikas-scarseal",
+        "name": "Marika's Scarseal",
+        "weight": "0.8",
+        "stats": {
+            "vigor": 0,
+            "mind": 3,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 3,
+            "faith": 3,
+            "arcane": 3
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "marikas-soreseal": {
+        "id": "marikas-soreseal",
+        "name": "Marika's Soreseal",
+        "weight": "0.8",
+        "stats": {
+            "vigor": 0,
+            "mind": 5,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 5,
+            "faith": 5,
+            "arcane": 5
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "warrior-jar-shard": {
+        "id": "warrior-jar-shard",
+        "name": "Warrior Jar Shard",
+        "weight": "0.9",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "shard-of-alexander": {
+        "id": "shard-of-alexander",
+        "name": "Shard of Alexander",
+        "weight": "0.9",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "millicents-prosthesis": {
+        "id": "millicents-prosthesis",
+        "name": "Millicent's Prosthesis",
+        "weight": "1.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 5,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "magic-scorpion-charm": {
+        "id": "magic-scorpion-charm",
+        "name": "Magic Scorpion Charm",
+        "weight": "0.8",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "lightning-scorpion-charm": {
+        "id": "lightning-scorpion-charm",
+        "name": "Lightning Scorpion Charm",
+        "weight": "0.8",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "fire-scorpion-charm": {
+        "id": "fire-scorpion-charm",
+        "name": "Fire Scorpion Charm",
+        "weight": "0.8",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "sacred-scorpion-charm": {
+        "id": "sacred-scorpion-charm",
+        "name": "Sacred Scorpion Charm",
+        "weight": "0.8",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "red-feathered-branchsword": {
+        "id": "red-feathered-branchsword",
+        "name": "Red-Feathered Branchsword",
+        "weight": "1.4",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "ritual-sword-talisman": {
+        "id": "ritual-sword-talisman",
+        "name": "Ritual Sword Talisman",
+        "weight": "0.9",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "spear-talisman": {
+        "id": "spear-talisman",
+        "name": "Spear Talisman",
+        "weight": "0.5",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "hammer-talisman": {
+        "id": "hammer-talisman",
+        "name": "Hammer Talisman",
+        "weight": "0.9",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "winged-sword-insignia": {
+        "id": "winged-sword-insignia",
+        "name": "Winged Sword Insignia",
+        "weight": "1.4",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "rotten-winged-sword-insignia": {
+        "id": "rotten-winged-sword-insignia",
+        "name": "Rotten Winged Sword Insignia",
+        "weight": "1.4",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "dagger-talisman": {
+        "id": "dagger-talisman",
+        "name": "Dagger Talisman",
+        "weight": "1.1",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "arrows-reach-talisman": {
+        "id": "arrows-reach-talisman",
+        "name": "Arrow's Reach Talisman",
+        "weight": "0.7",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "blue-dancer-charm": {
+        "id": "blue-dancer-charm",
+        "name": "Blue Dancer Charm",
+        "weight": "0.9",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "twinblade-talisman": {
+        "id": "twinblade-talisman",
+        "name": "Twinblade Talisman",
+        "weight": "0.7",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "axe-talisman": {
+        "id": "axe-talisman",
+        "name": "Axe Talisman",
+        "weight": "0.8",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "lance-talisman": {
+        "id": "lance-talisman",
+        "name": "Lance Talisman",
+        "weight": "0.7",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "arrows-sting-talisman": {
+        "id": "arrows-sting-talisman",
+        "name": "Arrow's Sting Talisman",
+        "weight": "0.7",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "lord-of-bloods-exultation": {
+        "id": "lord-of-bloods-exultation",
+        "name": "Lord of Blood's Exultation",
+        "weight": "0.9",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "kindred-of-rots-exultation": {
+        "id": "kindred-of-rots-exultation",
+        "name": "Kindred of Rot's Exultation",
+        "weight": "0.9",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "claw-talisman": {
+        "id": "claw-talisman",
+        "name": "Claw Talisman",
+        "weight": "0.7",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "roar-medallion": {
+        "id": "roar-medallion",
+        "name": "Roar Medallion",
+        "weight": "0.7",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "curved-sword-talisman": {
+        "id": "curved-sword-talisman",
+        "name": "Curved Sword Talisman",
+        "weight": "0.7",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "companion-jar": {
+        "id": "companion-jar",
+        "name": "Companion Jar",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "perfumers-talisman": {
+        "id": "perfumers-talisman",
+        "name": "Perfumer's Talisman",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "graven-school-talisman": {
+        "id": "graven-school-talisman",
+        "name": "Graven-School Talisman",
+        "weight": "0.7",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "graven-mass-talisman": {
+        "id": "graven-mass-talisman",
+        "name": "Graven-Mass Talisman",
+        "weight": "1",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "faithfuls-canvas-talisman": {
+        "id": "faithfuls-canvas-talisman",
+        "name": "Faithful's Canvas Talisman",
+        "weight": "0.7",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "flocks-canvas-talisman": {
+        "id": "flocks-canvas-talisman",
+        "name": "Flock's Canvas Talisman",
+        "weight": "1",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "old-lords-talisman": {
+        "id": "old-lords-talisman",
+        "name": "Old Lord's Talisman",
+        "weight": "0.5",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "radagon-icon": {
+        "id": "radagon-icon",
+        "name": "Radagon Icon",
+        "weight": "0.7",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "primal-glintstone-blade": {
+        "id": "primal-glintstone-blade",
+        "name": "Primal Glintstone Blade",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 0.85,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "godfrey-icon": {
+        "id": "godfrey-icon",
+        "name": "Godfrey Icon",
+        "weight": "0.8",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "dragoncrest-shield-talisman": {
+        "id": "dragoncrest-shield-talisman",
+        "name": "Dragoncrest Shield Talisman",
+        "weight": "0.8",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "dragoncrest-shield-talisman-+1": {
+        "id": "dragoncrest-shield-talisman-+1",
+        "name": "Dragoncrest Shield Talisman +1",
+        "weight": "0.8",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "dragoncrest-shield-talisman-+2": {
+        "id": "dragoncrest-shield-talisman-+2",
+        "name": "Dragoncrest Shield Talisman +2",
+        "weight": "0.8",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "dragoncrest-greatshield-talisman": {
+        "id": "dragoncrest-greatshield-talisman",
+        "name": "Dragoncrest Greatshield Talisman",
+        "weight": "0.8",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "spelldrake-talisman": {
+        "id": "spelldrake-talisman",
+        "name": "Spelldrake Talisman",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "spelldrake-talisman-+1": {
+        "id": "spelldrake-talisman-+1",
+        "name": "Spelldrake Talisman +1",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "spelldrake-talisman-+2": {
+        "id": "spelldrake-talisman-+2",
+        "name": "Spelldrake Talisman +2",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "flamedrake-talisman": {
+        "id": "flamedrake-talisman",
+        "name": "Flamedrake Talisman",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "flamedrake-talisman-+1": {
+        "id": "flamedrake-talisman-+1",
+        "name": "Flamedrake Talisman +1",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "flamedrake-talisman-+2": {
+        "id": "flamedrake-talisman-+2",
+        "name": "Flamedrake Talisman +2",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "boltdrake-talisman": {
+        "id": "boltdrake-talisman",
+        "name": "Boltdrake Talisman",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "boltdrake-talisman-+1": {
+        "id": "boltdrake-talisman-+1",
+        "name": "Boltdrake Talisman +1",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "boltdrake-talisman-+2": {
+        "id": "boltdrake-talisman-+2",
+        "name": "Boltdrake Talisman +2",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "haligdrake-talisman": {
+        "id": "haligdrake-talisman",
+        "name": "Haligdrake Talisman",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "haligdrake-talisman-+1": {
+        "id": "haligdrake-talisman-+1",
+        "name": "Haligdrake Talisman +1",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "haligdrake-talisman-+2": {
+        "id": "haligdrake-talisman-+2",
+        "name": "Haligdrake Talisman +2",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "pearldrake-talisman": {
+        "id": "pearldrake-talisman",
+        "name": "Pearldrake Talisman",
+        "weight": "0.9",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "pearldrake-talisman-+1": {
+        "id": "pearldrake-talisman-+1",
+        "name": "Pearldrake Talisman +1",
+        "weight": "0.9",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "pearldrake-talisman-+2": {
+        "id": "pearldrake-talisman-+2",
+        "name": "Pearldrake Talisman +2",
+        "weight": "0.9",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "crucible-scale-talisman": {
+        "id": "crucible-scale-talisman",
+        "name": "Crucible Scale Talisman",
+        "weight": "1.1",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "crucible-feather-talisman": {
+        "id": "crucible-feather-talisman",
+        "name": "Crucible Feather Talisman",
+        "weight": "0.8",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "blue-feathered-branchsword": {
+        "id": "blue-feathered-branchsword",
+        "name": "Blue-Feathered Branchsword",
+        "weight": "1.1",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "ritual-shield-talisman": {
+        "id": "ritual-shield-talisman",
+        "name": "Ritual Shield Talisman",
+        "weight": "0.9",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "greatshield-talisman": {
+        "id": "greatshield-talisman",
+        "name": "Greatshield Talisman",
+        "weight": "0.9",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "crucible-knot-talisman": {
+        "id": "crucible-knot-talisman",
+        "name": "Crucible Knot Talisman",
+        "weight": "0.5",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "crimson-seed-talisman": {
+        "id": "crimson-seed-talisman",
+        "name": "Crimson Seed Talisman",
+        "weight": "0.8",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "cerulean-seed-talisman": {
+        "id": "cerulean-seed-talisman",
+        "name": "Cerulean Seed Talisman",
+        "weight": "0.8",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "blessed-dew-talisman": {
+        "id": "blessed-dew-talisman",
+        "name": "Blessed Dew Talisman",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "takers-cameo": {
+        "id": "takers-cameo",
+        "name": "Taker's Cameo",
+        "weight": "1",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "godskin-swaddling-cloth": {
+        "id": "godskin-swaddling-cloth",
+        "name": "Godskin Swaddling Cloth",
+        "weight": "0.9",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "assassins-crimson-dagger": {
+        "id": "assassins-crimson-dagger",
+        "name": "Assassin's Crimson Dagger",
+        "weight": "0.8",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "assassins-cerulean-dagger": {
+        "id": "assassins-cerulean-dagger",
+        "name": "Assassin's Cerulean Dagger",
+        "weight": "0.8",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "crepuss-vial": {
+        "id": "crepuss-vial",
+        "name": "Crepus's Vial",
+        "weight": "0.7",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "concealing-veil": {
+        "id": "concealing-veil",
+        "name": "Concealing Veil",
+        "weight": "0.9",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "carian-filigreed-crest": {
+        "id": "carian-filigreed-crest",
+        "name": "Carian Filigreed Crest",
+        "weight": "0.8",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "longtail-cat-talisman": {
+        "id": "longtail-cat-talisman",
+        "name": "Longtail Cat Talisman",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "shabriris-woe": {
+        "id": "shabriris-woe",
+        "name": "Shabriri's Woe",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "daedicars-woe": {
+        "id": "daedicars-woe",
+        "name": "Daedicar's Woe",
+        "weight": "0.8",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "sacrificial-twig": {
+        "id": "sacrificial-twig",
+        "name": "Sacrificial Twig",
+        "weight": "1",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "furled-fingers-trick-mirror": {
+        "id": "furled-fingers-trick-mirror",
+        "name": "Furled Finger's Trick-Mirror",
+        "weight": "0.7",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "hosts-trick-mirror": {
+        "id": "hosts-trick-mirror",
+        "name": "Host's Trick-Mirror",
+        "weight": "0.7",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "entwining-umbilical-cord": {
+        "id": "entwining-umbilical-cord",
+        "name": "Entwining Umbilical Cord",
+        "weight": "0.5",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "ancestral-spirits-horne": {
+        "id": "ancestral-spirits-horne",
+        "name": "Ancestral Spirit's Horne",
+        "weight": "1.2",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "crimson-amber-medallion-+3": {
+        "id": "crimson-amber-medallion-+3",
+        "name": "Crimson Amber Medallion +3",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.1,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "cerulean-amber-medallion-+3": {
+        "id": "cerulean-amber-medallion-+3",
+        "name": "Cerulean Amber Medallion +3",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.13,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "viridian-amber-medallion-+3": {
+        "id": "viridian-amber-medallion-+3",
+        "name": "Viridian Amber Medallion +3",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.17,
+            "equipLoad": 1.0
+        }
+    },
+    "two-headed-turtle-talisman": {
+        "id": "two-headed-turtle-talisman",
+        "name": "Two-Headed Turtle Talisman",
+        "weight": "1",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "stalwart-horn-charm-+2": {
+        "id": "stalwart-horn-charm-+2",
+        "name": "Stalwart Horn Charm +2",
+        "weight": "0.9",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "immunizing-horn-charm-+2": {
+        "id": "immunizing-horn-charm-+2",
+        "name": "Immunizing Horn Charm +2",
+        "weight": "0.9",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "clarifying-horn-charm-+2": {
+        "id": "clarifying-horn-charm-+2",
+        "name": "Clarifying Horn Charm +2",
+        "weight": "0.9",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "mottled-necklace-+2": {
+        "id": "mottled-necklace-+2",
+        "name": "Mottled Necklace +2",
+        "weight": "1.2",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "spelldrake-talisman-+3": {
+        "id": "spelldrake-talisman-+3",
+        "name": "Spelldrake Talisman +3",
+        "weight": "0.9",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "flamedrake-talisman-+3": {
+        "id": "flamedrake-talisman-+3",
+        "name": "Flamedrake Talisman +3",
+        "weight": "0.9",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "boltdrake-talisman-+3": {
+        "id": "boltdrake-talisman-+3",
+        "name": "Boltdrake Talisman +3",
+        "weight": "0.9",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "golden-braid": {
+        "id": "golden-braid",
+        "name": "Golden Braid",
+        "weight": "0.9",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "pearldrake-talisman-+3": {
+        "id": "pearldrake-talisman-+3",
+        "name": "Pearldrake Talisman +3",
+        "weight": "1.2",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "crimson-seed-talisman-+1": {
+        "id": "crimson-seed-talisman-+1",
+        "name": "Crimson Seed Talisman +1",
+        "weight": "1.1",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "cerulean-seed-talisman-+1": {
+        "id": "cerulean-seed-talisman-+1",
+        "name": "Cerulean Seed Talisman +1",
+        "weight": "1.1",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "blessed-blue-dew-talisman": {
+        "id": "blessed-blue-dew-talisman",
+        "name": "Blessed Blue Dew Talisman",
+        "weight": "1.2",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "fine-crucible-feather-talisman": {
+        "id": "fine-crucible-feather-talisman",
+        "name": "Fine Crucible Feather Talisman",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "outer-god-heirloom": {
+        "id": "outer-god-heirloom",
+        "name": "Outer God Heirloom",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 5
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "shattered-stone-talisman": {
+        "id": "shattered-stone-talisman",
+        "name": "Shattered Stone Talisman",
+        "weight": "0.8",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "two-handed-sword-talisman": {
+        "id": "two-handed-sword-talisman",
+        "name": "Two-Handed Sword Talisman",
+        "weight": "1.2",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "crusade-insignia": {
+        "id": "crusade-insignia",
+        "name": "Crusade Insignia",
+        "weight": "1.2",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "aged-ones-exultation": {
+        "id": "aged-ones-exultation",
+        "name": "Aged One's Exultation",
+        "weight": "0.9",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "arrows-soaring-sting-talisman": {
+        "id": "arrows-soaring-sting-talisman",
+        "name": "Arrow's Soaring Sting Talisman",
+        "weight": "1.1",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "pearl-shield-talisman": {
+        "id": "pearl-shield-talisman",
+        "name": "Pearl Shield Talisman",
+        "weight": "0.9",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "dried-bouquet": {
+        "id": "dried-bouquet",
+        "name": "Dried Bouquet",
+        "weight": "0.8",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "smithing-talisman": {
+        "id": "smithing-talisman",
+        "name": "Smithing Talisman",
+        "weight": "1.3",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "ailment-talisman": {
+        "id": "ailment-talisman",
+        "name": "Ailment Talisman",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "retaliatory-crossed-tree": {
+        "id": "retaliatory-crossed-tree",
+        "name": "Retaliatory Crossed-Tree",
+        "weight": "0.8",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "lacerating-crossed-tree": {
+        "id": "lacerating-crossed-tree",
+        "name": "Lacerating Crossed-Tree",
+        "weight": "0.8",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "sharpshot-talisman": {
+        "id": "sharpshot-talisman",
+        "name": "Sharpshot Talisman",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "st.-trinas-smile": {
+        "id": "st.-trinas-smile",
+        "name": "St. Trina's Smile",
+        "weight": "0.9",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "talisman-of-the-dread": {
+        "id": "talisman-of-the-dread",
+        "name": "Talisman of the Dread",
+        "weight": "0.6",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "enraged-divine-beast": {
+        "id": "enraged-divine-beast",
+        "name": "Enraged Divine Beast",
+        "weight": "0.7",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "beloved-stardust": {
+        "id": "beloved-stardust",
+        "name": "Beloved Stardust",
+        "weight": "1.3",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "talisman-of-lords-bestowal": {
+        "id": "talisman-of-lords-bestowal",
+        "name": "Talisman of Lord's Bestowal",
+        "weight": "3",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "verdigris-discus": {
+        "id": "verdigris-discus",
+        "name": "Verdigris Discus",
+        "weight": "4.5",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "rellanas-cameo": {
+        "id": "rellanas-cameo",
+        "name": "Rellana's Cameo",
+        "weight": "0.8",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "blade-of-mercy": {
+        "id": "blade-of-mercy",
+        "name": "Blade of Mercy",
+        "weight": "1.3",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    },
+    "talisman-of-all-crucibles": {
+        "id": "talisman-of-all-crucibles",
+        "name": "Talisman of All Crucibles",
+        "weight": "1.9",
+        "stats": {
+            "vigor": 0,
+            "mind": 0,
+            "endurance": 0,
+            "strength": 0,
+            "dexterity": 0,
+            "intelligence": 0,
+            "faith": 0,
+            "arcane": 0
+        },
+        "multipliers": {
+            "maxHp": 1.0,
+            "maxFp": 1.0,
+            "maxStamina": 1.0,
+            "equipLoad": 1.0
+        }
+    }
+}

@@ -1,1 +1,3027 @@
-{"no-gauntlets": {"id": "no-gauntlets", "name": "No gauntlets", "defenses": {"physical": 0, "strike": 0, "slash": 0, "pierce": 0, "magic": 0, "fire": 0, "lightning": 0, "holy": 0}, "resistances": {"poison": 0, "scarletRot": 0, "hemorrhage": 0, "frostbite": 0, "sleep": 0, "madness": 0, "deathBlight": 0}, "poise": 0, "weight": 0}, "alberichs-bracers": {"id": "alberichs-bracers", "name": "Alberich's Bracers", "defenses": {"physical": 1.3, "slash": 1.3, "strike": 1.0, "pierce": 1.3, "magic": 3.2, "fire": 2.9, "lightning": 3.1, "holy": 3.2}, "resistances": {"scarletRot": 13, "poison": 13, "hemorrhage": 8, "frostbite": 8, "sleep": 22, "madness": 22, "deathBlight": 24}, "poise": 1, "weight": 1.4}, "all-knowing-gauntlets": {"id": "all-knowing-gauntlets", "name": "All-Knowing Gauntlets", "defenses": {"physical": 3.2, "slash": 3.3, "strike": 2.9, "pierce": 2.9, "magic": 3.1, "fire": 2.3, "lightning": 2.5, "holy": 2.1}, "resistances": {"scarletRot": 9, "poison": 9, "hemorrhage": 15, "frostbite": 15, "sleep": 7, "madness": 7, "deathBlight": 7}, "poise": 5, "weight": 3.5}, "ansbachs-manchettes": {"id": "ansbachs-manchettes", "name": "Ansbach's Manchettes", "defenses": {"physical": 1.3, "slash": 1.5, "strike": 1.5, "pierce": 1.0, "magic": 3.2, "fire": 3.2, "lightning": 3.1, "holy": 3.2}, "resistances": {"scarletRot": 13, "poison": 13, "hemorrhage": 8, "frostbite": 8, "sleep": 25, "madness": 25, "deathBlight": 30}, "poise": 3, "weight": 1.7}, "ascetics-wrist-guards": {"id": "ascetics-wrist-guards", "name": "Ascetic's Wrist Guards", "defenses": {"physical": 1.5, "slash": 1.3, "strike": 0.1, "pierce": 0.6, "magic": 3.1, "fire": 3.1, "lightning": 3.1, "holy": 3.3}, "resistances": {"scarletRot": 14, "poison": 14, "hemorrhage": 8, "frostbite": 8, "sleep": 9, "madness": 9, "deathBlight": 21}, "poise": 2, "weight": 1.1}, "astrologer-gloves": {"id": "astrologer-gloves", "name": "Astrologer Gloves", "defenses": {"physical": 1.3, "slash": 1.0, "strike": 1.0, "pierce": 1.0, "magic": 3.2, "fire": 3.1, "lightning": 3.2, "holy": 3.1}, "resistances": {"scarletRot": 14, "poison": 14, "hemorrhage": 7, "frostbite": 7, "sleep": 24, "madness": 24, "deathBlight": 21}, "poise": 2, "weight": 1.4}, "azurs-manchettes": {"id": "azurs-manchettes", "name": "Azur's Manchettes", "defenses": {"physical": 1.0, "slash": 0.6, "strike": 0.1, "pierce": 0.6, "magic": 3.4, "fire": 2.8, "lightning": 2.9, "holy": 3.2}, "resistances": {"scarletRot": 12, "poison": 12, "hemorrhage": 8, "frostbite": 8, "sleep": 22, "madness": 22, "deathBlight": 20}, "poise": 1, "weight": 1.1}, "bandit-manchettes": {"id": "bandit-manchettes", "name": "Bandit Manchettes", "defenses": {"physical": 1.5, "slash": 1.7, "strike": 1.6, "pierce": 1.7, "magic": 1.9, "fire": 1.9, "lightning": 2.1, "holy": 1.7}, "resistances": {"scarletRot": 15, "poison": 15, "hemorrhage": 8, "frostbite": 8, "sleep": 17, "madness": 17, "deathBlight": 17}, "poise": 2, "weight": 1.7}, "banished-knight-gauntlets": {"id": "banished-knight-gauntlets", "name": "Banished Knight Gauntlets", "defenses": {"physical": 4.7, "slash": 4.9, "strike": 3.7, "pierce": 4.4, "magic": 3.3, "fire": 3.3, "lightning": 3.2, "holy": 3.3}, "resistances": {"scarletRot": 20, "poison": 20, "hemorrhage": 28, "frostbite": 28, "sleep": 13, "madness": 13, "deathBlight": 14}, "poise": 7, "weight": 5.8}, "battlemage-manchettes": {"id": "battlemage-manchettes", "name": "Battlemage Manchettes", "defenses": {"physical": 1.0, "slash": 0.6, "strike": 1.3, "pierce": 1.0, "magic": 3.2, "fire": 2.8, "lightning": 2.9, "holy": 3.1}, "resistances": {"scarletRot": 13, "poison": 13, "hemorrhage": 7, "frostbite": 7, "sleep": 20, "madness": 20, "deathBlight": 22}, "poise": 2, "weight": 1.1}, "beast-champion-gauntlets": {"id": "beast-champion-gauntlets", "name": "Beast Champion Gauntlets", "defenses": {"physical": 4.4, "slash": 4.7, "strike": 4.1, "pierce": 4.6, "magic": 3.2, "fire": 3.4, "lightning": 3.2, "holy": 3.3}, "resistances": {"scarletRot": 19, "poison": 19, "hemorrhage": 30, "frostbite": 30, "sleep": 14, "madness": 14, "deathBlight": 13}, "poise": 7, "weight": 5.8}, "black-knife-gauntlets": {"id": "black-knife-gauntlets", "name": "Black Knife Gauntlets", "defenses": {"physical": 2.8, "slash": 3.1, "strike": 2.7, "pierce": 3.1, "magic": 2.1, "fire": 2.3, "lightning": 1.6, "holy": 2.8}, "resistances": {"scarletRot": 9, "poison": 9, "hemorrhage": 15, "frostbite": 15, "sleep": 8, "madness": 8, "deathBlight": 8}, "poise": 4, "weight": 3.1}, "black-knight-gauntlets": {"id": "black-knight-gauntlets", "name": "Black Knight Gauntlets", "defenses": {"physical": 3.6, "slash": 3.6, "strike": 3.1, "pierce": 4.0, "magic": 3.1, "fire": 3.2, "lightning": 2.7, "holy": 2.8}, "resistances": {"scarletRot": 14, "poison": 14, "hemorrhage": 22, "frostbite": 22, "sleep": 8, "madness": 8, "deathBlight": 8}, "poise": 6, "weight": 4.6}, "blackflame-monk-gauntlets": {"id": "blackflame-monk-gauntlets", "name": "Blackflame Monk Gauntlets", "defenses": {"physical": 3.3, "slash": 3.6, "strike": 2.8, "pierce": 3.2, "magic": 2.5, "fire": 3.2, "lightning": 1.9, "holy": 2.5}, "resistances": {"scarletRot": 11, "poison": 11, "hemorrhage": 18, "frostbite": 18, "sleep": 7, "madness": 7, "deathBlight": 11}, "poise": 5, "weight": 3.9}, "blaidds-gauntlets": {"id": "blaidds-gauntlets", "name": "Blaidd's Gauntlets", "defenses": {"physical": 3.6, "slash": 3.6, "strike": 3.2, "pierce": 3.8, "magic": 2.8, "fire": 3.2, "lightning": 2.7, "holy": 2.9}, "resistances": {"scarletRot": 13, "poison": 13, "hemorrhage": 21, "frostbite": 21, "sleep": 8, "madness": 8, "deathBlight": 8}, "poise": 6, "weight": 4.6}, "bloodhound-knight-gauntlets": {"id": "bloodhound-knight-gauntlets", "name": "Bloodhound Knight Gauntlets", "defenses": {"physical": 3.1, "slash": 3.5, "strike": 2.8, "pierce": 3.3, "magic": 2.3, "fire": 2.5, "lightning": 1.7, "holy": 2.5}, "resistances": {"scarletRot": 11, "poison": 11, "hemorrhage": 17, "frostbite": 17, "sleep": 8, "madness": 8, "deathBlight": 8}, "poise": 4, "weight": 3.5}, "bloodsoaked-manchettes": {"id": "bloodsoaked-manchettes", "name": "Bloodsoaked Manchettes", "defenses": {"physical": 1.3, "slash": 1.0, "strike": 1.5, "pierce": 0.6, "magic": 3.1, "fire": 3.1, "lightning": 3.1, "holy": 3.1}, "resistances": {"scarletRot": 14, "poison": 14, "hemorrhage": 9, "frostbite": 9, "sleep": 24, "madness": 24, "deathBlight": 22}, "poise": 2, "weight": 1.4}, "blue-silver-bracelets": {"id": "blue-silver-bracelets", "name": "Blue Silver Bracelets", "defenses": {"physical": 2.3, "slash": 2.5, "strike": 1.5, "pierce": 1.9, "magic": 1.9, "fire": 1.6, "lightning": 1.0, "holy": 1.0}, "resistances": {"scarletRot": 4, "poison": 4, "hemorrhage": 14, "frostbite": 14, "sleep": 4, "madness": 4, "deathBlight": 4}, "poise": 3, "weight": 2.1}, "braided-arm-wraps": {"id": "braided-arm-wraps", "name": "Braided Arm Wraps", "defenses": {"physical": 1.0, "slash": 0.6, "strike": 0.6, "pierce": 0.1, "magic": 3.1, "fire": 2.5, "lightning": 2.8, "holy": 3.2}, "resistances": {"scarletRot": 12, "poison": 12, "hemorrhage": 5, "frostbite": 5, "sleep": 34, "madness": 34, "deathBlight": 19}, "poise": 1, "weight": 0.8}, "briar-gauntlets": {"id": "briar-gauntlets", "name": "Briar Gauntlets", "defenses": {"physical": 3.2, "slash": 3.3, "strike": 2.8, "pierce": 3.1, "magic": 2.7, "fire": 3.1, "lightning": 2.1, "holy": 2.7}, "resistances": {"scarletRot": 12, "poison": 12, "hemorrhage": 24, "frostbite": 24, "sleep": 8, "madness": 8, "deathBlight": 8}, "poise": 5, "weight": 3.9}, "bull-goat-gauntlets": {"id": "bull-goat-gauntlets", "name": "Bull-Goat Gauntlets", "defenses": {"physical": 5.2, "slash": 4.6, "strike": 5.2, "pierce": 4.6, "magic": 3.3, "fire": 3.3, "lightning": 3.7, "holy": 3.2}, "resistances": {"scarletRot": 24, "poison": 24, "hemorrhage": 28, "frostbite": 28, "sleep": 15, "madness": 15, "deathBlight": 18}, "poise": 10, "weight": 8.8}, "carian-knight-gauntlets": {"id": "carian-knight-gauntlets", "name": "Carian Knight Gauntlets", "defenses": {"physical": 2.9, "slash": 3.1, "strike": 2.7, "pierce": 2.9, "magic": 3.1, "fire": 2.9, "lightning": 2.3, "holy": 2.9}, "resistances": {"scarletRot": 9, "poison": 9, "hemorrhage": 15, "frostbite": 15, "sleep": 7, "madness": 7, "deathBlight": 8}, "poise": 4, "weight": 3.5}, "chain-gauntlets": {"id": "chain-gauntlets", "name": "Chain Gauntlets", "defenses": {"physical": 2.9, "slash": 3.2, "strike": 2.1, "pierce": 2.9, "magic": 1.7, "fire": 2.7, "lightning": 1.5, "holy": 1.9}, "resistances": {"scarletRot": 8, "poison": 8, "hemorrhage": 14, "frostbite": 14, "sleep": 4, "madness": 4, "deathBlight": 6}, "poise": 4, "weight": 2.9}, "champion-bracers": {"id": "champion-bracers", "name": "Champion Bracers", "defenses": {"physical": 1.6, "slash": 1.7, "strike": 2.1, "pierce": 1.9, "magic": 1.9, "fire": 2.3, "lightning": 2.5, "holy": 2.3}, "resistances": {"scarletRot": 17, "poison": 17, "hemorrhage": 11, "frostbite": 11, "sleep": 14, "madness": 14, "deathBlight": 13}, "poise": 3, "weight": 2.1}, "cleanrot-gauntlets": {"id": "cleanrot-gauntlets", "name": "Cleanrot Gauntlets", "defenses": {"physical": 3.6, "slash": 4.0, "strike": 3.3, "pierce": 4.4, "magic": 3.1, "fire": 3.2, "lightning": 2.8, "holy": 3.3}, "resistances": {"scarletRot": 21, "poison": 21, "hemorrhage": 22, "frostbite": 22, "sleep": 9, "madness": 9, "deathBlight": 11}, "poise": 6, "weight": 5.0}, "common-soldier-gauntlets": {"id": "common-soldier-gauntlets", "name": "Common Soldier Gauntlets", "defenses": {"physical": 3.1, "slash": 2.9, "strike": 2.3, "pierce": 2.9, "magic": 1.7, "fire": 2.1, "lightning": 1.5, "holy": 1.9}, "resistances": {"scarletRot": 8, "poison": 8, "hemorrhage": 15, "frostbite": 15, "sleep": 6, "madness": 6, "deathBlight": 6}, "poise": 4, "weight": 2.9}, "confessor-gloves": {"id": "confessor-gloves", "name": "Confessor Gloves", "defenses": {"physical": 2.1, "slash": 2.1, "strike": 2.7, "pierce": 2.3, "magic": 2.8, "fire": 2.8, "lightning": 3.1, "holy": 2.5}, "resistances": {"scarletRot": 21, "poison": 21, "hemorrhage": 17, "frostbite": 17, "sleep": 17, "madness": 17, "deathBlight": 18}, "poise": 3, "weight": 2.8}, "crucible-gauntlets": {"id": "crucible-gauntlets", "name": "Crucible Gauntlets", "defenses": {"physical": 4.4, "slash": 4.2, "strike": 3.4, "pierce": 4.2, "magic": 3.2, "fire": 3.2, "lightning": 2.8, "holy": 3.3}, "resistances": {"scarletRot": 17, "poison": 17, "hemorrhage": 24, "frostbite": 24, "sleep": 12, "madness": 12, "deathBlight": 12}, "poise": 7, "weight": 5.2}, "cuckoo-knight-gauntlets": {"id": "cuckoo-knight-gauntlets", "name": "Cuckoo Knight Gauntlets", "defenses": {"physical": 3.3, "slash": 3.6, "strike": 2.8, "pierce": 3.3, "magic": 3.1, "fire": 2.9, "lightning": 2.1, "holy": 2.5}, "resistances": {"scarletRot": 11, "poison": 11, "hemorrhage": 19, "frostbite": 19, "sleep": 8, "madness": 8, "deathBlight": 8}, "poise": 5, "weight": 3.9}, "dancers-bracer": {"id": "dancers-bracer", "name": "Dancer's Bracer", "defenses": {"physical": 1.3, "slash": 1.6, "strike": 1.0, "pierce": 1.0, "magic": 3.2, "fire": 3.2, "lightning": 3.1, "holy": 3.1}, "resistances": {"scarletRot": 14, "poison": 14, "hemorrhage": 8, "frostbite": 8, "sleep": 21, "madness": 21, "deathBlight": 22}, "poise": 1, "weight": 1.4}, "death-knight-gauntlets": {"id": "death-knight-gauntlets", "name": "Death Knight Gauntlets", "defenses": {"physical": 3.1, "slash": 3.1, "strike": 2.7, "pierce": 3.1, "magic": 2.3, "fire": 2.3, "lightning": 3.1, "holy": 1.9}, "resistances": {"scarletRot": 9, "poison": 9, "hemorrhage": 15, "frostbite": 15, "sleep": 6, "madness": 6, "deathBlight": 15}, "poise": 5, "weight": 3.5}, "depraved-perfumer-gloves": {"id": "depraved-perfumer-gloves", "name": "Depraved Perfumer Gloves", "defenses": {"physical": 1.5, "slash": 1.4, "strike": 1.5, "pierce": 1.2, "magic": 3.2, "fire": 3.1, "lightning": 3.1, "holy": 3.1}, "resistances": {"scarletRot": 23, "poison": 23, "hemorrhage": 8, "frostbite": 8, "sleep": 20, "madness": 20, "deathBlight": 28}, "poise": 2, "weight": 2.0}, "divine-bird-warrior-gauntlets": {"id": "divine-bird-warrior-gauntlets", "name": "Divine Bird Warrior Gauntlets", "defenses": {"physical": 3.3, "slash": 3.1, "strike": 3.1, "pierce": 2.9, "magic": 2.7, "fire": 2.5, "lightning": 1.9, "holy": 2.1}, "resistances": {"scarletRot": 12, "poison": 12, "hemorrhage": 18, "frostbite": 18, "sleep": 7, "madness": 7, "deathBlight": 8}, "poise": 5, "weight": 3.5}, "drake-knight-gauntlets": {"id": "drake-knight-gauntlets", "name": "Drake Knight Gauntlets", "defenses": {"physical": 2.8, "slash": 2.9, "strike": 2.3, "pierce": 2.8, "magic": 2.5, "fire": 2.8, "lightning": 2.1, "holy": 2.5}, "resistances": {"scarletRot": 8, "poison": 8, "hemorrhage": 15, "frostbite": 15, "sleep": 7, "madness": 7, "deathBlight": 7}, "poise": 4, "weight": 3.1}, "dryleaf-arm-wraps": {"id": "dryleaf-arm-wraps", "name": "Dryleaf Arm Wraps", "defenses": {"physical": 1.3, "slash": 1.0, "strike": 1.6, "pierce": 1.0, "magic": 3.5, "fire": 2.9, "lightning": 3.1, "holy": 3.5}, "resistances": {"scarletRot": 13, "poison": 13, "hemorrhage": 8, "frostbite": 8, "sleep": 25, "madness": 25, "deathBlight": 24}, "poise": 2, "weight": 1.7}, "eccentrics-manchettes": {"id": "eccentrics-manchettes", "name": "Eccentric's Manchettes", "defenses": {"physical": 2.9, "slash": 2.8, "strike": 2.1, "pierce": 2.9, "magic": 2.1, "fire": 2.3, "lightning": 1.5, "holy": 1.9}, "resistances": {"scarletRot": 8, "poison": 8, "hemorrhage": 18, "frostbite": 18, "sleep": 6, "madness": 6, "deathBlight": 4}, "poise": 4, "weight": 2.9}, "elden-lord-bracers": {"id": "elden-lord-bracers", "name": "Elden Lord Bracers", "defenses": {"physical": 2.9, "slash": 2.8, "strike": 2.7, "pierce": 3.1, "magic": 2.1, "fire": 2.8, "lightning": 1.7, "holy": 1.9}, "resistances": {"scarletRot": 11, "poison": 11, "hemorrhage": 18, "frostbite": 18, "sleep": 6, "madness": 6, "deathBlight": 7}, "poise": 4, "weight": 3.1}, "errant-sorcerer-manchettes": {"id": "errant-sorcerer-manchettes", "name": "Errant Sorcerer Manchettes", "defenses": {"physical": 0.6, "slash": 1.3, "strike": 0.6, "pierce": 0.6, "magic": 3.2, "fire": 3.1, "lightning": 2.9, "holy": 3.2}, "resistances": {"scarletRot": 11, "poison": 11, "hemorrhage": 7, "frostbite": 7, "sleep": 21, "madness": 21, "deathBlight": 22}, "poise": 1, "weight": 1.1}, "exile-gauntlets": {"id": "exile-gauntlets", "name": "Exile Gauntlets", "defenses": {"physical": 2.9, "slash": 3.1, "strike": 2.1, "pierce": 2.9, "magic": 1.7, "fire": 2.5, "lightning": 1.5, "holy": 2.1}, "resistances": {"scarletRot": 8, "poison": 8, "hemorrhage": 17, "frostbite": 17, "sleep": 6, "madness": 6, "deathBlight": 4}, "poise": 4, "weight": 2.9}, "fingerprint-gauntlets": {"id": "fingerprint-gauntlets", "name": "Fingerprint Gauntlets", "defenses": {"physical": 3.3, "slash": 2.9, "strike": 2.9, "pierce": 2.9, "magic": 2.3, "fire": 3.1, "lightning": 1.6, "holy": 2.3}, "resistances": {"scarletRot": 11, "poison": 11, "hemorrhage": 20, "frostbite": 20, "sleep": 4, "madness": 4, "deathBlight": 8}, "poise": 5, "weight": 3.5}, "fire-knight-gauntlets": {"id": "fire-knight-gauntlets", "name": "Fire Knight Gauntlets", "defenses": {"physical": 3.2, "slash": 2.9, "strike": 2.5, "pierce": 2.7, "magic": 2.3, "fire": 2.9, "lightning": 1.7, "holy": 2.1}, "resistances": {"scarletRot": 9, "poison": 9, "hemorrhage": 15, "frostbite": 15, "sleep": 7, "madness": 7, "deathBlight": 8}, "poise": 4, "weight": 3.1}, "fire-monk-gauntlets": {"id": "fire-monk-gauntlets", "name": "Fire Monk Gauntlets", "defenses": {"physical": 3.5, "slash": 3.3, "strike": 3.1, "pierce": 3.1, "magic": 2.7, "fire": 3.3, "lightning": 2.3, "holy": 2.3}, "resistances": {"scarletRot": 11, "poison": 11, "hemorrhage": 18, "frostbite": 18, "sleep": 8, "madness": 8, "deathBlight": 8}, "poise": 5, "weight": 3.9}, "fire-prelate-gauntlets": {"id": "fire-prelate-gauntlets", "name": "Fire Prelate Gauntlets", "defenses": {"physical": 4.9, "slash": 4.6, "strike": 4.3, "pierce": 4.6, "magic": 3.3, "fire": 5.0, "lightning": 3.2, "holy": 3.3}, "resistances": {"scarletRot": 22, "poison": 22, "hemorrhage": 21, "frostbite": 21, "sleep": 30, "madness": 30, "deathBlight": 17}, "poise": 10, "weight": 8.2}, "foot-soldier-gauntlets": {"id": "foot-soldier-gauntlets", "name": "Foot Soldier Gauntlets", "defenses": {"physical": 2.1, "slash": 2.1, "strike": 2.3, "pierce": 2.1, "magic": 2.5, "fire": 2.7, "lightning": 2.8, "holy": 2.5}, "resistances": {"scarletRot": 20, "poison": 20, "hemorrhage": 13, "frostbite": 13, "sleep": 17, "madness": 17, "deathBlight": 17}, "poise": 3, "weight": 2.6}, "freyjas-gauntlets": {"id": "freyjas-gauntlets", "name": "Freyja's Gauntlets", "defenses": {"physical": 3.3, "slash": 2.8, "strike": 2.3, "pierce": 2.8, "magic": 2.1, "fire": 2.3, "lightning": 1.9, "holy": 2.3}, "resistances": {"scarletRot": 8, "poison": 8, "hemorrhage": 20, "frostbite": 20, "sleep": 4, "madness": 4, "deathBlight": 8}, "poise": 4, "weight": 3.1}, "gaiuss-gauntlets": {"id": "gaiuss-gauntlets", "name": "Gaius's Gauntlets", "defenses": {"physical": 4.2, "slash": 5.0, "strike": 3.9, "pierce": 4.9, "magic": 3.5, "fire": 3.4, "lightning": 3.4, "holy": 3.4}, "resistances": {"scarletRot": 22, "poison": 22, "hemorrhage": 28, "frostbite": 28, "sleep": 18, "madness": 18, "deathBlight": 18}, "poise": 8, "weight": 6.7}, "gauntlets-of-night": {"id": "gauntlets-of-night", "name": "Gauntlets of Night", "defenses": {"physical": 1.7, "slash": 1.9, "strike": 1.7, "pierce": 1.9, "magic": 3.1, "fire": 2.3, "lightning": 2.3, "holy": 3.1}, "resistances": {"scarletRot": 18, "poison": 18, "hemorrhage": 11, "frostbite": 11, "sleep": 15, "madness": 15, "deathBlight": 15}, "poise": 3, "weight": 2.4}, "gauntlets-of-solitude": {"id": "gauntlets-of-solitude", "name": "Gauntlets of Solitude", "defenses": {"physical": 4.7, "slash": 4.6, "strike": 4.5, "pierce": 4.4, "magic": 3.3, "fire": 3.6, "lightning": 3.3, "holy": 3.4}, "resistances": {"scarletRot": 20, "poison": 20, "hemorrhage": 21, "frostbite": 21, "sleep": 33, "madness": 33, "deathBlight": 17}, "poise": 10, "weight": 8.0}, "gelmir-knight-gauntlets": {"id": "gelmir-knight-gauntlets", "name": "Gelmir Knight Gauntlets", "defenses": {"physical": 3.3, "slash": 3.5, "strike": 2.8, "pierce": 3.3, "magic": 2.7, "fire": 3.1, "lightning": 2.5, "holy": 2.7}, "resistances": {"scarletRot": 12, "poison": 12, "hemorrhage": 18, "frostbite": 18, "sleep": 8, "madness": 8, "deathBlight": 8}, "poise": 5, "weight": 3.9}, "godrick-knight-gauntlets": {"id": "godrick-knight-gauntlets", "name": "Godrick Knight Gauntlets", "defenses": {"physical": 3.3, "slash": 3.5, "strike": 2.9, "pierce": 3.2, "magic": 2.7, "fire": 2.9, "lightning": 2.3, "holy": 2.7}, "resistances": {"scarletRot": 12, "poison": 12, "hemorrhage": 19, "frostbite": 19, "sleep": 8, "madness": 8, "deathBlight": 8}, "poise": 5, "weight": 3.9}, "godrick-soldier-gauntlets": {"id": "godrick-soldier-gauntlets", "name": "Godrick Soldier Gauntlets", "defenses": {"physical": 3.2, "slash": 3.2, "strike": 2.8, "pierce": 3.1, "magic": 2.5, "fire": 2.7, "lightning": 1.9, "holy": 2.3}, "resistances": {"scarletRot": 11, "poison": 11, "hemorrhage": 18, "frostbite": 18, "sleep": 8, "madness": 8, "deathBlight": 8}, "poise": 5, "weight": 3.5}, "godskin-apostle-bracelets": {"id": "godskin-apostle-bracelets", "name": "Godskin Apostle Bracelets", "defenses": {"physical": 1.7, "slash": 1.6, "strike": 1.6, "pierce": 1.3, "magic": 3.2, "fire": 3.1, "lightning": 3.2, "holy": 3.6}, "resistances": {"scarletRot": 17, "poison": 17, "hemorrhage": 8, "frostbite": 8, "sleep": 28, "madness": 28, "deathBlight": 25}, "poise": 3, "weight": 2.1}, "godskin-noble-bracelets": {"id": "godskin-noble-bracelets", "name": "Godskin Noble Bracelets", "defenses": {"physical": 1.3, "slash": 1.5, "strike": 2.1, "pierce": 1.3, "magic": 3.2, "fire": 2.9, "lightning": 3.1, "holy": 3.4}, "resistances": {"scarletRot": 14, "poison": 14, "hemorrhage": 8, "frostbite": 8, "sleep": 24, "madness": 24, "deathBlight": 25}, "poise": 3, "weight": 1.7}, "gold-bracelets": {"id": "gold-bracelets", "name": "Gold Bracelets", "defenses": {"physical": 1.0, "slash": 0.6, "strike": 0.6, "pierce": 0.1, "magic": 2.9, "fire": 2.8, "lightning": 2.9, "holy": 3.2}, "resistances": {"scarletRot": 13, "poison": 13, "hemorrhage": 4, "frostbite": 4, "sleep": 20, "madness": 20, "deathBlight": 20}, "poise": 1, "weight": 0.8}, "golden-prosthetic": {"id": "golden-prosthetic", "name": "Golden Prosthetic", "defenses": {"physical": 1.5, "slash": 1.5, "strike": 1.5, "pierce": 1.3, "magic": 3.2, "fire": 3.1, "lightning": 3.2, "holy": 3.2}, "resistances": {"scarletRot": 15, "poison": 15, "hemorrhage": 8, "frostbite": 8, "sleep": 25, "madness": 25, "deathBlight": 25}, "poise": 2, "weight": 2.8}, "gravebird-bracelets": {"id": "gravebird-bracelets", "name": "Gravebird Bracelets", "defenses": {"physical": 1.6, "slash": 1.7, "strike": 1.7, "pierce": 1.5, "magic": 2.1, "fire": 1.9, "lightning": 2.3, "holy": 2.3}, "resistances": {"scarletRot": 17, "poison": 17, "hemorrhage": 8, "frostbite": 8, "sleep": 13, "madness": 13, "deathBlight": 12}, "poise": 3, "weight": 1.7}, "guardian-bracers": {"id": "guardian-bracers", "name": "Guardian Bracers", "defenses": {"physical": 2.7, "slash": 2.5, "strike": 2.5, "pierce": 2.3, "magic": 2.9, "fire": 2.8, "lightning": 2.9, "holy": 2.9}, "resistances": {"scarletRot": 25, "poison": 25, "hemorrhage": 17, "frostbite": 17, "sleep": 20, "madness": 20, "deathBlight": 19}, "poise": 3, "weight": 2.9}, "haligtree-gauntlets": {"id": "haligtree-gauntlets", "name": "Haligtree Gauntlets", "defenses": {"physical": 3.2, "slash": 3.1, "strike": 2.9, "pierce": 3.2, "magic": 2.3, "fire": 2.5, "lightning": 1.9, "holy": 2.5}, "resistances": {"scarletRot": 11, "poison": 11, "hemorrhage": 18, "frostbite": 18, "sleep": 8, "madness": 8, "deathBlight": 8}, "poise": 4, "weight": 3.5}, "haligtree-knight-gauntlets": {"id": "haligtree-knight-gauntlets", "name": "Haligtree Knight Gauntlets", "defenses": {"physical": 3.3, "slash": 3.3, "strike": 3.1, "pierce": 3.3, "magic": 2.5, "fire": 2.8, "lightning": 2.3, "holy": 2.8}, "resistances": {"scarletRot": 12, "poison": 12, "hemorrhage": 19, "frostbite": 19, "sleep": 8, "madness": 8, "deathBlight": 8}, "poise": 5, "weight": 3.9}, "high-priest-gloves": {"id": "high-priest-gloves", "name": "High Priest Gloves", "defenses": {"physical": 1.3, "slash": 1.0, "strike": 1.5, "pierce": 0.6, "magic": 3.2, "fire": 3.1, "lightning": 3.1, "holy": 3.1}, "resistances": {"scarletRot": 14, "poison": 14, "hemorrhage": 8, "frostbite": 8, "sleep": 21, "madness": 21, "deathBlight": 25}, "poise": 2, "weight": 1.4}, "highwayman-gauntlets": {"id": "highwayman-gauntlets", "name": "Highwayman Gauntlets", "defenses": {"physical": 1.9, "slash": 1.9, "strike": 2.5, "pierce": 2.1, "magic": 2.7, "fire": 2.7, "lightning": 2.8, "holy": 2.5}, "resistances": {"scarletRot": 19, "poison": 19, "hemorrhage": 12, "frostbite": 12, "sleep": 17, "madness": 17, "deathBlight": 17}, "poise": 3, "weight": 2.6}, "horned-warrior-gauntlets": {"id": "horned-warrior-gauntlets", "name": "Horned Warrior Gauntlets", "defenses": {"physical": 3.3, "slash": 3.2, "strike": 3.1, "pierce": 2.8, "magic": 2.5, "fire": 2.5, "lightning": 2.1, "holy": 2.1}, "resistances": {"scarletRot": 11, "poison": 11, "hemorrhage": 20, "frostbite": 20, "sleep": 6, "madness": 6, "deathBlight": 8}, "poise": 5, "weight": 3.5}, "hoslows-gauntlets": {"id": "hoslows-gauntlets", "name": "Hoslow's Gauntlets", "defenses": {"physical": 3.5, "slash": 3.3, "strike": 2.9, "pierce": 3.1, "magic": 2.7, "fire": 2.9, "lightning": 2.5, "holy": 2.5}, "resistances": {"scarletRot": 13, "poison": 13, "hemorrhage": 20, "frostbite": 20, "sleep": 8, "madness": 8, "deathBlight": 8}, "poise": 5, "weight": 3.9}, "igons-gauntlets": {"id": "igons-gauntlets", "name": "Igon's Gauntlets", "defenses": {"physical": 2.3, "slash": 2.3, "strike": 2.5, "pierce": 2.3, "magic": 2.7, "fire": 2.8, "lightning": 2.9, "holy": 2.7}, "resistances": {"scarletRot": 21, "poison": 21, "hemorrhage": 14, "frostbite": 14, "sleep": 18, "madness": 18, "deathBlight": 18}, "poise": 4, "weight": 2.8}, "iron-gauntlets": {"id": "iron-gauntlets", "name": "Iron Gauntlets", "defenses": {"physical": 2.8, "slash": 2.9, "strike": 2.3, "pierce": 2.9, "magic": 2.1, "fire": 2.3, "lightning": 1.5, "holy": 1.9}, "resistances": {"scarletRot": 8, "poison": 8, "hemorrhage": 15, "frostbite": 15, "sleep": 6, "madness": 6, "deathBlight": 4}, "poise": 4, "weight": 2.9}, "iron-rivet-gauntlets": {"id": "iron-rivet-gauntlets", "name": "Iron Rivet Gauntlets", "defenses": {"physical": 2.8, "slash": 2.8, "strike": 2.1, "pierce": 2.7, "magic": 2.3, "fire": 2.3, "lightning": 1.9, "holy": 2.1}, "resistances": {"scarletRot": 8, "poison": 8, "hemorrhage": 19, "frostbite": 19, "sleep": 4, "madness": 4, "deathBlight": 4}, "poise": 4, "weight": 2.9}, "kaiden-gauntlets": {"id": "kaiden-gauntlets", "name": "Kaiden Gauntlets", "defenses": {"physical": 2.9, "slash": 2.9, "strike": 2.1, "pierce": 2.9, "magic": 1.9, "fire": 2.1, "lightning": 1.7, "holy": 1.9}, "resistances": {"scarletRot": 8, "poison": 8, "hemorrhage": 15, "frostbite": 15, "sleep": 6, "madness": 6, "deathBlight": 6}, "poise": 4, "weight": 2.9}, "knight-gauntlets": {"id": "knight-gauntlets", "name": "Knight Gauntlets", "defenses": {"physical": 3.1, "slash": 3.3, "strike": 2.9, "pierce": 3.3, "magic": 2.7, "fire": 2.7, "lightning": 2.3, "holy": 2.1}, "resistances": {"scarletRot": 9, "poison": 9, "hemorrhage": 17, "frostbite": 17, "sleep": 6, "madness": 6, "deathBlight": 6}, "poise": 5, "weight": 3.5}, "land-of-reeds-gauntlets": {"id": "land-of-reeds-gauntlets", "name": "Land of Reeds Gauntlets", "defenses": {"physical": 2.1, "slash": 2.9, "strike": 2.3, "pierce": 2.3, "magic": 2.5, "fire": 2.8, "lightning": 2.9, "holy": 2.7}, "resistances": {"scarletRot": 20, "poison": 20, "hemorrhage": 17, "frostbite": 17, "sleep": 17, "madness": 17, "deathBlight": 18}, "poise": 3, "weight": 2.8}, "leather-arm-wraps": {"id": "leather-arm-wraps", "name": "Leather Arm Wraps", "defenses": {"physical": 1.9, "slash": 2.1, "strike": 2.3, "pierce": 1.9, "magic": 2.1, "fire": 2.5, "lightning": 2.8, "holy": 2.5}, "resistances": {"scarletRot": 19, "poison": 19, "hemorrhage": 11, "frostbite": 11, "sleep": 15, "madness": 15, "deathBlight": 14}, "poise": 3, "weight": 2.4}, "leather-gloves": {"id": "leather-gloves", "name": "Leather Gloves", "defenses": {"physical": 1.9, "slash": 1.9, "strike": 2.3, "pierce": 2.1, "magic": 2.3, "fire": 2.3, "lightning": 2.5, "holy": 2.5}, "resistances": {"scarletRot": 20, "poison": 20, "hemorrhage": 12, "frostbite": 12, "sleep": 14, "madness": 14, "deathBlight": 17}, "poise": 3, "weight": 2.4}, "leyndell-knight-gauntlets": {"id": "leyndell-knight-gauntlets", "name": "Leyndell Knight Gauntlets", "defenses": {"physical": 3.3, "slash": 3.3, "strike": 3.1, "pierce": 3.3, "magic": 2.5, "fire": 2.8, "lightning": 2.5, "holy": 2.7}, "resistances": {"scarletRot": 12, "poison": 12, "hemorrhage": 19, "frostbite": 19, "sleep": 8, "madness": 8, "deathBlight": 8}, "poise": 5, "weight": 3.9}, "leyndell-soldier-gauntlets": {"id": "leyndell-soldier-gauntlets", "name": "Leyndell Soldier Gauntlets", "defenses": {"physical": 3.2, "slash": 3.1, "strike": 2.9, "pierce": 3.2, "magic": 2.3, "fire": 2.5, "lightning": 2.1, "holy": 2.3}, "resistances": {"scarletRot": 11, "poison": 11, "hemorrhage": 18, "frostbite": 18, "sleep": 8, "madness": 8, "deathBlight": 8}, "poise": 5, "weight": 3.5}, "lionels-gauntlets": {"id": "lionels-gauntlets", "name": "Lionel's Gauntlets", "defenses": {"physical": 4.4, "slash": 4.9, "strike": 4.1, "pierce": 5.0, "magic": 3.3, "fire": 3.7, "lightning": 3.2, "holy": 3.3}, "resistances": {"scarletRot": 21, "poison": 21, "hemorrhage": 33, "frostbite": 33, "sleep": 14, "madness": 14, "deathBlight": 17}, "poise": 9, "weight": 7.1}, "lusats-manchettes": {"id": "lusats-manchettes", "name": "Lusat's Manchettes", "defenses": {"physical": 1.3, "slash": 1.3, "strike": 0.1, "pierce": 0.1, "magic": 3.4, "fire": 2.8, "lightning": 3.1, "holy": 3.1}, "resistances": {"scarletRot": 12, "poison": 12, "hemorrhage": 6, "frostbite": 6, "sleep": 20, "madness": 20, "deathBlight": 22}, "poise": 1, "weight": 1.1}, "malenias-gauntlet": {"id": "malenias-gauntlet", "name": "Malenia's Gauntlet", "defenses": {"physical": 3.1, "slash": 3.2, "strike": 2.3, "pierce": 2.8, "magic": 1.9, "fire": 2.3, "lightning": 1.6, "holy": 2.7}, "resistances": {"scarletRot": 17, "poison": 17, "hemorrhage": 14, "frostbite": 14, "sleep": 6, "madness": 6, "deathBlight": 6}, "poise": 4, "weight": 3.1}, "malformed-dragon-gauntlets": {"id": "malformed-dragon-gauntlets", "name": "Malformed Dragon Gauntlets", "defenses": {"physical": 4.2, "slash": 4.4, "strike": 3.7, "pierce": 4.2, "magic": 3.2, "fire": 3.2, "lightning": 3.4, "holy": 3.2}, "resistances": {"scarletRot": 19, "poison": 19, "hemorrhage": 25, "frostbite": 25, "sleep": 13, "madness": 13, "deathBlight": 13}, "poise": 7, "weight": 5.3}, "malikeths-gauntlets": {"id": "malikeths-gauntlets", "name": "Maliketh's Gauntlets", "defenses": {"physical": 3.3, "slash": 3.5, "strike": 2.9, "pierce": 3.3, "magic": 2.7, "fire": 2.8, "lightning": 2.3, "holy": 3.2}, "resistances": {"scarletRot": 12, "poison": 12, "hemorrhage": 19, "frostbite": 19, "sleep": 8, "madness": 8, "deathBlight": 17}, "poise": 5, "weight": 4.3}, "mausoleum-gauntlets": {"id": "mausoleum-gauntlets", "name": "Mausoleum Gauntlets", "defenses": {"physical": 3.2, "slash": 3.3, "strike": 2.7, "pierce": 3.1, "magic": 2.5, "fire": 2.5, "lightning": 2.1, "holy": 2.5}, "resistances": {"scarletRot": 11, "poison": 11, "hemorrhage": 17, "frostbite": 17, "sleep": 8, "madness": 8, "deathBlight": 7}, "poise": 5, "weight": 3.5}, "mausoleum-knight-gauntlets": {"id": "mausoleum-knight-gauntlets", "name": "Mausoleum Knight Gauntlets", "defenses": {"physical": 3.3, "slash": 3.6, "strike": 2.8, "pierce": 3.2, "magic": 2.7, "fire": 2.8, "lightning": 2.5, "holy": 2.8}, "resistances": {"scarletRot": 12, "poison": 12, "hemorrhage": 18, "frostbite": 18, "sleep": 8, "madness": 8, "deathBlight": 8}, "poise": 5, "weight": 3.9}, "messmer-soldier-gauntlets": {"id": "messmer-soldier-gauntlets", "name": "Messmer Soldier Gauntlets", "defenses": {"physical": 2.9, "slash": 2.9, "strike": 2.3, "pierce": 2.8, "magic": 1.9, "fire": 2.3, "lightning": 1.6, "holy": 1.9}, "resistances": {"scarletRot": 8, "poison": 8, "hemorrhage": 15, "frostbite": 15, "sleep": 6, "madness": 6, "deathBlight": 6}, "poise": 4, "weight": 2.9}, "messmers-gauntlets": {"id": "messmers-gauntlets", "name": "Messmer's Gauntlets", "defenses": {"physical": 2.3, "slash": 2.1, "strike": 2.3, "pierce": 2.7, "magic": 2.5, "fire": 3.1, "lightning": 2.9, "holy": 2.5}, "resistances": {"scarletRot": 20, "poison": 20, "hemorrhage": 14, "frostbite": 14, "sleep": 19, "madness": 19, "deathBlight": 20}, "poise": 3, "weight": 2.8}, "mushroom-arms": {"id": "mushroom-arms", "name": "Mushroom Arms", "defenses": {"physical": 1.5, "slash": 0.6, "strike": 1.7, "pierce": 1.3, "magic": 3.3, "fire": 1.3, "lightning": 3.2, "holy": 3.2}, "resistances": {"scarletRot": 34, "poison": 34, "hemorrhage": 8, "frostbite": 8, "sleep": 30, "madness": 30, "deathBlight": 25}, "poise": 1, "weight": 1.7}, "nights-cavalry-gauntlets": {"id": "nights-cavalry-gauntlets", "name": "Night's Cavalry Gauntlets", "defenses": {"physical": 3.5, "slash": 3.5, "strike": 3.2, "pierce": 3.3, "magic": 2.7, "fire": 3.1, "lightning": 2.7, "holy": 3.1}, "resistances": {"scarletRot": 13, "poison": 13, "hemorrhage": 19, "frostbite": 19, "sleep": 8, "madness": 8, "deathBlight": 8}, "poise": 5, "weight": 4.3}, "nobles-gloves": {"id": "nobles-gloves", "name": "Noble's Gloves", "defenses": {"physical": 1.5, "slash": 1.5, "strike": 1.6, "pierce": 1.6, "magic": 3.3, "fire": 3.3, "lightning": 3.2, "holy": 3.3}, "resistances": {"scarletRot": 15, "poison": 15, "hemorrhage": 8, "frostbite": 8, "sleep": 25, "madness": 25, "deathBlight": 28}, "poise": 2, "weight": 2.1}, "nox-bracelets": {"id": "nox-bracelets", "name": "Nox Bracelets", "defenses": {"physical": 2.1, "slash": 2.1, "strike": 2.3, "pierce": 1.9, "magic": 2.9, "fire": 2.8, "lightning": 2.8, "holy": 2.3}, "resistances": {"scarletRot": 20, "poison": 20, "hemorrhage": 13, "frostbite": 13, "sleep": 15, "madness": 15, "deathBlight": 15}, "poise": 3, "weight": 2.6}, "oathseeker-knight-gauntlets": {"id": "oathseeker-knight-gauntlets", "name": "Oathseeker Knight Gauntlets", "defenses": {"physical": 3.2, "slash": 3.1, "strike": 2.8, "pierce": 2.9, "magic": 2.7, "fire": 2.5, "lightning": 1.7, "holy": 2.5}, "resistances": {"scarletRot": 11, "poison": 11, "hemorrhage": 19, "frostbite": 19, "sleep": 8, "madness": 8, "deathBlight": 8}, "poise": 4, "weight": 3.5}, "omen-gauntlets": {"id": "omen-gauntlets", "name": "Omen Gauntlets", "defenses": {"physical": 4.6, "slash": 4.7, "strike": 3.7, "pierce": 4.7, "magic": 3.2, "fire": 3.6, "lightning": 3.7, "holy": 3.4}, "resistances": {"scarletRot": 22, "poison": 22, "hemorrhage": 21, "frostbite": 21, "sleep": 19, "madness": 19, "deathBlight": 25}, "poise": 9, "weight": 7.7}, "omenkiller-long-gloves": {"id": "omenkiller-long-gloves", "name": "Omenkiller Long Gloves", "defenses": {"physical": 2.1, "slash": 1.7, "strike": 1.9, "pierce": 1.7, "magic": 2.1, "fire": 2.3, "lightning": 2.8, "holy": 2.5}, "resistances": {"scarletRot": 22, "poison": 22, "hemorrhage": 9, "frostbite": 9, "sleep": 15, "madness": 15, "deathBlight": 15}, "poise": 3, "weight": 2.4}, "perfumer-gloves": {"id": "perfumer-gloves", "name": "Perfumer Gloves", "defenses": {"physical": 1.0, "slash": 1.3, "strike": 1.5, "pierce": 1.0, "magic": 3.2, "fire": 2.9, "lightning": 3.1, "holy": 3.2}, "resistances": {"scarletRot": 20, "poison": 20, "hemorrhage": 6, "frostbite": 6, "sleep": 21, "madness": 21, "deathBlight": 22}, "poise": 2, "weight": 1.4}, "preceptors-gloves": {"id": "preceptors-gloves", "name": "Preceptor's Gloves", "defenses": {"physical": 1.5, "slash": 1.5, "strike": 1.6, "pierce": 1.5, "magic": 3.6, "fire": 3.3, "lightning": 3.2, "holy": 3.2}, "resistances": {"scarletRot": 17, "poison": 17, "hemorrhage": 8, "frostbite": 8, "sleep": 28, "madness": 28, "deathBlight": 25}, "poise": 3, "weight": 2.1}, "queens-bracelets": {"id": "queens-bracelets", "name": "Queen's Bracelets", "defenses": {"physical": 1.5, "slash": 1.3, "strike": 1.3, "pierce": 1.0, "magic": 3.4, "fire": 3.1, "lightning": 3.2, "holy": 3.3}, "resistances": {"scarletRot": 14, "poison": 14, "hemorrhage": 8, "frostbite": 8, "sleep": 24, "madness": 24, "deathBlight": 28}, "poise": 2, "weight": 1.7}, "radahn-soldier-gauntlets": {"id": "radahn-soldier-gauntlets", "name": "Radahn Soldier Gauntlets", "defenses": {"physical": 3.3, "slash": 3.1, "strike": 2.7, "pierce": 2.9, "magic": 2.5, "fire": 2.8, "lightning": 1.9, "holy": 2.3}, "resistances": {"scarletRot": 11, "poison": 11, "hemorrhage": 17, "frostbite": 17, "sleep": 8, "madness": 8, "deathBlight": 8}, "poise": 5, "weight": 3.5}, "radahns-gauntlets": {"id": "radahns-gauntlets", "name": "Radahn's Gauntlets", "defenses": {"physical": 4.7, "slash": 4.6, "strike": 3.7, "pierce": 4.4, "magic": 3.3, "fire": 3.5, "lightning": 3.1, "holy": 3.3}, "resistances": {"scarletRot": 20, "poison": 20, "hemorrhage": 33, "frostbite": 33, "sleep": 14, "madness": 14, "deathBlight": 13}, "poise": 7, "weight": 5.8}, "raging-wolf-gauntlets": {"id": "raging-wolf-gauntlets", "name": "Raging Wolf Gauntlets", "defenses": {"physical": 3.2, "slash": 3.2, "strike": 2.8, "pierce": 3.1, "magic": 2.4, "fire": 2.7, "lightning": 1.6, "holy": 2.2}, "resistances": {"scarletRot": 11, "poison": 11, "hemorrhage": 19, "frostbite": 19, "sleep": 6, "madness": 6, "deathBlight": 6}, "poise": 4, "weight": 3.4}, "rakshasa-gauntlets": {"id": "rakshasa-gauntlets", "name": "Rakshasa Gauntlets", "defenses": {"physical": 3.2, "slash": 3.5, "strike": 2.9, "pierce": 3.3, "magic": 2.8, "fire": 3.1, "lightning": 2.7, "holy": 2.8}, "resistances": {"scarletRot": 12, "poison": 12, "hemorrhage": 20, "frostbite": 20, "sleep": 9, "madness": 9, "deathBlight": 9}, "poise": 6, "weight": 4.3}, "raya-lucarian-gauntlets": {"id": "raya-lucarian-gauntlets", "name": "Raya Lucarian Gauntlets", "defenses": {"physical": 3.2, "slash": 3.3, "strike": 2.7, "pierce": 3.2, "magic": 2.7, "fire": 2.7, "lightning": 1.7, "holy": 2.1}, "resistances": {"scarletRot": 11, "poison": 11, "hemorrhage": 18, "frostbite": 18, "sleep": 8, "madness": 8, "deathBlight": 8}, "poise": 5, "weight": 3.5}, "redmane-knight-gauntlets": {"id": "redmane-knight-gauntlets", "name": "Redmane Knight Gauntlets", "defenses": {"physical": 3.5, "slash": 3.3, "strike": 2.8, "pierce": 3.1, "magic": 2.7, "fire": 3.1, "lightning": 2.3, "holy": 2.7}, "resistances": {"scarletRot": 12, "poison": 12, "hemorrhage": 18, "frostbite": 18, "sleep": 8, "madness": 8, "deathBlight": 8}, "poise": 5, "weight": 3.9}, "rellanas-gloves": {"id": "rellanas-gloves", "name": "Rellana's Gloves", "defenses": {"physical": 3.3, "slash": 3.5, "strike": 2.9, "pierce": 3.2, "magic": 3.1, "fire": 2.9, "lightning": 2.3, "holy": 2.7}, "resistances": {"scarletRot": 12, "poison": 12, "hemorrhage": 19, "frostbite": 19, "sleep": 8, "madness": 8, "deathBlight": 8}, "poise": 5, "weight": 3.9}, "ronins-gauntlets": {"id": "ronins-gauntlets", "name": "Ronin's Gauntlets", "defenses": {"physical": 2.7, "slash": 2.8, "strike": 2.7, "pierce": 2.7, "magic": 2.9, "fire": 3.1, "lightning": 3.2, "holy": 2.9}, "resistances": {"scarletRot": 25, "poison": 25, "hemorrhage": 19, "frostbite": 19, "sleep": 20, "madness": 20, "deathBlight": 21}, "poise": 4, "weight": 3.1}, "royal-knight-gauntlets": {"id": "royal-knight-gauntlets", "name": "Royal Knight Gauntlets", "defenses": {"physical": 4.0, "slash": 4.4, "strike": 3.6, "pierce": 4.2, "magic": 3.5, "fire": 3.3, "lightning": 3.1, "holy": 3.2}, "resistances": {"scarletRot": 17, "poison": 17, "hemorrhage": 22, "frostbite": 22, "sleep": 12, "madness": 12, "deathBlight": 12}, "poise": 6, "weight": 5.2}, "royal-remains-gauntlets": {"id": "royal-remains-gauntlets", "name": "Royal Remains Gauntlets", "defenses": {"physical": 2.9, "slash": 3.2, "strike": 2.8, "pierce": 2.9, "magic": 2.3, "fire": 2.5, "lightning": 1.9, "holy": 2.1}, "resistances": {"scarletRot": 12, "poison": 12, "hemorrhage": 19, "frostbite": 19, "sleep": 8, "madness": 8, "deathBlight": 4}, "poise": 4, "weight": 3.5}, "scaled-gauntlets": {"id": "scaled-gauntlets", "name": "Scaled Gauntlets", "defenses": {"physical": 4.0, "slash": 4.2, "strike": 3.4, "pierce": 4.0, "magic": 3.3, "fire": 3.5, "lightning": 3.2, "holy": 3.3}, "resistances": {"scarletRot": 19, "poison": 19, "hemorrhage": 28, "frostbite": 28, "sleep": 13, "madness": 13, "deathBlight": 13}, "poise": 7, "weight": 5.3}, "shadow-militiaman-gauntlets": {"id": "shadow-militiaman-gauntlets", "name": "Shadow Militiaman Gauntlets", "defenses": {"physical": 1.7, "slash": 1.9, "strike": 2.1, "pierce": 1.9, "magic": 2.5, "fire": 2.7, "lightning": 2.7, "holy": 2.1}, "resistances": {"scarletRot": 25, "poison": 25, "hemorrhage": 11, "frostbite": 11, "sleep": 14, "madness": 14, "deathBlight": 14}, "poise": 3, "weight": 2.4}, "sorcerer-manchettes": {"id": "sorcerer-manchettes", "name": "Sorcerer Manchettes", "defenses": {"physical": 1.0, "slash": 1.3, "strike": 1.3, "pierce": 0.1, "magic": 3.2, "fire": 3.1, "lightning": 2.9, "holy": 3.1}, "resistances": {"scarletRot": 13, "poison": 13, "hemorrhage": 4, "frostbite": 4, "sleep": 21, "madness": 21, "deathBlight": 20}, "poise": 1, "weight": 1.1}, "spellblades-gloves": {"id": "spellblades-gloves", "name": "Spellblade's Gloves", "defenses": {"physical": 0.9, "slash": 0.9, "strike": 0.5, "pierce": 0.9, "magic": 3.1, "fire": 2.7, "lightning": 2.8, "holy": 3.1}, "resistances": {"scarletRot": 11, "poison": 11, "hemorrhage": 6, "frostbite": 6, "sleep": 19, "madness": 19, "deathBlight": 20}, "poise": 1, "weight": 1.2}, "thiolliers-gloves": {"id": "thiolliers-gloves", "name": "Thiollier's Gloves", "defenses": {"physical": 2.1, "slash": 1.7, "strike": 2.1, "pierce": 1.7, "magic": 1.9, "fire": 2.3, "lightning": 2.7, "holy": 2.5}, "resistances": {"scarletRot": 24, "poison": 24, "hemorrhage": 9, "frostbite": 9, "sleep": 21, "madness": 21, "deathBlight": 13}, "poise": 3, "weight": 2.4}, "travelers-gloves": {"id": "travelers-gloves", "name": "Traveler's Gloves", "defenses": {"physical": 1.3, "slash": 1.0, "strike": 1.3, "pierce": 0.6, "magic": 3.2, "fire": 3.2, "lightning": 3.1, "holy": 3.2}, "resistances": {"scarletRot": 18, "poison": 18, "hemorrhage": 7, "frostbite": 7, "sleep": 22, "madness": 22, "deathBlight": 21}, "poise": 2, "weight": 1.4}, "travelers-manchettes": {"id": "travelers-manchettes", "name": "Traveler's Manchettes", "defenses": {"physical": 1.6, "slash": 1.3, "strike": 1.5, "pierce": 1.0, "magic": 3.3, "fire": 3.2, "lightning": 3.2, "holy": 3.1}, "resistances": {"scarletRot": 13, "poison": 13, "hemorrhage": 8, "frostbite": 8, "sleep": 25, "madness": 25, "deathBlight": 25}, "poise": 2, "weight": 1.7}, "traveling-maiden-gloves": {"id": "traveling-maiden-gloves", "name": "Traveling Maiden Gloves", "defenses": {"physical": 1.3, "slash": 1.5, "strike": 1.5, "pierce": 1.0, "magic": 3.3, "fire": 3.2, "lightning": 3.2, "holy": 3.3}, "resistances": {"scarletRot": 15, "poison": 15, "hemorrhage": 8, "frostbite": 8, "sleep": 25, "madness": 25, "deathBlight": 28}, "poise": 2, "weight": 1.6}, "tree-sentinel-gauntlets": {"id": "tree-sentinel-gauntlets", "name": "Tree Sentinel Gauntlets", "defenses": {"physical": 4.7, "slash": 4.7, "strike": 3.7, "pierce": 4.4, "magic": 3.2, "fire": 4.3, "lightning": 3.1, "holy": 3.5}, "resistances": {"scarletRot": 22, "poison": 22, "hemorrhage": 30, "frostbite": 30, "sleep": 14, "madness": 14, "deathBlight": 15}, "poise": 8, "weight": 6.3}, "twinned-gauntlets": {"id": "twinned-gauntlets", "name": "Twinned Gauntlets", "defenses": {"physical": 3.3, "slash": 3.6, "strike": 3.1, "pierce": 2.9, "magic": 2.8, "fire": 2.8, "lightning": 2.1, "holy": 2.5}, "resistances": {"scarletRot": 11, "poison": 11, "hemorrhage": 18, "frostbite": 18, "sleep": 7, "madness": 7, "deathBlight": 18}, "poise": 5, "weight": 3.9}, "vagabond-knight-gauntlets": {"id": "vagabond-knight-gauntlets", "name": "Vagabond Knight Gauntlets", "defenses": {"physical": 3.3, "slash": 3.1, "strike": 2.8, "pierce": 2.9, "magic": 2.5, "fire": 2.7, "lightning": 2.1, "holy": 2.1}, "resistances": {"scarletRot": 12, "poison": 12, "hemorrhage": 19, "frostbite": 19, "sleep": 8, "madness": 8, "deathBlight": 8}, "poise": 5, "weight": 3.5}, "verdigris-gauntlets": {"id": "verdigris-gauntlets", "name": "Verdigris Gauntlets", "defenses": {"physical": 5.2, "slash": 5.0, "strike": 4.5, "pierce": 4.7, "magic": 3.3, "fire": 3.3, "lightning": 3.6, "holy": 3.3}, "resistances": {"scarletRot": 30, "poison": 30, "hemorrhage": 36, "frostbite": 36, "sleep": 12, "madness": 12, "deathBlight": 17}, "poise": 10, "weight": 8.6}, "veterans-gauntlets": {"id": "veterans-gauntlets", "name": "Veteran's Gauntlets", "defenses": {"physical": 4.7, "slash": 4.7, "strike": 4.3, "pierce": 4.4, "magic": 3.3, "fire": 3.5, "lightning": 3.2, "holy": 3.3}, "resistances": {"scarletRot": 21, "poison": 21, "hemorrhage": 30, "frostbite": 30, "sleep": 15, "madness": 15, "deathBlight": 15}, "poise": 8, "weight": 6.3}, "vulgar-militia-gauntlets": {"id": "vulgar-militia-gauntlets", "name": "Vulgar Militia Gauntlets", "defenses": {"physical": 1.7, "slash": 1.9, "strike": 2.1, "pierce": 1.6, "magic": 2.1, "fire": 2.1, "lightning": 2.3, "holy": 2.1}, "resistances": {"scarletRot": 20, "poison": 20, "hemorrhage": 9, "frostbite": 9, "sleep": 14, "madness": 14, "deathBlight": 14}, "poise": 3, "weight": 2.1}, "war-surgeon-gloves": {"id": "war-surgeon-gloves", "name": "War Surgeon Gloves", "defenses": {"physical": 1.6, "slash": 2.0, "strike": 1.8, "pierce": 1.6, "magic": 2.2, "fire": 2.4, "lightning": 2.6, "holy": 2.4}, "resistances": {"scarletRot": 18, "poison": 18, "hemorrhage": 13, "frostbite": 13, "sleep": 15, "madness": 15, "deathBlight": 17}, "poise": 3, "weight": 2.3}, "warrior-gauntlets": {"id": "warrior-gauntlets", "name": "Warrior Gauntlets", "defenses": {"physical": 2.3, "slash": 1.9, "strike": 2.3, "pierce": 1.9, "magic": 2.5, "fire": 2.7, "lightning": 2.9, "holy": 2.3}, "resistances": {"scarletRot": 21, "poison": 21, "hemorrhage": 14, "frostbite": 14, "sleep": 17, "madness": 17, "deathBlight": 17}, "poise": 3, "weight": 2.6}, "white-reed-gauntlets": {"id": "white-reed-gauntlets", "name": "White Reed Gauntlets", "defenses": {"physical": 2.3, "slash": 2.8, "strike": 2.5, "pierce": 2.1, "magic": 2.7, "fire": 2.7, "lightning": 2.9, "holy": 2.5}, "resistances": {"scarletRot": 22, "poison": 22, "hemorrhage": 14, "frostbite": 14, "sleep": 18, "madness": 18, "deathBlight": 17}, "poise": 4, "weight": 2.8}, "young-lions-gauntlets": {"id": "young-lions-gauntlets", "name": "Young Lion's Gauntlets", "defenses": {"physical": 4.2, "slash": 4.2, "strike": 3.6, "pierce": 4.2, "magic": 3.1, "fire": 3.2, "lightning": 2.8, "holy": 3.2}, "resistances": {"scarletRot": 17, "poison": 17, "hemorrhage": 24, "frostbite": 24, "sleep": 8, "madness": 8, "deathBlight": 12}, "poise": 7, "weight": 5.0}, "zamor-bracelets": {"id": "zamor-bracelets", "name": "Zamor Bracelets", "defenses": {"physical": 2.8, "slash": 2.9, "strike": 2.1, "pierce": 2.5, "magic": 1.9, "fire": 1.9, "lightning": 1.3, "holy": 1.7}, "resistances": {"scarletRot": 6, "poison": 6, "hemorrhage": 20, "frostbite": 20, "sleep": 0, "madness": 0, "deathBlight": 4}, "poise": 4, "weight": 2.8}}
+{
+    "no-gauntlets": {
+        "id": "no-gauntlets",
+        "name": "No gauntlets",
+        "defenses": {
+            "physical": 0,
+            "strike": 0,
+            "slash": 0,
+            "pierce": 0,
+            "magic": 0,
+            "fire": 0,
+            "lightning": 0,
+            "holy": 0
+        },
+        "resistances": {
+            "poison": 0,
+            "scarletRot": 0,
+            "hemorrhage": 0,
+            "frostbite": 0,
+            "sleep": 0,
+            "madness": 0,
+            "deathBlight": 0
+        },
+        "poise": 0,
+        "weight": 0
+    },
+    "alberichs-bracers": {
+        "id": "alberichs-bracers",
+        "name": "Alberich's Bracers",
+        "defenses": {
+            "physical": 1.3,
+            "slash": 1.3,
+            "strike": 1.0,
+            "pierce": 1.3,
+            "magic": 3.2,
+            "fire": 2.9,
+            "lightning": 3.1,
+            "holy": 3.2
+        },
+        "resistances": {
+            "scarletRot": 13,
+            "poison": 13,
+            "hemorrhage": 8,
+            "frostbite": 8,
+            "sleep": 22,
+            "madness": 22,
+            "deathBlight": 24
+        },
+        "poise": 1,
+        "weight": 1.4
+    },
+    "all-knowing-gauntlets": {
+        "id": "all-knowing-gauntlets",
+        "name": "All-Knowing Gauntlets",
+        "defenses": {
+            "physical": 3.2,
+            "slash": 3.3,
+            "strike": 2.9,
+            "pierce": 2.9,
+            "magic": 3.1,
+            "fire": 2.3,
+            "lightning": 2.5,
+            "holy": 2.1
+        },
+        "resistances": {
+            "scarletRot": 9,
+            "poison": 9,
+            "hemorrhage": 15,
+            "frostbite": 15,
+            "sleep": 7,
+            "madness": 7,
+            "deathBlight": 7
+        },
+        "poise": 5,
+        "weight": 3.5
+    },
+    "ansbachs-manchettes": {
+        "id": "ansbachs-manchettes",
+        "name": "Ansbach's Manchettes",
+        "defenses": {
+            "physical": 1.3,
+            "slash": 1.5,
+            "strike": 1.5,
+            "pierce": 1.0,
+            "magic": 3.2,
+            "fire": 3.2,
+            "lightning": 3.1,
+            "holy": 3.2
+        },
+        "resistances": {
+            "scarletRot": 13,
+            "poison": 13,
+            "hemorrhage": 8,
+            "frostbite": 8,
+            "sleep": 25,
+            "madness": 25,
+            "deathBlight": 30
+        },
+        "poise": 3,
+        "weight": 1.7
+    },
+    "ascetics-wrist-guards": {
+        "id": "ascetics-wrist-guards",
+        "name": "Ascetic's Wrist Guards",
+        "defenses": {
+            "physical": 1.5,
+            "slash": 1.3,
+            "strike": 0.1,
+            "pierce": 0.6,
+            "magic": 3.1,
+            "fire": 3.1,
+            "lightning": 3.1,
+            "holy": 3.3
+        },
+        "resistances": {
+            "scarletRot": 14,
+            "poison": 14,
+            "hemorrhage": 8,
+            "frostbite": 8,
+            "sleep": 9,
+            "madness": 9,
+            "deathBlight": 21
+        },
+        "poise": 2,
+        "weight": 1.1
+    },
+    "astrologer-gloves": {
+        "id": "astrologer-gloves",
+        "name": "Astrologer Gloves",
+        "defenses": {
+            "physical": 1.3,
+            "slash": 1.0,
+            "strike": 1.0,
+            "pierce": 1.0,
+            "magic": 3.2,
+            "fire": 3.1,
+            "lightning": 3.2,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 14,
+            "poison": 14,
+            "hemorrhage": 7,
+            "frostbite": 7,
+            "sleep": 24,
+            "madness": 24,
+            "deathBlight": 21
+        },
+        "poise": 2,
+        "weight": 1.4
+    },
+    "azurs-manchettes": {
+        "id": "azurs-manchettes",
+        "name": "Azur's Manchettes",
+        "defenses": {
+            "physical": 1.0,
+            "slash": 0.6,
+            "strike": 0.1,
+            "pierce": 0.6,
+            "magic": 3.4,
+            "fire": 2.8,
+            "lightning": 2.9,
+            "holy": 3.2
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 8,
+            "frostbite": 8,
+            "sleep": 22,
+            "madness": 22,
+            "deathBlight": 20
+        },
+        "poise": 1,
+        "weight": 1.1
+    },
+    "bandit-manchettes": {
+        "id": "bandit-manchettes",
+        "name": "Bandit Manchettes",
+        "defenses": {
+            "physical": 1.5,
+            "slash": 1.7,
+            "strike": 1.6,
+            "pierce": 1.7,
+            "magic": 1.9,
+            "fire": 1.9,
+            "lightning": 2.1,
+            "holy": 1.7
+        },
+        "resistances": {
+            "scarletRot": 15,
+            "poison": 15,
+            "hemorrhage": 8,
+            "frostbite": 8,
+            "sleep": 17,
+            "madness": 17,
+            "deathBlight": 17
+        },
+        "poise": 2,
+        "weight": 1.7
+    },
+    "banished-knight-gauntlets": {
+        "id": "banished-knight-gauntlets",
+        "name": "Banished Knight Gauntlets",
+        "defenses": {
+            "physical": 4.7,
+            "slash": 4.9,
+            "strike": 3.7,
+            "pierce": 4.4,
+            "magic": 3.3,
+            "fire": 3.3,
+            "lightning": 3.2,
+            "holy": 3.3
+        },
+        "resistances": {
+            "scarletRot": 20,
+            "poison": 20,
+            "hemorrhage": 28,
+            "frostbite": 28,
+            "sleep": 13,
+            "madness": 13,
+            "deathBlight": 14
+        },
+        "poise": 7,
+        "weight": 5.8
+    },
+    "battlemage-manchettes": {
+        "id": "battlemage-manchettes",
+        "name": "Battlemage Manchettes",
+        "defenses": {
+            "physical": 1.0,
+            "slash": 0.6,
+            "strike": 1.3,
+            "pierce": 1.0,
+            "magic": 3.2,
+            "fire": 2.8,
+            "lightning": 2.9,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 13,
+            "poison": 13,
+            "hemorrhage": 7,
+            "frostbite": 7,
+            "sleep": 20,
+            "madness": 20,
+            "deathBlight": 22
+        },
+        "poise": 2,
+        "weight": 1.1
+    },
+    "beast-champion-gauntlets": {
+        "id": "beast-champion-gauntlets",
+        "name": "Beast Champion Gauntlets",
+        "defenses": {
+            "physical": 4.4,
+            "slash": 4.7,
+            "strike": 4.1,
+            "pierce": 4.6,
+            "magic": 3.2,
+            "fire": 3.4,
+            "lightning": 3.2,
+            "holy": 3.3
+        },
+        "resistances": {
+            "scarletRot": 19,
+            "poison": 19,
+            "hemorrhage": 30,
+            "frostbite": 30,
+            "sleep": 14,
+            "madness": 14,
+            "deathBlight": 13
+        },
+        "poise": 7,
+        "weight": 5.8
+    },
+    "black-knife-gauntlets": {
+        "id": "black-knife-gauntlets",
+        "name": "Black Knife Gauntlets",
+        "defenses": {
+            "physical": 2.8,
+            "slash": 3.1,
+            "strike": 2.7,
+            "pierce": 3.1,
+            "magic": 2.1,
+            "fire": 2.3,
+            "lightning": 1.6,
+            "holy": 2.8
+        },
+        "resistances": {
+            "scarletRot": 9,
+            "poison": 9,
+            "hemorrhage": 15,
+            "frostbite": 15,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 8
+        },
+        "poise": 4,
+        "weight": 3.1
+    },
+    "black-knight-gauntlets": {
+        "id": "black-knight-gauntlets",
+        "name": "Black Knight Gauntlets",
+        "defenses": {
+            "physical": 3.6,
+            "slash": 3.6,
+            "strike": 3.1,
+            "pierce": 4.0,
+            "magic": 3.1,
+            "fire": 3.2,
+            "lightning": 2.7,
+            "holy": 2.8
+        },
+        "resistances": {
+            "scarletRot": 14,
+            "poison": 14,
+            "hemorrhage": 22,
+            "frostbite": 22,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 8
+        },
+        "poise": 6,
+        "weight": 4.6
+    },
+    "blackflame-monk-gauntlets": {
+        "id": "blackflame-monk-gauntlets",
+        "name": "Blackflame Monk Gauntlets",
+        "defenses": {
+            "physical": 3.3,
+            "slash": 3.6,
+            "strike": 2.8,
+            "pierce": 3.2,
+            "magic": 2.5,
+            "fire": 3.2,
+            "lightning": 1.9,
+            "holy": 2.5
+        },
+        "resistances": {
+            "scarletRot": 11,
+            "poison": 11,
+            "hemorrhage": 18,
+            "frostbite": 18,
+            "sleep": 7,
+            "madness": 7,
+            "deathBlight": 11
+        },
+        "poise": 5,
+        "weight": 3.9
+    },
+    "blaidds-gauntlets": {
+        "id": "blaidds-gauntlets",
+        "name": "Blaidd's Gauntlets",
+        "defenses": {
+            "physical": 3.6,
+            "slash": 3.6,
+            "strike": 3.2,
+            "pierce": 3.8,
+            "magic": 2.8,
+            "fire": 3.2,
+            "lightning": 2.7,
+            "holy": 2.9
+        },
+        "resistances": {
+            "scarletRot": 13,
+            "poison": 13,
+            "hemorrhage": 21,
+            "frostbite": 21,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 8
+        },
+        "poise": 6,
+        "weight": 4.6
+    },
+    "bloodhound-knight-gauntlets": {
+        "id": "bloodhound-knight-gauntlets",
+        "name": "Bloodhound Knight Gauntlets",
+        "defenses": {
+            "physical": 3.1,
+            "slash": 3.5,
+            "strike": 2.8,
+            "pierce": 3.3,
+            "magic": 2.3,
+            "fire": 2.5,
+            "lightning": 1.7,
+            "holy": 2.5
+        },
+        "resistances": {
+            "scarletRot": 11,
+            "poison": 11,
+            "hemorrhage": 17,
+            "frostbite": 17,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 8
+        },
+        "poise": 4,
+        "weight": 3.5
+    },
+    "bloodsoaked-manchettes": {
+        "id": "bloodsoaked-manchettes",
+        "name": "Bloodsoaked Manchettes",
+        "defenses": {
+            "physical": 1.3,
+            "slash": 1.0,
+            "strike": 1.5,
+            "pierce": 0.6,
+            "magic": 3.1,
+            "fire": 3.1,
+            "lightning": 3.1,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 14,
+            "poison": 14,
+            "hemorrhage": 9,
+            "frostbite": 9,
+            "sleep": 24,
+            "madness": 24,
+            "deathBlight": 22
+        },
+        "poise": 2,
+        "weight": 1.4
+    },
+    "blue-silver-bracelets": {
+        "id": "blue-silver-bracelets",
+        "name": "Blue Silver Bracelets",
+        "defenses": {
+            "physical": 2.3,
+            "slash": 2.5,
+            "strike": 1.5,
+            "pierce": 1.9,
+            "magic": 1.9,
+            "fire": 1.6,
+            "lightning": 1.0,
+            "holy": 1.0
+        },
+        "resistances": {
+            "scarletRot": 4,
+            "poison": 4,
+            "hemorrhage": 14,
+            "frostbite": 14,
+            "sleep": 4,
+            "madness": 4,
+            "deathBlight": 4
+        },
+        "poise": 3,
+        "weight": 2.1
+    },
+    "braided-arm-wraps": {
+        "id": "braided-arm-wraps",
+        "name": "Braided Arm Wraps",
+        "defenses": {
+            "physical": 1.0,
+            "slash": 0.6,
+            "strike": 0.6,
+            "pierce": 0.1,
+            "magic": 3.1,
+            "fire": 2.5,
+            "lightning": 2.8,
+            "holy": 3.2
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 5,
+            "frostbite": 5,
+            "sleep": 34,
+            "madness": 34,
+            "deathBlight": 19
+        },
+        "poise": 1,
+        "weight": 0.8
+    },
+    "briar-gauntlets": {
+        "id": "briar-gauntlets",
+        "name": "Briar Gauntlets",
+        "defenses": {
+            "physical": 3.2,
+            "slash": 3.3,
+            "strike": 2.8,
+            "pierce": 3.1,
+            "magic": 2.7,
+            "fire": 3.1,
+            "lightning": 2.1,
+            "holy": 2.7
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 24,
+            "frostbite": 24,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 8
+        },
+        "poise": 5,
+        "weight": 3.9
+    },
+    "bull-goat-gauntlets": {
+        "id": "bull-goat-gauntlets",
+        "name": "Bull-Goat Gauntlets",
+        "defenses": {
+            "physical": 5.2,
+            "slash": 4.6,
+            "strike": 5.2,
+            "pierce": 4.6,
+            "magic": 3.3,
+            "fire": 3.3,
+            "lightning": 3.7,
+            "holy": 3.2
+        },
+        "resistances": {
+            "scarletRot": 24,
+            "poison": 24,
+            "hemorrhage": 28,
+            "frostbite": 28,
+            "sleep": 15,
+            "madness": 15,
+            "deathBlight": 18
+        },
+        "poise": 10,
+        "weight": 8.8
+    },
+    "carian-knight-gauntlets": {
+        "id": "carian-knight-gauntlets",
+        "name": "Carian Knight Gauntlets",
+        "defenses": {
+            "physical": 2.9,
+            "slash": 3.1,
+            "strike": 2.7,
+            "pierce": 2.9,
+            "magic": 3.1,
+            "fire": 2.9,
+            "lightning": 2.3,
+            "holy": 2.9
+        },
+        "resistances": {
+            "scarletRot": 9,
+            "poison": 9,
+            "hemorrhage": 15,
+            "frostbite": 15,
+            "sleep": 7,
+            "madness": 7,
+            "deathBlight": 8
+        },
+        "poise": 4,
+        "weight": 3.5
+    },
+    "chain-gauntlets": {
+        "id": "chain-gauntlets",
+        "name": "Chain Gauntlets",
+        "defenses": {
+            "physical": 2.9,
+            "slash": 3.2,
+            "strike": 2.1,
+            "pierce": 2.9,
+            "magic": 1.7,
+            "fire": 2.7,
+            "lightning": 1.5,
+            "holy": 1.9
+        },
+        "resistances": {
+            "scarletRot": 8,
+            "poison": 8,
+            "hemorrhage": 14,
+            "frostbite": 14,
+            "sleep": 4,
+            "madness": 4,
+            "deathBlight": 6
+        },
+        "poise": 4,
+        "weight": 2.9
+    },
+    "champion-bracers": {
+        "id": "champion-bracers",
+        "name": "Champion Bracers",
+        "defenses": {
+            "physical": 1.6,
+            "slash": 1.7,
+            "strike": 2.1,
+            "pierce": 1.9,
+            "magic": 1.9,
+            "fire": 2.3,
+            "lightning": 2.5,
+            "holy": 2.3
+        },
+        "resistances": {
+            "scarletRot": 17,
+            "poison": 17,
+            "hemorrhage": 11,
+            "frostbite": 11,
+            "sleep": 14,
+            "madness": 14,
+            "deathBlight": 13
+        },
+        "poise": 3,
+        "weight": 2.1
+    },
+    "cleanrot-gauntlets": {
+        "id": "cleanrot-gauntlets",
+        "name": "Cleanrot Gauntlets",
+        "defenses": {
+            "physical": 3.6,
+            "slash": 4.0,
+            "strike": 3.3,
+            "pierce": 4.4,
+            "magic": 3.1,
+            "fire": 3.2,
+            "lightning": 2.8,
+            "holy": 3.3
+        },
+        "resistances": {
+            "scarletRot": 21,
+            "poison": 21,
+            "hemorrhage": 22,
+            "frostbite": 22,
+            "sleep": 9,
+            "madness": 9,
+            "deathBlight": 11
+        },
+        "poise": 6,
+        "weight": 5.0
+    },
+    "common-soldier-gauntlets": {
+        "id": "common-soldier-gauntlets",
+        "name": "Common Soldier Gauntlets",
+        "defenses": {
+            "physical": 3.1,
+            "slash": 2.9,
+            "strike": 2.3,
+            "pierce": 2.9,
+            "magic": 1.7,
+            "fire": 2.1,
+            "lightning": 1.5,
+            "holy": 1.9
+        },
+        "resistances": {
+            "scarletRot": 8,
+            "poison": 8,
+            "hemorrhage": 15,
+            "frostbite": 15,
+            "sleep": 6,
+            "madness": 6,
+            "deathBlight": 6
+        },
+        "poise": 4,
+        "weight": 2.9
+    },
+    "confessor-gloves": {
+        "id": "confessor-gloves",
+        "name": "Confessor Gloves",
+        "defenses": {
+            "physical": 2.1,
+            "slash": 2.1,
+            "strike": 2.7,
+            "pierce": 2.3,
+            "magic": 2.8,
+            "fire": 2.8,
+            "lightning": 3.1,
+            "holy": 2.5
+        },
+        "resistances": {
+            "scarletRot": 21,
+            "poison": 21,
+            "hemorrhage": 17,
+            "frostbite": 17,
+            "sleep": 17,
+            "madness": 17,
+            "deathBlight": 18
+        },
+        "poise": 3,
+        "weight": 2.8
+    },
+    "crucible-gauntlets": {
+        "id": "crucible-gauntlets",
+        "name": "Crucible Gauntlets",
+        "defenses": {
+            "physical": 4.4,
+            "slash": 4.2,
+            "strike": 3.4,
+            "pierce": 4.2,
+            "magic": 3.2,
+            "fire": 3.2,
+            "lightning": 2.8,
+            "holy": 3.3
+        },
+        "resistances": {
+            "scarletRot": 17,
+            "poison": 17,
+            "hemorrhage": 24,
+            "frostbite": 24,
+            "sleep": 12,
+            "madness": 12,
+            "deathBlight": 12
+        },
+        "poise": 7,
+        "weight": 5.2
+    },
+    "cuckoo-knight-gauntlets": {
+        "id": "cuckoo-knight-gauntlets",
+        "name": "Cuckoo Knight Gauntlets",
+        "defenses": {
+            "physical": 3.3,
+            "slash": 3.6,
+            "strike": 2.8,
+            "pierce": 3.3,
+            "magic": 3.1,
+            "fire": 2.9,
+            "lightning": 2.1,
+            "holy": 2.5
+        },
+        "resistances": {
+            "scarletRot": 11,
+            "poison": 11,
+            "hemorrhage": 19,
+            "frostbite": 19,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 8
+        },
+        "poise": 5,
+        "weight": 3.9
+    },
+    "dancers-bracer": {
+        "id": "dancers-bracer",
+        "name": "Dancer's Bracer",
+        "defenses": {
+            "physical": 1.3,
+            "slash": 1.6,
+            "strike": 1.0,
+            "pierce": 1.0,
+            "magic": 3.2,
+            "fire": 3.2,
+            "lightning": 3.1,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 14,
+            "poison": 14,
+            "hemorrhage": 8,
+            "frostbite": 8,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 22
+        },
+        "poise": 1,
+        "weight": 1.4
+    },
+    "death-knight-gauntlets": {
+        "id": "death-knight-gauntlets",
+        "name": "Death Knight Gauntlets",
+        "defenses": {
+            "physical": 3.1,
+            "slash": 3.1,
+            "strike": 2.7,
+            "pierce": 3.1,
+            "magic": 2.3,
+            "fire": 2.3,
+            "lightning": 3.1,
+            "holy": 1.9
+        },
+        "resistances": {
+            "scarletRot": 9,
+            "poison": 9,
+            "hemorrhage": 15,
+            "frostbite": 15,
+            "sleep": 6,
+            "madness": 6,
+            "deathBlight": 15
+        },
+        "poise": 5,
+        "weight": 3.5
+    },
+    "depraved-perfumer-gloves": {
+        "id": "depraved-perfumer-gloves",
+        "name": "Depraved Perfumer Gloves",
+        "defenses": {
+            "physical": 1.5,
+            "slash": 1.4,
+            "strike": 1.5,
+            "pierce": 1.2,
+            "magic": 3.2,
+            "fire": 3.1,
+            "lightning": 3.1,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 23,
+            "poison": 23,
+            "hemorrhage": 8,
+            "frostbite": 8,
+            "sleep": 20,
+            "madness": 20,
+            "deathBlight": 28
+        },
+        "poise": 2,
+        "weight": 2.0
+    },
+    "divine-bird-warrior-gauntlets": {
+        "id": "divine-bird-warrior-gauntlets",
+        "name": "Divine Bird Warrior Gauntlets",
+        "defenses": {
+            "physical": 3.3,
+            "slash": 3.1,
+            "strike": 3.1,
+            "pierce": 2.9,
+            "magic": 2.7,
+            "fire": 2.5,
+            "lightning": 1.9,
+            "holy": 2.1
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 18,
+            "frostbite": 18,
+            "sleep": 7,
+            "madness": 7,
+            "deathBlight": 8
+        },
+        "poise": 5,
+        "weight": 3.5
+    },
+    "drake-knight-gauntlets": {
+        "id": "drake-knight-gauntlets",
+        "name": "Drake Knight Gauntlets",
+        "defenses": {
+            "physical": 2.8,
+            "slash": 2.9,
+            "strike": 2.3,
+            "pierce": 2.8,
+            "magic": 2.5,
+            "fire": 2.8,
+            "lightning": 2.1,
+            "holy": 2.5
+        },
+        "resistances": {
+            "scarletRot": 8,
+            "poison": 8,
+            "hemorrhage": 15,
+            "frostbite": 15,
+            "sleep": 7,
+            "madness": 7,
+            "deathBlight": 7
+        },
+        "poise": 4,
+        "weight": 3.1
+    },
+    "dryleaf-arm-wraps": {
+        "id": "dryleaf-arm-wraps",
+        "name": "Dryleaf Arm Wraps",
+        "defenses": {
+            "physical": 1.3,
+            "slash": 1.0,
+            "strike": 1.6,
+            "pierce": 1.0,
+            "magic": 3.5,
+            "fire": 2.9,
+            "lightning": 3.1,
+            "holy": 3.5
+        },
+        "resistances": {
+            "scarletRot": 13,
+            "poison": 13,
+            "hemorrhage": 8,
+            "frostbite": 8,
+            "sleep": 25,
+            "madness": 25,
+            "deathBlight": 24
+        },
+        "poise": 2,
+        "weight": 1.7
+    },
+    "eccentrics-manchettes": {
+        "id": "eccentrics-manchettes",
+        "name": "Eccentric's Manchettes",
+        "defenses": {
+            "physical": 2.9,
+            "slash": 2.8,
+            "strike": 2.1,
+            "pierce": 2.9,
+            "magic": 2.1,
+            "fire": 2.3,
+            "lightning": 1.5,
+            "holy": 1.9
+        },
+        "resistances": {
+            "scarletRot": 8,
+            "poison": 8,
+            "hemorrhage": 18,
+            "frostbite": 18,
+            "sleep": 6,
+            "madness": 6,
+            "deathBlight": 4
+        },
+        "poise": 4,
+        "weight": 2.9
+    },
+    "elden-lord-bracers": {
+        "id": "elden-lord-bracers",
+        "name": "Elden Lord Bracers",
+        "defenses": {
+            "physical": 2.9,
+            "slash": 2.8,
+            "strike": 2.7,
+            "pierce": 3.1,
+            "magic": 2.1,
+            "fire": 2.8,
+            "lightning": 1.7,
+            "holy": 1.9
+        },
+        "resistances": {
+            "scarletRot": 11,
+            "poison": 11,
+            "hemorrhage": 18,
+            "frostbite": 18,
+            "sleep": 6,
+            "madness": 6,
+            "deathBlight": 7
+        },
+        "poise": 4,
+        "weight": 3.1
+    },
+    "errant-sorcerer-manchettes": {
+        "id": "errant-sorcerer-manchettes",
+        "name": "Errant Sorcerer Manchettes",
+        "defenses": {
+            "physical": 0.6,
+            "slash": 1.3,
+            "strike": 0.6,
+            "pierce": 0.6,
+            "magic": 3.2,
+            "fire": 3.1,
+            "lightning": 2.9,
+            "holy": 3.2
+        },
+        "resistances": {
+            "scarletRot": 11,
+            "poison": 11,
+            "hemorrhage": 7,
+            "frostbite": 7,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 22
+        },
+        "poise": 1,
+        "weight": 1.1
+    },
+    "exile-gauntlets": {
+        "id": "exile-gauntlets",
+        "name": "Exile Gauntlets",
+        "defenses": {
+            "physical": 2.9,
+            "slash": 3.1,
+            "strike": 2.1,
+            "pierce": 2.9,
+            "magic": 1.7,
+            "fire": 2.5,
+            "lightning": 1.5,
+            "holy": 2.1
+        },
+        "resistances": {
+            "scarletRot": 8,
+            "poison": 8,
+            "hemorrhage": 17,
+            "frostbite": 17,
+            "sleep": 6,
+            "madness": 6,
+            "deathBlight": 4
+        },
+        "poise": 4,
+        "weight": 2.9
+    },
+    "fingerprint-gauntlets": {
+        "id": "fingerprint-gauntlets",
+        "name": "Fingerprint Gauntlets",
+        "defenses": {
+            "physical": 3.3,
+            "slash": 2.9,
+            "strike": 2.9,
+            "pierce": 2.9,
+            "magic": 2.3,
+            "fire": 3.1,
+            "lightning": 1.6,
+            "holy": 2.3
+        },
+        "resistances": {
+            "scarletRot": 11,
+            "poison": 11,
+            "hemorrhage": 20,
+            "frostbite": 20,
+            "sleep": 4,
+            "madness": 4,
+            "deathBlight": 8
+        },
+        "poise": 5,
+        "weight": 3.5
+    },
+    "fire-knight-gauntlets": {
+        "id": "fire-knight-gauntlets",
+        "name": "Fire Knight Gauntlets",
+        "defenses": {
+            "physical": 3.2,
+            "slash": 2.9,
+            "strike": 2.5,
+            "pierce": 2.7,
+            "magic": 2.3,
+            "fire": 2.9,
+            "lightning": 1.7,
+            "holy": 2.1
+        },
+        "resistances": {
+            "scarletRot": 9,
+            "poison": 9,
+            "hemorrhage": 15,
+            "frostbite": 15,
+            "sleep": 7,
+            "madness": 7,
+            "deathBlight": 8
+        },
+        "poise": 4,
+        "weight": 3.1
+    },
+    "fire-monk-gauntlets": {
+        "id": "fire-monk-gauntlets",
+        "name": "Fire Monk Gauntlets",
+        "defenses": {
+            "physical": 3.5,
+            "slash": 3.3,
+            "strike": 3.1,
+            "pierce": 3.1,
+            "magic": 2.7,
+            "fire": 3.3,
+            "lightning": 2.3,
+            "holy": 2.3
+        },
+        "resistances": {
+            "scarletRot": 11,
+            "poison": 11,
+            "hemorrhage": 18,
+            "frostbite": 18,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 8
+        },
+        "poise": 5,
+        "weight": 3.9
+    },
+    "fire-prelate-gauntlets": {
+        "id": "fire-prelate-gauntlets",
+        "name": "Fire Prelate Gauntlets",
+        "defenses": {
+            "physical": 4.9,
+            "slash": 4.6,
+            "strike": 4.3,
+            "pierce": 4.6,
+            "magic": 3.3,
+            "fire": 5.0,
+            "lightning": 3.2,
+            "holy": 3.3
+        },
+        "resistances": {
+            "scarletRot": 22,
+            "poison": 22,
+            "hemorrhage": 21,
+            "frostbite": 21,
+            "sleep": 30,
+            "madness": 30,
+            "deathBlight": 17
+        },
+        "poise": 10,
+        "weight": 8.2
+    },
+    "foot-soldier-gauntlets": {
+        "id": "foot-soldier-gauntlets",
+        "name": "Foot Soldier Gauntlets",
+        "defenses": {
+            "physical": 2.1,
+            "slash": 2.1,
+            "strike": 2.3,
+            "pierce": 2.1,
+            "magic": 2.5,
+            "fire": 2.7,
+            "lightning": 2.8,
+            "holy": 2.5
+        },
+        "resistances": {
+            "scarletRot": 20,
+            "poison": 20,
+            "hemorrhage": 13,
+            "frostbite": 13,
+            "sleep": 17,
+            "madness": 17,
+            "deathBlight": 17
+        },
+        "poise": 3,
+        "weight": 2.6
+    },
+    "freyjas-gauntlets": {
+        "id": "freyjas-gauntlets",
+        "name": "Freyja's Gauntlets",
+        "defenses": {
+            "physical": 3.3,
+            "slash": 2.8,
+            "strike": 2.3,
+            "pierce": 2.8,
+            "magic": 2.1,
+            "fire": 2.3,
+            "lightning": 1.9,
+            "holy": 2.3
+        },
+        "resistances": {
+            "scarletRot": 8,
+            "poison": 8,
+            "hemorrhage": 20,
+            "frostbite": 20,
+            "sleep": 4,
+            "madness": 4,
+            "deathBlight": 8
+        },
+        "poise": 4,
+        "weight": 3.1
+    },
+    "gaiuss-gauntlets": {
+        "id": "gaiuss-gauntlets",
+        "name": "Gaius's Gauntlets",
+        "defenses": {
+            "physical": 4.2,
+            "slash": 5.0,
+            "strike": 3.9,
+            "pierce": 4.9,
+            "magic": 3.5,
+            "fire": 3.4,
+            "lightning": 3.4,
+            "holy": 3.4
+        },
+        "resistances": {
+            "scarletRot": 22,
+            "poison": 22,
+            "hemorrhage": 28,
+            "frostbite": 28,
+            "sleep": 18,
+            "madness": 18,
+            "deathBlight": 18
+        },
+        "poise": 8,
+        "weight": 6.7
+    },
+    "gauntlets-of-night": {
+        "id": "gauntlets-of-night",
+        "name": "Gauntlets of Night",
+        "defenses": {
+            "physical": 1.7,
+            "slash": 1.9,
+            "strike": 1.7,
+            "pierce": 1.9,
+            "magic": 3.1,
+            "fire": 2.3,
+            "lightning": 2.3,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 18,
+            "poison": 18,
+            "hemorrhage": 11,
+            "frostbite": 11,
+            "sleep": 15,
+            "madness": 15,
+            "deathBlight": 15
+        },
+        "poise": 3,
+        "weight": 2.4
+    },
+    "gauntlets-of-solitude": {
+        "id": "gauntlets-of-solitude",
+        "name": "Gauntlets of Solitude",
+        "defenses": {
+            "physical": 4.7,
+            "slash": 4.6,
+            "strike": 4.5,
+            "pierce": 4.4,
+            "magic": 3.3,
+            "fire": 3.6,
+            "lightning": 3.3,
+            "holy": 3.4
+        },
+        "resistances": {
+            "scarletRot": 20,
+            "poison": 20,
+            "hemorrhage": 21,
+            "frostbite": 21,
+            "sleep": 33,
+            "madness": 33,
+            "deathBlight": 17
+        },
+        "poise": 10,
+        "weight": 8.0
+    },
+    "gelmir-knight-gauntlets": {
+        "id": "gelmir-knight-gauntlets",
+        "name": "Gelmir Knight Gauntlets",
+        "defenses": {
+            "physical": 3.3,
+            "slash": 3.5,
+            "strike": 2.8,
+            "pierce": 3.3,
+            "magic": 2.7,
+            "fire": 3.1,
+            "lightning": 2.5,
+            "holy": 2.7
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 18,
+            "frostbite": 18,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 8
+        },
+        "poise": 5,
+        "weight": 3.9
+    },
+    "godrick-knight-gauntlets": {
+        "id": "godrick-knight-gauntlets",
+        "name": "Godrick Knight Gauntlets",
+        "defenses": {
+            "physical": 3.3,
+            "slash": 3.5,
+            "strike": 2.9,
+            "pierce": 3.2,
+            "magic": 2.7,
+            "fire": 2.9,
+            "lightning": 2.3,
+            "holy": 2.7
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 19,
+            "frostbite": 19,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 8
+        },
+        "poise": 5,
+        "weight": 3.9
+    },
+    "godrick-soldier-gauntlets": {
+        "id": "godrick-soldier-gauntlets",
+        "name": "Godrick Soldier Gauntlets",
+        "defenses": {
+            "physical": 3.2,
+            "slash": 3.2,
+            "strike": 2.8,
+            "pierce": 3.1,
+            "magic": 2.5,
+            "fire": 2.7,
+            "lightning": 1.9,
+            "holy": 2.3
+        },
+        "resistances": {
+            "scarletRot": 11,
+            "poison": 11,
+            "hemorrhage": 18,
+            "frostbite": 18,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 8
+        },
+        "poise": 5,
+        "weight": 3.5
+    },
+    "godskin-apostle-bracelets": {
+        "id": "godskin-apostle-bracelets",
+        "name": "Godskin Apostle Bracelets",
+        "defenses": {
+            "physical": 1.7,
+            "slash": 1.6,
+            "strike": 1.6,
+            "pierce": 1.3,
+            "magic": 3.2,
+            "fire": 3.1,
+            "lightning": 3.2,
+            "holy": 3.6
+        },
+        "resistances": {
+            "scarletRot": 17,
+            "poison": 17,
+            "hemorrhage": 8,
+            "frostbite": 8,
+            "sleep": 28,
+            "madness": 28,
+            "deathBlight": 25
+        },
+        "poise": 3,
+        "weight": 2.1
+    },
+    "godskin-noble-bracelets": {
+        "id": "godskin-noble-bracelets",
+        "name": "Godskin Noble Bracelets",
+        "defenses": {
+            "physical": 1.3,
+            "slash": 1.5,
+            "strike": 2.1,
+            "pierce": 1.3,
+            "magic": 3.2,
+            "fire": 2.9,
+            "lightning": 3.1,
+            "holy": 3.4
+        },
+        "resistances": {
+            "scarletRot": 14,
+            "poison": 14,
+            "hemorrhage": 8,
+            "frostbite": 8,
+            "sleep": 24,
+            "madness": 24,
+            "deathBlight": 25
+        },
+        "poise": 3,
+        "weight": 1.7
+    },
+    "gold-bracelets": {
+        "id": "gold-bracelets",
+        "name": "Gold Bracelets",
+        "defenses": {
+            "physical": 1.0,
+            "slash": 0.6,
+            "strike": 0.6,
+            "pierce": 0.1,
+            "magic": 2.9,
+            "fire": 2.8,
+            "lightning": 2.9,
+            "holy": 3.2
+        },
+        "resistances": {
+            "scarletRot": 13,
+            "poison": 13,
+            "hemorrhage": 4,
+            "frostbite": 4,
+            "sleep": 20,
+            "madness": 20,
+            "deathBlight": 20
+        },
+        "poise": 1,
+        "weight": 0.8
+    },
+    "golden-prosthetic": {
+        "id": "golden-prosthetic",
+        "name": "Golden Prosthetic",
+        "defenses": {
+            "physical": 1.5,
+            "slash": 1.5,
+            "strike": 1.5,
+            "pierce": 1.3,
+            "magic": 3.2,
+            "fire": 3.1,
+            "lightning": 3.2,
+            "holy": 3.2
+        },
+        "resistances": {
+            "scarletRot": 15,
+            "poison": 15,
+            "hemorrhage": 8,
+            "frostbite": 8,
+            "sleep": 25,
+            "madness": 25,
+            "deathBlight": 25
+        },
+        "poise": 2,
+        "weight": 2.8
+    },
+    "gravebird-bracelets": {
+        "id": "gravebird-bracelets",
+        "name": "Gravebird Bracelets",
+        "defenses": {
+            "physical": 1.6,
+            "slash": 1.7,
+            "strike": 1.7,
+            "pierce": 1.5,
+            "magic": 2.1,
+            "fire": 1.9,
+            "lightning": 2.3,
+            "holy": 2.3
+        },
+        "resistances": {
+            "scarletRot": 17,
+            "poison": 17,
+            "hemorrhage": 8,
+            "frostbite": 8,
+            "sleep": 13,
+            "madness": 13,
+            "deathBlight": 12
+        },
+        "poise": 3,
+        "weight": 1.7
+    },
+    "guardian-bracers": {
+        "id": "guardian-bracers",
+        "name": "Guardian Bracers",
+        "defenses": {
+            "physical": 2.7,
+            "slash": 2.5,
+            "strike": 2.5,
+            "pierce": 2.3,
+            "magic": 2.9,
+            "fire": 2.8,
+            "lightning": 2.9,
+            "holy": 2.9
+        },
+        "resistances": {
+            "scarletRot": 25,
+            "poison": 25,
+            "hemorrhage": 17,
+            "frostbite": 17,
+            "sleep": 20,
+            "madness": 20,
+            "deathBlight": 19
+        },
+        "poise": 3,
+        "weight": 2.9
+    },
+    "haligtree-gauntlets": {
+        "id": "haligtree-gauntlets",
+        "name": "Haligtree Gauntlets",
+        "defenses": {
+            "physical": 3.2,
+            "slash": 3.1,
+            "strike": 2.9,
+            "pierce": 3.2,
+            "magic": 2.3,
+            "fire": 2.5,
+            "lightning": 1.9,
+            "holy": 2.5
+        },
+        "resistances": {
+            "scarletRot": 11,
+            "poison": 11,
+            "hemorrhage": 18,
+            "frostbite": 18,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 8
+        },
+        "poise": 4,
+        "weight": 3.5
+    },
+    "haligtree-knight-gauntlets": {
+        "id": "haligtree-knight-gauntlets",
+        "name": "Haligtree Knight Gauntlets",
+        "defenses": {
+            "physical": 3.3,
+            "slash": 3.3,
+            "strike": 3.1,
+            "pierce": 3.3,
+            "magic": 2.5,
+            "fire": 2.8,
+            "lightning": 2.3,
+            "holy": 2.8
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 19,
+            "frostbite": 19,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 8
+        },
+        "poise": 5,
+        "weight": 3.9
+    },
+    "high-priest-gloves": {
+        "id": "high-priest-gloves",
+        "name": "High Priest Gloves",
+        "defenses": {
+            "physical": 1.3,
+            "slash": 1.0,
+            "strike": 1.5,
+            "pierce": 0.6,
+            "magic": 3.2,
+            "fire": 3.1,
+            "lightning": 3.1,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 14,
+            "poison": 14,
+            "hemorrhage": 8,
+            "frostbite": 8,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 25
+        },
+        "poise": 2,
+        "weight": 1.4
+    },
+    "highwayman-gauntlets": {
+        "id": "highwayman-gauntlets",
+        "name": "Highwayman Gauntlets",
+        "defenses": {
+            "physical": 1.9,
+            "slash": 1.9,
+            "strike": 2.5,
+            "pierce": 2.1,
+            "magic": 2.7,
+            "fire": 2.7,
+            "lightning": 2.8,
+            "holy": 2.5
+        },
+        "resistances": {
+            "scarletRot": 19,
+            "poison": 19,
+            "hemorrhage": 12,
+            "frostbite": 12,
+            "sleep": 17,
+            "madness": 17,
+            "deathBlight": 17
+        },
+        "poise": 3,
+        "weight": 2.6
+    },
+    "horned-warrior-gauntlets": {
+        "id": "horned-warrior-gauntlets",
+        "name": "Horned Warrior Gauntlets",
+        "defenses": {
+            "physical": 3.3,
+            "slash": 3.2,
+            "strike": 3.1,
+            "pierce": 2.8,
+            "magic": 2.5,
+            "fire": 2.5,
+            "lightning": 2.1,
+            "holy": 2.1
+        },
+        "resistances": {
+            "scarletRot": 11,
+            "poison": 11,
+            "hemorrhage": 20,
+            "frostbite": 20,
+            "sleep": 6,
+            "madness": 6,
+            "deathBlight": 8
+        },
+        "poise": 5,
+        "weight": 3.5
+    },
+    "hoslows-gauntlets": {
+        "id": "hoslows-gauntlets",
+        "name": "Hoslow's Gauntlets",
+        "defenses": {
+            "physical": 3.5,
+            "slash": 3.3,
+            "strike": 2.9,
+            "pierce": 3.1,
+            "magic": 2.7,
+            "fire": 2.9,
+            "lightning": 2.5,
+            "holy": 2.5
+        },
+        "resistances": {
+            "scarletRot": 13,
+            "poison": 13,
+            "hemorrhage": 20,
+            "frostbite": 20,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 8
+        },
+        "poise": 5,
+        "weight": 3.9
+    },
+    "igons-gauntlets": {
+        "id": "igons-gauntlets",
+        "name": "Igon's Gauntlets",
+        "defenses": {
+            "physical": 2.3,
+            "slash": 2.3,
+            "strike": 2.5,
+            "pierce": 2.3,
+            "magic": 2.7,
+            "fire": 2.8,
+            "lightning": 2.9,
+            "holy": 2.7
+        },
+        "resistances": {
+            "scarletRot": 21,
+            "poison": 21,
+            "hemorrhage": 14,
+            "frostbite": 14,
+            "sleep": 18,
+            "madness": 18,
+            "deathBlight": 18
+        },
+        "poise": 4,
+        "weight": 2.8
+    },
+    "iron-gauntlets": {
+        "id": "iron-gauntlets",
+        "name": "Iron Gauntlets",
+        "defenses": {
+            "physical": 2.8,
+            "slash": 2.9,
+            "strike": 2.3,
+            "pierce": 2.9,
+            "magic": 2.1,
+            "fire": 2.3,
+            "lightning": 1.5,
+            "holy": 1.9
+        },
+        "resistances": {
+            "scarletRot": 8,
+            "poison": 8,
+            "hemorrhage": 15,
+            "frostbite": 15,
+            "sleep": 6,
+            "madness": 6,
+            "deathBlight": 4
+        },
+        "poise": 4,
+        "weight": 2.9
+    },
+    "iron-rivet-gauntlets": {
+        "id": "iron-rivet-gauntlets",
+        "name": "Iron Rivet Gauntlets",
+        "defenses": {
+            "physical": 2.8,
+            "slash": 2.8,
+            "strike": 2.1,
+            "pierce": 2.7,
+            "magic": 2.3,
+            "fire": 2.3,
+            "lightning": 1.9,
+            "holy": 2.1
+        },
+        "resistances": {
+            "scarletRot": 8,
+            "poison": 8,
+            "hemorrhage": 19,
+            "frostbite": 19,
+            "sleep": 4,
+            "madness": 4,
+            "deathBlight": 4
+        },
+        "poise": 4,
+        "weight": 2.9
+    },
+    "kaiden-gauntlets": {
+        "id": "kaiden-gauntlets",
+        "name": "Kaiden Gauntlets",
+        "defenses": {
+            "physical": 2.9,
+            "slash": 2.9,
+            "strike": 2.1,
+            "pierce": 2.9,
+            "magic": 1.9,
+            "fire": 2.1,
+            "lightning": 1.7,
+            "holy": 1.9
+        },
+        "resistances": {
+            "scarletRot": 8,
+            "poison": 8,
+            "hemorrhage": 15,
+            "frostbite": 15,
+            "sleep": 6,
+            "madness": 6,
+            "deathBlight": 6
+        },
+        "poise": 4,
+        "weight": 2.9
+    },
+    "knight-gauntlets": {
+        "id": "knight-gauntlets",
+        "name": "Knight Gauntlets",
+        "defenses": {
+            "physical": 3.1,
+            "slash": 3.3,
+            "strike": 2.9,
+            "pierce": 3.3,
+            "magic": 2.7,
+            "fire": 2.7,
+            "lightning": 2.3,
+            "holy": 2.1
+        },
+        "resistances": {
+            "scarletRot": 9,
+            "poison": 9,
+            "hemorrhage": 17,
+            "frostbite": 17,
+            "sleep": 6,
+            "madness": 6,
+            "deathBlight": 6
+        },
+        "poise": 5,
+        "weight": 3.5
+    },
+    "land-of-reeds-gauntlets": {
+        "id": "land-of-reeds-gauntlets",
+        "name": "Land of Reeds Gauntlets",
+        "defenses": {
+            "physical": 2.1,
+            "slash": 2.9,
+            "strike": 2.3,
+            "pierce": 2.3,
+            "magic": 2.5,
+            "fire": 2.8,
+            "lightning": 2.9,
+            "holy": 2.7
+        },
+        "resistances": {
+            "scarletRot": 20,
+            "poison": 20,
+            "hemorrhage": 17,
+            "frostbite": 17,
+            "sleep": 17,
+            "madness": 17,
+            "deathBlight": 18
+        },
+        "poise": 3,
+        "weight": 2.8
+    },
+    "leather-arm-wraps": {
+        "id": "leather-arm-wraps",
+        "name": "Leather Arm Wraps",
+        "defenses": {
+            "physical": 1.9,
+            "slash": 2.1,
+            "strike": 2.3,
+            "pierce": 1.9,
+            "magic": 2.1,
+            "fire": 2.5,
+            "lightning": 2.8,
+            "holy": 2.5
+        },
+        "resistances": {
+            "scarletRot": 19,
+            "poison": 19,
+            "hemorrhage": 11,
+            "frostbite": 11,
+            "sleep": 15,
+            "madness": 15,
+            "deathBlight": 14
+        },
+        "poise": 3,
+        "weight": 2.4
+    },
+    "leather-gloves": {
+        "id": "leather-gloves",
+        "name": "Leather Gloves",
+        "defenses": {
+            "physical": 1.9,
+            "slash": 1.9,
+            "strike": 2.3,
+            "pierce": 2.1,
+            "magic": 2.3,
+            "fire": 2.3,
+            "lightning": 2.5,
+            "holy": 2.5
+        },
+        "resistances": {
+            "scarletRot": 20,
+            "poison": 20,
+            "hemorrhage": 12,
+            "frostbite": 12,
+            "sleep": 14,
+            "madness": 14,
+            "deathBlight": 17
+        },
+        "poise": 3,
+        "weight": 2.4
+    },
+    "leyndell-knight-gauntlets": {
+        "id": "leyndell-knight-gauntlets",
+        "name": "Leyndell Knight Gauntlets",
+        "defenses": {
+            "physical": 3.3,
+            "slash": 3.3,
+            "strike": 3.1,
+            "pierce": 3.3,
+            "magic": 2.5,
+            "fire": 2.8,
+            "lightning": 2.5,
+            "holy": 2.7
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 19,
+            "frostbite": 19,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 8
+        },
+        "poise": 5,
+        "weight": 3.9
+    },
+    "leyndell-soldier-gauntlets": {
+        "id": "leyndell-soldier-gauntlets",
+        "name": "Leyndell Soldier Gauntlets",
+        "defenses": {
+            "physical": 3.2,
+            "slash": 3.1,
+            "strike": 2.9,
+            "pierce": 3.2,
+            "magic": 2.3,
+            "fire": 2.5,
+            "lightning": 2.1,
+            "holy": 2.3
+        },
+        "resistances": {
+            "scarletRot": 11,
+            "poison": 11,
+            "hemorrhage": 18,
+            "frostbite": 18,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 8
+        },
+        "poise": 5,
+        "weight": 3.5
+    },
+    "lionels-gauntlets": {
+        "id": "lionels-gauntlets",
+        "name": "Lionel's Gauntlets",
+        "defenses": {
+            "physical": 4.4,
+            "slash": 4.9,
+            "strike": 4.1,
+            "pierce": 5.0,
+            "magic": 3.3,
+            "fire": 3.7,
+            "lightning": 3.2,
+            "holy": 3.3
+        },
+        "resistances": {
+            "scarletRot": 21,
+            "poison": 21,
+            "hemorrhage": 33,
+            "frostbite": 33,
+            "sleep": 14,
+            "madness": 14,
+            "deathBlight": 17
+        },
+        "poise": 9,
+        "weight": 7.1
+    },
+    "lusats-manchettes": {
+        "id": "lusats-manchettes",
+        "name": "Lusat's Manchettes",
+        "defenses": {
+            "physical": 1.3,
+            "slash": 1.3,
+            "strike": 0.1,
+            "pierce": 0.1,
+            "magic": 3.4,
+            "fire": 2.8,
+            "lightning": 3.1,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 6,
+            "frostbite": 6,
+            "sleep": 20,
+            "madness": 20,
+            "deathBlight": 22
+        },
+        "poise": 1,
+        "weight": 1.1
+    },
+    "malenias-gauntlet": {
+        "id": "malenias-gauntlet",
+        "name": "Malenia's Gauntlet",
+        "defenses": {
+            "physical": 3.1,
+            "slash": 3.2,
+            "strike": 2.3,
+            "pierce": 2.8,
+            "magic": 1.9,
+            "fire": 2.3,
+            "lightning": 1.6,
+            "holy": 2.7
+        },
+        "resistances": {
+            "scarletRot": 17,
+            "poison": 17,
+            "hemorrhage": 14,
+            "frostbite": 14,
+            "sleep": 6,
+            "madness": 6,
+            "deathBlight": 6
+        },
+        "poise": 4,
+        "weight": 3.1
+    },
+    "malformed-dragon-gauntlets": {
+        "id": "malformed-dragon-gauntlets",
+        "name": "Malformed Dragon Gauntlets",
+        "defenses": {
+            "physical": 4.2,
+            "slash": 4.4,
+            "strike": 3.7,
+            "pierce": 4.2,
+            "magic": 3.2,
+            "fire": 3.2,
+            "lightning": 3.4,
+            "holy": 3.2
+        },
+        "resistances": {
+            "scarletRot": 19,
+            "poison": 19,
+            "hemorrhage": 25,
+            "frostbite": 25,
+            "sleep": 13,
+            "madness": 13,
+            "deathBlight": 13
+        },
+        "poise": 7,
+        "weight": 5.3
+    },
+    "malikeths-gauntlets": {
+        "id": "malikeths-gauntlets",
+        "name": "Maliketh's Gauntlets",
+        "defenses": {
+            "physical": 3.3,
+            "slash": 3.5,
+            "strike": 2.9,
+            "pierce": 3.3,
+            "magic": 2.7,
+            "fire": 2.8,
+            "lightning": 2.3,
+            "holy": 3.2
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 19,
+            "frostbite": 19,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 17
+        },
+        "poise": 5,
+        "weight": 4.3
+    },
+    "mausoleum-gauntlets": {
+        "id": "mausoleum-gauntlets",
+        "name": "Mausoleum Gauntlets",
+        "defenses": {
+            "physical": 3.2,
+            "slash": 3.3,
+            "strike": 2.7,
+            "pierce": 3.1,
+            "magic": 2.5,
+            "fire": 2.5,
+            "lightning": 2.1,
+            "holy": 2.5
+        },
+        "resistances": {
+            "scarletRot": 11,
+            "poison": 11,
+            "hemorrhage": 17,
+            "frostbite": 17,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 7
+        },
+        "poise": 5,
+        "weight": 3.5
+    },
+    "mausoleum-knight-gauntlets": {
+        "id": "mausoleum-knight-gauntlets",
+        "name": "Mausoleum Knight Gauntlets",
+        "defenses": {
+            "physical": 3.3,
+            "slash": 3.6,
+            "strike": 2.8,
+            "pierce": 3.2,
+            "magic": 2.7,
+            "fire": 2.8,
+            "lightning": 2.5,
+            "holy": 2.8
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 18,
+            "frostbite": 18,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 8
+        },
+        "poise": 5,
+        "weight": 3.9
+    },
+    "messmer-soldier-gauntlets": {
+        "id": "messmer-soldier-gauntlets",
+        "name": "Messmer Soldier Gauntlets",
+        "defenses": {
+            "physical": 2.9,
+            "slash": 2.9,
+            "strike": 2.3,
+            "pierce": 2.8,
+            "magic": 1.9,
+            "fire": 2.3,
+            "lightning": 1.6,
+            "holy": 1.9
+        },
+        "resistances": {
+            "scarletRot": 8,
+            "poison": 8,
+            "hemorrhage": 15,
+            "frostbite": 15,
+            "sleep": 6,
+            "madness": 6,
+            "deathBlight": 6
+        },
+        "poise": 4,
+        "weight": 2.9
+    },
+    "messmers-gauntlets": {
+        "id": "messmers-gauntlets",
+        "name": "Messmer's Gauntlets",
+        "defenses": {
+            "physical": 2.3,
+            "slash": 2.1,
+            "strike": 2.3,
+            "pierce": 2.7,
+            "magic": 2.5,
+            "fire": 3.1,
+            "lightning": 2.9,
+            "holy": 2.5
+        },
+        "resistances": {
+            "scarletRot": 20,
+            "poison": 20,
+            "hemorrhage": 14,
+            "frostbite": 14,
+            "sleep": 19,
+            "madness": 19,
+            "deathBlight": 20
+        },
+        "poise": 3,
+        "weight": 2.8
+    },
+    "mushroom-arms": {
+        "id": "mushroom-arms",
+        "name": "Mushroom Arms",
+        "defenses": {
+            "physical": 1.5,
+            "slash": 0.6,
+            "strike": 1.7,
+            "pierce": 1.3,
+            "magic": 3.3,
+            "fire": 1.3,
+            "lightning": 3.2,
+            "holy": 3.2
+        },
+        "resistances": {
+            "scarletRot": 34,
+            "poison": 34,
+            "hemorrhage": 8,
+            "frostbite": 8,
+            "sleep": 30,
+            "madness": 30,
+            "deathBlight": 25
+        },
+        "poise": 1,
+        "weight": 1.7
+    },
+    "nights-cavalry-gauntlets": {
+        "id": "nights-cavalry-gauntlets",
+        "name": "Night's Cavalry Gauntlets",
+        "defenses": {
+            "physical": 3.5,
+            "slash": 3.5,
+            "strike": 3.2,
+            "pierce": 3.3,
+            "magic": 2.7,
+            "fire": 3.1,
+            "lightning": 2.7,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 13,
+            "poison": 13,
+            "hemorrhage": 19,
+            "frostbite": 19,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 8
+        },
+        "poise": 5,
+        "weight": 4.3
+    },
+    "nobles-gloves": {
+        "id": "nobles-gloves",
+        "name": "Noble's Gloves",
+        "defenses": {
+            "physical": 1.5,
+            "slash": 1.5,
+            "strike": 1.6,
+            "pierce": 1.6,
+            "magic": 3.3,
+            "fire": 3.3,
+            "lightning": 3.2,
+            "holy": 3.3
+        },
+        "resistances": {
+            "scarletRot": 15,
+            "poison": 15,
+            "hemorrhage": 8,
+            "frostbite": 8,
+            "sleep": 25,
+            "madness": 25,
+            "deathBlight": 28
+        },
+        "poise": 2,
+        "weight": 2.1
+    },
+    "nox-bracelets": {
+        "id": "nox-bracelets",
+        "name": "Nox Bracelets",
+        "defenses": {
+            "physical": 2.1,
+            "slash": 2.1,
+            "strike": 2.3,
+            "pierce": 1.9,
+            "magic": 2.9,
+            "fire": 2.8,
+            "lightning": 2.8,
+            "holy": 2.3
+        },
+        "resistances": {
+            "scarletRot": 20,
+            "poison": 20,
+            "hemorrhage": 13,
+            "frostbite": 13,
+            "sleep": 15,
+            "madness": 15,
+            "deathBlight": 15
+        },
+        "poise": 3,
+        "weight": 2.6
+    },
+    "oathseeker-knight-gauntlets": {
+        "id": "oathseeker-knight-gauntlets",
+        "name": "Oathseeker Knight Gauntlets",
+        "defenses": {
+            "physical": 3.2,
+            "slash": 3.1,
+            "strike": 2.8,
+            "pierce": 2.9,
+            "magic": 2.7,
+            "fire": 2.5,
+            "lightning": 1.7,
+            "holy": 2.5
+        },
+        "resistances": {
+            "scarletRot": 11,
+            "poison": 11,
+            "hemorrhage": 19,
+            "frostbite": 19,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 8
+        },
+        "poise": 4,
+        "weight": 3.5
+    },
+    "omen-gauntlets": {
+        "id": "omen-gauntlets",
+        "name": "Omen Gauntlets",
+        "defenses": {
+            "physical": 4.6,
+            "slash": 4.7,
+            "strike": 3.7,
+            "pierce": 4.7,
+            "magic": 3.2,
+            "fire": 3.6,
+            "lightning": 3.7,
+            "holy": 3.4
+        },
+        "resistances": {
+            "scarletRot": 22,
+            "poison": 22,
+            "hemorrhage": 21,
+            "frostbite": 21,
+            "sleep": 19,
+            "madness": 19,
+            "deathBlight": 25
+        },
+        "poise": 9,
+        "weight": 7.7
+    },
+    "omenkiller-long-gloves": {
+        "id": "omenkiller-long-gloves",
+        "name": "Omenkiller Long Gloves",
+        "defenses": {
+            "physical": 2.1,
+            "slash": 1.7,
+            "strike": 1.9,
+            "pierce": 1.7,
+            "magic": 2.1,
+            "fire": 2.3,
+            "lightning": 2.8,
+            "holy": 2.5
+        },
+        "resistances": {
+            "scarletRot": 22,
+            "poison": 22,
+            "hemorrhage": 9,
+            "frostbite": 9,
+            "sleep": 15,
+            "madness": 15,
+            "deathBlight": 15
+        },
+        "poise": 3,
+        "weight": 2.4
+    },
+    "perfumer-gloves": {
+        "id": "perfumer-gloves",
+        "name": "Perfumer Gloves",
+        "defenses": {
+            "physical": 1.0,
+            "slash": 1.3,
+            "strike": 1.5,
+            "pierce": 1.0,
+            "magic": 3.2,
+            "fire": 2.9,
+            "lightning": 3.1,
+            "holy": 3.2
+        },
+        "resistances": {
+            "scarletRot": 20,
+            "poison": 20,
+            "hemorrhage": 6,
+            "frostbite": 6,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 22
+        },
+        "poise": 2,
+        "weight": 1.4
+    },
+    "preceptors-gloves": {
+        "id": "preceptors-gloves",
+        "name": "Preceptor's Gloves",
+        "defenses": {
+            "physical": 1.5,
+            "slash": 1.5,
+            "strike": 1.6,
+            "pierce": 1.5,
+            "magic": 3.6,
+            "fire": 3.3,
+            "lightning": 3.2,
+            "holy": 3.2
+        },
+        "resistances": {
+            "scarletRot": 17,
+            "poison": 17,
+            "hemorrhage": 8,
+            "frostbite": 8,
+            "sleep": 28,
+            "madness": 28,
+            "deathBlight": 25
+        },
+        "poise": 3,
+        "weight": 2.1
+    },
+    "queens-bracelets": {
+        "id": "queens-bracelets",
+        "name": "Queen's Bracelets",
+        "defenses": {
+            "physical": 1.5,
+            "slash": 1.3,
+            "strike": 1.3,
+            "pierce": 1.0,
+            "magic": 3.4,
+            "fire": 3.1,
+            "lightning": 3.2,
+            "holy": 3.3
+        },
+        "resistances": {
+            "scarletRot": 14,
+            "poison": 14,
+            "hemorrhage": 8,
+            "frostbite": 8,
+            "sleep": 24,
+            "madness": 24,
+            "deathBlight": 28
+        },
+        "poise": 2,
+        "weight": 1.7
+    },
+    "radahn-soldier-gauntlets": {
+        "id": "radahn-soldier-gauntlets",
+        "name": "Radahn Soldier Gauntlets",
+        "defenses": {
+            "physical": 3.3,
+            "slash": 3.1,
+            "strike": 2.7,
+            "pierce": 2.9,
+            "magic": 2.5,
+            "fire": 2.8,
+            "lightning": 1.9,
+            "holy": 2.3
+        },
+        "resistances": {
+            "scarletRot": 11,
+            "poison": 11,
+            "hemorrhage": 17,
+            "frostbite": 17,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 8
+        },
+        "poise": 5,
+        "weight": 3.5
+    },
+    "radahns-gauntlets": {
+        "id": "radahns-gauntlets",
+        "name": "Radahn's Gauntlets",
+        "defenses": {
+            "physical": 4.7,
+            "slash": 4.6,
+            "strike": 3.7,
+            "pierce": 4.4,
+            "magic": 3.3,
+            "fire": 3.5,
+            "lightning": 3.1,
+            "holy": 3.3
+        },
+        "resistances": {
+            "scarletRot": 20,
+            "poison": 20,
+            "hemorrhage": 33,
+            "frostbite": 33,
+            "sleep": 14,
+            "madness": 14,
+            "deathBlight": 13
+        },
+        "poise": 7,
+        "weight": 5.8
+    },
+    "raging-wolf-gauntlets": {
+        "id": "raging-wolf-gauntlets",
+        "name": "Raging Wolf Gauntlets",
+        "defenses": {
+            "physical": 3.2,
+            "slash": 3.2,
+            "strike": 2.8,
+            "pierce": 3.1,
+            "magic": 2.4,
+            "fire": 2.7,
+            "lightning": 1.6,
+            "holy": 2.2
+        },
+        "resistances": {
+            "scarletRot": 11,
+            "poison": 11,
+            "hemorrhage": 19,
+            "frostbite": 19,
+            "sleep": 6,
+            "madness": 6,
+            "deathBlight": 6
+        },
+        "poise": 4,
+        "weight": 3.4
+    },
+    "rakshasa-gauntlets": {
+        "id": "rakshasa-gauntlets",
+        "name": "Rakshasa Gauntlets",
+        "defenses": {
+            "physical": 3.2,
+            "slash": 3.5,
+            "strike": 2.9,
+            "pierce": 3.3,
+            "magic": 2.8,
+            "fire": 3.1,
+            "lightning": 2.7,
+            "holy": 2.8
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 20,
+            "frostbite": 20,
+            "sleep": 9,
+            "madness": 9,
+            "deathBlight": 9
+        },
+        "poise": 6,
+        "weight": 4.3
+    },
+    "raya-lucarian-gauntlets": {
+        "id": "raya-lucarian-gauntlets",
+        "name": "Raya Lucarian Gauntlets",
+        "defenses": {
+            "physical": 3.2,
+            "slash": 3.3,
+            "strike": 2.7,
+            "pierce": 3.2,
+            "magic": 2.7,
+            "fire": 2.7,
+            "lightning": 1.7,
+            "holy": 2.1
+        },
+        "resistances": {
+            "scarletRot": 11,
+            "poison": 11,
+            "hemorrhage": 18,
+            "frostbite": 18,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 8
+        },
+        "poise": 5,
+        "weight": 3.5
+    },
+    "redmane-knight-gauntlets": {
+        "id": "redmane-knight-gauntlets",
+        "name": "Redmane Knight Gauntlets",
+        "defenses": {
+            "physical": 3.5,
+            "slash": 3.3,
+            "strike": 2.8,
+            "pierce": 3.1,
+            "magic": 2.7,
+            "fire": 3.1,
+            "lightning": 2.3,
+            "holy": 2.7
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 18,
+            "frostbite": 18,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 8
+        },
+        "poise": 5,
+        "weight": 3.9
+    },
+    "rellanas-gloves": {
+        "id": "rellanas-gloves",
+        "name": "Rellana's Gloves",
+        "defenses": {
+            "physical": 3.3,
+            "slash": 3.5,
+            "strike": 2.9,
+            "pierce": 3.2,
+            "magic": 3.1,
+            "fire": 2.9,
+            "lightning": 2.3,
+            "holy": 2.7
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 19,
+            "frostbite": 19,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 8
+        },
+        "poise": 5,
+        "weight": 3.9
+    },
+    "ronins-gauntlets": {
+        "id": "ronins-gauntlets",
+        "name": "Ronin's Gauntlets",
+        "defenses": {
+            "physical": 2.7,
+            "slash": 2.8,
+            "strike": 2.7,
+            "pierce": 2.7,
+            "magic": 2.9,
+            "fire": 3.1,
+            "lightning": 3.2,
+            "holy": 2.9
+        },
+        "resistances": {
+            "scarletRot": 25,
+            "poison": 25,
+            "hemorrhage": 19,
+            "frostbite": 19,
+            "sleep": 20,
+            "madness": 20,
+            "deathBlight": 21
+        },
+        "poise": 4,
+        "weight": 3.1
+    },
+    "royal-knight-gauntlets": {
+        "id": "royal-knight-gauntlets",
+        "name": "Royal Knight Gauntlets",
+        "defenses": {
+            "physical": 4.0,
+            "slash": 4.4,
+            "strike": 3.6,
+            "pierce": 4.2,
+            "magic": 3.5,
+            "fire": 3.3,
+            "lightning": 3.1,
+            "holy": 3.2
+        },
+        "resistances": {
+            "scarletRot": 17,
+            "poison": 17,
+            "hemorrhage": 22,
+            "frostbite": 22,
+            "sleep": 12,
+            "madness": 12,
+            "deathBlight": 12
+        },
+        "poise": 6,
+        "weight": 5.2
+    },
+    "royal-remains-gauntlets": {
+        "id": "royal-remains-gauntlets",
+        "name": "Royal Remains Gauntlets",
+        "defenses": {
+            "physical": 2.9,
+            "slash": 3.2,
+            "strike": 2.8,
+            "pierce": 2.9,
+            "magic": 2.3,
+            "fire": 2.5,
+            "lightning": 1.9,
+            "holy": 2.1
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 19,
+            "frostbite": 19,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 4
+        },
+        "poise": 4,
+        "weight": 3.5
+    },
+    "scaled-gauntlets": {
+        "id": "scaled-gauntlets",
+        "name": "Scaled Gauntlets",
+        "defenses": {
+            "physical": 4.0,
+            "slash": 4.2,
+            "strike": 3.4,
+            "pierce": 4.0,
+            "magic": 3.3,
+            "fire": 3.5,
+            "lightning": 3.2,
+            "holy": 3.3
+        },
+        "resistances": {
+            "scarletRot": 19,
+            "poison": 19,
+            "hemorrhage": 28,
+            "frostbite": 28,
+            "sleep": 13,
+            "madness": 13,
+            "deathBlight": 13
+        },
+        "poise": 7,
+        "weight": 5.3
+    },
+    "shadow-militiaman-gauntlets": {
+        "id": "shadow-militiaman-gauntlets",
+        "name": "Shadow Militiaman Gauntlets",
+        "defenses": {
+            "physical": 1.7,
+            "slash": 1.9,
+            "strike": 2.1,
+            "pierce": 1.9,
+            "magic": 2.5,
+            "fire": 2.7,
+            "lightning": 2.7,
+            "holy": 2.1
+        },
+        "resistances": {
+            "scarletRot": 25,
+            "poison": 25,
+            "hemorrhage": 11,
+            "frostbite": 11,
+            "sleep": 14,
+            "madness": 14,
+            "deathBlight": 14
+        },
+        "poise": 3,
+        "weight": 2.4
+    },
+    "sorcerer-manchettes": {
+        "id": "sorcerer-manchettes",
+        "name": "Sorcerer Manchettes",
+        "defenses": {
+            "physical": 1.0,
+            "slash": 1.3,
+            "strike": 1.3,
+            "pierce": 0.1,
+            "magic": 3.2,
+            "fire": 3.1,
+            "lightning": 2.9,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 13,
+            "poison": 13,
+            "hemorrhage": 4,
+            "frostbite": 4,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 20
+        },
+        "poise": 1,
+        "weight": 1.1
+    },
+    "spellblades-gloves": {
+        "id": "spellblades-gloves",
+        "name": "Spellblade's Gloves",
+        "defenses": {
+            "physical": 0.9,
+            "slash": 0.9,
+            "strike": 0.5,
+            "pierce": 0.9,
+            "magic": 3.1,
+            "fire": 2.7,
+            "lightning": 2.8,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 11,
+            "poison": 11,
+            "hemorrhage": 6,
+            "frostbite": 6,
+            "sleep": 19,
+            "madness": 19,
+            "deathBlight": 20
+        },
+        "poise": 1,
+        "weight": 1.2
+    },
+    "thiolliers-gloves": {
+        "id": "thiolliers-gloves",
+        "name": "Thiollier's Gloves",
+        "defenses": {
+            "physical": 2.1,
+            "slash": 1.7,
+            "strike": 2.1,
+            "pierce": 1.7,
+            "magic": 1.9,
+            "fire": 2.3,
+            "lightning": 2.7,
+            "holy": 2.5
+        },
+        "resistances": {
+            "scarletRot": 24,
+            "poison": 24,
+            "hemorrhage": 9,
+            "frostbite": 9,
+            "sleep": 21,
+            "madness": 21,
+            "deathBlight": 13
+        },
+        "poise": 3,
+        "weight": 2.4
+    },
+    "travelers-gloves": {
+        "id": "travelers-gloves",
+        "name": "Traveler's Gloves",
+        "defenses": {
+            "physical": 1.3,
+            "slash": 1.0,
+            "strike": 1.3,
+            "pierce": 0.6,
+            "magic": 3.2,
+            "fire": 3.2,
+            "lightning": 3.1,
+            "holy": 3.2
+        },
+        "resistances": {
+            "scarletRot": 18,
+            "poison": 18,
+            "hemorrhage": 7,
+            "frostbite": 7,
+            "sleep": 22,
+            "madness": 22,
+            "deathBlight": 21
+        },
+        "poise": 2,
+        "weight": 1.4
+    },
+    "travelers-manchettes": {
+        "id": "travelers-manchettes",
+        "name": "Traveler's Manchettes",
+        "defenses": {
+            "physical": 1.6,
+            "slash": 1.3,
+            "strike": 1.5,
+            "pierce": 1.0,
+            "magic": 3.3,
+            "fire": 3.2,
+            "lightning": 3.2,
+            "holy": 3.1
+        },
+        "resistances": {
+            "scarletRot": 13,
+            "poison": 13,
+            "hemorrhage": 8,
+            "frostbite": 8,
+            "sleep": 25,
+            "madness": 25,
+            "deathBlight": 25
+        },
+        "poise": 2,
+        "weight": 1.7
+    },
+    "traveling-maiden-gloves": {
+        "id": "traveling-maiden-gloves",
+        "name": "Traveling Maiden Gloves",
+        "defenses": {
+            "physical": 1.3,
+            "slash": 1.5,
+            "strike": 1.5,
+            "pierce": 1.0,
+            "magic": 3.3,
+            "fire": 3.2,
+            "lightning": 3.2,
+            "holy": 3.3
+        },
+        "resistances": {
+            "scarletRot": 15,
+            "poison": 15,
+            "hemorrhage": 8,
+            "frostbite": 8,
+            "sleep": 25,
+            "madness": 25,
+            "deathBlight": 28
+        },
+        "poise": 2,
+        "weight": 1.6
+    },
+    "tree-sentinel-gauntlets": {
+        "id": "tree-sentinel-gauntlets",
+        "name": "Tree Sentinel Gauntlets",
+        "defenses": {
+            "physical": 4.7,
+            "slash": 4.7,
+            "strike": 3.7,
+            "pierce": 4.4,
+            "magic": 3.2,
+            "fire": 4.3,
+            "lightning": 3.1,
+            "holy": 3.5
+        },
+        "resistances": {
+            "scarletRot": 22,
+            "poison": 22,
+            "hemorrhage": 30,
+            "frostbite": 30,
+            "sleep": 14,
+            "madness": 14,
+            "deathBlight": 15
+        },
+        "poise": 8,
+        "weight": 6.3
+    },
+    "twinned-gauntlets": {
+        "id": "twinned-gauntlets",
+        "name": "Twinned Gauntlets",
+        "defenses": {
+            "physical": 3.3,
+            "slash": 3.6,
+            "strike": 3.1,
+            "pierce": 2.9,
+            "magic": 2.8,
+            "fire": 2.8,
+            "lightning": 2.1,
+            "holy": 2.5
+        },
+        "resistances": {
+            "scarletRot": 11,
+            "poison": 11,
+            "hemorrhage": 18,
+            "frostbite": 18,
+            "sleep": 7,
+            "madness": 7,
+            "deathBlight": 18
+        },
+        "poise": 5,
+        "weight": 3.9
+    },
+    "vagabond-knight-gauntlets": {
+        "id": "vagabond-knight-gauntlets",
+        "name": "Vagabond Knight Gauntlets",
+        "defenses": {
+            "physical": 3.3,
+            "slash": 3.1,
+            "strike": 2.8,
+            "pierce": 2.9,
+            "magic": 2.5,
+            "fire": 2.7,
+            "lightning": 2.1,
+            "holy": 2.1
+        },
+        "resistances": {
+            "scarletRot": 12,
+            "poison": 12,
+            "hemorrhage": 19,
+            "frostbite": 19,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 8
+        },
+        "poise": 5,
+        "weight": 3.5
+    },
+    "verdigris-gauntlets": {
+        "id": "verdigris-gauntlets",
+        "name": "Verdigris Gauntlets",
+        "defenses": {
+            "physical": 5.2,
+            "slash": 5.0,
+            "strike": 4.5,
+            "pierce": 4.7,
+            "magic": 3.3,
+            "fire": 3.3,
+            "lightning": 3.6,
+            "holy": 3.3
+        },
+        "resistances": {
+            "scarletRot": 30,
+            "poison": 30,
+            "hemorrhage": 36,
+            "frostbite": 36,
+            "sleep": 12,
+            "madness": 12,
+            "deathBlight": 17
+        },
+        "poise": 10,
+        "weight": 8.6
+    },
+    "veterans-gauntlets": {
+        "id": "veterans-gauntlets",
+        "name": "Veteran's Gauntlets",
+        "defenses": {
+            "physical": 4.7,
+            "slash": 4.7,
+            "strike": 4.3,
+            "pierce": 4.4,
+            "magic": 3.3,
+            "fire": 3.5,
+            "lightning": 3.2,
+            "holy": 3.3
+        },
+        "resistances": {
+            "scarletRot": 21,
+            "poison": 21,
+            "hemorrhage": 30,
+            "frostbite": 30,
+            "sleep": 15,
+            "madness": 15,
+            "deathBlight": 15
+        },
+        "poise": 8,
+        "weight": 6.3
+    },
+    "vulgar-militia-gauntlets": {
+        "id": "vulgar-militia-gauntlets",
+        "name": "Vulgar Militia Gauntlets",
+        "defenses": {
+            "physical": 1.7,
+            "slash": 1.9,
+            "strike": 2.1,
+            "pierce": 1.6,
+            "magic": 2.1,
+            "fire": 2.1,
+            "lightning": 2.3,
+            "holy": 2.1
+        },
+        "resistances": {
+            "scarletRot": 20,
+            "poison": 20,
+            "hemorrhage": 9,
+            "frostbite": 9,
+            "sleep": 14,
+            "madness": 14,
+            "deathBlight": 14
+        },
+        "poise": 3,
+        "weight": 2.1
+    },
+    "war-surgeon-gloves": {
+        "id": "war-surgeon-gloves",
+        "name": "War Surgeon Gloves",
+        "defenses": {
+            "physical": 1.6,
+            "slash": 2.0,
+            "strike": 1.8,
+            "pierce": 1.6,
+            "magic": 2.2,
+            "fire": 2.4,
+            "lightning": 2.6,
+            "holy": 2.4
+        },
+        "resistances": {
+            "scarletRot": 18,
+            "poison": 18,
+            "hemorrhage": 13,
+            "frostbite": 13,
+            "sleep": 15,
+            "madness": 15,
+            "deathBlight": 17
+        },
+        "poise": 3,
+        "weight": 2.3
+    },
+    "warrior-gauntlets": {
+        "id": "warrior-gauntlets",
+        "name": "Warrior Gauntlets",
+        "defenses": {
+            "physical": 2.3,
+            "slash": 1.9,
+            "strike": 2.3,
+            "pierce": 1.9,
+            "magic": 2.5,
+            "fire": 2.7,
+            "lightning": 2.9,
+            "holy": 2.3
+        },
+        "resistances": {
+            "scarletRot": 21,
+            "poison": 21,
+            "hemorrhage": 14,
+            "frostbite": 14,
+            "sleep": 17,
+            "madness": 17,
+            "deathBlight": 17
+        },
+        "poise": 3,
+        "weight": 2.6
+    },
+    "white-reed-gauntlets": {
+        "id": "white-reed-gauntlets",
+        "name": "White Reed Gauntlets",
+        "defenses": {
+            "physical": 2.3,
+            "slash": 2.8,
+            "strike": 2.5,
+            "pierce": 2.1,
+            "magic": 2.7,
+            "fire": 2.7,
+            "lightning": 2.9,
+            "holy": 2.5
+        },
+        "resistances": {
+            "scarletRot": 22,
+            "poison": 22,
+            "hemorrhage": 14,
+            "frostbite": 14,
+            "sleep": 18,
+            "madness": 18,
+            "deathBlight": 17
+        },
+        "poise": 4,
+        "weight": 2.8
+    },
+    "young-lions-gauntlets": {
+        "id": "young-lions-gauntlets",
+        "name": "Young Lion's Gauntlets",
+        "defenses": {
+            "physical": 4.2,
+            "slash": 4.2,
+            "strike": 3.6,
+            "pierce": 4.2,
+            "magic": 3.1,
+            "fire": 3.2,
+            "lightning": 2.8,
+            "holy": 3.2
+        },
+        "resistances": {
+            "scarletRot": 17,
+            "poison": 17,
+            "hemorrhage": 24,
+            "frostbite": 24,
+            "sleep": 8,
+            "madness": 8,
+            "deathBlight": 12
+        },
+        "poise": 7,
+        "weight": 5.0
+    },
+    "zamor-bracelets": {
+        "id": "zamor-bracelets",
+        "name": "Zamor Bracelets",
+        "defenses": {
+            "physical": 2.8,
+            "slash": 2.9,
+            "strike": 2.1,
+            "pierce": 2.5,
+            "magic": 1.9,
+            "fire": 1.9,
+            "lightning": 1.3,
+            "holy": 1.7
+        },
+        "resistances": {
+            "scarletRot": 6,
+            "poison": 6,
+            "hemorrhage": 20,
+            "frostbite": 20,
+            "sleep": 0,
+            "madness": 0,
+            "deathBlight": 4
+        },
+        "poise": 4,
+        "weight": 2.8
+    }
+}
