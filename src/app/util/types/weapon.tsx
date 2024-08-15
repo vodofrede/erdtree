@@ -1,4 +1,5 @@
 import { Stat } from "../interfaces/stat";
+import { Equippable } from "./equippable";
 
 interface WeaponInfusion {
     [key: string]: {
@@ -12,9 +13,7 @@ interface WeaponInfusion {
     };
 }
 
-export type Weapon = {
-    id: string;
-    name: string;
+export type Weapon = Equippable & {
     requirements: Stat;
     category: string;
     unique: boolean;
