@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -   refreshed website looks
 -   light mode colors fix
 -   split armor absorptions and resistances
+-   rewrote application with Next.js
 
 ### Deprecated
 
