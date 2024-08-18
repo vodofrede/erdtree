@@ -78,14 +78,14 @@
         "id": "albinauric-mask",
         "name": "Albinauric Mask",
         "stats": {
-            "vigor": 0,
-            "mind": 0,
-            "endurance": 0,
-            "strength": 0,
-            "dexterity": 0,
-            "intelligence": 0,
-            "faith": 0,
-            "arcane": 1
+            "VIG": 0,
+            "MND": 0,
+            "END": 0,
+            "STR": 0,
+            "DEX": 0,
+            "INT": 0,
+            "FTH": 0,
+            "ARC": 1
         },
         "defenses": {
             "physical": 4.0,
@@ -838,14 +838,14 @@
         "id": "circlet-of-light",
         "name": "Circlet of Light",
         "stats": {
-            "vigor": 0,
-            "mind": 0,
-            "endurance": 0,
-            "strength": 0,
-            "dexterity": 0,
-            "intelligence": 1,
-            "faith": 0,
-            "arcane": 1
+            "VIG": 0,
+            "MND": 0,
+            "END": 0,
+            "STR": 0,
+            "DEX": 0,
+            "INT": 1,
+            "FTH": 0,
+            "ARC": 1
         },
         "defenses": {
             "physical": 2.8,
@@ -1048,14 +1048,14 @@
         "id": "consorts-mask",
         "name": "Consort's Mask",
         "stats": {
-            "vigor": 0,
-            "mind": 0,
-            "endurance": 0,
-            "strength": 0,
-            "dexterity": 1,
-            "intelligence": 0,
-            "faith": 0,
-            "arcane": 0
+            "VIG": 0,
+            "MND": 0,
+            "END": 0,
+            "STR": 0,
+            "DEX": 1,
+            "INT": 0,
+            "FTH": 0,
+            "ARC": 0
         },
         "defenses": {
             "physical": 2.8,
@@ -1083,14 +1083,14 @@
         "id": "crimson-hood",
         "name": "Crimson Hood",
         "stats": {
-            "vigor": 1,
-            "mind": 0,
-            "endurance": 0,
-            "strength": 0,
-            "dexterity": 0,
-            "intelligence": 0,
-            "faith": 0,
-            "arcane": 0
+            "VIG": 1,
+            "MND": 0,
+            "END": 0,
+            "STR": 0,
+            "DEX": 0,
+            "INT": 0,
+            "FTH": 0,
+            "ARC": 0
         },
         "defenses": {
             "physical": 1.4,
@@ -1418,14 +1418,14 @@
         "id": "divine-beast-head",
         "name": "Divine Beast Head",
         "stats": {
-            "vigor": 0,
-            "mind": 0,
-            "endurance": 0,
-            "strength": 0,
-            "dexterity": 4,
-            "intelligence": 0,
-            "faith": 0,
-            "arcane": 0
+            "VIG": 0,
+            "MND": 0,
+            "END": 0,
+            "STR": 0,
+            "DEX": 4,
+            "INT": 0,
+            "FTH": 0,
+            "ARC": 0
         },
         "defenses": {
             "physical": 7.0,
@@ -2328,14 +2328,14 @@
         "id": "greathood",
         "name": "Greathood",
         "stats": {
-            "vigor": 0,
-            "mind": 0,
-            "endurance": 0,
-            "strength": 0,
-            "dexterity": 0,
-            "intelligence": 2,
-            "faith": 2,
-            "arcane": 0
+            "VIG": 0,
+            "MND": 0,
+            "END": 0,
+            "STR": 0,
+            "DEX": 0,
+            "INT": 2,
+            "FTH": 2,
+            "ARC": 0
         },
         "defenses": {
             "physical": 3.8,
@@ -2438,14 +2438,14 @@
         "id": "haima-glintstone-crown",
         "name": "Haima Glintstone Crown",
         "stats": {
-            "vigor": 0,
-            "mind": 0,
-            "endurance": 0,
-            "strength": 2,
-            "dexterity": 0,
-            "intelligence": 2,
-            "faith": 0,
-            "arcane": 0
+            "VIG": 0,
+            "MND": 0,
+            "END": 0,
+            "STR": 2,
+            "DEX": 0,
+            "INT": 2,
+            "FTH": 0,
+            "ARC": 0
         },
         "defenses": {
             "physical": 2.3,
@@ -2473,14 +2473,14 @@
         "id": "haligtree-helm",
         "name": "Haligtree Helm",
         "stats": {
-            "vigor": 0,
-            "mind": 0,
-            "endurance": 0,
-            "strength": 0,
-            "dexterity": 0,
-            "intelligence": 0,
-            "faith": 1,
-            "arcane": 0
+            "VIG": 0,
+            "MND": 0,
+            "END": 0,
+            "STR": 0,
+            "DEX": 0,
+            "INT": 0,
+            "FTH": 1,
+            "ARC": 0
         },
         "defenses": {
             "physical": 4.4,
@@ -2508,14 +2508,14 @@
         "id": "haligtree-knight-helm",
         "name": "Haligtree Knight Helm",
         "stats": {
-            "vigor": 0,
-            "mind": 0,
-            "endurance": 0,
-            "strength": 0,
-            "dexterity": 0,
-            "intelligence": 0,
-            "faith": 2,
-            "arcane": 0
+            "VIG": 0,
+            "MND": 0,
+            "END": 0,
+            "STR": 0,
+            "DEX": 0,
+            "INT": 0,
+            "FTH": 2,
+            "ARC": 0
         },
         "defenses": {
             "physical": 4.8,
@@ -2593,14 +2593,14 @@
         "id": "hierodas-glintstone-crown",
         "name": "Hierodas Glintstone Crown",
         "stats": {
-            "vigor": 0,
-            "mind": 0,
-            "endurance": 2,
-            "strength": 0,
-            "dexterity": 0,
-            "intelligence": 2,
-            "faith": 0,
-            "arcane": 0
+            "VIG": 0,
+            "MND": 0,
+            "END": 2,
+            "STR": 0,
+            "DEX": 0,
+            "INT": 2,
+            "FTH": 0,
+            "ARC": 0
         },
         "defenses": {
             "physical": 2.3,
@@ -2653,14 +2653,14 @@
         "id": "high-priest-hat",
         "name": "High Priest Hat",
         "stats": {
-            "vigor": 0,
-            "mind": 0,
-            "endurance": 0,
-            "strength": 0,
-            "dexterity": 0,
-            "intelligence": 1,
-            "faith": 0,
-            "arcane": 1
+            "VIG": 0,
+            "MND": 0,
+            "END": 0,
+            "STR": 0,
+            "DEX": 0,
+            "INT": 1,
+            "FTH": 0,
+            "ARC": 1
         },
         "defenses": {
             "physical": 1.8,
@@ -2838,14 +2838,14 @@
         "id": "imp-head-cat",
         "name": "Imp Head (Cat)",
         "stats": {
-            "vigor": 0,
-            "mind": 0,
-            "endurance": 0,
-            "strength": 0,
-            "dexterity": 0,
-            "intelligence": 2,
-            "faith": 0,
-            "arcane": 0
+            "VIG": 0,
+            "MND": 0,
+            "END": 0,
+            "STR": 0,
+            "DEX": 0,
+            "INT": 2,
+            "FTH": 0,
+            "ARC": 0
         },
         "defenses": {
             "physical": 5.8,
@@ -2873,14 +2873,14 @@
         "id": "imp-head-corpse",
         "name": "Imp Head (Corpse)",
         "stats": {
-            "vigor": 0,
-            "mind": 0,
-            "endurance": 0,
-            "strength": 0,
-            "dexterity": 0,
-            "intelligence": 0,
-            "faith": 2,
-            "arcane": 0
+            "VIG": 0,
+            "MND": 0,
+            "END": 0,
+            "STR": 0,
+            "DEX": 0,
+            "INT": 0,
+            "FTH": 2,
+            "ARC": 0
         },
         "defenses": {
             "physical": 5.8,
@@ -2908,14 +2908,14 @@
         "id": "imp-head-elder",
         "name": "Imp Head (Elder)",
         "stats": {
-            "vigor": 0,
-            "mind": 0,
-            "endurance": 0,
-            "strength": 0,
-            "dexterity": 0,
-            "intelligence": 0,
-            "faith": 0,
-            "arcane": 2
+            "VIG": 0,
+            "MND": 0,
+            "END": 0,
+            "STR": 0,
+            "DEX": 0,
+            "INT": 0,
+            "FTH": 0,
+            "ARC": 2
         },
         "defenses": {
             "physical": 5.8,
@@ -2943,14 +2943,14 @@
         "id": "imp-head-fanged",
         "name": "Imp Head (Fanged)",
         "stats": {
-            "vigor": 0,
-            "mind": 0,
-            "endurance": 0,
-            "strength": 2,
-            "dexterity": 0,
-            "intelligence": 0,
-            "faith": 0,
-            "arcane": 0
+            "VIG": 0,
+            "MND": 0,
+            "END": 0,
+            "STR": 2,
+            "DEX": 0,
+            "INT": 0,
+            "FTH": 0,
+            "ARC": 0
         },
         "defenses": {
             "physical": 5.8,
@@ -3003,14 +3003,14 @@
         "id": "imp-head-long-tongued",
         "name": "Imp Head (Long-Tongued)",
         "stats": {
-            "vigor": 0,
-            "mind": 0,
-            "endurance": 0,
-            "strength": 0,
-            "dexterity": 2,
-            "intelligence": 0,
-            "faith": 0,
-            "arcane": 0
+            "VIG": 0,
+            "MND": 0,
+            "END": 0,
+            "STR": 0,
+            "DEX": 2,
+            "INT": 0,
+            "FTH": 0,
+            "ARC": 0
         },
         "defenses": {
             "physical": 5.8,
@@ -3038,14 +3038,14 @@
         "id": "imp-head-wolf",
         "name": "Imp Head (Wolf)",
         "stats": {
-            "vigor": 0,
-            "mind": 0,
-            "endurance": 2,
-            "strength": 0,
-            "dexterity": 0,
-            "intelligence": 0,
-            "faith": 0,
-            "arcane": 0
+            "VIG": 0,
+            "MND": 0,
+            "END": 2,
+            "STR": 0,
+            "DEX": 0,
+            "INT": 0,
+            "FTH": 0,
+            "ARC": 0
         },
         "defenses": {
             "physical": 5.8,
@@ -3298,14 +3298,14 @@
         "id": "lazuli-glintstone-crown",
         "name": "Lazuli Glintstone Crown",
         "stats": {
-            "vigor": 0,
-            "mind": 0,
-            "endurance": 0,
-            "strength": 0,
-            "dexterity": 3,
-            "intelligence": 3,
-            "faith": 0,
-            "arcane": 0
+            "VIG": 0,
+            "MND": 0,
+            "END": 0,
+            "STR": 0,
+            "DEX": 3,
+            "INT": 3,
+            "FTH": 0,
+            "ARC": 0
         },
         "defenses": {
             "physical": 4.4,
@@ -3558,14 +3558,14 @@
         "id": "marais-mask",
         "name": "Marais Mask",
         "stats": {
-            "vigor": 0,
-            "mind": 0,
-            "endurance": 0,
-            "strength": 0,
-            "dexterity": 0,
-            "intelligence": 0,
-            "faith": 0,
-            "arcane": 1
+            "VIG": 0,
+            "MND": 0,
+            "END": 0,
+            "STR": 0,
+            "DEX": 0,
+            "INT": 0,
+            "FTH": 0,
+            "ARC": 1
         },
         "defenses": {
             "physical": 2.1,
@@ -3643,14 +3643,14 @@
         "id": "mask-of-confidence",
         "name": "Mask of Confidence",
         "stats": {
-            "vigor": 0,
-            "mind": 0,
-            "endurance": 0,
-            "strength": 0,
-            "dexterity": 0,
-            "intelligence": 0,
-            "faith": 0,
-            "arcane": 3
+            "VIG": 0,
+            "MND": 0,
+            "END": 0,
+            "STR": 0,
+            "DEX": 0,
+            "INT": 0,
+            "FTH": 0,
+            "ARC": 3
         },
         "defenses": {
             "physical": 2.3,
@@ -3803,14 +3803,14 @@
         "id": "navy-hood",
         "name": "Navy Hood",
         "stats": {
-            "vigor": 0,
-            "mind": 1,
-            "endurance": 0,
-            "strength": 0,
-            "dexterity": 0,
-            "intelligence": 0,
-            "faith": 0,
-            "arcane": 0
+            "VIG": 0,
+            "MND": 1,
+            "END": 0,
+            "STR": 0,
+            "DEX": 0,
+            "INT": 0,
+            "FTH": 0,
+            "ARC": 0
         },
         "defenses": {
             "physical": 1.4,
@@ -4113,14 +4113,14 @@
         "id": "okina-mask",
         "name": "Okina Mask",
         "stats": {
-            "vigor": 0,
-            "mind": 0,
-            "endurance": 0,
-            "strength": 0,
-            "dexterity": 3,
-            "intelligence": 0,
-            "faith": 0,
-            "arcane": 0
+            "VIG": 0,
+            "MND": 0,
+            "END": 0,
+            "STR": 0,
+            "DEX": 3,
+            "INT": 0,
+            "FTH": 0,
+            "ARC": 0
         },
         "defenses": {
             "physical": 3.4,
@@ -4173,14 +4173,14 @@
         "id": "olivinus-glintstone-crown",
         "name": "Olivinus Glintstone Crown",
         "stats": {
-            "vigor": 0,
-            "mind": 0,
-            "endurance": 0,
-            "strength": 0,
-            "dexterity": 0,
-            "intelligence": 3,
-            "faith": 0,
-            "arcane": 0
+            "VIG": 0,
+            "MND": 0,
+            "END": 0,
+            "STR": 0,
+            "DEX": 0,
+            "INT": 3,
+            "FTH": 0,
+            "ARC": 0
         },
         "defenses": {
             "physical": 4.4,
@@ -4233,14 +4233,14 @@
         "id": "omensmirk-mask",
         "name": "Omensmirk Mask",
         "stats": {
-            "vigor": 0,
-            "mind": 0,
-            "endurance": 0,
-            "strength": 2,
-            "dexterity": 0,
-            "intelligence": 0,
-            "faith": 0,
-            "arcane": 0
+            "VIG": 0,
+            "MND": 0,
+            "END": 0,
+            "STR": 2,
+            "DEX": 0,
+            "INT": 0,
+            "FTH": 0,
+            "ARC": 0
         },
         "defenses": {
             "physical": 3.1,
@@ -4343,14 +4343,14 @@
         "id": "preceptors-big-hat",
         "name": "Preceptor's Big Hat",
         "stats": {
-            "vigor": 0,
-            "mind": 3,
-            "endurance": 0,
-            "strength": 0,
-            "dexterity": 0,
-            "intelligence": 0,
-            "faith": 0,
-            "arcane": 0
+            "VIG": 0,
+            "MND": 3,
+            "END": 0,
+            "STR": 0,
+            "DEX": 0,
+            "INT": 0,
+            "FTH": 0,
+            "ARC": 0
         },
         "defenses": {
             "physical": 2.5,
@@ -4453,14 +4453,14 @@
         "id": "queens-crescent-crown",
         "name": "Queen's Crescent Crown",
         "stats": {
-            "vigor": 0,
-            "mind": 0,
-            "endurance": 0,
-            "strength": 0,
-            "dexterity": 0,
-            "intelligence": 3,
-            "faith": 0,
-            "arcane": 0
+            "VIG": 0,
+            "MND": 0,
+            "END": 0,
+            "STR": 0,
+            "DEX": 0,
+            "INT": 3,
+            "FTH": 0,
+            "ARC": 0
         },
         "defenses": {
             "physical": 2.1,
@@ -4763,14 +4763,14 @@
         "id": "rulers-mask",
         "name": "Ruler's Mask",
         "stats": {
-            "vigor": 0,
-            "mind": 0,
-            "endurance": 0,
-            "strength": 0,
-            "dexterity": 0,
-            "intelligence": 0,
-            "faith": 1,
-            "arcane": 0
+            "VIG": 0,
+            "MND": 0,
+            "END": 0,
+            "STR": 0,
+            "DEX": 0,
+            "INT": 0,
+            "FTH": 1,
+            "ARC": 0
         },
         "defenses": {
             "physical": 1.8,
@@ -4798,14 +4798,14 @@
         "id": "sacred-crown-helm",
         "name": "Sacred Crown Helm",
         "stats": {
-            "vigor": 0,
-            "mind": 0,
-            "endurance": 0,
-            "strength": 0,
-            "dexterity": 0,
-            "intelligence": 0,
-            "faith": 1,
-            "arcane": 0
+            "VIG": 0,
+            "MND": 0,
+            "END": 0,
+            "STR": 0,
+            "DEX": 0,
+            "INT": 0,
+            "FTH": 1,
+            "ARC": 0
         },
         "defenses": {
             "physical": 3.4,
@@ -4858,14 +4858,14 @@
         "id": "salzas-hood",
         "name": "Salza's Hood",
         "stats": {
-            "vigor": 0,
-            "mind": 0,
-            "endurance": 0,
-            "strength": 0,
-            "dexterity": 0,
-            "intelligence": 2,
-            "faith": 0,
-            "arcane": 0
+            "VIG": 0,
+            "MND": 0,
+            "END": 0,
+            "STR": 0,
+            "DEX": 0,
+            "INT": 2,
+            "FTH": 0,
+            "ARC": 0
         },
         "defenses": {
             "physical": 4.4,
@@ -4993,14 +4993,14 @@
         "id": "silver-tear-mask",
         "name": "Silver Tear Mask",
         "stats": {
-            "vigor": 0,
-            "mind": 0,
-            "endurance": 0,
-            "strength": 0,
-            "dexterity": 0,
-            "intelligence": 0,
-            "faith": 0,
-            "arcane": 8
+            "VIG": 0,
+            "MND": 0,
+            "END": 0,
+            "STR": 0,
+            "DEX": 0,
+            "INT": 0,
+            "FTH": 0,
+            "ARC": 8
         },
         "defenses": {
             "physical": 4.2,
@@ -5128,14 +5128,14 @@
         "id": "thiolliers-mask",
         "name": "Thiollier's Mask",
         "stats": {
-            "vigor": 0,
-            "mind": 0,
-            "endurance": 0,
-            "strength": 0,
-            "dexterity": 0,
-            "intelligence": 0,
-            "faith": 0,
-            "arcane": 3
+            "VIG": 0,
+            "MND": 0,
+            "END": 0,
+            "STR": 0,
+            "DEX": 0,
+            "INT": 0,
+            "FTH": 0,
+            "ARC": 3
         },
         "defenses": {
             "physical": 4.4,
@@ -5263,14 +5263,14 @@
         "id": "twinsage-glintstone-crown",
         "name": "Twinsage Glintstone Crown",
         "stats": {
-            "vigor": 0,
-            "mind": 0,
-            "endurance": 0,
-            "strength": 0,
-            "dexterity": 0,
-            "intelligence": 6,
-            "faith": 0,
-            "arcane": 0
+            "VIG": 0,
+            "MND": 0,
+            "END": 0,
+            "STR": 0,
+            "DEX": 0,
+            "INT": 6,
+            "FTH": 0,
+            "ARC": 0
         },
         "defenses": {
             "physical": 4.4,
@@ -5473,14 +5473,14 @@
         "id": "witchs-glintstone-crown",
         "name": "Witch's Glintstone Crown",
         "stats": {
-            "vigor": 0,
-            "mind": 0,
-            "endurance": 0,
-            "strength": 0,
-            "dexterity": 0,
-            "intelligence": 3,
-            "faith": 0,
-            "arcane": 3
+            "VIG": 0,
+            "MND": 0,
+            "END": 0,
+            "STR": 0,
+            "DEX": 0,
+            "INT": 3,
+            "FTH": 0,
+            "ARC": 3
         },
         "defenses": {
             "physical": 4.4,
