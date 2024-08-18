@@ -4,16 +4,6 @@
         "id": "crimson-amber-medallion",
         "name": "Crimson Amber Medallion",
         "weight": "0.3",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.06,
             "maxFp": 1.0,
@@ -25,16 +15,6 @@
         "id": "crimson-amber-medallion-+1",
         "name": "Crimson Amber Medallion +1",
         "weight": "0.3",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.07,
             "maxFp": 1.0,
@@ -46,16 +26,6 @@
         "id": "crimson-amber-medallion-+2",
         "name": "Crimson Amber Medallion +2",
         "weight": "0.3",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.08,
             "maxFp": 1.0,
@@ -67,16 +37,6 @@
         "id": "cerulean-amber-medallion",
         "name": "Cerulean Amber Medallion",
         "weight": "0.3",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.07,
@@ -88,16 +48,6 @@
         "id": "cerulean-amber-medallion-+1",
         "name": "Cerulean Amber Medallion +1",
         "weight": "0.3",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.09,
@@ -109,16 +59,6 @@
         "id": "cerulean-amber-medallion-+2",
         "name": "Cerulean Amber Medallion +2",
         "weight": "0.3",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.11,
@@ -130,16 +70,6 @@
         "id": "viridian-amber-medallion",
         "name": "Viridian Amber Medallion",
         "weight": "0.3",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -151,16 +81,6 @@
         "id": "viridian-amber-medallion-+1",
         "name": "Viridian Amber Medallion +1",
         "weight": "0.3",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -172,16 +92,6 @@
         "id": "viridian-amber-medallion-+2",
         "name": "Viridian Amber Medallion +2",
         "weight": "0.3",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -193,16 +103,6 @@
         "id": "arsenal-charm",
         "name": "Arsenal Charm",
         "weight": "1.5",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -214,16 +114,6 @@
         "id": "arsenal-charm-+1",
         "name": "Arsenal Charm +1",
         "weight": "1.5",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -235,16 +125,6 @@
         "id": "great-jars-arsenal",
         "name": "Great-Jar's Arsenal",
         "weight": "1.5",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -256,16 +136,6 @@
         "id": "erdtrees-favor",
         "name": "Erdtree's Favor",
         "weight": "1.5",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.03,
             "maxFp": 1.0,
@@ -277,16 +147,6 @@
         "id": "erdtrees-favor-+1",
         "name": "Erdtree's Favor +1",
         "weight": "1.5",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.035,
             "maxFp": 1.0,
@@ -298,16 +158,6 @@
         "id": "erdtrees-favor-+2",
         "name": "Erdtree's Favor +2",
         "weight": "1.5",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.04,
             "maxFp": 1.0,
@@ -445,16 +295,6 @@
         "id": "silver-scarab",
         "name": "Silver Scarab",
         "weight": "1.2",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -466,16 +306,6 @@
         "id": "gold-scarab",
         "name": "Gold Scarab",
         "weight": "1.2",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -487,16 +317,6 @@
         "id": "moon-of-nokstella",
         "name": "Moon of Nokstella",
         "weight": "0.8",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -508,16 +328,6 @@
         "id": "green-turtle-talisman",
         "name": "Green Turtle Talisman",
         "weight": "0.7",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -529,16 +339,6 @@
         "id": "stalwart-horn-charm",
         "name": "Stalwart Horn Charm",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -550,16 +350,6 @@
         "id": "stalwart-horn-charm-+1",
         "name": "Stalwart Horn Charm +1",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -571,16 +361,6 @@
         "id": "immunizing-horn-charm",
         "name": "Immunizing Horn Charm",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -592,16 +372,6 @@
         "id": "immunizing-horn-charm-+1",
         "name": "Immunizing Horn Charm +1",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -613,16 +383,6 @@
         "id": "clarifying-horn-charm",
         "name": "Clarifying Horn Charm",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -634,16 +394,6 @@
         "id": "clarifying-horn-charm-+1",
         "name": "Clarifying Horn Charm +1",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -655,16 +405,6 @@
         "id": "prince-of-deaths-pustule",
         "name": "Prince of Death's Pustule",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -676,16 +416,6 @@
         "id": "prince-of-deaths-cyst",
         "name": "Prince of Death's Cyst",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -697,16 +427,6 @@
         "id": "mottled-necklace",
         "name": "Mottled Necklace",
         "weight": "0.9",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -718,16 +438,6 @@
         "id": "mottled-necklace-+1",
         "name": "Mottled Necklace +1",
         "weight": "0.9",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -739,16 +449,6 @@
         "id": "bull-goats-talisman",
         "name": "Bull-Goat's Talisman",
         "weight": "0.5",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -802,16 +502,6 @@
         "id": "warrior-jar-shard",
         "name": "Warrior Jar Shard",
         "weight": "0.9",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -823,16 +513,6 @@
         "id": "shard-of-alexander",
         "name": "Shard of Alexander",
         "weight": "0.9",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -865,16 +545,6 @@
         "id": "magic-scorpion-charm",
         "name": "Magic Scorpion Charm",
         "weight": "0.8",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -886,16 +556,6 @@
         "id": "lightning-scorpion-charm",
         "name": "Lightning Scorpion Charm",
         "weight": "0.8",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -907,16 +567,6 @@
         "id": "fire-scorpion-charm",
         "name": "Fire Scorpion Charm",
         "weight": "0.8",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -928,16 +578,6 @@
         "id": "sacred-scorpion-charm",
         "name": "Sacred Scorpion Charm",
         "weight": "0.8",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -949,16 +589,6 @@
         "id": "red-feathered-branchsword",
         "name": "Red-Feathered Branchsword",
         "weight": "1.4",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -970,16 +600,6 @@
         "id": "ritual-sword-talisman",
         "name": "Ritual Sword Talisman",
         "weight": "0.9",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -991,16 +611,6 @@
         "id": "spear-talisman",
         "name": "Spear Talisman",
         "weight": "0.5",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1012,16 +622,6 @@
         "id": "hammer-talisman",
         "name": "Hammer Talisman",
         "weight": "0.9",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1033,16 +633,6 @@
         "id": "winged-sword-insignia",
         "name": "Winged Sword Insignia",
         "weight": "1.4",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1054,16 +644,6 @@
         "id": "rotten-winged-sword-insignia",
         "name": "Rotten Winged Sword Insignia",
         "weight": "1.4",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1075,16 +655,6 @@
         "id": "dagger-talisman",
         "name": "Dagger Talisman",
         "weight": "1.1",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1096,16 +666,6 @@
         "id": "arrows-reach-talisman",
         "name": "Arrow's Reach Talisman",
         "weight": "0.7",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1117,16 +677,6 @@
         "id": "blue-dancer-charm",
         "name": "Blue Dancer Charm",
         "weight": "0.9",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1138,16 +688,6 @@
         "id": "twinblade-talisman",
         "name": "Twinblade Talisman",
         "weight": "0.7",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1159,16 +699,6 @@
         "id": "axe-talisman",
         "name": "Axe Talisman",
         "weight": "0.8",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1180,16 +710,6 @@
         "id": "lance-talisman",
         "name": "Lance Talisman",
         "weight": "0.7",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1201,16 +721,6 @@
         "id": "arrows-sting-talisman",
         "name": "Arrow's Sting Talisman",
         "weight": "0.7",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1222,16 +732,6 @@
         "id": "lord-of-bloods-exultation",
         "name": "Lord of Blood's Exultation",
         "weight": "0.9",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1243,16 +743,6 @@
         "id": "kindred-of-rots-exultation",
         "name": "Kindred of Rot's Exultation",
         "weight": "0.9",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1264,16 +754,6 @@
         "id": "claw-talisman",
         "name": "Claw Talisman",
         "weight": "0.7",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1285,16 +765,6 @@
         "id": "roar-medallion",
         "name": "Roar Medallion",
         "weight": "0.7",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1306,16 +776,6 @@
         "id": "curved-sword-talisman",
         "name": "Curved Sword Talisman",
         "weight": "0.7",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1327,16 +787,6 @@
         "id": "companion-jar",
         "name": "Companion Jar",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1348,16 +798,6 @@
         "id": "perfumers-talisman",
         "name": "Perfumer's Talisman",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1369,16 +809,6 @@
         "id": "graven-school-talisman",
         "name": "Graven-School Talisman",
         "weight": "0.7",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1390,16 +820,6 @@
         "id": "graven-mass-talisman",
         "name": "Graven-Mass Talisman",
         "weight": "1",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1411,16 +831,6 @@
         "id": "faithfuls-canvas-talisman",
         "name": "Faithful's Canvas Talisman",
         "weight": "0.7",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1432,16 +842,6 @@
         "id": "flocks-canvas-talisman",
         "name": "Flock's Canvas Talisman",
         "weight": "1",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1453,16 +853,6 @@
         "id": "old-lords-talisman",
         "name": "Old Lord's Talisman",
         "weight": "0.5",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1474,16 +864,6 @@
         "id": "radagon-icon",
         "name": "Radagon Icon",
         "weight": "0.7",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1495,16 +875,6 @@
         "id": "primal-glintstone-blade",
         "name": "Primal Glintstone Blade",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 0.85,
             "maxFp": 1.0,
@@ -1516,16 +886,6 @@
         "id": "godfrey-icon",
         "name": "Godfrey Icon",
         "weight": "0.8",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1537,16 +897,6 @@
         "id": "dragoncrest-shield-talisman",
         "name": "Dragoncrest Shield Talisman",
         "weight": "0.8",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1558,16 +908,6 @@
         "id": "dragoncrest-shield-talisman-+1",
         "name": "Dragoncrest Shield Talisman +1",
         "weight": "0.8",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1579,16 +919,6 @@
         "id": "dragoncrest-shield-talisman-+2",
         "name": "Dragoncrest Shield Talisman +2",
         "weight": "0.8",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1600,16 +930,6 @@
         "id": "dragoncrest-greatshield-talisman",
         "name": "Dragoncrest Greatshield Talisman",
         "weight": "0.8",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1621,16 +941,6 @@
         "id": "spelldrake-talisman",
         "name": "Spelldrake Talisman",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1642,16 +952,6 @@
         "id": "spelldrake-talisman-+1",
         "name": "Spelldrake Talisman +1",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1663,16 +963,6 @@
         "id": "spelldrake-talisman-+2",
         "name": "Spelldrake Talisman +2",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1684,16 +974,6 @@
         "id": "flamedrake-talisman",
         "name": "Flamedrake Talisman",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1705,16 +985,6 @@
         "id": "flamedrake-talisman-+1",
         "name": "Flamedrake Talisman +1",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1726,16 +996,6 @@
         "id": "flamedrake-talisman-+2",
         "name": "Flamedrake Talisman +2",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1747,16 +1007,6 @@
         "id": "boltdrake-talisman",
         "name": "Boltdrake Talisman",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1768,16 +1018,6 @@
         "id": "boltdrake-talisman-+1",
         "name": "Boltdrake Talisman +1",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1789,16 +1029,6 @@
         "id": "boltdrake-talisman-+2",
         "name": "Boltdrake Talisman +2",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1810,16 +1040,6 @@
         "id": "haligdrake-talisman",
         "name": "Haligdrake Talisman",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1831,16 +1051,6 @@
         "id": "haligdrake-talisman-+1",
         "name": "Haligdrake Talisman +1",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1852,16 +1062,6 @@
         "id": "haligdrake-talisman-+2",
         "name": "Haligdrake Talisman +2",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1873,16 +1073,6 @@
         "id": "pearldrake-talisman",
         "name": "Pearldrake Talisman",
         "weight": "0.9",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1894,16 +1084,6 @@
         "id": "pearldrake-talisman-+1",
         "name": "Pearldrake Talisman +1",
         "weight": "0.9",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1915,16 +1095,6 @@
         "id": "pearldrake-talisman-+2",
         "name": "Pearldrake Talisman +2",
         "weight": "0.9",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1936,16 +1106,6 @@
         "id": "crucible-scale-talisman",
         "name": "Crucible Scale Talisman",
         "weight": "1.1",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1957,16 +1117,6 @@
         "id": "crucible-feather-talisman",
         "name": "Crucible Feather Talisman",
         "weight": "0.8",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1978,16 +1128,6 @@
         "id": "blue-feathered-branchsword",
         "name": "Blue-Feathered Branchsword",
         "weight": "1.1",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -1999,16 +1139,6 @@
         "id": "ritual-shield-talisman",
         "name": "Ritual Shield Talisman",
         "weight": "0.9",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2020,16 +1150,6 @@
         "id": "greatshield-talisman",
         "name": "Greatshield Talisman",
         "weight": "0.9",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2041,16 +1161,6 @@
         "id": "crucible-knot-talisman",
         "name": "Crucible Knot Talisman",
         "weight": "0.5",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2062,16 +1172,6 @@
         "id": "crimson-seed-talisman",
         "name": "Crimson Seed Talisman",
         "weight": "0.8",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2083,16 +1183,6 @@
         "id": "cerulean-seed-talisman",
         "name": "Cerulean Seed Talisman",
         "weight": "0.8",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2104,16 +1194,6 @@
         "id": "blessed-dew-talisman",
         "name": "Blessed Dew Talisman",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2125,16 +1205,6 @@
         "id": "takers-cameo",
         "name": "Taker's Cameo",
         "weight": "1",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2146,16 +1216,6 @@
         "id": "godskin-swaddling-cloth",
         "name": "Godskin Swaddling Cloth",
         "weight": "0.9",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2167,16 +1227,6 @@
         "id": "assassins-crimson-dagger",
         "name": "Assassin's Crimson Dagger",
         "weight": "0.8",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2188,16 +1238,6 @@
         "id": "assassins-cerulean-dagger",
         "name": "Assassin's Cerulean Dagger",
         "weight": "0.8",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2209,16 +1249,6 @@
         "id": "crepuss-vial",
         "name": "Crepus's Vial",
         "weight": "0.7",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2230,16 +1260,6 @@
         "id": "concealing-veil",
         "name": "Concealing Veil",
         "weight": "0.9",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2251,16 +1271,6 @@
         "id": "carian-filigreed-crest",
         "name": "Carian Filigreed Crest",
         "weight": "0.8",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2272,16 +1282,6 @@
         "id": "longtail-cat-talisman",
         "name": "Longtail Cat Talisman",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2293,16 +1293,6 @@
         "id": "shabriris-woe",
         "name": "Shabriri's Woe",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2314,16 +1304,6 @@
         "id": "daedicars-woe",
         "name": "Daedicar's Woe",
         "weight": "0.8",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2335,16 +1315,6 @@
         "id": "sacrificial-twig",
         "name": "Sacrificial Twig",
         "weight": "1",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2356,16 +1326,6 @@
         "id": "furled-fingers-trick-mirror",
         "name": "Furled Finger's Trick-Mirror",
         "weight": "0.7",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2377,16 +1337,6 @@
         "id": "hosts-trick-mirror",
         "name": "Host's Trick-Mirror",
         "weight": "0.7",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2398,16 +1348,6 @@
         "id": "entwining-umbilical-cord",
         "name": "Entwining Umbilical Cord",
         "weight": "0.5",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2419,16 +1359,6 @@
         "id": "ancestral-spirits-horne",
         "name": "Ancestral Spirit's Horne",
         "weight": "1.2",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2440,16 +1370,6 @@
         "id": "crimson-amber-medallion-+3",
         "name": "Crimson Amber Medallion +3",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.1,
             "maxFp": 1.0,
@@ -2461,16 +1381,6 @@
         "id": "cerulean-amber-medallion-+3",
         "name": "Cerulean Amber Medallion +3",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.13,
@@ -2482,16 +1392,6 @@
         "id": "viridian-amber-medallion-+3",
         "name": "Viridian Amber Medallion +3",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2503,16 +1403,6 @@
         "id": "two-headed-turtle-talisman",
         "name": "Two-Headed Turtle Talisman",
         "weight": "1",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2524,16 +1414,6 @@
         "id": "stalwart-horn-charm-+2",
         "name": "Stalwart Horn Charm +2",
         "weight": "0.9",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2545,16 +1425,6 @@
         "id": "immunizing-horn-charm-+2",
         "name": "Immunizing Horn Charm +2",
         "weight": "0.9",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2566,16 +1436,6 @@
         "id": "clarifying-horn-charm-+2",
         "name": "Clarifying Horn Charm +2",
         "weight": "0.9",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2587,16 +1447,6 @@
         "id": "mottled-necklace-+2",
         "name": "Mottled Necklace +2",
         "weight": "1.2",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2608,16 +1458,6 @@
         "id": "spelldrake-talisman-+3",
         "name": "Spelldrake Talisman +3",
         "weight": "0.9",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2629,16 +1469,6 @@
         "id": "flamedrake-talisman-+3",
         "name": "Flamedrake Talisman +3",
         "weight": "0.9",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2650,16 +1480,6 @@
         "id": "boltdrake-talisman-+3",
         "name": "Boltdrake Talisman +3",
         "weight": "0.9",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2671,16 +1491,6 @@
         "id": "golden-braid",
         "name": "Golden Braid",
         "weight": "0.9",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2692,16 +1502,6 @@
         "id": "pearldrake-talisman-+3",
         "name": "Pearldrake Talisman +3",
         "weight": "1.2",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2713,16 +1513,6 @@
         "id": "crimson-seed-talisman-+1",
         "name": "Crimson Seed Talisman +1",
         "weight": "1.1",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2734,16 +1524,6 @@
         "id": "cerulean-seed-talisman-+1",
         "name": "Cerulean Seed Talisman +1",
         "weight": "1.1",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2755,16 +1535,6 @@
         "id": "blessed-blue-dew-talisman",
         "name": "Blessed Blue Dew Talisman",
         "weight": "1.2",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2776,16 +1546,6 @@
         "id": "fine-crucible-feather-talisman",
         "name": "Fine Crucible Feather Talisman",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2818,16 +1578,6 @@
         "id": "shattered-stone-talisman",
         "name": "Shattered Stone Talisman",
         "weight": "0.8",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2839,16 +1589,6 @@
         "id": "two-handed-sword-talisman",
         "name": "Two-Handed Sword Talisman",
         "weight": "1.2",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2860,16 +1600,6 @@
         "id": "crusade-insignia",
         "name": "Crusade Insignia",
         "weight": "1.2",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2881,16 +1611,6 @@
         "id": "aged-ones-exultation",
         "name": "Aged One's Exultation",
         "weight": "0.9",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2902,16 +1622,6 @@
         "id": "arrows-soaring-sting-talisman",
         "name": "Arrow's Soaring Sting Talisman",
         "weight": "1.1",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2923,16 +1633,6 @@
         "id": "pearl-shield-talisman",
         "name": "Pearl Shield Talisman",
         "weight": "0.9",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2944,16 +1644,6 @@
         "id": "dried-bouquet",
         "name": "Dried Bouquet",
         "weight": "0.8",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2965,16 +1655,6 @@
         "id": "smithing-talisman",
         "name": "Smithing Talisman",
         "weight": "1.3",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -2986,16 +1666,6 @@
         "id": "ailment-talisman",
         "name": "Ailment Talisman",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -3007,16 +1677,6 @@
         "id": "retaliatory-crossed-tree",
         "name": "Retaliatory Crossed-Tree",
         "weight": "0.8",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -3028,16 +1688,6 @@
         "id": "lacerating-crossed-tree",
         "name": "Lacerating Crossed-Tree",
         "weight": "0.8",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -3049,16 +1699,6 @@
         "id": "sharpshot-talisman",
         "name": "Sharpshot Talisman",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -3070,16 +1710,6 @@
         "id": "st.-trinas-smile",
         "name": "St. Trina's Smile",
         "weight": "0.9",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -3091,16 +1721,6 @@
         "id": "talisman-of-the-dread",
         "name": "Talisman of the Dread",
         "weight": "0.6",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -3112,16 +1732,6 @@
         "id": "enraged-divine-beast",
         "name": "Enraged Divine Beast",
         "weight": "0.7",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -3133,16 +1743,6 @@
         "id": "beloved-stardust",
         "name": "Beloved Stardust",
         "weight": "1.3",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -3154,16 +1754,6 @@
         "id": "talisman-of-lords-bestowal",
         "name": "Talisman of Lord's Bestowal",
         "weight": "3",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -3175,16 +1765,6 @@
         "id": "verdigris-discus",
         "name": "Verdigris Discus",
         "weight": "4.5",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -3196,16 +1776,6 @@
         "id": "rellanas-cameo",
         "name": "Rellana's Cameo",
         "weight": "0.8",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -3217,16 +1787,6 @@
         "id": "blade-of-mercy",
         "name": "Blade of Mercy",
         "weight": "1.3",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
@@ -3238,16 +1798,6 @@
         "id": "talisman-of-all-crucibles",
         "name": "Talisman of All Crucibles",
         "weight": "1.9",
-        "stats": {
-            "VIG": 0,
-            "MND": 0,
-            "END": 0,
-            "STR": 0,
-            "DEX": 0,
-            "INT": 0,
-            "FTH": 0,
-            "ARC": 0
-        },
         "multipliers": {
             "maxHp": 1.0,
             "maxFp": 1.0,
