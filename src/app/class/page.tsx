@@ -1,180 +1,389 @@
 "use client";
 
-import { resetAll, update } from "./script";
+import { useEffect, useState } from "react";
+import { Stat } from "../util/interfaces/stat";
+import { Armor } from "../util/types/armor";
+import { Class } from "../util/types/class";
+import { Equippable } from "../util/types/equippable";
+import { Talisman } from "../util/types/talisman";
 
-export default function Class() {
+const CLASSES: Class[] = Object.values(require("../data/classes.json"));
+const TALISMANS: Talisman[] = (
+    Object.values(require("../data/talismans.json")) as Talisman[]
+).filter((value: Talisman) => value.stats != undefined);
+const HELMETS: Armor[] = (
+    Object.values(require("../data/helmets.json")) as Armor[]
+).filter((value: Armor) => value.stats != undefined || value.id == "no-helmet");
+const CHESTPIECES: Armor[] = (
+    Object.values(require("../data/chestpieces.json")) as Armor[]
+).filter(
+    (value: Armor) => value.stats != undefined || value.id == "no-chestpiece"
+);
+
+const STAT_LONG_NAMES = [
+    "Vigor",
+    "Mind",
+    "Endurance",
+    "Strength",
+    "Dexterity",
+    "Intelligence",
+    "Faith",
+    "Arcane",
+];
+const MUTUALLY_EXCLUSIVE_TALISMANS = [
+    ["radagons-scarseal", "radagons-soreseal"],
+    ["marikas-scarseal", "marikas-soreseal"],
+];
+
+export default function ClassPage() {
+    const [best, setBest] = useState<Class>(CLASSES[0]);
+    const [desiredStats, setDesiredStats] = useState<Stat>({
+        VIG: 0,
+        END: 0,
+        MND: 0,
+        STR: 0,
+        DEX: 0,
+        INT: 0,
+        FTH: 0,
+        ARC: 0,
+    });
+    const [finalStats, setFinalStats] = useState<Stat>({
+        VIG: 0,
+        END: 0,
+        MND: 0,
+        STR: 0,
+        DEX: 0,
+        INT: 0,
+        FTH: 0,
+        ARC: 0,
+    });
+    const [virtualStats, setVirtualStats] = useState<Stat>({
+        VIG: 0,
+        END: 0,
+        MND: 0,
+        STR: 0,
+        DEX: 0,
+        INT: 0,
+        FTH: 0,
+        ARC: 0,
+    });
+    const [sorted, setSorted] = useState<Class[]>(sortClasses());
+    const [equippedTalismans, setEquippedTalismans] = useState<Talisman[]>([]);
+    const [helmet, setHelmet] = useState<Armor>(HELMETS[0]);
+    const [chestpiece, setChestpiece] = useState<Armor>(CHESTPIECES[0]);
+    const [itemStats, setItemStats] = useState<Stat>({
+        VIG: 0,
+        END: 0,
+        MND: 0,
+        STR: 0,
+        DEX: 0,
+        INT: 0,
+        FTH: 0,
+        ARC: 0,
+    });
+
+    function updateDesiredStats(statId: string, value: number): void {
+        setDesiredStats({
+            ...desiredStats,
+            [statId]: Math.min(Math.max(value, 0), 99) || 0,
+        });
+    }
+
+    function updateEquippedTalismans(value: string, add: boolean): void {
+        setEquippedTalismans(
+            add
+                ? [...equippedTalismans, TALISMANS.find((t) => t.id === value)!]
+                : [...equippedTalismans.filter((t) => t.id !== value)]
+        );
+    }
+
+    function getItemStats(relevantItems: Equippable[]): Stat {
+        return relevantItems.reduce(
+            (total: Stat, item: Equippable) =>
+                Object.keys(total).reduce((acc: Stat, statId: string) => {
+                    acc[statId] += item?.stats ? item.stats[statId] : 0;
+                    return acc;
+                }, total),
+            {
+                VIG: 0,
+                END: 0,
+                MND: 0,
+                STR: 0,
+                DEX: 0,
+                INT: 0,
+                FTH: 0,
+                ARC: 0,
+            }
+        );
+    }
+
+    function delta(classStats: Stat): number {
+        return Object.keys(classStats)
+            .map((statId: string) =>
+                classStats[statId] < desiredStats[statId]
+                    ? desiredStats[statId] - classStats[statId]
+                    : 0
+            )
+            .reduce((total: number, n: number) => total + n);
+    }
+
+    function sortClasses(): Class[] {
+        return CLASSES.map((c: Class) => {
+            c.total = c.level + delta(c.stats);
+            return c;
+        }).sort((a: Class, b: Class) => a.total! - b.total!);
+    }
+
+    function isMutuallyExcluded(talismanId: string): boolean {
+        return MUTUALLY_EXCLUSIVE_TALISMANS.some((idGroup) =>
+            equippedTalismans.some(
+                (t) =>
+                    t.id != talismanId &&
+                    idGroup.includes(t.id) &&
+                    idGroup.includes(talismanId)
+            )
+        );
+    }
+
+    function resetAll() {
+        setDesiredStats({
+            VIG: 0,
+            END: 0,
+            MND: 0,
+            STR: 0,
+            DEX: 0,
+            INT: 0,
+            FTH: 0,
+            ARC: 0,
+        });
+        setEquippedTalismans([]);
+        setHelmet(HELMETS[0]);
+        setChestpiece(CHESTPIECES[0]);
+    }
+
+    useEffect(() => {
+        // calculate best class
+        setBest(sorted[0]);
+    }, [sorted]);
+
+    useEffect(() => {
+        // sort classes
+        setSorted(sortClasses());
+    }, [finalStats]);
+
+    useEffect(() => {
+        // calculate final stats
+        let tempFinal: Stat = {
+            VIG: 0,
+            END: 0,
+            MND: 0,
+            STR: 0,
+            DEX: 0,
+            INT: 0,
+            FTH: 0,
+            ARC: 0,
+        };
+        let tempVirtual: Stat = {
+            VIG: 0,
+            END: 0,
+            MND: 0,
+            STR: 0,
+            DEX: 0,
+            INT: 0,
+            FTH: 0,
+            ARC: 0,
+        };
+        Object.keys(desiredStats).forEach((statId: string) => {
+            {
+                tempFinal[statId] = Math.max(
+                    desiredStats[statId] - itemStats[statId],
+                    best?.stats[statId]
+                );
+                tempVirtual[statId] = Math.max(
+                    desiredStats[statId],
+                    best.stats![statId] + itemStats[statId]
+                );
+            }
+        });
+        setFinalStats(tempFinal);
+        setVirtualStats(tempVirtual);
+    }, [desiredStats, best, itemStats]);
+
+    useEffect(() => {
+        // get added stats from items
+        setItemStats(
+            getItemStats([
+                ...Object.values(equippedTalismans),
+                helmet,
+                chestpiece,
+            ])
+        );
+    }, [helmet, chestpiece, equippedTalismans]);
+
     return (
         <main>
             <div className="app">
                 <article>
                     <div>
                         <b>Class</b>
-                        <input id="best" type="text" disabled />
+                        <input
+                            id="best"
+                            type="text"
+                            value={best?.name}
+                            disabled
+                        />
                     </div>
                     <hr />
-                    <template id="class">
-                        <li>
-                            <span></span>
-                            <aside></aside>
-                        </li>
-                    </template>
                     <div>
-                        <ul id="classes"></ul>
+                        <ul id="classes">
+                            {sorted.map((cls: any) => (
+                                <li key={cls.id}>
+                                    <span>{cls.name}</span>
+                                    <aside>lvl. {cls.total}</aside>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
                 </article>
                 <article>
                     <div>
                         <b>Level</b>
                         <div>
-                            <input id="initial-level" type="number" disabled />
+                            <input
+                                id="initial-level"
+                                type="number"
+                                value={best?.level}
+                                disabled
+                            />
                             <input
                                 type="number"
                                 style={{ visibility: "hidden" }}
                                 disabled
                             />
-                            <input id="final-level" type="number" disabled />
-                            <input id="virtual-level" type="number" disabled />
+                            <input
+                                id="final-level"
+                                type="number"
+                                value={best.total || 1}
+                                disabled
+                            />
+                            <input
+                                type="number"
+                                style={{ visibility: "hidden" }}
+                                disabled
+                            />
                         </div>
                     </div>
                     <hr />
-                    <div>
-                        <label htmlFor="vigor">Vigor</label>
-                        <div>
-                            <input type="number" name="initial" disabled />
-                            <input
-                                id="vigor"
-                                type="number"
-                                name="total"
-                                min="0"
-                                max="99"
-                                onInput={update}
-                            />
-                            <input type="number" name="final" disabled />
-                            <input type="number" name="virtual" disabled />
-                        </div>
-                    </div>
-                    <div>
-                        <label htmlFor="mind">Mind</label>
-                        <div>
-                            <input type="number" name="initial" disabled />
-                            <input
-                                id="mind"
-                                type="number"
-                                name="total"
-                                min="0"
-                                max="99"
-                                onInput={update}
-                            />
-                            <input type="number" name="final" disabled />
-                            <input type="number" name="virtual" disabled />
-                        </div>
-                    </div>
-                    <div>
-                        <label htmlFor="endurance">Endurance</label>
-                        <div>
-                            <input type="number" name="initial" disabled />
-                            <input
-                                id="endurance"
-                                type="number"
-                                name="total"
-                                min="0"
-                                max="99"
-                                onInput={update}
-                            />
-                            <input type="number" name="final" disabled />
-                            <input type="number" name="virtual" disabled />
-                        </div>
-                    </div>
-                    <div>
-                        <label htmlFor="strength">Strength</label>
-                        <div>
-                            <input type="number" name="initial" disabled />
-                            <input
-                                id="strength"
-                                type="number"
-                                name="total"
-                                min="0"
-                                max="99"
-                                onInput={update}
-                            />
-                            <input type="number" name="final" disabled />
-                            <input type="number" name="virtual" disabled />
-                        </div>
-                    </div>
-                    <div>
-                        <label htmlFor="dexterity">Dexterity</label>
-                        <div>
-                            <input type="number" name="initial" disabled />
-                            <input
-                                id="dexterity"
-                                type="number"
-                                name="total"
-                                min="0"
-                                max="99"
-                                onInput={update}
-                            />
-                            <input type="number" name="final" disabled />
-                            <input type="number" name="virtual" disabled />
-                        </div>
-                    </div>
-                    <div>
-                        <label htmlFor="intelligence">Intelligence</label>
-                        <div>
-                            <input type="number" name="initial" disabled />
-                            <input
-                                id="intelligence"
-                                type="number"
-                                name="total"
-                                min="0"
-                                max="99"
-                                onInput={update}
-                            />
-                            <input type="number" name="final" disabled />
-                            <input type="number" name="virtual" disabled />
-                        </div>
-                    </div>
-                    <div>
-                        <label htmlFor="faith">Faith</label>
-                        <div>
-                            <input type="number" name="initial" disabled />
-                            <input
-                                id="faith"
-                                type="number"
-                                name="total"
-                                min="0"
-                                max="99"
-                                onInput={update}
-                            />
-                            <input type="number" name="final" disabled />
-                            <input type="number" name="virtual" disabled />
-                        </div>
-                    </div>
-                    <div>
-                        <label htmlFor="arcane">Arcane</label>
-                        <div>
-                            <input type="number" name="initial" disabled />
-                            <input
-                                id="arcane"
-                                type="number"
-                                name="total"
-                                min="0"
-                                max="99"
-                                onInput={update}
-                            />
-                            <input type="number" name="final" disabled />
-                            <input type="number" name="virtual" disabled />
-                        </div>
-                    </div>
+                    {Object.keys(desiredStats).map(
+                        (statId: string, i: number) => (
+                            <div key={statId}>
+                                <label htmlFor={statId}>
+                                    {STAT_LONG_NAMES[i]}
+                                </label>
+                                <div>
+                                    <input
+                                        type="number"
+                                        name="initial"
+                                        value={best.stats[statId]}
+                                        disabled
+                                    />
+                                    <input
+                                        id={statId}
+                                        type="number"
+                                        name="desired"
+                                        min={0}
+                                        max={99}
+                                        value={desiredStats[statId]}
+                                        onInput={(event) =>
+                                            updateDesiredStats(
+                                                statId,
+                                                event.currentTarget
+                                                    .valueAsNumber
+                                            )
+                                        }
+                                    />
+                                    <input
+                                        type="number"
+                                        name="final"
+                                        value={finalStats[statId]}
+                                        disabled
+                                    />
+                                    <input
+                                        type="number"
+                                        name="virtual"
+                                        value={virtualStats[statId]}
+                                        disabled
+                                    />
+                                </div>
+                            </div>
+                        )
+                    )}
                 </article>
                 <article>
                     <div>
                         <label>
                             <b>Helmet</b>
                         </label>
-                        <select id="helmet" name="equipment" onChange={update}>
-                            <option id="none" value="none">
-                                No Helmet
-                            </option>
+                        <select
+                            id="helmet"
+                            name="equipment"
+                            onChange={(event) =>
+                                setHelmet(
+                                    HELMETS.find(
+                                        (item) => item.id === event.target.value
+                                    )!
+                                )
+                            }
+                            value={helmet.id}
+                        >
+                            {HELMETS.map((item: Armor) => (
+                                <option key={item.id} value={item.id}>
+                                    {item.name}
+                                    {item.stats
+                                        ? Object.keys(item.stats).map(
+                                              (statId: string) =>
+                                                  item.stats![statId]
+                                                      ? " +" +
+                                                        item.stats![statId] +
+                                                        statId
+                                                      : null
+                                          )
+                                        : null}
+                                </option>
+                            ))}
+                        </select>
+                    </div>
+                    <div>
+                        <label>
+                            <b>Chestpiece</b>
+                        </label>
+                        <select
+                            id="chestpiece"
+                            name="equipment"
+                            onChange={(event) =>
+                                setChestpiece(
+                                    CHESTPIECES.find(
+                                        (item) => item.id === event.target.value
+                                    )!
+                                )
+                            }
+                            value={chestpiece.id}
+                        >
+                            {CHESTPIECES.map((item: Armor) => (
+                                <option key={item.id} value={item.id}>
+                                    {item.name}
+                                    {item.stats
+                                        ? Object.keys(item.stats).map(
+                                              (statId: string) =>
+                                                  item.stats![statId]
+                                                      ? " +" +
+                                                        item.stats![statId] +
+                                                        statId
+                                                      : null
+                                          )
+                                        : null}
+                                </option>
+                            ))}
                         </select>
                     </div>
                     <hr />
@@ -183,21 +392,45 @@ export default function Class() {
                     </div>
                     <div>
                         <ul id="talismans">
-                            <template id="talisman">
-                                <li>
+                            {TALISMANS.map((item: Talisman) => (
+                                <li key={item.id}>
                                     <div>
                                         <input
                                             name="talisman"
                                             type="checkbox"
-                                            onChange={update}
+                                            onChange={(event) =>
+                                                updateEquippedTalismans(
+                                                    item.id,
+                                                    event.target.checked
+                                                )
+                                            }
+                                            disabled={
+                                                isMutuallyExcluded(item.id) ||
+                                                (equippedTalismans.length >=
+                                                    4 &&
+                                                    !equippedTalismans.find(
+                                                        (t) => t?.id === item.id
+                                                    ))
+                                            }
+                                            checked={equippedTalismans.some(
+                                                (t) => t?.id === item.id
+                                            )}
                                         />
-                                        <label></label>
+                                        <label>{item.name}</label>
                                     </div>
-                                    <aside
-                                        style={{ fontSize: "0.8rem" }}
-                                    ></aside>
+                                    <aside style={{ fontSize: "0.8rem" }}>
+                                        {Object.keys(item.stats).map(
+                                            (statId: string) =>
+                                                item.stats![statId]
+                                                    ? "+" +
+                                                      item.stats![statId] +
+                                                      statId +
+                                                      " "
+                                                    : null
+                                        )}
+                                    </aside>
                                 </li>
-                            </template>
+                            ))}
                         </ul>
                     </div>
                     <div>
