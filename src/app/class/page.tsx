@@ -7,6 +7,7 @@ import { Class } from "../util/types/class";
 import { Equippable } from "../util/types/equippable";
 import { Talisman } from "../util/types/talisman";
 
+// GLOBAL CONSTANTS
 const CLASSES: Class[] = Object.values(require("../data/classes.json"));
 const TALISMANS: Talisman[] = (
     Object.values(require("../data/talismans.json")) as Talisman[]
@@ -19,7 +20,6 @@ const CHESTPIECES: Armor[] = (
 ).filter(
     (value: Armor) => value.stats != undefined || value.id == "no-chestpiece"
 );
-
 const STAT_LONG_NAMES = [
     "Vigor",
     "Mind",
@@ -36,6 +36,7 @@ const MUTUALLY_EXCLUSIVE_TALISMANS = [
 ];
 
 export default function ClassPage() {
+    // STATES
     const [best, setBest] = useState<Class>(CLASSES[0]);
     const [desiredStats, setDesiredStats] = useState<Stat>({
         VIG: 0,
@@ -82,6 +83,7 @@ export default function ClassPage() {
         ARC: 0,
     });
 
+    // STATE UPDATE FUNCTIONS
     function updateDesiredStats(statId: string, value: number): void {
         setDesiredStats({
             ...desiredStats,
@@ -97,6 +99,7 @@ export default function ClassPage() {
         );
     }
 
+    // FUNCTIONS
     function getItemStats(relevantItems: Equippable[]): Stat {
         return relevantItems.reduce(
             (total: Stat, item: Equippable) =>
@@ -161,6 +164,7 @@ export default function ClassPage() {
         setChestpiece(CHESTPIECES[0]);
     }
 
+    // EFFECTS
     useEffect(() => {
         // calculate best class
         setBest(sorted[0]);
@@ -220,6 +224,7 @@ export default function ClassPage() {
         );
     }, [helmet, chestpiece, equippedTalismans]);
 
+    // RENDER
     return (
         <main>
             <div className="app">

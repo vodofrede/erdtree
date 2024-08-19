@@ -8,12 +8,12 @@ import InputNumber from "./InputNumber";
 import InputRadio from "./InputRadio";
 import InputSelect from "./InputSelect";
 
+// GLOBAL CONSTANTS
+const HELMETS: Armor[] = Object.values(require("../data/helmets.json"));
+const CHESTPIECES: Armor[] = Object.values(require("../data/chestpieces.json"));
+const GAUNTLETS: Armor[] = Object.values(require("../data/gauntlets.json"));
+const LEGGINGS: Armor[] = Object.values(require("../data/leggings.json"));
 const ARMOR_RESULTS_SET_IDS = ["first", "second", "third", "fourth", "fifth"];
-
-let HELMETS: Armor[] = Object.values(require("../data/helmets.json"));
-let CHESTPIECES: Armor[] = Object.values(require("../data/chestpieces.json"));
-let GAUNTLETS: Armor[] = Object.values(require("../data/gauntlets.json"));
-let LEGGINGS: Armor[] = Object.values(require("../data/leggings.json"));
 
 export default function ArmorPage() {
     // STATES
@@ -40,13 +40,11 @@ export default function ArmorPage() {
             (item: Armor) => item == undefined || set.includes(item)
         ),
     ];
-
     const setWeight = (set: Set) =>
         (set.weight ??= set.reduce(
             (total: number, item: Armor) => total + item.weight,
             0
         ));
-
     const setFitness = (set: Set) => {
         if (!set.fitness) {
             set.fitness = set.reduce((total: number, item: Armor) => {
@@ -59,8 +57,7 @@ export default function ArmorPage() {
         return set.fitness;
     };
 
-    // FUNCTIONS
-
+    // STATE UPDATE FUNCTIONS
     function updateLockedItems(newItem: Armor, oldItem?: Armor): void {
         console.time("updateLockedItems");
         setLockedItems([...lockedItems.filter((i) => i !== oldItem), newItem]);
@@ -98,12 +95,7 @@ export default function ArmorPage() {
         console.timeEnd("add ignored item");
     }
 
-    function removeIgnoredItem(oldItem: Armor): void {
-        console.time("remove ignored item");
-        setIgnoredItems(ignoredItems.filter((i) => i !== oldItem));
-        console.timeEnd("remove ignored item");
-    }
-
+    // FUNCTIONS
     function dominated(itemList: Armor[]): Armor[] {
         if (lockedItems.some((item: Armor) => itemList.includes(item))) {
             return [itemList.find((item: any) => lockedItems.includes(item))!];
@@ -432,6 +424,7 @@ export default function ArmorPage() {
         console.timeEnd("update equip load budget");
     }, [maxEquipLoad, currentEquipLoad, breakpoint]);
 
+    // RENDER
     return (
         <div>
             <header>

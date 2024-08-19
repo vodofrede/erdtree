@@ -8,10 +8,10 @@ import { Infusion } from "../util/types/infusion";
 import { Weapon } from "../util/types/weapon";
 import { WeaponResultRow } from "./WeaponResultRow";
 
+// GLOBAL CONSTANTS
 const WEAPONS: Weapon[] = Object.values(require("../data/weapons.json"));
 const INFUSIONS: Infusion[] = Object.values(require("../data/infusions.json"));
 const CORRECTIONS: Correction[] = Object.values(require("../data/damage.json"));
-
 const INFUSION_NAMES: string[] = INFUSIONS.map((inf) => inf.name);
 const CATEGORY_NAMES: string[][] = [
     [
@@ -53,22 +53,22 @@ const CATEGORY_NAMES: string[][] = [
     ["Glintstone Staves", "Sacred Seals"],
 ];
 
+// INTERFACES
 interface Checkbox {
     [key: string]: boolean;
 }
-
 interface WeaponResult {
     weaponName: string;
     attackRatings: AttackRating;
     max: number;
 }
-
 interface SortBy {
     dmgType: string;
     desc: boolean;
 }
 
 export default function Weapons() {
+    // STATES
     const [results, setResults] = useState<WeaponResult[]>([]);
     const [stats, setStats] = useState<Stat>({
         STR: 10,
@@ -148,10 +148,12 @@ export default function Weapons() {
         "sacred-seal": false,
     });
 
+    // VARIABLES
     let infIndex = Object.values(INFUSIONS).findIndex(
         (inf) => inf.id == sortBy.dmgType
     );
 
+    // STATE UPDATE FUNCTIONS
     function updateStats(id: string, value: number) {
         setStats({
             ...stats,
@@ -276,6 +278,7 @@ export default function Weapons() {
         });
     }
 
+    // FUNCTIONS
     function corrections(
         calc: Correction,
         stats: Stat,
@@ -457,6 +460,7 @@ export default function Weapons() {
         );
     }
 
+    // EFFECTS
     useEffect(() => {
         infIndex = Object.values(INFUSIONS).findIndex(
             (inf) => inf.id == sortBy.dmgType
@@ -551,6 +555,7 @@ export default function Weapons() {
         sortBy,
     ]);
 
+    // RENDER
     return (
         <div>
             <header>
