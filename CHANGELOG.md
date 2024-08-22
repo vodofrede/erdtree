@@ -5,9 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.0.0] - 2024-08-18
+## [2.1.0] - 2024-08-18
 
 ### Added
+
+### Changed
+
+-   added ability to ignore armor
+-   split armor weight, poise, standard absorptions, and elemental absorptions into their own columns
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+## [2.0.0] - 2024-08-18
 
 ### Changed
 
@@ -16,15 +31,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -   split armor absorptions and resistances
 -   rewrote application with Next.js
 
-### Deprecated
-
-### Removed
-
 ### Fixed
 
 -   fixed throwing blades being called backhand blades in UI
-
-### Security
 
 ## [1.9.1] - 2024-06-06
 

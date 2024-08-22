@@ -241,8 +241,8 @@ export default function ArmorPage() {
     }
 
     function itemStatsToString(item: Armor): string[] {
-        let weight = item.weight.toFixed(1) + " Weight, ";
-        let poise = item.poise + " Poise, ";
+        let weight = item.weight.toFixed(1);
+        let poise = item.poise.toString();
         let standard =
             [
                 item.defenses.physical,
@@ -288,19 +288,10 @@ export default function ArmorPage() {
         );
 
         return [
-            weight +
-                poise +
-                standard +
-                physical +
-                strike +
-                slash +
-                pierce +
-                "\n" +
-                elemental +
-                magic +
-                fire +
-                lightning +
-                holy,
+            weight,
+            poise,
+            standard + physical + strike + slash + pierce,
+            elemental + magic + fire + lightning + holy,
             resistances,
         ];
     }
@@ -753,7 +744,7 @@ export default function ArmorPage() {
                                             itemStatsToString(item)
                                         )}
                                         setStats={setStatsToString(set)}
-                                        best={best}
+                                        // best={best}
                                         addIgnoredItem={set.map((item) => {
                                             return () => addIgnoredItem(item);
                                         })}
