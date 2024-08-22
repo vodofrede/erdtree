@@ -95,6 +95,12 @@ export default function ArmorPage() {
         console.timeEnd("add ignored item");
     }
 
+    function removeIgnoredItem(oldItem: Armor): void {
+        console.time("remove ignored item");
+        setIgnoredItems([...ignoredItems.filter((i) => i !== oldItem)]);
+        console.timeEnd("remove ignored item");
+    }
+
     // FUNCTIONS
     function dominated(itemList: Armor[]): Armor[] {
         if (lockedItems.some((item: Armor) => itemList.includes(item))) {
@@ -507,7 +513,7 @@ export default function ArmorPage() {
                             name="sorting-order"
                             checked={sortBy === "sort-standard"}
                         />
-                        {/* <InputRadio
+                        <InputRadio
                             label="Greatest Physical Absorption"
                             id="sort-physical"
                             onClick={() => updateSortBy("sort-physical")}
@@ -534,7 +540,7 @@ export default function ArmorPage() {
                             onClick={() => updateSortBy("sort-pierce")}
                             name="sorting-order"
                             checked={sortBy === "sort-pierce"}
-                        /> */}
+                        />
                         <InputRadio
                             label="Greatest Elemental Absorption"
                             id="sort-elemental"
@@ -542,7 +548,7 @@ export default function ArmorPage() {
                             name="sorting-order"
                             checked={sortBy === "sort-elemental"}
                         />
-                        {/* <InputRadio
+                        <InputRadio
                             label="Greatest Magic Absorption"
                             id="sort-magic"
                             onClick={() => updateSortBy("sort-magic")}
@@ -569,7 +575,7 @@ export default function ArmorPage() {
                             onClick={() => updateSortBy("sort-holy")}
                             name="sorting-order"
                             checked={sortBy === "sort-holy"}
-                        /> */}
+                        />
                         <InputRadio
                             label="Greatest Average Resistance"
                             id="sort-resistances"
@@ -577,7 +583,7 @@ export default function ArmorPage() {
                             name="sorting-order"
                             checked={sortBy === "sort-resistances"}
                         />
-                        {/* <InputRadio
+                        <InputRadio
                             label="Greatest Scarlet Rot Resistance"
                             id="sort-scarlet-rot"
                             onClick={() => updateSortBy("sort-scarlet-rot")}
@@ -625,7 +631,7 @@ export default function ArmorPage() {
                             onClick={() => updateSortBy("sort-death")}
                             name="sorting-order"
                             checked={sortBy === "sort-death"}
-                        /> */}
+                        />
                         <InputRadio
                             label="Greatest Poise"
                             id="sort-poise"
@@ -704,7 +710,7 @@ export default function ArmorPage() {
                                 Reset All
                             </button>
                         </div>
-                        {/* <hr />
+                        <hr />
                         <b>Ignored Armor</b>
                         <div>
                             <ul id="ignored-items">
@@ -726,7 +732,7 @@ export default function ArmorPage() {
                                     </li>
                                 ))}
                             </ul>
-                        </div> */}
+                        </div>
                     </article>
                     {/* <!-- sort --> */}
                     <article style={{ flexBasis: "60%", minWidth: "320px" }}>
