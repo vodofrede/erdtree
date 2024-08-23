@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { AttackRating } from "../util/interfaces/attackRating";
 import { Stat } from "../util/interfaces/stat";
@@ -147,11 +148,6 @@ export default function Weapons() {
         "glintstone-staff": false,
         "sacred-seal": false,
     });
-
-    // VARIABLES
-    let infIndex = Object.values(INFUSIONS).findIndex(
-        (inf) => inf.id == sortBy.dmgType
-    );
 
     // STATE UPDATE FUNCTIONS
     function updateStats(id: string, value: number) {
@@ -462,9 +458,6 @@ export default function Weapons() {
 
     // EFFECTS
     useEffect(() => {
-        infIndex = Object.values(INFUSIONS).findIndex(
-            (inf) => inf.id == sortBy.dmgType
-        );
         let filtered = WEAPONS.filter((weapon) => {
             // filter out weapons that don't fit the current parameters
             return (
@@ -793,9 +786,11 @@ export default function Weapons() {
                                             </b>
                                         </th>
                                         <th id="standard">
-                                            <img
+                                            <Image
                                                 src="/icons/standard.jpg"
                                                 style={{ maxWidth: "20px" }}
+                                                width={20}
+                                                height={20}
                                                 title="Standard"
                                                 alt="Standard"
                                                 onClick={() => {
@@ -813,9 +808,11 @@ export default function Weapons() {
                                             />
                                         </th>
                                         <th id="heavy">
-                                            <img
+                                            <Image
                                                 src="/icons/heavy.jpg"
                                                 style={{ maxWidth: "20px" }}
+                                                width={20}
+                                                height={20}
                                                 title="Heavy"
                                                 alt="Heavy"
                                                 onClick={() => {
@@ -832,9 +829,11 @@ export default function Weapons() {
                                             />
                                         </th>
                                         <th id="keen">
-                                            <img
+                                            <Image
                                                 src="/icons/keen.jpg"
                                                 style={{ maxWidth: "20px" }}
+                                                width={20}
+                                                height={20}
                                                 title="Keen"
                                                 alt="Keen"
                                                 onClick={() => {
@@ -851,9 +850,11 @@ export default function Weapons() {
                                             />
                                         </th>
                                         <th id="quality">
-                                            <img
+                                            <Image
                                                 src="/icons/quality.jpg"
                                                 style={{ maxWidth: "20px" }}
+                                                width={20}
+                                                height={20}
                                                 title="Quality"
                                                 alt="Quality"
                                                 onClick={() => {
@@ -871,9 +872,11 @@ export default function Weapons() {
                                             />
                                         </th>
                                         <th id="fire">
-                                            <img
+                                            <Image
                                                 src="/icons/fire.jpg"
                                                 style={{ maxWidth: "20px" }}
+                                                width={20}
+                                                height={20}
                                                 title="Fire"
                                                 alt="Fire"
                                                 onClick={() => {
@@ -890,9 +893,11 @@ export default function Weapons() {
                                             />
                                         </th>
                                         <th id="flame-art">
-                                            <img
+                                            <Image
                                                 src="/icons/flame-art.jpg"
                                                 style={{ maxWidth: "20px" }}
+                                                width={20}
+                                                height={20}
                                                 title="Flame Art"
                                                 alt="Flame Art"
                                                 onClick={() => {
@@ -911,9 +916,11 @@ export default function Weapons() {
                                             />
                                         </th>
                                         <th id="lightning">
-                                            <img
+                                            <Image
                                                 src="/icons/lightning.jpg"
                                                 style={{ maxWidth: "20px" }}
+                                                width={20}
+                                                height={20}
                                                 title="Lightning"
                                                 alt="Lightning"
                                                 onClick={() => {
@@ -932,9 +939,11 @@ export default function Weapons() {
                                             />
                                         </th>
                                         <th id="sacred">
-                                            <img
+                                            <Image
                                                 src="/icons/sacred.jpg"
                                                 style={{ maxWidth: "20px" }}
+                                                width={20}
+                                                height={20}
                                                 title="Sacred"
                                                 alt="Sacred"
                                                 onClick={() => {
@@ -951,9 +960,11 @@ export default function Weapons() {
                                             />
                                         </th>
                                         <th id="magic">
-                                            <img
+                                            <Image
                                                 src="/icons/magic.jpg"
                                                 style={{ maxWidth: "20px" }}
+                                                width={20}
+                                                height={20}
                                                 title="Magic"
                                                 alt="Magic"
                                                 onClick={() => {
@@ -970,9 +981,11 @@ export default function Weapons() {
                                             />
                                         </th>
                                         <th id="cold">
-                                            <img
+                                            <Image
                                                 src="/icons/cold.jpg"
                                                 style={{ maxWidth: "20px" }}
+                                                width={20}
+                                                height={20}
                                                 title="Cold"
                                                 alt="Cold"
                                                 onClick={() => {
@@ -989,9 +1002,11 @@ export default function Weapons() {
                                             />
                                         </th>
                                         <th id="poison">
-                                            <img
+                                            <Image
                                                 src="/icons/poison.jpg"
                                                 style={{ maxWidth: "20px" }}
+                                                width={20}
+                                                height={20}
                                                 title="Poison"
                                                 alt="Poison"
                                                 onClick={() => {
@@ -1008,9 +1023,11 @@ export default function Weapons() {
                                             />
                                         </th>
                                         <th id="blood">
-                                            <img
+                                            <Image
                                                 src="/icons/blood.jpg"
                                                 style={{ maxWidth: "20px" }}
+                                                width={20}
+                                                height={20}
                                                 title="Blood"
                                                 alt="Blood"
                                                 onClick={() => {
@@ -1027,9 +1044,11 @@ export default function Weapons() {
                                             />
                                         </th>
                                         <th id="occult">
-                                            <img
+                                            <Image
                                                 src="/icons/occult.jpg"
                                                 style={{ maxWidth: "20px" }}
+                                                width={20}
+                                                height={20}
                                                 title="Occult"
                                                 alt="Occult"
                                                 onClick={() => {
@@ -1051,7 +1070,7 @@ export default function Weapons() {
                                     {results
                                         .sort((a, b) => {
                                             // sort based on current sort order
-                                            if (infIndex == -1) {
+                                            if (sortBy.dmgType == "max") {
                                                 // sort by max
                                                 return sortBy.desc
                                                     ? b.max - a.max
@@ -1059,16 +1078,16 @@ export default function Weapons() {
                                             } else {
                                                 return sortBy.desc
                                                     ? b.attackRatings[
-                                                          infIndex
+                                                          sortBy.dmgType
                                                       ] -
                                                           a.attackRatings[
-                                                              infIndex
+                                                              sortBy.dmgType
                                                           ]
                                                     : a.attackRatings[
-                                                          infIndex
+                                                          sortBy.dmgType
                                                       ] -
                                                           b.attackRatings[
-                                                              infIndex
+                                                              sortBy.dmgType
                                                           ];
                                             }
                                         })

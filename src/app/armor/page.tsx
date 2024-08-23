@@ -196,12 +196,7 @@ export default function ArmorPage() {
         }
     }
 
-    function permutations([helmets, chestpieces, gauntlets, leggings]: [
-        Armor[],
-        Armor[],
-        Armor[],
-        Armor[]
-    ]): Set[] {
+    function permutations(): Set[] {
         return helmets.flatMap((h: Armor) => {
             return chestpieces.flatMap((c: Armor) => {
                 return gauntlets.flatMap((g: Armor) => {
@@ -398,7 +393,7 @@ export default function ArmorPage() {
     useEffect(() => {
         console.time("update");
         console.time("update selection");
-        setSelection(permutations([helmets, chestpieces, gauntlets, leggings]));
+        setSelection(permutations());
         console.timeEnd("update selection");
     }, [helmets, chestpieces, gauntlets, leggings, equipLoadBudget]);
 
