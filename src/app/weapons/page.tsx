@@ -1170,28 +1170,24 @@ export default function Weapons() {
                             on one-handed use
                         </li>
                         <li>
-                            {" "}
                             Usable one-handed: Calculates damage based on
                             two-handed use, but accounts for weapon being usable
-                            one-handed as well{" "}
+                            one-handed as well
                         </li>
                         <li>Two-handed: Self-explanatory</li>
                     </ol>
                     <p>
-                        {" "}
-                        This calculator currently doesn't take auxiliary damage
-                        procs (cold, bleed, scarlet rot and poison) into
-                        account. Therefore, it won't be very useful for finding
-                        weapons to use in a bleed build.{" "}
+                        This calculator currently doesn&apos;t take auxiliary
+                        damage procs (cold, bleed, scarlet rot and poison) into
+                        account. Therefore, it won&apos;t be very useful for
+                        finding weapons to use in a bleed build.
                     </p>
                     <p>
-                        {" "}
                         Catalysts (sacred seals and glintstone staffs) will show
-                        their <em>attack rating</em>, not their{" "}
-                        <em>spell scaling</em>.{" "}
+                        their <em>attack rating</em>, not their
+                        <em>spell scaling</em>.
                     </p>
                     <p>
-                        {" "}
                         The same holds true for shields, which are also sorted
                         based on <em>attack rating</em>
                     </p>

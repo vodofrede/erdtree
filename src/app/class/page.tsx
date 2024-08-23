@@ -452,19 +452,17 @@ export default function ClassPage() {
                         base level.
                     </li>
                     <li>
-                        {" "}
                         Desired stats. Here, you should input what the absolute
                         minimum stats for your build should be. Leave the input
-                        fields blank for stats you don't care about.{" "}
+                        fields blank for stats you don&apos;t care about.
                     </li>
                     <li>
                         Final stats. These are your characters stats as they
                         should appear on your level-up screen.
                     </li>
                     <li>
-                        {" "}
                         Virtual stats. These are your characters stats after
-                        talismans and helmet stat buffs are applied.{" "}
+                        talismans and helmet stat buffs are applied.
                     </li>
                 </ol>
             </div>
