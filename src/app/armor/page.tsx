@@ -478,11 +478,14 @@ export default function ArmorPage() {
                             label="Max. Equip Load"
                             className="stat"
                             id="max-equip-load"
-                            onChange={(event) =>
+                            onChange={(event) => {
+                                if (event.target.value == "") {
+                                    event.target.value = "0";
+                                }
                                 updateMaxEquipLoad(
                                     parseFloat(event.target.value)
-                                )
-                            }
+                                );
+                            }}
                             value={maxEquipLoad}
                             name="equip-load"
                         />
@@ -490,11 +493,14 @@ export default function ArmorPage() {
                             label="Current Equip Load"
                             className="stat"
                             id="current-equip-load"
-                            onChange={(event) =>
+                            onChange={(event) => {
+                                if (event.target.value == "") {
+                                    event.target.value = "0";
+                                }
                                 updateCurrentEquipLoad(
                                     parseFloat(event.target.value)
-                                )
-                            }
+                                );
+                            }}
                             value={currentEquipLoad}
                             name="equip-load"
                         />
