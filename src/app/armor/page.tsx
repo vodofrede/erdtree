@@ -29,33 +29,6 @@ export default function ArmorPage() {
     const [chestpieces, setChestpieces] = useState(Array<Armor>());
     const [gauntlets, setGauntlets] = useState(Array<Armor>());
     const [leggings, setLeggings] = useState(Array<Armor>());
-    const [selection, setSelection] = useState(Array<Set>());
-
-    // HELPER FUNCTIONS
-    const isAllowedSet = (set: Set) => [
-        lockedItems.every(
-            (item: Armor) => item == undefined || set.includes(item)
-        ),
-        ignoredItems.every(
-            (item: Armor) => item == undefined || set.includes(item)
-        ),
-    ];
-    const setWeight = (set: Set) =>
-        (set.weight ??= set.reduce(
-            (total: number, item: Armor) => total + item.weight,
-            0
-        ));
-    const setFitness = (set: Set) => {
-        if (!set.fitness) {
-            set.fitness = set.reduce((total: number, item: Armor) => {
-                if (!item.fitness) {
-                    item.fitness = fitness(item);
-                }
-                return total + item.fitness;
-            }, 0.0);
-        }
-        return set.fitness;
-    };
 
     // STATE UPDATE FUNCTIONS
     function updateLockedItems(newItem: Armor, oldItem?: Armor): void {
@@ -196,22 +169,6 @@ export default function ArmorPage() {
         }
     }
 
-    function permutations(): Set[] {
-        return helmets.flatMap((h: Armor) => {
-            return chestpieces.flatMap((c: Armor) => {
-                return gauntlets.flatMap((g: Armor) => {
-                    return leggings
-                        .filter((l: Armor) => isAllowedSet([h, c, g, l]))
-                        .filter(
-                            (l: Armor) =>
-                                equipLoadBudget >= setWeight([h, c, g, l])
-                        )
-                        .map((l: Armor) => [h, c, g, l]);
-                });
-            });
-        });
-    }
-
     function knapSack(): Set[] {
         // Convert max equip load to integer by multiplying by 10
         const equipLoadBudgetInt = Math.round(equipLoadBudget * 10);
@@ -246,7 +203,6 @@ export default function ArmorPage() {
                     wInt >= pieceWeightInt;
                     wInt--
                 ) {
-                    // console.log("wInt", wInt, "pieceWeightInt", pieceWeightInt);
                     if (
                         dp[i][wInt - pieceWeightInt].weight! + pieceWeight <=
                         equipLoadBudgetInt
@@ -258,22 +214,26 @@ export default function ArmorPage() {
                             dp[i + 1][wInt][0] =
                                 i === 0
                                     ? piece
-                                    : dp[i][wInt - pieceWeightInt][0];
+                                    : dp[i][wInt - pieceWeightInt][0] ??
+                                      HELMETS[0];
                             // chestpiece
                             dp[i + 1][wInt][1] =
                                 i === 1
                                     ? piece
-                                    : dp[i][wInt - pieceWeightInt][1];
+                                    : dp[i][wInt - pieceWeightInt][1] ??
+                                      CHESTPIECES[0];
                             // gauntlets
                             dp[i + 1][wInt][2] =
                                 i === 2
                                     ? piece
-                                    : dp[i][wInt - pieceWeightInt][2];
+                                    : dp[i][wInt - pieceWeightInt][2] ??
+                                      GAUNTLETS[0];
                             // leggings
                             dp[i + 1][wInt][3] =
                                 i === 3
                                     ? piece
-                                    : dp[i][wInt - pieceWeightInt][3];
+                                    : dp[i][wInt - pieceWeightInt][3] ??
+                                      LEGGINGS[0];
                             // fitness
                             dp[i + 1][wInt].fitness = newFitness;
                             // weight
@@ -481,13 +441,6 @@ export default function ArmorPage() {
         setBest(knapSack());
         console.timeEnd("update best");
         console.timeEnd("update");
-    }, [selection]);
-
-    useEffect(() => {
-        console.time("update");
-        console.time("update selection");
-        setSelection(permutations());
-        console.timeEnd("update selection");
     }, [helmets, chestpieces, gauntlets, leggings, equipLoadBudget]);
 
     useEffect(() => {
@@ -818,26 +771,28 @@ export default function ArmorPage() {
                         <b>Results</b>
                         <div>
                             <table id="results">
-                                {best.map((set: Set, i) => (
-                                    <ArmorResultSet
-                                        key={i}
-                                        id={ARMOR_RESULTS_SET_IDS[i]}
-                                        armorIds={set.map(
-                                            (item: Armor) => item.id
-                                        )}
-                                        armorNames={set.map(
-                                            (item: Armor) => item.name
-                                        )}
-                                        itemStats={set.map((item: Armor) =>
-                                            itemStatsToString(item)
-                                        )}
-                                        setStats={setStatsToString(set)}
-                                        // best={best}
-                                        addIgnoredItem={set.map((item) => {
-                                            return () => addIgnoredItem(item);
-                                        })}
-                                    />
-                                ))}
+                                {best.map((set: Set, i) => {
+                                    return (
+                                        <ArmorResultSet
+                                            key={i}
+                                            id={ARMOR_RESULTS_SET_IDS[i]}
+                                            armorIds={set.map(
+                                                (item: Armor) => item.id
+                                            )}
+                                            armorNames={set.map(
+                                                (item: Armor) => item.name
+                                            )}
+                                            itemStats={set.map((item: Armor) =>
+                                                itemStatsToString(item)
+                                            )}
+                                            setStats={setStatsToString(set)}
+                                            addIgnoredItem={set.map((item) => {
+                                                return () =>
+                                                    addIgnoredItem(item);
+                                            })}
+                                        />
+                                    );
+                                })}
                             </table>
                         </div>
                     </article>
