@@ -280,7 +280,7 @@ export default function ArmorPage() {
                             dp[i + 1][wInt].weight =
                                 dp[i][wInt - pieceWeightInt].weight! +
                                 pieceWeight;
-            }
+                        }
                     }
                 }
             }
