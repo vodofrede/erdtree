@@ -1,4 +1,5 @@
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import "./globals.css";
@@ -29,6 +30,7 @@ export default function RootLayout({
                 <NavLinks />
                 {children}
                 <Analytics />
+                <SpeedInsights />
                 <footer>
                     <h5>
                         Erdtree Planner (
