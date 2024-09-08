@@ -24,6 +24,7 @@ export default function RootLayout({
 }: {
     children: React.ReactNode;
 }) {
+    const VERSION = require("../../package.json").version;
     return (
         <html lang="en">
             <body>
@@ -33,7 +34,7 @@ export default function RootLayout({
                 <SpeedInsights />
                 <footer>
                     <h5>
-                        Erdtree Planner (
+                        v{VERSION} of Erdtree Planner (
                         <Link
                             href="https://github.com/Camburgaler/erdtree"
                             style={{ color: "var(--link-color)" }}
