@@ -50,7 +50,7 @@ export default function RootLayout({
                         >
                             vodofrede
                         </Link>
-                        's Erdtree Planner
+                        &apos;s Erdtree Planner
                     </h5>
                     <h5>© 2024 Camburgaler</h5>
                 </footer>
