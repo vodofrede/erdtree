@@ -40,7 +40,7 @@ jobs:
         steps:
             - name: Get Latest Tag
               id: get-latest-tag
-              run: echo "::set-output name=latest_tag::$(git describe --tags --abbrev=0)"
+              run: echo "latest_tag=$(git describe --tags --abbrev=0)" >> "$GITHUB_ENV"
 
     # Build job
     build:
@@ -105,7 +105,7 @@ jobs:
         runs-on: ubuntu-latest
         needs: [build, get-latest-tag]
         # Prevent deployment if not latest tag
-        if: github.ref == 'refs/tags/'${{needs.get-latest-tag.outputs.latest_tag}}
+        if: github.ref == 'refs/tags/$latest_tag'
         steps:
             - name: Deploy to GitHub Pages
               id: deployment
