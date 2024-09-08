@@ -36,7 +36,6 @@ jobs:
         runs-on: ubuntu-latest
         outputs:
             latest_tag: ${{ steps.get-latest-tag.outputs.latest_tag }}
-        if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/')
         steps:
             - name: Get Latest Tag
               id: get-latest-tag
