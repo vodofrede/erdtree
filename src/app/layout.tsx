@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import "./globals.css";
@@ -27,6 +28,7 @@ export default function RootLayout({
             <body>
                 <NavLinks />
                 {children}
+                <Analytics />
                 <footer>
                     <h5>
                         Erdtree Planner (
