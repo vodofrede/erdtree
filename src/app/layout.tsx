@@ -8,7 +8,7 @@ import { NavLinks } from "./ui/NavLinks";
 export const metadata: Metadata = {
     title: "Elden Ring Build Tools - Erdtree",
     description: "Elden Ring Build Tools - Armor, Weapon and Class Optimizer",
-    authors: { name: "vodofrede", url: "https://github.com/vodofrede" },
+    authors: { name: "Camburgaler", url: "https://github.com/Camburgaler" },
     icons: {
         icon: "/favicon.ico",
     },
@@ -35,14 +35,24 @@ export default function RootLayout({
                     <h5>
                         Erdtree Planner (
                         <Link
-                            href="https://git.palmoe.dk/vodofrede/erdtree"
+                            href="https://github.com/Camburgaler/erdtree"
                             style={{ color: "var(--link-color)" }}
                         >
                             available under BSD-3-Clause license
                         </Link>
                         )
                     </h5>
-                    <h5>© 2024 vodofrede</h5>
+                    <h5>
+                        Forked from{" "}
+                        <Link
+                            href="https://github.com/vodofrede"
+                            style={{ color: "var(--link-color)" }}
+                        >
+                            vodofrede
+                        </Link>
+                        's Erdtree Planner
+                    </h5>
+                    <h5>© 2024 Camburgaler</h5>
                 </footer>
             </body>
         </html>

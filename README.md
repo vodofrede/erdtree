@@ -47,4 +47,4 @@ A collection of build planning tools and data for Elden Ring.
 
 Data and images from Elden Ring which are used in this project are the property of From Software and BANDAI NAMCO.
 
-Additional data for the Shadow of the Erdtree DLC was provided by [@Camburgaler](https://github.com/Camburgaler) on GitHub.
+Based on [erdtree](https://github.com/vodofrede/erdtree) by [@vodofrede](https://github.com/vodofrede)
