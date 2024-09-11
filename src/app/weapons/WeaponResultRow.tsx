@@ -46,6 +46,12 @@ export function WeaponResultRow(props: {
                     attackRating={props.attackRatings[infId]!}
                     max={props.max}
                     data={props.arBreakdown[infId]!}
+                    style={
+                        props.attackRatings[infId] == props.max &&
+                        props.attackRatings[infId] != undefined
+                            ? { fontWeight: 900 }
+                            : {}
+                    }
                 />
             ))}
         </tr>

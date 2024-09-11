@@ -32,7 +32,7 @@ const CATEGORY_NAMES: string[][] = [
         "Great Hammers",
         "Flails",
         "Axes",
-        "Greateaxes",
+        "Greataxes",
         "Spears",
         "Great Spears",
         "Halberds",

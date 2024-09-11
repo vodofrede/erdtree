@@ -9,6 +9,7 @@ export function TableDataWithHover(props: {
         baseDmg: DamageTypeMap<number>;
         scalingDmg: DamageTypeMap<number>;
     };
+    style?: React.CSSProperties;
 }) {
     const [hoveredCell, setHoveredCell] = useState<string>("");
     const [cardPosition, setCardPosition] = useState({ top: 0, left: 0 });
@@ -30,6 +31,7 @@ export function TableDataWithHover(props: {
         <td
             onMouseEnter={(e) => handleMouseEnter(e)}
             onMouseLeave={handleMouseLeave}
+            style={props.style}
         >
             {props.attackRating != 0
                 ? props.attackRating != undefined
@@ -56,7 +58,10 @@ export function TableDataWithHover(props: {
                         <tbody>
                             {Object.keys(props.data.baseDmg).map(
                                 (dmgType: string, i: number) => (
-                                    <tr key={i}>
+                                    <tr
+                                        key={i}
+                                        style={{ fontWeight: "normal" }}
+                                    >
                                         <td>{dmgType}</td>
                                         <td>
                                             {props.data.baseDmg[
