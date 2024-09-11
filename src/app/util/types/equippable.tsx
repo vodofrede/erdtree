@@ -1,8 +1,8 @@
-import { Stat } from "../interfaces/stat";
+import StatMap from "../interfaces/statMap";
 
 export type Equippable = {
     id: string;
     name: string;
-    stats?: Stat;
+    stats?: StatMap;
     total?: number;
 };

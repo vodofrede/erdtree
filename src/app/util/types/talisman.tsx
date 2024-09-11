@@ -1,4 +1,4 @@
-import { Stat } from "../interfaces/stat";
+import StatMap from "../interfaces/statMap";
 import { Equippable } from "./equippable";
 
 interface Multipliers {
@@ -7,6 +7,6 @@ interface Multipliers {
 
 export type Talisman = Equippable & {
     weight: string;
-    stats: Stat;
+    stats: StatMap;
     multipliers: Multipliers;
 };

@@ -2,105 +2,417 @@
     "standard": {
         "id": "standard",
         "name": "Standard",
-        "damage": [1.0, 1.0, 1.0, 1.0, 1.0],
-        "upgrade": [0.058, 0.058, 0.058, 0.058, 0.058],
-        "scaling": [1.0, 1.0, 1.0, 1.0, 1.0],
-        "growth": [0.02, 0.02, 0.03243, 0.03243, 0.03243]
+        "damage": {
+            "physical": 1.0,
+            "magic": 1.0,
+            "fire": 1.0,
+            "lightning": 1.0,
+            "holy": 1.0
+        },
+        "upgrade": {
+            "physical": 0.058,
+            "magic": 0.058,
+            "fire": 0.058,
+            "lightning": 0.058,
+            "holy": 0.058
+        },
+        "scaling": {
+            "STR": 1.0,
+            "DEX": 1.0,
+            "INT": 1.0,
+            "FTH": 1.0,
+            "ARC": 1.0
+        },
+        "growth": {
+            "STR": 0.02,
+            "DEX": 0.02,
+            "INT": 0.03243,
+            "FTH": 0.03243,
+            "ARC": 0.03243
+        }
     },
     "heavy": {
         "id": "heavy",
         "name": "Heavy",
-        "damage": [0.95, 0.95, 0.95, 0.95, 0.95],
-        "upgrade": [0.056, 0.056, 0.056, 0.056, 0.056],
-        "scaling": [1.8, 0.0, 1.0, 1.0, 1.0],
-        "growth": [0.04128, 0.0, 0.03243, 0.03243, 0.03243]
+        "damage": {
+            "physical": 0.95,
+            "magic": 0.95,
+            "fire": 0.95,
+            "lightning": 0.95,
+            "holy": 0.95
+        },
+        "upgrade": {
+            "physical": 0.056,
+            "magic": 0.056,
+            "fire": 0.056,
+            "lightning": 0.056,
+            "holy": 0.056
+        },
+        "scaling": {
+            "STR": 1.8,
+            "DEX": 0.0,
+            "INT": 1.0,
+            "FTH": 1.0,
+            "ARC": 1.0
+        },
+        "growth": {
+            "STR": 0.04128,
+            "DEX": 0.0,
+            "INT": 0.03243,
+            "FTH": 0.03243,
+            "ARC": 0.03243
+        }
     },
     "keen": {
         "id": "keen",
         "name": "Keen",
-        "damage": [0.95, 0.95, 0.95, 0.95, 0.95],
-        "upgrade": [0.056, 0.056, 0.056, 0.056, 0.056],
-        "scaling": [0.5, 1.8, 1.0, 1.0, 1.0],
-        "growth": [0.02815, 0.04128, 0.03243, 0.03243, 0.03243]
+        "damage": {
+            "physical": 0.95,
+            "magic": 0.95,
+            "fire": 0.95,
+            "lightning": 0.95,
+            "holy": 0.95
+        },
+        "upgrade": {
+            "physical": 0.056,
+            "magic": 0.056,
+            "fire": 0.056,
+            "lightning": 0.056,
+            "holy": 0.056
+        },
+        "scaling": {
+            "STR": 0.5,
+            "DEX": 1.8,
+            "INT": 1.0,
+            "FTH": 1.0,
+            "ARC": 1.0
+        },
+        "growth": {
+            "STR": 0.02815,
+            "DEX": 0.04128,
+            "INT": 0.03243,
+            "FTH": 0.03243,
+            "ARC": 0.03243
+        }
     },
     "quality": {
         "id": "quality",
         "name": "Quality",
-        "damage": [0.9, 0.9, 0.9, 0.9, 0.9],
-        "upgrade": [0.046, 0.046, 0.046, 0.046, 0.046],
-        "scaling": [1.0, 1.0, 1.0, 1.0, 1.0],
-        "growth": [0.036, 0.036, 0.03243, 0.03243, 0.03243]
+        "damage": {
+            "physical": 0.9,
+            "magic": 0.9,
+            "fire": 0.9,
+            "lightning": 0.9,
+            "holy": 0.9
+        },
+        "upgrade": {
+            "physical": 0.046,
+            "magic": 0.046,
+            "fire": 0.046,
+            "lightning": 0.046,
+            "holy": 0.046
+        },
+        "scaling": {
+            "STR": 1.0,
+            "DEX": 1.0,
+            "INT": 1.0,
+            "FTH": 1.0,
+            "ARC": 1.0
+        },
+        "growth": {
+            "STR": 0.036,
+            "DEX": 0.036,
+            "INT": 0.03243,
+            "FTH": 0.03243,
+            "ARC": 0.03243
+        }
     },
     "fire": {
         "id": "fire",
         "name": "Fire",
-        "damage": [0.8, 0.8, 0.8, 0.8, 0.8],
-        "upgrade": [0.036, 0.036, 0.036, 0.036, 0.036],
-        "scaling": [1.3, 0.5, 1.0, 1.0, 1.0],
-        "growth": [0.03243, 0.02885, 0.03243, 0.03243, 0.03243]
+        "damage": {
+            "physical": 0.8,
+            "magic": 0.8,
+            "fire": 0.8,
+            "lightning": 0.8,
+            "holy": 0.8
+        },
+        "upgrade": {
+            "physical": 0.036,
+            "magic": 0.036,
+            "fire": 0.036,
+            "lightning": 0.036,
+            "holy": 0.036
+        },
+        "scaling": {
+            "STR": 1.3,
+            "DEX": 0.5,
+            "INT": 1.0,
+            "FTH": 1.0,
+            "ARC": 1.0
+        },
+        "growth": {
+            "STR": 0.03243,
+            "DEX": 0.02885,
+            "INT": 0.03243,
+            "FTH": 0.03243,
+            "ARC": 0.03243
+        }
     },
     "flame-art": {
         "id": "flame-art",
         "name": "Flame Art",
-        "damage": [0.85, 0.85, 0.85, 0.85, 0.85],
-        "upgrade": [0.046, 0.046, 0.046, 0.046, 0.046],
-        "scaling": [0.8, 0.8, 1.0, 1.0, 1.0],
-        "growth": [0.04128, 0.04128, 0.03243, 0.05371, 0.03243]
+        "damage": {
+            "physical": 0.85,
+            "magic": 0.85,
+            "fire": 0.85,
+            "lightning": 0.85,
+            "holy": 0.85
+        },
+        "upgrade": {
+            "physical": 0.046,
+            "magic": 0.046,
+            "fire": 0.046,
+            "lightning": 0.046,
+            "holy": 0.046
+        },
+        "scaling": {
+            "STR": 0.8,
+            "DEX": 0.8,
+            "INT": 1.0,
+            "FTH": 1.0,
+            "ARC": 1.0
+        },
+        "growth": {
+            "STR": 0.04128,
+            "DEX": 0.04128,
+            "INT": 0.03243,
+            "FTH": 0.05371,
+            "ARC": 0.03243
+        }
     },
     "lightning": {
         "id": "lightning",
         "name": "Lightning",
-        "damage": [0.8, 0.8, 0.8, 0.8, 0.8],
-        "upgrade": [0.0376, 0.0376, 0.0376, 0.0376, 0.0376],
-        "scaling": [0.5, 1.3, 1.0, 1.0, 1.0],
-        "growth": [0.02885, 0.03243, 0.03243, 0.03243, 0.03243]
+        "damage": {
+            "physical": 0.8,
+            "magic": 0.8,
+            "fire": 0.8,
+            "lightning": 0.8,
+            "holy": 0.8
+        },
+        "upgrade": {
+            "physical": 0.0376,
+            "magic": 0.0376,
+            "fire": 0.0376,
+            "lightning": 0.0376,
+            "holy": 0.0376
+        },
+        "scaling": {
+            "STR": 0.5,
+            "DEX": 1.3,
+            "INT": 1.0,
+            "FTH": 1.0,
+            "ARC": 1.0
+        },
+        "growth": {
+            "STR": 0.02885,
+            "DEX": 0.03243,
+            "INT": 0.03243,
+            "FTH": 0.03243,
+            "ARC": 0.03243
+        }
     },
     "sacred": {
         "id": "sacred",
         "name": "Sacred",
-        "damage": [0.75, 0.75, 0.75, 0.75, 0.75],
-        "upgrade": [0.05, 0.05, 0.05, 0.05, 0.05],
-        "scaling": [1.0, 1.0, 1.0, 1.0, 1.0],
-        "growth": [0.03243, 0.03243, 0.03243, 0.05371, 0.03243]
+        "damage": {
+            "physical": 0.75,
+            "magic": 0.75,
+            "fire": 0.75,
+            "lightning": 0.75,
+            "holy": 0.75
+        },
+        "upgrade": {
+            "physical": 0.05,
+            "magic": 0.05,
+            "fire": 0.05,
+            "lightning": 0.05,
+            "holy": 0.05
+        },
+        "scaling": {
+            "STR": 1.0,
+            "DEX": 1.0,
+            "INT": 1.0,
+            "FTH": 1.0,
+            "ARC": 1.0
+        },
+        "growth": {
+            "STR": 0.03243,
+            "DEX": 0.03243,
+            "INT": 0.03243,
+            "FTH": 0.05371,
+            "ARC": 0.03243
+        }
     },
     "magic": {
         "id": "magic",
         "name": "Magic",
-        "damage": [0.75, 0.75, 0.75, 0.75, 0.75],
-        "upgrade": [0.05, 0.05, 0.05, 0.05, 0.05],
-        "scaling": [0.8, 0.8, 1.0, 1.0, 1.0],
-        "growth": [0.01829, 0.01829, 0.05485, 0.03243, 0.03243]
+        "damage": {
+            "physical": 0.75,
+            "magic": 0.75,
+            "fire": 0.75,
+            "lightning": 0.75,
+            "holy": 0.75
+        },
+        "upgrade": {
+            "physical": 0.05,
+            "magic": 0.05,
+            "fire": 0.05,
+            "lightning": 0.05,
+            "holy": 0.05
+        },
+        "scaling": {
+            "STR": 0.8,
+            "DEX": 0.8,
+            "INT": 1.0,
+            "FTH": 1.0,
+            "ARC": 1.0
+        },
+        "growth": {
+            "STR": 0.01829,
+            "DEX": 0.01829,
+            "INT": 0.05485,
+            "FTH": 0.03243,
+            "ARC": 0.03243
+        }
     },
     "cold": {
         "id": "cold",
         "name": "Cold",
-        "damage": [0.85, 0.85, 0.85, 0.85, 0.85],
-        "upgrade": [0.038, 0.038, 0.038, 0.038, 0.038],
-        "scaling": [1.0, 1.0, 1.0, 1.0, 1.0],
-        "growth": [0.036, 0.036, 0.04128, 0.03243, 0.03243]
+        "damage": {
+            "physical": 0.85,
+            "magic": 0.85,
+            "fire": 0.85,
+            "lightning": 0.85,
+            "holy": 0.85
+        },
+        "upgrade": {
+            "physical": 0.038,
+            "magic": 0.038,
+            "fire": 0.038,
+            "lightning": 0.038,
+            "holy": 0.038
+        },
+        "scaling": {
+            "STR": 1.0,
+            "DEX": 1.0,
+            "INT": 1.0,
+            "FTH": 1.0,
+            "ARC": 1.0
+        },
+        "growth": {
+            "STR": 0.036,
+            "DEX": 0.036,
+            "INT": 0.04128,
+            "FTH": 0.03243,
+            "ARC": 0.03243
+        }
     },
     "poison": {
         "id": "poison",
         "name": "Poison",
-        "damage": [0.85, 0.85, 0.85, 0.85, 0.85],
-        "upgrade": [0.052, 0.052, 0.052, 0.052, 0.052],
-        "scaling": [1.0, 1.0, 1.0, 1.0, 1.0],
-        "growth": [0.03472, 0.03472, 0.03472, 0.03472, 0.01715]
+        "damage": {
+            "physical": 0.85,
+            "magic": 0.85,
+            "fire": 0.85,
+            "lightning": 0.85,
+            "holy": 0.85
+        },
+        "upgrade": {
+            "physical": 0.052,
+            "magic": 0.052,
+            "fire": 0.052,
+            "lightning": 0.052,
+            "holy": 0.052
+        },
+        "scaling": {
+            "STR": 1.0,
+            "DEX": 1.0,
+            "INT": 1.0,
+            "FTH": 1.0,
+            "ARC": 1.0
+        },
+        "growth": {
+            "STR": 0.03472,
+            "DEX": 0.03472,
+            "INT": 0.03472,
+            "FTH": 0.03472,
+            "ARC": 0.01715
+        }
     },
     "blood": {
         "id": "blood",
         "name": "Blood",
-        "damage": [0.85, 0.85, 0.85, 0.85, 0.85],
-        "upgrade": [0.052, 0.052, 0.052, 0.052, 0.052],
-        "scaling": [1.0, 1.0, 1.0, 1.0, 1.0],
-        "growth": [0.03472, 0.03472, 0.03472, 0.03472, 0.01715]
+        "damage": {
+            "physical": 0.85,
+            "magic": 0.85,
+            "fire": 0.85,
+            "lightning": 0.85,
+            "holy": 0.85
+        },
+        "upgrade": {
+            "physical": 0.052,
+            "magic": 0.052,
+            "fire": 0.052,
+            "lightning": 0.052,
+            "holy": 0.052
+        },
+        "scaling": {
+            "STR": 1.0,
+            "DEX": 1.0,
+            "INT": 1.0,
+            "FTH": 1.0,
+            "ARC": 1.0
+        },
+        "growth": {
+            "STR": 0.03472,
+            "DEX": 0.03472,
+            "INT": 0.03472,
+            "FTH": 0.03472,
+            "ARC": 0.01715
+        }
     },
     "occult": {
         "id": "occult",
         "name": "Occult",
-        "damage": [0.9, 0.9, 0.9, 0.9, 0.9],
-        "upgrade": [0.054, 0.054, 0.054, 0.054, 0.054],
-        "scaling": [0.8, 0.8, 0.8, 0.8, 1.0],
-        "growth": [0.02715, 0.02715, 0.02715, 0.02715, 0.03243]
+        "damage": {
+            "physical": 0.9,
+            "magic": 0.9,
+            "fire": 0.9,
+            "lightning": 0.9,
+            "holy": 0.9
+        },
+        "upgrade": {
+            "physical": 0.054,
+            "magic": 0.054,
+            "fire": 0.054,
+            "lightning": 0.054,
+            "holy": 0.054
+        },
+        "scaling": {
+            "STR": 0.8,
+            "DEX": 0.8,
+            "INT": 0.8,
+            "FTH": 0.8,
+            "ARC": 1.0
+        },
+        "growth": {
+            "STR": 0.02715,
+            "DEX": 0.02715,
+            "INT": 0.02715,
+            "FTH": 0.02715,
+            "ARC": 0.03243
+        }
     }
 }

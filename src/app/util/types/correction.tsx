@@ -1,6 +1,8 @@
+import DamageTypeMap from "../interfaces/damageTypeMap";
+
 export type Correction = {
     id: string;
-    softcaps: number[][];
-    growth: number[][];
-    adjustments: number[][];
+    softcaps: DamageTypeMap<number[]>;
+    growth: DamageTypeMap<number[]>;
+    adjustments: DamageTypeMap<number[]>;
 };

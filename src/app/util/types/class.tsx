@@ -1,9 +1,9 @@
-import { Stat } from "../interfaces/stat";
+import StatMap from "../interfaces/statMap";
 
 export type Class = {
     id: string;
     name: string;
     level: number;
-    stats: Stat;
+    stats: StatMap;
     total?: number;
 };

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Stat } from "../util/interfaces/stat";
+import StatMap from "../util/interfaces/statMap";
 import { Armor } from "../util/types/armor";
 import { Class } from "../util/types/class";
 import { Equippable } from "../util/types/equippable";
@@ -38,7 +38,7 @@ const MUTUALLY_EXCLUSIVE_TALISMANS = [
 export default function ClassPage() {
     // STATES
     const [best, setBest] = useState<Class>(CLASSES[0]);
-    const [desiredStats, setDesiredStats] = useState<Stat>({
+    const [desiredStats, setDesiredStats] = useState<StatMap>({
         VIG: 0,
         END: 0,
         MND: 0,
@@ -48,7 +48,7 @@ export default function ClassPage() {
         FTH: 0,
         ARC: 0,
     });
-    const [finalStats, setFinalStats] = useState<Stat>({
+    const [finalStats, setFinalStats] = useState<StatMap>({
         VIG: 0,
         END: 0,
         MND: 0,
@@ -58,7 +58,7 @@ export default function ClassPage() {
         FTH: 0,
         ARC: 0,
     });
-    const [virtualStats, setVirtualStats] = useState<Stat>({
+    const [virtualStats, setVirtualStats] = useState<StatMap>({
         VIG: 0,
         END: 0,
         MND: 0,
@@ -72,7 +72,7 @@ export default function ClassPage() {
     const [equippedTalismans, setEquippedTalismans] = useState<Talisman[]>([]);
     const [helmet, setHelmet] = useState<Armor>(HELMETS[0]);
     const [chestpiece, setChestpiece] = useState<Armor>(CHESTPIECES[0]);
-    const [itemStats, setItemStats] = useState<Stat>({
+    const [itemStats, setItemStats] = useState<StatMap>({
         VIG: 0,
         END: 0,
         MND: 0,
@@ -100,11 +100,11 @@ export default function ClassPage() {
     }
 
     // FUNCTIONS
-    function getItemStats(relevantItems: Equippable[]): Stat {
+    function getItemStats(relevantItems: Equippable[]): StatMap {
         return relevantItems.reduce(
-            (total: Stat, item: Equippable) =>
-                Object.keys(total).reduce((acc: Stat, statId: string) => {
-                    acc[statId] += item?.stats ? item.stats[statId] : 0;
+            (total: StatMap, item: Equippable) =>
+                Object.keys(total).reduce((acc: StatMap, statId: string) => {
+                    acc[statId]! += item?.stats ? item.stats[statId]! : 0;
                     return acc;
                 }, total),
             {
@@ -120,11 +120,11 @@ export default function ClassPage() {
         );
     }
 
-    function delta(classStats: Stat): number {
+    function delta(classStats: StatMap): number {
         return Object.keys(classStats)
             .map((statId: string) =>
-                classStats[statId] < desiredStats[statId]
-                    ? desiredStats[statId] - classStats[statId]
+                classStats[statId]! < desiredStats[statId]!
+                    ? desiredStats[statId]! - classStats[statId]!
                     : 0
             )
             .reduce((total: number, n: number) => total + n);
@@ -177,7 +177,7 @@ export default function ClassPage() {
 
     useEffect(() => {
         // calculate final stats
-        let tempFinal: Stat = {
+        let tempFinal: StatMap = {
             VIG: 0,
             END: 0,
             MND: 0,
@@ -187,7 +187,7 @@ export default function ClassPage() {
             FTH: 0,
             ARC: 0,
         };
-        let tempVirtual: Stat = {
+        let tempVirtual: StatMap = {
             VIG: 0,
             END: 0,
             MND: 0,
@@ -200,12 +200,12 @@ export default function ClassPage() {
         Object.keys(desiredStats).forEach((statId: string) => {
             {
                 tempFinal[statId] = Math.max(
-                    desiredStats[statId] - itemStats[statId],
-                    best?.stats[statId]
+                    desiredStats[statId]! - itemStats[statId]!,
+                    best?.stats[statId]!
                 );
                 tempVirtual[statId] = Math.max(
-                    desiredStats[statId],
-                    best.stats![statId] + itemStats[statId]
+                    desiredStats[statId]!,
+                    best.stats![statId]! + itemStats[statId]!
                 );
             }
         });

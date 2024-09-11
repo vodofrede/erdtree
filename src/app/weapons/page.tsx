@@ -2,8 +2,10 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { AttackRating } from "../util/interfaces/attackRating";
-import { Stat } from "../util/interfaces/stat";
+import DamageTypeMap from "../util/interfaces/damageTypeMap";
+import { InfusionMap } from "../util/interfaces/infusionMap";
+import StatMap from "../util/interfaces/statMap";
+import WeaponInfusion from "../util/interfaces/weaponInfusion";
 import { Correction } from "../util/types/correction";
 import { Infusion } from "../util/types/infusion";
 import { Weapon } from "../util/types/weapon";
@@ -53,6 +55,14 @@ const CATEGORY_NAMES: string[][] = [
     ["Small Shields", "Medium Shields", "Greatshields"],
     ["Glintstone Staves", "Sacred Seals"],
 ];
+const DAMAGE_TYPE_IDS: string[] = [
+    "physical",
+    "magic",
+    "fire",
+    "lightning",
+    "holy",
+];
+const STAT_IDS: string[] = ["STR", "DEX", "INT", "FTH", "ARC"];
 
 // INTERFACES
 interface Checkbox {
@@ -60,8 +70,12 @@ interface Checkbox {
 }
 interface WeaponResult {
     weaponName: string;
-    attackRatings: AttackRating;
+    attackRatings: InfusionMap<number>;
     max: number;
+    arBreakdown: InfusionMap<{
+        baseDmg: DamageTypeMap<number>;
+        scalingDmg: DamageTypeMap<number>;
+    }>;
 }
 interface SortBy {
     dmgType: string;
@@ -71,7 +85,7 @@ interface SortBy {
 export default function Weapons() {
     // STATES
     const [results, setResults] = useState<WeaponResult[]>([]);
-    const [stats, setStats] = useState<Stat>({
+    const [stats, setStats] = useState<StatMap>({
         STR: 10,
         DEX: 10,
         INT: 10,
@@ -277,93 +291,146 @@ export default function Weapons() {
     // FUNCTIONS
     function corrections(
         calc: Correction,
-        stats: Stat,
-        masks: number[]
+        stats: StatMap,
+        masks: StatMap
     ): number[] {
-        return Object.keys(stats).map((statId: string, ty: number) => {
-            if (!masks[ty]) {
-                return 0.0;
+        return Object.entries(stats).map(
+            ([statId, value]: [string, number | undefined], i) => {
+                if (!masks[statId]) {
+                    return 0.0;
+                }
+
+                let capIndex =
+                    calc.softcaps[DAMAGE_TYPE_IDS[i]]!.findIndex(
+                        (cap: number) => cap >= value!
+                    ) - 1;
+                let cap = calc.softcaps[DAMAGE_TYPE_IDS[i]]![capIndex];
+                let capDelta =
+                    (calc.softcaps[DAMAGE_TYPE_IDS[i]]![capIndex + 1] || cap) -
+                    cap;
+                let growth = calc.growth[DAMAGE_TYPE_IDS[i]]![capIndex];
+                let growthDelta =
+                    (calc.growth[DAMAGE_TYPE_IDS[i]]![capIndex + 1] || growth) -
+                    growth;
+                let adjust = calc.adjustments[DAMAGE_TYPE_IDS[i]]![capIndex];
+
+                return Math.sign(adjust) != -1
+                    ? growth +
+                          growthDelta * ((value! - cap) / capDelta) ** adjust
+                    : growth +
+                          growthDelta *
+                              (1 -
+                                  (1 - (value! - cap) / capDelta) **
+                                      Math.abs(adjust));
             }
-
-            let capIndex =
-                calc.softcaps[ty].findIndex(
-                    (cap: number) => cap >= stats[statId]
-                ) - 1;
-            let cap = calc.softcaps[ty][capIndex];
-            let capDelta = (calc.softcaps[ty][capIndex + 1] || cap) - cap;
-            let growth = calc.growth[ty][capIndex];
-            let growthDelta =
-                (calc.growth[ty][capIndex + 1] || growth) - growth;
-            let adjust = calc.adjustments[ty][capIndex];
-
-            return Math.sign(adjust) != -1
-                ? growth +
-                      growthDelta * ((stats[statId] - cap) / capDelta) ** adjust
-                : growth +
-                      growthDelta *
-                          (1 -
-                              (1 - (stats[statId] - cap) / capDelta) **
-                                  Math.abs(adjust));
-        });
+        );
     }
 
     function damage(
         weapon: Weapon,
         infusion: Infusion,
         upgraded: boolean,
-        stats: Stat
-    ): number {
-        let weaponInfusion =
+        stats: StatMap
+    ): WeaponResult {
+        // initialize result
+        let result: WeaponResult = {
+            attackRatings: {},
+            max: 0,
+            arBreakdown: {},
+            weaponName: "",
+        };
+
+        // initialize weapon infusion
+        let weaponInfusion: WeaponInfusion =
             weapon.infusions[
                 Object.keys(weapon.infusions).find(
                     (infId) => infId == infusion.id
                 )!
             ];
-        let upgLevel = upgraded ? (weapon.unique ? 10 : 25) : 0;
 
-        let baseDmg = infusion.damage.map(
-            (dmg: number, ty: number) =>
-                weaponInfusion.damage[ty] *
-                (dmg +
-                    infusion.upgrade[ty] *
-                        upgLevel *
-                        (weapon.unique ? 2.5 : 1.0))
+        // initialize upgrade level
+        let upgLevel: number = upgraded ? (weapon.unique ? 10 : 25) : 0;
+
+        // initialize base damage
+        let baseDmg: DamageTypeMap<number> = {
+            physical: 0,
+            magic: 0,
+            fire: 0,
+            lightning: 0,
+            holy: 0,
+        };
+        // populate base damage
+        Object.entries(infusion.damage).forEach(
+            ([ty, dmg]: [string, number | undefined]) => {
+                baseDmg[ty] =
+                    weaponInfusion.damage[ty]! *
+                    (dmg! +
+                        infusion.upgrade[ty]! *
+                            upgLevel *
+                            (weapon.unique ? 2.5 : 1.0));
+            }
         );
 
-        let scalingDmg = Object.keys(stats).some(
+        let scalingDmg: DamageTypeMap<number> = {
+            physical: 0,
+            magic: 0,
+            fire: 0,
+            lightning: 0,
+            holy: 0,
+        };
+        Object.keys(stats).some(
             (statId: string, i: number) =>
-                stats[statId] < weapon.requirements[i]
+                stats[statId]! < weapon.requirements[i]!
         )
-            ? baseDmg.map((dmg: number) => dmg * -0.4)
-            : baseDmg.map((dmg: number, ty: number) => {
+            ? Object.entries(baseDmg).forEach(
+                  ([ty, dmg]) => (scalingDmg[ty] = dmg! * -0.4)
+              )
+            : Object.entries(baseDmg).forEach(([ty, dmg], i) => {
                   let calcCorrect = corrections(
-                      CORRECTIONS.find(
-                          (c) => c.id == weaponInfusion.corrections[ty]
-                      )!,
+                      CORRECTIONS.find((c) => c.id == i.toString())!,
                       stats,
-                      weaponInfusion.masks[ty]
+                      weaponInfusion.masks[ty]!
                   );
-                  let statScaling = weaponInfusion.scaling.map(
-                      (scaling: number) =>
-                          infusion.scaling[ty] *
-                          (scaling +
-                              scaling *
-                                  infusion.growth[ty] *
+                  let statScaling = Object.values(weaponInfusion.scaling).map(
+                      (scaling: number | undefined, i: number) =>
+                          infusion.scaling[STAT_IDS[i]]! *
+                          (scaling! +
+                              scaling! *
+                                  infusion.growth[STAT_IDS[i]]! *
                                   upgLevel *
                                   (weapon.unique ? 4.0 : 1.0))
                   );
-                  return statScaling
-                      .map(
-                          (scaling: number, statIndex: number) =>
-                              (dmg * scaling * calcCorrect[statIndex]) / 100.0
-                      )
+                  scalingDmg[ty] = statScaling
+                      .map((scaling: number, statIndex: number) => {
+                          return (
+                              (dmg! * scaling * calcCorrect[statIndex]) / 100.0
+                          );
+                      })
                       .reduce((sum: number, n: number) => sum + n);
               });
 
-        return Math.floor(
-            baseDmg.reduce((sum: number, n: number) => sum + n) +
-                scalingDmg.reduce((sum: number, n: number) => sum + n)
-        );
+        result = {
+            weaponName: "",
+            arBreakdown: {
+                [infusion.id]: {
+                    baseDmg: baseDmg,
+                    scalingDmg: scalingDmg,
+                },
+            },
+            max: 0,
+            attackRatings: {
+                [infusion.id]: Math.floor(
+                    (Object.values(baseDmg) as number[]).reduce(
+                        (sum: number, n: number) => sum + n
+                    ) +
+                        (Object.values(scalingDmg) as number[]).reduce(
+                            (sum: number, n: number) => sum + n
+                        )
+                ),
+            },
+        };
+
+        return result;
     }
 
     function resetAll(): void {
@@ -465,7 +532,7 @@ export default function Weapons() {
                 ((Object.keys(weapon.requirements).every((statName: string) =>
                     statName == "STR"
                         ? true
-                        : stats[statName] >= weapon.requirements[statName]
+                        : stats[statName]! >= weapon.requirements[statName]!
                 ) &&
                     // and if the weapon is using two handed damage
                     (twoHanded.damage
@@ -494,13 +561,72 @@ export default function Weapons() {
             );
         }).map((weapon) => {
             // calculate attack ratings for every allowed infusion as well as the maximum damage of any infusion
-            let attackRatings: AttackRating = {};
+            let result: WeaponResult = {
+                weaponName: weapon.name,
+                attackRatings: {},
+                max: 0,
+                arBreakdown: {},
+            };
             Object.values(INFUSIONS)
                 .filter((inf) => infusions[inf.id])
-                .forEach(
-                    (inf) =>
-                        (attackRatings = {
-                            ...attackRatings,
+                .forEach((inf) => {
+                    let temp: WeaponResult = {
+                        weaponName: weapon.name,
+                        attackRatings: {
+                            [inf.id]: 0,
+                        },
+                        max: 0,
+                        arBreakdown: {
+                            [inf.id]: {
+                                baseDmg: {
+                                    physical: 0,
+                                    magic: 0,
+                                    fire: 0,
+                                    lightning: 0,
+                                    holy: 0,
+                                },
+                                scalingDmg: {
+                                    physical: 0,
+                                    magic: 0,
+                                    fire: 0,
+                                    lightning: 0,
+                                    holy: 0,
+                                },
+                            },
+                        },
+                    };
+
+                    if (
+                        (Object.keys(weapon.infusions).find(
+                            (infId) => infId == inf.id
+                        ) != null &&
+                            !buffable) ||
+                        weapon.infusions[
+                            Object.keys(weapon.infusions).find(
+                                (infId) => infId == inf.id
+                            )!
+                        ]?.buffable
+                    ) {
+                        temp = damage(
+                            weapon,
+                            INFUSIONS.find((i) => i.id == inf.id)!,
+                            reinforced,
+                            twoHanded.damage
+                                ? {
+                                      ...stats,
+                                      STR: stats["STR"] * 1.5,
+                                  }
+                                : stats
+                        );
+                    }
+                    result = {
+                        ...result,
+                        arBreakdown: {
+                            ...result.arBreakdown,
+                            ...temp.arBreakdown,
+                        },
+                        attackRatings: {
+                            ...result.attackRatings,
                             [inf.id]:
                                 Object.keys(weapon.infusions).find(
                                     (infId) => infId == inf.id
@@ -511,30 +637,19 @@ export default function Weapons() {
                                               (infId) => infId == inf.id
                                           )!
                                       ]?.buffable
-                                        ? damage(
-                                              weapon,
-                                              INFUSIONS.find(
-                                                  (i) => i.id == inf.id
-                                              )!,
-                                              reinforced,
-                                              twoHanded.damage
-                                                  ? {
-                                                        ...stats,
-                                                        STR: stats["STR"] * 1.5,
-                                                    }
-                                                  : stats
-                                          )
+                                        ? temp.attackRatings[inf.id]
                                         : 0
                                     : 0,
-                        })
-                );
-            let max = Math.max(0, ...Object.values(attackRatings));
+                        },
+                    };
+                });
 
-            return {
-                weaponName: weapon.name,
-                attackRatings: attackRatings,
-                max: max,
-            };
+            result.max = Math.max(
+                0,
+                ...(Object.values(result.attackRatings) as number[])
+            );
+
+            return result;
         });
         setResults(filtered);
     }, [
@@ -1079,16 +1194,16 @@ export default function Weapons() {
                                                 return sortBy.desc
                                                     ? b.attackRatings[
                                                           sortBy.dmgType
-                                                      ] -
+                                                      ]! -
                                                           a.attackRatings[
                                                               sortBy.dmgType
-                                                          ]
+                                                          ]!
                                                     : a.attackRatings[
                                                           sortBy.dmgType
-                                                      ] -
+                                                      ]! -
                                                           b.attackRatings[
                                                               sortBy.dmgType
-                                                          ];
+                                                          ]!;
                                             }
                                         })
                                         .map((weaponResult) => (
@@ -1104,6 +1219,9 @@ export default function Weapons() {
                                                     weaponResult.attackRatings
                                                 }
                                                 max={weaponResult.max}
+                                                arBreakdown={
+                                                    weaponResult.arBreakdown
+                                                }
                                             />
                                         ))}
                                 </tbody>
