@@ -623,8 +623,11 @@ export default function Weapons() {
                     Object.keys(weapon.infusions).some(
                         (infId) => weapon.infusions[infId]!.buffable
                     )) &&
-                // and if the weapon is split damage
-                (isSplitDamage(weapon.infusions.standard!.damage)
+                // and if the weapon is split damage (prefer for check to be done with Heavy infusion to catch cases where the Standard infusion is split but the physical infusions are not)
+                (isSplitDamage(
+                    weapon.infusions.heavy?.damage ??
+                        weapon.infusions.standard!.damage
+                )
                     ? // then defer to whether split damage is allowed
                       splitDamage
                     : true)
