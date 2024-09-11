@@ -43,6 +43,7 @@ export function WeaponResultRow(props: {
             <td>{props.max.toString()}</td>
             {INFUSION_IDS.map((infId) => (
                 <TableDataWithHover
+                    key={infId}
                     attackRating={props.attackRatings[infId]!}
                     max={props.max}
                     data={props.arBreakdown[infId]!}
