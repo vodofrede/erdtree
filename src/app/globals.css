@@ -147,9 +147,6 @@ p {
 }
 
 /* links */
-a {
-    text-decoration: none;
-}
 a:hover {
     color: var(--accent);
 }
@@ -331,4 +328,8 @@ select option {
     display: flex;
     justify-content: space-between;
     word-wrap: break-word;
+}
+
+.app a {
+    text-decoration: none;
 }

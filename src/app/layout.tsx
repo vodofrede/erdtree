@@ -1,7 +1,6 @@
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata, Viewport } from "next";
-import Link from "next/link";
 import "./globals.css";
 import { NavLinks } from "./ui/NavLinks";
 
@@ -33,27 +32,42 @@ export default function RootLayout({
                 <Analytics />
                 <SpeedInsights />
                 <footer>
-                    <h5>
-                        v{VERSION} of Erdtree Planner (
-                        <Link
-                            href="https://github.com/Camburgaler/erdtree"
-                            style={{ color: "var(--link-color)" }}
-                        >
-                            available under BSD-3-Clause license
-                        </Link>
-                        )
-                    </h5>
-                    <h5>
-                        Forked from{" "}
-                        <Link
-                            href="https://github.com/vodofrede"
-                            style={{ color: "var(--link-color)" }}
-                        >
-                            vodofrede
-                        </Link>
-                        &apos;s Erdtree Planner
-                    </h5>
-                    <h5>© 2024 Camburgaler</h5>
+                    <span style={{ display: "flex", flexDirection: "column" }}>
+                        <h5>
+                            Forked from{" "}
+                            <a
+                                href="https://github.com/vodofrede"
+                                style={{ color: "var(--link-color)" }}
+                            >
+                                vodofrede
+                            </a>
+                            &apos;s Erdtree Planner
+                        </h5>
+                        <h5>
+                            v{VERSION} of Erdtree Planner (available under
+                            BSD-3-Clause license)
+                        </h5>
+                    </span>
+                    <span
+                        style={{
+                            display: "flex",
+                            flexDirection: "column",
+                            textAlign: "right",
+                        }}
+                    >
+                        <h5>
+                            © 2024{" "}
+                            <a href="https://github.com/Camburgaler">
+                                Camburgaler
+                            </a>
+                        </h5>
+                        <h5>
+                            Have suggestions?{" "}
+                            <a href="https://github.com/Camburgaler/erdtree/issues/new">
+                                Create an issue!
+                            </a>{" "}
+                        </h5>
+                    </span>
                 </footer>
             </body>
         </html>
