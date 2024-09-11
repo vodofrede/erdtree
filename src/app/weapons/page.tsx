@@ -65,8 +65,50 @@ const DAMAGE_TYPE_IDS: string[] = [
 const STAT_IDS: string[] = ["STR", "DEX", "INT", "FTH", "ARC"];
 
 // INTERFACES
-interface Checkbox {
-    [key: string]: boolean;
+interface WeaponTypeMap<T> {
+    [key: string]: T;
+    dagger: T;
+    "straight-sword": T;
+    greatsword: T;
+    "colossal-sword": T;
+    "thrusting-sword": T;
+    "heavy-thrusting-sword": T;
+    "curved-sword": T;
+    "curved-greatsword": T;
+    katana: T;
+    twinblade: T;
+    hammer: T;
+    "great-hammer": T;
+    flail: T;
+    axe: T;
+    greataxe: T;
+    spear: T;
+    "great-spear": T;
+    halberd: T;
+    scythe: T;
+    whip: T;
+    fist: T;
+    claw: T;
+    "colossal-weapon": T;
+    torch: T;
+    "thrusting-shield": T;
+    "hand-to-hand-art": T;
+    "throwing-blade": T;
+    "backhand-blade": T;
+    "perfume-bottle": T;
+    "beast-claw": T;
+    "light-greatsword": T;
+    "great-katana": T;
+    "light-bow": T;
+    bow: T;
+    greatbow: T;
+    crossbow: T;
+    ballista: T;
+    "small-shield": T;
+    "medium-shield": T;
+    greatshield: T;
+    "glintstone-staff": T;
+    "sacred-seal": T;
 }
 interface WeaponResult {
     weaponName: string;
@@ -95,11 +137,12 @@ export default function Weapons() {
     const [reinforced, setReinforced] = useState(true);
     const [requireStats, setRequireStats] = useState(true);
     const [buffable, setBuffable] = useState(false);
+    const [splitDamage, setSplitDamage] = useState(true);
     const [twoHanded, setTwoHanded] = useState({
         damage: false,
         requirements: false,
     });
-    const [infusions, setInfusions] = useState<Checkbox>({
+    const [infusions, setInfusions] = useState<InfusionMap<boolean>>({
         standard: true,
         heavy: true,
         keen: true,
@@ -118,7 +161,7 @@ export default function Weapons() {
         dmgType: "max",
         desc: true,
     });
-    const [categories, setCategories] = useState<Checkbox>({
+    const [categories, setCategories] = useState<WeaponTypeMap<boolean>>({
         dagger: true,
         "straight-sword": true,
         greatsword: true,
@@ -162,6 +205,18 @@ export default function Weapons() {
         "glintstone-staff": false,
         "sacred-seal": false,
     });
+
+    // HELPER FUNCTIONS
+    const isSplitDamage = (dmg: DamageTypeMap<number>) => {
+        return (
+            Object.values(dmg).reduce(
+                (dmgTypes: number, dmg: number | undefined) => {
+                    return dmg! > 0 ? dmgTypes + 1 : dmgTypes;
+                },
+                0
+            )! > 1
+        );
+    };
 
     // STATE UPDATE FUNCTIONS
     function updateStats(id: string, value: number) {
@@ -346,7 +401,7 @@ export default function Weapons() {
                 Object.keys(weapon.infusions).find(
                     (infId) => infId == infusion.id
                 )!
-            ];
+            ]!;
 
         // initialize upgrade level
         let upgLevel: number = upgraded ? (weapon.unique ? 10 : 25) : 0;
@@ -370,6 +425,15 @@ export default function Weapons() {
                             (weapon.unique ? 2.5 : 1.0));
             }
         );
+        if (isSplitDamage(baseDmg) && !splitDamage) {
+            baseDmg = {
+                physical: 0,
+                magic: 0,
+                fire: 0,
+                lightning: 0,
+                holy: 0,
+            };
+        }
 
         let scalingDmg: DamageTypeMap<number> = {
             physical: 0,
@@ -444,6 +508,7 @@ export default function Weapons() {
         setReinforced(true);
         setRequireStats(true);
         setBuffable(false);
+        setSplitDamage(true);
         setTwoHanded({
             requirements: false,
             damage: false,
@@ -556,8 +621,13 @@ export default function Weapons() {
                 // and if the weapon is buffable or buffable is not required
                 (!buffable ||
                     Object.keys(weapon.infusions).some(
-                        (infId) => weapon.infusions[infId].buffable
-                    ))
+                        (infId) => weapon.infusions[infId]!.buffable
+                    )) &&
+                // and if the weapon is split damage
+                (isSplitDamage(weapon.infusions.standard!.damage)
+                    ? // then defer to whether split damage is allowed
+                      splitDamage
+                    : true)
             );
         }).map((weapon) => {
             // calculate attack ratings for every allowed infusion as well as the maximum damage of any infusion
@@ -661,6 +731,7 @@ export default function Weapons() {
         infusions,
         categories,
         sortBy,
+        splitDamage,
     ]);
 
     // RENDER
@@ -764,6 +835,21 @@ export default function Weapons() {
                                     checked={buffable}
                                 />
                                 <label htmlFor="buffable">Buffable Only</label>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <input
+                                    type="checkbox"
+                                    id="split-damage"
+                                    onChange={(event) => {
+                                        setSplitDamage(event.target.checked);
+                                    }}
+                                    checked={splitDamage}
+                                />
+                                <label htmlFor="split-damage">
+                                    Split Damage
+                                </label>
                             </span>
                         </div>
                         <hr />
