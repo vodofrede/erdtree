@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 -   updated credits in footer
+-   updated weapon damage from ER v1.14
 
 ## [2.1.0] - 2024-08-27
 

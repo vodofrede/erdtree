@@ -37,8 +37,8 @@ export default function Home() {
                         <h3>News</h3>
                         <ul>
                             <li>
-                                Up to date for patch 1.12 (Shadow of the
-                                Erdtree), regulation 1.12.3.
+                                Up to date for App Ver. 1.14, Calibrations Ver.
+                                1.13.2.
                             </li>
                         </ul>
                         <h3>Credits</h3>
