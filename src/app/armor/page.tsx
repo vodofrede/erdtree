@@ -32,46 +32,32 @@ export default function ArmorPage() {
 
     // STATE UPDATE FUNCTIONS
     function updateLockedItems(newItem: Armor, oldItem?: Armor): void {
-        console.time("updateLockedItems");
         setLockedItems([...lockedItems.filter((i) => i !== oldItem), newItem]);
-        console.timeEnd("updateLockedItems");
     }
 
     function updateMaxEquipLoad(value: number): void {
-        console.time("update max equip load");
         setMaxEquipLoad(value);
-        console.timeEnd("update max equip load");
     }
 
     function updateCurrentEquipLoad(value: number): void {
-        console.time("update current equip load");
         setCurrentEquipLoad(value);
-        console.timeEnd("update current equip load");
     }
 
     function updateBreakpoint(value: number): void {
-        console.time("update breakpoint");
         setBreakpoint(value);
-        console.timeEnd("update breakpoint");
     }
 
     function updateSortBy(value: string): void {
-        console.time("update sort by");
         setSortBy(value);
-        console.timeEnd("update sort by");
     }
 
     function addIgnoredItem(newItem: Armor): void {
-        console.time("add ignored item");
         if (ignoredItems.includes(newItem)) return;
         setIgnoredItems([...ignoredItems, newItem]);
-        console.timeEnd("add ignored item");
     }
 
     function removeIgnoredItem(oldItem: Armor): void {
-        console.time("remove ignored item");
         setIgnoredItems([...ignoredItems.filter((i) => i !== oldItem)]);
-        console.timeEnd("remove ignored item");
     }
 
     // FUNCTIONS
@@ -164,6 +150,13 @@ export default function ArmorPage() {
                 return item.resistances.deathBlight ?? 0;
             case "sort-poise":
                 return item.poise ?? 0;
+            // case "sort-custom":
+            //     return (
+            //         [item.defenses.physical * 0.5, item.defenses.holy].reduce(
+            //             (total, n) => total + n,
+            //             0
+            //         ) ?? 0
+            //     );
             default:
                 return -1;
         }
@@ -279,13 +272,11 @@ export default function ArmorPage() {
     }
 
     function resetAll(): void {
-        console.time("resetAll");
         [
             ...(document.getElementsByName(
                 "locked-items"
             ) as NodeListOf<HTMLSelectElement>),
         ].forEach((select) => (select.selectedIndex = 0));
-        console.timeEnd("resetAll");
     }
 
     function itemStatsToString(item: Armor): string[] {
@@ -437,29 +428,20 @@ export default function ArmorPage() {
 
     // EFFECTS
     useEffect(() => {
-        console.time("update best");
         setBest(knapSack());
-        console.timeEnd("update best");
-        console.timeEnd("update");
     }, [helmets, chestpieces, gauntlets, leggings, equipLoadBudget]);
 
     useEffect(() => {
-        console.time("update");
-        console.time("update sets");
         setHelmets(dominated(HELMETS));
         setChestpieces(dominated(CHESTPIECES));
         setGauntlets(dominated(GAUNTLETS));
         setLeggings(dominated(LEGGINGS));
-        console.timeEnd("update sets");
     }, [lockedItems, ignoredItems, sortBy]);
 
     useEffect(() => {
-        console.time("update");
-        console.time("update equip load budget");
         setEquipLoadBudget(
             Math.max(maxEquipLoad * breakpoint - currentEquipLoad, 0.0)
         );
-        console.timeEnd("update equip load budget");
     }, [maxEquipLoad, currentEquipLoad, breakpoint]);
 
     // RENDER
@@ -677,6 +659,13 @@ export default function ArmorPage() {
                             name="sorting-order"
                             checked={sortBy === "sort-poise"}
                         />
+                        {/* <InputRadio
+                            label="Custom"
+                            id="sort-custom"
+                            onClick={() => updateSortBy("sort-custom")}
+                            name="sorting-order"
+                            checked={sortBy === "sort-custom"}
+                        /> */}
                         <hr />
                         <b>Locked Armor</b>
                         <InputSelect
