@@ -5,7 +5,7 @@ export default interface WeaponInfusion {
     id: string;
     damage: DamageTypeMap<number>;
     scaling: StatMap;
-    aux: { id: string; effect: [number, number] };
+    aux: { [key: string]: [number, number] };
     masks: DamageTypeMap<StatMap>;
     corrections: DamageTypeMap<string>;
     buffable: boolean;

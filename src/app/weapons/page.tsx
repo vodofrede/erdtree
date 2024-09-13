@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { DAMAGE_TYPE_NAMES } from "../util/constants";
 import DamageTypeMap from "../util/interfaces/damageTypeMap";
 import { InfusionMap } from "../util/interfaces/infusionMap";
 import StatMap from "../util/interfaces/statMap";
@@ -16,13 +17,6 @@ const WEAPONS: Weapon[] = Object.values(require("../data/weapons.json"));
 const INFUSIONS: Infusion[] = Object.values(require("../data/infusions.json"));
 const CORRECTIONS: Correction[] = Object.values(require("../data/damage.json"));
 const INFUSION_NAMES: string[] = INFUSIONS.map((inf) => inf.name);
-const DAMAGE_TYPE_NAMES: string[] = [
-    "Physical",
-    "Magic",
-    "Fire",
-    "Lightning",
-    "Holy",
-];
 const CATEGORY_NAMES: string[][] = [
     [
         "Daggers",
@@ -61,13 +55,6 @@ const CATEGORY_NAMES: string[][] = [
     ["Light Bows", "Bows", "Greatbows", "Crossbows", "Ballistae"],
     ["Small Shields", "Medium Shields", "Greatshields"],
     ["Glintstone Staves", "Sacred Seals"],
-];
-const DAMAGE_TYPE_IDS: string[] = [
-    "physical",
-    "magic",
-    "fire",
-    "lightning",
-    "holy",
 ];
 const DAMAGE_TYPE_MODE_ANY: string = "any";
 const DAMAGE_TYPE_MODE_All: string = "all";
@@ -143,17 +130,11 @@ export default function Weapons() {
         FTH: 10,
         ARC: 10,
     });
-    // const [stats, setStats] = useState<StatMap>({
-    //     STR: 50,
-    //     DEX: 50,
-    //     INT: 50,
-    //     FTH: 50,
-    //     ARC: 50,
-    // });
     const [reinforced, setReinforced] = useState(true);
     const [requireStats, setRequireStats] = useState(true);
     const [buffable, setBuffable] = useState(false);
     const [splitDamage, setSplitDamage] = useState(true);
+    const [statusEffects, setStatusEffects] = useState<boolean>(false);
     const [twoHanded, setTwoHanded] = useState({
         damage: false,
         requirements: false,
@@ -175,23 +156,19 @@ export default function Weapons() {
     });
     const [damageTypeMode, setDamageTypeMode] =
         useState<string>(DAMAGE_TYPE_MODE_ANY);
-    // const [damageTypeMode, setDamageTypeMode] = useState<string>(
-    //     DAMAGE_TYPE_MODE_EXACTLY
-    // );
     const [damageTypes, setDamageTypes] = useState<DamageTypeMap<boolean>>({
         physical: true,
         magic: true,
         fire: true,
         lightning: true,
         holy: true,
+        blood: true,
+        poison: true,
+        frost: true,
+        "scarlet-rot": true,
+        madness: true,
+        sleep: true,
     });
-    // const [damageTypes, setDamageTypes] = useState<DamageTypeMap<boolean>>({
-    //     physical: true,
-    //     magic: false,
-    //     fire: false,
-    //     lightning: false,
-    //     holy: true,
-    // });
     const [sortBy, setSortBy] = useState<SortBy>({
         dmgType: "max",
         desc: true,
@@ -452,56 +429,28 @@ export default function Weapons() {
             ARC: 0,
         };
         Object.entries(stats).forEach(
-            ([statId, value]: [string, number | undefined], i) => {
+            ([statId, statVal]: [string, number | undefined]) => {
                 if (masks[statId]) {
                     let capIndex =
-                        calc.softcaps[DAMAGE_TYPE_IDS[i]]!.findIndex(
-                            (cap: number) => cap >= value!
+                        calc.softcaps.findIndex(
+                            (cap: number) => cap >= statVal!
                         ) - 1;
-                    let cap = calc.softcaps[DAMAGE_TYPE_IDS[i]]![capIndex];
-                    let capDelta =
-                        (calc.softcaps[DAMAGE_TYPE_IDS[i]]![capIndex + 1] ||
-                            cap) - cap;
-                    let growth = calc.growth[DAMAGE_TYPE_IDS[i]]![capIndex];
+                    let cap = calc.softcaps[capIndex];
+                    let capDelta = (calc.softcaps[capIndex + 1] || cap) - cap;
+                    let growth = calc.growth[capIndex];
                     let growthDelta =
-                        (calc.growth[DAMAGE_TYPE_IDS[i]]![capIndex + 1] ||
-                            growth) - growth;
-                    let adjust =
-                        calc.adjustments[DAMAGE_TYPE_IDS[i]]![capIndex];
-                    // console.log(
-                    //     "statId",
-                    //     statId,
-                    //     "stat value",
-                    //     value,
-                    //     "damage type",
-                    //     DAMAGE_TYPE_IDS[i],
-                    //     "calc",
-                    //     calc,
-                    //     "masks",
-                    //     masks,
-                    //     "capIndex",
-                    //     capIndex,
-                    //     "cap",
-                    //     cap,
-                    //     "capDelta",
-                    //     capDelta,
-                    //     "growth",
-                    //     growth,
-                    //     "growthDelta",
-                    //     growthDelta,
-                    //     "adjust",
-                    //     adjust
-                    // );
+                        (calc.growth[capIndex + 1] || growth) - growth;
+                    let adjust = calc.adjustments[capIndex];
 
                     result[statId] =
                         Math.sign(adjust) != -1
                             ? growth +
                               growthDelta *
-                                  ((value! - cap) / capDelta) ** adjust
+                                  ((statVal! - cap) / capDelta) ** adjust
                             : growth +
                               growthDelta *
                                   (1 -
-                                      (1 - (value! - cap) / capDelta) **
+                                      (1 - (statVal! - cap) / capDelta) **
                                           Math.abs(adjust));
                 }
             }
@@ -554,6 +503,14 @@ export default function Weapons() {
                             (weapon.unique ? 2.5 : 1.0));
             }
         );
+        // include aux damage if it is present
+        if (weaponInfusion.aux) {
+            Object.entries(weaponInfusion.aux).forEach(
+                ([dmgTypeId, dmg]: [string, [number, number]]) => {
+                    baseDmg[dmgTypeId] = upgraded ? dmg[1] : dmg[0];
+                }
+            );
+        }
 
         // if weapon is split damage, set base damage to 0
         if (isSplitDamage(baseDmg) && !splitDamage) {
@@ -583,7 +540,6 @@ export default function Weapons() {
             };
         }
 
-        // console.log(infusion.name, weapon.name);
         let scalingDmg: DamageTypeMap<number> = {
             physical: 0,
             magic: 0,
@@ -599,7 +555,6 @@ export default function Weapons() {
                   ([dmgTypeId, dmg]) => (scalingDmg[dmgTypeId] = dmg! * -0.4)
               )
             : Object.entries(baseDmg).forEach(([dmgTypeId, dmg]) => {
-                  //   console.log(dmgTypeId, weaponInfusion.masks[dmgTypeId]);
                   let calcCorrect: StatMap = corrections(
                       CORRECTIONS.find(
                           (c) => c.id == weaponInfusion.corrections[dmgTypeId]
@@ -647,12 +602,31 @@ export default function Weapons() {
             max: 0,
             attackRatings: {
                 [infusion.id]: Math.floor(
-                    (Object.values(baseDmg) as number[]).reduce(
-                        (sum: number, n: number) => sum + n
-                    ) +
-                        (Object.values(scalingDmg) as number[]).reduce(
-                            (sum: number, n: number) => sum + n
-                        )
+                    (Object.entries(baseDmg) as [string, number][]).reduce(
+                        (sum: [string, number], n: [string, number]) =>
+                            statusEffects ||
+                            (n[0] != "blood" &&
+                                n[0] != "poison" &&
+                                n[0] != "frost" &&
+                                n[0] != "scarlet-rot" &&
+                                n[0] != "madness" &&
+                                n[0] != "sleep")
+                                ? ["", sum[1] + n[1]]
+                                : sum
+                    )[1] +
+                        (
+                            Object.entries(scalingDmg) as [string, number][]
+                        ).reduce((sum: [string, number], n: [string, number]) =>
+                            statusEffects ||
+                            (n[0] != "blood" &&
+                                n[0] != "poison" &&
+                                n[0] != "frost" &&
+                                n[0] != "scarlet-rot" &&
+                                n[0] != "madness" &&
+                                n[0] != "sleep")
+                                ? ["", sum[1] + n[1]]
+                                : sum
+                        )[1]
                 ),
             },
         };
@@ -902,6 +876,7 @@ export default function Weapons() {
         splitDamage,
         damageTypeMode,
         damageTypes,
+        statusEffects,
     ]);
 
     // RENDER
@@ -1019,6 +994,21 @@ export default function Weapons() {
                                 />
                                 <label htmlFor="split-damage">
                                     Split Damage
+                                </label>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <input
+                                    type="checkbox"
+                                    id="status-effects"
+                                    onChange={(event) => {
+                                        setStatusEffects(event.target.checked);
+                                    }}
+                                    checked={statusEffects}
+                                />
+                                <label htmlFor="status-effects">
+                                    Consider Status Effects
                                 </label>
                             </span>
                         </div>

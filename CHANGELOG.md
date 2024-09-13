@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -   added hover-over breakdown for weapon attack ratings
 -   added ability to disable split damage results
 -   added ability to filter damage types
+-   added status effects to breakdown
+-   added a toggle for considering status effects in rating
 -   added link to create an issue in footer
 
 ### Changed

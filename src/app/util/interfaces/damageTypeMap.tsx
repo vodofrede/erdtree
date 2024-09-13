@@ -9,4 +9,5 @@ export default interface DamageTypeMap<T> {
     bleed?: T;
     sleep?: T;
     madness?: T;
+    "scarlet-rot"?: T;
 }
