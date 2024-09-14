@@ -156,6 +156,7 @@ export default function Weapons() {
     });
     const [damageTypeMode, setDamageTypeMode] =
         useState<string>(DAMAGE_TYPE_MODE_ANY);
+    const [damageTypesInclude, setDamageTypesInclude] = useState<boolean>(true);
     const [damageTypes, setDamageTypes] = useState<DamageTypeMap<boolean>>({
         physical: true,
         magic: true,
@@ -231,46 +232,30 @@ export default function Weapons() {
     };
 
     const anyDamageTypes = (dmg: DamageTypeMap<number>): boolean => {
-        return Object.entries(dmg).some(
-            ([key, value]) => value! && damageTypes[key]
+        let result: boolean = Object.entries(dmg).some(
+            ([key, value]) => damageTypes[key] && value
         );
+        return damageTypesInclude ? result : !result;
     };
 
     const allDamageTypes = (dmg: DamageTypeMap<number>): boolean => {
-        let isIncluded: DamageTypeMap<boolean> = {
-            physical: !damageTypes.physical,
-            magic: !damageTypes.magic,
-            fire: !damageTypes.fire,
-            lightning: !damageTypes.lightning,
-            holy: !damageTypes.holy,
-        };
-        Object.entries(damageTypes).forEach(([key, value]) => {
-            if (value && dmg[key]) {
-                isIncluded[key] = true;
-            }
-        });
-        return Object.values(isIncluded).reduce(
-            (a, b) => a && b,
-            true
-        ) as boolean;
+        let result: boolean = true;
+        if (!(Object.values(damageTypes) as boolean[])) {
+            result = false;
+        } else {
+            result = Object.entries(dmg).every(([key, value]) =>
+                damageTypes[key] ? value! > 0 : true
+            ) as boolean;
+        }
+        return damageTypesInclude ? result : !result;
     };
 
     const exactlyDamageTypes = (dmg: DamageTypeMap<number>): boolean => {
-        let isIncluded: DamageTypeMap<boolean> = {
-            physical: false,
-            magic: false,
-            fire: false,
-            lightning: false,
-            holy: false,
-        };
-        Object.entries(damageTypes).forEach(([key, value]) => {
-            if (value && dmg[key]) {
-                isIncluded[key] = true;
-            }
-        });
-        return Object.entries(isIncluded).reduce((a, [key, value]) => {
-            return a && value == damageTypes[key];
-        }, true);
+        let result: boolean = Object.entries(damageTypes).every(
+            ([key, value]) =>
+                value ? dmg[key]! > 0 : dmg[key]! == 0 || dmg[key]! == undefined
+        ) as boolean;
+        return damageTypesInclude ? result : !result;
     };
 
     // STATE UPDATE FUNCTIONS
@@ -327,6 +312,12 @@ export default function Weapons() {
             fire: state,
             lightning: state,
             holy: state,
+            blood: state,
+            poison: state,
+            frost: state,
+            "scarlet-rot": state,
+            madness: state,
+            sleep: state,
         });
     }
 
@@ -653,6 +644,7 @@ export default function Weapons() {
         setAllInfusions(true);
         setDamageTypeMode(DAMAGE_TYPE_MODE_ANY);
         setAllDamageTypes(true);
+        setDamageTypesInclude(true);
     }
 
     function createCategoryCheckbox(
@@ -874,6 +866,7 @@ export default function Weapons() {
         categories,
         sortBy,
         splitDamage,
+        damageTypesInclude,
         damageTypeMode,
         damageTypes,
         statusEffects,
@@ -1117,7 +1110,6 @@ export default function Weapons() {
                                 <button
                                     onClick={() => {
                                         setAllDamageTypes(true);
-                                        setDamageTypeMode(DAMAGE_TYPE_MODE_ANY);
                                     }}
                                 >
                                     Any
@@ -1126,6 +1118,22 @@ export default function Weapons() {
                                     onClick={() => setAllDamageTypes(false)}
                                 >
                                     None
+                                </button>
+                            </span>
+                        </div>
+                        <div>
+                            <span style={{ width: "100%" }}>
+                                <button
+                                    style={{ width: "100%" }}
+                                    onClick={() =>
+                                        setDamageTypesInclude(
+                                            !damageTypesInclude
+                                        )
+                                    }
+                                >
+                                    {damageTypesInclude
+                                        ? "ONLY INCLUDE results that contain..."
+                                        : "EXCLUDE results that contain..."}
                                 </button>
                             </span>
                         </div>
@@ -1143,7 +1151,7 @@ export default function Weapons() {
                                     }
                                 />
                                 <label htmlFor="damage-type-any">
-                                    Includes Any
+                                    ANY of the following
                                 </label>
                             </span>
                         </div>
@@ -1161,7 +1169,7 @@ export default function Weapons() {
                                     }
                                 />
                                 <label htmlFor="damage-type-all">
-                                    Includes All
+                                    ALL of the following
                                 </label>
                             </span>
                         </div>
@@ -1182,7 +1190,7 @@ export default function Weapons() {
                                     }
                                 />
                                 <label htmlFor="damage-type-exactly">
-                                    Is Exactly
+                                    EXACTLY the following
                                 </label>
                             </span>
                         </div>
@@ -1657,22 +1665,50 @@ export default function Weapons() {
                         </li>
                         <li>Two-handed: Self-explanatory</li>
                     </ol>
-                    <p>You can choose between three modes of damage types:</p>
-                    <ol>
+                    <br />
+                    <p>You can choose between six modes of damage types:</p>
+                    <ul>
                         <li>
-                            Includes Any: Will display an attack rating as long
-                            as it includes any one of the selected damage types.
+                            INCLUDE:
+                            <ul>
+                                <li>
+                                    ANY: Will display an attack rating as long
+                                    as it includes any one of the selected
+                                    damage types.
+                                </li>
+                                <li>
+                                    ALL: Will display an attack rating as long
+                                    as it includes all of the selected damage
+                                    types.
+                                </li>
+                                <li>
+                                    EXACTLY: Will display an attack rating only
+                                    if it consists of exactly the combination of
+                                    damage types selected.
+                                </li>
+                            </ul>
                         </li>
                         <li>
-                            Includes All: Will display an attack rating as long
-                            as it includes all of the selected damage types.
+                            EXCLUDE:
+                            <ul>
+                                <li>
+                                    ANY: Will not display an attack rating as
+                                    long as it includes any one of the selected
+                                    damage types.
+                                </li>
+                                <li>
+                                    ALL: Will not display an attack rating as
+                                    long as it includes all of the selected
+                                    damage types.
+                                </li>
+                                <li>
+                                    EXACTLY: Will not display an attack rating
+                                    only if it consists of exactly the
+                                    combination of damage types selected.
+                                </li>
+                            </ul>
                         </li>
-                        <li>
-                            Is Exactly: Will display an attack rating only if it
-                            consists of exactly the combination of damage types
-                            selected.
-                        </li>
-                    </ol>
+                    </ul>
                     <p>
                         This calculator currently doesn&apos;t take auxiliary
                         damage procs (cold, bleed, scarlet rot and poison) into
