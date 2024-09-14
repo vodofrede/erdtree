@@ -89,7 +89,6 @@ export function TableDataWithHover(props: {
                     style={{
                         position: "absolute",
                         top: `${cardPosition.top}px`,
-                        // left = cardPosition.left - width of the card
                         left: `${cardPosition.left}px`,
                         padding: "10px",
                         backgroundColor: "var(--primary)",
