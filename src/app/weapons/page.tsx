@@ -240,7 +240,7 @@ export default function Weapons() {
 
     const allDamageTypes = (dmg: DamageTypeMap<number>): boolean => {
         let result: boolean = true;
-        if (!(Object.values(damageTypes) as boolean[])) {
+        if (!(Object.values(damageTypes) as boolean[]).includes(true)) {
             result = false;
         } else {
             result = Object.entries(dmg).every(([key, value]) =>
