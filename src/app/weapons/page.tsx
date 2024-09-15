@@ -429,15 +429,17 @@ export default function Weapons() {
         Object.entries(stats).forEach(
             ([statId, statVal]: [string, number | undefined]) => {
                 if (masks[statId]) {
-                    let capIndex =
-                        calc.softcaps.findIndex(
-                            (cap: number) => cap >= statVal!
-                        ) - 1;
+                    let capIndex = calc.softcaps.findIndex(
+                        (cap: number) => cap >= statVal!
+                    );
+                    capIndex == -1
+                        ? (capIndex = calc.softcaps.length - 2)
+                        : (capIndex = capIndex - 1);
                     let cap = calc.softcaps[capIndex];
-                    let capDelta = (calc.softcaps[capIndex + 1] || cap) - cap;
+                    let capDelta = (calc.softcaps[capIndex + 1] ?? cap) - cap;
                     let growth = calc.growth[capIndex];
                     let growthDelta =
-                        (calc.growth[capIndex + 1] || growth) - growth;
+                        (calc.growth[capIndex + 1] ?? growth) - growth;
                     let adjust = calc.adjustments[capIndex];
 
                     result[statId] =
