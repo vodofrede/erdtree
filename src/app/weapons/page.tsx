@@ -478,6 +478,51 @@ export default function Weapons() {
                     (infId) => infId == infusion.id
                 )!
             ]!;
+        weaponInfusion.masks = {
+            ...weaponInfusion.masks,
+            blood: {
+                STR: 0,
+                DEX: 0,
+                INT: 0,
+                FTH: 0,
+                ARC: 1,
+            },
+            poison: {
+                STR: 0,
+                DEX: 0,
+                INT: 0,
+                FTH: 0,
+                ARC: 1,
+            },
+            sleep: {
+                STR: 0,
+                DEX: 0,
+                INT: 0,
+                FTH: 0,
+                ARC: 1,
+            },
+            madness: {
+                STR: 0,
+                DEX: 0,
+                INT: 0,
+                FTH: 0,
+                ARC: 1,
+            },
+            frost: {
+                STR: 0,
+                DEX: 0,
+                INT: 0,
+                FTH: 0,
+                ARC: 0,
+            },
+            "scarlet-rot": {
+                STR: 0,
+                DEX: 0,
+                INT: 0,
+                FTH: 0,
+                ARC: 0,
+            },
+        };
 
         // initialize upgrade level
         let upgLevel: number = upgraded ? (weapon.unique ? 10 : 25) : 0;
