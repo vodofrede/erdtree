@@ -18,6 +18,22 @@ const INFUSION_IDS: string[] = [
     "occult",
 ];
 
+const DEFAULT_INFUSION_MAP: InfusionMap<number> = {
+    standard: 0,
+    heavy: 0,
+    keen: 0,
+    quality: 0,
+    fire: 0,
+    "flame-art": 0,
+    lightning: 0,
+    sacred: 0,
+    magic: 0,
+    cold: 0,
+    poison: 0,
+    blood: 0,
+    occult: 0,
+};
+
 export function WeaponResultRow(props: {
     weaponName: string;
     attackRatings: InfusionMap<number>;
@@ -44,9 +60,9 @@ export function WeaponResultRow(props: {
             {INFUSION_IDS.map((infId) => (
                 <TableDataWithHover
                     key={infId}
-                    attackRating={props.attackRatings[infId]!}
-                    max={props.max}
-                    data={props.arBreakdown[infId]!}
+                    attackRating={props.attackRatings[infId]! ?? 0}
+                    max={props.max ?? 0}
+                    data={props.arBreakdown[infId]! ?? DEFAULT_INFUSION_MAP}
                     style={
                         props.attackRatings[infId] == props.max &&
                         props.attackRatings[infId] != undefined
