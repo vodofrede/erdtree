@@ -441,16 +441,24 @@ export default function Weapons() {
                     let growthDelta =
                         (calc.growth[capIndex + 1] ?? growth) - growth;
                     let adjust = calc.adjustments[capIndex];
+                    // in case statVal > hardcap
+                    let effectiveStatVal = Math.min(
+                        statVal as number,
+                        calc.softcaps[capIndex + 1]
+                    );
 
                     result[statId] =
                         Math.sign(adjust) != -1
                             ? growth +
                               growthDelta *
-                                  ((statVal! - cap) / capDelta) ** adjust
+                                  ((effectiveStatVal - cap) / capDelta) **
+                                      adjust
                             : growth +
                               growthDelta *
                                   (1 -
-                                      (1 - (statVal! - cap) / capDelta) **
+                                      (1 -
+                                          (effectiveStatVal - cap) /
+                                              capDelta) **
                                           Math.abs(adjust));
                 }
             }
