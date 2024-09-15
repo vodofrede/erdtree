@@ -221,8 +221,15 @@ export default function Weapons() {
 
     // HELPER FUNCTIONS
     const isSplitDamage = (dmg: DamageTypeMap<number>): boolean => {
+        let temp: DamageTypeMap<number> = {
+            physical: dmg.physical,
+            magic: dmg.magic,
+            fire: dmg.fire,
+            lightning: dmg.lightning,
+            holy: dmg.holy,
+        };
         return (
-            Object.values(dmg).reduce(
+            Object.values(temp).reduce(
                 (dmgTypes: number, dmg: number | undefined) => {
                     return dmg! > 0 ? dmgTypes + 1 : dmgTypes;
                 },
