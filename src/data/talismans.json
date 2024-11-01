@@ -600,9 +600,208 @@
         "name": "Entwining Umbilical Cord",
         "weight": "0.5"
     },
-    "ancestral-spirits-horn": {
-        "id": "ancestral-spirits-horn",
-        "name": "Ancestral Spirit's Horn",
+    "ancestral-spirits-horne": {
+        "id": "ancestral-spirits-horne",
+        "name": "Ancestral Spirit's Horne",
         "weight": "1.2"
+    },
+    "crimson-amber-medallion-+3": {
+        "id": "crimson-amber-medallion-+3",
+        "name": "Crimson Amber Medallion +3",
+        "weight": "0.6",
+        "multipliers": [1.1, 1.0, 1.0, 1.0]
+    },
+    "cerulean-amber-medallion-+3": {
+        "id": "cerulean-amber-medallion-+3",
+        "name": "Cerulean Amber Medallion +3",
+        "weight": "0.6",
+        "multipliers": [1.0, 1.13, 1.0, 1.0]
+    },
+    "viridian-amber-medallion-+3": {
+        "id": "viridian-amber-medallion-+3",
+        "name": "Viridian Amber Medallion +3",
+        "weight": "0.6",
+        "multipliers": [1.0, 1.0, 1.17, 1.0]
+    },
+    "two-headed-turtle-talisman": {
+        "id": "two-headed-turtle-talisman",
+        "name": "Two-Headed Turtle Talisman",
+        "weight": "1"
+    },
+    "stalwart-horn-charm-+2": {
+        "id": "stalwart-horn-charm-+2",
+        "name": "Stalwart Horn Charm +2",
+        "weight": "0.9"
+    },
+    "immunizing-horn-charm-+2": {
+        "id": "immunizing-horn-charm-+2",
+        "name": "Immunizing Horn Charm +2",
+        "weight": "0.9"
+    },
+    "clarifying-horn-charm-+2": {
+        "id": "clarifying-horn-charm-+2",
+        "name": "Clarifying Horn Charm +2",
+        "weight": "0.9"
+    },
+    "mottled-necklace-+2": {
+        "id": "mottled-necklace-+2",
+        "name": "Mottled Necklace +2",
+        "weight": "1.2"
+    },
+    "spelldrake-talisman-+3": {
+        "id": "spelldrake-talisman-+3",
+        "name": "Spelldrake Talisman +3",
+        "weight": "0.9"
+    },
+    "flamedrake-talisman-+3": {
+        "id": "flamedrake-talisman-+3",
+        "name": "Flamedrake Talisman +3",
+        "weight": "0.9"
+    },
+    "boltdrake-talisman-+3": {
+        "id": "boltdrake-talisman-+3",
+        "name": "Boltdrake Talisman +3",
+        "weight": "0.9"
+    },
+    "golden-braid": {
+        "id": "golden-braid",
+        "name": "Golden Braid",
+        "weight": "0.9"
+    },
+    "pearldrake-talisman-+3": {
+        "id": "pearldrake-talisman-+3",
+        "name": "Pearldrake Talisman +3",
+        "weight": "1.2"
+    },
+    "crimson-seed-talisman-+1": {
+        "id": "crimson-seed-talisman-+1",
+        "name": "Crimson Seed Talisman +1",
+        "weight": "1.1"
+    },
+    "cerulean-seed-talisman-+1": {
+        "id": "cerulean-seed-talisman-+1",
+        "name": "Cerulean Seed Talisman +1",
+        "weight": "1.1"
+    },
+    "blessed-blue-dew-talisman": {
+        "id": "blessed-blue-dew-talisman",
+        "name": "Blessed Blue Dew Talisman",
+        "weight": "1.2"
+    },
+    "fine-crucible-feather-talisman": {
+        "id": "fine-crucible-feather-talisman",
+        "name": "Fine Crucible Feather Talisman",
+        "weight": "0.6"
+    },
+    "outer-god-heirloom": {
+        "id": "outer-god-heirloom",
+        "name": "Outer God Heirloom",
+        "weight": "0.6",
+        "stats": [0, 0, 0, 0, 0, 0, 0, 5]
+    },
+    "shattered-stone-talisman": {
+        "id": "shattered-stone-talisman",
+        "name": "Shattered Stone Talisman",
+        "weight": "0.8"
+    },
+    "two-handed-sword-talisman": {
+        "id": "two-handed-sword-talisman",
+        "name": "Two-Handed Sword Talisman",
+        "weight": "1.2"
+    },
+    "crusade-insignia": {
+        "id": "crusade-insignia",
+        "name": "Crusade Insignia",
+        "weight": "1.2"
+    },
+    "aged-ones-exultation": {
+        "id": "aged-ones-exultation",
+        "name": "Aged One's Exultation",
+        "weight": "0.9"
+    },
+    "arrows-soaring-sting-talisman": {
+        "id": "arrows-soaring-sting-talisman",
+        "name": "Arrow's Soaring Sting Talisman",
+        "weight": "1.1"
+    },
+    "pearl-shield-talisman": {
+        "id": "pearl-shield-talisman",
+        "name": "Pearl Shield Talisman",
+        "weight": "0.9"
+    },
+    "dried-bouquet": {
+        "id": "dried-bouquet",
+        "name": "Dried Bouquet",
+        "weight": "0.8"
+    },
+    "smithing-talisman": {
+        "id": "smithing-talisman",
+        "name": "Smithing Talisman",
+        "weight": "1.3"
+    },
+    "ailment-talisman": {
+        "id": "ailment-talisman",
+        "name": "Ailment Talisman",
+        "weight": "0.6"
+    },
+    "retaliatory-crossed-tree": {
+        "id": "retaliatory-crossed-tree",
+        "name": "Retaliatory Crossed-Tree",
+        "weight": "0.8"
+    },
+    "lacerating-crossed-tree": {
+        "id": "lacerating-crossed-tree",
+        "name": "Lacerating Crossed-Tree",
+        "weight": "0.8"
+    },
+    "sharpshot-talisman": {
+        "id": "sharpshot-talisman",
+        "name": "Sharpshot Talisman",
+        "weight": "0.6"
+    },
+    "st.-trinas-smile": {
+        "id": "st.-trinas-smile",
+        "name": "St. Trina's Smile",
+        "weight": "0.9"
+    },
+    "talisman-of-the-dread": {
+        "id": "talisman-of-the-dread",
+        "name": "Talisman of the Dread",
+        "weight": "0.6"
+    },
+    "enraged-divine-beast": {
+        "id": "enraged-divine-beast",
+        "name": "Enraged Divine Beast",
+        "weight": "0.7"
+    },
+    "beloved-stardust": {
+        "id": "beloved-stardust",
+        "name": "Beloved Stardust",
+        "weight": "1.3"
+    },
+    "talisman-of-lords-bestowal": {
+        "id": "talisman-of-lords-bestowal",
+        "name": "Talisman of Lord's Bestowal",
+        "weight": "3"
+    },
+    "verdigris-discus": {
+        "id": "verdigris-discus",
+        "name": "Verdigris Discus",
+        "weight": "4.5"
+    },
+    "rellanas-cameo": {
+        "id": "rellanas-cameo",
+        "name": "Rellana's Cameo",
+        "weight": "0.8"
+    },
+    "blade-of-mercy": {
+        "id": "blade-of-mercy",
+        "name": "Blade of Mercy",
+        "weight": "1.3"
+    },
+    "talisman-of-all-crucibles": {
+        "id": "talisman-of-all-crucibles",
+        "name": "Talisman of All Crucibles",
+        "weight": "1.9"
     }
 }

@@ -152,7 +152,7 @@ function equipLoadBudget() {
     let max = document.getElementById("max-equip-load").value || 0;
     let current = document.getElementById("current-equip-load").value || 0;
 
-    return parseFloat(Math.max((max - current) * rollModifier, 0.0));
+    return parseFloat(Math.max(max * rollModifier - current, 0.0));
 }
 
 function itemStatsToString(item) {
