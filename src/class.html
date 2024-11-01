@@ -1,288 +1,195 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- metadata -->
-        <meta charset="utf-8" />
-        <meta name="language" content="english" />
-        <meta http-equiv="content-language" content="en-us" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="style/main.css" />
-        <!-- title and description -->
-        <title>Class Optimizer - Erdtree</title>
-        <link rel="icon" type="image/x-icon " href="/resource/favicon.ico" />
-        <meta
-            name="description"
-            content="Starting Class Optimizer for Elden Ring - Including Equipment (Talismans and Helmets)"
-        />
-        <meta name="author" content="vodofrede" />
-        <meta property="og:title" content="Class Optimizer - Erdtree" />
-        <meta
-            property="og:description"
-            content="Starting Class Optimizer for Elden Ring - Including Equipment (Talismans and Helmets)"
-        />
-        <meta property="og:url" content="https://erdtree.palmoe.dk/class" />
-        <!-- scripts -->
-        <script src="/script/class.js"></script>
-    </head>
 
-    <body onload="init();">
-        <nav>
-            <h3><a href="/">Home</a></h3>
-            <h3><a href="/class.html" class="current">Starting Class</a></h3>
-            <h3><a href="/armor.html">Armor Optimizer</a></h3>
-            <h3><a href="/weapons.html">Weapon Finder</a></h3>
-        </nav>
-        <header>
-            <h1>Class Optimizer</h1>
-        </header>
-        <main>
-            <div class="app">
-                <article>
+<head>
+    <!-- metadata -->
+    <meta charset="utf-8" />
+    <meta name="language" content="english" />
+    <meta http-equiv="content-language" content="en-us" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style/main.css" />
+    <!-- title and description -->
+    <title>Armor Optimizer - Erdtree</title>
+    <link rel="icon" type="image/x-icon " href="/resource/favicon.ico" />
+    <meta name="description" content="Armor Optimizer for Elden Ring - Find the best gear for defenses, resistances and poise!" />
+    <meta name="author" content="vodofrede" />
+    <meta property="og:title" content="Armor Optimizer - Erdtree" />
+    <meta property="og:description" content="Armor Optimizer for Elden Ring - Find the best gear for defenses, resistances and poise!" />
+    <meta property="og:url" content="https://erdtree.palmoe.dk/armor" />
+    <!-- scripts -->
+    <script src="/script/armor.js"></script>
+</head>
+
+<body onload="init();">
+    <nav>
+        <h3><a href="/">Home</a></h3>
+        <h3><a href="/class.html">Starting Class</a></h3>
+        <h3><a href="/armor.html" class="current">Armor Optimizer</a></h3>
+        <h3><a href="/weapons.html">Weapon Finder</a></h3>
+    </nav>
+    <header>
+        <h1>Armor Optimizer</h1>
+    </header>
+    <main>
+        <div class="app">
+            <!-- settings -->
+            <article style="flex-basis: 25%">
+                <b>Settings</b>
+                <hr />
+                <div>
+                    <label for="max-equip-load">Max. Equip Load</label>
+                    <input style="max-width: 50px" class="stat" id="max-equip-load" type="number" onchange="update()" min="0" step="0.1" value="30" name="equip-load" lang="en" />
+                </div>
+                <div>
+                    <label for="current-equip-load">Current Equip Load</label>
+                    <input style="max-width: 50px" class="stat" id="current-equip-load" type="number" onchange="update()" min="0" step="0.1" value="0" name="equip-load" lang="en" />
+                </div>
+                <div>
+                    <label for="equip-load-budget">Equip Load Budget</label>
+                    <input style="max-width: 50px" class="stat" id="equip-load-budget" type="number" value="0" name="equip-load" lang="en" disabled />
+                </div>
+                <hr />
+                <b>Breakpoints</b>
+                <div>
                     <div>
-                        <b>Class</b>
-                        <input id="best" type="text" disabled />
+                        <input type="radio" id="fast-roll" onclick="update()" name="roll-type" value="0.3" />
+                        <label for="fast-roll">Fast Roll (up to 30% equip load)</label>
                     </div>
-                    <hr />
-                    <template id="class">
-                        <li>
-                            <span></span>
-                            <aside></aside>
-                        </li>
-                    </template>
+                </div>
+                <div>
                     <div>
-                        <ul id="classes"></ul>
+                        <input type="radio" id="normal-roll" onclick="update()" name="roll-type" value="0.7" checked />
+                        <label for="normal-roll">Normal Roll (up to 70% equip load)</label>
                     </div>
-                </article>
-                <article>
+                </div>
+                <div>
                     <div>
-                        <b>Level</b>
-                        <div>
-                            <input id="initial-level" type="number" disabled />
-                            <input type="number" style="visibility: hidden" disabled />
-                            <input id="final-level" type="number" disabled />
-                            <input id="virtual-level" type="number" disabled />
-                        </div>
+                        <input type="radio" id="fat-roll" onclick="update()" name="roll-type" value="1.0" />
+                        <label for="fat-roll">Fat Roll (up to 100% equip load)</label>
                     </div>
-                    <hr />
+                </div>
+                <hr />
+                <b>Sort by</b>
+                <div>
                     <div>
-                        <label for="vigor">Vigor</label>
-                        <div>
-                            <input type="number" name="initial" disabled />
-                            <input id="vigor" type="number" name="total" min="0" max="99" oninput="update()" />
-                            <input type="number" name="final" disabled />
-                            <input type="number" name="virtual" disabled />
-                        </div>
+                        <input type="radio" id="sort-average" name="sorting-order" onclick="update()" />
+                        <label for="sort-average">Greatest Average Negation</label>
                     </div>
+                </div>
+                <div>
                     <div>
-                        <label for="mind">Mind</label>
-                        <div>
-                            <input type="number" name="initial" disabled />
-                            <input id="mind" type="number" name="total" min="0" max="99" oninput="update()" />
-                            <input type="number" name="final" disabled />
-                            <input type="number" name="virtual" disabled />
-                        </div>
+                        <input type="radio" id="sort-physical" name="sorting-order" onclick="update()" checked />
+                        <label for="sort-physical">Greatest Physical Negation</label>
                     </div>
+                </div>
+                <div>
                     <div>
-                        <label for="endurance">Endurance</label>
-                        <div>
-                            <input type="number" name="initial" disabled />
-                            <input id="endurance" type="number" name="total" min="0" max="99" oninput="update()" />
-                            <input type="number" name="final" disabled />
-                            <input type="number" name="virtual" disabled />
-                        </div>
+                        <input type="radio" id="sort-elemental" name="sorting-order" onclick="update()" />
+                        <label for="sort-elemental">Greatest Elemental Negation</label>
                     </div>
+                </div>
+                <div>
                     <div>
-                        <label for="strength">Strength</label>
-                        <div>
-                            <input type="number" name="initial" disabled />
-                            <input id="strength" type="number" name="total" min="0" max="99" oninput="update()" />
-                            <input type="number" name="final" disabled />
-                            <input type="number" name="virtual" disabled />
-                        </div>
+                        <input type="radio" id="sort-resistances" name="sorting-order" onclick="update()" />
+                        <label for="sort-resistances">Greatest Resistances</label>
                     </div>
+                </div>
+                <div>
                     <div>
-                        <label for="dexterity">Dexterity</label>
-                        <div>
-                            <input type="number" name="initial" disabled />
-                            <input id="dexterity" type="number" name="total" min="0" max="99" oninput="update()" />
-                            <input type="number" name="final" disabled />
-                            <input type="number" name="virtual" disabled />
-                        </div>
+                        <input type="radio" id="sort-poise" name="sorting-order" onclick="update()" />
+                        <label for="sort-poise">Greatest Poise</label>
                     </div>
+                </div>
+                <hr />
+                <b>Extras</b>
+                <div>
                     <div>
-                        <label for="intelligence">Intelligence</label>
-                        <div>
-                            <input type="number" name="initial" disabled />
-                            <input id="intelligence" type="number" name="total" min="0" max="99" oninput="update()" />
-                            <input type="number" name="final" disabled />
-                            <input type="number" name="virtual" disabled />
-                        </div>
+                        <input type="checkbox" id="winged-crystal-tear" onchange="update()" disabled />
+                        <label for="winged-crystal-tear">Winged Crystal Tear (in mixed physick)</label>
                     </div>
+                </div>
+                <div>
                     <div>
-                        <label for="faith">Faith</label>
-                        <div>
-                            <input type="number" name="initial" disabled />
-                            <input id="faith" type="number" name="total" min="0" max="99" oninput="update()" />
-                            <input type="number" name="final" disabled />
-                            <input type="number" name="virtual" disabled />
-                        </div>
+                        <input type="checkbox" id="fashion" onchange="update()" disabled />
+                        <label for="fashion">Fashion Mode</label>
                     </div>
-                    <div>
-                        <label for="arcane">Arcane</label>
-                        <div>
-                            <input type="number" name="initial" disabled />
-                            <input id="arcane" type="number" name="total" min="0" max="99" oninput="update()" />
-                            <input type="number" name="final" disabled />
-                            <input type="number" name="virtual" disabled />
-                        </div>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <label>
-                            <b>Helmet</b>
-                        </label>
-                        <select id="helmet" name="equipment" onchange="update()">
-                            <option id="none" value="none">No Helmet</option>
-                        </select>
-                    </div>
-                    <hr />
-                    <div>
-                        <ul id="talismans">
-                            <template id="talisman">
-                                <li>
-                                    <div>
-                                        <input name="talisman" type="checkbox" onchange="update()" />
-                                        <label></label>
-                                    </div>
-                                    <aside style="font-size: 0.8rem"></aside>
-                                </li>
-                            </template>
-                        </ul>
-                    </div>
-                    <div>
-                        <button onclick="resetAll()">Reset All</button>
-                    </div>
-                </article>
-            </div>
-            <div>
-                <h2 style="text-align: center">Explanation & Usage</h2>
-                <p>The four columns in the second box represent, in order:</p>
-                <ol>
-                    <li>Class base stats, e.g. the stats the class has at its base level.</li>
-                    <li>
-                        Desired stats. Here, you should input what the absolute minimum stats for your build should be.
-                        Leave the input fields blank for stats you don't care about.
-                    </li>
-                    <li>Final stats. These are your characters stats as they should appear on your level-up screen.</li>
-                    <li>
-                        Virtual stats. These are your characters stats after talismans and helmet stat buffs are
-                        applied.
-                    </li>
-                </ol>
-            </div>
-            <div>
-                <h2 style="text-align: center">Softcaps</h2>
-                <table>
+                </div>
+                <hr />
+                <b>Locked Armor</b>
+                <template id="locked-option">
+                    <option value="">Placeholder</option>
+                </template>
+                <div>
+                    <label for="locked-helmet">Helmet</label>
+                    <select type="text" id="locked-helmet" name="locked-items" onchange="update()">
+                        <option value="none">None</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="locked-chestpiece">Chestpiece</label>
+                    <select type="text" id="locked-chestpiece" name="locked-items" onchange="update()">
+                        <option value="none">None</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="locked-gauntlets">Gauntlets</label>
+                    <select type=" text" id="locked-gauntlets" name="locked-items" onchange="update()">
+                        <option value="none">None</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="locked-leggings">Leggings</label>
+                    <select type="text" id="locked-leggings" name="locked-items" onchange="update()">
+                        <option value="none">None</option>
+                    </select>
+                </div>
+                <div>
+                    <button id="clear-equipment" onclick="resetAll()">Reset All</button>
+                </div>
+            </article>
+            <!-- sort -->
+            <article style="flex-basis: 60%; min-width: 320px">
+                <b>Results</b>
+                <div>
+                    <table id="results"></table>
+                </div>
+                <template id="result">
                     <thead>
                         <tr>
-                            <th>Skill</th>
-                            <th>Stat</th>
-                            <th>Softcaps</th>
-                            <th>Notes</th>
+                            <th>Armor</th>
+                            <th>Stats</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Vigor</td>
-                            <td>HP</td>
-                            <td>25 (800HP)<br />40 (1450HP)<br />60 (1900HP)</td>
-                            <td>A +12 upgraded crimson flask heals for 810HP.</td>
-                        </tr>
-                        <tr>
-                            <td>Mind</td>
-                            <td>FP</td>
-                            <td>40 (220FP)</td>
-                            <td>A +12 upgraded cerulean flask gives 220FP.</td>
-                        </tr>
-                        <tr>
-                            <td>Endurance</td>
-                            <td>Stamina</td>
-                            <td>30 (125stm.)<br />50 (155stm.)</td>
-                            <td></td>
+                            <td>Total</td>
+                            <td>Stats</td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td>Equip Load</td>
-                            <td>25 (72 wgt.)<br />60 (120 wgt.)</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Strength</td>
-                            <td>AR</td>
-                            <td>37 ≃ 55 (2h)<br />54 ≃ 80 (2h)<br />66 ≃ 99 (2h)<br />80</td>
-                            <td>2-handing gives you 1.5x strength.</td>
-                        </tr>
-                        <tr>
-                            <td>Dexterity</td>
-                            <td>AR</td>
-                            <td>55, 80</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Intelligence</td>
-                            <td>AR</td>
-                            <td>55, 80</td>
-                            <td></td>
+                            <td>Stats</td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td>Spell Buff</td>
-                            <td>60, 80</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Faith</td>
-                            <td>AR</td>
-                            <td>55, 80</td>
-                            <td></td>
+                            <td>Stats</td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td>Spell Buff</td>
-                            <td>60, 80</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Arcane</td>
-                            <td>AR</td>
-                            <td>55, 80</td>
-                            <td></td>
+                            <td>Stats</td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td>Status</td>
-                            <td>45, 60</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>Spell Buff</td>
-                            <td>60, 80 (Pure catalyst)<br />30, 45 (Hybrid catalyst)</td>
-                            <td></td>
+                            <td>Stats</td>
                         </tr>
                     </tbody>
-                </table>
-            </div>
-        </main>
-        <div></div>
-        <footer>
-            <h5>
-                Erdtree Planner (<a href="https://git.palmoe.dk/vodofrede/erdtree" style="color: var(--link-color)"
-                    >available under BSD-3-Clause license</a
-                >)
-            </h5>
-            <h5>© 2022 vodofrede</h5>
-        </footer>
-    </body>
+                </template>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <h5> Erdtree Planner ( <a href="https://git.palmoe.dk/vodofrede/erdtree" style="color: var(--link-color)"> available under BSD-3-Clause license </a> ) </h5>
+        <h5>© 2022 vodofrede</h5>
+    </footer>
+</body>
+
 </html>

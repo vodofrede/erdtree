@@ -1,23 +1,16 @@
 /* colors */
-@media (prefers-color-scheme: light) {
-    :root {
-        --primary: white;
-        --secondary: white;
-        --border: grey;
-        --font-color: black;
-        --font-inverted: white;
-        --link-color: teal;
-    }
+:root {
+    --primary: white;
+    --secondary: #ebebeb;
+    --contrast: black;
+    --accent: teal;
 }
-
 @media (prefers-color-scheme: dark) {
     :root {
-        --primary: #2b2a33;
-        --secondary: #373641;
-        --border: darkgrey;
-        --font-color: white;
-        --font-inverted: black;
-        --link-color: tomato;
+        --primary: #313131;
+        --secondary: #212121;
+        --contrast: white;
+        --accent: tomato;
     }
 }
 
@@ -26,7 +19,7 @@ html {
 }
 
 html * {
-    color: var(--font-color);
+    color: var(--contrast);
 }
 
 /* fonts */
@@ -53,12 +46,12 @@ html {
     padding: 0px;
 }
 
-body > * {
+body>* {
     padding: 0 2%;
 }
 
 @media (min-width: 900px) {
-    body > * {
+    body>* {
         padding: 0 10%;
     }
 }
@@ -88,7 +81,7 @@ footer {
 }
 
 hr {
-    color: var(--border);
+    color: var(--contrast);
     margin-top: 0.12rem;
     margin-bottom: 0.3rem;
 }
@@ -109,7 +102,7 @@ nav {
 
     /* look */
     /* background-color: var(--darker);
-    outline: 1px solid var(--border); */
+    outline: 1px solid var(--secondary); */
 }
 
 nav ul {
@@ -155,18 +148,17 @@ p {
 /* links */
 a {
     text-decoration: none;
-    /* color: var(--link-color); */
 }
 a:hover {
-    color: var(--link-color);
+    color: var(--accent);
 }
 a.current {
-    color: var(--link-color);
-    text-decoration: underline wavy var(--link-color) 0.08rem;
+    color: var(--accent);
+    text-decoration: underline wavy var(--accent) 0.08rem;
     text-underline-offset: 0.2rem;
 }
 a.highlight {
-    color: var(--link-color);
+    color: var(--accent);
 }
 
 /* lists & tables */
@@ -186,12 +178,13 @@ table {
     text-align: center;
     width: 100%;
     height: 100%;
-    border: 0.15rem solid var(--border);
+    border: 1px solid var(--primary);
     border-radius: 0.5rem;
     border-spacing: 0px;
+    box-shadow: var(--secondary) 0px 8px 24px;
     overflow: scroll;
 
-    background-color: var(--primary);
+    background-color: var(--secondary);
 }
 
 table tbody,
@@ -202,14 +195,10 @@ table thead {
 td,
 th {
     /* overflow: scroll; */
-    border-bottom: 1px dotted var(--border);
     text-overflow: ellipsis;
     padding: 0.4rem;
     font-size: 0.9rem;
-}
-
-th {
-    border-bottom: 1px solid var(--border);
+    border-top: 1px solid var(--primary);
 }
 
 thead,
@@ -220,7 +209,7 @@ tbody {
 
 /* buttons & input */
 button {
-    /* border: var(--border);
+    /* border: var(--secondary);
     border-radius: 3px;*/
     margin: 0rem 0rem 0.3rem 0rem;
     padding: 0rem 0.3rem 0.1rem 0.3rem;
@@ -265,17 +254,20 @@ select option {
 .cards article {
     display: flex;
     flex-flow: column nowrap;
-
+    height: 100%;
     text-align: center;
-
     flex-basis: 20%;
     padding: 0.8rem 0rem 0.9rem 0rem;
 
-    border: 2px solid var(--font-color);
+    border: 1px solid var(--secondary);
     border-radius: 1rem;
+    box-shadow: var(--secondary) 0px 8px 24px;
 
     /* look */
     background-color: var(--secondary);
+}
+.cards article:hover {
+    border: 1px solid var(--accent);
 }
 
 .cards article * {
@@ -288,24 +280,25 @@ select option {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
+
 }
 
 .app article {
     display: flex;
     flex-flow: column nowrap;
-    flex-basis: 320px;
     flex-grow: 1;
-    gap: 1px;
+    gap: 0px;
 
     padding: 10px;
-    border: 0.15rem solid var(--border);
+    border: 1px solid var(--secondary);
     border-radius: 0.5rem;
+    box-shadow: var(--secondary) 0px 8px 24px;
+
     background-color: var(--secondary);
-    min-width: 250px;
 }
 
-.app article > * {
+.app article>* {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -315,7 +308,7 @@ select option {
 
 .app article input {
     text-align: center;
-    -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 .app article select {
