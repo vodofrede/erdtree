@@ -1,0 +1,250 @@
+/* colors */
+:root {
+    --primary: hsl(0, 0%, 98%);
+    --secondary: hsl(0, 0%, 93%);
+    --tertiary: hsl(0, 0%, 88%);
+    --border: #a2a9b1;
+    --contrast: #000000;
+    --accent: #008080;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary: hsl(0, 0%, 19%);
+        --secondary: hsl(0, 0%, 13%);
+        --tertiary: hsl(0, 0%, 10%);
+        --border: hsl(0, 0%, 33%);
+        --contrast: #ffffff;
+        --accent: #ff6347;
+    }
+}
+
+/* fonts */
+@font-face {
+    font-family: "Gotham Bold";
+    src: url("https://raw.githubusercontent.com/JDRF/design-system/refs/heads/master/dist/fonts/gotham/bold/gotham-bold-webfont.woff2");
+}
+html {
+    font-family: sans-serif;
+    color: var(--contrast);
+}
+
+/* defaults */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    overflow-wrap: break-word;
+}
+a, p, h1, h2, h3, h4, h5, h6 {
+    margin: unset;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    color: inherit;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select, a:hover {
+    width: fit-content;
+    font: inherit;
+    cursor: pointer;
+    resize: none;
+    text-decoration: none;
+    appearance: textfield;
+}
+
+/* scaffolding */
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    background-color: var(--primary);
+    min-height: 100vh;
+}
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    min-height: 60px;
+    margin: 10px 0 20px 0;
+    font-family: "Gotham Bold";
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-bottom: 5rem;
+    margin: 0 auto 0 auto;
+    max-width: 1440px;
+    width: 100%;
+    gap: 20px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: auto auto 10px auto;
+    padding: 5px;
+    width: 100%;
+    max-width: 1440px;
+}
+hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* links */
+a {
+    text-decoration: none;
+}
+a:hover {
+    transition: all 0.1s ease-in;
+    color: var(--accent);
+}
+a.current {
+    color: var(--accent);
+    text-underline-offset: 0.2rem;
+}
+
+/* lists & tables */
+table {
+    table-layout: auto;
+    border: 1px solid var(--border);
+    background-color: var(--secondary);
+    vertical-align: middle;
+    border-collapse: collapse;
+}
+th {
+    border: 1px solid var(--border);
+    background-color: var(--tertiary);
+    text-align: left;
+    padding: 8px
+}
+td {
+    border: 1px solid var(--border);
+    background-color: var(--secondary);
+    padding: 8px
+}
+
+label {
+    display: inline-block;
+    user-select: none;
+    text-align: right;
+}
+
+select {
+    width: 100%;
+    margin: 0rem 0rem 0.2rem 0rem;
+    color: black;
+}
+
+select option {
+    overflow: hidden;
+    color: black;
+}
+
+/* components */
+.card {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--secondary);
+    flex-basis: 30%;
+    box-shadow: 0 8px 24px var(--secondary);
+    border: 1px solid var(--border);
+}
+a.card:hover {
+    border: 1px solid var(--accent);
+}
+.cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.app {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.results {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+}
+
+/* helpers */
+.flex { display: flex; }
+.flex-row { flex-direction: row; }
+.flex-col { flex-direction: column; }
+.flex-center { justify-content: center; }
+.flex-space-between { justify-content: space-between; }
+.flex-align-center { align-content: center; }
+.flex-start { justify-content: flex-start; }
+.flex-end { justify-content: flex-end; }
+.flex-grow { flex-grow: 1; }
+.flex-basis-15p { flex-basis: 15%; }
+.flex-basis-20p { flex-basis: 20%; }
+.flex-basis-25p { flex-basis: 25%; }
+.flex-basis-50p { flex-basis: 50%; }
+.flex-basis-60p { flex-basis: 60%; }
+.flex-basis-75p { flex-basis: 75%; }
+.flex-basis-100p { flex-basis: 100%; }
+.gap-1 { gap: 5px; }
+.gap-2 { gap: 10px; }
+.gap-3 { gap: 15px; }
+.color-primary { background-color: var(--primary); }
+.color-secondary { background-color: var(--secondary); }
+.margin-0 { margin: 0; }
+.margin-1 { margin: 5px; }
+.margin-2 { margin: 10px; }
+.margin-3 { margin: 15px; }
+.margin-h-0 { margin-left: 0; margin-right: 0}
+.margin-h-1 { margin-left: 5px; margin-right: 5px; }
+.margin-h-2 { margin-left: 10px; margin-right: 10px; }
+.margin-h-3 { margin-left: 15px; margin-right: 15px; }
+.margin-v-0 { margin-top: 0; margin-bottom: 0; }
+.margin-v-1 { margin-top: 5px; margin-bottom: 5px; }
+.margin-v-2 { margin-top: 10px; margin-bottom: 10px; }
+.margin-v-3 { margin-top: 15px; margin-bottom: 15px; }
+.padding-0 { padding: 0; }
+.padding-1 { padding: 10px; }
+.padding-2 { padding: 20px; }
+.padding-3 { padding: 30px; }
+.border-0 { border-width: 0;}
+.border-left-0 { border-left-width: 0;}
+.border-right-0 { border-right-width: 0;}
+.text-center { text-align: center; }
+.text-primary { color: var(--primary); }
+.text-secondary { color: var(--secondary); }
+.text-contrast { color: var(--contrast); }
+.text-accent { color: var(--accent); }
+.height-0 { height: 0; }
+.height-1 { height: 5px; }
+.height-2 { height: 10px; }
+.height-3 { height: 15px; }
+.height-4 { height: 20px; }
+.height-5 { height: 25px; }
+.width-15p { width: 20%; }
+.width-25p { width: 25%; }
+.width-50p { width: 50%; }
+.width-100p { width: 100%; }
+.width-0 { width: 0px; }
+.width-1 { width: 5px; }
+.width-2 { width: 10px; }
+.width-3 { width: 15px; }
+.width-4 { width: 20px; }
+.width-5 { width: 25px; }
+.width-6 { width: 30px; }
+.width-7 { width: 40px; }
+.width-8 { width: 50px; }
+.width-9 { width: 60px; }
+.border-radius { border-radius: 5px; }
+.min-width-320 { min-width: 320px; }

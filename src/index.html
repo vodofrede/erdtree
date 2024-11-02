@@ -2,69 +2,53 @@
 <html>
 
 <head>
-    <!-- metadata -->
-    <meta charset="utf-8" />
-    <meta name="language" content="english" />
-    <meta http-equiv="content-language" content="en-us" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="msvalidate.01" content="F5D21B696FD2830A4E6329F257394DBC" />
-    <link rel="stylesheet" href="style/main.css" />
-    <!-- title and description -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Elden Ring Build Tools - Erdtree</title>
-    <link rel="icon" type="image/x-icon " href="/resource/favicon.ico" />
-    <meta name="description" content="Elden Ring Build Tools - Armor, Weapon and Class Optimizer" />
-    <meta name="author" content="vodofrede" />
-    <meta property="og:title" content="Elden Ring Build Tools - Erdtree" />
-    <meta property="og:description" content="Erdtree - Elden Ring build planner, armor optimizer, weapon finder and more!" />
-    <meta property="og:url" content="https://erdtree.palmoe.dk" />
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <script src="/assets/scripts/spa.js" type="module"></script>
 </head>
 
-<body>
+<body lang="en">
     <nav>
-        <h3><a href="/" class="current">Home</a></h3>
-        <h3><a href="/class.html">Starting Class</a></h3>
-        <h3><a href="/armor.html">Armor Optimizer</a></h3>
-        <h3><a href="/weapons.html">Weapon Finder</a></h3>
+        <h3><a href="/" data-link class="current">Home</a></h3>
+        <h3><a href="/class.html" data-link>Starting Class</a></h3>
+        <h3><a href="/armor.html" data-link>Armor Optimizer</a></h3>
+        <h3><a href="/weapons.html" data-link>Weapon Finder</a></h3>
     </nav>
-    <header>
-        <h1>Create, view and optimize builds for Elden Ring.</h1>
-    </header>
     <main>
-        <div class="cards">
-            <a href="/class.html">
-                <article>
-                    <h2>Starting Class</h2>
-                    <span>
-                        <p>Find the optimal starting class for your build.</p>
-                    </span>
-                </article>
+        <header class="title">
+            <h1>Create, view and optimize builds for Elden Ring.</h1>
+        </header>
+        <section class="cards">
+            <a class="card" href="/class.html" data-link>
+                <h2>Starting Class</h2>
+                <span>
+                    <p>Find the optimal starting class for your build.</p>
+                </span>
             </a>
-            <a href="/armor.html">
-                <article>
-                    <h2>Armor Optimizer</h2>
-                    <span>
-                        <p>Maximize defensive stats.</p>
-                    </span>
-                </article>
+            <a class="card" href="/armor.html" data-link>
+                <h2>Armor Optimizer</h2>
+                <span>
+                    <p>Maximize defensive stats.</p>
+                </span>
             </a>
-            <a href="/weapons.html">
-                <article>
-                    <h2>Weapon Finder</h2>
-                    <span>
-                        <p>Get suggestions for usable weapons.</p>
-                    </span>
-                </article>
+            <a class="card" href="/weapons.html" data-link>
+                <h2>Weapon Finder</h2>
+                <span>
+                    <p>Get suggestions for usable weapons.</p>
+                </span>
             </a>
-            <div>
-                <h3>News</h3>
-                <ul>
-                    <li>Up to date for patch 1.12 (Shadow of the Erdtree), regulation 1.12.3.</li>
-                </ul>
-                <h3>Credits</h3>
-                <p> Elden Ring images, etc., are property of From Software and BANDAI NAMCO.</p>
-                <p> This page was heavily inspired by the awesome <a href="https://mugenmonkey.com" class="highlight">MugenMonkey</a> website. </p>
-            </div>
-        </div>
+        </section>
+        <section>
+            <h2>News</h2>
+            <ul>
+                <li>Up to date for patch 1.12 (Shadow of the Erdtree), regulation 1.12.3.</li>
+            </ul>
+            <h4>Credits</h4>
+            <p> Elden Ring images, etc., are property of From Software and BANDAI NAMCO.</p>
+            <p> This page was heavily inspired by the awesome <a href="https://mugenmonkey.com" class="highlight">MugenMonkey</a> website. </p>
+        </section>
     </main>
     <footer>
         <h5> Erdtree Planner (<a href="https://github.com/vodofrede/erdtree" style="color: var(--link-color)">available under BSD-3-Clause license</a>) </h5>

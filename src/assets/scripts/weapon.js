@@ -1,14 +1,15 @@
-let WEAPONS;
-let INFUSIONS;
-let CORRECTIONS;
+const WEAPONS = await fetch("/assets/data/weapons.json").then(r => r.json());
+const INFUSIONS = await fetch("/assets/data/infusions.json").then(r =>
+    r.json()
+);
+const CORRECTIONS = await fetch("/assets/data/damage.json").then(response =>
+    response.json()
+);
 
 let dmgSortOrder = "max";
 let dmgSortAscending = true;
 
-async function init() {
-    WEAPONS = await fetch("/data/weapons.json").then(response => response.json());
-    INFUSIONS = await fetch("/data/infusions.json").then(response => response.json());
-    CORRECTIONS = await fetch("/data/damage.json").then(response => response.json());
+function init() {
     update();
 }
 
@@ -21,11 +22,14 @@ function update() {
     // get parameters
     let requireStats = document.getElementById("requirements").checked;
     let oneHandable = document.getElementById("2h-sometimes").checked;
-    let twoHanding = document.getElementById("2h-always").checked || oneHandable;
+    let twoHanding =
+        document.getElementById("2h-always").checked || oneHandable;
     let allowedInfusions = [...document.getElementsByName("infusion")]
         .filter(elem => elem.checked)
         .map(elem => elem.value);
-    let categories = [...document.getElementsByName("category")].filter(el => el.checked).map(el => el.id);
+    let categories = [...document.getElementsByName("category")]
+        .filter(el => el.checked)
+        .map(el => el.id);
     let onlyBuffable = document.getElementById("buffable").checked;
     if (twoHanding) {
         stats[0] = Math.floor(stats[0] * 1.5);
@@ -43,16 +47,23 @@ function update() {
 
     // fill damage table
     let template = document.getElementById("weapon");
-    let infIndex = Object.values(INFUSIONS).findIndex(inf => inf.id == dmgSortOrder);
+    let infIndex = Object.values(INFUSIONS).findIndex(
+        inf => inf.id == dmgSortOrder
+    );
     Object.values(WEAPONS)
         .filter(weapon => {
             // filter out weapons that don't fit the current parameters
             return (
-                (weapon.requirements.every((stat, i) => stat <= stats[i]) || !requireStats) &&
-                (weapon.requirements[0] <= Math.ceil(stats[0] / 1.5) || !oneHandable) &&
+                (weapon.requirements.every((stat, i) => stat <= stats[i]) ||
+                    !requireStats) &&
+                (weapon.requirements[0] <= Math.ceil(stats[0] / 1.5) ||
+                    !oneHandable) &&
                 categories.includes(weapon.category) &&
-                allowedInfusions.some(id => weapon.infusions[id] != undefined) &&
-                (!onlyBuffable || Object.values(weapon.infusions).some(inf => inf.buffable))
+                allowedInfusions.some(
+                    id => weapon.infusions[id] != undefined
+                ) &&
+                (!onlyBuffable ||
+                    Object.values(weapon.infusions).some(inf => inf.buffable))
             );
         })
         .map(weapon => {
@@ -76,7 +87,9 @@ function update() {
                 // sort by max
                 return dmgSortAscending ? m2 - m1 : m1 - m2;
             } else {
-                return dmgSortAscending ? ar2[infIndex] - ar1[infIndex] : ar1[infIndex] - ar2[infIndex];
+                return dmgSortAscending
+                    ? ar2[infIndex] - ar1[infIndex]
+                    : ar1[infIndex] - ar2[infIndex];
             }
         })
         .forEach(([weapon, attackRatings, max]) => {
@@ -88,7 +101,8 @@ function update() {
             // add a link to the fextralife wiki
             tr.children[0].children[0].href =
                 weapon.id != "unarmed"
-                    ? "https://eldenring.wiki.fextralife.com/" + weapon.name.replaceAll(" ", "+")
+                    ? "https://eldenring.wiki.fextralife.com/" +
+                      weapon.name.replaceAll(" ", "+")
                     : "https://cdn.discordapp.com/attachments/410786957426163725/961366807460057158/unknown.png";
 
             tr.children[1].innerHTML = max || "-";
@@ -116,7 +130,10 @@ function resetAll() {
 }
 
 function setAll(name, state) {
-    [...document.getElementsByName(name), ...document.getElementsByClassName(name)].forEach(el => (el.checked = state));
+    [
+        ...document.getElementsByName(name),
+        ...document.getElementsByClassName(name),
+    ].forEach(el => (el.checked = state));
     update();
 }
 
@@ -131,7 +148,10 @@ function damage(weapon, infusion, upgraded, stats) {
     let upgLevel = upgraded ? (weapon.unique ? 10 : 25) : 0;
 
     let baseDmg = infusion.damage.map(
-        (dmg, ty) => weaponInfusion.damage[ty] * (dmg + infusion.upgrade[ty] * upgLevel * (weapon.unique ? 2.5 : 1.0)),
+        (dmg, ty) =>
+            weaponInfusion.damage[ty] *
+            (dmg +
+                infusion.upgrade[ty] * upgLevel * (weapon.unique ? 2.5 : 1.0))
     );
 
     let scalingDmg = stats.some((stat, i) => stat < weapon.requirements[i])
@@ -140,33 +160,53 @@ function damage(weapon, infusion, upgraded, stats) {
               let calcCorrect = corrections(
                   CORRECTIONS[weaponInfusion.corrections[ty]],
                   stats,
-                  weaponInfusion.masks[ty],
+                  weaponInfusion.masks[ty]
               );
               let statScaling = weaponInfusion.scaling.map(
                   scaling =>
                       infusion.scaling[ty] *
-                      (scaling + scaling * infusion.growth[ty] * upgLevel * (weapon.unique ? 4.0 : 1.0)),
+                      (scaling +
+                          scaling *
+                              infusion.growth[ty] *
+                              upgLevel *
+                              (weapon.unique ? 4.0 : 1.0))
               );
               return statScaling
-                  .map((scaling, statIndex) => (dmg * scaling * calcCorrect[statIndex]) / 100.0)
+                  .map(
+                      (scaling, statIndex) =>
+                          (dmg * scaling * calcCorrect[statIndex]) / 100.0
+                  )
                   .reduce((sum, n) => sum + n);
           });
 
-    return Math.floor(baseDmg.reduce((sum, n) => sum + n) + scalingDmg.reduce((sum, n) => sum + n));
+    return Math.floor(
+        baseDmg.reduce((sum, n) => sum + n) +
+            scalingDmg.reduce((sum, n) => sum + n)
+    );
 }
 
 function auxiliary(weapon, infusion, upgraded, stats) {
     const weaponInfusion = weapon.infusions[infusion.id];
     const upgLevel = upgraded ? (weapon.unique ? 10 : 25) : 0;
 
-    let baseAux = Object.entries(weaponInfusion.aux).map(([ty, [a, b]]) => [ty, Math.floor(a * upgLevel + b)]);
+    let baseAux = Object.entries(weaponInfusion.aux).map(([ty, [a, b]]) => [
+        ty,
+        Math.floor(a * upgLevel + b),
+    ]);
 
-    let calcCorrect = corrections(CORRECTIONS["6"], stats, [0, 0, 0, 0, 1])[4] / 100.0;
+    let calcCorrect =
+        corrections(CORRECTIONS["6"], stats, [0, 0, 0, 0, 1])[4] / 100.0;
     let statScaling =
         weaponInfusion.scaling[4] +
-        weaponInfusion.scaling[4] * infusion.growth[4] * upgLevel * (weapon.unique ? 4.0 : 1.0);
+        weaponInfusion.scaling[4] *
+            infusion.growth[4] *
+            upgLevel *
+            (weapon.unique ? 4.0 : 1.0);
 
-    let extraAux = stats[4] >= weapon.requirements[4] ? baseAux.map(([_, aux]) => aux * calcCorrect * statScaling) : 0;
+    let extraAux =
+        stats[4] >= weapon.requirements[4]
+            ? baseAux.map(([_, aux]) => aux * calcCorrect * statScaling)
+            : 0;
 
     return baseAux.map(([ty, aux], i) => [ty, aux + extraAux[i]]);
 }
@@ -186,6 +226,19 @@ function corrections(calc, stats, masks) {
 
         return Math.sign(adjust) != -1
             ? growth + growthDelta * ((stat - cap) / capDelta) ** adjust
-            : growth + growthDelta * (1 - (1 - (stat - cap) / capDelta) ** Math.abs(adjust));
+            : growth +
+                  growthDelta *
+                      (1 - (1 - (stat - cap) / capDelta) ** Math.abs(adjust));
     });
 }
+
+if (document.readyState !== "loading") {
+    init();
+} else {
+    document.addEventListener("DOMContentLoaded", init);
+}
+
+window.update = update;
+window.changeSort = changeSort;
+window.setAll = setAll;
+window.resetAll = resetAll;

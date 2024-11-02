@@ -2,38 +2,27 @@
 <html>
 
 <head>
-    <!-- metadata -->
-    <meta charset="utf-8" />
-    <meta name="language" content="english" />
-    <meta http-equiv="content-language" content="en-us" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/style/main.css" />
-    <!-- title and description -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Armor Optimizer - Erdtree</title>
-    <link rel="icon" type="image/x-icon " href="/resource/favicon.ico" />
-    <meta name="description" content="Armor Optimizer for Elden Ring - Find the best gear for defenses, resistances and poise!" />
-    <meta name="author" content="vodofrede" />
-    <meta property="og:title" content="Armor Optimizer - Erdtree" />
-    <meta property="og:description" content="Armor Optimizer for Elden Ring - Find the best gear for defenses, resistances and poise!" />
-    <meta property="og:url" content="https://erdtree.palmoe.dk/armor" />
-    <!-- scripts -->
-    <script src="/script/armor.js"></script>
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <script src="/assets/scripts/armor.js" type="module"></script>
+    <script src="/assets/scripts/spa.js" type="module"></script>
 </head>
 
-<body onload="init();">
+<body lang="en">
     <nav>
-        <h3><a href="/">Home</a></h3>
-        <h3><a href="/class.html">Starting Class</a></h3>
-        <h3><a href="/armor.html" class="current">Armor Optimizer</a></h3>
-        <h3><a href="/weapons.html">Weapon Finder</a></h3>
+        <h3><a href="/" data-link>Home</a></h3>
+        <h3><a href="/class.html" data-link>Starting Class</a></h3>
+        <h3><a href="/armor.html" data-link class="current">Armor Optimizer</a></h3>
+        <h3><a href="/weapons.html" data-link>Weapon Finder</a></h3>
     </nav>
-    <header>
-        <h1>Armor Optimizer</h1>
-    </header>
     <main>
-        <div class="app">
-            <!-- settings -->
-            <article style="flex-basis: 25%">
+        <header class="text-center">
+            <h1>Armor Optimizer</h1>
+        </header>
+        <section class="app">
+            <article class="card flex-grow">
                 <b>Settings</b>
                 <hr />
                 <div>
@@ -147,44 +136,36 @@
                     <button id="clear-equipment" onclick="resetAll()">Reset All</button>
                 </div>
             </article>
-            <!-- sort -->
-            <article style="flex-basis: 60%; min-width: 320px">
-                <b>Results</b>
-                <div>
-                    <table id="results"></table>
-                </div>
-                <template id="result">
-                    <thead>
-                        <tr>
-                            <th>Armor</th>
-                            <th>Stats</th>
-                        </tr>
-                    </thead>
+            <article id="results" class="results flex-grow">
+            </article>
+            <template id="result">
+                <table class="card">
                     <tbody>
                         <tr>
-                            <td>Total</td>
-                            <td>Stats</td>
+                            <td class="width-25p border-right-0"><strong>Total</strong></td>
+                            <td class="border-left-0">Stats</td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td>Stats</td>
+                            <td class="border-right-0"></td>
+                            <td class="border-left-0">Stats</td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td>Stats</td>
+                            <td class="border-right-0"></td>
+                            <td class="border-left-0">Stats</td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td>Stats</td>
+                            <td class="border-right-0"></td>
+                            <td class="border-left-0">Stats</td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td>Stats</td>
+                            <td class="border-right-0"></td>
+                            <td class="border-left-0">Stats</td>
                         </tr>
                     </tbody>
-                </template>
+                </table>
+            </template>
             </article>
-        </div>
+        </section>
     </main>
     <footer>
         <h5> Erdtree Planner ( <a href="https://git.palmoe.dk/vodofrede/erdtree" style="color: var(--link-color)"> available under BSD-3-Clause license </a> ) </h5>

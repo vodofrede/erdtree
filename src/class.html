@@ -2,167 +2,148 @@
 <html>
 
 <head>
-    <!-- metadata -->
-    <meta charset="utf-8" />
-    <meta name="language" content="english" />
-    <meta http-equiv="content-language" content="en-us" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/style/main.css" />
-    <!-- title and description -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Class Optimizer - Erdtree</title>
-    <link rel="icon" type="image/x-icon " href="/resource/favicon.ico" />
-    <meta name="description" content="Starting Class Optimizer for Elden Ring - Including Equipment (Talismans and Helmets)" />
-    <meta name="author" content="vodofrede" />
-    <meta property="og:title" content="Class Optimizer - Erdtree" />
-    <meta property="og:description" content="Starting Class Optimizer for Elden Ring - Including Equipment (Talismans and Helmets)" />
-    <meta property="og:url" content="https://erdtree.palmoe.dk/class" />
-    <!-- scripts -->
-    <script src="/script/class.js"></script>
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <script src="/assets/scripts/class.js" type="module"></script>
+    <script src="/assets/scripts/spa.js" type="module"></script>
 </head>
 
-<body onload="init();">
+<body lang="en">
     <nav>
-        <h3><a href="/">Home</a></h3>
-        <h3><a href="/class.html" class="current">Starting Class</a></h3>
-        <h3><a href="/armor.html">Armor Optimizer</a></h3>
-        <h3><a href="/weapons.html">Weapon Finder</a></h3>
+        <h3><a href="/" data-link>Home</a></h3>
+        <h3><a href="/class.html" data-link class="current">Starting Class</a></h3>
+        <h3><a href="/armor.html" data-link>Armor Optimizer</a></h3>
+        <h3><a href="/weapons.html" data-link>Weapon Finder</a></h3>
     </nav>
-    <header>
-        <h1>Class Optimizer</h1>
-    </header>
     <main>
-        <div class="app">
-            <article>
-                <div>
+        <header>
+            <h1>Class Optimizer</h1>
+        </header>
+        <section class="app">
+            <article class="card flex-grow">
+                <div class="flex flex-space-between flex-center flex-align-center">
                     <b>Class</b>
-                    <input id="best" type="text" disabled />
                 </div>
-                <hr />
-                <template id="class">
-                    <li>
-                        <span></span>
-                        <aside></aside>
-                    </li>
-                </template>
-                <div>
-                    <ul id="classes"></ul>
-                </div>
+                <hr class="margin-v-1">
+                <div id="classes" class="flex flex-col gap-1"></div>
             </article>
-            <article>
-                <div>
+            <article class="card flex-grow">
+                <span class="flex flex-row flex-space-between width-700p">
                     <b>Level</b>
-                    <div>
-                        <input id="initial-level" type="number" disabled />
-                        <input type="number" style="visibility: hidden" disabled />
-                        <input id="final-level" type="number" disabled />
-                        <input id="virtual-level" type="number" disabled />
+                    <div class="flex flex-row flex-end">
+                        <input class="width-7" id="initial-level" type="number" disabled />
+                        <input class="width-7" type="number" style="visibility: hidden" disabled />
+                        <input class="width-7" id="final-level" type="number" disabled />
+                        <input class="width-7" id="virtual-level" type="number" disabled />
                     </div>
-                </div>
-                <hr />
-                <div>
+                </span>
+                <hr class="margin-v-1">
+                <span class="flex flex-row flex-space-between width-700p">
                     <label for="vigor">Vigor</label>
-                    <div>
-                        <input type="number" name="initial" disabled />
-                        <input id="vigor" type="number" name="total" min="0" max="99" oninput="update()" />
-                        <input type="number" name="final" disabled />
-                        <input type="number" name="virtual" disabled />
+                    <div class="flex flex-row flex-end">
+                        <input class="width-7" type="number" name="initial" disabled />
+                        <input class="width-7" id="vigor" type="number" name="total" min="0" max="99" oninput="update()" />
+                        <input class="width-7" type="number" name="final" disabled />
+                        <input class="width-7" type="number" name="virtual" disabled />
                     </div>
-                </div>
-                <div>
+                </span>
+                <span class="flex flex-row flex-space-between width-700p">
                     <label for="mind">Mind</label>
-                    <div>
-                        <input type="number" name="initial" disabled />
-                        <input id="mind" type="number" name="total" min="0" max="99" oninput="update()" />
-                        <input type="number" name="final" disabled />
-                        <input type="number" name="virtual" disabled />
+                    <div class="flex flex-row flex-end">
+                        <input class="width-7" type="number" name="initial" disabled />
+                        <input class="width-7" id="mind" type="number" name="total" min="0" max="99" oninput="update()" />
+                        <input class="width-7" type="number" name="final" disabled />
+                        <input class="width-7" type="number" name="virtual" disabled />
                     </div>
-                </div>
-                <div>
+                </span>
+                <span class="flex flex-row flex-space-between width-700p">
                     <label for="endurance">Endurance</label>
-                    <div>
-                        <input type="number" name="initial" disabled />
-                        <input id="endurance" type="number" name="total" min="0" max="99" oninput="update()" />
-                        <input type="number" name="final" disabled />
-                        <input type="number" name="virtual" disabled />
+                    <div class="flex flex-row flex-end">
+                        <input class="width-7" type="number" name="initial" disabled />
+                        <input class="width-7" id="endurance" type="number" name="total" min="0" max="99" oninput="update()" />
+                        <input class="width-7" type="number" name="final" disabled />
+                        <input class="width-7" type="number" name="virtual" disabled />
                     </div>
-                </div>
-                <div>
+                </span>
+                <span class="flex flex-row flex-space-between width-700p">
                     <label for="strength">Strength</label>
-                    <div>
-                        <input type="number" name="initial" disabled />
-                        <input id="strength" type="number" name="total" min="0" max="99" oninput="update()" />
-                        <input type="number" name="final" disabled />
-                        <input type="number" name="virtual" disabled />
+                    <div class="flex flex-row flex-end">
+                        <input class="width-7" type="number" name="initial" disabled />
+                        <input class="width-7" id="strength" type="number" name="total" min="0" max="99" oninput="update()" />
+                        <input class="width-7" type="number" name="final" disabled />
+                        <input class="width-7" type="number" name="virtual" disabled />
                     </div>
-                </div>
-                <div>
+                </span>
+                <span class="flex flex-row flex-space-between width-700p">
                     <label for="dexterity">Dexterity</label>
-                    <div>
-                        <input type="number" name="initial" disabled />
-                        <input id="dexterity" type="number" name="total" min="0" max="99" oninput="update()" />
-                        <input type="number" name="final" disabled />
-                        <input type="number" name="virtual" disabled />
+                    <div class="flex flex-row flex-end">
+                        <input class="width-7" type="number" name="initial" disabled />
+                        <input class="width-7" id="dexterity" type="number" name="total" min="0" max="99" oninput="update()" />
+                        <input class="width-7" type="number" name="final" disabled />
+                        <input class="width-7" type="number" name="virtual" disabled />
                     </div>
-                </div>
-                <div>
+                </span>
+                <span class="flex flex-row flex-space-between width-700p">
                     <label for="intelligence">Intelligence</label>
-                    <div>
-                        <input type="number" name="initial" disabled />
-                        <input id="intelligence" type="number" name="total" min="0" max="99" oninput="update()" />
-                        <input type="number" name="final" disabled />
-                        <input type="number" name="virtual" disabled />
+                    <div class="flex flex-row flex-end">
+                        <input class="width-7" type="number" name="initial" disabled />
+                        <input class="width-7" id="intelligence" type="number" name="total" min="0" max="99" oninput="update()" />
+                        <input class="width-7" type="number" name="final" disabled />
+                        <input class="width-7" type="number" name="virtual" disabled />
                     </div>
-                </div>
-                <div>
+                </span>
+                <span class="flex flex-row flex-space-between width-700p">
                     <label for="faith">Faith</label>
-                    <div>
-                        <input type="number" name="initial" disabled />
-                        <input id="faith" type="number" name="total" min="0" max="99" oninput="update()" />
-                        <input type="number" name="final" disabled />
-                        <input type="number" name="virtual" disabled />
+                    <div class="flex flex-row flex-end">
+                        <input class="width-7" type="number" name="initial" disabled />
+                        <input class="width-7" id="faith" type="number" name="total" min="0" max="99" oninput="update()" />
+                        <input class="width-7" type="number" name="final" disabled />
+                        <input class="width-7" type="number" name="virtual" disabled />
                     </div>
-                </div>
-                <div>
+                </span>
+                <span class="flex flex-row flex-space-between width-700p">
                     <label for="arcane">Arcane</label>
-                    <div>
-                        <input type="number" name="initial" disabled />
-                        <input id="arcane" type="number" name="total" min="0" max="99" oninput="update()" />
-                        <input type="number" name="final" disabled />
-                        <input type="number" name="virtual" disabled />
+                    <div class="flex flex-row flex-end">
+                        <input class="width-7" type="number" name="initial" disabled />
+                        <input class="width-7" id="arcane" type="number" name="total" min="0" max="99" oninput="update()" />
+                        <input class="width-7" type="number" name="final" disabled />
+                        <input class="width-7" type="number" name="virtual" disabled />
                     </div>
-                </div>
+                </span>
             </article>
-            <article>
-                <div>
+            <article class="card flex-grow">
+                <span class="flex flex-row flex-space-between gap-2">
                     <label>
                         <b>Helmet</b>
                     </label>
                     <select id="helmet" name="equipment" onchange="update()">
                         <option id="none" value="none">No Helmet</option>
                     </select>
-                </div>
-                <hr />
+                </span>
+                <hr class="margin-v-1">
                 <div>
                     <b>Talismans</b>
                 </div>
-                <div>
-                    <ul id="talismans">
+                <div class="margin-v-2">
+                    <div id="talismans" class="flex flex-col gap-1">
                         <template id="talisman">
-                            <li>
-                                <div>
+                            <span>
+                                <span>
                                     <input name="talisman" type="checkbox" onchange="update()" />
                                     <label></label>
-                                </div>
+                                </span>
                                 <aside style="font-size: 0.8rem"></aside>
-                            </li>
+                            </span>
                         </template>
-                    </ul>
+                    </div>
                 </div>
                 <div>
                     <button onclick="resetAll()">Reset All</button>
                 </div>
             </article>
-        </div>
+        </section>
         <div>
             <h2 style="text-align: center">Explanation & Usage</h2>
             <p>The four columns in the second box represent, in order:</p>
