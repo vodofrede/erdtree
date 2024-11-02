@@ -4,7 +4,7 @@ A collection of build planning tools and data for Elden Ring.
 
 # Dataset
 
-[`src/data`](src/data) contains `JSON` files for each item found in the game. 
+[`src/assets/data`](src/assets/data) contains `JSON` files for each item found in the game. 
 
 # Credits
 
